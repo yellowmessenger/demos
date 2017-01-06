@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'empire';
+	src:url('fonts/empire.eot?8jezzj');
+	src:url('fonts/empire.eot?8jezzj') format('embedded-opentype'),
+		url('fonts/empire.ttf?8jezzj') format('truetype'),
+		url('fonts/empire.woff?8jezzj') format('woff'),
+		url('fonts/empire.svg?8jezzj') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'empire';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-star:before {
+	content: "\2605";
+}
+

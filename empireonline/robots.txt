@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /empire-legacy/
+Disallow: /feature/
+Disallow: /legacy_features/
+Disallow: /my/
+Disallow: /search/
+Disallow: /tags/
+Allow: /tags/empire-podcast/
+
+Sitemap: http://www.empireonline.com/sitemaps/sitemap_index.xml
