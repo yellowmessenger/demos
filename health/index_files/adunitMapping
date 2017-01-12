@@ -1,0 +1,20 @@
+var ws_unit = {        
+   id: 0,         
+   appid: 0,     
+   tpcid: 583069,       
+   tpoid: 3555,       
+   tpolid: 483129,     
+   acid: 202,       
+   cw: 830,            
+   ch: 280,            
+   slot: 0,         
+   dnr: true,         
+   force_first: false,  
+   hasMappings: false,
+   trackable: false  
+};                     
+//dnr reason: ad unit not found 
+
+var el = document.body, ss = document.scripts;for (var i = ss.length - 1; i > -1; i--) {if (ss[i].src.indexOf('adunitMapping') > -1) {el = ss[i].parentNode; break;}}var u = document.createElement('SCRIPT');
+u.src=(window.location.protocol == "https:" ? "https:" : "http:")+'//wfpscripts.webspectator.com/ws-ad.js';
+el.appendChild(u);
