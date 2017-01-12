@@ -1,0 +1,8 @@
+#searchfield { display: block; text-align: center; font: 12px/1 arial; }
+#searchfield form .keywordstxt { float:left; width: 200px; padding: 5px; background-color: #fff; border: 1px solid #E0E0E0; color: #808080;  font-size: 12px;}
+#searchfield form .keywordstxt:focus { color: #222222; }
+.autocomplete-suggestions { border: 1px solid #E0E0E0; background: #fff; cursor: default; overflow: auto;  }
+.autocomplete-suggestion { font: 12px/1 arial; padding: 3px 5px; font-size:12px; white-space: pre-line;  overflow: hidden; line-height: 20px; border-bottom: 1px solid #E0E0E0; }
+.autocomplete-selected { background: #E0FFFF; }
+.autocomplete-suggestions strong { color: #32CD32; }
+.search_links .search_area label { text-transform:capitalize;}
