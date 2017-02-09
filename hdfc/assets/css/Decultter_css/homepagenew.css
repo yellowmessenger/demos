@@ -5,7 +5,7 @@
     src: url('../../fonts/opensans-regular-webfont.eot');
     src: url('../../fonts/opensans-regular-webfont.eot?') format('embedded-opentype'),
          url('../../fonts/opensans-regular-webfont.ttf') format('truetype');
-        
+
     font-weight: normal;
     font-style: normal;
 }
@@ -14,7 +14,7 @@
     src: url('../../fonts/opensans-semibold-webfont.eot');
     src: url('../../fonts/opensans-semibold-webfont.eot?') format('embedded-opentype'),
          url('../../fonts/opensans-semibold-webfont.ttf') format('truetype');
-         
+
     font-weight: normal;
     font-style: normal;
 }
@@ -115,7 +115,7 @@ div.homebanner div.loginarea div.loginbox .mob_experience{ width:255px;}
 .ticker{overflow: hidden; margin:0 auto; width:935px;}
 .ticker ul{ /*float:left; width:50000px;*/height: 20px; overflow: hidden;}
 .ticker ul li{ color:#333; list-style:none; font-family: 'open_sansregular'; float:left; padding:0 5px 0 0; color:#015595; font-size:1.4em} /*changed on 17-08-16 by J*/
-.ticker ul li a { color: #333}/*changed on 17-08-16 by J*/ 
+.ticker ul li a { color: #333}/*changed on 17-08-16 by J*/
 .ticker ul li a:link {text-decoration:none; }
 /* 08072013 Ticker */
 
@@ -231,24 +231,24 @@ box-shadow: 0px 1px 3px 2px rgba(234,234,234,1); height: 250px}
 .scrollbar-path-vertical {
     position: absolute;
     background-color: #ccc;
-    background-color: rgba(220,220,220,0.5); 
+    background-color: rgba(220,220,220,0.5);
     z-index: 3!important;
 }
 
 .scrollbar-path-vertical {
-    right: 10px; 
-    top: 0; 
+    right: 10px;
+    top: 0;
     height: 100%;
-    width: 2px; 
+    width: 2px;
 }
 .homequicklinkslist .scrollbar-path-vertical {
-height: 210px!important; 
+height: 210px!important;
 }
 .scrollbar-handle{
     position: relative;
     top: 0;
     left: 0;
-    background-color: #999; 
+    background-color: #999;
 }
 .scrollbar-path-vertical .scrollbar-handle {
     height: 30%;
@@ -281,10 +281,10 @@ box-shadow: 0px 1px 3px 0 rgba(234,234,234,1);}
 .homepagenewssection .homelearningcenterinner ul li .content p.desc { font-size: 1.4em; }
 .homepagenewssection .homelearningcenterinner ul li .content p.dateandlikes { font-size: 1.2em; padding: 4px 0}
 .homepagenewssection .homelearningcenterinner ul li .content p.dateandlikes span { display: inline-block; padding-right: 25px}
-.homepagenewssection .homelearningcenterinner ul li .content p.dateandlikes span.like { padding-left: 20px; background: url(../../images/hm-likeicon.png) no-repeat 0 1px} 
+.homepagenewssection .homelearningcenterinner ul li .content p.dateandlikes span.like { padding-left: 20px; background: url(../../images/hm-likeicon.png) no-repeat 0 1px}
 .homepagenewssection .scrollbar-content { width: 99%}
 .homepagenewssection .scrollbar-path-vertical {
-height: 200px!important; 
+height: 200px!important;
 }
 .homepagenewssection .news { width: 307px; float: right;  height: 200px}
 .homepagenewssection .news ul li { width: 307px; float: left}

@@ -14,7 +14,7 @@ a{color:#005593;outline:none;text-decoration:none;cursor:pointer}
     src: url('../fonts/helveticabold-webfont.eot?') format('embedded-opentype'),
          url('http://www.hdfcbank.com/assets/fonts/helveticabold-webfont.woff') format('woff'),
          url('../fonts/helveticabold-webfont.ttf') format('truetype');
-         
+
     font-weight: normal;
     font-style: normal;
 }
@@ -42,6 +42,7 @@ a{color:#005593;outline:none;text-decoration:none;cursor:pointer}
     font-weight: normal;
     font-style: normal;
 }
+.banner {display: none;}
 /*changed on 26-07-16 by Swapnil for new homepage starts*/
 p{font-size:1.3em}
 h1{color:#005593;font-family:HelveticaNeueBold;font-size:1.8em;padding-top:4px;font-weight:400}
@@ -142,7 +143,7 @@ div.languagenav div.languagedropdown div.bottom ul li{font-size:1.3em;padding:2p
 .tabularData table{width:446px;font-size:1.3em;margin:15px 0 0}
 .tabularData table tr th{background:#f0f0f0;border-bottom:1px solid #ddd;text-align:left;padding:10px 0 10px 18px}
 .tabularData table tr td{border-bottom:1px solid #eaeaea;padding:5px 0 5px 18px}
-.dropdownWrap .midcrv .rhssection .banner{border:none;height:245px;position:relative}
+.dropdownWrap .midcrv .rhssection .banner{border:none;height:245px;position:relative;display: none;}
 .dropdownWrap .midcrv .rhssection .banner img{left:3px;position:absolute;top:-13px}
 .dropdownWrap .midcrv .rhssection ul{float:left;width:175px;border:none;padding:10px 0 0 15px}
 .dropdownWrap .midcrv .rhssection ul li{float:none;font-family:Arial, Helvetica, sans-serif/*"helvetica_neue_ce_45_lightRg"*/; font-size:1.3em /*1.2em*/;color:#005593;line-height:16px;border:none;cursor:default;overflow:hidden;padding:0 0 15px 3px}
@@ -438,7 +439,7 @@ div.impmessage div.impmessagebottom p.downArrow{ background-position:right  -15p
 /*Ramu Bengali on 12 June 2013*/
 
 /*22102013 forgot pwd*/
-.login_panel div.loginbox div.loginbox_bottom label.netbankinglabel {float: left; width: 76px;} 
+.login_panel div.loginbox div.loginbox_bottom label.netbankinglabel {float: left; width: 76px;}
 div.loginbox_bottom a.netbankingforgotpass {font-size: 1.1em; display: block; padding: 2px 0px 0px;margin-left:22px;}
 /*22102013 forgot pwd*/
 /*23102013 added for social icons */
@@ -627,7 +628,7 @@ div#customertabs div.insidepagetabcontent div.topcontent div.rightcol .downloadP
 
 .payZappCarousel {float:left; padding:0 12px; position:relative; width:196px}
 .payZappCarousel li {float:left; width:196px}
-.payZappCarousel a.btn {float:left; height:18px; position:absolute; top:50px; width:12px} 
+.payZappCarousel a.btn {float:left; height:18px; position:absolute; top:50px; width:12px}
 .payZappCarousel a.btn.prev {background:url(../images/payzapp/arrow-prev-car.png) 0 0 no-repeat; left:0}
 .payZappCarousel a.btn.next {background:url(../images/payzapp/arrow-next-car.png) 0 0 no-repeat; right:0}
 .payZappCarousel a.btn.inActive {-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=50); -khtml-opacity: 0.5;	opacity:0.5; cursor:default}
@@ -740,7 +741,7 @@ div.floatingfooterlinks ul li.firstItem{padding-left: 0px;}
 .locateWrap .dropdownWrap .midcrv .rhssection{ border-right:none;}
 .paymentWrap .dropdownWrap .midcrv .lhssection ul li,.productWrap .dropdownWrap .midcrv .lhssection ul li{ width:210px;}
 .locateWrap .dropdownWrap .midcrv .lhssection ul{ width:93%;}
-.locateWrap .dropdownWrap .midcrv .lhssection ul li{ width:94%;} 
+.locateWrap .dropdownWrap .midcrv .lhssection ul li{ width:94%;}
 .owl-carousel .owl-controls .owl-nav .owl-prev.disabled, .owl-carousel .owl-controls .owl-nav .owl-next.disabled, .owl-carousel .owl-controls .owl-dot.disabled {display:none!important;}
 .eligibilityWrap .owl-example-news .owl-buttons .owl-next.disabled,.eligibilityWrap .owl-example-news .owl-buttons .owl-prev.disabled{ opacity:0.5}
 /*changed on 26-07-16 by Swapnil for new homepage ends*/
@@ -765,4 +766,3 @@ padding: 0 16px 0 0; background:url(../images/arrowbullet.png) no-repeat 98% 3px
 .loadButtn{ text-align:center}
 a.loadmoreBtn{ border:1px solid #005593; padding: 10px 15px; float:left; text-decoration:none; font-size:2em; font-family: 'helvetica_neue_ce_45_lightRg'; color:#005593}
 /*changed on 26-07-16 by Swapnil for learning center starts*/
-
