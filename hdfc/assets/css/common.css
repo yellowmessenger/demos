@@ -1,0 +1,635 @@
+﻿@charset utf-8;
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;/*vertical-align:baseline;*/background:transparent;margin:0;padding:0}
+input{margin:0;padding:0}
+body{background:#fff;color:#333;font-family:Arial, Helvetica, sans-serif;font-size:62.5%;height:100%}
+ol,ul{list-style-type:none}
+:focus{outline:0}
+a{color:#005593;outline:none;text-decoration:none;cursor:pointer}
+.clear{clear:both;font-size:1%;height:0}
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+* html .clearfix{height:1%}
+@font-face{
+    font-family: 'HelveticaNeueBold';
+    src: url('../fonts/helveticabold-webfont.eot');
+    src: url('../fonts/helveticabold-webfont.eot?') format('embedded-opentype'),
+         url('http://www.hdfcbank.com/assets/fonts/helveticabold-webfont.woff') format('woff'),
+         url('../fonts/helveticabold-webfont.ttf') format('truetype');
+         
+    font-weight: normal;
+    font-style: normal;
+}
+p{font-size:1.3em}
+h1{color:#005593;font-family:HelveticaNeueBold;font-size:1.8em;padding-top:4px;font-weight:400}
+h2{color:#005593;font-family:HelveticaNeueBold;font-size:1.6em;padding-top:4px;font-weight:400}
+html[xmlns*=]:root h2{padding-top:4px}
+h3{color:#005593;font-size:1.3em}
+/*.pagetitle h1{font-size:2em;font-family:Arial, Helvetica, sans-serif;padding-bottom:5px}*/
+.pagetitle h1{font-size:2em;font-family:Arial, Helvetica, sans-serif;padding-bottom:5px; float:left;}
+ul.numberbullet{padding:0 0 10px}
+ul.numberbullet li{font-size:1.3em;clear:both;padding:0 0 10px}
+ul.numberbullet li p{font-size:1em;padding:0}
+ul.numberbullet li ul{padding:10px 0 0 20px}
+ul.numberbullet li ul li{font-size:1em}
+ul.discbullet li ul{list-style:none;padding:10px 0 0}
+ul.numberbullet li ul.discbullet{list-style:none;padding:10px 0 0 20px}
+ul.numberbullet li ul.discbullet li,ul.discbullet li ul li{background:url(../images/greybullet.png) no-repeat 0 5px;font-size:1em;padding:0 0 5px 12px}
+ul.discbullet li ul li ul li{background:url(../images/lightgreybullet.png) no-repeat 0 5px;color:#000}
+ul.discbullet{clear:both;padding:0 0 10px}
+ul.discbullet li{background:url(../images/blackbullet.png) no-repeat 0 5px;font-size:1.3em;padding:0 0 10px 12px}
+ul.discbullet li ul.numberbullet{padding:10px 0 0}
+ul.discbullet li ul.numberbullet li{background:none;padding:0 0 5px}
+ul.arrowbullet li{background:url(../images/arrowbullet.png) no-repeat 0 5px;font-size:1.3em;padding:0 0 5px 12px}
+ul.whitearrowbullet li{background:url(../images/white_arrow.png) no-repeat 0 5px;font-size:1.3em;color:#FFF;padding:0 0 5px 12px}
+ul.arrowbulletleft li{background:url(../images/arrowbullet.png) no-repeat 0 5px;font-size:1.3em;float:left;padding:0 0 5px 12px}
+ol.decimalbullet{list-style:decimal;padding:0 0 10px 20px}
+ol.decimalbullet li{font-size:1.3em;padding:0 0 10px}
+.boldtext{font-weight:700}
+.pdf_link{background:url(../images/pdf_icon.gif) 0 0 no-repeat;padding:0 0 0 24px}
+.doc_link{background:url(../images/pdf_icon.gif) left top no-repeat;padding:0 0 0 24px}
+p.morelink{background:url(../images/bullet_darkbluearrowdown.gif) right 10px no-repeat;width:65px}
+p.dropdownarrow{background:url(../images/bullet_darkbluearrowup.gif) right 12px no-repeat}
+.mainBodyContainer{position:relative;width:100%;float:left;z-index:1}
+#overlay{position:absolute;top:0;left:0;width:100%;height:100%;display:none;background:#000;z-index:9000;opacity:0.5;filter:alpha(opacity=50)!important;-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50)!important}
+div.topnav_wrapper{background:url(../images/bg_topnav.gif) repeat-x 0 0;height:33px;width:100%}
+div.topnav div.hygeinenav{float:left;width:320px;padding:0 22px 0 0; display:none}
+div.topnav div.hygeinenav ul li{float:left;font-size:1.2em;padding:8px 22px 0 1px}
+div.topnav div.hygeinenav ul li a{color:#b6caff}
+div.topnav div.hygeinenav ul li.selected{background:url(../images/top_navsel_bg_left.gif) no-repeat 0 0;padding:0 0 0 2px;margin-right:10px;}
+div.topnav div.hygeinenav ul li.selected a{background:url(../images/top_navsel_bg_right.gif) no-repeat right top;display:block;padding-right:2px}
+div.topnav div.hygeinenav ul li.selected a span{background:url(../images/top_navsel_bg_centerarrow.gif) no-repeat center bottom;color:#272727;display:block;font-weight:700;padding:8px 8px 21px}
+/*div.sectionnav{float:left;width:596px}*/
+div.sectionnav{float:right;width:596px}
+div.sectionnav ul li{/*font-family:HelveticaNeueBold;*/font-size:1.4em;float:left;font-weight:400;margin-right:10px;padding:10px 22px 6px}
+div.sectionnav ul li a{color:#fff;text-decoration:none}
+div.sectionnav ul li.selected{background:url(../images/bg_sectionnav_left.png) no-repeat 0 0;font-size:1.5em;margin:7px 0 0;padding:5px 0 6px 23px}
+div.sectionnav ul li.selected a{background:url(../images/bg_sectionnav_right.png) no-repeat right top;color:#333;margin:11px 0 0;padding:5px 23px 6px 0}
+div.sectionnav ul li.exright{float: right; padding-right: 0px; margin-right: 0px; font-family: Arial, Helvetica, sans-serif; font-size: 1.2em;}
+div.sectionnav ul li.exright a{color: #B6CAFF;}
+body:nth-of-type(1) div.sectionnav ul li.selected{height:28px;margin:5px 0 0;padding:0 0 0 26px}
+body:nth-of-type(1) div.sectionnav ul li.selected a{margin-top:0;height:25px;display:block;padding:3px 23px 0 0}
+div.languagenav{float:right;position:relative;width:78px;z-index:1}
+div.languagenav p a{background:url(../images/bullet_lightbluearrowdown.gif) no-repeat 88% 16px;color:#8abfda;display:block;height:18px;text-decoration:none;padding:9px 0 0 11px}
+div.languagenav p.selected{background:url(../images/bg_languagedropdownselected.png) no-repeat 0 0}
+div.languagenav div.languagedropdown{position:absolute;top:25px;right:0;height:43px;width:89px;display:none}
+div.languagenav div.languagedropdown div.top{background:url(../images/bg_languagedropdowntop.png) no-repeat 0 0;font-size:1%;height:11px;width:89px}
+div.languagenav div.languagedropdown div.bottom{background:url(../images/bg_languagedropdownbottom.png) no-repeat right bottom;width:89px;padding:0 0 12px}
+div.languagenav div.languagedropdown div.bottom ul li{font-size:1.3em;padding:2px 10px 4px 24px}
+.navigation{width:943px;height:35px;position:relative;z-index:10;margin:0 auto;padding:10px 0 0 2px}
+.navigation ul li span.mainlink{cursor:auto}
+.navigation ul li .mainlink{font-size:1.6em;color:#005593;/*font-family:HelveticaNeueBold*/}
+.navigation ul li.lastselected{border-top:1px solid #bdbcbd;border-right:1px solid #bdbcbd!important;border-left:1px solid #bdbcbd!important}
+.navigation ul li.selected,.navigation ul li.lastselected,.navigation ul li.select{background:url(../images/navigation_btmborder.png) repeat-x 0 bottom}
+
+.navigation ul li{float:left;vertical-align:top;position:relative;border-top:1px solid #fff;z-index:2;padding:6px 0 4px;_width:80px;}
+
+.navigation ul li .menutext{border-left:1px solid #bdbcbd;float:left;padding:0 15px 5px/*padding:0 8px 5px*/}
+.smrtby img {margin-top: -8px;}
+.navigation ul li a{display:block;height:20px}
+.navigation ul li.first a{border:none;padding-left:0}
+.navigation ul li img.pointer{left:40%;position:absolute;display:none;z-index:2;bottom:-7px}
+/*.dropdownWrap{left:-57px;position:absolute;top:32px;z-index:1;display:none;width:657px}*/
+.dropdownWrap{left:-125px;position:absolute;top:32px;z-index:11;display:none;width:657px}
+.navigation ul li.lastNav .dropdownWrap{width:410px;/*left:-247px*/}
+.navigation ul li.dropmidNav .dropdownWrap{width:410px;left:0}
+/*.dropdownWrap .topcrv{background:url(/assets/images/products_dropdowntopcrv.png) no-repeat 0 0;width:657px;height:14px;font-size:1%;float:left}*/
+/*.dropdownWrap .midcrv{background:url(/assets/images/products_dropdownmidcrv.png) repeat-y 0 0;width:657px;float:left}*/
+/*.dropdownWrap .btmcrv{background:url(/assets/images/products_dropdownbtmcrv.png) no-repeat 0 0;width:657px;height:19px;font-size:1%;float:left}*/
+/*.manage_your_money .dropdownWrap{width:190px;left:-8px}*/
+/*.manage_your_money .dropdownWrap .topcrv,.smenav ul li.manage_your_money .dropdownWrap .topcrv{background:url(/assets/images/manageMoney_dropdowntopcrv.png) no-repeat 0 0!important;width:190px!important}*/
+/*.manage_your_money .dropdownWrap .midcrv,.smenav ul li.manage_your_money .dropdownWrap .midcrv{background:url(/assets/images/manageMoney_dropdownmidcrv.png) repeat-y 0 0!important;width:190px!important}*/
+/*.manage_your_money .dropdownWrap .btmcrv,.smenav ul li.manage_your_money .dropdownWrap .btmcrv{background:url(/assets/images/manageMoney_dropdownbtmcrv.png) no-repeat 0 0!important;width:190px!important;height:23px!important}*/
+.dropdownWrap .midcrv .lhssection{float:left;width:170px}
+.smenav .dropdownWrap .midcrv .lhssection{float:left;width:186px}
+.dropdownWrap .midcrv .lhssection ul{float:left;border:none}
+.dropdownWrap .midcrv .lhssection ul li{float:none;font-family:Arial, Helvetica, sans-serif;font-size:1.3em;font-weight:700;color:#005593;width:144px;border:0;line-height:16px;padding:9px 8px 10px 16px}
+.smenav .dropdownWrap .midcrv .lhssection ul li{width:163px;}
+.smenav .lastNav .dropdownWrap .midcrv .lhssection ul li{width:149px;}
+.smenav .dropdownWrap .midcrv .lhssection ul li.selected{border:none!important;}
+.dropdownWrap .midcrv .lhssection ul li span.mainlink{font-size:1em;font-family:Arial, Helvetica, sans-serif;cursor:auto}
+.dropdownWrap .midcrv .lhssection ul li a.mainlink{font-size:1em;font-family:Arial, Helvetica, sans-serif}
+.dropdownWrap .midcrv .lhssection ul li a{color:#005593;text-decoration:none;border:none;height:auto;padding:0}
+.dropdownWrap .midcrv .lhssection ul li.selected{background:#239edd;color:#FFF}
+.dropdownWrap .midcrv .rhssection{float:left;width:480px}
+.dropdownWrap .midcrv .rhssection .innerNavs{width:480px;display:none;float:left;border-left:2px solid #239edd;overflow:hidden;position:relative}
+.innerNavs .innerNavContainer{width:480px;float:left}
+.tabularData{padding:0 0 0 15px}
+.tabularData p{font-size:1.3em;font-weight:700}
+.tabularData table{width:446px;font-size:1.3em;margin:15px 0 0}
+.tabularData table tr th{background:#f0f0f0;border-bottom:1px solid #ddd;text-align:left;padding:10px 0 10px 18px}
+.tabularData table tr td{border-bottom:1px solid #eaeaea;padding:5px 0 5px 18px}
+.dropdownWrap .midcrv .rhssection .banner{border:none;height:245px;position:relative}
+.dropdownWrap .midcrv .rhssection .banner img{left:3px;position:absolute;top:-13px}
+.dropdownWrap .midcrv .rhssection ul{float:left;width:175px;border:none;padding:10px 0 0 15px}
+.dropdownWrap .midcrv .rhssection ul li{float:none;font-family:Arial, Helvetica, sans-serif;font-size:1.3em;color:#005593;line-height:16px;border:none;cursor:default;overflow:hidden;padding:0 0 15px 3px}
+.dropdownWrap .midcrv .rhssection .right_banner{float:right;padding-right:10px;padding-top:12px}
+.dropdownWrap .midcrv .rhssection .right_banner .nav_knowmore{display: block;padding: 10px 0 0;text-align: right;}
+.dropdownWrap .midcrv .rhssection .right_banner p{text-align:right;color:#000;font-size:1.2em;padding:0 4px 0 0}
+div.header{position:relative;width:940px;margin:0 auto;padding:12px 0 0}
+div.datetime{position:absolute;top:-6px;right:-30px;width:763px}
+div.datetime div.top{background:url(../images/bg_datetime_top.png) no-repeat 1px 0;height:22px;font-size:1%;width:773px}
+div.datetime div.mid{background:url(../images/bg_datetime_mid.png) repeat-y 0 0;width:775px}
+div.datetime div.mid p{color:#fff;float:left;padding:6px 20px 7px 30px}
+div.datetime div.mid img{float:left;margin:9px 0 0}
+div.datetime div.mid p a{color:#fff;text-decoration:underline}
+div.datetime div.bottom{background:url(../images/bg_datetime_bottom.png) no-repeat 0 0;font-size:1%;height:25px;width:775px}
+div.header div.logo{float:left;width:215px}
+div.header div.search{float:right;width:230px/*;width:268px*/}
+div.header div.search input{background:url(../images/bg_search.gif) no-repeat 0 0;border:none;color:#807c7c/*color:#000*/;font-family:Arial, Helvetica, sans-serif;font-size:1.3em;font-weight:700;height:28px;float:left;width:150px;/*width:190px;*/padding:11px 18px 0;display:none;}
+/*code replaced and added on 30 april 2012*/
+/*:root div.header div.search input{padding:5px}*/
+:root div.header div.search input{padding-top:5px; padding-bottom:5px;display:none;}
+/*code replaced and added on 30 april 2012*/
+div.header div.search input.gobutn{background:none;height:auto;width:auto;padding:0}
+div.smallbanners{width:280px}
+div.smallbanners_top{background:url(../images/bg_smallbannerstop.gif) no-repeat 0 0;font-size:1%;height:7px;width:280px}
+div.smallbanners_bottom{background:url(../images/bg_smallbannersbottom.gif) no-repeat bottom left;width:280px;min-height:97px;padding:7px 0 14px}
+div.smallbanners_bottom div.image{float:left;width:145px;padding:0 6px 0 12px}
+div.smallbanners_bottom div.data{float:left;width:110px}
+div.smallbanners_bottom div.data p{min-height:62px;padding:0 0 5px 5px}
+.moreinfo{display:none;float:left}
+div.footer_wrapper{background:url(../images/bg_footer.gif) #025296 repeat-x 0 0;width:100%;float:left;margin:35px 0 0}
+div.footer{width:940px;margin:0 auto;padding:0 0 20px/*padding:0 0 44px*/}
+div.groupwebsites{width:940px;padding:6px 0}
+div.groupwebsites p{color:#ccc;float:left;font-size:1.2em;padding:0 15px 0 0}
+div.groupwebsites ul li{float:left;font-size:1.2em;padding:0 17px 0 0}
+div.groupwebsites ul li a{border-bottom:1px solid #6da4db;color:#fff;padding-bottom:0;display:block}
+div.groupwebsites ul li a:hover{border:none;text-decoration:none}
+div.groupwebsites.calc {padding-top: 20px;float: left;}
+div.footerLinks{float:left;width:682px;padding:27px 0 0}
+div.footerLinks ul{float:left;padding-bottom:20px;width:100%}
+div.footerLinks ul li{background:url(../images/bg_footerlink_seperator.gif) no-repeat left top;font-size:1.1em;letter-spacing:.05em;float:left;padding:0 5px}
+div.footerLinks ul li.firstItem{background:none;padding:0 5px 0 0}
+div.footerLinks p{float:left;color:#9ABAD5;font-size:1.1em;letter-spacing:.05em;width:590px;padding:39px 0 0}
+div.footerSocialLinks{float:right;width:250px;padding:21px 0 0}
+div.footerSocialLinks h3{color:#fff;font-family:HelveticaNeueBold;float:left;font-size:1.3em;font-weight:400;padding:5px 0 0 20px}
+div.footerSocialLinks img{ border: none; float:left;margin:0 0 0 9px}
+div.footerSocialLinks a, div.footerSocialLinks a img { border: none; outline: none}
+div.footerSocialLinks img.verisign{/*float:right;*/margin:24px 5px 0 0}
+div.footerSocialLinks p{color:#9abad5;float:right;font-size:1.1em;letter-spacing:.03em;width:200px;text-align:right;padding:23px 3px 0 0}
+div.footerSocialLinks p a{color:#9abad5;text-decoration:underline}
+.footerLinks .greytext{color:#9ABAD5;padding:15px 0 0}
+p.footerlinktitle{width:20%!important;clear:left;padding:0 15px 0 0 !important}
+/*04022013*/
+/*div.impmessage{position:fixed;bottom:30px;right:0;width:198px;z-index:5;display:none}*/
+/*04022013*/
+div.impmessage{position:fixed;bottom:30px;right:0;width: 354px;z-index:5;display:none}
+div.impmessage div.impmessagetop{font-size:1%;height:9px;background:url(../images/bg_importantmessagetop.png) no-repeat 0 0;width: 354px}
+div.impmessage div.impmessagebottom{background:url(../images/bg_importantmessagebottom.jpg) repeat-x 0 0 #12bdf5;width: 327px;padding: 0 12px 15px 15px;}
+/*09042013*/
+/*div.impmessage div.impmessagebottom p{color:#fff;font-size:2.8em;font-family:HelveticaNeueBold;font-weight:400;line-height:.8em;padding:0 0 5px}*/
+/*09042013*/
+div.impmessage div.impmessagebottom p{color:#fff;cursor:pointer;font-size:2.8em;font-family:HelveticaNeueBold;font-weight:400;padding:0 0 5px}
+div.impmessage div.impmessagebottom p span{color:#8de3ff;font-size:.8em}
+div.impmessage div.impmessagebottom ul li {background:url(../images/bullet_whitearrow.png) no-repeat 0 12px;font-size:1.3em;padding: 7px 0 3px 12px}
+div.impmessage div.impmessagebottom img{float:right}
+div.leftColumn{float:left;width:162px;padding:0 18px 0 0}
+div.lhsnavsection{width:162px;float:left;padding:0 0 8px}
+div.lhsnavsection span.non-link{display:none!important}
+div.lhsnavsection div.mid{background:#f5f5f5;border-top:1px solid #e5e5e5;border-left:1px solid #e5e5e5;border-right:1px solid #e5e5e5;width:160px;float:left}
+div.lhsnavsection#main div.mid{border-top:none}
+div.lhsnavsection div.mid h3{color:#333;padding:10px 9px 5px;display:inline-block;}
+div.lhsnavsection#main div.mid h4{color:#333;font-size:1.3em;padding:15px 9px 0}
+/*div.lhsnavsection div.mid ul li{background:url(/assets/images/bg_lhs_bottomborder.gif) no-repeat left bottom;font-size:1.2em;float:left}*/
+div.lhsnavsection div.mid ul li{background:url(../images/bg_lhs_bottomborder.gif) no-repeat left bottom;font-size:1.2em;}
+div.lhsnavsection div.mid ul li.selected a,div.lhsnavsection div.mid ul li.selected a:hover{color:#fff;background:#0c83c9;width:152px}
+div.lhsnavsection div.mid ul li.selected a span,div.lhsnavsection div.mid ul li.selected a:hover span{background:url(../images/white_arrow.png) no-repeat 0 2px}
+div.lhsnavsection div.mid ul li a{display:block;padding:9px 0 9px 8px}
+div.lhsnavsection div.mid ul li span.non-link{display:block;color:#005593;width:140px;background:url(../images/bullet_greyarrow.gif) no-repeat 7px 10px;padding:9px 0 9px 20px}
+div.lhsnavsection div.mid ul li a:hover{width:152px}
+div.lhsnavsection div.mid ul li:hover{background:#cfe3ed;text-decoration:none}
+div.lhsnavsection div.mid ul li a span{background:url(../images/bullet_greyarrow.gif) no-repeat 0 2px;display:block;width:132px;padding:0 0 0 15px}
+div.lhsnavsection div.mid ul li ul li a span{width:115px}
+div.lhsnavsection div.mid ul li.subselected{background:#0c83c9}
+div.lhsnavsection div.mid ul li.subselected:hover{background:url(../images/bg_lhs_bottomborder.gif) #0c83c9 no-repeat left bottom}
+div.lhsnavsection div.mid ul li.subselected a:hover{background:none;color:#fff}
+div.lhsnavsection div.mid ul li.subselected a span{background:url(../images/bg_subselected_lhs.gif) no-repeat 0 5px}
+div.lhsnavsection div.mid ul li.subselected ul{background:url(../images/bg_lhs_bottomborder.gif) no-repeat left bottom #f7f7f7;padding:0 15px 10px}
+div.lhsnavsection div.mid ul li.subselected ul li{background:none;font-size:1em}
+div.lhsnavsection div.mid ul li.subselected ul li.selected,div.lhsnavsection div.mid ul li.subselected ul li.selected:hover{background:#e2e2e2;font-weight:700}
+div.lhsnavsection div.mid ul li.subselected ul li a{background:none;color:#005593;padding:5px 8px}
+div.lhsnavsection div.bottom{background:url(../images/bg_lhs_navsectionbottom.gif) no-repeat 0 0;font-size:1%;height:4px;width:162px;float:left}
+div.rightColumn{float:right;width:760px;position:relative}
+div.insidepagebottomsection{clear:both;width:760px;padding:31px 0 29px}
+div.insidepagebanner div.top{background:url(../images/bg_insidepagebannertop.gif) no-repeat 0 0;font-size:1%;height:12px;width:220px}
+div.insidepagebanner div.bottom{background:url(../images/bg_insidepagebannerbottom.gif) no-repeat left bottom;width:200px;min-height:92px;padding:0 10px 5px}
+div.insidepagebanner div.bottom div.image{float:left;width:86px}
+div.insidepagebanner div.bottom div.data{float:left;width:107px;padding:0 0 0 7px}
+div.insidepagebanner div.bottom div.data p{padding:0 0 8px 4px;font-size:1.2em;}
+div.specialoffers div.top{height:9px;font-size:1%;width:220px}
+.default_specialoffers div.top{background:url(../images/bg_specialoffersbluebox.gif) no-repeat 0 0}
+.default_specialoffers div.bottom{background:url(../images/bg_specialoffersbluebox_bottom.gif) no-repeat left bottom}
+div.specialoffers div.bottom{position:relative;width:194px;min-height:97px;padding:0 13px 10px}
+div.specialoffers div.bottom ul{padding:8px 0 5px}
+div.specialoffers div.bottom ul li{background:url(../images/white_arrow.png) no-repeat 0 3px;color:#fff;font-size:1.2em;width:180px;padding:0 0 0 13px}
+div.specialoffers div.bottom div.buttons img{float:left;margin-left:12px}
+div.manageyourmoney{float:left;width:280px}
+div.manageyourmoney div.top{background:url(../images/bg_smallbannerstop.gif) no-repeat 0 0;height:7px;font-size:1%;width:280px}
+div.manageyourmoney div.bottom{background:url(../images/bg_smallbannersbottom.gif) no-repeat left bottom;position:relative;width:250px;min-height:98px;padding:2px 15px 10px}
+div.manageyourmoney div.bottom ul{padding:8px 15px 21px 0}
+div.manageyourmoney div.bottom ul li{background:url(../images/bullet_greyarrow.gif) no-repeat 0 3px;font-size:1.3em;width:225px;padding:0 0 0 13px}
+div.manageyourmoney div.bottom div.buttons img{float:left;margin-left:10px}
+.bluebox .bottom .selecteddropval{width:109px}
+div.hdfcbanktwitter{border-bottom:1px solid #e0e0e0;width:152px;float:left;padding:19px 5px 23px}
+div.hdfcbanktwitter h2{background:url(../images/twitter.png) no-repeat 0 0;font-size:1.8em;padding:1px 0 4px 35px}
+div.hdfcbanktwitter p{font-size:1.1em;padding:10px 0 0}
+div.availpersonalloanwed{width:162px;padding:22px 0 0}
+div.availpersonalloanwed p{font-size:1.1em;padding:2px 0 9px}
+.login_panel{position:absolute;right:0;top:46px;width:255px}
+.login_panel .login_button{background:transparent url(../images/loginbg.png) right top;width:82px;height:30px;font-size:1.6em;font-weight:700;color:#000;cursor:pointer;float:right;padding:6px 0 0 17px}
+.login_panel div.loginbox{width:255px}
+.login_panel div.loginbox a.close{position:absolute;right:15px;top:15px}
+.login_panel div.loginbox div.loginbox_top{background:url(../images/bg_homeloginbox_top.png) no-repeat 0 0;font-size:1%;height:10px;width:255px}
+.login_panel div.loginbox div.loginbox_bottom{background:url(../images/bg_homeloginbox_bottom.png) no-repeat left bottom;width:225px;padding:5px 15px 18px}
+.login_panel div.loginbox div.loginbox_bottom p.loginheading{color:#333;font-family:HelveticaNeueBold;font-size:1.8em;font-weight:400;padding:0 0 5px}
+.login_panel div.loginbox div.loginbox_bottom div.loginboxfield{border-bottom:1px solid #e6e6e6;width:100%;padding:7px 0}
+.login_panel div.loginbox div.loginbox_bottom div.loginboxfieldlast{clear:both;float:left;padding:7px 0 16px}
+/*.login_panel div.loginbox div.loginbox_bottom label{font-size:1.3em;float:left;width:175px;padding:1px 0 0 10px}*/
+.login_panel div.loginbox div.loginbox_bottom label{font-size:1.3em;float:left;width:175px;padding:1px 0 0 10px}
+.login_panel div.loginbox div.loginbox_bottom input{float:left;margin:0}
+.login_panel div.loginbox div.loginbox_bottom div.loginboxlinks p a{float:left;margin:5px 0 0 10px}
+div.floatingfooter{bottom:0;left:0;position:fixed;width:100%;z-index:5}
+div.floatingfooter div.floatingfootertop{background:url(../images/bg_floatingfooter_top.png) repeat-x 0 0;font-size:1%;height:15px;width:100%}
+div.floatingfooter div.floatingfootertop div.floatingfootertopinner{width:69px;position:relative;top:-11px;margin:0 auto}
+div.floatingfooter div.floatingfooterbottom{background:url(../images/bg_floatingfooter_bottom.gif) repeat-x 0 0;height:26px;width:100%}
+/*div.floatingfooterlinks ul li{background:url(/assets/images/bg_floatingfooterlinkseperator.gif) no-repeat 0 0;float:left;font-size:1.2em;font-weight:700;position:relative;padding:0 12px 3px}*/
+div.floatingfooterlinks ul li{background:url(../images/bg_floatingfooterlinkseperator.gif) no-repeat right 0;float:left;font-size:1.2em;/*font-weight:700;*/position:relative;padding:0 27px 3px}
+div.recentlybrowsedpages{position:absolute;bottom:24px;left:-10px;width:315px;display:none}
+div.recentlybrowsedpages div.recentlybrowsedpages_top{background:url(../images/bg_recentpagesvisited_top.png) no-repeat 0 0;height:9px;width:310px;margin:0 0 0 4px}
+div.recentlybrowsedpages div.recentlybrowsedpages_bottom{background:url(../images/bg_recentpagesvisited_bottom.png) no-repeat 0 0;width:314px}
+div.floatingfooterlinks ul li div.recentlybrowsedpages div.recentlybrowsedpages_bottom p{font-size:1em;padding:10px 15px}
+div.floatingfooterlinks ul li div.recentlybrowsedpages div.recentlybrowsedpages_bottom ul{padding:0 15px}
+div.floatingfooterlinks ul li div.recentlybrowsedpages div.recentlybrowsedpages_bottom li{background:none;font-size:1em;font-weight:400;float:left;width:232px;padding:0 0 4px}
+div.floatingfooterlinks ul li div.recentlybrowsedpages div.recentlybrowsedpages_bottom li a{text-decoration:underline;color:#005593}
+div.floatingfooterlinks ul li div.recentlybrowsedpages div.recentlybrowsedpages_bottom img{float:right;clear:both;margin:-10px 20px 8px 0}
+div.recentlybrowsedpages div.recentlybrowsedpages_bottom div.shadow{background:url(../images/bg_recentpagesvisited_shadow.png) no-repeat 6px 0;font-size:1%;height:5px;width:310px}
+div.floatingfooterlinks ul li a{color:#fff;padding:4px 0 0}
+div.floatingfooterlinks ul li.chat a{background:url(../images/chat_icon.png) no-repeat 0 3px;padding:4px 0 5px 30px}
+/*div.floatingfooterlinks ul li.first{background:none;padding:0 13px 3px 0}*/
+div.floatingfooterlinks ul li.first{background:none; display:none;padding:0 13px 3px 0}
+/*div.floatingfooterlinks ul li.last{padding:0 0 3px 13px}*/
+div.floatingfooterlinks ul li.last{background:none/*added on 6th Sept'13*/; padding:0 0 3px 13px}
+#newsSlider{height:83px;width:321px}
+div.homecontent_wrapper{width:100%}
+div.homecontent{width:940px;min-height:100px;margin:0 auto}
+.border_none{border-bottom:none!important}
+a.tooltiplink{background:url(../images/grey_dots.gif) repeat-x scroll left bottom transparent!important;color:#333!important;display:inline-block;text-decoration:none!important;vertical-align:text-top;padding:0 0 2px!important}
+.religious_tooltip{background:url(../images/bg_tooltip_top.gif) no-repeat scroll 0 0 transparent;display:none;left:0;position:absolute;top:17px;width:227px;z-index:1;padding:9px 0 0}
+span.content,p.content{background:url(../images/bg_tooltip_content.gif) repeat-x scroll 0 0 #D6F0FD;border-bottom:1px solid #A9CCDE;border-left:1px solid #A9CCDE;border-right:1px solid #A9CCDE;cursor:text;display:block;font-size:.9em;font-weight:400!important;text-align:left!important;width:225px;padding:5px}
+div.lhsnavsection p{margin-left:-1px;width:138px;font-weight:700;padding:10px 12px}
+div.leftnavbanner p{font-weight:400;width:150px;margin:0;padding:5px 0 10px}
+p.lhs_heading_blue{background:url(../images/bg_titanium_lhs.gif) #18bbef repeat-x left top;color:#fff}
+p.lhs_heading_green{background:none repeat scroll 0 0 #625A37;color:#E9E9E9}
+p.lhs_heading_greay{background:none repeat scroll 0 0 #DDD;color:#333}
+.titletext{color:#282828;padding:5px 0 10px}
+.nrinav ul li a.mainlink,.wholesalenav ul li a.mainlink{font-size:1.3em;font-family:Arial, Helvetica, sans-serif;font-weight:700}
+.nrinav ul li .menutext{padding:0 11px 5px 10px}
+.smenav ul li .menutext{padding:0 6px 5px}
+.wholesalenav ul li .menutext{padding:0 6px 5px 5px}
+#element1{width:auto!important}
+#element1 .iw_component{float:none!important;height:auto!important;min-height:0!important;width:auto!important;padding-top:0!important;margin:0!important}
+.toptd{border-top:1px solid #248FCE}
+.tooltipcontent{background:url(../images/bg_tooltip_top.gif) no-repeat scroll 0 0 transparent;display:none;left:0;position:absolute;top:17px;width:237px;z-index:1;padding:9px 0 0}
+.reward_points_content ul.numberbullet li{float:left;width:100%}
+div.footerLinks ul.footerthirdrow{float:left;width:60%!important; padding: 0;}
+div.footerLinks p.bestviewed { padding: 15px 0 10px;}
+div.footerLinks p.bestviewed a { color: #ffffff}
+.targetingContent p{line-height:25px;color:#646464;padding-top:40px}
+.targetingContent p span{font-weight:700;color:#0B84C1;font-size:1.5em}
+.targetingContent{float:left;background:url(../images/why_hdfcbank.png) no-repeat 0 17px;padding:15px 0 0}
+.redfont{color:red}
+.bluefont{color:#00C}
+.headspace{padding:12px 0!important}
+.ac_results{border:1px solid #d0f2fd;background-color:#FFF;overflow:hidden;z-index:9999;padding:0}
+.ac_results ul{width:100%;list-style-position:outside;list-style:none;margin:0;padding:0}
+.ac_results li{cursor:default;display:block;color:#000;font-size:1.2em;text-align:left;margin:0;padding:2px 5px 2px 20px}
+.ac_loading{background:#FFF url(http://www.hdfcbank.com/assets/images/indicator.gif) right center no-repeat}
+.ac_odd{background-color:#fff}
+.ac_over{background-color:#D3D3D3;color:#FFF}
+.input_text{background:none;color:blue;font-family:Arial, Helvetica, sans-serif;font-size:1.3em;font-weight:400;float:left;width:500px;border:1px solid #b4b4b4;margin:2px;padding:7px 18px 9px 10px}
+.languagedropdown{display:none; /*position:absolute;right:0;top:25px;width:113px*/}
+.languagedropdown .selectedvalue{width:115px;font-size:11px}
+.languagedropdown .select_bg .selectedvalue{width:100px;font-size:1.1em}
+.smallbanners_bottom .data p{font-size:1.2em}
+.topcontent .midcol ul.discbullet{padding-bottom:0}
+#specialofferslider{overflow:hidden;height:55px}
+a:hover,p a:hover,.dropdownWrap .midcrv .rhssection ul li a:hover{text-decoration:underline}
+iframe,.navigation ul li.first .menutext{border:0}
+html[xmlns] .clearfix,.navigation ul li.select img.pointer,.navigation ul li.selected .pointer,.navigation ul li.lastselected .pointer{display:block}
+p a,.navigation ul li .mainlink:hover,div.datetime div.mid p a:hover,div.footerSocialLinks p a:hover,.login_panel div.loginbox div.loginbox_bottom div.loginboxlinks p a:hover,div.floatingfooterlinks ul li div.recentlybrowsedpages div.recentlybrowsedpages_bottom li a:hover{text-decoration:none}
+.pdf_link a,.doc_link a{color:#005593}
+div.topnav,div.floatingfooter div.floatingfooterbottom div.floatingfooterlinks{width:940px;margin:0 auto}
+div.floatingfooterlinks{float: left;padding-top: 20px;}
+div.sectionnav ul,.customercolumn .moreinfo ul{padding:0}
+div.languagenav p.selected a,div.lhsnavsection div.mid ul li.subselected ul li a:hover{background:none;color:#005593}
+.navigation ul li.selected,.navigation ul li.select{border-top:1px solid #bdbcbd;border-left:1px solid #bdbcbd!important;border-right:1px solid #bdbcbd!important}
+.navigation ul li.selnextlinav .menutext, .navigation ul li.select .menutext {border-left: 1px solid #FFFFFF}
+.navigation ul li.selected a,.navigation ul li.selected .menutext,.navigation ul li.lastselected .menutext,.navigation ul li.nextlinav .menutext,div.impmessage div.impmessagebottom ul li.last{border:none}
+.navigation ul,div.smallbanners_bottom img,.login_panel div.loginbox div.loginbox_bottom div.loginboxlinks img{float:left}
+.navigation ul li.find_your_nearest img.pointer,.navigation ul li.manage_your_money .pointer{left:45%}
+/*.navigation ul li.lastNav .dropdownWrap .topcrv,.navigation ul li.dropmidNav .dropdownWrap .topcrv,.smenav ul li .dropdownWrap .topcrv{background:url(/assets/images/products_dropdowntopcrv_small.png) no-repeat 0 0;width:410px!important;height:14px}*/
+/*.navigation ul li.lastNav .dropdownWrap .midcrv,.navigation ul li.dropmidNav .dropdownWrap .midcrv,.smenav ul li .dropdownWrap .midcrv{background:url(/assets/images/products_dropdownmidcrv_small.png) repeat-y 0 0;width:409px}*/
+/*.navigation ul li.lastNav .dropdownWrap .btmcrv,.navigation ul li.dropmidNav .dropdownWrap .btmcrv,.smenav ul li .dropdownWrap .btmcrv{background:url(/assets/images/products_dropdownbtmcrv_small.png) no-repeat 0 0;width:410px!important}*/
+.navigation ul li.lastNav .dropdownWrap .midcrv .rhssection,.navigation ul li.dropmidNav .dropdownWrap .midcrv .rhssection,.smenav ul li .dropdownWrap .midcrv .rhssection{width:220px!important}
+.navigation ul li.lastNav .dropdownWrap .midcrv .lhssection,.navigation ul li.dropmidNav .dropdownWrap .midcrv .lhssection{width:173px;border-right:2px solid #239EDD}
+.smenav ul li.dropmidNav .dropdownWrap .midcrv .lhssection{width:173px;border:none}
+.navigation ul li.lastNav .innerNavs .innerNavContainer,.navigation ul li.dropmidNav .innerNavs .innerNavContainer{width:230px;margin:0 0 0 5px}
+.navigation ul li.lastNav .dropdownWrap .midcrv .rhssection .innerNavs,.navigation ul li.dropmidNav .dropdownWrap .midcrv .rhssection .innerNavs{width:244px!important;border-left:none}
+.navigation ul li.lastNav .dropdownWrap .midcrv .lhssection ul li,.navigation ul li.dropmidNav .dropdownWrap .midcrv .lhssection ul li{padding:9px 8px 10px 16px}
+.dropdownWrap .midcrv .lhssection ul li.selected span.mainlink,.dropdownWrap .midcrv .lhssection ul li.selected a{color:#FFF}
+.dropdownWrap .midcrv .rhssection ul li a,.dropdownWrap .midcrv .rhssection ul li span.innerlink{background:url(../images/bullet_bluearrowsmalltrans.png) no-repeat 0 5px;border:none;color:#005593;text-decoration:none;height:auto;display:block;padding:0 0 0 12px}
+div.footerLinks ul li a,div.impmessage div.impmessagebottom ul li a,div.lhsnavsection div.mid ul li.subselected a,div.specialoffers div.bottom a,div.specialoffers div.bottom h2{color:#fff}
+div.lhsnavsection div.mid ul li.last,div.manageyourmoney p.morelink{background:none}
+div.lhsnavsection div.mid ul li.subselected ul li.selected a span,div.lhsnavsection div.mid ul li.subselected ul li.selected a:hover span,div.lhsnavsection div.mid ul li.subselected ul li a span{background:url(../images/arrowbullet.png) no-repeat scroll 2px 4px transparent}
+div.insidepagebanner,div.specialoffers{float:left;width:220px;padding:0 20px 0 0}
+div.specialoffers div.bottom div.buttons,div.manageyourmoney div.bottom div.buttons{position:absolute;bottom:10px;right:10px;width:50px}
+div.specialoffers div.bottom div.buttons img.prevBtn,div.specialoffers div.bottom div.buttons img.nextBtn,div.manageyourmoney div.bottom div.buttons img.prevBtn,div.manageyourmoney div.bottom div.buttons img.nextBtn,div.floatingfooter div.floatingfootertop div.floatingfootertopinner img{cursor:pointer}
+div.specialoffers div.bottom div.buttons img.prevBtn,div.manageyourmoney div.bottom div.buttons img.prevBtn{-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);filter:alpha(opacity=50);-moz-opacity:0.5;-khtml-opacity:0.5;opacity:0.5}
+div.hdfcbanktwitter p a,div.availpersonalloanwed p a{background:url(../images/bullet_bluearrowsmall.gif) no-repeat right 4px;padding:0 8px 0 0}
+.bg_none,.noarrow{background:none!important}
+a.rel,.tooltipvisible{position:relative}
+#tooltipcontent1,#tooltipcontent2,#tooltipcontent3,#tooltipcontent4,#tooltipcontent5,#tooltipcontent6,#tooltipcontent7,#tooltipcontent8,#tooltipcontent9,#tooltipcontent10,#tooltipcontent11,#tooltipcontent12,#tooltipcontent13,#tooltipcontent14,#tooltipcontent15,#tooltipcontent16,#tooltipcontent17,#tooltipcontent18,#tooltipcontent19,#tooltipcontent20,#tooltipcontent21,#tooltipcontent22,#tooltipcontent23,#tooltipcontent24,#tooltipcontent25,#tooltipcontent26,#tooltipcontent27,#tooltipcontent28,#tooltipcontent29,#tooltipcontent30,#tooltipcontent31,#tooltipcontent32,#tooltipcontent33,#tooltipcontent34,#tooltipcontent35,.tooltipDiv,a.tooltiplink span.tooltipcontent{background:url(../images/bg_tooltip_top.gif) no-repeat scroll 0 0 transparent;display:none;left:0;position:absolute;top:17px;width:237px;z-index:1;padding:9px 0 0}
+.languagedropdown .select_bg,.languagedropdown .select_bg select{width:110px}
+.ls-row-clr{clear:both}
+#col-promo-left .ls-row-clr{clear:none}
+/*added for social icons on 27 april 2012*/
+div.socialiconnav{ float:right;}
+div.socialiconnav ul{ padding:5px 0 0 0}
+div.socialiconnav ul li{ float:left; margin:0 0 0 14px}
+/*added for social icons on 27 april 2012*/
+/*code sent by jayshree on mail on 15 may 2012*/
+/*#followuspopup{width:170px;}
+#followuspopup div.followuspopup_top{background:url(/assets/images/bg_followuspopup_top.png) no-repeat 0 0;height:9px;width:170px;}
+#followuspopup div.followuspopup_bottom{ border: 1px solid #ccc; border-top: none; background:url(/assets/images/bg_followuspopup_bottom.gif) #fdfdfd repeat-x bottom left;width:168px}
+div.floatingfooterlinks ul li #followuspopup div.followuspopup_bottom p{ color: #006699; font-family: 'HelveticaNeueBold';font-size:1.2em;padding:5px 10px 10px}
+div.floatingfooterlinks ul li #followuspopup div.followuspopup_bottom ul{ padding:0 10px 30px; float: left}
+div.floatingfooterlinks ul li #followuspopup div.followuspopup_bottom li{background:none;float:left;padding:0 10px 0 0}
+div.floatingfooterlinks ul li #followuspopup div.followuspopup_bottom img.closeBtn{float:right;clear:both;margin:0 15px 8px 0}*/
+/*code sent by jayshree on mail on 15 may 2012*/
+/* jayshree login functionality */
+.errorloginmsg { color: #ff0000; padding: 3px 0 0; font-size: 1.1em}
+/* 13092012 Click to talk :: Styling issue */
+.click_to_talk { width: 135px !important;}
+.click_to_talk .recentlybrowsedpages_top { margin: 0 0 0 5px !important;  width: 129px !important;}
+.click_to_talk .recentlybrowsedpages_bottom img { float: right !important; margin: 0 10px 8px 0 !important;}
+.click_to_talk .recentlybrowsedpages_bottom li {  padding: 0 0 4px !important; width: 100px !important;}
+/* 13092012 Click to talk :: Styling issue */
+
+/* 27092012 jayshree home page downtime chanegs */
+
+.dropdownWrap .topcrv, .dropdownWrap .btmcrv{display:none!important}
+.dropdownWrap .midcrv{background:#fff;width:655px;float:left; border: 1px solid #ccc; margin-top: 3px;*margin-top: 2px; padding: 14px 0}
+.manage_your_money .dropdownWrap{width:188px;left:-8px}
+.manage_your_money .dropdownWrap .midcrv,.smenav ul li.manage_your_money .dropdownWrap .midcrv{width:186px!important;}
+.navigation ul li.lastNav .dropdownWrap .midcrv,.navigation ul li.dropmidNav .dropdownWrap .midcrv,.smenav ul li .dropdownWrap .midcrv{width:407px}
+
+/* 27092012 jayshree home page downtime chanegs */
+
+/* 01102012 Jayshree*/
+.smenav .dropdownWrap {top: 31px;}
+/*.smenav ul li{padding: 5px 0 4px!important;}*/
+.smenav ul li{padding-top:5px!important;}
+/* 01102012 Jayshree*/
+ul.arrowbullet li ul.arrowbulletnextlevel li { background: url(../images/greydashbullet.gif) no-repeat 0 7px; font-size: 0.9em}
+/*.pagetitle .socialMedia{ background:url(/assets/images/headLineDivider.jpg) no-repeat left 0; float:left; padding: 7px 0; margin: 0 20px; width:auto;}
+.pagetitle .socialMedia .socialLike{ float:left; margin-left:15px; width:auto;}*/
+/* 04012013 Jayshree Title Alignment issue */
+.pagetitle {float: left; width: 100%}
+/* 04012013 Jayshree Title Alignment issue */
+/*09042013*/
+div.impmessage div.impmessagebottom p.upArrow, div.impmessage div.impmessagebottom p.downArrow{background:url(../images/impmessageArrow.png) no-repeat}
+div.impmessage div.impmessagebottom p.upArrow{ background-position:right  14px}
+div.impmessage div.impmessagebottom p.downArrow{ background-position:right  -15px;}
+/*09042013*/
+
+/*Ramu Bengali on 12 June 2013*/
+.bn .intro .insidepagetabcontent p{ font-size:1.5em;}
+/*Ramu Bengali on 12 June 2013*/
+
+/*22102013 forgot pwd*/
+.login_panel div.loginbox div.loginbox_bottom label.netbankinglabel {float: left; width: 76px;} 
+div.loginbox_bottom a.netbankingforgotpass {font-size: 1.1em; display: block; padding: 2px 0px 0px;margin-left:22px;}
+/*22102013 forgot pwd*/
+/*23102013 added for social icons */
+.socialSideSlider {display:none;position:fixed; right: 0; top: /*350px*/165px; width:36px; z-index: 999;}
+.socialSideSlider .topCurve {background:url(../images/curve_top.png) 0 0 no-repeat; float:left; height:12px; width:36px}
+.socialSideSlider .middleContent {background:url(../images/curve_btm.png) 0 bottom no-repeat; float:left; padding-bottom:5px; width:36px}
+.socialSideSlider .middleContent ul.socialNetIcons li {float:left; height:24px; padding:0 5px 8px 7px; position:relative; width:24px}
+.socialSideSlider .middleContent ul.socialNetIcons li span.toolTip {background:url(../images/bg_side_tooltip.png) 0 0 no-repeat; color:#fff; display:none; float:left; font-size:1.3em; font-weight:bold; height:15px; padding:6px 5px; position:absolute; right:36px; text-align:left; top:-3px; width:151px}
+ul.socialNetIcons li a {background:url(../images/sprite_icons.png) 0 0 no-repeat; float:left; height:24px; text-indent:-9999px; width:24px}
+.socialSideSlider ul.socialNetIcons li a {-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70); -moz-opacity:0.7; -khtml-opacity: 0.7; opacity:0.7}
+.socialSideSlider ul.socialNetIcons li a:hover {-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100); -moz-opacity:1; -khtml-opacity: 1; opacity:1;}
+ul.socialNetIcons li a.facebook {background-position: 0 0}
+ul.socialNetIcons li a.youTube {background-position: -34px 0}
+ul.socialNetIcons li a.twitter {background-position: -68px 0}
+ul.socialNetIcons li a.googlePlus {background-position: -102px 0}
+ul.socialNetIcons li a.pinterest {background-position: -136px 0}
+ul.socialNetIcons li a.likedin {background-position: -170px 0}
+div.floatingfooterlinks ul li.fotterSocialNet {display:none}
+div.floatingfooterlinks.min ul li.fotterSocialNet {padding-left:0; padding-right:7px}
+div.floatingfooterlinks.min ul li {padding:0 10px 3px 10px}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li {background:none; height:20px; padding:0 5px; width:20px}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li:first-child {padding-left:0}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li a {background:url(../images/sprite_icons_footer.png) 0 0 no-repeat; padding:0}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li a.facebook {background-position: 0 0}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li a.facebook:hover {background-position: 0 -30px}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li a.youTube {background-position: -30px 0}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li a.youTube:hover {background-position: -30px -30px}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li a.twitter {background-position: -60px 0}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li a.twitter:hover {background-position: -60px -30px}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li a.googlePlus {background-position: -90px 0}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li a.googlePlus:hover {background-position: -90px -30px}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li a.pinterest {background-position: -120px 0}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li a.pinterest:hover {background-position: -120px -30px}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li a.likedin {background-position: -150px 0}
+div.floatingfooterlinks.min ul li.fotterSocialNet ul.socialNetIcons li a.likedin:hover {background-position: -150px -30px}
+div.floatingfooterlinks ul li.fotterSocialNet ul.socialNetIcons li span.toolTip {background:url(../images/bg_btm_tooltip.png) 0 0 no-repeat; color:#fff; display:none; float:left; font-size:0.7em; font-weight:bold; height:26px; padding:6px 5px 0; position:absolute; left:6px; text-align:left; bottom:25px; width:145px}
+div.floatingfooterlinks ul li.fotterSocialNet ul.socialNetIcons li:first-child span.toolTip {left:1px}
+/*23102013 added for social icons */
+
+
+/*06 dec */
+.headerstyle{
+color: #005593;
+font-family: HelveticaNeueBold;
+font-size: 1.6em!important;
+padding: 0px 0 12px 0!important;
+font-weight: bold;
+}
+
+
+div.footerLinks ul li a, div.impmessage div.impmessagebottom ul li a, div.lhsnavsection div.mid ul li.subselected a, div.specialoffers div.bottom a, div.specialoffers div.bottom .headerstyle{color: #ffffff;}
+
+div.expandcontent div.onecolumn .question .questionheader {
+float: left;
+/*background: url(/assets/images/bluedownarrow.png) no-repeat scroll 605px 15px transparent;*/
+cursor: auto;
+min-height: 16px;
+width: 100%;
+height: auto!important;
+padding: 0 5px 0 0;color: #005593;font-weight: bold;
+}
+
+.additionallink2{ padding-left:40px;}
+div#customertabs div.insidepagetabcontent div.topcontent div.midcol p, div#customertabs div.insidepagetabcontent div.topcontent div.rightcol .headerstyle {float:none;}
+.christmas-band-img { float:left; /*padding-left:75px;*/padding-left:240px;}
+
+/*----------------------------------------------*/
+/*****Without header banner *****/
+/*
+.headerWrapper { background-color:#fff; float: left; position: relative; width: 100%; z-index:10 }
+*/
+/*****With header banner*****/
+
+.headerWrapper { background-color:#fff; background-position: -269px 1px; float: left;  position: relative; width: 100%; z-index:10 }
+
+/*----------------------------------------------*/
+
+.headerWrapper.stick { left:0; position: fixed; top:0 }
+/*div.header {background: #fff; left: 50%; margin: 0 -470px; position: fixed; z-index: 10;}
+.navigation {background-color: #fff; height: 35px; left: 50%; margin: 0 -473px; padding: 10px 0 0 2px; position: fixed; top: 84px; width: 943px; z-index: 10;}*/
+
+/*Added on 28th Apr'14 - Ends*/
+
+/*added on 30th Apr'14 start*/
+#newsSlider { height:83px;  /*width:321px; modified on 30th Apr'14*/ width:222px }
+#newsSlider ul li { background: url("../images/bullet_greyarrow.gif") no-repeat scroll 0 3px; font-size: 1.3em; padding: 0 0 50px 15px; width: 207px; }
+#newsSlider .buttons {height: 35px !important;float:right;}
+.headerWrapper.stick{border-bottom: 1px solid #005593;}
+/*added on 30th Apr'14 End*/
+/*New Code for callback Function Start Date:28 May 2014*/
+.callback { position: fixed; top: 155px; width:230px; /*z-index: 999;*/  right:-160px ;z-index: 1; }
+.callback .callbkBtn { background: url(../images/callbkBtn.png) no-repeat -30px 0; float: left; height:221px; width: 28px; z-index: 4; position:relative; top:5px }
+.callback .callbkBtn.sel { background-position: 0 0 }
+.callback .callbackBox { float:left; width:202px }
+.callback .callbackBox .top { background: url(../images/callbk-bg.png) no-repeat 0 0; height:20px }
+.callback .callbackBox .mid { background:#fff; height: 190px; border-left:1px solid #ccc; overflow:hidden; }
+.callback .callbackBox .boto { background: url(../images/callbk-bg.png) no-repeat 0 -40px; height:20px }
+.callback .callbackBox .mid .ud_prevBtn, .callback .callbackBox .mid .ud_nextBtn { background: url(../images/callbk-sprite.png) no-repeat 0 0; cursor: pointer; height: 9px; left: 45px; position: absolute; width: 13px;  z-index:10 }
+.callback .callbackBox .mid .ud_prevBtn{top:7px;}
+.callback .callbackBox .mid .ud_nextBtn { background-position: 0 -20px; bottom: 7px; }
+.callback .callbackBox .mid .ud_prevBtn.disable { background-position: 0 -40px; cursor: auto }
+.callback .callbackBox .mid .ud_nextBtn.disable { background-position: 0 -60px; cursor: auto }
+.callback .callbackBox .mid li a { color:#575757; text-decoration:none; font-size:1.4em; font-weight:bold }
+.callback .callbackBox .mid li a:hover { color:#055ba8; }
+.callback .callbackBox .mid li:first-child { border-top:1px solid #cbcccc; }
+.callback .callbackBox .mid li { border-bottom:1px solid #cbcccc;  padding:15px 0 14px 0; }
+.callback .callbackBox .mid li a{   background: url(../images/callbk-sprite.png) no-repeat 0 0; padding:15px 0 14px 45px; }
+.callback .callbackBox .mid li.credit-card a{ background-position: 5px -77px; }
+.callback .callbackBox .mid li.personal-loan a{ background-position: 5px -121px }
+.callback .callbackBox .mid li.car-loan a{ background-position:5px -163px }
+.callback .callbackBox .mid li.twowheeler-loan a{ background-position:5px -208px }
+.callback .callbackBox .mid li.loan-against-property a{ background-position: 5px -249px; }
+.callback .callbackBox .mid li.home-loan a{ background-position:5px -294px }
+.callback .callbackBox .mid li.savings-account a{ background-position: 5px -338px }
+/*.callback .callbackBox .mid li.salary-account a{ background-position: 5px -383px }*/
+.callback .callbackBox .mid li.life-insurance a{ background-position: 5px -383px }
+/*Sel*/
+.callback .callbackBox .mid li.credit-card a:hover { background-position: 5px -434px; }
+.callback .callbackBox .mid li.personal-loan a:hover { background-position: 5px -481px }
+.callback .callbackBox .mid li.car-loan a:hover { background-position:5px -520px }
+.callback .callbackBox .mid li.twowheeler-loan a:hover { background-position:5px -568px }
+.callback .callbackBox .mid li.loan-against-property a:hover { background-position: 5px -606px; }
+.callback .callbackBox .mid li.home-loan a:hover { background-position:5px -651px }
+.callback .callbackBox .mid li.savings-account a:hover { background-position: 5px -695px }
+/*.callback .callbackBox .mid li.salary-account a:hover { background-position: 5px -740px }*/
+.callback .callbackBox .mid li.life-insurance a:hover { background-position: 5px -737px }
+.callback.hover .callbackBox .mid .ud_prevBtn, .callback.hover .callbackBox .mid .ud_nextBtn { left: 130px; }
+/*New Code for callback Function End*/
+
+
+/*Added on 31th july'14 - start*/
+
+
+.account_products_wrapper .new_one{ width:200px; float:left; color:#333; font-family:Arial, Helvetica, sans-serif; padding-right:12px;}
+
+.account_products_wrapper .new_one p{ padding:0 0 5px 11px; font-size:13px;}
+.smenav ul li.undefined {display:none}
+
+
+
+/*Added on 31th july'14 - end*/
+
+/*Added on 12th Jun'15 - PAYZAPP - Starts*/
+.pagetitle.payZappTitle h1 {font-weight:bold}
+.pagetitle.payZappTitle h1 span {float:left; font-size:0.7em; font-weight:normal; width:100%}
+div.insidepagetabcontent div.intro.payzappIntro {padding-top:10px; position:relative}
+img.logoPayZapp {position:absolute; right:0; /*bottom: 138px;*/ top:85px;}
+div.insidepagetabcontent div.intro.payzappIntro p.title {color:#001f79; font-size:1.9em}
+.oneClickPayOpt {float:left;/*padding:20px*/}
+.oneClickPayOpt li {border-left:1px solid #d2d2d2; float:left; padding:0 13px; width:109px}
+.oneClickPayOpt li:first-child {border-left:0}
+div#customertabs div.insidepagetabcontent div.topcontent p.pzTitle {background-color:#001f79; color:#fff; font-weight:bold; margin-bottom:10px; padding:2px; }
+div#customertabs div.insidepagetabcontent div.topcontent div.leftcol p.pzTitle, div#customertabs div.insidepagetabcontent div.topcontent div.midcol p.pzTitle, div#customertabs div.insidepagetabcontent div.topcontent div.rightcol p.pzTitle {float:none; font-size:1.3em; padding:4px}
+div#customertabs div.insidepagetabcontent div.topcontent div.leftcol ul.paymentOpt li{float:left; font-size:1.3em; padding:0 0 10px 30px; width:170px}
+div#customertabs div.insidepagetabcontent div.topcontent div.leftcol ul.paymentOpt li.onlineShopping {background:url(../images/payzapp/icon-onlineshopping.gif) 0 3px no-repeat}
+div#customertabs div.insidepagetabcontent div.topcontent div.leftcol ul.paymentOpt li.smartBuy {background:url(../images/payzapp/icon-smartbuy.gif) 3px 3px no-repeat}
+div#customertabs div.insidepagetabcontent div.topcontent div.leftcol ul.paymentOpt li.sendMoney {background:url(../images/payzapp/icon-sendmoney.gif) 1px 4px no-repeat}
+div#customertabs div.insidepagetabcontent div.topcontent div.leftcol ul.paymentOpt li.billPayments {background:url(../images/payzapp/icon-billpayments.gif) 5px 3px no-repeat}
+div#customertabs div.insidepagetabcontent div.topcontent div.leftcol ul.paymentOpt li.mobileRecharge {background:url(../images/payzapp/icon-mobile-recharge.gif) 6px 3px no-repeat}
+div#customertabs div.insidepagetabcontent div.topcontent div.midcol ul.payZappSteps {float:left; padding-bottom:35px; width:100%}
+div#customertabs div.insidepagetabcontent div.topcontent div.midcol ul.payZappSteps li{float:left; font-size:1.3em; padding:0 0 10px 22px; width:198px}
+div#customertabs div.insidepagetabcontent div.topcontent div.midcol ul.payZappSteps li.one {background:url(../images/payzapp/number-one.gif) 0 2px no-repeat}
+div#customertabs div.insidepagetabcontent div.topcontent div.midcol ul.payZappSteps li.two {background:url(../images/payzapp/number-two.gif) 0 2px no-repeat}
+div#customertabs div.insidepagetabcontent div.topcontent div.midcol ul.payZappSteps li.three {background:url(../images/payzapp/number-three.gif) 0 2px no-repeat}
+div#customertabs div.insidepagetabcontent div.topcontent div.midcol ul.payZappSteps li a {color:#ff0000; text-decoration:underline}
+div#customertabs div.insidepagetabcontent div.topcontent div.rightcol .downloadPayZapp ul li{float:left; min-height:80px; text-align: center; padding:10px; width:80px}
+div#customertabs div.insidepagetabcontent div.topcontent div.rightcol .downloadPayZapp ul li p {color: #001f79; float: none; font-size: 1.1em; line-height: 1em; padding: 0 0 4px}
+div#customertabs div.insidepagetabcontent div.topcontent div.rightcol .downloadPayZapp ul li p.small {font-size:1em; padding-bottom:0}
+div#customertabs div.insidepagetabcontent div.topcontent div.rightcol .downloadPayZapp ul li p.number {color:#fd0f1a; font-size:1.14em; font-weight:bold}
+div#customertabs div.insidepagetabcontent div.topcontent div.rightcol .downloadPayZapp ul li p.sms {font-size:1.5em; font-weight:bold; line-height:1.2em; padding-top:15px}
+div#customertabs div.insidepagetabcontent div.topcontent div.rightcol .downloadPayZapp ul li p.sms span {color:#ff0000}
+div#customertabs div.insidepagetabcontent div.topcontent div.rightcol .downloadPayZapp ul li.first {border-bottom:1px solid #8c8c8c; border-right:1px solid #8c8c8c; padding:0 10px}
+div#customertabs div.insidepagetabcontent div.topcontent div.rightcol .downloadPayZapp ul li.second {border-bottom:1px solid #8c8c8c; padding:0 10px}
+div#customertabs div.insidepagetabcontent div.topcontent div.rightcol .downloadPayZapp ul li.third {border-right:1px solid #8c8c8c;}
+div#customertabs div.insidepagetabcontent div.topcontent div.rightcol .downloadPayZapp ul li.third, div#customertabs div.insidepagetabcontent div.topcontent div.rightcol .downloadPayZapp ul li.fourth {padding-bottom:0}
+.payZappCarousel {float:left; text-align:center; width:100%}
+/*Added on 12th Jun'15 - PAYZAPP - Ends*/
+/*----- PAYZAPP carousel starts--- 18th June 2015 -- */
+
+.oneClickPayOptScroller {float:left; padding:20px; position:relative; width:677px}
+.oneClickPayOptScroller a.btn {float:left; height:24px; position:absolute; top:30px; width:16px}
+.oneClickPayOptScroller a.btn.prev {background:url(../images/payzapp/arrow-prev.gif) 0 0 no-repeat; left:3px}
+.oneClickPayOptScroller a.btn.next {background:url(../images/payzapp/arrow-next.gif) 0 0 no-repeat; right:3px}
+.oneClickPayOptScroller a.btn.inActive {-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=50); -khtml-opacity: 0.5;	opacity:0.5; cursor:default}
+.oneClickPayOptScroller .scroller {float: left; height:44px; overflow: hidden; width:100%}
+
+.payZappCarousel {float:left; padding:0 12px; position:relative; width:196px}
+.payZappCarousel li {float:left; width:196px}
+.payZappCarousel a.btn {float:left; height:18px; position:absolute; top:50px; width:12px}
+.payZappCarousel a.btn.prev {background:url(../images/payzapp/arrow-prev-car.png) 0 0 no-repeat; left:0}
+.payZappCarousel a.btn.next {background:url(../images/payzapp/arrow-next-car.png) 0 0 no-repeat; right:0}
+.payZappCarousel a.btn.inActive {-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; filter: alpha(opacity=50); -khtml-opacity: 0.5;	opacity:0.5; cursor:default}
+.payZappCarousel .scroller {float: left; height:134px; overflow: hidden; width:100%}
+.accordianWrap {float:left; padding:10px 9px 10px 10px; width:700px}
+.accordianWrap p.accordHeading {background: url(../images/payzapp/sitemap_plusbg.gif) no-repeat 670px 10px #f3f3f3; border:1px solid #a9a9a9; color:#005593; cursor: pointer; float:left; font-size:1.3em; font-weight:bold; padding: 9px 8px 9px 7px; width: 680px}
+.accordianWrap p.accordHeading.active {background: url(../images/payzapp/sitemap_minusbg.gif) no-repeat 670px 10px #f3f3f3}
+.accordianWrap .accordianContent {display:none; border:1px solid #c6c6c6; border-top:none; float:left; padding:10px; width:675px}
+.accordianWrap .accordianContent p {font-size:1.3em; line-height:1.2em; padding:0 0 7px}
+.accordianWrap .accordianContent p.question {font-weight:bold; padding:9px 0 5px}
+.accordianWrap .accordianContent ul li{background:url(../images/payzapp/blackbullet.png) no-repeat 0 5px; font-size:1.3em; padding:0 0 10px 12px}
+.accordianWrap .accordianContent table {border-top:1px solid #c6c6c6; border-left:1px solid #c6c6c6}
+.accordianWrap .accordianContent table td {border-bottom:1px solid #c6c6c6; border-right:1px solid #c6c6c6; padding:7px; font-size:1.3em}
+.accordianWrap .accordianContent li table {margin-top:10px}
+.accordianWrap .accordianContent li table td {font-size:1em}
+/*----- PAYZAPP carousel ends--- 18th June 2015 -- */
+/* smartBuy Navigation start*/
+.smartBuyTab .lhssection img{ margin-left:22px}
+.smartBuyTab .dropdownWrap,.smartBuyTab .dropdownWrap .midcrv{ width:445px}
+.smartBuyTab .dropdownWrap .midcrv .lhssection{ width:170px;height:160px;border-right:2px solid #239edd;}
+.smartBuyTab .dropdownWrap .midcrv img{padding-left:80px;}
+/* smartBuy Navigation end*/
+/*----------------New Imp Msg section-----24 July2015----------------------*/
+.impmsgnew li {
+    list-style: disc;
+    margin: 0 0 10px 10px;
+}
+/*-----------------New Imp Msg section ENDS--------------------------*/
+.callback .callbackBox .mid li.savings-account {display:none}
+/* Added on 10/12/2015 for audio on home page*/
+div.floatingfooterlinks ul li.firstItem{padding-left: 0px;}
+
+
+
+/*-------for apply online button 28june2016-----------*/
+.additionallink2{ padding-left:23px;}
+/*-------------------*/
