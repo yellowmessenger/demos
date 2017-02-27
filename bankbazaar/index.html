@@ -44,17 +44,17 @@
         return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
     }
     var ctx = "/";
-    
+
         var pt = 'car-loan';
         var url = pt + "/ajax-content.html?ajax=true";
 
         var variant = getParameterByName('variant');
         var isSentence = false;
-        
+
         if(variant != 'slide' && (window.location.pathname == '/home-loan.html' || window.location.pathname == '/personal-loan.html' || window.location.pathname == '/car-loan.html'))
             isSentence = true;
 
-        
+
 
         if(isSentence == true) {
             url = url + "&eligSentenceForm=true";
@@ -72,7 +72,7 @@
                 if (request.readyState == 4 && request.status == 200) {
                     proceedWithAjaxCalls = true;
                     document.getElementById("ajax-content").innerHTML = request.responseText;
-                    
+
                         var channel = 'DEFAULT';
                         var productType = 'Car_Loan';
                         var website = 'MARKETPLACE';
@@ -89,7 +89,7 @@
                                     "&returningUser=" + returningUser + "&internalAccess=" + internalAccess + "&isMonitoringAgent=" + isMonitoringAgent + "&partnerName=" + partnerName + "&t=" + pagehitTime;
                             getNewImage().src = pagehitreq;
                         }
-                    
+
                     // Report the same window login case.
                     if(typeof(reportSameWindowLoginResult) === typeof(Function)) {
                         reportSameWindowLoginResult();
@@ -101,7 +101,7 @@
             request.send();
 
         }, 0);
-    
+
     function firePixel() {
         setTimeout(function() {
             var request = getXmlHttpRequestObject();
@@ -134,7 +134,7 @@
 
 </script>
 <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><style id="holderjs-style" type="text/css"></style>
-    
+
 
 <meta property="og:title" content="Apply Car Loans @ 9.65% Interest Rates in India"/>
 <meta name="keywords" content="car loan, car loans, hdfc car loan, icici car loan, axis bank car loan, sbi car loan, car loan interest rate, apply car loan online, best car loan, car loan emi calculator"/>
@@ -194,14 +194,14 @@
 <link rel="stylesheet" type="text/css" media="screen" href="https://www.bankbazaar.com/gzip_864791822/bundles/lw-loan-sentence-form.css" />
 <style type="text/css">
         .dontshow {display: none;}.preLoad-Image{height:0; overflow: hidden; font-size: 0; line-height: 0;}
-         
+
 .product-interlinks .panel-body ul li { margin: 0 0 10px 0; }.mobile .offers-page .zopim{display:none !important;}
 .disqus_iframe {position: relative;}
 .disqus_iframe:after {content: "";display: block;height: 54px;width: 100%;position: absolute;bottom: 0;background: white;}
-.footer-social-icons .bbicons-ft-tt{background-position:-84px -41px; } 
-.footer-social-icons .bbicons-ft-in{background-position:-111px -41px;} 
-.footer-social-icons .bbicons-ft-fb{background-position:-137px -41px;} 
-.footer-social-icons .bbicons-ft-gp{background-position:-164px -41px;} 
+.footer-social-icons .bbicons-ft-tt{background-position:-84px -41px; }
+.footer-social-icons .bbicons-ft-in{background-position:-111px -41px;}
+.footer-social-icons .bbicons-ft-fb{background-position:-137px -41px;}
+.footer-social-icons .bbicons-ft-gp{background-position:-164px -41px;}
 .footer-social-icons .bbicons-ft-instg{background-position:-190px -41px;}
 .icon-bank-58{background-position: -335px -115px !important;}
 .p1-cc .bbicons-details {background-position: 4px -786px;}
@@ -532,7 +532,7 @@
     </div>
 <div class='screen-block-hamburger dontshow'></div><!-- Include Login Form -->
     <div class="modal fade bb-login" id="js-sign-in-box" tabindex="-1" role="dialog" aria-labelledby="continueLabel1" aria-hidden="true"
-        
+
         >
 
     <div class="ajax-hidden-variable"></div>
@@ -718,8 +718,8 @@
                     </ul>
         </div>
     </div>
-    <div style="width: 100%; height: 250px; margin:auto" id="adsByBotplatform-sbi_bot"></div>
-<script src="https://chat.botplatform.io/plugin-ad-v1.js?bot=sbi_bot&input=false" async defer> </script>
+    <div style="width: 100%; height: 250px; margin:auto" id="adsByBotplatform-hdfcadbot"></div>
+<script src="https://chat.botplatform.io/plugin-ad-v1.js?bot=hdfcadbot&input=false" async defer> </script>
 </div><!-- /tabs -->
 
 
@@ -731,7 +731,7 @@
                     <div class="container">
                         <h1 class="cl-slider-title">Get your car loan quote in just seconds</h1>
                         <div class="cl-slider-title-sub">
-                            
+
                                 We need a little info to see if you qualify for discounts.
                             </div>
                         <div class="cl-slider-elb-form quick-quote-height">
@@ -749,7 +749,7 @@
 
 <input type="hidden" name="sector" value="INDIA" id="sector"/>
 </li><input type="hidden" name="form.details.formType" value="short" id="eFormSentence_form_details_formType"/><div class="cl-slider-elb-form">
-        
+
 
 <input type="hidden" name="form.details.baseEligibilityId" value="145A3A7B22AAAA" id="eFormSentence_form_details_baseEligibilityId"/><input type="hidden" name="form.details.applicant.employment.type" value="SALARIED" id="employmentType"/><input type="hidden" name="form.details.applicant.citizenshipStatus" value="RESIDENT_INDIAN" id="eFormSentence_form_details_applicant_citizenshipStatus"/>
 I live in
@@ -1235,7 +1235,7 @@ Wagon R            </option>
 </div>
                     <div class="tab-pane active" id="cl-card-comparisons">
     <div class="container">
-        
+
 <input type="hidden" name="isLeadCreatedForProduct" value="false" id="isLeadCreatedForProduct"/>
 
 <div id="filter-section" class="filter-section disable-section">
@@ -1537,7 +1537,7 @@ Floating                <a href="javascript:void(0)" style="display:none" data-v
 <input type="hidden" name="" value="INTEREST_RATE_RANGE" id="sliderName"/>            <button data-actionLoc="offer:Interest Rate Range" data-action="click:closeFilter" class="js-filter-close close" type="button"><span aria-hidden="true">&times;</span></button>
             <div class="col-xs-12 col-sm-12 col-md-12 loan-amt-slider ">
                 <div class="slider-min pull-left">
-                      
+
                         <span class="js-number">10.0</span>   %
                 </div>
                 <div class="col-xs-5 col-sm-8 col-md-8 pad-none isSlider" data-name="new" data-value="" data-actionLoc="offer:Interest Rate Range-slider" data-action="slideStop:filterSelectValue:inclData">
@@ -1736,7 +1736,7 @@ Special offer for women                <a href="javascript:void(0)" style="displ
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -1789,7 +1789,7 @@ Tenure Range                <span class="col-sub-text"></span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -1809,7 +1809,7 @@ Tenure Range                <span class="col-sub-text"></span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>            <section class="clearfix js-offers-row
@@ -1830,7 +1830,7 @@ Tenure Range                <span class="col-sub-text"></span>
     <div class="offer-section-column col-same-height col-middle card">
 
     <span class="offer-first-column">
-    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/icici-bank.png">    
+    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/icici-bank.png">
 <img src="https://www.bankbazaar.com/images/india/bank-offer/small/icici-bank.png" alt="ICICI BANK" title="ICICI BANK"/>
 </span>
    <span class="js-product-name-section offers-card-name">
@@ -1950,7 +1950,7 @@ Get Quote        </a>
                         </div>
                         <!--A/B test -->
 
-       
+
                          <!--end-->
                             <div class="js-book-details book-details clearfix">
 
@@ -1986,7 +1986,7 @@ Within 30 minutes    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -2002,12 +2002,12 @@ What you'll love    </div>
 
     <nav class="pros">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 No guarantor required    </span>
                     </li>
-                            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2030,7 +2030,7 @@ Documents    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Income proof, bank statement and one photograph</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2077,7 +2077,7 @@ Frills    </div>
         "></span>No guarantor required
     </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2106,7 +2106,7 @@ Fees &amp; Charges    </div>
     <span class="js-title js-format-string value-title ">Partpayment fee = Within 12 months - 6% of loan outstanding; between 13 - 24 months - 5% of loan outstanding; 3% thereafter</span>
     <span class="bbicons-help sprite-offers-common js-cluetip"  data-toggle="tooltip" data-placement="right" title="Allowed twice during loan tenor and once in a year. Max amount is 25 % of loan amt and Min of 1 EMI can be paid. Partpayment cant be done in first 6 months and last 12 months of loan tenor"></span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2131,7 +2131,7 @@ Value Adds    </div>
     <span class="title js-title">Branches</span>
     <span class="subtitle">4,050</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2148,17 +2148,17 @@ Eligibility Criteria    </div>
 
     <nav class="eligibility-criteria">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Age at least 23 and less than 70    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 ICICI car loans can be procured by salaried individuals, self-employed professionals and non- professionals    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2183,7 +2183,7 @@ ICICI car loans can be procured by salaried individuals, self-employed professio
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>            <section class="clearfix js-offers-row
@@ -2204,7 +2204,7 @@ ICICI car loans can be procured by salaried individuals, self-employed professio
     <div class="offer-section-column col-same-height col-middle card">
 
     <span class="offer-first-column">
-    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/tvs-credit-services.png">    
+    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/tvs-credit-services.png">
 <img src="https://www.bankbazaar.com/images/india/bank-offer/small/tvs-credit-services.png" alt="TVS Credit Services" title="TVS Credit Services"/>
 </span>
    <span class="js-product-name-section offers-card-name">
@@ -2327,7 +2327,7 @@ Get Quote        </a>
                         </div>
                         <!--A/B test -->
 
-       
+
                          <!--end-->
                             <div class="js-book-details book-details clearfix">
 
@@ -2372,7 +2372,7 @@ Paperless approval option available    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -2388,17 +2388,17 @@ What you'll love    </div>
 
     <nav class="pros">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Nil processing fee    </span>
                     </li>
-                                 
+
                     <li >
     <span class="js-title" >
 No guarantor required    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2421,7 +2421,7 @@ Documents    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Income proof, bank statement and one photograph</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2468,7 +2468,7 @@ Frills    </div>
         "></span>No guarantor required
     </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2485,17 +2485,17 @@ Think about    </div>
 
     <nav class="cons">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Has pre-closure fee    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 No part payment option    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2515,7 +2515,7 @@ Fees &amp; Charges    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Preclosure fee =  remaining EMI more than 24 months - 5%; remaining EMI is 24 months - 4%; remaining EMI being 12 months - 3%</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2540,7 +2540,7 @@ Value Adds    </div>
     <span class="title js-title">Branches</span>
     <span class="subtitle">20</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2557,17 +2557,17 @@ Eligibility Criteria    </div>
 
     <nav class="eligibility-criteria">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Age at least 21 and less than 65    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Minimum income required Rs.15,000 per month    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2592,7 +2592,7 @@ Minimum income required Rs.15,000 per month    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>            <section class="clearfix js-offers-row
@@ -2613,7 +2613,7 @@ Minimum income required Rs.15,000 per month    </span>
     <div class="offer-section-column col-same-height col-middle card">
 
     <span class="offer-first-column">
-    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/oriental-bank-of-commerce.png">    
+    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/oriental-bank-of-commerce.png">
 <img src="https://www.bankbazaar.com/images/india/bank-offer/small/oriental-bank-of-commerce.png" alt="ORIENTAL BANK OF COMMERCE" title="ORIENTAL BANK OF COMMERCE"/>
 </span>
    <span class="js-product-name-section offers-card-name">
@@ -2734,7 +2734,7 @@ Get Quote        </a>
                         </div>
                         <!--A/B test -->
 
-       
+
                          <!--end-->
                             <div class="js-book-details book-details clearfix">
 
@@ -2770,7 +2770,7 @@ Within 30 minutes    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -2786,17 +2786,17 @@ What you'll love    </div>
 
     <nav class="pros">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 No pre-closure fee    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Maximum loan maturity age of 65 years for salaried customers with pension    </span>
                     </li>
-                            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2819,7 +2819,7 @@ Documents    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Income proof, bank statement and one photograph</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2866,7 +2866,7 @@ Frills    </div>
          disabled"></span>Part-payment available
     </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2883,17 +2883,17 @@ Think about    </div>
 
     <nav class="cons">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Application available only in branch    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Guarantor required    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2913,7 +2913,7 @@ Fees &amp; Charges    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Preclosure fee = <span class=fui-rupee bb-rupee-xs></span>0</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2938,7 +2938,7 @@ Value Adds    </div>
     <span class="title js-title">Branches</span>
     <span class="subtitle">2366</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2955,22 +2955,22 @@ Eligibility Criteria    </div>
 
     <nav class="eligibility-criteria">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 The applicant should be earning at least Rs.20,000 per month(Gross income)    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Salaried applicants should have worked atleast an year in the current job. The experience from previous employers will also be considered to cover the minimum experience criteria    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Business entities should be established for more than two years    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -2995,7 +2995,7 @@ Business entities should be established for more than two years    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>            <section class="clearfix js-offers-row
@@ -3016,7 +3016,7 @@ Business entities should be established for more than two years    </span>
     <div class="offer-section-column col-same-height col-middle card">
 
     <span class="offer-first-column">
-    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/sundaram-finance.png">    
+    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/sundaram-finance.png">
 <img src="https://www.bankbazaar.com/images/india/bank-offer/small/sundaram-finance.png" alt="Sundaram Finance" title="Sundaram Finance"/>
 </span>
    <span class="js-product-name-section offers-card-name">
@@ -3137,7 +3137,7 @@ Get Quote        </a>
                         </div>
                         <!--A/B test -->
 
-       
+
                          <!--end-->
                             <div class="js-book-details book-details clearfix">
 
@@ -3173,7 +3173,7 @@ Within 30 minutes    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -3189,12 +3189,12 @@ What you'll love    </div>
 
     <nav class="pros">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 No guarantor required    </span>
                     </li>
-                            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3217,7 +3217,7 @@ Documents    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Income proof, bank statement and one photograph</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3264,7 +3264,7 @@ Frills    </div>
         "></span>No guarantor required
     </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3281,17 +3281,17 @@ Think about    </div>
 
     <nav class="cons">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Has pre-closure fee    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 No part payment option    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3311,7 +3311,7 @@ Fees &amp; Charges    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Preclosure fee = 3% of principal outstanding</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3336,7 +3336,7 @@ Value Adds    </div>
     <span class="title js-title">Branches</span>
     <span class="subtitle">566</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3353,12 +3353,12 @@ Eligibility Criteria    </div>
 
     <nav class="eligibility-criteria">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 At least 18 years old and less than 65    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3383,7 +3383,7 @@ At least 18 years old and less than 65    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>            <section class="clearfix js-offers-row
@@ -3404,7 +3404,7 @@ At least 18 years old and less than 65    </span>
     <div class="offer-section-column col-same-height col-middle card">
 
     <span class="offer-first-column">
-    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/hdfc-bank.png">    
+    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/hdfc-bank.png">
 <img src="https://www.bankbazaar.com/images/india/bank-offer/small/hdfc-bank.png" alt="HDFC BANK" title="HDFC BANK"/>
 </span>
    <span class="js-product-name-section offers-card-name">
@@ -3524,7 +3524,7 @@ Get Approval        </a>
                         </div>
                         <!--A/B test -->
 
-       
+
                          <!--end-->
                             <div class="js-book-details book-details clearfix">
 
@@ -3569,7 +3569,7 @@ Paperless approval option available    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -3585,22 +3585,22 @@ What you'll love    </div>
 
     <nav class="pros">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 No pre-closure fees after 24 months    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 No guarantor required    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Part payment option    </span>
                     </li>
-                            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3623,7 +3623,7 @@ Documents    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Income proof, bank statement and one photograph</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3670,7 +3670,7 @@ Frills    </div>
         "></span>No guarantor required
     </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3687,12 +3687,12 @@ Think about    </div>
 
     <nav class="cons">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Has pre-closure fee    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3712,7 +3712,7 @@ Fees &amp; Charges    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Preclosure fee = Permitted after 6 months. 6% of principal outstanding (plus ST) from 7 to 12 months. 5% (plus ST) in 2nd year. No preclosure charges thereafter</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3737,7 +3737,7 @@ Value Adds    </div>
     <span class="title js-title">Branches</span>
     <span class="subtitle">4,014</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3766,7 +3766,7 @@ Value Adds    </div>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>            <section class="clearfix js-offers-row
@@ -3787,7 +3787,7 @@ Value Adds    </div>
     <div class="offer-section-column col-same-height col-middle card">
 
     <span class="offer-first-column">
-    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/capital-first.png">    
+    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/capital-first.png">
 <img src="https://www.bankbazaar.com/images/india/bank-offer/small/capital-first.png" alt="CAPITAL FIRST" title="CAPITAL FIRST"/>
 </span>
    <span class="js-product-name-section offers-card-name">
@@ -3909,7 +3909,7 @@ Get Quote        </a>
                         </div>
                         <!--A/B test -->
 
-       
+
                          <!--end-->
                             <div class="js-book-details book-details clearfix">
 
@@ -3954,7 +3954,7 @@ Within 30 minutes    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -3970,12 +3970,12 @@ What you'll love    </div>
 
     <nav class="pros">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 No guarantor required    </span>
                     </li>
-                            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -3998,7 +3998,7 @@ Documents    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Income proof, bank statement and one photograph</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4045,7 +4045,7 @@ Frills    </div>
         "></span>No guarantor required
     </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4062,17 +4062,17 @@ Think about    </div>
 
     <nav class="cons">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Conditional pre-closure - only after 6 months    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 No part payment option    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4092,7 +4092,7 @@ Fees &amp; Charges    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Preclosure fee = 4% of the principal outstanding amount + Taxes as applicable</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4117,7 +4117,7 @@ Value Adds    </div>
     <span class="title js-title">Branches</span>
     <span class="subtitle">37</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4134,17 +4134,17 @@ Eligibility Criteria    </div>
 
     <nav class="eligibility-criteria">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Age at least 21 and less than 65    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 He/She should have a total work experience of more than 2 years in general    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4169,7 +4169,7 @@ He/She should have a total work experience of more than 2 years in general    </
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>            <section class="clearfix js-offers-row
@@ -4190,7 +4190,7 @@ He/She should have a total work experience of more than 2 years in general    </
     <div class="offer-section-column col-same-height col-middle card">
 
     <span class="offer-first-column">
-    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/axis-bank.png">    
+    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/axis-bank.png">
 <img src="https://www.bankbazaar.com/images/india/bank-offer/small/axis-bank.png" alt="AXIS BANK" title="AXIS BANK"/>
 </span>
    <span class="js-product-name-section offers-card-name">
@@ -4310,7 +4310,7 @@ Get Quote        </a>
                         </div>
                         <!--A/B test -->
 
-       
+
                          <!--end-->
                             <div class="js-book-details book-details clearfix">
 
@@ -4346,7 +4346,7 @@ Within 30 minutes    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -4362,17 +4362,17 @@ What you'll love    </div>
 
     <nav class="pros">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 No guarantor required    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Part payment option    </span>
                     </li>
-                            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4395,7 +4395,7 @@ Documents    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Income proof, bank statement and one photograph</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4442,7 +4442,7 @@ Frills    </div>
         "></span>No guarantor required
     </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4459,12 +4459,12 @@ Think about    </div>
 
     <nav class="cons">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Has pre-closure fee    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4487,7 +4487,7 @@ Fees &amp; Charges    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Part payment fee allowed only twice in a financial year</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4512,7 +4512,7 @@ Value Adds    </div>
     <span class="title js-title">Branches</span>
     <span class="subtitle">2,402</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4529,27 +4529,27 @@ Eligibility Criteria    </div>
 
     <nav class="eligibility-criteria">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Age at least 21 and less than 75 for salaried    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Age at least 18 and less than 75 for self-employed    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 In order to meet Income eligibility parameters, the applicant should have a minimum net annual salary of Rs. 2.4 Lac p.a    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Self-employed applicants should have a minimum of Rs. 1.8 Lac p.a as net annual business income for selected car models and Rs. 2.0 Lac p.a. for others    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4574,7 +4574,7 @@ Self-employed applicants should have a minimum of Rs. 1.8 Lac p.a as net annual 
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>            <section class="clearfix js-offers-row
@@ -4595,7 +4595,7 @@ Self-employed applicants should have a minimum of Rs. 1.8 Lac p.a as net annual 
     <div class="offer-section-column col-same-height col-middle card">
 
     <span class="offer-first-column">
-    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/hdfc-bank.png">    
+    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/hdfc-bank.png">
 <img src="https://www.bankbazaar.com/images/india/bank-offer/small/hdfc-bank.png" alt="HDFC BANK" title="HDFC BANK"/>
 </span>
    <span class="js-product-name-section offers-card-name">
@@ -4716,7 +4716,7 @@ Get Approval        </a>
                         </div>
                         <!--A/B test -->
 
-       
+
                          <!--end-->
                             <div class="js-book-details book-details clearfix">
 
@@ -4761,7 +4761,7 @@ Paperless approval option available    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -4777,17 +4777,17 @@ What you'll love    </div>
 
     <nav class="pros">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 No pre-closure fees after 18 months    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 No guarantor required    </span>
                     </li>
-                            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4810,7 +4810,7 @@ Documents    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Income proof, bank statement and one photograph</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4857,7 +4857,7 @@ Frills    </div>
         "></span>No guarantor required
     </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4882,7 +4882,7 @@ Fees &amp; Charges    </div>
     <span class="js-title js-format-string value-title ">Preclosure fee = Permitted only after 6 months.</span>
     <span class="bbicons-help sprite-offers-common js-cluetip"  data-toggle="tooltip" data-placement="right" title="6% of principal outstanding (plus ST) from 7 to 12 months. 5% (plus ST) from 13 to 18 months. No preclosure charges thereafter."></span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4907,7 +4907,7 @@ Value Adds    </div>
     <span class="title js-title">Branches</span>
     <span class="subtitle">4,014</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4924,27 +4924,27 @@ Eligibility Criteria    </div>
 
     <nav class="eligibility-criteria">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Age at least 21 and less than 60 for salaried    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Age at least 25 and less than 65 for self-employed    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Must have a minimum of 2 years work experience, with a minimum of 1 year with the current employer    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Must have a minimum of 3 years of experience in the current business establishment    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -4969,7 +4969,7 @@ Must have a minimum of 3 years of experience in the current business establishme
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>            <section class="clearfix js-offers-row
@@ -4990,7 +4990,7 @@ Must have a minimum of 3 years of experience in the current business establishme
     <div class="offer-section-column col-same-height col-middle card">
 
     <span class="offer-first-column">
-    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/dena-bank.png">    
+    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/dena-bank.png">
 <img src="https://www.bankbazaar.com/images/india/bank-offer/small/dena-bank.png" alt="DENA BANK" title="DENA BANK"/>
 </span>
    <span class="js-product-name-section offers-card-name">
@@ -5112,7 +5112,7 @@ Get Quote        </a>
                         </div>
                         <!--A/B test -->
 
-       
+
                          <!--end-->
                             <div class="js-book-details book-details clearfix">
 
@@ -5148,7 +5148,7 @@ Within 30 minutes    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -5164,22 +5164,22 @@ What you'll love    </div>
 
     <nav class="pros">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 No guarantor required    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Part payment option    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 No pre-closure fee    </span>
                     </li>
-                            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5202,7 +5202,7 @@ Documents    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Income proof, bank statement and one photograph</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5249,7 +5249,7 @@ Frills    </div>
         "></span>No guarantor required
     </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5276,7 +5276,7 @@ Fees &amp; Charges    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Part payment fee = <span class=fui-rupee bb-rupee-xs></span>0</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5301,7 +5301,7 @@ Value Adds    </div>
     <span class="title js-title">Branches</span>
     <span class="subtitle">1,773</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5318,22 +5318,22 @@ Eligibility Criteria    </div>
 
     <nav class="eligibility-criteria">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Individuals with a gross income of Rs 6 lakhs per annum or above    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Companies and partnership firms showing profits for the last two years are eligible    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 The previous year&#39;s net profit reflected in the Audited Balance Sheet should be higher that Rs 3 lakhs    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5358,7 +5358,7 @@ The previous year&#39;s net profit reflected in the Audited Balance Sheet should
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>            <section class="clearfix js-offers-row
@@ -5379,7 +5379,7 @@ The previous year&#39;s net profit reflected in the Audited Balance Sheet should
     <div class="offer-section-column col-same-height col-middle card">
 
     <span class="offer-first-column">
-    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/au-financiers-ltd-3.png">    
+    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/au-financiers-ltd-3.png">
 <img src="https://www.bankbazaar.com/images/india/bank-offer/small/au-financiers-ltd-3.png" alt="Au FINANCIERS LIMITED" title="Au FINANCIERS LIMITED"/>
 </span>
    <span class="js-product-name-section offers-card-name">
@@ -5489,7 +5489,7 @@ Get Quote        </a>
                         </div>
                         <!--A/B test -->
 
-       
+
                          <!--end-->
                             <div class="js-book-details book-details clearfix">
 
@@ -5525,7 +5525,7 @@ Within 30 minutes    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -5541,12 +5541,12 @@ What you'll love    </div>
 
     <nav class="pros">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 NA    </span>
                     </li>
-                            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5569,7 +5569,7 @@ Documents    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Income proof, bank statement and one photograph</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5610,7 +5610,7 @@ Frills    </div>
          disabled"></span>Top-up loan available
     </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5627,17 +5627,17 @@ Think about    </div>
 
     <nav class="cons">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Has pre-closure fee    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Guarantor required    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5657,7 +5657,7 @@ Fees &amp; Charges    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Preclosure fee = Within a year - 5% of the principal outstanding amount + Taxes as applicable ; After a year - 3% of the principal outstanding amount + Taxes as applicable</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5682,7 +5682,7 @@ Value Adds    </div>
     <span class="title js-title">Branches</span>
     <span class="subtitle">284</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5699,17 +5699,17 @@ Eligibility Criteria    </div>
 
     <nav class="eligibility-criteria">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Age at least 21 and less than 65    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Applicant must be a citizen of India    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5734,7 +5734,7 @@ Applicant must be a citizen of India    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>            <section class="clearfix js-offers-row
@@ -5755,7 +5755,7 @@ Applicant must be a citizen of India    </span>
     <div class="offer-section-column col-same-height col-middle card">
 
     <span class="offer-first-column">
-    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/sundaram-finance.png">    
+    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/sundaram-finance.png">
 <img src="https://www.bankbazaar.com/images/india/bank-offer/small/sundaram-finance.png" alt="Sundaram Finance" title="Sundaram Finance"/>
 </span>
    <span class="js-product-name-section offers-card-name">
@@ -5876,7 +5876,7 @@ Get Quote        </a>
                         </div>
                         <!--A/B test -->
 
-       
+
                          <!--end-->
                             <div class="js-book-details book-details clearfix">
 
@@ -5912,7 +5912,7 @@ Within 30 minutes    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -5928,12 +5928,12 @@ What you'll love    </div>
 
     <nav class="pros">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 No guarantor required    </span>
                     </li>
-                            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -5959,7 +5959,7 @@ Documents    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Copy of RC & Insurance Policy</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -6006,7 +6006,7 @@ Frills    </div>
         "></span>No guarantor required
     </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -6023,17 +6023,17 @@ Think about    </div>
 
     <nav class="cons">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Has pre-closure fee    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 No part payment option    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -6053,7 +6053,7 @@ Fees &amp; Charges    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Preclosure fee = 3% of principal outstanding</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -6078,7 +6078,7 @@ Value Adds    </div>
     <span class="title js-title">Branches</span>
     <span class="subtitle">566</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -6095,12 +6095,12 @@ Eligibility Criteria    </div>
 
     <nav class="eligibility-criteria">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 At least 18 years old and less than 65    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -6125,7 +6125,7 @@ At least 18 years old and less than 65    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>            <section class="clearfix js-offers-row
@@ -6146,7 +6146,7 @@ At least 18 years old and less than 65    </span>
     <div class="offer-section-column col-same-height col-middle card">
 
     <span class="offer-first-column">
-    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/oriental-bank-of-commerce.png">    
+    <span class="js-product-logo-section product-logo" data-compare-img="/images/india/bank-offer/small/oriental-bank-of-commerce.png">
 <img src="https://www.bankbazaar.com/images/india/bank-offer/small/oriental-bank-of-commerce.png" alt="ORIENTAL BANK OF COMMERCE" title="ORIENTAL BANK OF COMMERCE"/>
 </span>
    <span class="js-product-name-section offers-card-name">
@@ -6267,7 +6267,7 @@ Get Quote        </a>
                         </div>
                         <!--A/B test -->
 
-       
+
                          <!--end-->
                             <div class="js-book-details book-details clearfix">
 
@@ -6312,7 +6312,7 @@ SPECIAL OFFER FOR WOMEN    </span>
 <input type="hidden" name="productTypeCategory" id="productTypeCategory" value="LOAN"/>
 
 <input type="hidden" name="repeatedNotifsList" id="repeatedNotifsList"   value="PREAPPROVED_LOAN_NOTIF,LOANS_FALLBACK_OFFER_NOTIF,DISABLE_CTA_BASED_ON_CAR_MODEL"/>
-<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/> 
+<input type="hidden" name="notifLoadDelay" id="notifLoadDelay"   value="2.5"/>
 <input type="hidden" name="notifShowTime" id="notifShowTime"   value="32"/>
 <input type="hidden" name="allNotifShowTime" id="allNotifShowTime"   value="{&quot;SENTENCE_FORM_NOTIF&quot;:&quot;32&quot;,&quot;COMPLETE_ELIG_NOTIF&quot;:&quot;32&quot;,&quot;PREAPPROVED_LOAN_NOTIF&quot;:&quot;32&quot;,&quot;CC_DC_REDIRECT_NOTIF&quot;:&quot;32&quot;,&quot;LOANS_FALLBACK_OFFER_NOTIF&quot;:&quot;32&quot;,&quot;BANK_NOT_AVAILABLE_NOTIF&quot;:&quot;32&quot;,&quot;DISABLE_CTA_BASED_ON_CAR_MODEL&quot;:&quot;5000&quot;}
 "/><input type="hidden" name="mutualFundAppLink" value="" id="mutualFundAppLink"/>
@@ -6328,17 +6328,17 @@ What you'll love    </div>
 
     <nav class="pros">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 No pre-closure fee    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Maximum loan maturity age of 65 years for salaried customers with pension    </span>
                     </li>
-                            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -6361,7 +6361,7 @@ Documents    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Income proof, bank statement and one photograph</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -6408,7 +6408,7 @@ Frills    </div>
          disabled"></span>Part-payment available
     </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -6425,17 +6425,17 @@ Think about    </div>
 
     <nav class="cons">
         <ul>
-                 
+
                     <li >
     <span class="js-title" >
 Application available only in branch    </span>
                     </li>
-                 
+
                     <li >
     <span class="js-title" >
 Guarantor required    </span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -6455,7 +6455,7 @@ Fees &amp; Charges    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Preclosure fee = <span class=fui-rupee bb-rupee-xs></span>0</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -6480,7 +6480,7 @@ Value Adds    </div>
     <span class="title js-title">Branches</span>
     <span class="subtitle">2,366</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -6507,7 +6507,7 @@ Eligibility Criteria    </div>
                                     <li>
     <span class="js-title js-format-string value-title ">Business entities: Up and running for 2 years</span>
                     </li>
-            
+
             <li class="js-view-less view-less dontshow" data-actionLoc="offer:details-Viewless" data-action="click:explore"><a class="link pull-right" href="javascript:void(0)">View less</a></li>
         </ul>
     </nav>
@@ -6649,7 +6649,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
             <div id="dataDrivenEligCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false"
                  data-wrap="false" data-actionLoc="slideElig:slideNav" data-action="swipePrevWE,swipeNextWE:swipePrev,swipeNext">
             <input type="hidden" name="" value="18" id="totalFields"/><input type="hidden" name="" value="0" id="prefilledFields"/><div class="carousel-inner js-el-carousel-inner">
-                
+
 
 
 
@@ -8435,7 +8435,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
                        data-errorplacement = "errorAtContainer"
                        data-toggle="checkbox" checked>
         <div class="contactme-slide-additional-line validate">
-                    I authorize BankBazaar to call/SMS/email me about its products. I have accepted the terms of the 
+                    I authorize BankBazaar to call/SMS/email me about its products. I have accepted the terms of the
                             <a href="https://www.bankbazaar.com/privacy-policy.html" target="_blank" class="">Privacy Policy</a>
                     . I am aware that credit approval is at the sole discretion of the bank.
     </div>
@@ -8534,7 +8534,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
     <div class="review-heading">
                 <h1 class="font-lgr">BankBazaar <span itemprop="name">
                         Car Loan</span>
-                    
+
                         is Rated as "Excellent!" by 22583 Users
                     </h1>
             </div>
@@ -8585,7 +8585,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
                 <a href="https://www.bankbazaar.com/customer-review.html" class="btn review_btn mrs" target="_blank" data-action="click:writeReview" data-actionLoc="explore:hungry-prod">Write Review</a>
                 <div class="pull-right social-media-icons">
                     <div class="social-like-share cc-social">
-                        
+
 <!-- +1 button -->
 
 
@@ -9216,7 +9216,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 <p>Once a customer is eligible and meets all the terms and conditions stipulated, the goCash from Goibibo that he/she is qualified for is sent to the customer's e-mail address that is specified in the loan application form, upon the concerned bank's approval of the Car Loan application.</p>
 
 
- 
+
 
           </div>
         </div>
@@ -9224,14 +9224,14 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
     </div>
   </div>
 
- 
+
 <h2><a href="https://www.bankbazaar.com/car-loan/dussehra-car-loan-offers.html">Dussehra Special Offers on Car Loan – October 2016</a></h2>
 <p>Dussehra is celebrated with enthusiasm all over the country. It’s considered an auspicious time to start new ventures. Dealers and sellers put up their best offers and schemes during this season making Dussehra the best time to drive home in your own car! If you have your heart set on buying a car, the lack of finance is almost never an issue. With BankBazaar, you can find the best finance scheme to buy your car. With a few details from you, the BankBazaar portal will compile a list of eligible loans for you to browse, explore, compare and make an informed choice. <a href="https://www.bankbazaar.com/car-loan-eligibility.html">Check your eligibility</a> will be mainly based on your employment, work experience, age and income. You will also be entitled to vouchers and offers when you apply on BankBazaar. A car loan that suits your budget and convenience is just a few clicks away. </p>
 
 <h2><a href="https://www.bankbazaar.com/car-loan/diwali-car-loan-offers.html">Diwali Special Offers on Car Loan – October 2016</a></h2>
 
 <p>Make this Diwali a joyous one with a new car for yourself or your loved ones. The want of finance can be solved with a suitable car loan that fits well into your budget. On BankBazaar, you can access all car loans that you may be eligible for depending on your age, income, work experience and credit score. View the details of the loans you may be interested in. You can compare different offers to see which loan would be better for you. BankBazaar also has special <a href="https://www.bankbazaar.com/car-loan/best-car-discounts-offers-diwali.html">Diwali offers on car loans</a> from partner banks. Explore the range of car loans available on the BankBazaar portal to find the best deal for you to drive home in your own car this season.</p>
- 
+
 
 
 
@@ -9254,7 +9254,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 </div>
 
 
-<div class="row news-widget"> 
+<div class="row news-widget">
 
 <ul>
 
@@ -9262,12 +9262,12 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 
 <li class="news-green clearfix">
         <h2 class="news-head">Everything You Need To Know About Car Loans</h2>
- 
+
 <p>Did you know? Most Car Loans in India are secured loans (the car serves as the security/collateral). Also, the maximum loan amount depends on the vehicle you wish to purchase, but most banks offer up to 100% of the vehicle’s on-road price. So, are you eligible? You are eligible if you’re over 21 years and less than 60 years at loan maturity and have a secure job with a regular income (at least Rs. 2,40,000 per annum). If you are co-applying for it with your spouse, then their salary is also taken into consideration. A little insight into interest rate and fees: Interest rates - 9.85% to 13.65%, processing fees - Rs. 500 to Rs. 5,000 and Pre-Closure Charges - 2% to 4% of the outstanding loan amount. Keep these documents handy: Photo ID and age proof, Signed application form with photograph, Residence proof and Bank statement for the last 6 months. Salaried applicants need last 3 months salary slips and Form 16/Income Tax Returns. Self-employed applicants need Last 3 years Income Tax Returns with computation of income and last 3 years CA Certified / Audited Balance Sheet and Profit & Loss Account. Got it? You are now buckled up to choose the right Car Loan for you. Go ahead!</p>
 
 <p> Stay up to date! Daily finance news at your fingertips. <a href="http://m.onelink.me/2b030512" rel="nofollow" target="_blank">Explore Car Loans on Mobile App</a></p>
 
- 
+
     <div class="pull-right">
           <img src="https://www.bankbazaar.com/images/common/bb-logo-180-40.png"  alt="BankBazaar News About Loan">
           <p><em>22nd August 2016</em></p>
@@ -9280,29 +9280,29 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 <div class="container">
   <div class="row news-widget">
 
-<h2 class="btm-pad">Read Car Loan news or Enjoy it on the go 
+<h2 class="btm-pad">Read Car Loan news or Enjoy it on the go
   <a target="_blank" rel="nofollow" title="Google Play" href="http://m.onelink.me/114ed35f">
     <img style="max-width: 500px;" title="Google Play" alt="Google Play" src="https://www.bankbazaar.com/images/common/google-play-v1.png">
-  </a>   
+  </a>
 
 </h2> <ul>
 
 
 <li class="news-green clearfix"><h2 class="news-head">BMW Launches the All New 740i DPE</h2>
 <p>BMW recently added a new car to its portfolio by launching BMW 740i DPE (Design Pure Excellence). According to their website, this 7-series petrol variant car is locally assembled. The ex-showroom price of the car is Rs.1.26 crore in New Delhi. 740i DPE runs on a 3.0-litre, turbocharged, inline-six cylinder engine. This car has the capacity to run up to 100kmph speed from a standstill in just 5.6 seconds. Other features of the car includes damper control, brake energy regeneration, auto start-stop, and carbon core construction. The mileage of the car is 12.5 km/l. 740i DPE is going to be loved by car enthusiasts as it comes with electrically-operated sunblinds, sky lounge sunroof, and ventilated front and rear seats with massage function.</p>
-<div class="pull-right"> <p><img src="https://www.bankbazaar.com/images/bb-logo.png" alt=""></p> 
-<p><em> 9th January 2017 </em></p> </div> 
+<div class="pull-right"> <p><img src="https://www.bankbazaar.com/images/bb-logo.png" alt=""></p>
+<p><em> 9th January 2017 </em></p> </div>
 </li>
 <li class="news-green clearfix"><h2 class="news-head">Range Rover Evoque All Set To Be Launched In 2017</h2>
 <p>Known for stylish and comfortable SUVs, Land Rover is all geared up to launch their topless car-Range Rover Evoque in India. With no roof, the SUV looks luxurious and well-crafted. Land Rover has already introduced this uncovered SUV on its website. The car is expected to be launched in India by mid-2017. The car will be launched with amazing features like tyre pressure monitoring system, exterior mirrors with memory function, auto dipping in reverse gear, and heated rear screen. With 2.0-litre four-cylinder Si4 petrol engine, Range Rover Evoque gives a top speed of 209kmh. The price of the car is expected to be around Rs.75 lakh. </p>
-<div class="pull-right"> <p><img src="https://www.bankbazaar.com/images/bb-logo.png" alt=""></p> 
-<p><em> 9th January 2017 </em></p> </div> 
+<div class="pull-right"> <p><img src="https://www.bankbazaar.com/images/bb-logo.png" alt=""></p>
+<p><em> 9th January 2017 </em></p> </div>
 </li>
 
 <li class="news-green clearfix"><h2 class="news-head">Maruti Suzuki Will Launch The All New Maruti Ignis In 2017</h2>
 <p>One of the leading automobile manufacturing companies in India, Maruti Suzuki is all geared up to launch Maruti Ignis. Booking for this new car will be taken from January 2017. The carmaker has planned a grand launching of the car on January 13th, 2017. This hatchback car comes with lot of distinctive features like extraordinary interiors which doesn’t look like other Maruti cars, 15-inch alloy wheels, colourful exterior painting, and LED headlamps. This automatic transmission car is available in petrol and diesel variant. The dashboard also has a 7-inch touchscreen floating display. The safety features of the car is applaudable as it has dual front airbags, ABS, and ISOFIX. MAny leading banks and financial institutes have lined up to offer car loans on Maruti Ignis.</p>
-<div class="pull-right"> <p><img src="https://www.bankbazaar.com/images/bb-logo.png" alt=""></p> 
-<p><em> 3rd January 2017 </em></p> </div> 
+<div class="pull-right"> <p><img src="https://www.bankbazaar.com/images/bb-logo.png" alt=""></p>
+<p><em> 3rd January 2017 </em></p> </div>
 </li>
 <li class="news-green clearfix"> <h2 class="news-head">Porsche to Soon Start Deliveries of Macan SUV and Macan R4
 </h2>
@@ -9314,7 +9314,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
           <img src="https://www.bankbazaar.com/images/common/bb-logo-180-40.png"  alt="BankBazaar News About Loan">
           <p><em>23rd November 2016</em></p>
         </div></li>
-<li class="news-green clearfix"> <h2 class="news-head">Volkswagen Launches Polo ALLSTAR 
+<li class="news-green clearfix"> <h2 class="news-head">Volkswagen Launches Polo ALLSTAR
 </h2>
 
 <p>One of the leading german automobile manufacturers, Volkswagen introduces the Polo ALLSTAR to India. With similar features like their other car series, Ameo, Polo ALLSTAR is available in an attractive Blue Silk Colour. The car carries a “ALLSTAR” badge on its B-pillars. The features of this new car includes well-designed alloy wheels. Available in multiple colours like Candy White, Flash Red and Brown Shade, this car is best suited for urban buyers. The new cars will be launched in Copper Orange and Carbon Steel colour variants. Many leading banks are offering car loans to buy this all new car. Go ahead and drive home a Polo ALLSTAR.</p>
@@ -9339,7 +9339,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 
 
 <li class="news-green clearfix"> <h2 class="news-head">Volkswagen launches Ameo Diesel with a price tag of Rs.6.34 lakh</h2>
-<p>German carmaker Volkswagen has introduced the diesel version of its first compact sedan, the Ameo, with a starting price of Rs.6.34 lakh going up to Rs.9.32 lakh (ex-showroom, Mumbai). The diesel motor is expected to bring up sales, more so as the festive season is around. Apart from the 1.5-litre engine, almost everything has been kept identical to its petrol variant. </p> <p>The diesel Ameo, which is loaded with some noteworthy features, seems ready to compete with the likes of Tata Zest, Maruti Suzuki Swift Dzire, Honda Amaze, and the Ford Figo Aspire. The Volkswagen Ameo may be arriving to India soon and those interested in buying this model should consider looking at various car loan options available in the market.</p> 
+<p>German carmaker Volkswagen has introduced the diesel version of its first compact sedan, the Ameo, with a starting price of Rs.6.34 lakh going up to Rs.9.32 lakh (ex-showroom, Mumbai). The diesel motor is expected to bring up sales, more so as the festive season is around. Apart from the 1.5-litre engine, almost everything has been kept identical to its petrol variant. </p> <p>The diesel Ameo, which is loaded with some noteworthy features, seems ready to compete with the likes of Tata Zest, Maruti Suzuki Swift Dzire, Honda Amaze, and the Ford Figo Aspire. The Volkswagen Ameo may be arriving to India soon and those interested in buying this model should consider looking at various car loan options available in the market.</p>
 
 <div class="pull-right">
           <img src="https://www.bankbazaar.com/images/common/bb-logo-180-40.png"  alt="BankBazaar News About Loan">
@@ -9350,7 +9350,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 
 <li class="news-green clearfix">
         <h2 class="news-head">Audi unveils 2017 Audi RS 3 Sedan at Paris Motor Show</h2>
- 
+
 
 <p>Audi has given the RennSport (RS) treatment to its smallest sedan, the A3, and labelled it the RS 3.  The Audi RS 3 was unveiled at the ongoing Paris Motor Show, with its five-cylinder engine, which is 26kg lighter than the RS 3 Sportback. This is a high performance Audi with a 2.5 litre TFSI engine that will run on petrol generating 400PS of power and 480Nm of torque.</p>
 <p>The body of the RS 3 sedan is almost similar to that of the Audi S3 saloon with large twin-exhaust tailpipes and a diffuser to enhance its aerodynamics at high speeds. The Audi RS 3 will be launched in Europe by next year, while the Mercedes-Benz CLA AMG buster may be launched in India later on. For those eyeing the AMG, it would seem like a good idea to start looking at various car loan options available in the market.</p>
@@ -9385,7 +9385,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 <p>As the festive season is soon approaching, Audi is vying to sell a whole lot of its Q3 baby-SUV variants at discounted prices.</p>
 <p>In a limited period offers, Audi’s German manufacturers have begun offering splendid discounts and financing schemes for the young SUV.The company has come up with different offers and discounts for various states. For instance, prospective buyers in Delhi can drive away with a Q3 at a down payment of just Rs. 5,99,000 and a monthly installment deal of Rs. 48,800.</p>
 <p>In Bengaluru, though, the situation is quite different as dealers are offering a no-interest loan on the Q3. Chennai is not far behind on the offers either buyers there will get a four-year warranty and service plan 4 percent interest, and a buyback option at 45% of the value after 4 years.In Mumbai, the prices have been slashed and the Q3 is starting at Rs. 30.78 lakh and an EMI option of Rs. 26,999.</p>
-<p>This facelifted Q3 features a 2.0 litre diesel engine which puts out 176 PS of power and 380Nm of torque or 140 PS of power and 320Nm of torque depending on the tune of the variant.The 4-cylinder engine comes with a 6-speed manual or a 7-speed Tronic automatic transmission. This mini SUV is set to go against fellow peers like Mercedes Benz A-Class and BMW X1.</p> 
+<p>This facelifted Q3 features a 2.0 litre diesel engine which puts out 176 PS of power and 380Nm of torque or 140 PS of power and 320Nm of torque depending on the tune of the variant.The 4-cylinder engine comes with a 6-speed manual or a 7-speed Tronic automatic transmission. This mini SUV is set to go against fellow peers like Mercedes Benz A-Class and BMW X1.</p>
     <div class="pull-right">
           <img src="https://www.bankbazaar.com/images/common/bb-logo-180-40.png"  alt="BankBazaar News About Loan">
           <p><em>14th October 2016</em></p>
@@ -9397,7 +9397,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
         <h2 class="news-head">Mercedes Benz Reveals the E-Class All-Terrain
 </h2>
  <p>Mercedes Benz revealed the E-Class All-Terrain and it has definitely turned heads. The car’s official debut is set for the Paris Motor Show 2016. The E-Class All-Terrain is equipped to handle light off-road driving without any hassle. It is a more rugged variant of the E-Class station wagon. The car is fitted with a 2.0 litre turbocharged diesel engine. The car can touch 194 PS or power and 295 Nm of torque. With a 9-speed automatic transmission and a four-wheel drive, this car is set to power down the roads. Mercedes Benz has not yet released a price tag for the E-Class All Terrain. The car is expected to be launched in Germany and the U.K. in 2017. It will have 4 driving modes that includes all-terrain, eco, comfort and sport modes.</p>
- 
+
     <div class="pull-right">
           <img src="https://www.bankbazaar.com/images/common/bb-logo-180-40.png"  alt="BankBazaar News About Loan">
           <p><em>13th October 2016</em></p>
@@ -9407,8 +9407,8 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 
 <li class="news-green"> <h2 class="news-head">Prices Revealed for Hyundai’s Anniversary Edition Creta</h2>
 <p>In July 2016, Hyundai showcased the 1st Anniversary Edition of the Creta in Bangalore, prices of which have recently been revealed by the manufacturer in Surat. The Anniversary edition of the Creta, which takes inspiration from SX+, will be priced at Rs 14.60 lakh petrol version and Rs 15.90 lakh for the diesel version.</p> <p>Under the hood, the mechanics of the Anniversary edition Creta will continue to be similar to its predecessor, SX+ trim. It will be powered by a 1.6-litre, four-cylinder engine which comes coupled with 6-speed manual gearbox, fitted on the petrol as well as the diesel variant.</p> <p>In terms of the exterior, the special edition Creta will be come in a Polar White colour featuring a black roof, dual tone- 7 inch alloy wheels, silver-toned skid plates and new body graphics. On the interiors, However, on the inside, majority of the features will continue to be similar to those included in the Creta. The only addition to be made will be the dual toned (black &amp; red) fabric upholstery, leather encased steering wheel and dual tone dashboard in black &amp; grey.</p>
-<div class="pull-right"> <p><img src="https://www.bankbazaar.com/images/bb-logo.png" alt=""></p> 
-<p><em> 26th September 2016 </em></p> </div> 
+<div class="pull-right"> <p><img src="https://www.bankbazaar.com/images/bb-logo.png" alt=""></p>
+<p><em> 26th September 2016 </em></p> </div>
 <div class="clearfix"></div> </li>
 
 
@@ -9431,7 +9431,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
                                         <div class="row btm-pad" style="padding: 15px 0">
 <div class="row btm-pad twi-accordion col-md-4">
   <div id="accordion" class="panel-group">
-    
+
 
 
 <div class="panel panel-default">
@@ -9440,7 +9440,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
       </div>
       <div class="panel-collapse collapse" id="collapseOne11">
         <div class="panel-body">
-          
+
 <ul>
 
 <li><a title="Axis Bank Car Loan" href="https://www.bankbazaar.com/axis-car-loan.html">Axis Bank Car Loan</a></li>
@@ -9452,11 +9452,11 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 <li><a title="Dena Bank Car Loan" href="https://www.bankbazaar.com/dena-bank-car-loan.html">Dena Bank Car Loan</a></li>
 <li><a title="L&T Finance Car Loan" href="https://www.bankbazaar.com/car-loan/l-and-t-finance.html">L&T Finance Car Loan</a></li>
 
-</ul>     
+</ul>
         </div>
       </div>
     </div>
- 
+
 
 
 
@@ -9468,7 +9468,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
       </div>
       <div class="panel-collapse collapse" id="collapseOneOne">
         <div class="panel-body">
-          
+
 <ul>
 
 <li><a title="Abu Dhabi Commercial Bank Car Loan" href="https://www.bankbazaar.com/abu-dhabi-commercial-bank-car-loan.html">Abu Dhabi Commercial Bank Car Loan</a></li>
@@ -9528,11 +9528,11 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 <li><a title="Vijaya Bank Car Loan" href="https://www.bankbazaar.com/vijaya-bank-car-loan.html">Vijaya Bank Car Loan</a></li>
 <li><a title="Yes Bank Car Loan" href="https://www.bankbazaar.com/yes-bank-car-loan.html">Yes Bank Car Loan</a></li>
 
-</ul>     
+</ul>
         </div>
       </div>
     </div>
- 
+
 
 
 
@@ -9541,8 +9541,8 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
         <strong class="panel-title"> <a href="car-loan.html#collapseTwoOne" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed"> <span class="fui-plus"></span> City Based Car Loan </a> </strong>
       </div>
       <div class="panel-collapse collapse" id="collapseTwoOne">
-        <div class="panel-body"> 
-         
+        <div class="panel-body">
+
 <ul>
 <li><a title="Mumbai Car Loan" href="https://www.bankbazaar.com/mumbai-car-loan.html">Mumbai Car Loan</a></li>
 <li><a title="New Delhi Car Loan" href="https://www.bankbazaar.com/new-delhi-car-loan.html">New Delhi Car Loan</a></li>
@@ -9593,7 +9593,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 
 
           </ul>
-  
+
         </div>
       </div>
     </div>
@@ -9604,7 +9604,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
         <strong class="panel-title"> <a href="car-loan.html#collapseTwoThreeOne" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed"> <span class="fui-plus"></span> Car Loan Offers </a> </strong>
       </div>
       <div class="panel-collapse collapse" id="collapseTwoThreeOne">
-        <div class="panel-body"> 
+        <div class="panel-body">
 <ul>
 <li><a title="DUSSEHRA Car Loan Offers" href="https://www.bankbazaar.com/car-loan/dussehra-car-loan-offers.html">DUSSEHRA Car Loan Offers</a></li>
 <li><a title="Car Loan Interest Rates Dussehra" href="https://www.bankbazaar.com/car-loan/car-loan-interest-rates-dussehra.html">Car Loan Interest Rates Dussehra</a></li>
@@ -9631,7 +9631,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 </div>
 </div>
 
-    
+
    </div>
 </div>
 
@@ -9665,18 +9665,18 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 
 
           </ul>
-     
+
         </div>
       </div>
     </div>
-    
+
    <div class="panel panel-default">
       <div class="panel-heading">
         <strong class="panel-title"> <a href="car-loan.html#collapseTwoTwo" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed"> <span class="fui-plus"></span> Bank Based Car Loan Eligibility Calculator</a> </strong>
       </div>
       <div class="panel-collapse collapse" id="collapseTwoTwo" style="height: 0px;">
-        <div class="panel-body"> 
-         
+        <div class="panel-body">
+
 <ul>
 <li><a title="Allahabad Bank Car Loan Eligibility Calculator" href="https://www.bankbazaar.com/allahabad-bank-car-loan-eligibility-calculator.html">Allahabad Bank Car Loan Eligibility Calculator</a></li>
 <li><a title="Andhra Bank Car Loan Eligibility Calculator" href="https://www.bankbazaar.com/andhra-bank-car-loan-eligibility-calculator.html">Andhra Bank Car Loan Eligibility Calculator</a></li>
@@ -9733,8 +9733,8 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
         <strong class="panel-title"> <a href="car-loan.html#collapseTwoThree" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed"> <span class="fui-plus"></span> Finance Based Car Loan</a> </strong>
       </div>
       <div class="panel-collapse collapse" id="collapseTwoThree" style="height: 0px;">
-        <div class="panel-body"> 
-         
+        <div class="panel-body">
+
 <ul>
 
 <li><a title="Audi Finance" href="https://www.bankbazaar.com/car-loan/audi-finance.html">Audi Finance</a></li>
@@ -9754,7 +9754,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 
 
 </ul>
-  
+
     </div>
       </div>
       </div>
@@ -9822,18 +9822,18 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 
 
           </ul>
-     
+
         </div>
       </div>
     </div>
-    
+
   <div class="panel panel-default">
       <div class="panel-heading">
         <strong class="panel-title"> <a href="car-loan.html#collapseThreeTwo" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed"> <span class="fui-plus"></span>Car Price Landing Pages </a> </strong>
       </div>
       <div class="panel-collapse collapse" id="collapseThreeTwo" style="height: 0px;">
-        <div class="panel-body"> 
-         
+        <div class="panel-body">
+
 <ul>
 
 
@@ -9943,18 +9943,18 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 
 
 </ul>
-  
+
     </div>
       </div>
       </div>
-      
+
   <div class="panel panel-default">
       <div class="panel-heading">
         <strong class="panel-title"> <a href="car-loan.html#collapseThreeucl" data-parent="#accordion" data-toggle="collapse" class="accordion-toggle collapsed"> <span class="fui-plus"></span>Used Car Loans from Banks </a> </strong>
       </div>
       <div class="panel-collapse collapse" id="collapseThreeucl" style="height: 0px;">
-        <div class="panel-body"> 
-         
+        <div class="panel-body">
+
 <ul>
 
 
@@ -10000,7 +10000,7 @@ addValidatorRule($(&quot;#slideForm [modelpath ='form.formDisclaimer']&quot;), {
 
 
 </ul>
-  
+
     </div>
       </div>
       </div>
@@ -10100,7 +10100,7 @@ Uh-oh! Are you sure this email ID is Correct?</label>
 
 <p>We'll process your application faster too!</p>
 </div></div>
-                        
+
 
 
 
@@ -10613,7 +10613,7 @@ addValidatorRule($(&quot;[modelpath ='primaryEmailDynamicOptional']&quot;), {ema
 </script>
 
 <script id="_webengage_script_tag" type="text/javascript">
-    
+
     window.addEventListener("load",function() {
         !function (e, t, n) {
             function o(e, t) {
@@ -10650,10 +10650,10 @@ addValidatorRule($(&quot;[modelpath ='primaryEmailDynamicOptional']&quot;), {ema
   window._atm_client_id = "6068";
   window._atm_params = new Object;
 
- _atm_params.f = "v"; 
+ _atm_params.f = "v";
  _atm_params.c = "Car Loan";
   (function() {
-      function _atm_ast() { 
+      function _atm_ast() {
          var ast=document.createElement('script'); ast.type="text/javascript"; ast.async = true;
          ast.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//cdn.atomex.net/static/js/pxs/" + _atm_client_id + "/ast.js";
          document.body.appendChild(ast);
@@ -11006,14 +11006,14 @@ if ((/iphone|ipod|ipad.*os 5/gi).test(navigator.appVersion)) {
 .healthinsurance-CANARA_HSBCLIFE_INSURANCE { background-position: 0 -1436px;}
 .healthinsurance-TATA_AIA_LIFE_INSURANCE { background-position: 0 -1408px;}
 .healthinsurance-AEGON_RELIGARE { background-position: 0 -1469px; }
-.nainital-bank-two-wheeler-loan {background-position: 0 -2893px} 
-.federal-bank-two-wheeler-loan {background-position: 0 -2907px} 
-.boi-two-wheeler-loan {background-position: 0 -2925px;} 
-.rbl-two-wheeler-loan {background-position: 0 -2942px;} 
-.city-union-two-wheeler-loan {background-position: 0 -2958px;} 
+.nainital-bank-two-wheeler-loan {background-position: 0 -2893px}
+.federal-bank-two-wheeler-loan {background-position: 0 -2907px}
+.boi-two-wheeler-loan {background-position: 0 -2925px;}
+.rbl-two-wheeler-loan {background-position: 0 -2942px;}
+.city-union-two-wheeler-loan {background-position: 0 -2958px;}
 .bajaj-finserv-two-wheeler-loan {background-position: 0 -2972px;}
 .bank-hero-fincorp {background-position: 0 -2932px;}
-.bank-muthoot-capital {background-position: 0 -2960px;} 
+.bank-muthoot-capital {background-position: 0 -2960px;}
 .twowheeler-insurance-shriram_life {background-position: 0 -1230px;}
 .twowheeler-insurance-universal_sompo{background-position: 0 -1380px;}
 .twowheeler-insurance-united_india_insurance {background-position: 0 -1350px;}
