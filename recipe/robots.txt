@@ -1,0 +1,32 @@
+# Production
+User-agent: Zookabot
+Disallow: /
+
+User-agent: *
+Sitemap: https://food52.com/sitemap-index.xml
+Disallow: /admin/
+Disallow: /answers/
+Disallow: /recipes/cooking/
+Disallow: /recipes/print/
+Disallow: /recipes/ingredient/
+Disallow: /session/
+Disallow: /sweeps/
+Disallow: /foodpickle/
+Disallow: /ad-testing
+Disallow: /shop/admin/
+Disallow: /shop/merchantadmin/
+Disallow: /shop/checkout/
+Disallow: /shop/referrals/
+Disallow: /shop/claimcredit
+Disallow: /shop/basket_items/
+Disallow: /users/sign_in
+Disallow: /users/sign_out
+
+# Search
+Disallow: /blog/search
+Disallow: /hotline/search
+Disallow: /recipes/search
+Disallow: /shop/search
+Disallow: /users/search
+
+Allow: /
