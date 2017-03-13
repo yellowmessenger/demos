@@ -42,15 +42,6 @@
             $("#mobileNumber").text ("Mobile No : "+data.mobile_number);
             $("#email").text ("Email : "+data.email);
             $("#profileDiv").show ();
-            $.prompt("Here is the profile", {
-                title: "Event received",
-                focus: 0,
-                buttons: { "Done": true},
-                persistent: false,
-                position: { container: '#event', x: 200, y: 60, width: 200, arrow: 'tc' },
-                submit: function(e,v,m,f){}
-            });
-
         }
     }
     window.botplatform.init(botOptions);
