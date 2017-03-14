@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="base.css">
 </head>
 <body>
-    <div id="profileDiv" class="container" style="margin-top: 200;width: 580px;" hidden="hidden">
+    <img src="bg-0.png" style="width: 960px; margin: 0 auto;    display: block;"/>
+    <div id="profileDiv" class="container" style="    width: 800px;display: block;position: absolute;top: 282px;left: 0;right: 0;margin: auto;height: 249px;background: #fff;padding: 0;" hidden="hidden">
         <div class="panel panel-primary">
             <div class="panel-heading">Profile</div>
             <div class="panel-body">
@@ -35,15 +36,22 @@
     botOptions.assistance = true;
     botOptions.handlers = {
         "show-profile":function(data){
-            console.log (data);
-            $('body').css ('background-image','url(bg-1.png)');
             $("#name").text ("Name : " + data.name);
             $("#policyNumber").text ("Policy No : "+data.policy_number);
             $("#mobileNumber").text ("Mobile No : "+data.mobile_number);
             $("#email").text ("Email : "+data.email);
             $("#profileDiv").show ();
+
+            $.prompt("Here is the profile", {
+                title: "Event received",
+                focus: 0,
+                buttons: { "Done": true},
+                persistent: false,
+                position: { container: '#profileDiv', x: 200, y: 60, width: 200, arrow: 'tc' },
+                submit: function(e,v,m,f){}
+            });
         }
-    }
+    };
     window.botplatform.init(botOptions);
     </script>
 </body>
