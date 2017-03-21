@@ -2928,30 +2928,5 @@ fbq("track", "PageView");</script>
 <div id="vizury-notification-container"></div>
 <iframe src="./index_files/pixel.html" style="display: none;"></iframe>
 
-
-<script src="https://chat.botplatform.io/plugin-v2.js?bot=pnbmetlife"></script>
-<script type="text/javascript">
-    var botOptions =  {
-        autoOpen: false
-    };
-    botOptions.assistance = true;
-    botOptions.handlers = {
-        "why-the-plan":function(data){
-            $.prompt("Why our plan", {
-                title: "Event received",
-                focus: 0,
-                buttons: { "Done": true},
-                persistent: false,
-                position: { container: '#WhyOurPlan', x: 200, y: 60, width: 200, arrow: 'tc' },
-                submit: function(e,v,m,f){}
-            });
-
-        }
-    };
-
-    window.botplatform.init(botOptions);
-</script>
-
-
 </body>
 </html>
