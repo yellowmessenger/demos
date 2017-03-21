@@ -2927,5 +2927,31 @@ fbq("track", "PageView");</script>
 <script type="text/javascript" async="" src="./index_files/GetJsFile.php"></script>
 <div id="vizury-notification-container"></div>
 <iframe src="./index_files/pixel.html" style="display: none;"></iframe>
+
+
+<script src="/plugin-v2.js?bot=pnbmetlife"></script>
+<script type="text/javascript">
+    var botOptions =  {
+        autoOpen: true
+    };
+    botOptions.assistance = true;
+    botOptions.handlers = {
+        "why-the-plan":function(data){
+            $.prompt("Why our plan", {
+                title: "Event received",
+                focus: 0,
+                buttons: { "Done": true},
+                persistent: false,
+                position: { container: '#WhyOurPlan', x: 200, y: 60, width: 200, arrow: 'tc' },
+                submit: function(e,v,m,f){}
+            });
+
+        }
+    };
+
+    window.botplatform.init(botOptions);
+</script>
+
+
 </body>
 </html>
