@@ -1,0 +1,942 @@
+/**BASE.CSS END **/
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) YAML core stylesheet
+ * (de) YAML Basis-Stylesheet
+ *
+ * Don't make any changes in this file!
+ * Your changes should be placed in any css-file in your own stylesheet folder.
+ *
+ * @copyright       Copyright 2005-2011, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.3.1
+ * @revision        $Revision: 501 $
+ * @lastmodified    $Date: 2011-06-18 17:27:44 +0200 (Sa, 18 Jun 2011) $
+ */
+
+@media all
+{
+ /**
+  * @section browser reset
+  * @see     http://www.yaml.de/en/documentation/css-components/base-stylesheet.html
+  */
+
+  /* (en) Global reset of paddings and margins for all HTML elements */
+  /* (de) Globales Zurücksetzen der Innen- und Außenabstände für alle HTML-Elemente */
+  * { margin:0; padding:0; }
+
+  /* (en) Correction:margin/padding reset caused too small select boxes. */
+  /* (de) Korrektur:Das Zurücksetzen der Abstände verursacht zu kleine Selectboxen. */
+  option { padding-left:0.4em; } /* LTR */
+  select { padding:1px; }
+
+ /**
+  * (en) Global fix of the Italics bugs in IE 5.x and IE 6
+  * (de) Globale Korrektur des Italics Bugs des IE 5.x und IE 6
+  *
+  * @bugfix
+  * @affected   IE 5.x/Win, IE6
+  * @css-for    IE 5.x/Win, IE6
+  * @valid      yes
+  */
+  * html body * { overflow:visible; }
+
+  body {
+    /* (en) Fix for rounding errors when scaling font sizes in older versions of Opera browser */
+    /* (de) Beseitigung von Rundungsfehler beim Skalieren von Schriftgrößen in älteren Opera Versionen */
+    font-size:100.01%;
+	font-family:"Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+    /* (en) Standard values for colors and text alignment */
+    /* (de) Vorgabe der Standardfarben und Textausrichtung */
+    background:#fff;
+    color:#000;
+    text-align:left; /* LTR */
+  }
+
+  /* (en) avoid visible outlines on DIV containers in Webkit browsers */
+  /* (de) Vermeidung sichtbarer Outline-Rahmen in Webkit-Browsern */
+  div { outline:0 none; }
+
+  /* (en) HTML 5 - adjusting visual formatting model to block level */
+  /* (en) HTML 5 - Anpassung des visuellen Formatmodells auf Blockelemente */
+  article,aside,canvas,details,figcaption,figure,
+  footer,header,hgroup,menu,nav,section,summary { 
+  	display:block;
+  }
+  
+  /* (en) Clear borders for <fieldset> and <img> elements */
+  /* (de) Rahmen für <fieldset> und <img> Elemente löschen */
+  fieldset, img { border:0 solid; }
+
+  /* (en) new standard values for lists, blockquote and cite */
+  /* (de) Neue Standardwerte für Listen & Zitate */
+  ul, ol, dl { margin:0 0 1em 1em; } /* LTR */
+  li {
+	list-style-type:none;
+    line-height:1.5em;
+    margin-left:0.8em; /* LTR */
+  }
+
+  dt { font-weight:bold; }
+  dd { margin:0 0 1em 0.8em; } /* LTR */
+
+  blockquote { margin:0 0 1em 0.8em; } /* LTR */
+
+  blockquote:before, blockquote:after,
+  q:before, q:after { content:""; }
+
+ /*------------------------------------------------------------------------------------------------------*/
+
+ /**
+  * @section clearing methods
+  * @see     http://yaml.de/en/documentation/basics/general.html
+  */
+
+  /* (en) clearfix method for clearing floats */
+  /* (de) Clearfix-Methode zum Clearen der Float-Umgebungen */
+  .clearfix:after {
+    clear:both;
+    content:".";
+    display:block;
+    font-size:0;
+    height:0;
+    visibility:hidden;
+  }
+
+  /* (en) essential for Safari browser !! */
+  /* (de) Diese Angabe benötigt der Safari-Browser zwingend !! */
+  .clearfix { display:block; }
+
+  /* (en) alternative solution to contain floats */
+  /* (de) Alternative Methode zum Einschließen von Float-Umgebungen */
+  .floatbox { display:table; width:100%; }
+
+  /* (en) IE-Clearing:Only used in Internet Explorer, switched on in iehacks.css */
+  /* (de) IE-Clearing:Benötigt nur der Internet Explorer und über iehacks.css zugeschaltet */
+  #ie_clearing { display:none; }
+
+ /*------------------------------------------------------------------------------------------------------*/
+
+ /**
+  * @section hidden elements | Versteckte Elemente
+  * @see     http://www.yaml.de/en/documentation/basics/skip-links.html
+  *
+  * (en) skip links and hidden content
+  * (de) Skip-Links und versteckte Inhalte
+  */
+
+  /* (en) classes for invisible elements in the base layout */
+  /* (de) Klassen für unsichtbare Elemente im Basislayout */
+  .skip, .hideme, .print {
+    position:absolute;
+    top:-32768px;
+    left:-32768px; /* LTR */
+  }
+
+  /* (en) make skip links visible when using tab navigation */
+  /* (de) Skip-Links für Tab-Navigation sichtbar schalten */
+  .skip:focus, .skip:active {
+    position:static;
+    top:0;
+    left:0;
+  }
+
+  /* skiplinks:technical setup */
+  #skiplinks { 
+    position:absolute;
+    top:0px; 
+    left:-32768px; 
+    z-index:1000; 
+    width:100%;
+    margin:0; 
+    padding:0; 
+    list-style-type:none;   
+  }
+  
+  #skiplinks .skip:focus,
+  #skiplinks .skip:active {
+    left:32768px; 
+    outline:0 none;
+    position:absolute; 
+    width:100%;
+  }  
+}
+
+@media screen, projection
+{
+
+ /**
+  * @section base layout | Basis Layout
+  * @see     http://www.yaml.de/en/documentation/css-components/base-stylesheet.html
+  *
+  * |-------------------------------|
+  * | #col1   | #col2       		|
+  * | 20%     | flexible      		|
+  * |-------------------------------|
+  */
+
+  #col1 { float:left; width:20%; }
+  #col2 { width:auto; margin:0 20%; }
+
+  #col1_content, #col2_content, #col2_content { position:relative; }
+
+ /*------------------------------------------------------------------------------------------------------*/
+
+ /**
+  * @section subtemplates
+  * @see     http://www.yaml.de/en/documentation/practice/subtemplates.html
+  */
+  .subcolumns { display:table; width:100%; table-layout:fixed; }
+  .subcolumns_oldgecko { width: 100%; float:left; }
+
+  .c15l, .c20l, .c25l, .c33l,.c35l, .c40l, .c45l, .c38l, .c50l, .c60l, .c62l, .c66l, .c75l, .c80l { float:left;}
+  .c15r, .c20r, .c25r, .c33r,.c35r, .c40r, .c45r, .c38r, .c50r, .c60r, .c66r, .c62r, .c75r, .c80r { float:right; margin-left:-5px; }
+
+
+  .c20l, .c20r { width:20%; }
+  .c40l, .c40r { width:40%; }
+  .c50l, .c50r { width:50%; }
+  .c60l, .c60r { width:60%; }
+  .c80l, .c80r { width:80%; }
+  
+  .c15l, .c15r { width:15%; }
+  .c25l, .c25r { width:25%; }
+  .c35l, .c35r { width:35%; }
+  .c45l, .c45r { width:40%; }
+  .c75l, .c75r { width:75%; }
+  
+  .c33l, .c33r { width:33.333%; }
+  .c66l, .c66r { width:66.666%; }
+
+  .c38l, .c38r { width:38.2%; }
+  .c62l, .c62r { width:61.8%; }
+
+  .subc  { padding:10px 10px;}
+  .subcl { padding:10px; }
+  .subcr { padding:10px; }
+  
+  .equalize, .equalize .subcolumns { table-layout:fixed; }
+
+  .equalize > div {
+    display:table-cell;
+    float:none; 
+    margin:0; 
+    overflow:hidden;
+    vertical-align:top;
+  }
+}
+
+@media print
+{
+ /**
+  * (en) float clearing for subtemplates. Uses display:table to avoid bugs in FF & IE
+  * (de) Float Clearing für Subtemplates. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
+  */
+
+  .subcolumns,
+  .subcolumns > div {
+    overflow:visible; 
+    display:table;
+  } 
+
+  /* (en) make .print class visible */
+  /* (de) .print-Klasse sichtbar schalten */
+  .print { 
+    position:static; 
+    left:0;
+  }
+
+  /* (en) generic class to hide elements for print */
+  /* (de) Allgemeine CSS Klasse, um beliebige Elemente in der Druckausgabe auszublenden */
+  .noprint { display:none !important; }
+}
+
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) Screen layout for YAML examples
+ * (de) Bildschirmlayout für YAML-Beispiele
+ *
+ * @copyright       Copyright 2005-2010, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.3
+ * @revision        $Revision:426 $
+ * @lastmodified    $Date: 2010-09-14 21:19:30 +0200 (Di, 14 Sep 2010) $
+ */
+
+@media screen, projection
+{
+  /** 
+   * (en) Forcing vertical scrollbars in IE8, Firefox, Webkit & Opera 
+   * (de) Erzwingen vertikaler Scrollbalken in IE8, Firefox, Webkit & Opera 
+   *
+   * @workaround
+   * @affected IE8, FF, Webkit, Opera
+   * @css-for all
+   * @valid CSS3
+   */
+
+  body { overflow-y:scroll; }
+
+  /*------------------------------------------------------------------------------------------------------*/
+  
+  /**
+   * (en) Formatting YAML's  basic layout elements
+   * (de) Gestaltung des YAML Basis-Layouts
+   */
+
+  /* (en) Marginal areas & page background */
+  /* (de) Randbereiche & Seitenhintergrund */
+  body { background:#e9e9e9; padding:10px 0; }
+
+  /* (en) Centering layout in old IE-versions */
+  /* (de) Zentrierung des Layouts in alten IE-versionen */
+  body { text-align:center; }
+  .page_margins { text-align:left; margin:0 auto; }
+
+  /* (en) Layout:width, background, borders */
+  /* (de) Layout:Breite, Hintergrund, Rahmen */
+  .page_margins { min-width:740px; max-width:80em; }
+  .page { padding: 10px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; background-color: white;}
+
+  #header {
+    color:#000;
+    background:#fff repeat-x top left;
+	position:relative;
+  }
+
+  /* (en) #topnav gets absolute positioning within #header */
+  /* (de) #topnav wird innerhalb von #header absolut positioniert */
+  #topnav { 
+	background:transparent; 
+  	color:#aaa; 
+	
+    position:absolute;
+    top:10px;
+    right:10px; /* LTR */
+	text-align:right; /* LTR */
+  }
+
+  #main { background:#fff;padding:10px 0; }
+
+  #footer {
+    color:#666;
+    background:#f9f9f9;
+    padding:10px 20px;
+    border-top:5px #efefef solid;
+    line-height:1.5em;
+  }
+
+  /* (en) Backup for correct positioning */
+  /* (de) Absicherung korrekte Positionierung */
+  #header, #nav, #main, #footer { clear:both; }
+
+  /*------------------------------------------------------------------------------------------------------*/
+
+  #col1 { width:25%; }
+  #col1_content { padding:10px 10px 10px 20px; }
+  #col2 { margin:0 25%; }
+  #col2_content { padding:10px; }
+  
+  .two-col #col1 { float: left; width: 150px}
+  .two-col #col2 { width: auto; margin: 0 0 0 150px}
+  .two-col #col1_content { padding: 0 0px 0 0px }
+  .two-col #col2_content { padding: 0 0px 0 10px }
+  
+  .two-col-33-66 #col { float: left; width: 220px}
+  .two-col-33-66 #col2 { width: auto; margin: 0 0 0 230px}
+  .two-col-33-66 #col1_content { padding: 0 0px 0 0px } 
+  .two-col-33-66 #col2_content { padding: 0 0px 0 10px }
+  
+
+ /**
+  * ------------------------------------------------------------------------------------------------- #
+  *
+  * (en) Styling of layout specific elements
+  * (de) Gestaltung layoutabhängiger Elemente
+  */
+
+  #footer a { color:#999; background:transparent; font-weight:bold; }
+  #footer a:focus,
+  #footer a:hover,
+  #footer a:active {color:#4D87C7; background-color:transparent; text-decoration:underline; }
+
+ /**
+  * ------------------------------------------------------------------------------------------------- #
+  *
+  * Skiplinks 
+  *
+  * (en) Visual styling for skiplink navigation
+  * (de) Visuelle Gestaltung der Skiplink-Navigation
+  *
+  * @section content-skiplinks
+  */
+  
+  #skiplinks a.skip:focus,
+  #skiplinks a.skip:active { 
+	color:#fff; 
+	background:#333; 
+	border-bottom:1px #000 solid;
+	padding:10px 0;
+	text-decoration:none;
+  }
+}
+/** BASEMOD:CSS END ****/
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) Uniform design of standard content elements
+ * (de) Einheitliche Standardformatierungen für die wichtigten Inhalts-Elemente
+ *
+ * @copyright       Copyright 2005-2010, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.2.1
+ * @revision        $Revision:392 $
+ * @lastmodified    $Date:2009-07-05 12:18:40 +0200 (So, 05. Jul 2009) $
+ * @appdef yaml
+ */
+
+@media all
+{
+ /**
+  * Fonts
+  *
+  * (en) global settings of font-families and font-sizes
+  * (de) Globale Einstellungen für Zeichensatz und Schriftgrößen
+  *
+  * @section content-global-settings
+  */
+
+  /* (en) reset font size for all elements to standard (16 Pixel) */
+  /* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+  html * { font-size:100.01%; }
+
+ /**
+  * (en) reset monospaced elements to font size 16px in all browsers
+  * (de) Schriftgröße von monospaced Elemente in allen Browsern auf 16 Pixel setzen
+  *
+  * @see: http://webkit.org/blog/67/strange-medium/
+  */
+
+  textarea, pre, code, kbd, samp, var, tt {
+    font-family:Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
+  }
+
+  /* (en) base layout gets standard font size 12px */
+  /* (de) Basis-Layout erhält Standardschriftgröße von 12 Pixeln */
+  body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:75.00%;
+    color:#444;
+  }
+
+  /*--- Headings | Überschriften ------------------------------------------------------------------------*/
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family:"Lucida Grande",Verdana,Arial,Helvetica,sans-serif;
+    font-weight:normal;
+    color:#222;
+    margin:0 0 0.25em 0;
+  }
+
+  h1 { font-size:250%; }                       /* 30px */
+  h2 { font-size:200%; }                       /* 24px */
+  h3 { font-size:150%; }                       /* 18px */
+  h4 { font-size:133.33%; }                    /* 16px */
+  h5 { font-size:116.67%; }                    /* 14px */
+  h6 { font-size:116.67%; }                    /* 14px */
+
+  /* --- Lists | Listen  -------------------------------------------------------------------------------- */
+
+  ul, ol, dl { line-height:1.5em; margin:0; }
+  ul { list-style-type:disc; }
+  ul ul { list-style-type:circle; margin-bottom:0; }
+
+  ol { list-style-type:decimal; }
+  ol ol { list-style-type:lower-latin; margin-bottom:0; }
+
+  li { margin-left:0px; line-height:1.5em; }
+
+  dt { font-weight:bold; }
+  dd { margin:0 0 1em 0.8em; }
+
+  /* --- general text formatting | Allgemeine Textauszeichnung ------------------------------------------ */
+
+  p { line-height:1.5em; margin:0 0 1em 0; }
+
+  blockquote, cite, q {
+    font-family:Georgia, "Times New Roman", Times, serif;
+    font-style:italic;
+  }
+  blockquote { margin:0 0 1em 1.6em; color:#666; }
+
+  strong,b { font-weight:bold; }
+  em,i { font-style:italic; }
+
+  big { font-size:116.667%; }
+  small { font-size:91.667%; }
+ 
+  pre { line-height:1.5em; margin:0 0 1em 0; }
+  pre, code, kbd, tt, samp, var { font-size:100%; }
+  pre, code { color:#800; }
+  kbd, samp, var, tt { color:#666; font-weight:bold; }
+  var, dfn { font-style:italic; }
+
+  acronym, abbr {
+    border-bottom:1px #aaa dotted;
+    font-variant:small-caps;
+    letter-spacing:.07em;
+    cursor:help;
+  }
+
+  sub, sup { font-size:91.6667%; line-height:0; }
+
+  hr {
+    color:#fff;
+    background:transparent;
+    margin:0 0 0.5em 0;
+    padding:0 0 0.5em 0;
+    border:0;
+    border-bottom:1px #eee solid;
+  }
+
+  /*--- Links ----------------------------------------------------------------------------------------- */
+
+  a { color:#4D87C7; background:transparent; text-decoration:none; }
+  a:visited  { color:#036; }
+
+  /* (en) maximum constrast for tab focus - change with great care */
+  /* (en) Maximaler Kontrast für Tab Focus - Ändern Sie diese Regel mit Bedacht */
+  a:hover,
+  a:active { color:#182E7A; text-decoration:underline; outline: 0 none; }
+
+  /* --- images (with optional captions) | Bilder (mit optionaler Bildunterschrift) ------------------ */
+
+  p.icaption_left { float:left; display:inline; margin:0 1em 0.15em 0; }
+  p.icaption_right { float:right; display:inline; margin:0 0 0.15em 1em; }
+
+  p.icaption_left img,
+  p.icaption_right img { padding:0; border:1px #888 solid; }
+
+  p.icaption_left strong,
+  p.icaption_right strong { display:block; overflow:hidden; margin-top:2px; padding:0.3em 0.5em; background:#eee; font-weight:normal; font-size:91.667%; }
+
+ /**
+  * ------------------------------------------------------------------------------------------------- #
+  *
+  * Generic Content Classes
+  *
+  * (en) standard classes for positioning and highlighting
+  * (de) Standardklassen zur Positionierung und Hervorhebung
+  *
+  * @section content-generic-classes
+  */
+
+  .highlight { color:#c30; }
+  .dimmed { color:#888; }
+
+  .info { background:#f8f8f8; color:#666; padding:10px; margin-bottom:0.5em; font-size:91.7%; }
+
+  .note { background:#efe; color:#040; border:2px #484 solid; padding:10px; margin-bottom:1em; }
+  .important { background:#ffe; color:#440; border:2px #884 solid; padding:10px; margin-bottom:1em; }
+  .warning { background:#fee; color:#400; border:2px #844 solid; padding:10px; margin-bottom:1em; }
+
+  .float_left { float:left; display:inline; margin-right:1em; margin-bottom:0.15em; }
+  .float_right { float:right; display:inline; margin-left:1em; margin-bottom:0.15em; }
+  .center { display:block; text-align:center; margin:0.5em auto; }
+
+ /**
+  * ------------------------------------------------------------------------------------------------- #
+  *
+  * Tables | Tabellen
+  *
+  * (en) Generic classes for table-width and design definition
+  * (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen
+  *
+  * @section content-tables
+  */
+
+  table { width:auto; border-collapse:collapse; margin-bottom:10px; }
+  table caption { font-variant:small-caps; }
+  table.full { width:100%; }
+  table.fixed { table-layout:fixed; }
+
+  th,td { padding:0.5em; }
+  thead th { color:#000; border-bottom:1px #e0e0e0 solid; }
+  tbody th { color:#333; }
+  tbody th[scope="row"], tbody th.sub {}
+
+  tbody th { border-bottom:1px solid #eee; text-align:left; }
+  tbody td { border-bottom:1px solid #eee; }
+
+ /**
+  * ------------------------------------------------------------------------------------------------- #
+  *
+  * Miscellaneous | Sonstiges
+  *
+  * @section content-misc
+  */
+
+ /**
+  * (en) Emphasizing external Hyperlinks via CSS
+  * (de) Hervorhebung externer Hyperlinks mit CSS
+  *
+  * @section             content-external-links
+  * @app-yaml-default    disabled
+  */
+
+  /*
+  #main a[href^="http://www.my-domain.com"],
+  #main a[href^="https://www.my-domain.com"]
+  {
+    padding-left:12px;
+    background-image:url('your_image.gif');
+    background-repeat:no-repeat;
+    background-position:0 0.45em;
+  }
+  */
+}
+/** CONTENT:CSS END ***/
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) CSS-component for creating vertical forms
+ * (de) CSS-Baustein zur Erstellung von Formularen mit untereinander angeordneten Elementen
+ *
+ * @note            Many thanks to Ansgar Hein (http://www.anatom5.de) for contribution
+ *
+ * @copyright       Copyright 2005-2011, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.3.1
+ * @revision        $Revision: 501 $
+ * @lastmodified    $Date: 2011-06-18 17:27:44 +0200 (Sa, 18 Jun 2011) $
+ */
+
+@media screen, projection
+{
+  /**
+   *  YAML Forms - visual styling
+   *
+   *  (en) visual form styling area
+   *  (de) Festlegung des optischen Erscheinungsbildes
+   */
+
+  .yform {
+    background:#f4f4f4;
+    border:1px #ddd solid;
+    margin:0 0 1em 0;
+    padding:10px 0 0 0;
+  }
+
+  .yform fieldset {
+    border:1px #ddd solid;
+    background:#fafafa;
+    margin:0 10px 1em 10px;
+    padding:0.5em;
+  }
+  
+  .yform legend {
+    font-size:125%; 
+    font-weight:normal; 
+    color:#000;
+  }
+
+  .yform label {
+    color:#666;
+  }
+
+  .yform input,
+  .yform textarea,
+  .yform select, 
+  .yform optgroup {
+    font-family:Arial, Helvetica, sans-serif; /* proportional fonts for all form elements */
+  }
+
+  .yform .type-text input,
+  .yform .type-text textarea,
+  .yform .type-select select {
+    border:1px solid #ddd;
+  }
+
+  /* :hover and :focus status on form fields | Effekt zur Hervorhebung von Formularfeldern bei :hover oder :focus */
+  .yform div.type-text input:focus,
+  .yform div select:focus,
+  .yform div textarea:focus,
+  .yform div.type-text input:hover,
+  .yform div select:hover,
+  .yform div textarea:hover,
+  .yform div.type-text input:active,
+  .yform div select:active,
+  .yform div textarea:active {
+    border:1px #a66 solid;
+    background:#fff;
+  }
+
+  /* Styling of custom styled buttons | Gestaltung von individuell gestalteten Buttons */
+  .yform .type-button input {
+    border-top:1px #ddd solid;
+    border-left:1px #ddd solid;
+    border-right:1px #444 solid;
+    border-bottom:1px #444 solid;
+    color:#000;
+    background:#454545 url(http://www.knorr.in/CTP/css/images/button_gray.png) top left repeat-x;
+    padding:5px 1em;
+  }
+
+  .yform .type-button input[type=reset] { color:#300; background:#661717 url(http://www.knorr.in/CTP/css/images/button_red.png) top left repeat-x; }
+  .yform .type-button input[type=submit] { color:#330; background:#5e5607 url(http://www.knorr.in/CTP/css/images/button_yellow.png) top left repeat-x; }
+
+  /* optional button styling for IE6 using classes */
+  .yform .type-button input.reset { color:#300; background:#661717 url(http://www.knorr.in/CTP/css/images/button_red.png) top left repeat-x; }
+  .yform .type-button input.submit { color:#330; background:#5e5607 url(http://www.knorr.in/CTP/css/images/button_yellow.png) top left repeat-x; }
+
+  /* :hover and :focus status on buttons | Effekt zur Hervorhebung von Schaltern bei :hover oder :focus */
+  .yform div.type-button input:focus,
+  .yform div.type-button input:hover,
+  .yform div.type-button input:active {
+    border-top:1px #444 solid;
+    border-left:1px #444 solid;
+    border-right:1px #ddd solid;
+    border-bottom:1px #ddd solid;
+    color:#fff;
+    background:#555; 
+  }
+
+  .yform div.type-button input.reset:focus,
+  .yform div.type-button input.reset:hover,
+  .yform div.type-button input.reset:active {
+    background:#800; color:#fff;
+  }
+
+  .yform div.type-button input.submit:focus,
+  .yform div.type-button input.submit:hover,
+  .yform div.type-button input.submit:active {
+    background:#880; color:#fff;
+  }
+
+ /*------------------------------------------------------------------------------------------------------*/
+
+ /**
+  * Vertical-Forms - technical base (standard)
+  *
+  * |-------------------------------|
+  * | fieldset                      |
+  * |-------------------------------|
+  * |   label                       |
+  * |   input / select / textarea   |
+  * |-------------------------------|
+  * | /fieldset                     |
+  * |-------------------------------|
+  *
+  * (en) Styling of forms where both label and input/select/textarea are styled with display:block;
+  * (de) Formulargestaltung, bei der sowohl label als auch input/select/textarea mit display:block; gestaltet werden
+  *
+  * WARNING:This part contains several IE-stability-fixes. Don't edit this part if you are not sure, what you're doing!
+  */
+
+  /* General form styling  | Allgemeine Formatierung des Formulars */
+  .yform { overflow:hidden; }
+  .yform fieldset { display:block; zoom:1; }
+  .yform label { display:block; cursor:pointer; }
+  .yform legend { background:transparent; border:0; padding:0 0.5em; }
+  .yform .message { display:block; margin-bottom:0.5em; color:#666; }
+
+  /* Hiding of hidden fields (otherwise ugly spaces in Firefox) | Versteckte Felder wirklich verstecken (sonst ggf. häßliche Lücken im Firefox) */
+  .yform input[type=hidden] { display:none !important; }
+
+  /* Highlight mandatory fields | Pflichtfeldkennzeichnung hervorheben */
+  .yform sup { color:#800; font-weight:bold; }
+
+  /* per row float clearing | zeilenweises Float-Clearing */
+  fieldset:after,
+  .yform div.type-text:after,
+  .yform div.type-select:after,
+  .yform div.type-check:after,
+  .yform div.type-button:after {
+    clear:both;
+    content:".";
+    display:block;
+    font-size:0;
+    height:0;
+    visibility:hidden;
+  }
+
+  /* styling containing DIV elements | Gestaltung der kapselnden DIV-Elemente */
+  .yform div.type-text,
+  .yform div.type-select,
+  .yform div.type-check,
+  .yform div.type-button {
+	display:block;
+    margin:0.5em 0;
+    padding:3px 10px 10px 20px;  
+    position:relative;
+	zoom:1; 
+  }
+  
+  .yform div.type-button {
+    padding:3px 0em;  
+  }
+  
+  /* styling standard form elements with 'almost' equal flexible width | Gestaltung der einzelnen Formularelemente mit annähend gleicher Breite */
+  .yform .type-text input,
+  .yform .type-text textarea {
+    display:block;
+    position:relative;
+    padding:0.3em 0.3em;
+    width:58.5%;
+  }
+  
+  .yform .multi-form-fields .type-text input,
+  .yform .multi-form-fields .type-select select,
+  .yform .multi-form-fields .type-text textarea {
+	width:90%;
+  }
+
+  .yform .type-select select {
+    display:block;
+    position:relative;
+    padding:0.3em 2px 0.3em 1px;
+    width:60%;
+    cursor:pointer;
+  }
+  .yform .type-select select optgroup {
+    font-style:normal;
+    font-weight:bold;
+  }
+
+  .yform .type-check input { cursor:pointer; }
+  .yform .type-check label { display:inline; }
+
+  /* Styling of buttons | Gestaltung von Buttons */
+  .yform .type-button input {
+    cursor:pointer;
+    overflow:visible;  /* Fixes IE7 auto-padding bug */
+    width:auto;
+  }
+
+  /* Styling of error-messages | Fehlermeldungen */
+  .yform div.error {
+    border:1px #a00 dashed;
+    background:#faf4f4;
+  }
+
+  .yform div.error label { color:#000; font-weight:bold; }
+  .yform div em {display:none }
+  .yform div.error  em.error { display:inline; }
+  .yform div.error .message { color:#800; }
+
+  /* avoid jumping checkboxes & radiobuttons in IE8 */
+  .yform div.type-check input:focus,
+  .yform div.type-check input:hover,
+  .yform div.type-check input:active { border:0 none; }
+
+ /*------------------------------------------------------------------------------------------------------*/
+
+  /* Indent Checkbox fields to match label-width | Checkboxen um den gleichen Wert einrücken, wie die Breite der labels */
+
+  .full div.type-text input,
+  .full div.type-text textarea { width:95.5%; margin-right: -3px; }
+  .full div.type-select select { width:97.0%; margin-right: -3px; }
+  
+  /* width adjustments for IE 5.x & IE6 | Breitenanpassung für Internet Explorer 5.x und 6.0 */
+  * html .full div.type-text input,
+  * html .full div.type-text textarea { width:95.5%; }
+  * html .full div.type-select select { width:97.0%; }
+
+ /*------------------------------------------------------------------------------------------------------*/
+
+ /**
+  * Columnar forms display - technical base (optional)
+  *
+  * |-------------------------------------------|
+  * | fieldset                                  |
+  * |-------------------------------------------|
+  * |                                           |
+  * |   label   |   input / select / textarea   |
+  * |                                           |
+  * |-------------------------------------------|
+  * | /fieldset                                 |
+  * |-------------------------------------------|
+  *
+  * (en) Styling of forms where label floats left of form-elements
+  * (de) Formulargestaltung, bei der die label-Elemente nach links fließen
+  *
+  * WARNING:This part contains several IE-stability-fixes. Don't edit this part if you are not sure, what you're doing!
+  */
+
+  /* Columnar display | Spalten-Darstellung */
+  .columnar .type-text label,
+  .columnar .type-select label {
+    float:left;
+    width:30%; /* Can be fixed width too | Kann auch eine fixe Angabe sein */
+  }
+
+  /* Indent Checkbox fields to match label-width | Checkboxen um den gleichen Wert einrücken, wie die Breite der labels */
+  .columnar div.type-check input { margin-left:30%; }
+  .columnar div.error .message { margin-left:30%; }
+
+  .columnar fieldset div.type-button,
+  fieldset.columnar div.type-button { padding-left:30%; }
+
+  .columnar div.type-text input,
+  .columnar div.type-text textarea { float:left; width:67.8%; margin-right: -3px; }
+  .columnar div.type-select select { float:left; width:69.4%; margin-right: -3px; }
+  
+  /* width adjustments for IE 5.x & IE6 | Breitenanpassung für Internet Explorer 5.x und 6.0 */
+  * html .columnar div.type-text input,
+  * html .columnar div.type-text textarea { width:67.2%; }
+  * html .columnar div.type-select select { width:68.8%; }
+  
+ /*------------------------------------------------------------------------------------------------------*/
+
+ /**
+  * Global fixes for YAML's form construction set
+  *
+  * @workaround
+  * @affected IE 5.x/Win, IE6, IE7
+  * @css-for IE 5.x/Win, IE6, IE7
+  * @valid no
+  */
+
+  .yform, 
+  .yform div,
+  .yform div * { zoom:1; }
+
+ /**
+  * Forms Fieldset/Legend-Bug in IE
+  * @see http://www.mattheerema.com/web-design/2006/04/getting-fieldset-backgrounds-and-legends-to-behave-in-ie/
+  *
+  * @workaround
+  * @affected IE 5.x/Win, IE6, IE7, IE8
+  * @css-for IE 5.x/Win, IE6, IE7, IE8
+  * @valid no
+  */
+  
+  /* all IE */ 
+  .yform { padding-top:0\9; }
+  .yform fieldset { padding:0 5px\9; padding-top:1em\9; }
+  .yform legend { position:absolute\9; top:-.5em\9; *left:0\9; }
+  .yform fieldset { position:relative\9; overflow:visible\9;  margin-top:1.5em\9; zoom:1; }
+
+  /* IE5.x, IE6 & IE7 */
+  .yform legend { *padding:0 5px; }
+  .yform fieldset { *padding-top:1.5em; }
+  
+  /* IE5.x & IE6 */
+  * html .yform { padding-top:10px; }
+}
+
+/**FORMS.css **/

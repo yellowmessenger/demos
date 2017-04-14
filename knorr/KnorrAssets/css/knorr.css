@@ -1,0 +1,14 @@
+﻿/* X button predictive search*/
+.close-search {
+    background: url("../images/x-button.png") no-repeat scroll 50% 50% rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: block;
+    height: 16px;
+    position: absolute;
+    right: 35px;
+    text-indent: -9999px;
+    top: 15px;
+    width: 16px;
+}
+#recipeFilters input[type="text"] { padding: 0 56px 0 18px; width: 205px; }
+
