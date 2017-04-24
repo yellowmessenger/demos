@@ -1,0 +1,642 @@
+.dcsns,
+.dcsns h1,
+.dcsns-content {
+    position: relative
+}
+.dcsns h1,
+.dcsns h2,
+.dcsns h3,
+.stream li {
+    line-height: 1.35em
+}
+.dcsns li,
+.dcsns ul {
+    padding: 0;
+    margin: 0;
+    list-style: none!important;
+    background: 0 0
+}
+.dcsns {
+    color: #444;
+    list-style: none
+}
+.dcsns h1 {
+    width: auto
+}
+.dcsns-content {
+    padding: 0;
+    width: 98%;
+    margin: 0 auto;
+    left: 1%
+}
+.dcsns-loading {
+    background: url(http://cinthol.com/images/loading_light.gif) no-repeat;
+    height: 24px;
+    padding: 6px 0 0 30px;
+    position: absolute;
+    top: 10px;
+    left: 10px
+}
+.dcsns-toolbar .dcsns-loading {
+    right: 10px;
+    left: auto
+}
+.stream p {
+    margin: 0;
+    padding: 0
+}
+.stream li a {
+    color: #ff0
+}
+.stream li {
+    background: url(../images/socileBg.png) bottom center no-repeat;
+    -webkit-box-shadow: 0 -10px 15px -5px rgba(0, 0, 0, .8);
+    -moz-box-shadow: 0 -10px 15px -5px rgba(0, 0, 0, .8);
+    box-shadow: 0 -10px 15px -5px rgba(0, 0, 0, .8);
+    font-size: 13px;
+    padding: 15px 0 35px;
+    width: 280px;
+    position: relative;
+    margin: 0 28px 45px 0;
+    font-family: HelveticaNeueLTStd-Roman;
+    color: #E4E4E4
+}
+.stream li .inner {
+    overflow: hidden;
+    padding: 0 15px
+}
+.stream li .icon {
+    position: absolute;
+    left: 3px;
+    bottom: 0;
+    z-index: 3
+}
+.stream li .icon:last-child {
+    position: absolute;
+    left: 37%;
+    bottom: -22px
+}
+.stream li .section-intro {
+    padding: 2px 0;
+    width: 100%;
+    left: 0;
+    bottom: 20px;
+    position: absolute;
+    color: #000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    z-index: 2;
+    margin-left: 16px;
+    display: none
+}
+.stream li .clear {
+    clear: both
+}
+.stream li .section-intro a {
+    text-decoration: underline;
+    color: #000
+}
+.stream li .section-title {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px
+}
+.stream li .section-title a {
+    color: #E4E4E4;
+    font-size: 13px;
+    text-decoration: none;
+    font-family: HelveticaNeueLTStd-Bd
+}
+.stream li .section-title a:hover {
+    color: #ff0
+}
+.stream li .section-thumb {
+    float: left;
+    margin: 0 7px 5px 0;
+    width: 100%
+}
+.stream li .section-thumb img {
+    padding: 1px
+}
+.stream li .section-text {
+    display: block;
+    margin-bottom: 8px
+}
+.stream li .meta span,
+.stream li .section-user {
+    margin: 0 8px 5px 0;
+    line-height: 12px;
+    float: left;
+    display: block
+}
+.stream li .section-text br {
+    display: block
+}
+.stream li .section-user {
+    clear: both;
+    font-style: italic;
+    padding: 7px 0 0 15px;
+    background: url(http://cinthol.com/images/profile.png) 0 7px no-repeat
+}
+.stream li .meta {
+    display: block;
+    font-size: 90%;
+    color: #999
+}
+.stream li .meta span {
+    padding: 0 0 0 15px
+}
+.meta span.shares {
+    background: url(http://cinthol.com/images/shares.png) no-repeat;
+    padding-left: 20px
+}
+.meta span.views {
+    background: url(http://cinthol.com/images/views.png) no-repeat;
+    padding-left: 18px
+}
+.meta span.likes {
+    background: url(http://cinthol.com/images/likes.png) no-repeat;
+    padding-left: 16px
+}
+.meta span.comments {
+    background: url(http://cinthol.com/images/comments.png) no-repeat
+}
+.meta span.users {
+    background: url(http://cinthol.com/images/users.png) no-repeat
+}
+.meta span.videos {
+    background: url(http://cinthol.com/images/videos.png) no-repeat;
+    padding-left: 16px
+}
+.stream li .section-meta {
+    display: block;
+    margin: 0;
+    padding: 0;
+    clear: both
+}
+.stream li .meta.item-comments {
+    padding: 0 0 0 35px;
+    margin: 0 0 5px;
+    min-height: 30px;
+    position: relative;
+    clear: both;
+    line-height: 1.3em
+}
+.stream li .meta.item-comments img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px
+}
+.stream li .meta.item-likes {
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    line-height: 1.3em
+}
+.stream li .meta.item-likes img {
+    float: left;
+    margin: 0 5px 5px 0;
+    width: 30px;
+    border: 1px solid #ddd;
+    padding: 1px;
+    background: #fff
+}
+.stream li.dcsns-error {
+    color: #900
+}
+.stream li .section-share {
+    display: block;
+    margin: 0 0 5px;
+    padding: 4px 0 0;
+    float: right
+}
+.stream li .section-share a {
+    display: block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 0 2px 0 0;
+    background: url(http://cinthol.com/images/share.png) no-repeat
+}
+.stream li .section-share a.share-twitter {
+    background-position: 0 -16px
+}
+.stream li .section-share a.share-reply {
+    background-position: 0 -32px
+}
+.stream li .section-share a.share-retweet {
+    background-position: 0 -48px
+}
+.stream li .section-share a.share-favorite {
+    background-position: 0 -64px
+}
+.stream li .section-share a.share-google {
+    background-position: 0 -80px
+}
+.stream li .section-share a.share-linkedin {
+    background-position: 0 -96px
+}
+.stream li .section-share a.share-facebook:hover {
+    background-position: -16px 0
+}
+.stream li .section-share a.share-twitter:hover {
+    background-position: -16px -16px
+}
+.stream li .section-share a.share-reply:hover {
+    background-position: -16px -32px
+}
+.stream li .section-share a.share-retweet:hover {
+    background-position: -16px -48px
+}
+.stream li .section-share a.share-favorite:hover {
+    background-position: -16px -64px
+}
+.stream li .section-share a.share-google:hover {
+    background-position: -16px -80px
+}
+.stream li .section-share a.share-linkedin:hover {
+    background-position: -16px -96px
+}
+.dcsns-toolbar {
+    padding: 0;
+    overflow: hidden;
+    position: relative
+}
+#wall {
+    padding-top: 15px
+}
+#wall .dcsns-toolbar {
+    margin-bottom: 25px
+}
+.dcsns-toolbar .filter {
+    float: right;
+    margin: 3% auto 0;
+    padding: 0;
+    position: relative
+}
+.dcsns-toolbar .filter li {
+    background: rgba(0, 0, 0, 0);
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 20%
+}
+.dcsns-toolbar .filter .link-all {
+    color: #37b7e5;
+    height: 40px;
+    width: 56px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    font-family: Helvetica;
+    font-weight: 700;
+    text-indent: -999999px
+}
+.dcsns-toolbar .filter li a {
+    display: block;
+    float: left;
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    margin-left: 35px;
+    text-decoration: none
+}
+.dcsns-toolbar .filter li.f-facebook a {
+    background-image: url(../images/dcsns-dark/facebook.png);
+    height: 89px;
+    width: 94px
+}
+.dcsns-toolbar .filter li.f-facebook a:hover,
+.dcsns-toolbar .filter li.f-facebook a.iso-active {
+    background-image: url(../images/dcsns-dark/facebook-on.png)
+}
+.dcsns-toolbar .filter li.f-twitter a {
+    background-image: url(../images/dcsns-dark/twitter.png);
+    height: 89px;
+    width: 94px
+}
+.dcsns-toolbar .filter li.f-twitter a:hover,
+.dcsns-toolbar .filter li.f-twitter a.iso-active {
+    background-image: url(../images/dcsns-dark/twitter-on.png)
+}
+.dcsns-toolbar .filter li.f-youtube a {
+    background-image: url(../images/dcsns-dark/youtube.png);
+    height: 89px;
+    width: 94px
+}
+.dcsns-toolbar .filter li.f-youtube a:hover, 
+.dcsns-toolbar .filter li.f-youtube a.iso-active {
+    background-image: url(../images/dcsns-dark/youtube-on.png)
+}
+.dcsns-toolbar .filter li .link-all {
+    background-image: url(../images/dcsns-dark/all.png);
+    height: 89px;
+    width: 94px
+}
+.dcsns-toolbar .filter li .link-all:hover,
+.dcsns-toolbar .filter li .link-all.iso-active {
+    background-image: url(../images/dcsns-dark/all-on.png)
+}
+.dcsns-toolbar .filter li a img {
+    display: none
+}
+.dcsns .controls {
+    position: absolute;
+    right: 0;
+    top: 7px;
+    height: 22px;
+    padding: 0;
+    z-index: 12
+}
+.dcsns .controls li {
+    display: inline;
+    background: 0 0
+}
+.dcsns .controls a {
+    display: block;
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin: 0 0 0 2px;
+    background: url(http://cinthol.com/images/controls.png) no-repeat
+}
+.dcsns .controls .prev {
+    background-position: -44px 0
+}
+.dcsns .controls .next {
+    background-position: -66px 0
+}
+.dcsns .controls .play {
+    background-position: 0 0
+}
+.dcsns .controls .pause {
+    background-position: -22px 0
+}
+.dcsns .controls .prev:hover {
+    background-position: -44px -22px
+}
+.dcsns .controls .next:hover {
+    background-position: -66px -22px
+}
+.dcsns .controls .play:hover {
+    background-position: 0 -22px
+}
+.dcsns .controls .pause:hover {
+    background-position: -22px -22px
+}
+.stream li.dcsns-facebook .section-thumb img {
+    width: 75px
+}
+.stream li.dcsns-facebook .section-text img {
+    box-shadow: 3px 2px 7px rgba(0, 0, 0, .8);
+    float: left;
+    margin: 10px 7px 5px 0;
+    padding: 1px;
+    width: 100%
+}
+.stream li.dcsns-facebook .section-text a {
+    margin-right: 4px
+}
+.stream li.dcsns-facebook .meta {
+    display: block;
+    clear: both
+}
+.stream li.dcsns-facebook .meta.item-comments {
+    padding: 0;
+    min-height: auto
+}
+.stream li.dcsns-facebook .meta.item-comments a {
+    display: block;
+    margin: 0 0 2px
+}
+.stream li.dcsns-facebook .share-facebook {
+    display: none
+}
+.stream li.dcsns-twitter .section-thumb {
+    margin-top: 3px
+}
+.stream li.dcsns-twitter .section-thumb img {
+    width: 48px;
+    height: 48px
+}
+.stream li.dcsns-twitter .section-user {
+    padding: 0;
+    background: 0 0
+}
+.stream li.dcsns-twitter .section-text img {
+    margin: 5px 0 0;
+    border: 1px solid #ddd;
+    padding: 1px;
+    background: #fff;
+    max-width: 100%
+}
+.social-grid .socicon-youtube{
+	background-image: url(../images/dcsns-dark/youtube.png);
+    height: 89px;
+    width: 94px;
+    display: block;
+    position: absolute;
+    left: 35%;
+	bottom: -48px;
+}
+.social-grid .socicon-twitter{
+	background-image: url(../images/dcsns-dark/twitter.png);
+    height: 89px;
+    width: 94px;
+    display: block;
+    position: absolute;
+    left: 35%;
+	bottom: -48px;
+}
+.social-grid .socicon-facebook{
+	background-image: url(../images/dcsns-dark/facebook.png);
+    height: 89px;
+    width: 94px;
+    display: block;
+    position: absolute;
+    left: 35%;
+	bottom: -48px;
+}
+.stream li.dcsns-twitter a {
+    color: #38AEAE
+}
+.stream li.dcsns-twitter .section-intro a,
+.stream li.dcsns-twitter .section-intro a:hover {
+    color: #fff
+}
+.stream li.dcsns-twitter .section-intro span a {
+    text-decoration: none;
+    margin-left: 0
+}
+.stream li.dcsns-twitter .section-intro span a:hover {
+    text-decoration: underline
+}
+.stream li.dcsns-twitter a:hover {
+    color: #38AEAE;
+    text-decoration: underline
+}
+.stream li.dcsns-twitter .twitter-user {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block
+}
+.stream li.dcsns-google .section-title,
+.stream li.dcsns-vimeo .section-text {
+    margin-bottom: 5px
+}
+.stream li.dcsns-twitter .twitter-user a {
+    color: #999;
+    line-height: 1.35em
+}
+.stream li.dcsns-twitter .twitter-user a:hover {
+    color: #999;
+    text-decoration: none
+}
+.stream li.dcsns-twitter .twitter-user a strong {
+    color: #999
+}
+.stream li.dcsns-twitter .twitter-user a:hover strong {
+    color: #38AEAE;
+    text-decoration: underline
+}
+.dcsns .stream li.dcsns-google .section-thumb img {
+    max-width: 192px
+}
+.stream li.dcsns-google .meta span.plusones {
+    padding-left: 0
+}
+.stream li.dcsns-rss .section-text img {
+    border: 1px solid #ddd;
+    padding: 1px;
+    background: #fff;
+    max-width: 192px
+}
+.dcsns .stream li.dcsns-stumbleupon .section-title {
+    display: block;
+    clear: both
+}
+.dcsns .stream li.dcsns-stumbleupon .section-thumb img,
+.stream li.dcsns-vimeo .section-thumb img,
+.stream li.dcsns-youtube .section-thumb img {
+    width: 100%;
+    box-shadow: 3px 2px 7px rgba(0, 0, 0, .8)
+}
+.dcsns .stream li.dcsns-vimeo .section-title {
+    display: block;
+    clear: both
+}
+.stream li.dcsns-vimeo .section-text .meta {
+    padding-top: 5px
+}
+.stream li.dcsns-vimeo .logo {
+    margin-bottom: 3px
+}
+.stream li.dcsns-flickr .section-thumb {
+    margin: 0
+}
+.stream li.dcsns-flickr .section-thumb img {
+    max-width: 192px
+}
+.stream li.dcsns-pinterest .section-thumb {
+    display: block
+}
+.stream li.dcsns-pinterest .section-text {
+    clear: both
+}
+.stream li.dcsns-pinterest .section-thumb img {
+    width: 190px
+}
+.stream li.dcsns-dribbble .inner img {
+    margin-bottom: 5px;
+    max-width: 192px
+}
+.stream li.dcsns-lastfm .section-title {
+    background: url(http://cinthol.com/images/tracks.png) no-repeat;
+    padding-left: 17px;
+    margin-bottom: 0
+}
+.stream li.dcsns-deviantart .section-thumb {
+    display: block;
+    float: none
+}
+.stream li.dcsns-deviantart .section-thumb img {
+    max-width: 192px
+}
+.stream li.dcsns-tumblr .section-text img {
+    margin: 0 7px 5px 0;
+    float: left;
+    border: 1px solid #ddd;
+    padding: 1px;
+    background: #fff;
+    max-width: 192px
+}
+.stream li.dcsns-tumblr .track {
+    display: block;
+    background: url(http://cinthol.com/images/tracks.png) 0 5px no-repeat;
+    padding: 5px 0 0 17px;
+    margin-bottom: 0
+}
+.stream li.dcsns-instagram {
+    padding-bottom: 40px
+}
+.stream li.dcsns-instagram .section-title {
+    font-weight: 400;
+    clear: both
+}
+.stream li.dcsns-instagram .section-thumb img {
+    margin: 0 7px 5px 0;
+    float: left;
+    border: 1px solid #ddd;
+    padding: 1px;
+    background: #fff;
+    max-width: 192px
+}
+.stream li.dcsns-instagram .meta {
+    clear: both
+}
+.stream li.dcsns-instagram .section-meta .meta .comments,
+.stream li.dcsns-instagram .section-meta .meta .likes {
+    margin: 0 0 5px;
+    padding-top: 5px;
+    background-position: 0 5px;
+    float: none;
+    font-size: 100%;
+    font-weight: 700
+}
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: .8s;
+    -moz-transition-duration: .8s;
+    -ms-transition-duration: .8s;
+    -o-transition-duration: .8s;
+    transition-duration: .8s
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -ms-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    -ms-transition-property: -ms-transform, opacity;
+    -o-transition-property: top, left, opacity;
+    transition-property: transform, opacity
+}
+.isotope .isotope-item.no-transition,
+.isotope.no-transition,
+.isotope.no-transition .isotope-item {
+    -webkit-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -o-transition-duration: 0s;
+    transition-duration: 0s
+}

@@ -1,0 +1,1 @@
+.slider,.slides{position:relative}.slides,.slides li{-webkit-backface-visibility:hidden}.slider{width:100%;overflow:hidden}.slides{padding:0;list-style:none;letter-spacing:0;word-spacing:0;font-size:0;-webkit-transform:translate3d(0,0,0)}.slides li{display:inline-block}.slides li img{width:100%;height:auto}
