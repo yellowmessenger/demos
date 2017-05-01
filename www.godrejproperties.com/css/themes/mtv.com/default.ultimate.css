@@ -1,0 +1,17 @@
+@import "default.css";
+ul.dropdown a,ul.dropdown span{display:block;_display:block}
+ul.dropdown li{padding:0}
+ul.dropdown ul a,ul.dropdown ul span{padding:8px}
+ul.dropdown .dir{padding:5px 30px}
+ul.dropdown ul .dir{padding:8px 30px 8px 8px}
+ul.dropdown ul a{width:auto}
+ul.dropdown ul a.dir{width:122px}
+ul.dropdown ul .open{background-image:url(images/dropdown.png);color:#666;margin-left:-10px}
+ul.dropdown ul ul .open{background-image:url(images/dropdown.png);color:#666;margin-left:-10px;padding-left:15px}
+ul.dropdown a.open:hover{color:#666;margin-left:-10px;padding-left:15px}
+ul.dropdown ul a.open:hover{background-image:url(images/dropdown.png);color:#666;margin-left:-10px;padding-left:15px}
+ul.dropdown li:hover > .dir{font-weight:700}
+ul.dropdown ul li:hover > .dir{background-image:url(images/dropdown.png);font-weight:700;margin-left:-10px;padding-left:15px}
+ul.dropdown ul ul li:hover > .dir{background-image:url(images/dropdown.png);color:#666;font-weight:700}
+ul.dropdown li:hover > a.dir:hover{color:#666}
+ul.dropdown ul li:hover > a.dir:hover{background-image:url(images/dropdown.png);color:#666}
