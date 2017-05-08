@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* FOOTER */
+footer {
+	position: relative;
+	overflow: hidden;
+	clear: both;
+}
+footer > nav > ul {
+	float: left;
+	margin: 0 0 0 30px;
+}
+footer > nav > ul > li {
+	margin: 50px 0;
+	padding: 0 12px;
+	line-height: 7px;
+	border-left: solid 2px #8ed6f6;
+	float: left;
+	/*font-family: "trebuchet ms", arial, sans-serif;*/
+	font-size: 12px;
+	color: #8ed6f6;
+}
+#button-like {
+	position: absolute;
+	left: 604px;
+	top: 43px;
+	width: 100px;
+}
+#button-follow {
+	position: absolute;
+	left: 775px;
+	top: 43px;
+}
+#button-follow a {
+	color: #ffffff;
+}
+#button-plus {
+	position: absolute;
+	left: 888px;
+	top: 41px;
+}
+.ie7 footer > nav > ul > li {
+	line-height: 12px;
+}
+footer > nav > ul > li:first-child, footer > nav > ul > li.copyright {
+	border-left: 0;
+	padding-left:10px;
+}
+footer > nav > ul > li > a:link, footer > nav > ul > li > a:active, footer > nav > ul > li > a:visited {
+	color: #8ed6f6;
+}
+/* FB Share Count */
+.oreo-share {
+	font:11px/11px Helvetica, Arial, sans-serif;
+	position:absolute;
+	left:706px;
+	top:42px;
+}
+.oreo-share a {
+	background: url("../img/share-sprite.png") no-repeat scroll 0px 0 transparent;
+	display:inline;
+	float:left;
+	margin-right:7px;
+	overflow:hidden;
+	width:53px;
+	height:23px;
+	text-decoration:none;
+	color:#616161;
+	font-weight:bold;
+}
+.oreo-share a:hover {
+	background-position:-53px 0px
+}
+.oreo-share a b {
+	display:block;
+	line-height: 23px;
+	margin: 0 7px 0 22px;
+	text-align:center;
+}
+.oreo-share a.oreo-share-email {
+	background-position:0px -23px;
+	color:#fff !important;
+}
+.oreo-share a.oreo-share-email:hover {
+	background-position:-53px -23px
+}
+.oreo-share a.oreo-share-facebook {
+	background-position:0px -46px;
+	color:#fff !important;
+}
+.oreo-share a.oreo-share-facebook:hover {
+	background-position:-53px -46px
+}
+.oreo-share a.oreo-share-twitter {
+	background-position:0px -69px;
+	color:#4887a6 !important;
+}
+.oreo-share a.oreo-share-twitter:hover {
+	background-position:-53px -69px
+}
+.oreo-share a.oreo-share-digg {
+	background-position:0px -92px;
+	color:#616161 !important;
+}
+.oreo-share a.oreo-share-digg:hover {
+	background-position:-53px -92px
+}
+.oreo-share a.oreo-share-lifestream {
+	background-position:0px -115px;
+	color:#fff !important;
+}
+.oreo-share a.oreo-share-lifestream:hover {
+	background-position:-53px -115px
+}
+.oreo-share a.oreo-share-s2c {
+	background-position:0px -138px;
+	color:#616161 !important;
+}
+.oreo-share a.oreo-share-s2c:hover {
+	background-position:-53px -138px
+}
+.oreo-share a.oreo-share-comments {
+	background-position:0px -161px;
+	color:#fff !important;
+}
+.oreo-share a.oreo-share-comments:hover {
+	background-position:-53px -161px
+}
