@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('http://www.canarabank.com/webfont/MyriadPro-Regular.eot');
+  src: url('http://www.canarabank.com/webfont/MyriadPro-Regular.woff2') format('woff2'),
+       url('http://www.canarabank.com/webfont/MyriadPro-Regular.woff') format('woff'),
+       url('http://www.canarabank.com/webfont/MyriadPro-Regular.ttf') format('truetype'),
+       url('http://www.canarabank.com/webfont/MyriadPro-Regular.svg') format('svg'),
+       url('http://www.canarabank.com/webfont/MyriadPro-Regular.eot?') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Semibold';
+  src: url('http://www.canarabank.com/webfont/MyriadPro-Semibold.eot');
+  src: url('http://www.canarabank.com/webfont/MyriadPro-Semibold.woff2') format('woff2'),
+       url('http://www.canarabank.com/webfont/MyriadPro-Semibold.woff') format('woff'),
+       url('http://www.canarabank.com/webfont/MyriadPro-Semibold.ttf') format('truetype'),
+       url('http://www.canarabank.com/webfont/MyriadPro-Semibold.svg') format('svg'),
+       url('http://www.canarabank.com/webfont/MyriadPro-Semibold.eot?') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url('http://www.canarabank.com/webfont/MyriadPro-Bold.eot');
+  src: url('http://www.canarabank.com/webfont/MyriadPro-Bold.woff2') format('woff2'),
+       url('http://www.canarabank.com/webfont/MyriadPro-Bold.woff') format('woff'),
+       url('http://www.canarabank.com/webfont/MyriadPro-Bold.ttf') format('truetype'),
+       url('http://www.canarabank.com/webfont/MyriadPro-Bold.svg') format('svg'),
+       url('http://www.canarabank.com/webfont/MyriadPro-Bold.eot?') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
