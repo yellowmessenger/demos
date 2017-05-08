@@ -1,0 +1,21 @@
+/*on
+.widgetCls img {
+    width: 69px;
+    height: 60px;
+}
+
+.widgetCls {
+	position: absolute;
+	top: -18px;
+	right: -115px;
+}
+*/
+
+/*Off*/
+.widgetCls {
+	display:none;
+	position: absolute; 
+	top: 0px; 
+	right: 0px;
+}
+
