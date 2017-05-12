@@ -7,27 +7,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <title>PNB Metlife</title>
     <style>
-        html, body {
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: 0;
-            padding: 0;
-            height: 100%;
-        }
         .bot-container{
             height: 350px;
             margin-top: 20px;
         }
         @media screen and (max-device-width: 640px) {
+            html, body {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
             .bot-col{
                 padding: 0 !important;
             }
 
             .bot-container{
-                height: 100vh;
+                height: calc(100vh - 50vh);
                 margin-top: 0;
             }
         }
