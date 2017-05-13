@@ -1,0 +1,822 @@
+// BOILERPLATE
+// Remove noJS class from <html>
+document.documentElement.className = document.documentElement.className.replace('noJS','');
+
+// Select tracking, by changing "false" to an object {} with properties
+// TRACKMEET_GOOGLE_ANALYTICS, TRACKMEET_DOUBLECLICK, and/or TRACKMEET_COREMETRICS
+// and the configuration properties for each (see trackmeet.js for details)
+var tmParams = {
+    TRACKMEET_GOOGLE_ANALYTICS: {
+        'id':'UA-17830010-6'
+    }
+};
+TrackMeet.init(tmParams);
+
+	var elWindow = '';
+	// return the appropriate window object for use in height detection depending on the browser
+	function setWindow(){
+		if(window.innerWidth){
+			// if browser can handle innerWidth, then window remains window
+			elWindow = window;
+		} else {
+			// otherwise set elWindow to documentElement for IE tomfoolery
+			elWindow = document.documentElement;
+		}
+	}
+	setWindow();
+
+// return the height of any element specified
+var windowHeight = function(element){
+	// if element is not specified then default to the browser window returned in setWindow function
+	if(typeof element == 'undefined'){
+		element = elWindow;
+	}
+	if(element.innerHeight){
+		// can browser return innerHeight
+		var thisHeight = element.innerHeight;
+	} else {
+		// if not, then return offsetHeight
+		var thisHeight = element.offsetHeight;
+	}
+	return thisHeight;
+}
+// return the width of any element specified
+var windowWidth = function(element){
+	// if element is not specified then default to the browser window returned in setWindow function
+	if(typeof element == 'undefined'){
+		element = elWindow;
+	}
+	if(element.innerWidth){
+		// can browser return innerHeight
+		var thisWidth = element.innerWidth;
+	} else {
+		// if not, then return offsetHeight
+		var thisWidth = element.offsetWidth;
+	}
+	return thisWidth;
+}
+// Generic function that will return all query strings if there are any or will otherwise return false.
+// If a single string is passed as an argument it will check to see if there is a query by that name
+// and if so will return the value of that query or will otherwise return false -- even if other queries exist
+function getQueries(qName){
+	var rawQueries = document.location.href.split('?')[1] ? document.location.href.split('?')[1].split('&') : false,
+		queries = {};
+	if(rawQueries == false){
+		return false;
+	} else {
+		for(var query in rawQueries){
+			if(rawQueries[query].split('=')[1]){
+				var name = rawQueries[query].split('=')[0],
+					value = rawQueries[query].split('=')[1];
+				queries[name] = value;
+				if(typeof qName != 'undefined'){
+					if(name == qName){
+						return value;
+					} else {
+						return false;
+					}
+				}
+			}
+		}
+		return queries;
+	}
+}
+// Check if there is a query string with a key:value pair of 'dev=debug'
+// If so, add the class "debug" to the html tag
+// All CSS styles starting with .debug will be enabled
+var DEBUG = getQueries('dev') == 'debug' ? true : false;
+if(getQueries('dev') == 'debug'){
+	var existingClass = document.getElementsByTagName('html')[0].getAttribute('class') != null ? document.getElementsByTagName('html')[0].getAttribute('class') + ' ' : '';
+	document.getElementsByTagName('html')[0].setAttribute('class',existingClass + 'debug');
+	console.log('* DEBUG enabled');
+}
+
+// if query string "dev=debug" exists, consoleThis{} will render its supplied arguments in the console. Multiple entries should be formatted [into, a, simple, array].
+function consoleThis(response){
+	if(DEBUG){
+		window.console && console.log(response);
+	}
+}
+var resizeFunctions = {};
+function remCalibrate() {
+	if( windowWidth() >= 1300){
+		document.documentElement.style.fontSize = 1300/100 + 'px';
+	} else {
+		document.documentElement.style.fontSize = windowWidth()/100 + 'px';
+	}
+	for(var func in resizeFunctions){
+        if(func)
+		    resizeFunctions[func].func(resizeFunctions[func].args);
+	}
+}
+
+/*==========================================================================
+	YOUTUBE
+========================================================================== */
+
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var YTready = false,
+	playerIdList = [],
+	ytPlayers = {};
+
+// When YouTube API is ready, switch YTready to true and run the queue of videos should any exist
+// and run a list of page-specified functions such as carousel setups
+var YTreadyFunctions = {};
+function onYouTubeIframeAPIReady() {
+	window.console && console.log('YT Ready');
+	YTready = true;
+	/*if (playerIdList.length > 0) {
+		runYouTubeIframeList(playerIdList);
+	}*/
+    var ytPlayer = document.querySelectorAll('.yt-player');
+    var ytLaunchModal = document.querySelectorAll('.yt-launch-modal');
+    for(var x=0; x < ytPlayer.length;x++){
+        var ytID = ytPlayer[x].getAttribute('id');
+        playerIdList.push(ytID);
+        //console.log(ytID);
+        initializeYouTubeIframe(ytID);
+    }
+    if(document.querySelector('#ytModal')){
+    	var ytModal = document.querySelector('#ytModal');
+    	var $ytModal = $(ytModal);
+    	var ytModalPlayerID = ytModal.querySelector('iframe').id;
+	    for(var x=0;x<ytLaunchModal.length;x++){
+	    	$(ytLaunchModal[x]).on('click', function () {
+		    	$ytModal.css('left','0px');
+			    ytPlayers.modal_video.loadVideoById(this.getAttribute('data-video-id'));
+		    });
+	    }
+	    $ytModal.on('click',function(){
+	    	ytPlayers[ytModalPlayerID].seekTo(0);
+	    	ytPlayers[ytModalPlayerID].stopVideo();
+	    	$ytModal.css('left', '-9999px');
+	    });
+    }
+	for(id in YTreadyFunctions){
+		var thisFunc = YTreadyFunctions[id];
+		var thisArgs = thisFunc.args;
+		thisFunc.func(thisArgs.id,thisArgs.counters,thisArgs.isHome,thisArgs.isAutoRot,thisArgs.galleryType);
+	}
+	setYTclicks();
+}
+
+function shortID(elemId){
+	return elemId.split('-').join('');
+}
+
+function initializeYouTubeIframe(playerId,params){
+	//var playerId = thisList[x];
+	var thisPlayer = document.getElementById(playerId);
+	ytPlayers[shortID(playerId)] = new YT.Player(playerId, {
+		width: thisPlayer.getAttribute('width'),
+		height: thisPlayer.getAttribute('height'),
+		playerVars: {
+			html5: '1',
+			autohide: '1',
+			theme: 'light',
+			showinfo: '0',
+			color: 'white',
+			rel: '0',
+			//origin: 'https://' + document.location.hostname,
+			wmode: 'opaque'
+		},
+		videoId: playerId,
+		events: {
+			'onReady': onPlayerReady,
+			'onStateChange': onPlayerStateChange
+		}
+	});
+}
+
+function runYouTubeIframeList(thisList) {
+	// If the YouTube iFrame API (onYouTubeIframeAPIReady is not ready yet,
+	// add the player(s) to a list (playerIdList) to wait until the API is ready and then initialize
+	if (!YTready) {
+		playerIdList.concat(thisList);
+	} else {
+		// YT API is ready. Initialize the list of player iframes.
+		var thisListLength = thisList.length;
+		for (var x = 0; x < thisListLength; x++) {
+			initializeYouTubeIframe(thisList[x]);
+		}
+	}
+}
+function onPlayerReady(event) { }
+function onPlayerStateChange(event) {
+	if(event.data == '0' || event.data == '5'){
+		$(event.target.a.parentNode).children('.video-placeholder').css('display','block');
+	}
+	consoleThis(['player change:', event.data]);
+}
+
+/*
+$('.yt-player').each(function(i){
+	playerIdList.push($(this).attr('id'));
+});
+*/
+runYouTubeIframeList(playerIdList);
+
+function setVideoCarouselThumb(response,element){
+	if(response.data){
+		if(response.data.thumbnail.hqDefault){
+			element.getElementsByTagName('img')[0].src = response.data.thumbnail.hqDefault;
+		} else if(response.data.thumbnail.sqDefault){
+			element.getElementsByTagName('img')[0].src = response.data.thumbnail.sqDefault;
+		}
+	} else if (response.status){
+		if(response.status == '403'){
+			element.setAttribute('class',element.getAttribute('class') ? element.getAttribute('class') + ' private' : 'private');
+		}
+	}
+}
+function getYouTubeInfoById(type,getID,callback,args){
+	$.ajax({
+		url: 'https://gdata.youtube.com/feeds/api/' + type + '/' + getID + '?v=2&prettyprint=true&alt=jsonc',
+		dataType: 'jsonp',
+		context: args ? args : '',
+		success: function(response){
+			callback(response,this);
+		},
+		error: function(response){
+			callback(response,this);
+		}
+	});
+}
+function isVideoPlaying(){
+	var isPlaying = false;
+	if(ytPlayers && !isIE7){
+		for( var player in ytPlayers){
+			if(ytPlayers[player].getPlayerState){
+				if(ytPlayers[player].getPlayerState() != -1 && ytPlayers[player].getPlayerState() != 5){
+					isPlaying = true;
+				}
+			}
+		}
+	}
+	return isPlaying;
+}
+function stopVideos(players){
+	if(ytPlayers && !isIE7){
+		if(typeof ytPlayers != 'string'){
+			for(var x=0;x<ytPlayers.length;x++){
+				ytPlayers[shortID(ytPlayers[x])].stopVideo();
+			}
+		} else {
+			ytPlayers[shortID(ytPlayers)].stopVideo();
+		}
+	}
+}
+
+
+/* YouTube Modal Launch */
+// resize element to specified aspect ratio (r1,r2) using either elements width or height (dim) as base
+var ytModal_aspect_ratio = function(args,count){
+	count = !count ? 0 : count;
+	consoleThis(count);
+	count++;
+	var el = args.el,
+		r1 = args.r1,
+		r2 = args.r2,
+		dim = args.dim,
+		thresh = args.thresh, // max percentage of either width or height, whichever hits first, that iframe should fill viewport
+		elData = false,
+		ratio = false,
+		dim2,dimFunc,proposedDim;
+	dim = !dim || dim == undefined ? 'width' : dim;
+	dim2 = dim == 'width' ? 'height' : 'width';
+	//dimFunc = dim == 'height' ? windowHeight : windowWidth;
+
+	if(!r1 || r1 == undefined){
+		if(elData && elData.split(':')[1]){
+			ratio = elData.split(':');
+		}
+	} else if(r1.split && r1.split(':')){
+		if(r1.split(':')[1]){
+			ratio = r1.split(':');
+		}
+	}
+	if(ratio){
+		r1 = ratio[0];
+		r2 = ratio[1];
+	}
+	if (dim == 'height') {
+		if(thresh){
+			$(el).css('height',windowHeight() * thresh/100 + 'px');
+			
+		}
+		proposedDim = windowHeight(el)*r1/r2 - 15;
+		if(thresh && proposedDim > windowWidth() * thresh/100){
+			//$(el).css('width',windowWidth() * thresh/100 + 'px');
+			args.dim = 'width';
+			if(count > 0){
+				consoleThis('(isHeight) width proposed: ' + proposedDim + ' width check: ' + windowWidth() * thresh/100);
+				if(count > 4){
+					return;
+				}
+			}
+			ytModal_aspect_ratio(args,count);
+		} else {
+			$(el).css(dim2,proposedDim + 'px');
+			$(el).css('margin-top',(windowHeight() - windowHeight(el))/3 + 'px');
+		}
+	} else {
+		if(thresh){
+			$(el).css('width',(windowWidth() - 15) * thresh/100 + 'px');
+			$(el).css('margin-top',windowHeight() * ((100 - thresh)/2)/100 + 'px');
+		}
+		proposedDim = windowWidth(el)*r2/r1;
+		if(thresh && proposedDim > windowHeight() * thresh/100){
+			args.dim = 'height';
+			if(count > 1){
+				consoleThis('(isWidth) height proposed: ' + proposedDim + ' height check: ' + windowHeight() * thresh/100);
+				if(count > 4){
+					return;
+				}
+			}
+			ytModal_aspect_ratio(args,count);
+		} else {
+			var frmHeight = windowWidth(el)*r2/r1;
+			$(el).css(dim2,proposedDim + 'px');
+			$(el).css('margin-top',(windowHeight() - proposedDim)/3 + 'px');
+		}
+	}
+};
+if(document.querySelector('#modal_video')){
+	resizeFunctions.ytModalAspect = {
+		func: function(args){
+			ytModal_aspect_ratio(args);
+		},
+		args: {
+			el: document.getElementById('modal_video'),
+			r1: 16,
+			r2: 9,
+			dim: 'width',
+			thresh: 80
+		}
+	}
+}
+
+// END YOUTUBE
+
+
+
+/*==========================================================================
+	WONDERFILLED CAROUSEL
+========================================================================== */
+
+//function fullCarousel(id){
+var cssAnim =
+	document.body.style.webkitTransition !== undefined
+	|| document.body.style.MozTransition !== undefined
+	|| document.body.style.msTransition !== undefined
+	|| document.body.style.OTransition !== undefined
+	|| document.body.style.transition !== undefined
+	|| false;
+var isIE7 = $('html').hasClass('ie7') ? true : false;
+var $carMain = $('#full-carousel'),
+	currentPanel = 0;
+var	$carPanelGroup = $carMain.children('.car-panels'),
+	$carPage = $carMain.children('.car-page').eq(0);
+var $carPanelGroupWidth = windowWidth($carPanelGroup[0]),
+	$carPanels = $carPanelGroup.children('li'),
+	$carPanelsLength = $carPanelGroup.children('li').length,
+	carPlayers = {},
+	carPlayers = $carMain.children('.yt-player').attr('id'),
+	transDelay = 750,
+	fullOffset,
+	offsets;
+
+function setOffsets(){
+	fullOffset = windowWidth()/1.5 + ($carPanelGroupWidth/2);
+	offsets = {
+		left: fullOffset * -1,
+		right: fullOffset,
+		active: 0
+	}
+	$carPanelGroup.children('li.from-left').css('left',offsets.left);
+	$carPanelGroup.children('li.from-right').css('left',offsets.right);
+
+}
+setOffsets();
+
+function sortPanels(){
+    var side = 'from-left';
+    $.each($carPanels,function(i,val){
+        if($(val).hasClass('active')){
+            side = 'from-right';
+        } else {
+            if(!$(val).hasClass(side)){
+                $(val).removeClass('trans');
+                $(val).removeClass('from-left');
+                $(val).removeClass('from-right');
+                $(val).addClass(side);
+
+            }
+        }
+    });
+    setOffsets();
+}
+
+function movePanel($element,direction,delay, fromDir){
+	var oppositeDir = direction == 'right' ? 'left' : 'right';
+	$element.removeClass('trans');
+	if(direction == 'active'){
+		$element.css('left',offsets[fromDir]);
+	}
+	preTimeout = setTimeout(function() {
+		$element.addClass('trans');
+		if(direction != 'left' && direction !='right'){
+			$element.addClass('active');
+            if($element.hasClass('oreo-drop')){
+                $carMain.addClass('drop-overlay');
+            } else {
+                $carMain.removeClass('drop-overlay');
+            }
+			if(cssAnim){
+				$element.css('left',0);
+			} else {
+				$element.animate({'left':0},750);
+			}
+			$element.removeClass('from-left');
+			$element.removeClass('from-right');
+		} else {
+			$element.addClass('from-' + oppositeDir);
+			if(cssAnim){
+				$element.css('left',offsets[oppositeDir]);
+			} else {
+				$element.animate({'left':offsets[oppositeDir]},750);
+			}
+			$element.removeClass('active');
+		}
+		halfTimeout = setTimeout(function() {
+			$carPage.children('li').removeClass('on');
+			$carPage.children('li').eq(currentPanel).addClass('on');
+		},transDelay/2);
+		postTimeout = setTimeout(function() {
+			$element.removeClass('trans');
+            sortPanels();
+		},transDelay);
+    },25);
+}
+function moveCarousel(nextPanel){
+	if (isVideoPlaying()) {
+		for (i in ytPlayers) {
+			ytPlayers[i].stopVideo();
+		}
+	}
+	if(!isIE7){
+		stopVideos(carPlayers);
+	}
+	var overrideRight = false;
+	if(typeof nextPanel == 'undefined'){
+		nextPanel = currentPanel + 1;
+		if(nextPanel >= $carPanelsLength){
+			nextPanel = 0;
+			overrideRight = true;
+		}
+	} else if(nextPanel == currentPanel){
+
+	}
+	if(nextPanel >= $carPanelsLength){
+		nextPanel = $carPanelsLength - 1;
+	} else if(nextPanel < 0){
+		nextPanel = 0;
+	}
+
+	var dir = 'active';
+	if(nextPanel < currentPanel){
+		dir = !!overrideRight ? 'right' : 'left';
+	} else if(nextPanel > currentPanel){
+		dir = 'right';
+	}
+	movePanel( $carPanelGroup.children('li.active'),dir,transDelay);
+	movePanel( $carPanelGroup.children('li').eq(nextPanel),'active',transDelay, dir);
+
+	currentPanel = nextPanel;
+}
+
+function carouselTimer(){
+	carTime = setTimeout(function(){
+		if(!isVideoPlaying()){
+			if(!DEBUG){
+				moveCarousel();
+			}
+			carouselTimer();
+		}
+	},10000);
+}
+carouselTimer()
+
+$carPage.children('li').on('click',function(){
+	var $this = $(this);
+	if($this.index() != currentPanel){
+		clearTimeout(carTime);
+		if(typeof clickTime != 'undefined'){
+			clearTimeout(clickTime);
+		}
+		moveCarousel($this.index());
+		clickTime = setTimeout(function(){
+			carouselTimer();
+		},18000);
+	}
+});
+// }
+
+// Wonderfilled YouTube
+
+// Video
+function setYTclicks(){
+	var $hubVideoStage1 = $('.car_wonder-if .video-stage'),
+		$hubVideoPlace1 = $hubVideoStage1.children('.video-placeholder'),
+		$hubVideoIframe1 = $hubVideoStage1.children('iframe');
+	
+	$hubVideoPlace1.on('click',function(){
+		this.setAttribute('style','display:none');
+		if(!isIE7){
+			var thisID = shortID(this.parentElement.getElementsByTagName('iframe')[0].getAttribute('id'));
+			ytPlayers[thisID].playVideo();
+		}
+		$hubVideoIframe1.playVideo()
+	});
+	var $hubVideoStage2 = $('.car_Nyc_wonder-if .video-stage'),
+		$hubVideoPlace2 = $hubVideoStage2.children('.video-placeholder'),
+		$hubVideoIframe2 = $hubVideoStage2.children('iframe');
+	
+	$hubVideoPlace2.on('click',function(){
+		this.setAttribute('style','display:none');
+		if(!isIE7){
+			var thisID = shortID(this.parentElement.getElementsByTagName('iframe')[0].getAttribute('id'));
+			ytPlayers[thisID].playVideo();
+		}
+		$hubVideoIframe2.playVideo()
+	});
+	
+	var $hubVideoStage3 = $('.car_dad_wonder-if .video-stage'),
+		$hubVideoPlace3 = $hubVideoStage3.children('.video-placeholder'),
+		$hubVideoIframe3 = $hubVideoStage3.children('iframe');
+	
+	$hubVideoPlace3.on('click',function(){
+		this.setAttribute('style','display:none');
+		if(!isIE7){
+			var thisID = shortID(this.parentElement.getElementsByTagName('iframe')[0].getAttribute('id'));
+			ytPlayers[thisID].playVideo();
+		}
+		$hubVideoIframe3.playVideo()
+	});
+	
+	var $hubVideoStage4 = $('.car_wonderfilled_daydream .video-stage'),
+		$hubVideoPlace4 = $hubVideoStage4.children('.video-placeholder'),
+		$hubVideoIframe4 = $hubVideoStage4.children('iframe');
+	
+	$hubVideoPlace4.on('click',function(){
+		this.setAttribute('style','display:none');
+		if(!isIE7){
+			var thisID = shortID(this.parentElement.getElementsByTagName('iframe')[0].getAttribute('id'));
+			ytPlayers[thisID].playVideo();
+		}
+		$hubVideoIframe4.playVideo()
+	});
+	
+	var $hubVideoStage5 = $('.car_wonderfilled_chiddybang .video-stage'),
+		$hubVideoPlace5 = $hubVideoStage5.children('.video-placeholder'),
+		$hubVideoIframe5 = $hubVideoStage5.children('iframe');
+	
+	$hubVideoPlace5.on('click',function(){
+		this.setAttribute('style','display:none');
+		if(!isIE7){
+			var thisID = shortID(this.parentElement.getElementsByTagName('iframe')[0].getAttribute('id'));
+			ytPlayers[thisID].playVideo();
+		}
+		$hubVideoIframe5.playVideo()
+	});
+	
+	var $hubVideoStage6 = $('.car_wonderfilled_tegan-and-sara .video-stage'),
+		$hubVideoPlace6 = $hubVideoStage6.children('.video-placeholder'),
+		$hubVideoIframe6 = $hubVideoStage6.children('iframe');
+	
+	$hubVideoPlace6.on('click',function(){
+		this.setAttribute('style','display:none');
+		if(!isIE7){
+			var thisID = shortID(this.parentElement.getElementsByTagName('iframe')[0].getAttribute('id'));
+			ytPlayers[thisID].playVideo();
+		}
+		$hubVideoIframe6.playVideo()
+	});
+	
+	var $hubVideoStage7 = $('.car_wonderfilled_snack-hacks .video-stage'),
+		$hubVideoPlace7 = $hubVideoStage7.children('.video-placeholder'),
+		$hubVideoIframe7 = $hubVideoStage7.children('iframe');
+	
+	$hubVideoPlace7.on('click',function(){
+		this.setAttribute('style','display:none');
+		if(!isIE7){
+			var thisID = shortID(this.parentElement.getElementsByTagName('iframe')[0].getAttribute('id'));
+			ytPlayers[thisID].playVideo();
+		}
+		$hubVideoIframe7.playVideo()
+	});
+	
+	var $hubVideoStage8 = $('.car_mini .video-stage').eq(0),
+		$hubVideoPlace8 = $hubVideoStage8.children('.video-placeholder'),
+		$hubVideoIframe8 = $hubVideoStage8.children('iframe');
+	
+	$hubVideoPlace8.on('click',function(){
+		this.setAttribute('style','display:none');
+		if(!isIE7){
+			var thisID = shortID(this.parentElement.getElementsByTagName('iframe')[0].getAttribute('id'));
+			ytPlayers[thisID].playVideo();
+		}
+		$hubVideoIframe8.playVideo()
+	});
+	
+	var $hubVideoStage9 = $('.car_mini .video-stage').eq(1),
+		$hubVideoPlace9 = $hubVideoStage9.children('.video-placeholder'),
+		$hubVideoIframe9 = $hubVideoStage9.children('iframe');
+	
+	$hubVideoPlace9.on('click',function(){
+		this.setAttribute('style','display:none');
+		if(!isIE7){
+			var thisID = shortID(this.parentElement.getElementsByTagName('iframe')[0].getAttribute('id'));
+			ytPlayers[thisID].playVideo();
+		}
+		$hubVideoIframe9.playVideo()
+	});
+}
+// END WONDERFILLED CAROUSEL
+var carouselTimeout;
+
+$(function(){
+
+
+    /*superbowl carousel */
+
+    /////////////////////////////////
+    var cssAnim =
+		    document.body.style.webkitTransition !== undefined
+		    || document.body.style.MozTransition !== undefined
+		    || document.body.style.msTransition !== undefined
+		    || document.body.style.OTransition !== undefined
+		    || document.body.style.transition !== undefined
+		    || false;
+    ///////////////////////////////
+    function initCarousel() {
+	var whichone = ($('ul#main-carousel-indicator > li.on').index() +1 < $('ul#main-carousel-indicator > li').length ? $('ul#main-carousel-indicator > li.on').index()+1 : 0);
+	$('ul#main-carousel-indicator > li').eq(whichone).trigger('click');
+	carouselTimeout = setTimeout(function() {
+	    initCarousel();
+	},5000);
+    }
+
+    function carouselHeroGo(id,distance) {
+	//empty all src's to stop videos from playing
+	$('ul#main-carousel > li[content-type="video"] iframe').removeAttr('src').hide();
+	$('ul#main-carousel > li[content-type="video"] img.video-placeholder').show();
+
+	var new_current_pos = distance;
+	$(id).attr('current-pos',new_current_pos);
+	if(cssAnim) {
+	    //css buttersilk animation
+	    $(id).css({
+		/*'transform':'translateX('+new_current_pos+'px) translateZ(0)',
+		'-webkit-transform':'translateX('+new_current_pos+'px) translateZ(0)',
+		'-moz-transform':'translateX('+new_current_pos+'px) translateZ(0)',
+		'-ms-transform':'translateX('+new_current_pos+'px) translateZ(0)',
+		'-o-transform':'translateX('+new_current_pos+'px) translateZ(0)'*/
+		'left': new_current_pos + 'px'
+		});
+	} else {
+	    //jquery animation
+	    $(id).animate({'left':new_current_pos+'px'});
+	}
+    }
+
+    $('ul#main-carousel-indicator > li').click(function() {
+	$('ul#main-carousel-indicator > li').removeClass('on');
+	$(this).addClass('on');
+	//figure out direction based on current pos and the indicator bubble that was clicked
+	var current_pos = $('ul#main-carousel').attr('current-pos');
+	var clicked_pos = $('ul#main-carousel-indicator > li').index(this) * 910; //910 is width of 1 slide
+
+	if(clicked_pos > current_pos) {
+	    carouselHeroGo('ul#main-carousel',clicked_pos*-1);
+	} else {
+	    carouselHeroGo('ul#main-carousel',clicked_pos);
+	}
+    });
+
+    //embed the video on click
+    $('ul#main-carousel > li[content-type="video"] > .carousel-left-content').click(function() {
+		$(this).find('img').hide();
+		var backup_src =  $(this).find('iframe').attr('backup-src');
+		//tracking
+		_gaq.push(['_trackEvent', 'Carousel', 'Play Youtube Video', $(this).find('img').attr('title')]);
+		$(this).find('iframe').attr('src',backup_src).show();
+		});
+
+		//clear the auto carousel if hovering over carousel
+		$('section#primary-content').mouseover(function() {
+		clearTimeout(carouselTimeout);
+    });
+
+    //start carousel on load
+    carouselTimeout = setTimeout(function() {
+	    initCarousel();
+    },7500);
+
+
+
+
+    $(document).on('click', '#social-content > nav > ul > li > a', function(event){
+        event.preventDefault();
+        if($(this).hasClass('active')) {
+            return false;
+        } else {
+            var container = $(this).parents('ul');
+            var showId    = $(this).attr('href');
+            var hideId    = $('.active', container).removeClass('active').attr('href');
+            $(this).addClass('active');
+            $(hideId).css('display', 'none');
+            $(showId).css('display', 'block');
+        }
+    });
+
+
+    $('a[href^="http"]')
+        .attr('target', '_blank')
+        .click({'category':'External Link Click'}, TrackMeet.trackEvent);
+
+	$('.let-fun-begin')
+        .click({'category':'Homepage: Let The Fun Begin'}, TrackMeet.trackEvent);
+	$('#moments-gallery-hero-barker .full-click')
+        .click({'category':'Homepage: Moments Gallery'}, TrackMeet.trackEvent);
+	$('#barker-1 .button-solid')
+        .click({'category':'Homepage: Promo 1 - Like Us On Facebook'}, TrackMeet.trackEvent);
+	$('#barker-2 .button-solid')
+        .click({'category':'Homepage: Promo 2 - See More Recipes'}, TrackMeet.trackEvent);
+	$('#barker-3 .button-solid')
+        .click({'category':'Homepage: Promo 3 - Oreo Arcade'}, TrackMeet.trackEvent);
+
+
+    $('#nav-moments a, footer > nav > ul > li > a:eq(0)').attr('target', '');
+
+    $('#social-content > nav > ul > li > a')
+        .click({'category':'Social Media Module Tab Click'}, TrackMeet.trackEvent);
+
+    $('header hgroup').click(function(){
+        location.href = 'http://oreo.com';
+    });
+
+    // INSTAGRAM FEED
+	/*$(function() {
+	  $(".instagram").instagram({
+		  hash: 'oreo'
+		, clientId: 'baee48560b984845974f6b85a07bf7d9'
+	  });
+	});*/
+	$(function(){
+	  var
+		insta_container = $(".instagram")
+	  , insta_next_url
+
+	  insta_container.instagram({
+		// hash: 'oreo'
+		//, clientId : 'baee48560b984845974f6b85a07bf7d9' // DEMO ID
+		userId: 266689531
+		, clientId : 'd528000a78d0419083c3611487bf6253' // OREO ID
+		, accessToken : '266689531.3472239.a4d8301c50bd404cb44bc5d944a7066b'
+		, show : 18
+		, image_size : 'low_resolution'
+		, onComplete : function (photos, data) {
+		  insta_next_url = data.pagination.next_url
+		}
+	  })
+
+	  $('button').on('click', function(){
+		var
+		  button = $(this)
+		, text = button.text()
+
+		if (button.text() != 'Loading…'){
+		  button.text('Loading…')
+		  insta_container.instagram({
+			  next_url : insta_next_url
+			, show : 18
+			, onComplete : function(photos, data) {
+			  insta_next_url = data.pagination.next_url
+			  button.text(text)
+			}
+		  })
+		}
+	  })
+	});
+});
+
+window.onresize = function(){
+	setOffsets();
+	remCalibrate();
+}
+remCalibrate();

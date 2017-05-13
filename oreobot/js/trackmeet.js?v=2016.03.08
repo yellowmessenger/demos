@@ -1,0 +1,234 @@
+/**
+ * trackmeet.js
+ * @version 1.0
+ * @author Tharsan Bhuvanendran <tbhuvanendran@360i.com>
+ * @copyright 360i
+ * 
+ * Provides a flexible, easy-to-use global tracking framework for reporting events
+ * and page views to third-party analytics services, using sensible defaults that
+ * can be easily overridden.
+ * 
+ * USAGE:
+ * 
+ * TrackMeet.trackPageView([url], [trackers])
+ *   url: Provided explicitly, the 'href' attribute on the context element, or
+ *     the current location.
+ *   trackers: Provided explicitly, or global variable TrackMeet.defaults.trackers.
+ * 
+ * TrackMeet.trackEvent([category], [action], [trackers])
+ *   category: Provided explicitly, the 'data-tracking-category' attribute on the
+ *     context element, the 'href' attribute on the context element, or the current
+ *     location.
+ *   action: Provided explicitly, or the current location.
+ *   trackers: Provided explicitly, or global variable TrackMeet.defaults.trackers.
+ */
+
+var TRACKMEET_GOOGLE_ANALYTICS = 1,
+    TRACKMEET_DOUBLECLICK      = 2,
+    TRACKMEET_COREMETRICS      = 4;
+
+var TrackMeet = {
+	/**
+	 * Initialize web tracking.
+	 * 
+	 * @param options A hash of tracker constants to tracker configuration settings.
+	 * 
+	 * Coremetrics requires the library to load before page views and events may be
+	 * tracked.  Use the following syntax:
+	 * TrackMeet.init({
+	 *   // ...other properties...
+	 *   load: function() {
+	 *     // ACTIONS
+	 *   }
+	 * }); 
+	 */
+	init: function(options) {
+		// Include Google Analytics
+		if(options.TRACKMEET_GOOGLE_ANALYTICS) {
+			var gaOptions = options.TRACKMEET_GOOGLE_ANALYTICS;
+
+			window._gaq = window._gaq || [];
+			window._gaq.push(['_setAccount', gaOptions.id]);
+			window._gaq.push(['_trackPageview']);
+
+			(function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+			TrackMeet.defaults.trackers |= TRACKMEET_GOOGLE_ANALYTICS;
+		}
+
+		// Include DoubleClick
+		if(options.TRACKMEET_DOUBLECLICK) {
+			var dcOptions = options.TRACKMEET_DOUBLECLICK;
+
+			TrackMeet.settings.doubleclick = dcOptions;
+
+			TrackMeet.defaults.trackers |= TRACKMEET_DOUBLECLICK;
+		}
+		
+		// Include Coremetrics
+		if(options.TRACKMEET_COREMETRICS) {
+			var cmOptions = options.TRACKMEET_COREMETRICS;
+
+			TrackMeet.settings.coremetrics = cmOptions;
+			
+			(function() {
+			    var cm = document.createElement('script'); cm.type = 'text/javascript'; cm.async = true;
+			    cm.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://libs.coremetrics.com/eluminate.js';
+			    cm.onload = function() {
+			    	if(cmOptions.test) {
+						cmSetClientID(
+							'6'+cmOptions.id.slice(1,cmOptions.id.length),
+							false,
+							"testdata.coremetrics.com",
+							cmOptions.domain
+						);
+					} else {
+						cmSetClientID(cmOptions.id,true,"data.coremetrics.com",cmOptions.domain);
+					}
+			    	
+			    	options.load();
+			    };
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cm, s);
+			})();
+			
+			TrackMeet.defaults.trackers |= TRACKMEET_COREMETRICS;
+		}
+	},
+
+	/**
+	 * Sensible defaults for various configuration settings.
+	 * 
+	 * debug: Log tracked events firing to the console, if available.
+	 * eventCategoryName: The name of the category to use during event TrackMeet.
+	 * trackers: A bitwise OR collection of trackers to report to.
+	 */
+	defaults: {
+		debug: false,
+		eventCategoryName: "custom-event",
+		trackers: 0
+	},
+
+	settings: {
+		doubleclick: {},
+		coremetrics: {}
+	},
+
+	/**
+	 * Track an event, described by a category & action.
+	 * When called directly, function arguments are expected to be:
+	 *   category, action, trackers
+	 * When called as a function event handler, the first argument is an Event
+	 * object containing a 'data' hash with expected keys
+	 *   category, action, trackers
+	 * 
+	 * @param category string The name you supply for the group of objects
+	 *   you want to track.
+	 * @param action   string A string that is uniquely paired with each
+	 *   category, and commonly used to define the type of user interaction
+	 *   for the web object.
+	 * @param trackers int    A bitwise combination of the trackers to report
+	 *   this event to.
+	 */
+	trackEvent: function() {
+		var category, action, trackers;
+
+		// assume that this function was called as an event handler, and the
+		// first argument is an Event object
+		if(typeof(arguments[0]) == 'object') {
+			var evt = arguments[0];
+			evt.data = evt.data || {};
+
+			category = evt.data.category || this.getAttribute('data-tracking-category') || TrackMeet.defaults.eventCategoryName;
+			action = evt.data.action || this.getAttribute('data-tracking-action') || this.href || location.href;
+			trackers = evt.data.trackers || TrackMeet.defaults.trackers;
+
+		// expect parameters passed to the function directly
+		} else {
+			category = arguments[0] || TrackMeet.defaults.eventCategoryName;
+			action = arguments[1] || location.href;
+			trackers = arguments[2] || TrackMeet.defaults.trackers;
+		}
+
+		if(trackers & TRACKMEET_GOOGLE_ANALYTICS && window._gaq) {
+			if(window.console && TrackMeet.defaults.debug) {
+				console.log("TrackMeet.js: Google Analytics event tracked: category '%s', action '%s'", category, action);
+			}
+
+			window._gaq.push(['_trackEvent', category, action]);
+
+		} else if(trackers & TRACKMEET_GOOGLE_ANALYTICS) {
+			if(window.console && TrackMeet.defaults.debug) {
+				console.log("TrackMeet.js: DoubleClick event tracked: category '%s', action '%s'", category, action);
+			}
+
+			var axel = Math.random() + "";
+			var a = axel * 10000000000000;
+
+			var i = new Image();
+			i.src = 'http://fls.doubleclick.net/activityi;src=' + TrackMeet.settings.doubleclick.id + ';type=' + category + ';cat=' + action + ';ord=1;num=' + a +'?';
+		}
+		
+		if(trackers & TRACKMEET_COREMETRICS) {
+			if(window.console && TrackMeet.defaults.debug) {
+				console.log("TrackMeet.js: Coremetrics event tracked: category '%s', in '%s'", category, TrackMeet.settings.coremetrics.subSection + ' / ' + TrackMeet.settings.coremetrics.section);
+			}
+
+			cmCreatePageElementTag(
+				category,
+				TrackMeet.settings.coremetrics.subSection + ' / ' + TrackMeet.settings.coremetrics.section
+			);
+		}
+	},
+
+	/**
+	 * Track a page view.
+	 * When called directly, function arguments are expected to be:
+	 *   url, trackers
+	 * When called as a function event handler, the first argument is an Event
+	 * object containing a 'data' hash with expected keys
+	 *   url, trackers
+	 * NOTE: Only Google Analytics page view tracking is supported.
+	 * 
+	 * @param url      string The URL for the page to be tracked.
+	 * @param trackers int    A bitwise OR of the trackers to report this
+	 *   event to.
+	 */
+	trackPageView: function() {
+		var url, trackers
+
+		// assume that this function was called as an event handler, and the
+		// first argument is an Event object
+		if(typeof(arguments[0]) == 'object') {
+			var evt = arguments[0];
+			evt.data = evt.data || {};
+
+			url = evt.data.url || this.href || location.href;
+			trackers = evt.data.trackers || TrackMeet.defaults.trackers;
+
+		// expect parameters passed to the function directly
+		} else {
+			url = arguments[0] || location.href;
+			trackers = arguments[1] || TrackMeet.defaults.trackers;
+		}
+
+		if(trackers & TRACKMEET_GOOGLE_ANALYTICS && window._gaq) {
+			if(window.console && TrackMeet.defaults.debug) {
+				console.log("TrackMeet.js: Google Analytics page view tracked: url '%s'", url);
+			}
+
+			window._gaq.push(['_trackPageview', url]);
+		}
+		
+		if(trackers & TRACKMEET_COREMETRICS) {
+			if(window.console && TrackMeet.defaults.debug) {
+				console.log("TrackMeet.js: Coremetrics page view tracked: url '%s'", location.href);
+			}
+
+			cmCreatePageviewTag(TrackMeet.settings.coremetrics.subSection, TrackMeet.settings.coremetrics.section);
+		}
+	}
+};

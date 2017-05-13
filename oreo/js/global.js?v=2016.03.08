@@ -1,0 +1,74 @@
+
+// share counter button in footer
+var shareData = '';
+var elCounter = document.getElementById('shareCounter');
+if(typeof elCounter == 'object' && null != elCounter){
+	var shareCount = function(){
+		var locSplit = location.href.split(/[#?]/)[0];
+		var graphURL = document.location.protocol + '//graph.facebook.com/?ids=' + locSplit + '#&callback=?';
+		var jsonData = '';
+		var getGD = function(){
+			 $.getJSON(graphURL,function(json){
+				var jsonLoc = json[locSplit];
+				if(typeof jsonLoc == 'object'){
+					if(null != jsonLoc.shares){
+						if(jsonLoc.shares > 1){
+							elCounter.innerHTML = jsonLoc.shares;
+						}
+					}
+					else {	
+						elCounter.innerHTML = '';
+					}
+				}
+				else {	
+					elCounter.innerHTML = '';
+				}
+				});
+		}
+		getGD();
+	}
+
+	$('.oreo-share').on('click','a', function(event){
+		window.setInterval(function() {
+			shareCount();
+		}, 5000);
+	});
+	shareCount();
+}
+
+// Google Analytics Tracking (pageview)
+
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-39644366-40', 'oreo.com');
+	ga('send', 'pageview');
+
+// Google Analytics Tracking (Clicks)
+	function clickTrack(pageLink, pageTitle){
+		var obj = document.getElementById("hidden-tracking");
+		obj.style['backgroundImage'] = 'url(http://ga.webdigi.co.uk/fbga.php?googlecode=UA-17830010-6&googledomain=facebook.com&pagelink='+pageLink+'&pagetitle='+pageTitle+')';
+		obj.style['backgroundRepeat'] = 'no-repeat'
+	}
+
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-17830010-6']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+
+// Tracking specified links
+$('footer nav ul li').on('click','a', function(event){
+	clickTrack($(this).attr('href'),'nav:' + $(this).text());
+});
+$('#primary li').on('click','a', function(event){
+	if($(this).attr('href').substr('0','4') != 'http'){
+		clickTrack($(this).attr('href'),'nav:' + $(this).text());
+	}
+});
