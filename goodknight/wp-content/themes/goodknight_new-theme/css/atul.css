@@ -1,0 +1,185 @@
+.setting-wrap {
+    float: left;
+    margin: 30px 0 0;
+    width: 100%;
+}
+
+.contact {
+    float: left;
+    margin: 0;
+    padding: 0px 0px;
+    text-align: center;
+    padding-top: 0px;
+    width: 100%;
+}
+
+.contact h1 {
+    color: #d9201c;
+    font-family: "Intro-Book-Alt";
+    font-size: 40px;
+    line-height: 52px;
+    margin: 0 0 15px;
+}
+
+.contact p {
+    font-size: 16px;
+    line-height: 24px;
+	font-family: "Intro-Book-Alt";
+}
+
+.contact .formWrap {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+}
+
+.contact .formWrap ul {
+    float: left;
+    margin: 15px 0px;
+    padding: 0;
+}
+
+.contact .formWrap ul li {
+    float: left;
+    margin: 0 0 15px;
+    padding: 0;
+    width: 100%;
+	list-style-type:none;
+}
+
+
+.contact .formWrap ul li label {
+    float: left;
+    font-size: 14px;
+    margin: 0 0 5px;
+    width: 100%;
+	font-family: "Intro-Book-Alt";
+}
+
+
+.contact .formWrap ul li .input {
+    background: #FFF none repeat scroll 0 0;
+    border: 1px solid #e8e8e8;
+    padding: 10px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+
+.select-style {
+    background: #FFF url(../images/dd-arrow.jpg) no-repeat scroll 100% 50%;
+    border: 1px solid #e8e8e8;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    border-radius: 50px;
+}
+
+
+.contact .formWrap ul li .textarea {
+    background: #FFF none repeat scroll 0 0;
+    border: 1px solid #e8e8e8;
+    font-family: "Intro-Book-Alt";
+    font-size: 14px;
+    height: 150px;
+    line-height: 18px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.button::after {
+    background: #272727 none repeat scroll 0 0;
+    /*border-radius: 3px;*/
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: transform 0.3s ease 0s;
+    width: 100%;
+    z-index: -2;
+}
+
+
+.contact .formWrap ul li span {
+    color: #a5a4a4;
+    font-size: 14px;
+    margin: 0 0 0 0px;
+}
+
+.contact .formWrap ul li .button {
+    margin-right: 10px;
+    padding: 12px 40px;
+    border-radius: 50px;
+	font-size:16px;
+}
+.black {
+    background: #e43e29 none repeat scroll 0 0;
+    color: #fff;
+}
+.button {
+    border: medium none;
+    border-radius: 3px;
+    display: inline-block;
+    font-family: "Intro-Book-Alt";
+    font-size: 14px;
+    text-transform: capitalize;
+	cursor: pointer;
+	position: relative;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+    z-index:0;
+}
+
+
+.button.black:hover {
+    transition: all 0.3s ease 0s;
+    background:  #e43e29 none repeat scroll 0 0;
+}
+
+.contact .formWrap ul li .button:hover{border-radius: 5px;}
+
+
+
+.rightContent .contact h1 {
+    color: #d9201c;
+    font-family: "Intro-Book-Alt";
+    font-size: 45px;
+    line-height: 52px;
+    margin: 0 0 15px;
+	font-weight:normal;
+}
+
+.contact .formWrap ul li h2 {
+    color: #2a2a2a;
+    font-family: "Intro-Book-Alt";
+    font-size: 30px;
+    margin-bottom: 10px;
+	font-weight:normal;
+}
+
+.contact .formWrap ul li p {
+    color: #2a2a2a;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+	font-family: "Intro-Book-Alt";
+}
+
+.select-style select {
+   -webkit-appearance: none;
+   -moz-appearance:none;
+    background-color: transparent;
+    background-image: none;
+    border: medium none;
+    box-shadow: none;
+    padding: 10px;
+    width: 100%;
+	
+}
+
+.r-content{text-align: center;}
+.r-content a{color: #e43e29;}
