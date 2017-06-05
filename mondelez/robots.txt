@@ -1,0 +1,11 @@
+
+User-agent:*
+Disallow:/Home/Investors/Events-and-Webcasts
+Disallow:/Home/Investors/Corporate-Financial-News-Releases
+Disallow:/Home/Newsroom/Our-Stories/TEST%20Cadbury
+Disallow:/Home/Careers/Careers-Our-Dream-Belief-And-Values-Redirect
+Disallow:/Home/Procurement/General-Information/Terms-Conditions/Eastern-Europe-Middle-East-and-Africa
+
+
+Sitemap:http://www.mondelezinternational.com/sitemap.xml
+
