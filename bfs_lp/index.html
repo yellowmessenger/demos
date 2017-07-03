@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1.0"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Latest compiled and minified CSS -->
+    <title>Bajaj Financial Services Bot</title>
+    <style>
+        .bot-container{
+            height: calc(100% - 50px);
+            margin-top: 20px;
+        }
+        @media screen and (max-device-width: 640px) {
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            .bot-container{
+                height: calc(100% - 50px);
+                height: -webkit-calc(100% - 50px);
+                height: -moz-calc(100% - 50px);
+                margin-top: 0;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+<img style="height: 50px;display: block; margin: auto" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Bajaj-Finserv-Logo.jpg"/>
+<div class="bot-container">
+    <div style="height: calc(100% - 50px); margin:auto" id="adsByBotplatform-bot_1498043605162"></div>
+    <script src="https://chat.botplatform.io/plugin-ad-v1.js?bot=bot_1498043605162&input=true&showTitle=false&skin=banner" async defer> </script>
+</div>
+<script type="text/javascript">
+    if (window.navigator && window.navigator.userAgent && window.navigator.userAgent.toLowerCase().indexOf('iphone') !== -1) {
+        document.getElementById ("bot-container").style.height = "calc(100% - 75px)"
+    }
+</script>
+</body>
+</html>
+

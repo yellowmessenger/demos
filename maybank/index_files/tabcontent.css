@@ -1,0 +1,92 @@
+/* ######### CSS for Shade Tabs. Remove if not using ######### */
+
+.shadetabs{
+padding: 0;
+margin-left: 0;
+margin-top: 0px;
+margin-bottom: 0;
+font: bold 12px Verdana;
+list-style-type: none;
+text-align: left; /*set to left, center, or right to align the menu as desired*/
+}
+
+.shadetabs li{
+display: inline;
+margin: 0;
+*margin-left:3px;
+}
+
+.shadetabs li.tabs01 a {
+text-decoration: none;
+position: relative;
+z-index: 1;
+background: url(../../../maybank_gif/facelift/tabs01.gif) no-repeat top center;
+width:79px;
+height:35px;
+display:inline-block;
+padding:0;
+margin:0;
+}
+
+.shadetabs li.tabs01 a.selected { /*selected main tab style */
+position: relative;
+background: url(../../../maybank_gif/facelift/tabs01a.gif) no-repeat top center;
+width:79px;
+height:35px;
+}
+
+.shadetabs li.tabs02 a {
+text-decoration: none;
+position: relative;
+z-index: 1;
+background: url(../../../maybank_gif/facelift/tabs02.gif) no-repeat top center;
+width:133px;
+height:35px;
+display:inline-block;
+padding:0;
+margin:0 0 0 -5px;
+}
+
+.shadetabs li.tabs02 a.selected { /*selected main tab style */
+position: relative;
+background: url(../../../maybank_gif/facelift/tabs02a.gif) no-repeat top center;
+width:133px;
+height:35px;
+}
+
+.shadetabs li.tabs03 a {
+text-decoration: none;
+position: relative;
+z-index: 1;
+background: url(../../../maybank_gif/facelift/tabs03.gif) no-repeat top center;
+width:102px;
+height:35px;
+display:inline-block;
+padding:0;
+margin:0 0 0 -5px;
+}
+
+.shadetabs li.tabs03 a.selected { /*selected main tab style */
+position: relative;
+background: url(../../../maybank_gif/facelift/tabs03a.gif) no-repeat top center;
+width:102px;
+height:35px;
+}
+
+.tabcontent{
+display:none;
+}
+
+@media print {
+.tabcontent {
+display:block !important;
+}
+}
+
+.tabbox {border:0px solid gray; width:280px; margin:10px 10px 10px 15px; padding: 5px;}
+#country3 ul.homeList {list-style:none;margin-bottom:10px;margin-left:10px;clear:both;}
+
+#showmeColumn {padding-left:1px;}
+#showmeColumn #smCol1 {width:135px;float:left;}
+#showmeColumn #smCol2 {width:135px;float:left;}
+

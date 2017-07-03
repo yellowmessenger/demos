@@ -1,0 +1,2470 @@
+/* 08102008 */
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, /*sub, sup,*/ tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* @import "clearfix.css"; */
+
+/* clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-table;
+	min-height: 1%;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/* End hide from IE-mac */
+
+/* ======================================================== base */
+
+html {
+	height: 101%;
+}
+body {
+	color: #333;
+	background: #fff url(../../../maybank_gif/image/m2uchallenge/bg_MyM2U.jpg) center top no-repeat;
+	font-family: Arial;
+	font-size: 62.5%;
+	text-align: center;
+}
+/*body {color:#333;background:#fff url(../../../maybank_gif/image/capambody.jpg) repeat-x;font-family:Arial;font-size:62.5%;text-align:center; background-position:center; background-position:top;}*/
+#container {
+	width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+/*a {text-decoration:none;outline:0;color:#003399;}
+a:hover {text-decoration:underline;color:#0033cc;}*/
+a {
+	text-decoration: none;
+	outline: 0;
+	color: #555555;
+}
+a:hover {
+	text-decoration: underline;
+	color: #8d8d8d;
+}
+hr {
+	display: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Verdana, Tahoma, Arial, sans-serif;
+	font-weight: bold;
+	color: #ffb702;
+	text-decoration: none !important;
+}
+/* ======================================================== reusables */
+
+.google {
+	vertical-align: top;
+}
+.taLeft, .left {
+	text-align: left;
+}
+.taRight, .right {
+	text-align: right;
+}
+.taCenter, .center {
+	text-align: center;
+}
+.darkred {
+	color: #ffb702;
+}
+a:hover span.darkred {
+	color: #0033cc;
+}
+.darkgreen {
+	color: #339933;
+}
+a:hover .darkgreen {
+	color: #0033cc;
+}
+.purple {
+	color: #9378f6;
+}
+a:hover .purple {
+	color: #0033cc;
+}
+.red {
+	color: #cc0000;
+}
+a:hover .red {
+	color: #0033cc;
+}
+.button, label {
+	cursor: pointer;
+	padding-top: 2px;
+}
+input.transparent {
+	background: transparent;
+	border: 0;
+	padding: 0;
+	color: #003399;
+}
+input.text {
+	background: #fff;
+	border: 1px solid #999;
+	padding: 2px;
+	color: #000;
+}
+textarea.text {
+	background: #fff;
+	border: 1px solid #999;
+	color: #000;
+}
+.required {
+	color: #CC6600;
+	font-size: 11px;
+	font-weight: bold;
+}
+.note {
+	font-size: 11px;
+	color: #666;
+}
+.small {
+	font-size: 11px;
+}
+.smaller {
+	font-size: 10px;
+}
+h1.anchorHeading {
+	font-size: 18px;
+	margin-bottom: 0;
+	color: #333;
+}
+input, select {
+	font-size: 11px;
+}
+/* ======================================================== layout */
+
+#header {
+	/*background: #000;*/
+	color: #eee;
+	margin: 0 25px 0;
+	position: relative;
+	border-top: 4px solid #ffcc01;
+}
+#header ul#LogIn {
+	list-style: none;
+	float: left;
+	padding: 0 0 0 2px;
+	right: 10px;
+	width: 90px;
+	height: 26px;
+	overflow: hidden;
+}
+#header ul#LogIn li {
+	background: #fc0 url(../../../maybank_gif/login1.gif) left top no-repeat;
+	width: 70px;
+	height: 22px;
+	font-size: 1.2em;
+}
+#header ul#LogIn li span {
+	display: block;
+	padding-top: 5px;
+}
+#header ul#LogIn li a {
+	color: #333;
+	font-weight: bold;
+	text-decoration: none;
+	text-indent: 10px;
+}
+#header ul#LogIn li a:hover {
+	color: #000;
+}
+
+#header span#timeStamp {
+	position: absolute;
+	top: 65px;
+	right: 545px;
+	font-size: 1em;
+	color: #eee
+}
+#header h1 {
+	height: 70px;
+}
+#header h1 img {
+	width: 215px;
+	height: 45px;
+	margin: 15px 0 0 0;
+}
+#header #loginbox {
+	width: 275px;
+	position: absolute;
+	top: 0px;
+	left: 430px;
+	height: 29px;
+	display: block;
+	clear: right;
+	background: url(../../../maybank_gif/bg_login.gif) no-repeat top left #000000;
+	padding: 0 0 0 34px;
+}
+#header #loginbox .searchbox {
+	background: url(../../../maybank_gif/searchbox.gif) left top no-repeat;
+	width: 171px;
+	float: left;
+	height: 26px;
+	margin: 1px 5px 5px 0;
+}
+#header #loginbox .searchbox input {
+	border: 1px solid #ffffff;
+	background: #ffffff;
+	margin: 2px 0 0 14px;
+}
+#header #loginbox .searchbox input.button {
+	margin-top: 2px;
+}
+#header #loginbox .searchbox img {
+	width: 12px;
+	height: 13px;
+	padding: 0 0 0 10px;
+	vertical-align: top;
+	margin: 4px 0 0 0;
+}
+#header #loginbox .imgright {
+	float: right;
+	width: 5px;
+	height: 29px;
+}
+#header ul#topNav {
+	list-style: none;
+	position: absolute;
+	top: 42px;
+	left: 294px;
+}
+#header ul#topNav li {
+	float: left;
+	margin-right: 10px;
+	font-size: 12px;
+}
+#header ul#topNav li a {
+	color: #eee;
+	text-decoration: none;
+}
+#header ul#topNav li a:hover {
+	color: #fff;
+}
+#header ul#topNav1 {
+	list-style: none;
+	position: absolute;
+	top: 60px;
+	left: 353px;
+}/*== privatebanking / bbsme */
+#header ul#topNav1 li {
+	float: left;
+	margin-right: 10px;
+	font-size: 12px;
+}
+#header ul#topNav1 li a {
+	color: #eee;
+	text-decoration: none;
+}
+#header ul#topNav1 li a:hover {
+	color: #fff;
+}
+#header ol#mainNav {
+	list-style: none;
+	position: relative;
+	top: 0;
+	left: 0px;
+	padding: 15px 0 0 0;
+	width: 770px;
+	height: 26px;
+	overflow: hidden;
+}
+#header ol#mainNav li {
+	text-align: center;
+	font-size: 12px;
+	background-color: #fc0;
+	float: left;
+	height: 26px;
+	padding-top: 8px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+#header ol#mainNav li span {
+}
+#header ol#mainNav li#mainNav1 {
+	width: 67px;
+	background-image: url(../../../maybank_gif/image/NewHomeNav.gif);
+}
+#header ol#mainNav li#mainNav2 {
+	width: 114px;
+	background-image: url(../../../maybank_gif/image/NewMainNav.gif);
+}
+#header ol#mainNav li#mainNav3 {
+	width: 114px;
+	background-image: url(../../../maybank_gif/image/NewMainNav.gif);
+}
+#header ol#mainNav li#mainNav4 {
+	width: 114px;
+	background-image: url(../../../maybank_gif/image/NewMainNav.gif);
+}
+#header ol#mainNav li#mainNav5 {
+	width: 114px;
+	background-image: url(../../../maybank_gif/image/NewMainNav.gif);
+}
+#header ol#mainNav li#mainNav6 {
+	width: 114px;
+	background-image: url(../../../maybank_gif/image/NewMainNav.gif);
+}
+#header ol#mainNav li#mainNav7 {
+	width: 114px;
+	background-image: url(../../../maybank_gif/image/NewMainNav.gif);
+}
+#header ol#mainNav li#mainNav8 {
+	width: 114px;
+	background-image: url(../../../maybank_gif/image/NewMainNav.gif);
+}
+/*		#header ol#mainNav li#mainNav4 {width:158px;background-image:url(../../maybank_gif/image/mainNav4.gif);}
+#header ol#mainNav li#mainNav5 {width:65px;background-image:url(../../maybank_gif/image/mainNav5.gif);}
+#header ol#mainNav li#mainNav6 {width:109px;background-image:url(../../maybank_gif/image/mainNav6.gif);}
+#header ol#mainNav li#mainNav7 {width:126px;background-image:url(../../maybank_gif/image/mainNav7.gif);}
+*/		
+#header ol#mainNav li#bmainNav1 {
+	width: 70px;
+	background-image: url(../../../maybank_gif/image/mainNav1.gif);
+}
+#header ol#mainNav li#bmainNav2 {
+	width: 170px;
+	background-image: url(../../../maybank_gif/image/bmainNav2.gif);
+}
+#header ol#mainNav li#bmainNav3 {
+	width: 113px;
+	background-image: url(../../../maybank_gif/image/bmainNav3.gif);
+}
+#header ol#mainNav li#bmainNav4 {
+	width: 113px;
+	background-image: url(../../../maybank_gif/image/bmainNav4.gif);
+}
+#header ol#mainNav li#bmainNav5 {
+	width: 113px;
+	background-image: url(../../../maybank_gif/image/bmainNav4.gif);
+}
+#header ol#mainNav li#bmainNav7 {
+	width: 153px;
+	background-image: url(../../../maybank_gif/image/bmainNav6.gif);
+}
+#header ol#mainNav li#cmainNav1 {
+	width: 70px;
+	background-image: url(../../../maybank_gif/image/mainNav1.gif);
+}
+#header ol#mainNav li#cmainNav2 {
+	width: 144px;
+	background-image: url(../../../maybank_gif/image/cmainNav2.gif);
+}
+#header ol#mainNav li#cmainNav3 {
+	width: 80px;
+	background-image: url(../../../maybank_gif/image/cmainNav3.gif);
+}
+#header ol#mainNav li#cmainNav4 {
+	width: 130px;
+	background-image: url(../../../maybank_gif/image/cmainNav4.gif);
+}
+#header ol#mainNav li#cmainNav5 {
+	width: 154px;
+	background-image: url(../../../maybank_gif/image/cmainNav5.gif);
+}
+#header ol#mainNav li#cmainNav6 {
+	width: 154px;
+	background-image: url(../../../maybank_gif/image/cmainNav6.gif);
+}
+#header ol#mainNav li a {
+	color: #333;
+	text-decoration: none
+}
+#header ol#mainNav li a:hover {
+	color: #000;
+}
+#content {
+	background: #fff;
+	color: #333;
+	width: 750px;
+	position: relative;
+	left: 25px;
+}
+#content div.contentWrap {
+	padding: 10px 0;
+}
+#content #breadcrumb {
+	height: 27px;
+	overflow: hidden;
+}
+#content #breadcrumb p {
+	margin: 5px 10px 0;
+	font-size: 1.1em;
+}
+#content #banner {
+	height: 180px;
+	;
+	border-right: 1px solid #e5e5e5;
+	margin: 0 185px 0 0;
+	position: relative;
+}
+#content #banner div.bannerWrap {
+	height: 170px;
+	overflow: hidden;
+}
+#content #main {
+	border-left: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	min-height: 400px;
+	height: auto !important;
+	height: 400px;
+}
+#content #main #mainWrap {
+	margin-right: 184px;
+	border-right: 1px solid #e5e5e5;
+}
+#content #main #mainColomn {
+	padding-left: 10px;
+}
+#content #main #mainColomn #leftCol {
+	float: left;
+	width: 355px;
+}
+#content #main #mainColomn #rightCol {
+	float: right;
+	margin-right: 10px;
+	width: 170px;
+}
+#content #main #mainColomn #col1st {
+	width: 180px;
+	float: left;
+	border-right: 1px solid #e5e5e5;
+	min-height: 300px;
+	height: auto !important;
+	height: 300px;
+}
+#content #main #mainColomn #col2nd {
+	width: 180px;
+	float: left;
+	border-right: 1px solid #e5e5e5;
+	min-height: 300px;
+	height: auto !important;
+	height: 300px;
+}
+#content #main #mainColomn #col3rd {
+	width: 170px;
+	margin-left: 10px;
+	float: left;
+	min-height: 300px;
+	height: auto !important;
+	height: 300px;
+}
+#content #main #mainWrap #bottomRow {
+	margin: 0 10px;
+	padding: 10px 0;
+}
+#content #sideBar {
+	position: absolute;
+	top: 39px;
+	left: 575px;
+	width: 165px;
+}
+#footer {
+	margin: 0 25px 20px;
+	position: relative;
+	border-top: 1px solid #e5e5e5;
+}
+#footer p {
+	font-size: 10px;
+	padding: 10px 0;
+}
+#footer span#footerSeals {
+	position: absolute;
+	top: 10px;
+	left: 720px;
+	display: block;
+	width: 130px;
+	height: 65px;
+}
+#footer span#footerSeals img {
+	height: 26px;
+	width: 60px;
+	margin: 20px 11px;
+	border: 0;
+}
+#footer span#footerLinks {
+	display: block;
+	width: 760px;
+	height: 30px;
+}
+#footer span#footerLinks img {
+	margin-right: 2px;
+	vertical-align: middle;
+}
+/* ======================================================== navigation matrix */		
+
+body.topNav1 #header ul#topNav li.topNav1 a, body.topNav2 #header ul#topNav li.topNav2 a, body.topNav3 #header ul#topNav li.topNav3 a, body.topNav4 #header ul#topNav li.topNav4 a, body.topNav5 #header ul#topNav1 li.topNav5 a, body.topNav6 #header ul#topNav1 li.topNav6 a, body.topNav7 #header ul#topNav1 li.topNav7 a, body.topNav8 #header ul#topNav1 li.topNav8 a {
+	color: #ffcc00;
+}
+body.mainNav1 #header ol#mainNav li.mainNav1, body.mainNav2 #header ol#mainNav li.mainNav2, body.mainNav3 #header ol#mainNav li.mainNav3, body.mainNav4 #header ol#mainNav li.mainNav4, body.mainNav5 #header ol#mainNav li.mainNav5, body.mainNav6 #header ol#mainNav li.mainNav6, body.mainNav7 #header ol#mainNav li.mainNav7 {
+	background-color: #fff;
+	background-position: 0 -26px;
+}
+body.mainNav1 #header ol#mainNav li.mainNav1 a, body.mainNav2 #header ol#mainNav li.mainNav2 a, body.mainNav3 #header ol#mainNav li.mainNav3 a, body.mainNav4 #header ol#mainNav li.mainNav4 a, body.mainNav5 #header ol#mainNav li.mainNav5 a, body.mainNav6 #header ol#mainNav li.mainNav6 a, body.mainNav7 #header ol#mainNav li.mainNav7 a {
+	color: #000;
+}
+/* ======================================================== homeCol */
+
+#col1st h2 {
+	font-size: 1.4em;
+	line-height: 16px;
+	margin-bottom: 6px;
+	clear: left;
+}
+#col2nd h2 {
+	font-size: 1.4em;
+	line-height: 16px;
+	margin-bottom: 6px;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+#col3rd h2 {
+	font-size: 1.4em;
+	line-height: 16px;
+	margin-bottom: 6px;
+}
+.homeCol h2.bigicon img {
+	float: left;
+	margin-right: 4px;
+	margin-bottom: 6px;
+	margin-top: -0px;
+}
+.homeCol h2.bigicon a {
+	color: #ffb702;
+	text-decoration: none;
+}
+.homeCol h2.bigicon a:hover {
+	color: #33f;
+}
+#col1st .rightOnly {
+	width: 150px;
+	float: right;
+	margin-left: -0px;
+	margin-bottom: 6px;
+	margin-top: -15px;
+}
+#col1st .rightOnly * {
+	width: auto;
+	float: none;
+}
+#col2nd .rightOnly {
+	width: 130px;
+	float: right;
+	margin-left: -0px;
+	margin-bottom: 6px;
+	margin-top: -15px;
+}
+#col2nd .rightOnly * {
+	width: auto;
+	float: none;
+}
+#col1st ul.homeList {
+	list-style: none;
+	margin-bottom: 10px;
+	clear: both;
+}
+#col2nd ul.homeList {
+	list-style: none;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	clear: both;
+}
+ul.homeList li {
+	width: 180px;
+	line-height: 1.3;
+	font-size: 1.1em;
+	float: none;
+}
+/* ======================================================== howShow */
+
+div.howShowBox {
+	width: 170px;
+	background: #eee url(../../../maybank_gif/image/RCnextStepBoxMiddle.gif) repeat-y;
+	margin-bottom: 10px;
+	line-height: 1.2;
+}
+div.howShowBox span.topBox {
+	display: block;
+	height: 7px;
+	width: 170px;
+	background: transparent url(../../../maybank_gif/image/RCnextStepBoxTop.gif) no-repeat;
+}
+div.howShowBox span.bottomBox {
+	display: block;
+	height: 7px;
+	width: 170px;
+	background: transparent url(../../../maybank_gif/image/RCnextStepBoxBottom.gif) center bottom no-repeat;
+}
+div.howShowBox h2 {
+	font-size: 1.4em;
+	margin: 0 10px 10px;
+	color: #333;
+}
+ul.howShowList {
+	list-style: none;
+	margin: 0 10px 10px;
+	font-size: 1.1em;
+}
+ul.howShowList li {
+	line-height: 20px;
+	margin-bottom: 3px;
+}
+ul.howShowList li img {
+	vertical-align: top;
+	margin-right: 5px;
+}
+ul.howShowList li a {
+	color: #333;
+	text-decoration: none;
+}
+ul.howShowList li a:hover {
+	color: #33f;
+}
+div.howShowBox ul.list {
+	margin: 0 10px 10px;
+	list-style: none;
+}
+div.howShowBox ul.list li {
+	margin-bottom: 5px;
+}
+table.howShowMore {
+	margin: 0 0 10px 10px;
+}
+table.howShowMore td {
+}
+table.howShowMore td select {
+	width: 110px;
+	font-size: 1.1em;
+}
+table.howShowMore td input.button {
+	cursor: pointer;
+	margin-left: 1px;
+	font-size: 1.1em;
+}
+/* ======================================================== otherServices */
+
+div.otherServicesBox {
+	width: 170px;
+	background: #e5e5e5;
+	margin-bottom: 10px;
+	padding: 10px 0;
+}
+div.otherServicesBox h2 {
+	font-size: 1.4em;
+	margin: 0 10px;
+	color: #333;
+}
+div.otherServicesBox ul.otherServicesList {
+	list-style: none;
+	padding: 0 10px;
+	margin-top: 10px;
+	font-size: 1.1em;
+}
+div.otherServicesBox ul.otherServicesList li {
+	line-height: 1.3;
+	margin-bottom: 5px;
+}
+div.otherServicesBox ul.otherServicesList li a {
+	color: #333;
+	text-decoration: none;
+	display: block;
+	width: 150px;
+	position: relative;
+}
+div.otherServicesBox ul.otherServicesList li img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 16px;
+	height: 16px;
+}
+div.otherServicesBox ul.otherServicesList li span {
+	display: block;
+	width: 130px;
+	position: relative;
+	top: 0;
+	left: 20px;
+	cursor: pointer;
+}
+div.otherServicesBox ul.otherServicesList li a:hover {
+	color: #33f;
+	cursor: pointer;
+}
+/* ======================================================== onlineBanking */
+
+.onlineBankingBox {
+	width: 170px;
+	background: #fff;
+	padding-bottom: 10px;
+}
+.onlineBankingBox h2 {
+	background: #000;
+	color: #ffcc00;
+	padding: 5px 10px;
+	font-size: 1.4em;
+	margin: 0 !important;
+}
+.onlineBankingBox ul.onlineBankingList {
+	list-style: none;
+	background: #ffcc00;
+	padding: 10px;
+	margin: 0 !important;
+	font-size: 1.1em;
+}
+.onlineBankingBox ul.onlineBankingList li {
+	line-height: 1.2;
+	margin-bottom: 3px;
+}
+.onlineBankingBox ul li a {
+	color: #333;
+	text-decoration: none;
+}
+.onlineBankingBox ul li a:hover {
+	color: #33f;
+}
+/* ======================================================== banner variations */
+
+#bannerVariation1 {
+	position: relative;
+	top: 0;
+	left: 10px;
+	width: 545px;
+	height: 170px;
+}
+#bannerVariation1 div.bannerAd1 {
+	width: 545px;
+	height: 170px;
+	overflow: hidden;
+}
+#bannerVariation2 {
+	position: relative;
+	top: 0;
+	left: 10px;
+	width: 545px;
+	height: 170px;
+}
+#bannerVariation2 div.bannerAd1 {
+	width: 365px;
+	height: 170px;
+	overflow: hidden;
+}
+#bannerVariation2 div.bannerAd2 {
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	top: 0;
+	left: 373px;
+	overflow: hidden;
+}
+#bannerVariation3 {
+	position: relative;
+	top: 0;
+	left: 10px;
+	width: 545px;
+	height: 170px;
+}
+#bannerVariation3 div.bannerAd1 {
+	width: 365px;
+	height: 170px;
+	overflow: hidden;
+}
+#bannerVariation3 div.bannerAd2 {
+	width: 170px;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 373px;
+	overflow: hidden;
+}
+#bannerVariation3 div.bannerAd3 {
+	width: 170px;
+	height: 80px;
+	position: absolute;
+	top: 90px;
+	left: 373px;
+	overflow: hidden;
+}
+/* ======================================================== banner items */
+
+#bannerOption0 {
+	position: relative;
+	top: 0;
+	left: 10px;
+	width: 545px;
+	height: 170px;
+}
+#bannerOption0 div.bannerAd1 {
+	width: 365px;
+	height: 170px;
+	overflow: hidden;
+}
+#bannerOption0 div.bannerAd2 {
+	width: 170px;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 373px;
+	overflow: hidden;
+}
+#bannerOption0 div.bannerAd3 {
+	width: 170px;
+	height: 80px;
+	position: absolute;
+	top: 90px;
+	left: 373px;
+	overflow: hidden;
+}
+#bannerOption0 div.bannerTreats {
+	position: absolute;
+	top: 0;
+	left: 373px;
+	width: 170px;
+	height: 170px;
+	line-height: 1.2;
+	background-image: url(../../../maybank_gif/image/divTreats.gif);
+	background-color: #fff2be;
+}
+#bannerOption0 div.bannerTreats h3 {
+	font-size: 1.4em;
+	color: #FF0000;
+	margin: 10px 10px 0;
+}
+#bannerOption0 div.bannerTreats p {
+	margin: 10px 10px 0;
+}
+#bannerOption0 div.bannerTreats input.textInput {
+	border: 1px solid #999;
+	width: 35px;
+	height: 18px;
+}
+#bannerOption0 div.bannerTreats input {
+	vertical-align: middle;
+	padding: 0;
+}
+#bannerOption0 div.bannerTreats ul {
+	margin: 10px 10px 0;
+	list-style: none;
+}
+#bannerOption0 div.bannerTreats ul li {
+	margin-bottom: 2px;
+}
+#bannerOption1 {
+	position: relative;
+	top: 0;
+	left: 10px;
+	width: 545px;
+	height: 170px;
+}
+#bannerOption1 div.bannerAd1 {
+	width: 545px;
+	height: 170px;
+	overflow: hidden;
+}
+#bannerOption1 h2 {
+	font-size: 2.0em;
+	margin-bottom: 6px;
+	line-height: 1.1;
+}
+#bannerOption1 h3 {
+	font-size: 1.3em;
+	margin-bottom: 6px;
+	color: #000;
+	line-height: 1.1;
+}
+#bannerOption1 p {
+	font-size: 1.1em;
+	margin-bottom: 6px;
+	line-height: 1.2;
+}
+#bannerOption2 {
+	position: relative;
+	top: 0;
+	left: 10px;
+	width: 545px;
+	height: 170px;
+}
+#bannerOption2 div.bannerAd1 {
+	width: 365px;
+	height: 170px;
+	overflow: hidden;
+}
+#bannerOption2 div.bannerAd2 {
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	top: 0;
+	left: 373px;
+	overflow: hidden;
+}
+#bannerOption2 h2 {
+	font-size: 2.0em;
+	margin-bottom: 6px;
+	width: 310px;
+	line-height: 1.1;
+}
+#bannerOption2 h3 {
+	font-size: 1.3em;
+	margin-bottom: 6px;
+	color: #000;
+	width: 310px;
+	line-height: 1.2;
+}
+#bannerOption2 p {
+	font-size: 1.1em;
+	margin-bottom: 6px;
+	width: 310px;
+	line-height: 1.2;
+}
+#bannerOption2 img {
+	position: absolute;
+	top: 0;
+	left: 320px;
+}
+#bannerOption3 {
+	position: relative;
+	top: 0;
+	left: 10px;
+	width: 545px;
+	height: 170px;
+}
+#bannerOption3 h2 {
+	font-size: 2.0em;
+	font-family: Tahoma;
+	font-weight: normal;
+	line-height: 26px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 240px;
+	letter-spacing: 0;
+}
+#bannerOption3 h2 a {
+	color: #ffb702;
+	text-decoration: none;
+}
+#bannerOption3 h2 img {
+	vertical-align: middle;
+}
+#bannerOption4 {
+	position: relative;
+	top: 0;
+	left: 10px;
+	width: 350px;
+	height: 170px;
+}
+#bannerOption4 h2 {
+	font-size: 2.0em;
+	font-family: Tahoma;
+	font-weight: normal;
+	line-height: 26px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 180px;
+	letter-spacing: 0;
+}
+#bannerOption4 h2 a {
+	color: #ffb702;
+	text-decoration: none;
+}
+#bannerOption4 h2 img {
+	vertical-align: middle;
+}
+#bannerAnnouncement {
+	line-height: 1.3;
+	width: 185px;
+	height: 170px;
+	overflow: hidden;
+	position: absolute;
+	left: 370px;
+	top: 0px;
+	background-image: url(../../../maybank_gif/image/bannerAnnouncement.gif);
+}
+#bannerAnnouncement h3 {
+	color: #FF0000;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+#bannerAnnouncement p {
+	font-size: 1.1em;
+}
+div.bannerPadding {
+	padding: 10px;
+}
+/* ======================================================== rightCol items */
+
+ul#siteTools {
+	list-style: none;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+ul#siteTools li {
+	float: left;
+	height: 20px;
+	margin-right: 10px;
+	line-height: 16px;
+}
+ul#siteTools li a {
+	display: block;
+	float: left;
+	padding: 2px 2px 2px 20px;
+}
+ul#siteTools li#print a {
+	background: transparent url(../../../maybank_gif/image/iconPrint.gif) no-repeat;
+}
+ul#siteTools li#share a {
+	background: transparent url(../../../maybank_gif/image/iconShare.gif) no-repeat;
+}
+div.extras {
+	margin-top: 20px;
+}
+div.extras * {
+	line-height: 1.3;
+}
+div.extras h2 {
+	color: #333;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+	line-height: 1.2;
+}
+div.extras p {
+	margin-bottom: 5px;
+	font-size: 1.1em;
+}
+div.extras ul {
+	list-style: disc;
+	font-size: 1.1em;
+}
+div.extras ul li {
+	margin-left: 15px;
+}
+/* ======================================================== nextStepBoxes */
+
+#rightCol div.nextStepBox {
+	width: 170px;
+	background: #eee url(../../../maybank_gif/image/RCnextStepBoxMiddle.gif) repeat-y;
+}
+#rightCol div.nextStepBox span.topBox {
+	display: block;
+	height: 7px;
+	width: 170px;
+	background: transparent url(../../../maybank_gif/image/RCnextStepBoxTop.gif) no-repeat;
+}
+#rightCol div.nextStepBox span.bottomBox {
+	display: block;
+	height: 7px;
+	width: 170px;
+	background: transparent url(../../../maybank_gif/image/RCnextStepBoxBottom.gif) center bottom no-repeat;
+}
+#rightCol div.nextStepBox h2 {
+	font-size: 1.2em;
+	color: #333;
+	margin: 0 10px 10px;
+	padding-top: 5px;
+}
+#rightCol div.nextStepBox div.nextStepItem {
+	padding: 5px 10px;
+	line-height: 1.2;
+}
+#rightCol div.nextStepBox div.nextStepItem h4 {
+	font-size: 1.1em;
+	margin-bottom: 5px;
+}
+#rightCol div.nextStepBox div.nextStepItem h4.icon {
+	font-size: 1.4em;
+	padding-left: 20px;
+	line-height: 20px;
+}
+#rightCol div.nextStepBox div.nextStepItem h4.apply {
+	background: transparent url(../../../maybank_gif/image/iconApply.gif) no-repeat;
+}
+#rightCol div.nextStepBox div.nextStepItem h4.call {
+	background: transparent url(../../../maybank_gif/image/iconCall.gif) no-repeat;
+}
+#rightCol div.nextStepBox div.nextStepItem h4.branch {
+	background: transparent url(../../../maybank_gif/image/iconBranch.gif) no-repeat;
+}
+#rightCol div.nextStepBox div.nextStepItem p {
+	line-height: 1.3;
+}
+#bottomRow div.nextStepBox {
+	width: 540px;
+	background: #eee url(../../../maybank_gif/image/BRnextStepBoxMiddle.gif) repeat-y;
+	margin-left: 2px;
+}
+#bottomRow div.nextStepBox span.topBox {
+	display: block;
+	height: 7px;
+	width: 540px;
+	background: transparent url(../../../maybank_gif/image/BRnextStepBoxTop.gif) no-repeat;
+}
+#bottomRow div.nextStepBox span.bottomBox {
+	display: block;
+	height: 7px;
+	width: 540px;
+	background: transparent url(../../../maybank_gif/image/BRnextStepBoxBottom.gif) center bottom no-repeat;
+	clear: left;
+}
+#bottomRow div.nextStepBox h2 {
+	font-size: 1.2em;
+	color: #333;
+	margin: 0 10px 10px;
+	padding-top: 5px;
+}
+#bottomRow div.nextStepBox div.nextStepItem {
+	width: 160px;
+	float: left;
+	margin-left: 10px;
+	padding-bottom: 10px;
+	line-height: 1.2;
+}
+#bottomRow div.nextStepBox div.nextStepItem h4 {
+	font-size: 1.1em;
+	margin-bottom: 5px;
+}
+#bottomRow div.nextStepBox div.nextStepItem h4.icon {
+	font-size: 1.4em;
+	padding-left: 20px;
+	height: 20px;
+	margin-bottom: 5px;
+}
+#bottomRow div.nextStepBox div.nextStepItem h4.apply {
+	background: transparent url(../../../maybank_gif/image/iconApply.gif) no-repeat;
+}
+#bottomRow div.nextStepBox div.nextStepItem h4.call {
+	background: transparent url(../../../maybank_gif/image/iconCall.gif) no-repeat;
+}
+#bottomRow div.nextStepBox div.nextStepItem h4.branch {
+	background: transparent url(../../../maybank_gif/image/iconBranch.gif) no-repeat;
+}
+#bottomRow div.nextStepBox div.nextStepItem p {
+	line-height: 1.3;
+	;
+}
+/* ======================================================== sideBar items */
+
+#sideBar div.item {
+	margin-bottom: 20px;
+	line-height: 1.2;
+}
+#sideBar div.item h3 {
+	font-size: 1.2em;
+	color: #333;
+	margin-bottom: 6px;
+}
+#sideBar div.item h4 {
+	font-size: 1.2em;
+	height: 20px;
+	margin-bottom: 6px;
+}
+#sideBar div.item h4.icon {
+	font-size: 1.2em;
+	padding-left: 20px;
+	background-repeat: no-repeat;
+}
+#sideBar div.item p {
+	line-height: 1.3;
+	font-size: 1.1em;
+}
+#sideBar div.item p img {
+	float: right;
+	margin-left: 5px;
+}
+#sideBar div.item ul {
+	list-style: none;
+	font-size: 1.1em;
+}
+#sideBar div.item ul li {
+	line-height: 1.3;
+}
+/* ======================================================== find */
+
+#findWrapper {
+	background: #e5e5e5;
+	margin: 0 10px 10px 0;
+	padding: 10px;
+	position: relative;
+}
+#findWrapper h2 {
+	font-size: 1.4em;
+	height: 20px;
+}
+#findWrapper h2 a {
+	display: block;
+	float: left;
+	height: 20px;
+	width: 100%;
+	background: url(../../../maybank_gif/image/findHook.gif) top right no-repeat;
+	color: #ffb702;
+}
+#findWrapper h2 a:hover {
+	color: #333;
+	text-decoration: none;
+}
+#findWrapper dl.findBoxes {
+	float: left;
+	width: 250px;
+	line-height: 1.5;
+	padding-top: 10px;
+}
+#findWrapper dl.findBoxes dt, #findWrapper dl.findResultBox dt {
+	font-weight: bold;
+	font-size: 1.1em;
+}
+#findWrapper dl.findBoxes dd {
+	padding: 2px 0;
+	font-size: 1.1em;
+}
+#findWrapper dl.findResultBox {
+	float: right;
+	width: 150px;
+	line-height: 1.3;
+	padding-top: 10px;
+}
+#findWrapper dl.findResultBox dd#findResult {
+	color: #ffb702;
+	font-size: 92px;
+	line-height: 1.1;
+	text-align: center;
+	font-weight: bold;
+}
+#findWrapper p.submit {
+	clear: both;
+	font-size: 1.1em;
+}
+/* ======================================================== view */
+
+#viewWrapper {
+	padding: 20px 10px 10px 0;
+	position: relative;
+}
+#viewWrapper h2 {
+	font-size: 1.6em;
+}
+#viewWrapper h3, #viewWrapper h4 {
+	font-size: 1.4em;
+	line-height: 1.3;
+}
+#viewWrapper div.viewSelect {
+	text-align: right;
+	padding-top: 10px;
+	font-size: 1.1em;
+}
+#viewWrapper div.viewSelect select {
+}
+#viewWrapper ul.viewSort {
+	list-style: none;
+	padding: 10px 0;
+	font-size: 1.1em;
+}
+#viewWrapper ul.viewSort li {
+	float: left;
+	width: 49%;
+}
+#viewWrapper ul.viewSort li .prevNext {
+	color: #999;
+	font-weight: normal;
+}
+/* ======================================================== viewProdServ */
+
+#viewWrapper ul#viewProdServList {
+	list-style: none;
+	margin: 10px 0 20px;
+	line-height: 1.2;
+	border-bottom: 1px dashed #e5e5e5;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem {
+	border-top: 1px dashed #e5e5e5;
+	padding: 10px 0;
+	position: relative;
+	min-height: 130px;
+	height: auto !important;
+	height: 130px;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem h3.viewProdServTitle {
+	font-size: 1.4em;
+	margin-bottom: 5px;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem div.viewProdServOverview {
+	float: left;
+	width: 250px;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem div.viewProdServOverview p {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem div.viewProdServOverview div.viewProdServOverviewImg {
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem div.viewProdServDesc {
+	float: left;
+	width: 300px;
+	margin-left: 10px;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem div.viewProdServDesc h4 {
+	color: #FF0000;
+	font-size: 1.1em;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem div.viewProdServDesc p {
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem div.viewProdServInfo {
+	float: left;
+	width: 160px;
+	margin-left: 10px;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem div.viewProdServInfo h4 {
+	color: #333;
+	font-size: 1.2em;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem div.viewProdServInfo ul {
+	list-style: disc;
+	font-size: 1.1em;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem div.viewProdServInfo ul li {
+	margin-left: 15px;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem div.viewProdServAction {
+	position: absolute;
+	top: 35px;
+	left: 435px;
+	width: 110px;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem div.viewProdServAction p {
+	margin-bottom: 2px;
+	font-size: 1.1em;
+}
+#viewWrapper ul#viewProdServList li.viewProdServItem div.viewProdServAction p a {
+	font-size: 12px;
+	font-size: 1.1em;
+}
+/* ======================================================== viewCompared */
+
+#viewComparedScroller {
+	overflow-y: auto;
+	overflow-x: scroll;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	width: 540px;
+	word-wrap: break-word;
+}
+ul#viewComparedList {
+	list-style: none;
+	margin: 10px 0 20px;
+	line-height: 1.3;
+	width: 1200px;
+	font-size: 11px;
+}
+ul#viewComparedList li.viewComparedItem {
+	padding: 10px 0;
+	float: left;
+	width: 175px;
+	background: #e5e5e5;
+	margin-right: 6px;
+}
+ul#viewComparedList li.viewComparedItem h3.viewComparedTitle {
+	font-size: 14px;
+	padding: 0 10px;
+}
+ul#viewComparedList li.viewComparedItem div {
+	padding: 10px 10px 0;
+}
+ul#viewComparedList li.viewComparedItem div h4 {
+	margin-bottom: 10px;
+}
+ul#viewComparedList li.viewComparedItem div.viewComparedAction {
+}
+ul#viewComparedList li.viewComparedItem div.viewComparedAction ul {
+	list-style: none;
+}
+ul#viewComparedList li.viewComparedItem div.viewComparedAction ul li {
+}
+ul#viewComparedList li.viewComparedItem div.viewComparedAction ul li a {
+	font-weight: bold;
+}
+ul#viewComparedList li.viewComparedItem div.viewComparedInfo {
+}
+ul#viewComparedList li.viewComparedItem div.viewComparedOverview {
+}
+ul#viewComparedList li.viewComparedItem div.viewComparedBenefits {
+}
+ul#viewComparedList li.viewComparedItem div.viewComparedBenefits ul {
+	list-style: disc;
+}
+ul#viewComparedList li.viewComparedItem div.viewComparedBenefits ul li {
+	margin: 0 0 10px 15px;
+}
+ul#viewComparedList li.viewComparedItem div.viewComparedApply {
+}
+ul#viewComparedList li.viewComparedItem div.viewComparedApply ul {
+	list-style: disc;
+}
+ul#viewComparedList li.viewComparedItem div.viewComparedApply ul li {
+	margin: 0 0 10px 15px;
+}
+/* ======================================================== viewPromo */
+
+ul.viewPromoList {
+	list-style: none;
+	margin: 5px 0;
+	line-height: 1.3;
+	border-top: 1px dashed #e5e5e5;
+	border-right: 1px dashed #e5e5e5;
+	width: 540px;
+	font-size: 11px;
+}
+ul.viewPromoList li.viewPromoItem {
+	width: 178px;
+	height: 200px;
+	float: left;
+	overflow: hidden;
+	background: #fff;
+	border-left: 1px dashed #e5e5e5;
+	border-bottom: 1px dashed #e5e5e5;
+	overflow: hidden;
+}
+ul.viewPromoList li.viewPromoItem h3.viewPromoTitle {
+	font-size: 14px;
+	padding: 5px 5px 5px;
+}
+ul.viewPromoList li.viewPromoItem div.viewPromoOverview {
+	padding: 5px 5px;
+}
+ul.viewPromoList li.viewPromoItem div.viewPromoOverview img {
+	float: right;
+	margin: 0 0 5px 5px;
+}
+ul.viewPromoList li.viewPromoItem div.viewPromoOverview a {
+	font-weight: bold;
+}
+/* ======================================================== Customer Service */
+
+#CSleftCol {
+	width: 355px;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+#CSrightCol {
+	width: 185px;
+	position: absolute;
+	left: 370px;
+	top: 215px;
+}
+#CSfindBranch {
+	padding: 10px;
+	background: #e5e5e5;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+#CSfindBranch h2 {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+#CSfindBranch p {
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+#CSfindBranch table td select {
+	width: 95%;
+	font-size: 1.1em;
+}
+#CSfindBranch table td select option {
+	font-size: 1.1em;
+}
+#CSInfo {
+	padding: 10px;
+	background: #e5e5e5;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+#CSInfo h4 {
+	font-size: 1.1em;
+	margin-bottom: 10px;
+	color: black;
+	cursor: pointer;
+}
+#CSInfo h2 {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+#CSInfo a {
+	font-weight: bold;
+}
+#CSInfo p {
+	margin-bottom: 10px;
+	font-size: 1.1em;
+	text-align: left;
+	line-height: 1.3;
+}
+#CSInfo ul li {
+	margin: 15px;
+	line-height: 1.3;
+	font-size: 1.1em;
+}
+#CSCFM {
+	padding: 10px;
+	background: #e5e5e5;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+#CSCFM h4 {
+	font-size: 1.1em;
+	margin-bottom: 10px;
+	color: black;
+}
+#CSCFM h2 {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+#CSCFM p {
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+#CSenquiry {
+	padding: 10px;
+	background: #e5e5e5;
+	margin-right: 5px;
+	margin-bottom: 10px;
+}
+#CSenquiry h4 {
+	font-size: 1.1em;
+	margin-bottom: 10px;
+	color: black;
+	cursor: pointer;
+}
+#CSenquiry h2 {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+#CSenquiry p {
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+#CSenquiry textarea {
+	padding: 0;
+	font-size: 1.1em;
+}
+#CStab {
+	background-image: url(../../../maybank_gif/image/CStabmid.gif);
+	width: 185px;
+	font-size: 11px;
+}
+#CStab ul#CStabnav {
+	list-style: none;
+	background-image: url(../../../maybank_gif/image/CStabtop.gif);
+	background-repeat: no-repeat;
+}
+#CStab ul#CStabnav li {
+	float: left;
+	width: 92px;
+}
+#CStab ul#CStabnav li#CStabnav1 {
+	border-right: 1px solid #eee;
+}
+#CStab ul#CStabnav li h4 {
+	padding: 10px;
+	font-size: 14px;
+	color: #999;
+}
+#CStab #CSfoot {
+	height: 20px;
+	background-image: url(../../../maybank_gif/image/CStabbtm.gif);
+}
+#CStab div.CStabdivs {
+	padding: 10px;
+	line-height: 1.2;
+}
+#CStab div.CStabdivs h3 {
+	font-size: 14px;
+}
+#CStab div.CStabdivs h3, #CStab div.CStabdivs ol, #CStab div.CStabdivs ul {
+	margin-bottom: 10px;
+}
+#CStab div.CStabdivs ol {
+	list-style: decimal;
+	list-style: decimal-leading-zero;
+	margin: 5px 0;
+	color: #999;
+}
+#CStab div.CStabdivs ol li {
+	margin: 5px 0 5px 25px;
+}
+#CStabfaqs ul {
+	list-style: none;
+}
+#CStab #faqs ul {
+	list-style: none;
+}
+#CSaccordion {
+	padding: 10px 0;
+	background: #e5e5e5;
+	font-size: 11px;
+}
+#CSaccordion h3.CSaccordionToggler {
+	font-size: 14px;
+	padding: 5px 10px;
+	;
+	border: 1px solid #e5e5e5;
+	border-bottom: 0px;
+	cursor: pointer;
+}
+#CSaccordion h3.CSaccordionToggler a {
+	color: #ffb702;
+	text-decoration: none;
+}
+#CSaccordion h3.CSaccordionToggler a:hover {
+	color: #000;
+}
+#CSaccordion div.CSaccordionItem {
+	padding: 0 10px;
+	border: 1px solid #e5e5e5;
+	border-top: 0px;
+	background: #fff;
+}
+#CSaccordion div.CSaccordionItem ol {
+	list-style: decimal;
+	list-style: decimal-leading-zero;
+	margin: 5px 0;
+	border-top: 1px dotted #999;
+	border-bottom: 1px dotted #999;
+	color: #999;
+}
+#CSaccordion div.CSaccordionItem ol li {
+	margin: 5px 0 5px 25px;
+}
+#CSaccordion div.CSaccordionItem p {
+	padding-bottom: 10px;
+}
+/* ======================================================== ect ect */
+
+div.archive {
+	padding: 0 10px;
+	background: #fff;
+	line-height: 1.3;
+	margin-bottom: 10px;
+}
+div.archive h2 {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+div.faq {
+	padding: 10px 5px;
+	margin: 0 0;
+}
+div.faq h4 {
+	color: #333;
+	font-size: 1.2em;
+	margin-bottom: 0;
+	letter-spacing: 0;
+}
+div.alt {
+	background-color: #fef8de;
+}
+div.even {
+	background-color: #ffffff;
+}
+div.sorter {
+}
+div.sorter p {
+	text-align: right;
+	margin: 0 0 0 0;
+}
+div.sorter table {
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+}
+div.sorter table td {
+	width: 3.8%;
+}
+div.sorter table a {
+	font-weight: bold;
+}
+/* @import "restyled.css"; */
+
+.restyledXHTML {
+	line-height: 1.3;
+}
+.restyledXHTML h1, .restyledXHTML h2, .restyledXHTML h3, .restyledXHTML h4, .restyledXHTML h5, .restyledXHTML h6 {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.restyledXHTML h1 {
+	color: #ffb702;
+	font-size: 1.8em;
+}
+.restyledXHTML h2 {
+	color: #ffb702;
+	font-size: 1.6em;
+}
+.restyledXHTML h3 {
+	color: #ffb702;
+	font-size: 1.4em;
+}
+.restyledXHTML h4 {
+	color: #333;
+	font-size: 1.2em;
+}
+.restyledXHTML h5 {
+	color: #333;
+	font-size: 1.2em;
+}
+.restyledXHTML h6 {
+	color: #333;
+	font-size: 1.2em;
+}
+.restyledXHTML p {
+	margin-bottom: 10px;
+	font-size: 1.1em;
+}
+.restyledXHTML ul {
+	margin-bottom: 10px;
+	margin-left: 15px;
+}
+* html .restyledXHTML ul {
+	list-style: disc;
+}
+.restyledXHTML ul li {
+	margin-bottom: 5px;
+	font-size: 1.1em;
+}
+.restyledXHTML ul li ul li {
+	margin-bottom: 5px;
+	font-size: 1.0em;
+}
+.restyledXHTML ul li ul li ul li {
+	margin-bottom: 5px;
+	font-size: 1.0em;
+}
+.restyledXHTML ol {
+	margin-bottom: 10px;
+	margin-left: 35px;
+}
+* html .restyledXHTML ol {
+	list-style: decimal;
+	margin-left: 45px;
+}
+.restyledXHTML ol li {
+	margin-bottom: 5px;
+	list-style-position: outside;
+	font-size: 1.0em;
+}
+.restyledXHTML ol li ol li {
+	margin-bottom: 5px;
+	list-style-position: outside;
+	font-size: 1.0em;
+}
+.restyledXHTML ol li ol li ol li {
+	margin-bottom: 5px;
+	list-style-position: outside;
+	font-size: 1.0em;
+}
+.restyledXHTML blockquote {
+	border-left: 3px double #ccc;
+	padding: 5px 10px;
+	font-style: italic;
+	margin-bottom: 10px;
+	color: #666;
+}
+.restyledXHTML blockquote p {
+	margin-bottom: 0;
+}
+.restyledXHTML small {
+	font-size: 11px;
+}
+.restyledXHTML big {
+	font-size: 13px;
+}
+.restyledXHTML table {
+	width: 100%;
+	margin: 10px 0;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	font-size: 11px;
+}
+.restyledXHTML table.noBorders {
+	border-top: 0px !important;
+	border-bottom: 0px !important;
+}
+.restyledXHTML table td {
+	padding: 3px 0px 3px 2px;
+	text-align: left;
+	vertical-align: top;
+}
+.restyledXHTML table thead td {
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 1.1;
+}
+.restyledXHTML table tbody td {
+	font-size: 11px;
+	line-height: 1.2;
+}
+.restyledXHTML table td.rowBorder {
+	border-bottom: 1px dotted #999;
+}
+.restyledXHTML table td.left {
+	text-align: left;
+}
+.restyledXHTML table td.right {
+	text-align: right;
+}
+.restyledXHTML table td.center {
+	text-align: center;
+}
+.restyledXHTML table td.middle {
+	vertical-align: middle;
+}
+.restyledXHTML table tr.alt td {
+	background-color: #fffbef;
+	border-bottom: 1px dotted #999;
+}
+.restyledXHTML table tr.even td {
+	background-color: #fff8df;
+	border-bottom: 1px dotted #999;
+}
+.restyledXHTML table tfoot td {
+	text-align: left;
+	font-size: 11px;
+}
+/* ======================================================== ticker */
+#newsticker {
+	width: 720px;
+	height: 25px;
+	line-height: 25px;
+	background: url(../../../maybank_gif/facelift/bg_newsticker-new.gif) repeat-x top left;
+	padding: 10px 0 0 10px;
+	margin-left: 10px;
+	font-size: 1.1em;
+}
+#tickerpermalink {
+	float: left;
+	padding-right: 7px;
+	line-height: 1.3;
+	height: 20px;
+	font-weight: bold;
+	list-style: none;
+	margin-top: 3px;
+}
+/* ticker */
+#ticker {
+	margin: 0;
+	margin-top: 3px;
+	padding: 0;
+	float: left;
+	list-style: none;
+	font-size: 11px;
+	line-height: 1.3;
+	height: 20px;
+	overflow: hidden;
+	width: 480px;
+}
+#tickercontrol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#tickercontrol li {
+	float: left;
+}
+#ticker_prev {
+	background: transparent url(../../../maybank_gif/image/btnPrev.gif) no-repeat 0 -7px;
+	width: 12px;
+	height: 16px;
+	text-indent: -9999px;
+	display: block;
+}
+#ticker_stop {
+	background: transparent url(../../../maybank_gif/image/btnPause.gif) no-repeat 0 -7px;
+	width: 12px;
+	height: 16px;
+	text-indent: -9999px;
+	display: block;
+}
+#ticker_next {
+	background: transparent url(../../../maybank_gif/image/btnNext.gif) no-repeat 0 -7px;
+	width: 17px;
+	height: 16px;
+	text-indent: -9999px;
+	display: block;
+}
+#tickercontent {
+}
+#layer1 {
+	overflow: auto;
+	position: absolute;
+	top: 250px;
+	left: 10px;
+	width: 310px;
+	height: 280px;
+}
+/* ======================================================== splash */
+#splash {
+	height: 302px;
+	padding: 0 0 1px 10px;
+	font-size: 1.1em;
+}
+/* ==================================================;====== Homepage 3 colume box */
+#threeBoxes {
+	width: 730px;
+	min-height: 230px;
+	padding: 0 0 0 0;
+	margin: 0 0 0 10px;
+	background: #fafafa;
+	color: #696969;
+}
+/*#threeBoxes a {color: #000000;text-decoration:underline;}
+	#threeBoxes a:hover{color: #720238;text-decoration:underline;}
+	#threeBoxes ul {margin:8px 0 8px 0;}
+	#threeBoxes ul li {color: #c60260;padding:0 0 3px 0;}*/
+#leftBox {
+	float: left; /* since this element is floated, a width must be given */
+	width: 200px; /* padding keeps the content of the div away from the edges */
+	padding: 0;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	text-align: left;
+	background: none;
+	border-right: 1px solid #ffffff;
+	border-bottom: 1px solid #dedede;
+	min-height: 229px;
+	font-size: 1.1em;
+	background: url(../../../maybank_gif/facelift/bg_column.gif) #fafafa repeat-y;
+}
+#infoBox01 {
+	float: right; /* since this element is floated, a width must be given */
+	width: 170px;
+	margin-left: 2px;
+	padding: 0 1px 0 1px;
+	margin-top: 0px;
+	background: none;
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	min-height: 229px;
+	font-size: 1.1em;
+	line-height: 14px;
+	color: #5f990f;
+}
+
+#infoBox02 {
+	float: right; /* since this element is floated, a width must be given */
+	width: 170px;
+	margin-left: 2px;
+	padding: 0 1px 0 1px;
+	margin-top: 0px;
+	background: none;
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	min-height: 229px;
+	font-size: 1.1em;
+	line-height: 14px;
+	color: #166ea2;
+}
+
+#infoBox03 {
+	float: right; /* since this element is floated, a width must be given */
+	width: 170px;
+	margin-left: 2px;
+	padding: 0 1px 0 1px;
+	margin-top: 0px;
+	background: none;
+	border-left: 1px solid #dedede;
+	border-right: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	min-height: 229px;
+	font-size: 1.1em;
+	line-height: 14px;
+	color: #646464;
+}
+
+#titlebox-inf01 {
+	color: #649d12;
+	font-weight: bold;
+}
+
+#titlebox-inf02 {
+	color: #166ea2;
+	font-weight: bold;
+}
+
+#rightBox {
+	float: right; /* since this element is floated, a width must be given */
+	width: 170px;
+	margin-left: 3px;
+	padding: 0 1px 0 1px;
+	margin-top: 0px;
+	background: none;
+	border-left: 1px dotted #858585;
+	min-height: 229px;
+	font-size: 1.1em;
+}
+#centerBox {
+	float: left;
+	width: 314px;
+	margin-top: 0;
+	;
+	margin-bottom: 0px;
+	padding: 0;
+	background: url(../../../maybank_gif/facelift/bg_center.jpg) top center no-repeat;
+}
+#infoBox01 h1 {
+	height: 23px;
+	vertical-align: top;
+	text-align: left;
+	padding: 10px 7px 1px 7px;
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+}
+#infoBox02 h1 {
+	height: 23px;
+	vertical-align: top;
+	text-align: left;
+	padding: 10px 7px 1px 7px;
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+}
+#infoBox03 h1 {
+	height: 23px;
+	vertical-align: top;
+	text-align: left;
+	padding: 10px 7px 1px 7px;
+	font-family: Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+}
+#leftBox h1, #rightBox h1, #centerBox h1 {
+	height: 23px;
+	vertical-align: top;
+	text-align: center;
+	padding: 10px 7px 1px 7px;
+}
+#leftBox ul, #rightBox ul {
+	padding: 1px;
+	margin: 0 0 0 0;
+	list-style: none;
+}
+#leftBox p, #infoBox01 p, #rightBox p {
+	padding: 1px;
+	margin: 0 0 0 0;
+	line-height: 13px;
+}
+#leftBox ul li, #rightBox ul li {
+	background: url(../../../maybank_gif/facelift/i_arrow2.gif) no-repeat;
+	padding: 8px 0 10px 13px;
+	margin: 0;
+	border-bottom: 1px solid #d8d8d8;
+	line-height: 13px;
+}
+#titlebox {
+	background: url(../../../maybank_gif/facelift/bg_title-new.gif) no-repeat center top;
+	padding: 0;
+}
+/*#boxcontent {padding:0 15px 12px 15px;}
+*/
+#boxcontent {
+	padding: 0 10px 12px 10px;
+}
+#socialnetwork {
+	margin: 0;
+	margin-top: -6px;
+	padding: 0px 10px 0;
+	float: right;
+	line-height: 1.3;
+	overflow: hidden;
+	text-align: right
+}
+#groupon {
+	width: 164px;
+	height: 600px;
+	position: absolute;
+	right: -164px;
+	top: 40px;
+	overflow: hidden;
+}
+#appbox {
+	background: url(../../../maybank_gif/facelift/appbox.jpg) left no-repeat;
+	margin: -10px 0 0 -10px;
+	/* padding: 0 10px; */
+	float: left;
+	/* line-height: 1.3; */
+	overflow: visible!important;
+	text-align: right;
+	width: 213px;
+	height: 31px;
+}
+#iconet {
+	width: 140px;
+	height: 31px;
+	position: absolute;
+	margin-top: 5px;
+	display:block;
+	margin-left:210px;
+}
+/* Important Style */
+.clearfloat {
+	clear: both;
+	height: 0px;
+	font-size: 1px;
+	line-height: 0px;/* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+}
+/* Hides from IE-mac \*/
+* html .clearfloat {
+	height: 1%;
+}
+.clearfix {
+	display: block;
+}
+/* End hide from IE-mac *
+
+
+/* Localized */
+
+.foot {
+	border-top: 1px solid #c3c3c3;
+	position: relative;
+	width: 170px;
+	z-index: 1;
+	text-align: center;
+	height: 190px;
+	font-size: 18px;
+	color: #000;
+	/* display: flex; */
+	justify-content: center;
+	/* right: 0; */
+    /* left: 0; */
+	margin-right: auto;
+	margin-left: auto;
+	bottom: -170px;
+	font-family: Helvetica, sans-serif;
+	font-size: 11px;
+	background:url(../../../maybank_gif/facelift/linebox.gif) #ececec repeat-x top;
+}
+
+.foot2 {
+	border-top: 1px solid #c3c3c3;
+	position: relative;
+	width: 170px;
+	z-index: 1;
+	text-align: center;
+	height: 190px;
+	font-size: 18px;
+	color: #000;
+	/* display: flex; */
+	justify-content: center;
+	/* right: 0; */
+    /* left: 0; */
+	margin-right: auto;
+	margin-left: auto;
+	bottom: -170px;
+	font-family: Helvetica, sans-serif;
+	font-size: 11px;
+	background:url(../../../maybank_gif/facelift/linebox.gif) #ececec repeat-x top;
+}
+.foot3 {
+	border-top: 1px solid #c3c3c3;
+	position: relative;
+	width: 170px;
+	z-index: 1;
+	text-align: center;
+	height: 190px;
+	font-size: 18px;
+	color: #000;
+	/* display: flex; */
+	justify-content: center;
+	/* right: 0; */
+    /* left: 0; */
+	margin-right: auto;
+	margin-left: auto;
+	bottom: -170px;
+	font-family: Helvetica, sans-serif;
+	font-size: 11px;
+	background:url(../../../maybank_gif/facelift/linebox.gif) #ececec repeat-x top;
+}
+.slide-up {
+	top: 40px !important;
+}
+.slide-down {
+	bottom: -170px !important;
+}
+.toggleHolder {
+	position: absolute;
+	display: block;
+	top: -17px;
+	right: 15px;
+	cursor:pointer;
+
+}
+
+.toggleHolder2 {
+	position: absolute;
+	display: block;
+	top: -17px;
+	right: 15px;
+	cursor:pointer;
+
+}
+.listed-green {
+	text-align: left;
+	padding: 6px 10px;
+	overflow: hidden;
+	line-height: 10px;
+	color: #5a5a5a;
+}
+
+.listed-blue {
+	text-align: left;
+	padding: 6px 10px;
+	overflow: hidden;
+	line-height: 10px;
+	color: #5a5a5a;
+}
+.listed {
+	text-align: left;
+	padding: 6px 10px;
+	overflow: hidden;
+	line-height: 14px;
+	color:#646464;
+}
+.listed-green ul li {
+background:url(../../../maybank_gif/facelift/i_arrow-green.gif) no-repeat;
+padding: 3px 10px;
+margin:0;
+line-height:12px;
+list-style-type: none;
+}
+
+.listed-blue ul li {
+background:url(../../../maybank_gif/facelift/i_arrow-blue.gif) no-repeat;
+padding: 3px 10px;
+margin:0;
+line-height:12px;
+list-style-type: none;
+}
+
+div.hidden {
+	
+    width: 170px;
+    height: 229px;
+    overflow: hidden;
+    /* position: absolute; */
+    /* z-index: 100; */
+    top: 0;
+    margin-top: 0;
+    margin-bottom: -229px;
+}
+#topNav-new {
+	list-style: none;
+	position: absolute;
+	top: 45px;
+	right: 20px;
+	border:5px solid #3e3e3e;
+	background:#3e3e3e;
+	border-radius:5px;
+	background: url(../../../maybank_gif/facelift/drop-arrow.gif) no-repeat right;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+
+#topNav-new select {
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #dddddd 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#dddddd 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffffff 0%,#dddddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+   width: 200px;
+   padding: 3px 10px;
+   font-size: 13px;
+   border: 0;
+   border-radius: 5px;
+   height: 26px;
+   color:#000000;
+}
+.downloadapp {
+	display: block;
+    position: absolute;
+    background: transparent;
+    color: #ffffff;
+    left: 30px;
+    vertical-align: middle;
+	padding-top:3px;
+	}
+	
+.ir {
+    display: block;
+    border: 0;
+    text-indent: -999em;
+    overflow: hidden;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-align: left;
+    direction: ltr;
+}
+
+
+
+footer { text-align:center; margin:0 auto; color:#999; clear:both; width:100%; }
+footer a { color:#999;  }
+footer ul {display: block; margin: 5px auto; padding: 0; width: 100%;}
+footer ul li{ display:block; float:left; height:26px; line-height:26px;}
+footer ul li:first-child { height:auto; margin-right:3px; }
+footer ul li .ir:hover {background-position:left top;}
+footer ul li a {height:26px;}
+footer .rss-btn {color: #fff; background:#F60; padding: 1px 7px; font-size: 0.8333333333em; text-transform: uppercase; font-weight: bold; line-height: 12px;}
+footer .rss-btn:hover {color:#000;}
+
+.bnm{background:url(../../../maybank_gif/facelift/footer-logo_bnm.png) no-repeat left bottom; width:25px;}
+.bi{background:url(../../../maybank_gif/facelift/footer-logo_bi.png) no-repeat left bottom; width:58px;}
+.ii{background:url(../../../maybank_gif/facelift/footer-logo_ii.png) no-repeat left bottom; width:59px;}
+.fmb{background:url(../../../maybank_gif/facelift/footer-logo_fmb.png) no-repeat left bottom; width:57px;}
+.sme{background:url(../../../maybank_gif/facelift/footer-logo_sme.png) no-repeat left bottom; width:53px;}
+.pidm{background:url(../../../maybank_gif/facelift/footer-logo_pidm.png) no-repeat left bottom; width:42px;}
+.akpk{background:url(../../../maybank_gif/facelift/footer-logo_akpk.png) no-repeat left bottom; width:40px;}
+.mifc{background:url(../../../maybank_gif/facelift/footer-logo_mifc.png) no-repeat left bottom; width:47px;}
+.ibfim{background:url(../../../maybank_gif/facelift/footer-logo_ibfim.png) no-repeat left bottom; width:36px;}
+.mb{background:url(../../../maybank_gif/facelift/footer-logo_mb.png) no-repeat left bottom; width:52px;}
+.inceif{background:url(../../../maybank_gif/facelift/footer-logo_inceif.png) no-repeat left bottom; width:50px;}
+.mwl{background:url(../../../maybank_gif/facelift/footer-logo_myworklife.png) no-repeat left bottom; width:79px;}
+.verisign { background:url(../../../maybank_gif/facelift/footer-logo_verisign.png) no-repeat left bottom; width:60px; }
+.meps { background:url(../../../maybank_gif/facelift/footer-logo_meps.png) no-repeat left bottom; width:40px; }
+.atm2 { background:url(../../../maybank_gif/facelift/footer-logo_atm.png) no-repeat left bottom; width:48px; }
+.comodo { background:url(../../../maybank_gif/facelift/footer-logo_comodo.png) no-repeat left bottom; width:45px; }
+
+.bglist {
+	background:#FFF; 
+	border-radius:5px;
+	}
+
+#header #loginbox-new {
+	width: 385px;
+	position: absolute;
+	top: 0px;
+	left: 320px;
+	height: 29px;
+	display: block;
+	clear: right;
+	background: url(../../../maybank_gif/image/m2uchallenge/bg_login-new_mym2u.gif) no-repeat top left;
+	padding: 0 0 0 34px;
+}
+#header #loginbox-new .searchbox-new {
+	background: url(../../../maybank_gif/searchbox-new.gif) left top no-repeat;
+	width: 171px;
+	float: left;
+	height: 26px;
+	margin: 1px 5px 5px 0;
+}
+#header #loginbox-new .searchbox-new input {
+	border: 1px solid #ffffff;
+	background: #ffffff;
+	margin: 2px 0 0 14px;
+}
+#header #loginbox-new .searchbox-new input.button {
+	margin-top: 2px;
+}
+#header #loginbox-new .searchbox-new img {
+	width: 12px;
+	height: 13px;
+	padding: 0 0 0 10px;
+	vertical-align: top;
+	margin: 4px 0 0 0;
+}
+#header #loginbox-new .imgright {
+	float: right;
+	width: 5px;
+	height: 29px;
+}
+#header ul#LogIn2 {
+	list-style: none;
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	width: 90px;
+	height: 28px;
+	overflow: hidden;
+}
+#header ul#LogIn2 li {
+	background: #fc0 url(../../../maybank_gif/image/login_new.gif) left top no-repeat;
+	width: 90px;
+	height: 26px;
+	font-size: 1.2em;
+}
+#header ul#LogIn2 li span {
+	display: block;
+	padding-top: 5px;
+}
+#header ul#LogIn2 li a {
+	color: #333;
+	font-weight: bold;
+	text-decoration: none;
+	text-indent: 10px;
+}
+#header ul#LogIn2 li a:hover {
+	color: #000;
+}
+.register a{
+	background: #fc0 url(../../../maybank_gif/image/register-now-butt.jpg) left top no-repeat;
+	font-size:13px;
+	display:block;
+	position:absolute;
+	width:103px;
+	height:26px;
+	color:#000;
+	right:105px;
+	top:0px;
+	}
