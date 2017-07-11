@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bbc0e1e-0f14-4067-bef4-fd057d602190" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bfs_cw/autopd.html" />
+    <list default="true" id="1bbc0e1e-0f14-4067-bef4-fd057d602190" name="Default" comment="bfs additions">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bfs_cw/aip.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bfs_cw/final.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bfs_cw/income.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bfs_cw/index.html" afterPath="$PROJECT_DIR$/bfs_cw/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bfs_cw/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="52" column="133" lean-forward="false" selection-start-line="52" selection-start-column="108" selection-end-line="52" selection-end-column="133" />
+            <state relative-caret-position="259">
+              <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
               <folding>
                 <marker date="1499767969914" expanded="false" signature="411:440" ph="..." />
                 <marker date="1499767969914" expanded="false" signature="476:498" ph="..." />
@@ -57,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aip.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="aip.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bfs_cw/aip.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
@@ -604,7 +605,7 @@
       <workItem from="1498804948587" duration="2912000" />
       <workItem from="1498814512999" duration="2011000" />
       <workItem from="1499063600942" duration="3577000" />
-      <workItem from="1499694669506" duration="7460000" />
+      <workItem from="1499694669506" duration="7734000" />
     </task>
     <task id="LOCAL-00001" summary="bfs edits">
       <created>1498805140729</created>
@@ -669,11 +670,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499695782349</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="bfs additions">
+      <created>1499768331050</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1499768331050</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15960000" />
+    <option name="totallyTimeSpent" value="16234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="-4" width="1863" height="1084" extended-state="6" />
@@ -710,7 +718,8 @@
     <MESSAGE value="added  tagic chatwin" />
     <MESSAGE value="pushed tagic cw index" />
     <MESSAGE value="bupa ad banner edits" />
-    <option name="LAST_COMMIT_MESSAGE" value="bupa ad banner edits" />
+    <MESSAGE value="bfs additions" />
+    <option name="LAST_COMMIT_MESSAGE" value="bfs additions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -848,19 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bfs_cw/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="52" column="133" lean-forward="false" selection-start-line="52" selection-start-column="108" selection-end-line="52" selection-end-column="133" />
-          <folding>
-            <marker date="1499767969914" expanded="false" signature="411:440" ph="..." />
-            <marker date="1499767969914" expanded="false" signature="476:498" ph="..." />
-            <marker date="1499767969914" expanded="false" signature="535:557" ph="..." />
-            <marker date="1499767969914" expanded="false" signature="594:616" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bfs_cw/final.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -890,6 +886,19 @@
         <state relative-caret-position="504">
           <caret line="28" column="133" lean-forward="true" selection-start-line="28" selection-start-column="118" selection-end-line="28" selection-end-column="133" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bfs_cw/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+          <folding>
+            <marker date="1499767969914" expanded="false" signature="411:440" ph="..." />
+            <marker date="1499767969914" expanded="false" signature="476:498" ph="..." />
+            <marker date="1499767969914" expanded="false" signature="535:557" ph="..." />
+            <marker date="1499767969914" expanded="false" signature="594:616" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
