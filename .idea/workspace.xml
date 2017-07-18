@@ -1,10 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bbc0e1e-0f14-4067-bef4-fd057d602190" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tata_capital/img1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tata_capital/img2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tata_capital/index.html" />
+    <list default="true" id="1bbc0e1e-0f14-4067-bef4-fd057d602190" name="Default" comment="hdfc ergo chat window">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/80-D-Tax-Certificate.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/BloombergUTVaward_small.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Change-your-address.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Claim-Status.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Customer-Support-topMenu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/E-mail-Policy-Copy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Endorsements.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Gplus(1).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Gplus.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/IAIR-home-2013.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/IAIR-home-2014.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/IAIR-small.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/ICAI-award-thumb-2014.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/ICAIawardthumb_small.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/IIR_small.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/QCClose.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/QCMin.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Quick-Chat-Social-Icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/QuickChaFlotter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/QuickChatBottom_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Raise-Service-Request.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Skock-order-of-merit.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Submit-Policy-Copy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Toll-Free-Social-Media Slide.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Toll-Free-Social-Media-Icon.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Track-Interaction.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Transfer-of-insurance.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Twitterlogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/Youtube.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/adsct" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/appreciation.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/best_employer_small.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/cancellation-of-policy.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/close.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/closeBtn.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/contact-us-icon.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/download.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/download.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/ensure-your-safety-with-hdfc-ergo-car-insurance.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/excellence_hr_small.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/facebook.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/facebook.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/faq.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/fb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/fevicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/googlelogo_grey_46x15dp.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/greviance.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/hdfc-ergo-general-insurance-company-india.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/iAAA_small.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/icai-award-2016.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/in.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/iso_small.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/linkedin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/search.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/twt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/utube.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/youtube.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/1272886929389963" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/1867365613536403" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/JsInnerPagess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/ScriptResource(1).axd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/ScriptResource.axd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/WebResource.axd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/analytics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/async-ads.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/cb=gapi.loaded_0" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/conversion.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/conversion_async.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/cse.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/cssInnerPagess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/default+en.I.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/default+en.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/default.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/fbevents.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/gsearchengine.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/gtm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/jquery-ui-1.8rc3.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/jquery.ie6blocker.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/jquery.rateit.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/jsapi" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/plusone.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/rateit.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/saved_resource(1).html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/saved_resource.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfcergo_cw/index_files/uwt.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,16 +104,110 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tata_capital/index.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/maxbupa_ad/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="714">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bfs_cw/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+              <folding>
+                <marker date="1499774799478" expanded="false" signature="411:440" ph="..." />
+                <marker date="1499774799478" expanded="false" signature="476:498" ph="..." />
+                <marker date="1499774799478" expanded="false" signature="535:557" ph="..." />
+                <marker date="1499774799478" expanded="false" signature="594:616" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aip.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bfs_cw/aip.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="income.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bfs_cw/income.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autopd.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bfs_cw/autopd.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="23" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="final.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bfs_cw/final.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loan_req.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bfs_cw/loan_req.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loan_type.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bfs_cw/loan_type.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="78" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bundle.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bfs_cw/bundle.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/maxbupa_cw/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="9" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="17" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,12 +230,14 @@
         <option value="$PROJECT_DIR$/bfs_ad/index.html" />
         <option value="$PROJECT_DIR$/tagic_cw/index.html" />
         <option value="$PROJECT_DIR$/maxbupa_ad/index.html" />
+        <option value="$PROJECT_DIR$/bfs_cw/index.html" />
         <option value="$PROJECT_DIR$/bfs_cw/aip.html" />
         <option value="$PROJECT_DIR$/bfs_cw/income.html" />
         <option value="$PROJECT_DIR$/bfs_cw/autopd.html" />
         <option value="$PROJECT_DIR$/bfs_cw/final.html" />
-        <option value="$PROJECT_DIR$/bfs_cw/index.html" />
-        <option value="$PROJECT_DIR$/tata_capital/index.html" />
+        <option value="$PROJECT_DIR$/bfs_cw/loan_req.html" />
+        <option value="$PROJECT_DIR$/bfs_cw/loan_type.html" />
+        <option value="$PROJECT_DIR$/bfs_cw/bundle.html" />
       </list>
     </option>
   </component>
@@ -68,9 +248,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1053" />
+    <option name="x" value="1977" />
+    <option name="y" value="-4" />
+    <option name="width" value="1863" />
+    <option name="height" value="1084" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -87,6 +268,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -109,7 +292,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="tata_capital" />
+              <option name="myItemId" value="tata_aig" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -123,14 +306,68 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hdfcbanner" />
+              <option name="myItemId" value="tagic_cw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maxbupa_landing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maxbupa_cw" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maxbupa_ad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bfs_cw" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -140,9 +377,6 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tata_capital" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tagic_cw" />
       <recent name="$PROJECT_DIR$/tata_aig" />
@@ -161,58 +395,10 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
-      <method />
-    </configuration>
-    <configuration default="true" type="ErlangApplicationRunConfiguration" factoryName="Erlang Application" show_console_on_std_err="false" show_console_on_std_out="false">
-      <option name="debugOptions">
-        <ErlangDebugOptions>
-          <option name="autoUpdateModulesNotToInterpret" value="true" />
-          <option name="modulesNotToInterpret">
-            <set />
-          </option>
-        </ErlangDebugOptions>
-      </option>
-      <option name="erlFlags" value="" />
-      <option name="moduleAndFunction" value="" />
-      <option name="params" value="" />
-      <option name="useTestCodePath" value="false" />
-      <option name="workDirectory" />
-      <module />
-      <method />
-    </configuration>
-    <configuration default="true" type="ErlangUnitRunConfigurationType" factoryName="Erlang Eunit" show_console_on_std_err="false" show_console_on_std_out="false">
-      <option name="debugOptions">
-        <ErlangDebugOptions>
-          <option name="autoUpdateModulesNotToInterpret" value="true" />
-          <option name="modulesNotToInterpret">
-            <set />
-          </option>
-        </ErlangDebugOptions>
-      </option>
-      <option name="workDirectory" />
-      <module />
-      <option name="functionNames">
-        <set />
-      </option>
-      <option name="kind" value="MODULE" />
-      <option name="moduleNames">
-        <set />
-      </option>
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
@@ -238,12 +424,6 @@
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
-      <method />
-    </configuration>
-    <configuration default="true" type="RebarEunitRunConfigurationType" factoryName="Erlang Rebar Eunit" show_console_on_std_err="false" show_console_on_std_out="false">
-      <option name="command" value="eunit" />
-      <option name="skipDependencies" value="true" />
-      <module />
       <method />
     </configuration>
     <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
@@ -285,9 +465,6 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="1bbc0e1e-0f14-4067-bef4-fd057d602190" name="Default" comment="" />
@@ -298,9 +475,9 @@
       <workItem from="1498804948587" duration="2912000" />
       <workItem from="1498814512999" duration="2011000" />
       <workItem from="1499063600942" duration="3577000" />
-      <workItem from="1499694669506" duration="7734000" />
-      <workItem from="1499773017786" duration="2710000" />
-      <workItem from="1500364562564" duration="504000" />
+      <workItem from="1499694669506" duration="10500000" />
+      <workItem from="1499840570524" duration="1664000" />
+      <workItem from="1500360493242" duration="1724000" />
     </task>
     <task id="LOCAL-00001" summary="bfs edits">
       <created>1498805140729</created>
@@ -373,33 +550,54 @@
       <updated>1499768331050</updated>
     </task>
     <task id="LOCAL-00011" summary="bfs additions">
-      <created>1499774568874</created>
+      <created>1499768598971</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1499774568874</updated>
+      <updated>1499768598971</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="bfs additions">
+      <created>1499774883070</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1499774883070</updated>
+    </task>
+    <task id="LOCAL-00013" summary="bfs additions">
+      <created>1499840687466</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1499840687466</updated>
+    </task>
+    <task id="LOCAL-00014" summary="bfs additions">
+      <created>1500360594985</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1500360594985</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19448000" />
+    <option name="totallyTimeSpent" value="22388000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
+    <frame x="1977" y="-4" width="1863" height="1084" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27435493" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18786903" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.5038002" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925585" sideWeight="0.49597424" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925585" sideWeight="0.50402576" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.4961998" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.49382716" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925585" sideWeight="0.49812132" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -421,169 +619,185 @@
     <MESSAGE value="pushed tagic cw index" />
     <MESSAGE value="bupa ad banner edits" />
     <MESSAGE value="bfs additions" />
-    <option name="LAST_COMMIT_MESSAGE" value="bfs additions" />
+    <MESSAGE value="hdfc ergo chat window" />
+    <option name="LAST_COMMIT_MESSAGE" value="hdfc ergo chat window" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bfs_ad/index.html">
+    <entry file="file://$PROJECT_DIR$/maxbupa_ad/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="714">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maxbupa_ad/index.html">
+    <entry file="file://$PROJECT_DIR$/bfs_cw/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2115">
-          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="935">
+          <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+          <folding>
+            <marker date="1499774799478" expanded="false" signature="411:440" ph="..." />
+            <marker date="1499774799478" expanded="false" signature="476:498" ph="..." />
+            <marker date="1499774799478" expanded="false" signature="535:557" ph="..." />
+            <marker date="1499774799478" expanded="false" signature="594:616" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs_cw/aip.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="133" lean-forward="false" selection-start-line="28" selection-start-column="118" selection-end-line="28" selection-end-column="133" />
+        <state relative-caret-position="459">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs_cw/income.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="132" lean-forward="false" selection-start-line="28" selection-start-column="118" selection-end-line="28" selection-end-column="132" />
+        <state relative-caret-position="357">
+          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs_cw/autopd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="124" lean-forward="false" selection-start-line="28" selection-start-column="118" selection-end-line="28" selection-end-column="124" />
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="23" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs_cw/final.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="118" lean-forward="false" selection-start-line="25" selection-start-column="118" selection-end-line="25" selection-end-column="136" />
+        <state relative-caret-position="493">
+          <caret line="29" column="31" lean-forward="true" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bfs_cw/loan_req.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bfs_cw/loan_type.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="78" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/maxbupa_cw/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state relative-caret-position="289">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="17" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tata_aig/index.html">
+    <entry file="file://$PROJECT_DIR$/bfs_cw/bundle.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tagic_cw/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="111" lean-forward="false" selection-start-line="11" selection-start-column="111" selection-end-line="11" selection-end-column="111" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bfs_cw/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bfs_ad/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        <state relative-caret-position="544">
+          <caret line="32" column="38" lean-forward="true" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/maxbupa_ad/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="756">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bfs_cw/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+          <folding>
+            <marker date="1499774799478" expanded="false" signature="411:440" ph="..." />
+            <marker date="1499774799478" expanded="false" signature="476:498" ph="..." />
+            <marker date="1499774799478" expanded="false" signature="535:557" ph="..." />
+            <marker date="1499774799478" expanded="false" signature="594:616" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs_cw/aip.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="133" lean-forward="true" selection-start-line="28" selection-start-column="118" selection-end-line="28" selection-end-column="133" />
+        <state relative-caret-position="504">
+          <caret line="28" column="108" lean-forward="false" selection-start-line="28" selection-start-column="108" selection-end-line="28" selection-end-column="108" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs_cw/income.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="132" lean-forward="false" selection-start-line="28" selection-start-column="118" selection-end-line="28" selection-end-column="132" />
+        <state relative-caret-position="576">
+          <caret line="32" column="49" lean-forward="false" selection-start-line="32" selection-start-column="49" selection-end-line="32" selection-end-column="49" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs_cw/autopd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="124" lean-forward="false" selection-start-line="28" selection-start-column="118" selection-end-line="28" selection-end-column="124" />
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="23" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs_cw/final.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="118" lean-forward="true" selection-start-line="25" selection-start-column="118" selection-end-line="25" selection-end-column="136" />
+        <state relative-caret-position="216">
+          <caret line="12" column="64" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bfs_cw/loan_req.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/maxbupa_cw/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tata_aig/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="306">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="17" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tagic_cw/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
+        <state relative-caret-position="198">
           <caret line="11" column="111" lean-forward="false" selection-start-line="11" selection-start-column="111" selection-end-line="11" selection-end-column="111" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bfs_cw/index.html">
+    <entry file="file://$PROJECT_DIR$/bfs_cw/loan_type.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="7" lean-forward="true" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        <state relative-caret-position="648">
+          <caret line="36" column="7" lean-forward="false" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -592,7 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,7 +821,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -616,7 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="111" lean-forward="false" selection-start-line="11" selection-start-column="111" selection-end-line="11" selection-end-column="111" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -624,7 +835,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -632,7 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -640,7 +853,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -648,7 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -656,23 +871,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="15" lean-forward="false" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs_ad/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="108">
           <caret line="6" column="40" lean-forward="false" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tata_aig/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tagic_cw/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="111" lean-forward="false" selection-start-line="11" selection-start-column="111" selection-end-line="11" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maxbupa_cw/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="17" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/maxbupa_ad/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2115">
-          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="714">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -685,90 +927,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs_cw/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
-          <folding />
+        <state relative-caret-position="935">
+          <caret line="55" column="21" lean-forward="false" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+          <folding>
+            <marker date="1499774799478" expanded="false" signature="411:440" ph="..." />
+            <marker date="1499774799478" expanded="false" signature="476:498" ph="..." />
+            <marker date="1499774799478" expanded="false" signature="535:557" ph="..." />
+            <marker date="1499774799478" expanded="false" signature="594:616" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs_cw/aip.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="133" lean-forward="false" selection-start-line="28" selection-start-column="118" selection-end-line="28" selection-end-column="133" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bfs_cw/income.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="132" lean-forward="false" selection-start-line="28" selection-start-column="118" selection-end-line="28" selection-end-column="132" />
+        <state relative-caret-position="459">
+          <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs_cw/autopd.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="124" lean-forward="false" selection-start-line="28" selection-start-column="118" selection-end-line="28" selection-end-column="124" />
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="23" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bfs_cw/final.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="118" lean-forward="false" selection-start-line="25" selection-start-column="118" selection-end-line="25" selection-end-column="136" />
+        <state relative-caret-position="493">
+          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/maxbupa_cw/index.html">
+    <entry file="file://$PROJECT_DIR$/bfs_cw/income.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state relative-caret-position="357">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tata_aig/index.html">
+    <entry file="file://$PROJECT_DIR$/bfs_cw/loan_req.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="20" column="30" lean-forward="false" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tagic_cw/index.html">
+    <entry file="file://$PROJECT_DIR$/bfs_cw/loan_type.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="111" lean-forward="false" selection-start-line="11" selection-start-column="111" selection-end-line="11" selection-end-column="111" />
+        <state relative-caret-position="221">
+          <caret line="13" column="78" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hdfcbanner/untitled.html">
+    <entry file="file://$PROJECT_DIR$/bfs_cw/bundle.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="510">
+          <caret line="30" column="29" lean-forward="true" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tata_capital/img1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tata_capital/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
