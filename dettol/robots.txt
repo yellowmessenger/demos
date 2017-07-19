@@ -1,0 +1,29 @@
+# robots.txt for Umbraco
+
+
+User-agent: *
+
+
+Disallow: /aspnet_client/
+Disallow: /App_code/
+Disallow: /App_data/
+Disallow: /App_Start/
+Disallow: /App_Browsers/
+Disallow: /App_Plugins/
+Disallow: /bin/
+Disallow: /config/
+Disallow: /CmsPackages/
+Disallow: /css/
+Disallow: /data/
+Disallow: /macroScripts/
+Disallow: /scripts/
+Disallow: /umbraco/
+Disallow: /umbraco_client/
+Disallow: /usercontrols/
+Disallow: /uSync/
+Disallow: /uSync.Archive/
+Disallow: /views/
+Disallow: /xslt
+
+
+Sitemap: sitemap
