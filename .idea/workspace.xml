@@ -2,189 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bbc0e1e-0f14-4067-bef4-fd057d602190" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/css/Decultter_css/homepagenew.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/css/ceebox_min_rewardPopup.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/css/common-home.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/css/common.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/fonts/helveticabold-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/fonts/helveticabold-webfont.eot?" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/fonts/helveticabold-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/fonts/opensans-regular-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/fonts/opensans-regular-webfont.eot?" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/fonts/opensans-regular-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/fonts/opensans-semibold-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/fonts/opensans-semibold-webfont.eot?" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/fonts/opensans-semibold-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/arrow-more.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/arrowbullet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg-homepage-banner.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg-prdct-details.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_base_benchmark.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_btm_tooltip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_datetime_bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_datetime_mid.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_datetime_top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_floatingfooter_bottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_floatingfooter_top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_floatingfooterlinkseperator.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_footer.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_footerlink_seperator.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_homeloginbox_bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_homeloginbox_seperator.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_homeloginbox_top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_importantmessagebottom.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_importantmessagetop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_insidepagebannerbottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_insidepagebannertop.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_languagedropdownbottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_languagedropdownselected.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_languagedropdowntop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_latestnews_bottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_latestnews_top.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_lhs_bottomborder.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_lhs_navsectionbottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_paymentselect.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_recentpagesvisited_bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_recentpagesvisited_shadow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_recentpagesvisited_top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_search.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_searchgo.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_sectionnav_left.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_sectionnav_right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_side_tooltip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_smallbannersbottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_smallbannerstop.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_specialoffersbluebox.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_specialoffersbluebox_bottom.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_subselected_lhs.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_titanium_lhs.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_tooltip_content.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_tooltip_top.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bg_topnav.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/blackbullet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/btn-close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bullet_bluearrowsmall.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bullet_bluearrowsmalltrans.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bullet_darkbluearrowdown.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bullet_darkbluearrowup.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bullet_greyarrow.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bullet_lightbluearrowdown.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bullet_popup_point.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bullet_popup_subpoint.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/bullet_whitearrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/butn-homesliding-active.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/butn-homesliding.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/callbk-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/callbk-sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/callbkBtn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/ceebox_closebtn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/chat_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/click2talk_popup_bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/close.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/curve_btm.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/curve_top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/back.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/bg-prdct-details.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/btn-close.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/hm-news2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/hmbannercarodot-active.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/hmbannercarodot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/hmlearningcenter-cards.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/hmlearningcenter-security.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-car-loan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-credit-cards.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-current.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-demat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-forex-card.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-gold-loan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-home-loan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-lacc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-lap.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-las.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-life.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-payzapp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-pl.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-salary.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-savings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/icon-tw-loan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/declutter/next.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/goldrateslightbox_bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/grey_dots.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/greybullet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/greydashbullet.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/hdfc_Inoperative_popup_bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/hm-arrowicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/hm-caroicons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/hm-likeicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/hm-netbankingdropdownarrow-active.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/hm-netbankingdropdownarrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/home-iconNew.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/hpg-news1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/impmessageArrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/impmessageclose.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/lightgreybullet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/login_butn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/loginbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/logo_hdfcbank.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/main_nav/nav_knowmore.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/mob_select.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/mobile_popup.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/nav-dropdwn.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/navigation_btmborder.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/newhompageimages/bg-select.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/newhompageimages/btn-close-prdct.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/newhompageimages/images/bg-prdct.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/newhompageimages/images/bg-product-active.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/arrow-next-car.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/arrow-next.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/arrow-prev-car.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/arrow-prev.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/blackbullet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/icon-billpayments.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/icon-mobile-recharge.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/icon-onlineshopping.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/icon-sendmoney.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/icon-smartbuy.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/number-one.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/number-three.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/number-two.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/sitemap_minusbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/payzapp/sitemap_plusbg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/pdf_icon.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/proceed_boxbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/quantity_dropdownbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/rewards_popup_contentBg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/securebanking-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/sprite_icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/sprite_icons_footer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/tat_calc.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/termsandcondin_bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/top_navsel_bg_centerarrow.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/top_navsel_bg_left.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/top_navsel_bg_right.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/verisign.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/white_arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/images/why_hdfcbank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/accordiantabcode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/atmcode.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/customjqueryceebox.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/hompagelogin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/ie6include.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/jquery.autocomplete.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/jquery.autocomplete_search.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/jquery.cookie.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/jquery.tweet.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/jquerycustomslider.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/jquerylibrary.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/jqueryparsestring.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/navigation.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/assets/scripts/screen-takeover.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hdfc/robots.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/BAMM_Banner.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/EL.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/PL-disbursal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/Slug_banner_home_loan_new.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/bl_small.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/cl-small.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/competitive_pricing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/dwnldicon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/hl_small.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/home-iconNew.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/impmessageclose.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/login-arrow2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/logo_hdfcbank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/nav-dropdwn.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/nav_knowmore.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/nav_pointer.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/newlogo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/personal-loan-banner-649w-x-192h-px-V-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/securebanking-logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/smartBuy-dropdownImg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/smartbuy_offers_tab.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/tabicon1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/tabicon2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/tabicon3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/tabicon4.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/tabicon5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/tabicon6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/transparent_processing.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/verisign.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/widerange.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/1232.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/1670483629831693" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/GetJsFile.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/accordiantabcode.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/analytics.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/analyze.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/ceebox_min_rewardPopup.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/combined.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/common.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/common.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/conversion_async.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/cookieCallback.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/customjqueryceebox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/fbevents.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/gtm.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/j.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/jquery.autocomplete.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/jquery_ceebox_min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/jquerycustomslider.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/jquerylibrary.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/jqueryparsestring.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/navigation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/new-owl.carousel.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/new-owl.theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/newui.min-v2.2.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/opa-853ef9b6f28eaf8557515c4b0187f093.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/owl.carousel.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/pixel.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/product.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/product.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/saved_resource.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/sfloader.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/sw_registration.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/track-1c6a9fdc9089c8d7da53fa2910ef15d3.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/va-1c6a9fdc9089c8d7da53fa2910ef15d3.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hdfc/index.html" afterPath="$PROJECT_DIR$/hdfc/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -202,8 +86,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hdfc/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="1798" column="87" lean-forward="false" selection-start-line="1798" selection-start-column="87" selection-end-line="1798" selection-end-column="87" />
+            <state relative-caret-position="249">
+              <caret line="1789" column="66" lean-forward="true" selection-start-line="1789" selection-start-column="66" selection-end-line="1789" selection-end-column="66" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -336,10 +220,58 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="ErlangApplicationRunConfiguration" factoryName="Erlang Application" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="debugOptions">
+        <ErlangDebugOptions>
+          <option name="autoUpdateModulesNotToInterpret" value="true" />
+          <option name="modulesNotToInterpret">
+            <set />
+          </option>
+        </ErlangDebugOptions>
+      </option>
+      <option name="erlFlags" value="" />
+      <option name="moduleAndFunction" value="" />
+      <option name="params" value="" />
+      <option name="useTestCodePath" value="false" />
+      <option name="workDirectory" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="ErlangUnitRunConfigurationType" factoryName="Erlang Eunit" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="debugOptions">
+        <ErlangDebugOptions>
+          <option name="autoUpdateModulesNotToInterpret" value="true" />
+          <option name="modulesNotToInterpret">
+            <set />
+          </option>
+        </ErlangDebugOptions>
+      </option>
+      <option name="workDirectory" />
+      <module />
+      <option name="functionNames">
+        <set />
+      </option>
+      <option name="kind" value="MODULE" />
+      <option name="moduleNames">
+        <set />
+      </option>
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
@@ -365,6 +297,12 @@
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="RebarEunitRunConfigurationType" factoryName="Erlang Rebar Eunit" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="command" value="eunit" />
+      <option name="skipDependencies" value="true" />
+      <module />
       <method />
     </configuration>
     <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
@@ -425,7 +363,7 @@
       <workItem from="1500446741533" duration="157000" />
       <workItem from="1500454709103" duration="1633000" />
       <workItem from="1501752415227" duration="603000" />
-      <workItem from="1501927272865" duration="938000" />
+      <workItem from="1501927272865" duration="1493000" />
     </task>
     <task id="LOCAL-00001" summary="bfs edits">
       <created>1498805140729</created>
@@ -560,11 +498,18 @@
       <option name="project" value="LOCAL" />
       <updated>1500456314815</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="hdfc ergo chat window">
+      <created>1501928229367</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1501928229367</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26226000" />
+    <option name="totallyTimeSpent" value="26781000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
@@ -968,8 +913,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hdfc/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="1798" column="87" lean-forward="false" selection-start-line="1798" selection-start-column="87" selection-end-line="1798" selection-end-column="87" />
+        <state relative-caret-position="249">
+          <caret line="1789" column="66" lean-forward="true" selection-start-line="1789" selection-start-column="66" selection-end-line="1789" selection-end-column="66" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
