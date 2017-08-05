@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+.breadCrumbSec-prolife{float:right;  width:670px; height:25px; text-align:right; color:#717171; font:normal 11px Arial, Helvetica, sans-serif; padding:0px 8px 10px 0;}
+.breadCrumbSec-prolife a{ display:inline-block; background:url(../images/bullet.gif) no-repeat 100% 5px; padding-right:15px; margin-right:10px; color:#717171;}
+.breadCrumbSec-prolife a:hover{ text-decoration:underline; color:#000;}
+.breadCrumbSec-prolife span{ display:inline-block; background:url(../images/bullet.gif) no-repeat 100% 5px; padding-right:15px; margin-right:10px;}
+
+.contLeft-area{ float:left; width:200px; background:#fecc08; color:#000; padding:13px;}
+.contLeft-area ul{margin:0; padding:0px;}
+.contLeft-area ul li{list-style-type:none; border-bottom:1px solid #ffe890; padding-bottom:5px; margin-bottom:8px; font-size:12px}
+.contLeft-area ul li a{ color:#000}
+.contLeft-area ul li a:hover{ color:#000}
+.contLeft-area ul li ul{ margin-left:8px}
+
+.contRight-area{ float:left; width:718px; padding:16px;}
+.contRight-area h3{ padding-bottom:15px; margin:0px; font-size:20px; color:#164e88; font-weight:400;}
+.contRight-area h4{ padding-bottom:15px; margin:0px; font-size:18px; color:#000; font-weight:400;}
+
+.reldiv{position:relative}
+.contBannerPanel h3{background:url(http://www.customercare-cv.tatamotors.com/images/black.png) repeat; color:#fff; padding:10px 15px; position:absolute; bottom:0; left:0; display:block; font-size:24px; font-weight:normal; margin:0; width:953px;}
+
+#slider1 {   margin: 30px 0 0;    overflow: hidden;    position: relative;    padding: 0 50px 10px; width:70%; margin:0 auto; position:relative}
+#slider1 .viewport {   height: 175px;    overflow: hidden;    position: relative;}
+#slider1 .buttons {  position: absolute;    top: 40%;    left: 0;    width: 35px; text-align: center;}
+#slider1 .next {    right: 0;    left: auto;    top: 40%;}
+#slider1 .disable {    visibility: hidden;}
+#slider1 .overview {    list-style: none;    position: absolute;    padding: 0;    margin: 0;    width: 240px;    left: 0;    top: 0;}
+#slider1 .overview li {    float: left; text-align:center;    margin: 0 20px 0 0;    padding: 1px;    height: 121px;    border: 0px solid #dcdcdc;    width: 236px; }
+#slider1 .overview li {}
+
+a.pdflink-text {border-bottom: 1px solid #e0e0e0; background: url(http://www.customercare-cv.tatamotors.com/images/pdf-icon.png) no-repeat 0 10%;    padding: 2px 0 5px 55px;    display: block;    overflow: hidden;    line-height: 40px;    font-size: 15px; color:#000;}
+a:hover.pdflink-text{ color:#0066CC; background:#f2f2f2 url(http://www.customercare-cv.tatamotors.com/images/pdf-icon.png) no-repeat 0 10%; }
+
+.thum-icom{ width:142px; margin:20px 40px; border:1px solid #d4d4d4; float:left}
+.thum-icom img{ display:block; border:0}
+.thum-icom a span{ background:#545454 url(http://www.customercare-cv.tatamotors.com/images/white-arrow.png) no-repeat 95% ; color:#FFF; display:block; padding:5px; font-size:12px;}
+
+.table-header{ background:#006ac7; color:#FFFFFF; border:1px solid #498cc7;}
+.table-header-body{border:1px solid #e0e0e0; color:#000000}
+
+.expand{}
+.expand h3{padding:0 10px; overflow:hidden; font-size:13px; font-weight:400; cursor:pointer; border-bottom:1px solid #a0a0a0; margin-bottom:10px; margin-top:20px}
+.expand h3 strong{ float:left; display:block; color:#002D6E; text-transform: none;font-weight:600; font-size:12px }
+.expand h3 strong:hover{ color:#ee8917 !important}
+.expand h3 span{ float:right; display:block; width:10px; height:38px; line-height:56px; margin-right:10px; background:url(http://www.customercare-cv.tatamotors.com/images/plus-minus.gif) no-repeat 50% 10px;}
+.expand h3 span.accordianActive{background:url(http://www.customercare-cv.tatamotors.com/images/plus-minus.gif) no-repeat 50% -35px;}
+.expand .conts{ padding:10px;font-size: 12px; font-weight: 500;color:#666;}
+.expand .conts a{ color:#2072bc; text-decoration:none}
+.expand .conts a:hover{ color:#ee8917; text-decoration:none}
+
+.zoom >ul li { display:inline-block; margin:10px 20px 10px 10px;}
+.zoom >ul li a { color:#2072bc; font-weight:bold; font-size:12px}
+.zoom >ul li a:hover { color:#ee8917}
+.zoom >ul li a:hover span{position: absolute; left: 0;top: 0;width: 100%;height: 100%; background:#000 url(http://www.customercare-cv.tatamotors.com/images/leaflet-zoom.png) no-repeat 50% 50%;opacity: 0; z-index:9999}
+.zoom >ul li a img{ display:block}
+
+.contact_textbox {    width: 80%;    border: 1px solid #d6d6d6;    background: #f2f2f2;    padding: 10px;    border-radius: 5px;    }
+select.dropdown{color: #888888; text-decoration: none;background: #f2f2f2 url(http://www.customercare-cv.tatamotors.com/images/arrow-dop.png) no-repeat 95% center !important;border: 1px solid #E0E0E0;height: 40px;width: 84% !important;padding-left: 6px;       border-radius: 5px;-moz-appearance: none;-webkit-appearance: none;appearance: none;cursor: pointer;}
+
+.submitBtn {background: #024484;text-transform: uppercase;padding: 10px 30px;border: 0;color: #FFF; border-radius: 5px;font-size: 12px; cursor:pointer; margin:5px}
+.submitBtn:hover {background: #1e6cb8;}
+
+td.table-panel1 {padding: 10px; border:1px solid #e0e0e0; color:#000000;}
+td.table-panel2 {padding: 10px; border:1px solid #e0e0e0; color:#000; background:#f2fafd}
