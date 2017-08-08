@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+.topNav{position:relative; z-index:250;  float:left; margin-top:12px; margin-left:6px;}
+.topNav > li{float:left; padding-right:12px; margin-right:12px; background:url(http://www.customercare-cv.tatamotors.com/images/navSep.gif) no-repeat 100% 5px;  position:relative;}
+.topNav > li > a{display:block; text-decoration: none;  color:#135197; font:normal 11px/20px Arial, Helvetica, sans-serif;}
+
+.topNav > li > a:hover{color:#000;}
+
+.topNav > li:hover > a{color:#000;}
+
+.topNav > li > a.navA{color:#ff4802;}
+
+/*------------------------1st lable------------------------- text-shadow: 1px 1px 0.02em #b4b4b4;-----*/
+
+.topNav li > ul{ position:absolute; left:-99999px; top:-99999px; }
+.topNav li:hover > ul{ position:absolute; width:192px; left:2px; top:20px; padding-top:7px; height:auto; z-index:150; background:url(http://www.customercare-cv.tatamotors.com/images/blank.gif); }
+.topNav li:hover ul li{position:relative; background:url(http://www.customercare-cv.tatamotors.com/images/dropmenuBg2.png) repeat-y 0 0; text-transform:none!important;}
+.topNav li:hover ul li a{ display:block; color:#505050; font:normal 11px Arial, Helvetica, sans-serif; width:145px; margin:0 auto; background:url(http://www.customercare-cv.tatamotors.com/images/dmSep.gif) repeat-x 0 100%; padding:10px 0;}
+.topNav li:hover ul li a:hover{ color:#000;}
+
+.dropmenuT{background:url(http://www.customercare-cv.tatamotors.com/images/dropmenuBg.png) repeat-y 0 0!important; min-height:32px; padding:15px 0 3px 0; margin-bottom:-3px;}
+.dropmenuT {}
+.dropmenuB{background:url(http://www.customercare-cv.tatamotors.com/images/dropmenuBg.png) repeat-y 0 100%!important; min-height:32px; padding-bottom:15px;}
+.dropmenuB a{ border-bottom:none!important;}
+/*----------------------2nd label--------------------------------*/
+
+.topNav li:hover ul li:hover{ color:#000;}
+.topNav li:hover ul li:hover a{ color:#000;}
+
+.topNav li:hover ul li > ul{ left:-99999px; top:-99999px; z-index:200;}
+.topNav li:hover ul li:hover > ul{ left:187px; top:0px; padding-top:0; z-index:250;}
+.topNav li:hover ul li:hover ul li a{color:#505050;}
+.topNav li:hover ul li:hover ul li:hover a:hover{color:#000;}
+
+.topNav li:hover ul li:hover ul li:hover{color:#505050;}
+.topNav li:hover ul li:hover ul li:hover > a{color:#000;}
+
+.uparrow{ z-index:200; position:absolute; top:-8px;}
+
+
+
+
+

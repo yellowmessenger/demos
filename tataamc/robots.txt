@@ -1,0 +1,557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>TATA MOTORS CUSTOMER CARE</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="http://www.customercare-cv.tatamotors.com/css/skin.css" />
+<link type="text/css" media="screen" rel="stylesheet" href="css/colorbox.css" />
+<style type="text/css">
+.contents { padding:0px; }
+.contents p span { display:block;float:left; margin-left:0px; width:110px; color:gray; font-weight:bold;}
+.contents p select {float:left; margin-left:0px;}
+.contents p {clear:both;overflow:hidden;}
+</style>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.customercare-cv.tatamotors.com/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="http://www.customercare-cv.tatamotors.com/js/jquery-1.7.1.min.js"></script>
+
+
+
+
+<!--==============================Start Jcarousel================================== -->
+<style type="text/css">
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    width: 100%;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width: 100%;
+}
+</style>
+
+<script type="text/javascript" src="http://www.customercare-cv.tatamotors.com/js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('#services').jcarousel({
+    });
+	$('.homeServiceSec').prepend('<span class="drlb">.</span><span class="drrb">.</span>');//don't delete this line
+});
+
+</script>
+
+<!--==============================End Jcarousel================================== -->
+
+<!--==================================Start Fadein fadeout======================================== -->
+<script type="text/javascript" src="http://www.customercare-cv.tatamotors.com/js/jquery.innerfade.js"></script>
+    <script type="text/javascript">
+	   $(document).ready(
+				function(){
+					
+					
+					$('ul#logo').innerfade({
+						speed: 1000,
+						timeout: 3000,
+						type: 'sequence',
+						containerheight: '86px'
+					});
+					
+					$('.rminus, .rPlus, .rNormal').hide();//this is for hide textsizer from home page
+
+			});
+  	</script>
+<!--==================================End Fadein fadeout======================================== -->
+        
+<!--====================================Start Colorbox======================================== -->
+<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+<script type="text/javascript">
+			$(document).ready(function(){
+				$(".flink").colorbox();
+			});
+			
+</script> 
+
+<!--====================================End Colorbox======================================== -->
+
+<!--==================================Start Search=========================================== -->
+
+<script type="text/javascript" language="javascript">
+function Search()
+{
+    
+    if(document.getElementById("search-box").value.search(/\S/) == -1 || document.getElementById("search-box").value == 'Site Search')
+    {
+        alert("Enter your search text");
+        document.getElementById("search-box").focus();
+        return false;
+    
+    }
+    document.getElementById("frmsearch").submit();
+}
+</script>
+
+<script type="text/javascript">
+$(function() {
+	
+	$('.topSearch').click(function(ee){		
+		$('.topSearchHolder').slideDown();
+		ee.stopPropagation();		
+		});
+	
+	$('.searchClose').click(function(){		
+		$('.topSearchHolder').fadeOut();		
+		});
+		
+	$(document).not('.searchBox').click(function(){
+		if($('.topSearchHolder').is(":visible")){
+		
+		$('.topSearchHolder').fadeOut(); 
+		}
+		
+		});	
+			
+		
+	
+});
+</script> 
+
+<!--==================================End Search=========================================== -->
+<script type="text/javascript" src="http://www.customercare-cv.tatamotors.com/colorbox/jquery.colorbox.js"></script>
+
+<!--<script>
+   $(document).ready(function() {	   
+	   $.colorbox({href:'/jrd-banner.html', open:true});
+   
+   });
+</script> -->
+</head>
+<body>
+
+  
+
+
+ <script type="text/javascript">
+    $(function () {
+        $('.topNav > li').hover(function () {
+            $('.sub > li:first-child').prepend("<img src='images/uparrow.png' class='uparrow' alt='' />");
+            var topliw = $(this).width() / 2 - 10;
+            $('.uparrow').css('left', topliw + 'px');
+        },
+
+            function () {
+                $('.uparrow').remove();
+            }
+
+            );
+
+        $('.sub li:first-child').addClass('dropmenuT')
+        $('.sub li:last-child').addClass('dropmenuB');
+        $('.sub li:last-child a').css('background', 'none');
+        $('.sub li li:first-child').css('padding-top', '0px');
+
+
+        $('.topNav > li:last').hover(function () {
+            if ($('.topNav > li:last ul:visible')) {
+                $('.topNav > li:last ul').css('left', '-112px');
+                $('.uparrow').css('left', '140px');
+                $('.sub > li li:first-child img.uparrow').hide();
+            }
+            if ($('.topNav > li:last ul ul:visible')) {
+                $('.topNav > li:last ul ul').css('left', '-180px');
+            }
+        });
+
+
+			$('.sub li').each(function(){			
+			var kris = $(this).index()+1;
+			$(this).css('z-index', '50'-kris);
+			})
+			
+
+$('.gotoTop').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 800);
+			return false;
+		});
+
+
+
+    });
+	</script>
+ 
+  <link rel="stylesheet" href="css/colorbox.css" />
+<script src="js/jquery.colorbox-min.js"></script>
+<script>
+			$(document).ready(function(){
+				$(".ajax").colorbox({iframe:true, width:"400px", height:"350px"});
+			});
+		</script>
+ 
+       
+        
+<script type="text/javascript" src="js/textsizer.js"></script>
+
+
+<div class="topLogoPanel">
+  <div class="center"><a href="http://www.tatamotors.com/" target="_blank"><img src="images/tata-motors-logo.png" width="124" height="13" alt="TATA MOTOR" title="TATA MOTORS" class="tmLogo" /></a><h1>Customer Care</h1>
+  <a target="_blank" href="http://www.tata.com/"><img src="images/tata-logo.png" border="0" alt="TATA" title="TATA" class="tataLogo" /></a></div><!-- center end -->
+</div><!-- ##### top Logo section end ##### -->
+
+
+<div class="topNavPanel">
+  <div class="center">
+  
+  <a href="http://www.customercare-cv.tatamotors.com/" class="home">Home</a>
+  
+  <ul class="topNav"><li><a href="javascript:void(0)">Customer Support (India)</a>
+  
+          <ul class="sub">
+          <li><a href="http://www.customercare-cv.tatamotors.com/about/customer-support.aspx">About Customer Support</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/channel-network/about-chanel-network.aspx">Channel Network</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/about/onsite-service-support.aspx">Onsite Service Support</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/about/fleet-management.aspx">Fleet Management</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/about/alert.aspx">Tata Alert</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/about/kavach.aspx">Tata Kavach</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/about/zippy.aspx">Tata Zippy</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/about/call-center-service.aspx">Call Center Service</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/campaigns-and-trainings/iti-training-facility.aspx">Plant Service Office</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/about/institutional-service.aspx">Institutional Service</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/about/state-transport-units.aspx">State Transport Units</a></li>
+          <li><a  href="http://www.customercare-cv.tatamotors.com/about/beyond-service.aspx">Beyond Service</a></li>
+          </ul>
+  </li>
+  <li><a href="javascript:void(0)">Channel Network</a>
+          <ul class="sub">
+          <li><a href="http://www.customercare-cv.tatamotors.com/channel-network/about-chanel-network.aspx">Channel Network</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/channel-network/list-of-offices.aspx">List of Offices</a></li>
+          <li><a href="http://dealerlocator.tatamotors.com:8080/tmdealerlocator/tmcv" target="_blank">Locate a Workshop</a></li>
+          <li><a href="http://www.tatamotors.com/contactus/tass-commercial-vehicles.php" target="_blank">Apply For TASS</a></li>
+          </ul>
+  </li>
+  <li><a href="javascript:void(0)">Tata Genuine Parts</a>
+          <ul class="sub">
+          <li><a href="http://www.customercare-cv.tatamotors.com/tata-genuine-parts/about-TGP.aspx">About TGP</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/tata-genuine-parts/warehouse-and-rcc.aspx">Warehouses & RCC</a></li>
+          <li><a href="javascript:void(0)">Partspedia</a>
+          <ul>
+          <li><a href="http://www.customercare-cv.tatamotors.com/tata-genuine-parts/e-cats.aspx">e-Catalog</a></li>
+          <!--<li><a href="#">Parts Segments</a></li>
+          <li><a href="#">All Parts</a></li> -->
+          </ul> 
+          </li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/tata-genuine-parts/tgp-locator.aspx">TGP Locator</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/tata-genuine-parts/tata-guru.aspx">Tata Guru</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/tata-genuine-parts/tata-champion.aspx">Tata Motors Champion</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/tata-genuine-parts/product-catalogue.aspx">Product Catalogues</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/tata-genuine-parts/identify-TGP.aspx">How To Identify TGP</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/tata-genuine-parts/tgp-help-desk.aspx">TGP Help Desk</a></li>
+          </ul>
+  </li>
+  <li><a href="javascript:void(0)">Value Added Services</a>
+          <ul class="sub">
+          <li><a href="value-added-services/amc.aspx">Suraksha(AMC)</a></li>
+          <!--<li><a href="/value-added-services/extended-warranty.aspx">Extended Warranty</a></li>-->
+          <li><a href="http://www.customercare-cv.tatamotors.com/value-added-services/prolife.aspx">Tata Motors Prolife</a>
+          <ul>
+          
+          <li><a href="robots.txt#">Prolife Business</a>
+          <ul>
+          <li><a href="http://www.customercare-cv.tatamotors.com/value-added-services/exchange.aspx">Prolife Exchange Process</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/value-added-services/images/prolife-business.ppt" target="_blank">Best Practices</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/value-added-services/warranty.aspx">Warranty Policies</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/value-added-services/core.aspx">Core Deficiency Norms</a></li>
+          </ul>
+          </li>
+          <li><a href="robots.txt#">Product Technical Details</a>
+          <ul>
+          <li><a href="http://www.customercare-cv.tatamotors.com/value-added-services/application-matrix.aspx">Prolife Products & Application Matrix</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/value-added-services/new-launches.aspx">New Launches</a></li>
+          </ul>
+          </li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/value-added-services/schemes.aspx">Schemes</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/value-added-services/customer-voice.aspx">Customer Voice</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/value-added-services/gallery.aspx">Gallery</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/value-added-services/contact-details.aspx">Contact Details</a></li>
+          </ul>
+          </li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/value-added-services/allied-business.aspx">Allied Business</a></li>
+          </ul>
+  </li>
+  <li><a href="javascript:void(0)">Campaigns & Trainings</a>
+  <ul class="sub">
+          <li><a href="javascript:void(0)">Training</a>
+          <ul>
+          <li><a href="http://www.customercare-cv.tatamotors.com/campaigns-and-trainings/driver-training-institute.aspx">Drivers Training Institutes</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/campaigns-and-trainings/iti-training-facility.aspx">Learning Centers</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/campaigns-and-trainings/industrial-training-institutes.aspx">ITI Training Facility</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/pdf/STC-and-RTC-Training-calendar.pdf" target="_blank">Training Calendar</a></li>
+          </ul>
+          </li>
+          <li><a href="javascript:void(0)">Customer Contact Programme</a>
+          <ul>
+          <li><a href="http://www.customercare-cv.tatamotors.com/campaigns-and-trainings/campaign-schedule.aspx">Campaign Schedules</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/campaigns-and-trainings/national-customer-careday.aspx">National Customer Care Day</a></li>
+          </ul>
+          </li>
+          <li><a href="javascript:void(0)">Championships</a>
+          <ul>
+          <li><a href="http://www.customercare-cv.tatamotors.com/campaigns-and-trainings/techFest-International.aspx">Tech Fest International</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/campaigns-and-trainings/techFest.aspx">Tech Fest</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/campaigns-and-trainings/skillFest.aspx">Skill Fest</a></li>
+          <li style="display:none;"></li>
+          </ul> 
+          </li>
+          <li style="display:none;"></li>
+          </ul>
+  </li> 
+  <li><a href="javascript:void(0)">International Business</a>
+          <ul class="sub">
+          <li><a href="http://www.customercare-cv.tatamotors.com/international-business/international-business.aspx">About International Business</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/international-business/value-added-services.aspx">Value Added Services</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/international-business/distributors.aspx">Distributors List</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/international-business/gallery.aspx">Gallery</a></li>
+          <li><a href="http://www.tatamotors.com/contact-us/" target="_blank">Contact Us</a></li>
+          </ul>
+  </li>
+  <li><a href="javascript:void(0)">Accolades</a>
+    <ul class="sub">
+          <li><a href="http://www.customercare-cv.tatamotors.com/accolades/awards-gallery.aspx">Awards Gallery</a></li>
+          <li><a href="http://www.customercare-cv.tatamotors.com/accolades/customer-testimonials.aspx">Customer Testimonials</a></li>
+     </ul>
+  </li>
+  <li style="background:none;"><a href="http://www.tatamotors.com/contactus/index.php" target="_blank">Contact Us</a></li>
+  <!--<li style="background:none;"><a href="http://www.cvglobal.tatamotors.com/sales_and_services/services.html" target="_blank">Contact Us</a></li> -->
+  </ul>
+  
+  </div><!-- center end -->
+</div><!-- ##### top nav section end ##### -->
+<!-- top panel end -->
+
+<div class="body">
+
+  <div class="alert">
+  <p><img src="http://www.customercare-cv.tatamotors.com/images/customer-care2.gif" border="0" alt=""></p>
+  <strong><img src="http://www.customercare-cv.tatamotors.com/images/team-consist.gif" border="0" alt=""></strong>
+   <div class="alert-menu">
+   <ul>
+   <li><a href="http://www.customercare-cv.tatamotors.com/customer-support.aspx" class="flink">Customer support</a></li>
+   <li><a href="http://www.customercare-cv.tatamotors.com/tata-genuine-parts.aspx" class="flink">TATA GENUINE PARTS</a></li>
+   <li><a href="http://www.customercare-cv.tatamotors.com/service-marketing.aspx" class="flink">Service Marketing</a></li>
+   <li><a href="http://www.customercare-cv.tatamotors.com/international-business.aspx" class="flink">International Business</a></li>
+   <li style="text-transform:inherit; background:url(http://www.customercare-cv.tatamotors.com/images/youtube.png) no-repeat top 2px left 0;"><a href="http://www.customercare-cv.tatamotors.com/castrol.aspx" class="flink" style="color:#973B3D; font-weight:bold;"><img src="http://www.customercare-cv.tatamotors.com/images/castrol.gif"/></a></li>
+   </ul>
+   </div>
+  </div><!-- alert end -->
+  
+  
+  <!--<div class="homeSearch">
+  <form id="frmsearch" name="frmsearch" method="post" action="/search.aspx">
+  <input id="search-box" name="search-box" value="Search" title="Search" type="text" class="searchBox2" onfocus="javascript:if(this.value=='Search'){this.value=''}" onblur="javascript:if(this.value==''){this.value='Search'}" />
+  <input name="go" id="go" title="Go" type="button" class="homesearchBtn" onclick="return Search()">
+  </form>
+  </div> home search end -->
+  
+  <div class="bannerPanel">
+  <div class="contents" style="width:983px;  margin:0px auto; overflow:hidden;"><div style="z-index:900; position:absolute; width:214px; height:42px; left: 753px; top: 366px;"><a href="http://www.customercare-cv.tatamotors.com/download-brochure.aspx"><img src="http://www.customercare-cv.tatamotors.com/images/download-brochure.png" width="214" height="42" border="0" /></a></div>
+  
+  <!--<div style="z-index:900; position:absolute; width:184px; height:42px; left: 510px; top: 366px;"><a href="/pdf/application-cross-reference.pdf" target="_blank"><img src="images/application-cross-reference.png" width="244" height="42" border="0" /></a></div>-->
+  
+<!-- <div style="z-index:900; position:absolute; width:184px; height:42px; left: 550px; top: 366px;"><a href="/campaigns-and-trainings/customer-campaign.aspx"><img src="images/super-saver-campaign.gif" width="184" height="42" border="0" /></a></div>--><div style="z-index:900; position:absolute; width:184px; height:42px; left: 480px; top: 366px;"><a href="http://www.customercare-cv.tatamotors.com/campaigns-and-trainings/national-customer-careday.aspx"><img src="http://www.customercare-cv.tatamotors.com/images/customercare-day.gif" width="221" height="42" border="0" /></a></div>
+
+ <!--<div style="z-index:900; position:absolute; width:184px; height:42px; left: 550px; top: 366px;"><a href="/campaigns-and-trainings/national-customer-careday.aspx"><img src="images/national-customercare-day.gif" width="184" height="42" border="0" /></a></div>-->
+  
+  <div id="slidy" class="slidepart fl">
+				<img src="http://www.customercare-cv.tatamotors.com/images/banner1.jpg" width="983" height="376" border="0" alt="" /><img src="http://www.customercare-cv.tatamotors.com/images/banner2.jpg" width="983" height="376" border="0" alt="" /><img src="http://www.customercare-cv.tatamotors.com/images/banner3.jpg" width="983" height="376" border="0" alt="" />
+				<img src="http://www.customercare-cv.tatamotors.com/images/banner4.jpg" width="983" height="376" border="0" alt="" />
+                <img src="http://www.customercare-cv.tatamotors.com/images/banner7.jpg" width="983" height="376" border="0" alt="" />
+			<div class="sl_paginationpart">
+	<ul id="slidya" class="slpagination">
+		<li><a href="javascript: prevnext(0);" class="prev"></a></li>
+		<li><a href="javascript: thisisit(0)" class="number select">1</a></li>
+		<li><a href="javascript: thisisit(1)" class="number ">2</a></li>
+		<li><a href="javascript: thisisit(2)" class="number ">3</a></li>
+		<li><a href="javascript: thisisit(3)" class="number ">4</a></li>
+        <li><a href="javascript: thisisit(4)" class="number ">5</a></li>
+		<li><a href="javascript: prevnext(1);" class="next"></a></li>
+	</ul>            	
+	</div>
+    </div>
+     </div>
+		<script type="text/javascript">
+var slo=null;
+var sola = Array();
+var prev = 0;
+var cur = 1;
+var timi=null
+
+$(document).ready(function() {
+	sol = document.getElementById('slidy').getElementsByTagName('img')
+	var sho = document.getElementById('slidya').getElementsByTagName('a');
+	for(var i=1;i<sho.length-1;i++)sola.push(sho[i])		
+	for(var i=1;i<sol.length;i++)sol[i].style.display = 'none';
+	timi = window.setInterval('doslide()',3000);
+})
+
+function doslide()
+{
+	$(sol[prev]).fadeOut(500);
+	$(sol[cur]).fadeIn(500);
+	sola[prev].className = 'number'
+	sola[cur].className = 'number select'
+	
+	prev = cur++;
+	if(cur>sol.length-1)
+	{
+		cur=0;
+		prev= sol.length-1;
+	}
+}
+
+function prevnext(mode)
+{
+	window.clearInterval(timi);timi=null;
+	
+	if(mode)
+	{
+		if(cur>sol.length-1)
+		{
+			cur=0;
+			prev= sol.length-1;
+		}
+		doslide();		
+	}
+	else
+	{
+		cur--;
+		prev--;
+		
+		if(prev<0)
+		{
+			cur=0;
+			prev= sol.length-1;
+		}
+		if(cur<0)
+		{
+			cur=sol.length-1;
+			prev=cur-1 ;		
+		}
+
+		$(sol[cur]).fadeOut(500);
+		$(sol[prev]).fadeIn(500);
+		sola[cur].className = 'number'
+		sola[prev].className = 'number select'	
+	}
+	timi = window.setInterval('doslide()',2000)
+}
+
+function thisisit(aiyo)
+{
+	cur = aiyo
+	window.clearInterval(timi);timi=null;
+	
+	$(sol[cur]).fadeIn(500);
+	$(sol[prev]).fadeOut(500);
+	sola[cur].className = 'number select'
+	sola[prev].className = 'number'	
+	
+	prev=cur
+	++cur;
+	if(prev<0)prev = sol.length-1;
+	timi = window.setInterval('doslide()',2000)		
+}
+</script>
+  </div><!-- banner Panel end -->  
+ 
+  <div class="homeServiceSec" style="padding-top:43px; height:173px;">
+  <h2 class="heading" style="padding-bottom:10px;">Services </h2>
+  <ul id="services" class="jcarousel-skin-tango">
+    <li>
+      <div class="services">
+        <div class="ringtonePlayer"><a href="http://www.customercare-cv.tatamotors.com/about/customer-support.aspx"><img src="http://www.customercare-cv.tatamotors.com/images/servicesIcon1.jpg" alt=""></a></div>
+        <h4><a href="http://www.customercare-cv.tatamotors.com/about/customer-support.aspx">Customer<br/> SUPPORT</a></h4>
+        </div>
+      </li>
+    <li>
+      <div class="services">
+        <div class="ringtonePlayer"><a href="http://www.customercare-cv.tatamotors.com/about/tata-genuine-parts.aspx"><img src="http://www.customercare-cv.tatamotors.com/images/servicesIcon2-b.jpg" alt=""></a></div>
+        <h4><a href="http://www.customercare-cv.tatamotors.com/about/tata-genuine-parts.aspx">Tata<br />Genuine Parts</a></h4>
+        </div>
+      </li>
+    <li>
+      <div class="services">
+        <div class="ringtonePlayer"><a href="http://www.customercare-cv.tatamotors.com/value-added-services/prolife.aspx"><img src="http://www.customercare-cv.tatamotors.com/images/servicesIcon5.jpg" alt=""></a></div>
+        <h4><a href="http://www.customercare-cv.tatamotors.com/value-added-services/prolife.aspx">Tata motors<br />Prolife</a></h4>
+        </div>
+      </li>
+    <li>
+      <div class="services">
+        <div class="ringtonePlayer">
+       <ul id="logo" style="float:left; width:80px; margin-left:26px; margin-top:9px;">					
+      <li><a href="value-added-services/amc.aspx"><img src="http://www.customercare-cv.tatamotors.com/images/servicesIcon11.jpg" width="80" height="105" border="0" alt=""></a></li>    
+      <li><a href="http://www.customercare-cv.tatamotors.com/about/onsite-service-support.aspx"><img src="http://www.customercare-cv.tatamotors.com/images/servicesIcon6.jpg" width="80" height="105" border="0" alt=""></a></li> 
+      <li><a href="http://www.customercare-cv.tatamotors.com/about/alert.aspx"><img src="http://www.customercare-cv.tatamotors.com/images/servicesIcon7.jpg" width="80" height="105" border="0" alt=""></a></li> 
+      <li><a href="http://www.tatamotors.com/contactus/tass-commercial-vehicles.php" target="_blank"><img src="http://www.customercare-cv.tatamotors.com/images/servicesIcon8.jpg" width="80" height="105" border="0" alt=""></a></li>
+      <!--<li><a href="/value-added-services/extended-warranty.aspx"><img src="images/servicesIcon9.jpg" width="80" height="105" border="0" alt=""></a></li>		-->	
+      </ul>
+        </div>
+      </li>
+  </ul>
+  </div><!-- home services end -->
+  
+  <div class="clear"></div>
+</div><!-- body panel end -->
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45101252-1', 'tatamotors.com');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<link type="text/css" media="screen" rel="stylesheet" href="css/colorbox.css" />
+<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+<script type="text/javascript">
+			$(document).ready(function(){
+				$(".flink").colorbox();
+			});
+			
+</script>  
+<div class="footerPanel">
+  <div class="center">
+    <div class="footerL"><p><span>Connect with us on</span>
+    <a href="https://twitter.com/TataMotors" target="_blank" class="twitter"><strong>twitter</strong></a><a href="http://www.youtube.com/user/TataMotorsGroup" target="_blank" class="utube"><strong>YouTube</strong></a></p>&copy; Tata Motors Limited <script>document.write((new Date()).getFullYear())</script></div><!-- footer left end -->
+    <div class="footerR"><p>24/7 Helpline - <strong>1800 209 7979</strong> </p><a href="http://www.customercare-cv.tatamotors.com/disclaimer.html" class="flink">Disclaimer</a><span>|</span><a href="http://www.customercare-cv.tatamotors.com/sitemap.aspx">Sitemap</a></div><!-- footer right end -->
+  </div><!-- center end -->
+</div>
+<script>
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ 
+
+  ga('create', 'UA-45101252-1', 'tatamotors.com');
+
+  ga('send', 'pageview');
+
+ 
+
+</script><!-- footer panel end -->
+
+
+</body>
+</html>
