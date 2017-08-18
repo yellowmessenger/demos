@@ -1,0 +1,1592 @@
+/* BODY */
+/* CONTAINER */
+/* OUTER CONTAINER */
+/* TYPOGRAPHY */
+/* FONT FAMILY */
+/* FONT WEIGHT */
+/* FONT SIZE */
+/* LINE HEIGHT */
+/* LETTER SPACING */
+/* COLOR PALETTES PRIMARY, SECONDARY, TERTIARY */
+/* PARAGRAPHS */
+/* SECTIONS + header/subheaders */
+/* SUB-SECTIONS */
+/* CTA */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* CAROUSEL */
+/* CONTAINER */
+/* FAQ-QA */
+/* COMP CHART 2 */
+/* COMP-CHART-2-SIMPLE-HEADER */
+/* DISCLOSURE */
+/* FORM Vars */
+/* PRICING-CARD LAYOUT */
+/*helper vars for Harmony font*/
+/*group headers*/
+/*@pricing-card-layout-header-t-background-color: currentColor;*/
+/* product title */
+/*@pricing-card-layout-productcomponent-title-t-background-color: currentColor;*/
+/* price ct */
+/* price aw */
+/* price per-month */
+/* product offer (red) */
+/* product offer2 */
+/* feature-list */
+/* PRODUCT COMPONENT */
+/* PRICING CARD */
+/* PRICING TABLE */
+/* HERO */
+/* VIDEO */
+/* FOOTER */
+/* RESPONSIVE TABS - added here because it's backwards compatible with non-responsive */
+/* TESTIMONIAL */
+/* Mixin for generating global sprite SVG and its fallback PNG.
+   Ideally this has to be a LESS VAR, but due to how CQ interprets LESS VAR PATHS, its hardcoded this way 
+*/
+.fcolor-prim {
+  color: #f77b00;
+}
+.fcolor-sec {
+  color: #3f6dc9;
+}
+.con-page-nav {
+  background-color: #f5f6f8;
+  width: 1038px;
+  border: 1px solid #d7d7d7;
+  left: 50%;
+  margin-left: -520px;
+  position: absolute;
+  z-index: 1000;
+  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.1);
+}
+.con-page-nav .content-container.row {
+  margin: 0 auto;
+}
+.con-page-nav .title,
+.con-page-nav ul {
+  display: table;
+  float: left;
+  height: 80px;
+}
+.con-page-nav .title {
+  padding: 0 20px 0 0;
+  border-right: 1px solid #e8e9e9;
+}
+.con-page-nav .title h2 {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 22px;
+  font-family: "FS Albert Web 300", "FS Albert Web", "Calibri", "Trebuchet MS", sans-serif;
+  font-weight: 300;
+  letter-spacing: -1px;
+  color: #414141;
+}
+.con-page-nav ul {
+  width: 579px;
+}
+.con-page-nav ul li {
+  display: block;
+  width: 24%;
+  float: left;
+  border-right: 1px solid #e8e9e9;
+  text-align: center;
+}
+.con-page-nav ul li a {
+  color: #505050;
+  display: block;
+}
+.con-page-nav ul li a:hover {
+  text-decoration: none;
+}
+.con-page-nav ul li a:focus {
+  outline: 0;
+}
+.con-page-nav ul li > div {
+  height: 57px;
+}
+.con-page-nav ul li > div > div {
+  margin: 13px auto 4px;
+  height: 20px;
+  width: 22px;
+}
+.con-page-nav ul li .overview-icon {
+  background-position: -500px -557px;
+}
+.con-page-nav ul li .features-icon {
+  background-position: -580px -560px;
+}
+.con-page-nav ul li .pricing-icon {
+  background-position: -538px -560px;
+}
+.con-page-nav ul li .techSpecs-icon {
+  background-position: -619px -560px;
+}
+.con-page-nav ul li:hover {
+  cursor: pointer;
+}
+.con-page-nav ul li:hover a {
+  color: #2c53b7;
+}
+.con-page-nav ul li:hover .overview-icon {
+  background-position: -500px -597px;
+}
+.con-page-nav ul li:hover .features-icon {
+  background-position: -580px -600px;
+}
+.con-page-nav ul li:hover .pricing-icon {
+  background-position: -538px -600px;
+}
+.con-page-nav ul li:hover .techSpecs-icon {
+  background-position: -619px -600px;
+}
+.con-page-nav ul li.active > div {
+  border-bottom: 6px solid #9caab0;
+  height: 51px;
+}
+.con-page-nav .cta-btn,
+.con-page-nav .cta {
+  max-width: 175px;
+  float: right;
+  display: table;
+  height: 80px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  transform: translateY(-20px);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.con-page-nav .cta-btn > div,
+.con-page-nav .cta > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.con-page-nav .cta-btn .cta-align-left,
+.con-page-nav .cta .cta-align-left {
+  float: left;
+}
+.con-page-nav .cta-btn .cta-align-right,
+.con-page-nav .cta .cta-align-right {
+  float: right;
+}
+.con-page-nav .cta-btn.show,
+.con-page-nav .cta.show {
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.con-page-nav a.ctaprimary,
+.con-page-nav a.ctasecondary {
+  padding: 2px 9px 2px 9px;
+  display: table-cell;
+}
+.con-page-nav a.ctaprimary,
+.con-page-nav a.ctasecondary,
+.con-page-nav a.ctatertiary,
+.con-page-nav a.ctaplain {
+  max-width: 140px;
+}
+.con-page-nav .title.has-image {
+  max-width: none;
+  padding: 0 5px 0 0;
+}
+.con-page-nav .title.has-image .cimage {
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.con-page-nav .title.has-image h2 {
+  width: 50%;
+  padding: 0 0 0 10px;
+}
+.con-page-nav .title.has-image ~ .cta {
+  max-width: none;
+}
+.con-page-nav.fixed {
+  position: fixed;
+  top: 0;
+}
+
+/* BODY */
+/* CONTAINER */
+/* OUTER CONTAINER */
+/* TYPOGRAPHY */
+/* FONT FAMILY */
+/* FONT WEIGHT */
+/* FONT SIZE */
+/* LINE HEIGHT */
+/* LETTER SPACING */
+/* COLOR PALETTES PRIMARY, SECONDARY, TERTIARY */
+/* PARAGRAPHS */
+/* SECTIONS + header/subheaders */
+/* SUB-SECTIONS */
+/* CTA */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* CAROUSEL */
+/* CONTAINER */
+/* FAQ-QA */
+/* COMP CHART 2 */
+/* COMP-CHART-2-SIMPLE-HEADER */
+/* DISCLOSURE */
+/* FORM Vars */
+/* PRICING-CARD LAYOUT */
+/*helper vars for Harmony font*/
+/*group headers*/
+/*@pricing-card-layout-header-t-background-color: currentColor;*/
+/* product title */
+/*@pricing-card-layout-productcomponent-title-t-background-color: currentColor;*/
+/* price ct */
+/* price aw */
+/* price per-month */
+/* product offer (red) */
+/* product offer2 */
+/* feature-list */
+/* PRODUCT COMPONENT */
+/* PRICING CARD */
+/* PRICING TABLE */
+/* HERO */
+/* VIDEO */
+/* FOOTER */
+/* RESPONSIVE TABS - added here because it's backwards compatible with non-responsive */
+/* TESTIMONIAL */
+/* Mixin for generating global sprite SVG and its fallback PNG.
+   Ideally this has to be a LESS VAR, but due to how CQ interprets LESS VAR PATHS, its hardcoded this way 
+*/
+.fcolor-prim {
+  color: #f77b00;
+}
+.fcolor-sec {
+  color: #3f6dc9;
+}
+.cattachments {
+  clear: both;
+  border-top: 1px solid #999;
+  padding-top: 72px;
+}
+.cattachments p {
+  margin-top: 6px;
+}
+.cattachments .p3 {
+  color: #808080;
+}
+.cattachments .ctextimage.nowrap img {
+  margin-top: -10px;
+}
+/* eliminate the top border when element above this class has a grey or green background */
+.bg-grey + .cattachments,
+.bg-green + .cattachments {
+  border-top: 0;
+}
+.cfeatures1 .ctext {
+  padding-right: 40px;
+}
+.cfeatures1 h2 {
+  padding-bottom: 54px;
+}
+.cfeatures1 h4 {
+  padding: 20px 0;
+}
+.cfeatures1 .ctaprimary,
+.cfeatures1 .ctasecondary,
+.cfeatures1 .ctatertiary {
+  display: inline-block;
+  margin-left: 10px;
+}
+.cfeatures1 .cfeatures1_cta {
+  padding: 72px 0 54px;
+  width: 100%;
+  text-align: center;
+}
+.cfeatures1 .cfeatures1_cta span {
+  color: #666;
+}
+.cfeatures2 .header {
+  padding: 54px 0 26px;
+}
+.cfeatures2 .header h3 {
+  padding: 0;
+}
+.cfeatures2 .header h3.img {
+  padding-left: 40px;
+}
+.cfeatures2 li {
+  width: 100%;
+  background-color: #899cae;
+  position: relative;
+  margin-bottom: 10px;
+  color: #f9f9f9;
+}
+.cfeatures2 li .bg-shaded {
+  background-color: #264a6d;
+  display: block;
+  height: 40px;
+}
+.cfeatures2 li .figure-container {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+}
+.cfeatures2 li .figure-container .figure {
+  font-size: 24px;
+}
+.cfeatures2 li .figure-container .figure sup {
+  font-size: 60%;
+  top: -5px;
+}
+.cfeatures2 li .figure-container .caption {
+  position: relative;
+  top: -3px;
+}
+.cfeatures2 li .figure-container .figure,
+.cfeatures2 li .figure-container .caption {
+  display: inline-block;
+}
+.cfeatures2 .cimage {
+  padding-left: 40px;
+}
+.cfeatures-carousel {
+  margin: 0;
+  padding: 0;
+}
+.cfeatures-carousel h2 {
+  padding: 72px 0 54px;
+  text-align: center;
+}
+.cfeatures-carousel .carousel-wrap {
+  background-color: #ffffff;
+  padding: 0 0 30px;
+}
+.cfeatures-carousel .ctext {
+  padding: 84px 0 30px;
+}
+.cfeatures-carousel .ctext h2 {
+  padding: 0 0 30px;
+  text-align: left;
+}
+.cfeatures-saas {
+  background-color: #f2f2f4;
+  margin-top: 54px;
+}
+.centering-box {
+  height: 100%;
+  width: 940px;
+  margin: 0 auto;
+}
+.chero-lt-just {
+  display: table;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.chero-lt-just h3,
+.chero-lt-just p {
+  color: #ffffff;
+}
+.chero-lt-just h3 {
+  font-family: "FS Albert Web 100", "FS Albert Web", "Calibri", "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  font-size: 56px;
+}
+.chero-lt-just > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.chero-lt-just .ctext .p1 {
+  padding-top: 18px;
+}
+.chero-cta-box {
+  padding: 20px;
+  margin: 30px 40px 0 0;
+  background: #ffffff;
+}
+.chero-cta-box h1 {
+  font-family: "FS Albert Web 300", "FS Albert Web", "Calibri", "Trebuchet MS", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+}
+.chero-cta-box p {
+  padding-top: 10px;
+  color: #505050;
+}
+.chero-cta-box p .price .ct,
+.chero-cta-box p .price .ac {
+  font-size: 14px;
+  position: relative;
+  top: -3px;
+}
+.chero-cta-box p .price .aw,
+.chero-cta-box p .price .as {
+  font-size: 20px;
+}
+.chero-cta-box .ccta {
+  margin-top: 10px;
+}
+.chero-cta-box .pricing-box > * {
+  display: inline-block;
+}
+.chero-cta-box .pricing-box .crossed {
+  margin-left: 10px;
+}
+.chero-cta-box .price-info .crossed {
+  color: #999;
+}
+.chero-rt-just .chero-cta-box {
+  margin: 70px 0 0;
+}
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+.con-page-nav2 {
+  background-color: #f5f6f8;
+  width: 1038px;
+  border: 1px solid #d7d7d7;
+  left: 50%;
+  top: -8px;
+  margin-left: -520px;
+  position: absolute;
+  z-index: 1000;
+  -webkit-box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.1);
+}
+.con-page-nav2 h2 {
+  font-size: 22px;
+}
+.con-page-nav2 table td {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  border-right: 1px solid #cccccc;
+  height: 69px;
+}
+.con-page-nav2 table td.active > div {
+  border-bottom: 6px solid #9caab0;
+  padding: 12px 0;
+}
+.con-page-nav2 .navs:hover,
+.con-page-nav2 td a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+.con-page-nav2.fixed {
+  position: fixed;
+  top: 0;
+}
+/* push down next sibling down */
+.con-page-nav2 + *,
+.con-page-nav2 + section {
+  padding-top: 72px;
+}
+/* work around to make home_tabs editable */
+.cq-wcm-edit .con-page-nav2 .navs .cta,
+.cq-wcm-edit .con-page-nav2 .navs .cta-btn {
+  background-color: #999;
+  margin-top: 40px;
+  padding: 20px;
+}
+.cq-wcm-edit .con-page-nav2 td .cimage {
+  background-color: #666;
+}
+.con-page-nav-resp .desktopView.hidden-xs,
+.con-page-nav-nonresp .desktopView.hidden-xs {
+  height: 80px;
+  background-color: #f5f6f8;
+  width: 1038px;
+  border: 1px solid #d7d7d7;
+  top: -5px;
+  left: 50%;
+  margin-left: -520px;
+  position: absolute;
+  z-index: 1000;
+  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.1);
+}
+.con-page-nav-resp .desktopView.hidden-xs .content-container.row,
+.con-page-nav-nonresp .desktopView.hidden-xs .content-container.row {
+  margin: 0 auto;
+}
+.con-page-nav-resp .desktopView.hidden-xs .title,
+.con-page-nav-nonresp .desktopView.hidden-xs .title {
+  display: table;
+  float: left;
+  height: 80px;
+  padding: 0 20px 0 0;
+  border-right: 1px solid #e8e9e9;
+  max-width: 200px;
+  font-family: inherit;
+}
+.con-page-nav-resp .desktopView.hidden-xs .title h2,
+.con-page-nav-nonresp .desktopView.hidden-xs .title h2,
+.con-page-nav-resp .desktopView.hidden-xs .title p,
+.con-page-nav-nonresp .desktopView.hidden-xs .title p {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 22px;
+  color: #414141;
+  line-height: 1;
+  font-weight: 100;
+}
+.con-page-nav-resp .desktopView.hidden-xs .title h2,
+.con-page-nav-nonresp .desktopView.hidden-xs .title h2 {
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 100;
+}
+.con-page-nav-resp .desktopView.hidden-xs .title > a,
+.con-page-nav-nonresp .desktopView.hidden-xs .title > a {
+  display: table-cell;
+  vertical-align: middle;
+}
+.con-page-nav-resp .desktopView.hidden-xs table,
+.con-page-nav-nonresp .desktopView.hidden-xs table {
+  float: left;
+  height: 80px;
+}
+.con-page-nav-resp .desktopView.hidden-xs table td,
+.con-page-nav-nonresp .desktopView.hidden-xs table td {
+  border-right: 1px solid #e8e9e9;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.con-page-nav-resp .desktopView.hidden-xs table td > div,
+.con-page-nav-nonresp .desktopView.hidden-xs table td > div {
+  padding: 0 0;
+}
+.con-page-nav-resp .desktopView.hidden-xs table td > div p,
+.con-page-nav-nonresp .desktopView.hidden-xs table td > div p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 1px 0;
+}
+.con-page-nav-resp .desktopView.hidden-xs table td span,
+.con-page-nav-nonresp .desktopView.hidden-xs table td span {
+  text-indent: 0px;
+  display: inline;
+}
+.con-page-nav-resp .desktopView.hidden-xs table td a,
+.con-page-nav-nonresp .desktopView.hidden-xs table td a,
+.con-page-nav-resp .desktopView.hidden-xs table td a:focus,
+.con-page-nav-nonresp .desktopView.hidden-xs table td a:focus,
+.con-page-nav-resp .desktopView.hidden-xs table td a:hover,
+.con-page-nav-nonresp .desktopView.hidden-xs table td a:hover {
+  text-decoration: none;
+}
+.con-page-nav-resp .desktopView.hidden-xs table td a:focus,
+.con-page-nav-nonresp .desktopView.hidden-xs table td a:focus {
+  outline: 0;
+}
+.con-page-nav-resp .desktopView.hidden-xs table td,
+.con-page-nav-nonresp .desktopView.hidden-xs table td,
+.con-page-nav-resp .desktopView.hidden-xs table td div,
+.con-page-nav-nonresp .desktopView.hidden-xs table td div,
+.con-page-nav-resp .desktopView.hidden-xs table td .ctext,
+.con-page-nav-nonresp .desktopView.hidden-xs table td .ctext,
+.con-page-nav-resp .desktopView.hidden-xs table td p,
+.con-page-nav-nonresp .desktopView.hidden-xs table td p,
+.con-page-nav-resp .desktopView.hidden-xs table td a,
+.con-page-nav-nonresp .desktopView.hidden-xs table td a {
+  line-height: 1.2;
+  color: #505050;
+}
+.con-page-nav-resp .desktopView.hidden-xs table td .visually-hidden-text,
+.con-page-nav-nonresp .desktopView.hidden-xs table td .visually-hidden-text,
+.con-page-nav-resp .desktopView.hidden-xs table td div .visually-hidden-text,
+.con-page-nav-nonresp .desktopView.hidden-xs table td div .visually-hidden-text,
+.con-page-nav-resp .desktopView.hidden-xs table td .ctext .visually-hidden-text,
+.con-page-nav-nonresp .desktopView.hidden-xs table td .ctext .visually-hidden-text,
+.con-page-nav-resp .desktopView.hidden-xs table td p .visually-hidden-text,
+.con-page-nav-nonresp .desktopView.hidden-xs table td p .visually-hidden-text,
+.con-page-nav-resp .desktopView.hidden-xs table td a .visually-hidden-text,
+.con-page-nav-nonresp .desktopView.hidden-xs table td a .visually-hidden-text {
+  color: #959595;
+}
+.con-page-nav-resp .desktopView.hidden-xs table td:hover,
+.con-page-nav-nonresp .desktopView.hidden-xs table td:hover {
+  color: #2c53b7;
+}
+.con-page-nav-resp .desktopView.hidden-xs table td:hover span,
+.con-page-nav-nonresp .desktopView.hidden-xs table td:hover span,
+.con-page-nav-resp .desktopView.hidden-xs table td:hover p,
+.con-page-nav-nonresp .desktopView.hidden-xs table td:hover p,
+.con-page-nav-resp .desktopView.hidden-xs table td:hover div,
+.con-page-nav-nonresp .desktopView.hidden-xs table td:hover div {
+  color: #2c53b7;
+}
+.con-page-nav-resp .desktopView.hidden-xs table td.active,
+.con-page-nav-nonresp .desktopView.hidden-xs table td.active {
+  border-bottom: 6px solid #9caab0;
+}
+.con-page-nav-resp .desktopView.hidden-xs .cta-btn,
+.con-page-nav-nonresp .desktopView.hidden-xs .cta-btn,
+.con-page-nav-resp .desktopView.hidden-xs .cta,
+.con-page-nav-nonresp .desktopView.hidden-xs .cta {
+  max-width: 175px;
+  float: right;
+  display: table;
+  height: 80px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  transform: translateY(-20px);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.con-page-nav-resp .desktopView.hidden-xs .cta-btn > div,
+.con-page-nav-nonresp .desktopView.hidden-xs .cta-btn > div,
+.con-page-nav-resp .desktopView.hidden-xs .cta > div,
+.con-page-nav-nonresp .desktopView.hidden-xs .cta > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.con-page-nav-resp .desktopView.hidden-xs .cta-btn a,
+.con-page-nav-nonresp .desktopView.hidden-xs .cta-btn a,
+.con-page-nav-resp .desktopView.hidden-xs .cta a,
+.con-page-nav-nonresp .desktopView.hidden-xs .cta a {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.con-page-nav-resp .desktopView.hidden-xs .cta-btn .cta-align-left,
+.con-page-nav-nonresp .desktopView.hidden-xs .cta-btn .cta-align-left,
+.con-page-nav-resp .desktopView.hidden-xs .cta .cta-align-left,
+.con-page-nav-nonresp .desktopView.hidden-xs .cta .cta-align-left {
+  float: left;
+}
+.con-page-nav-resp .desktopView.hidden-xs .cta-btn .cta-align-right,
+.con-page-nav-nonresp .desktopView.hidden-xs .cta-btn .cta-align-right,
+.con-page-nav-resp .desktopView.hidden-xs .cta .cta-align-right,
+.con-page-nav-nonresp .desktopView.hidden-xs .cta .cta-align-right {
+  float: right;
+  margin-right: 0;
+}
+.con-page-nav-resp .desktopView.hidden-xs .cta-btn.show,
+.con-page-nav-nonresp .desktopView.hidden-xs .cta-btn.show,
+.con-page-nav-resp .desktopView.hidden-xs .cta.show,
+.con-page-nav-nonresp .desktopView.hidden-xs .cta.show {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  transform: translateY(0px);
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.con-page-nav-resp .desktopView.hidden-xs .cta.show,
+.con-page-nav-nonresp .desktopView.hidden-xs .cta.show {
+  display: table !important;
+  margin: 0 auto;
+}
+.con-page-nav-resp .desktopView.hidden-xs a.ctaprimary,
+.con-page-nav-nonresp .desktopView.hidden-xs a.ctaprimary,
+.con-page-nav-resp .desktopView.hidden-xs a.ctasecondary,
+.con-page-nav-nonresp .desktopView.hidden-xs a.ctasecondary {
+  padding: 2px 9px 2px 9px;
+  display: table-cell;
+}
+.con-page-nav-resp .desktopView.hidden-xs a.ctaprimary,
+.con-page-nav-nonresp .desktopView.hidden-xs a.ctaprimary,
+.con-page-nav-resp .desktopView.hidden-xs a.ctasecondary,
+.con-page-nav-nonresp .desktopView.hidden-xs a.ctasecondary,
+.con-page-nav-resp .desktopView.hidden-xs a.ctatertiary,
+.con-page-nav-nonresp .desktopView.hidden-xs a.ctatertiary,
+.con-page-nav-resp .desktopView.hidden-xs a.ctaplain,
+.con-page-nav-nonresp .desktopView.hidden-xs a.ctaplain {
+  max-width: 140px;
+}
+.con-page-nav-resp .desktopView.hidden-xs .title.has-image,
+.con-page-nav-nonresp .desktopView.hidden-xs .title.has-image {
+  max-width: none;
+  padding: 0 5px 0 0;
+}
+.con-page-nav-resp .desktopView.hidden-xs .title.has-image .cimage,
+.con-page-nav-nonresp .desktopView.hidden-xs .title.has-image .cimage {
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.con-page-nav-resp .desktopView.hidden-xs .title.has-image h2,
+.con-page-nav-nonresp .desktopView.hidden-xs .title.has-image h2 {
+  width: 50%;
+  padding: 0 0 0 10px;
+}
+.con-page-nav-resp .desktopView.hidden-xs .title.has-image ~ .cta,
+.con-page-nav-nonresp .desktopView.hidden-xs .title.has-image ~ .cta {
+  max-width: none;
+}
+.con-page-nav-resp.section-2 table td,
+.con-page-nav-nonresp.section-2 table td {
+  max-width: 290px;
+  min-width: 180px;
+  /* removing IE8-9 hack as it conflicts with IE10/11
+    p{
+        width : 100%\9;
+        max-width : 250px\9;
+        min-width : 140px\9;
+    }*/
+}
+.con-page-nav-resp.section-3 table td,
+.con-page-nav-nonresp.section-3 table td {
+  max-width: 194px;
+  min-width: 120px;
+  /*p{
+        width : 100%\9;
+        max-width : 154px\9;
+        min-width : 80px\9;
+    }*/
+}
+.con-page-nav-resp.section-4 table td,
+.con-page-nav-nonresp.section-4 table td {
+  max-width: 145px;
+  min-width: 120px;
+  /*p{
+        width : 100%\9;
+        max-width : 105px\9;
+        min-width : 80px\9;
+    }*/
+}
+.con-page-nav-resp.section-5 table td,
+.con-page-nav-nonresp.section-5 table td {
+  max-width: 116px;
+  min-width: 100px;
+  /*p{
+        width : 100%\9;
+        max-width : 76px\9;
+        min-width : 60px\9;
+    }*/
+}
+.con-page-nav-resp.section-6 table td,
+.con-page-nav-nonresp.section-6 table td {
+  max-width: 96px;
+  min-width: 60px;
+  /*p{
+        width : 100%\9;
+        max-width : 56px\9;
+        min-width : 20px\9;
+    }*/
+}
+.con-page-nav-resp.fixed .desktopView.hidden-xs,
+.con-page-nav-nonresp.fixed .desktopView.hidden-xs,
+.con-page-nav-resp.fixed .mobileView.visible-xs,
+.con-page-nav-nonresp.fixed .mobileView.visible-xs {
+  position: fixed;
+  top: 0;
+}
+/* push down next sibling down */
+.con-page-nav-resp + *,
+.con-page-nav-resp + section,
+.con-page-nav-nonresp + *,
+.con-page-nav-nonresp + section {
+  padding-top: 85px;
+}
+@media (max-width: 1024px) {
+  .con-page-nav-resp .desktopView.hidden-xs {
+    width: 100%;
+    margin-left: -50%;
+  }
+}
+@media (max-width: 960px) {
+  .con-page-nav-resp .desktopView.hidden-xs {
+    padding: 0 5px;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .cta {
+    max-width: 150px;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs table {
+    width: 66%;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs table td > div {
+    padding: 0 15px;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .title {
+    width: 16%;
+    padding: 0 10px 0 0;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .title.has-image {
+    width: 23%;
+    padding: 0 0 0 0;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .title.has-image h2 {
+    padding: 0 0 0 0;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .title.has-image ~ table {
+    width: 60%;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .title.has-image ~ .cta {
+    width: 16%;
+    max-width: none;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .content-container.row {
+    padding: 0 5px;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .content-container.row .cta.show {
+    padding: 0 5px;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs a.ctaprimary,
+  .con-page-nav-resp .desktopView.hidden-xs a.ctasecondary {
+    padding: 4px 9px 0 9px;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs a.ctaprimary,
+  .con-page-nav-resp .desktopView.hidden-xs a.ctasecondary,
+  .con-page-nav-resp .desktopView.hidden-xs a.ctatertiary,
+  .con-page-nav-resp .desktopView.hidden-xs a.ctaplain {
+    max-width: 115px;
+  }
+  .con-page-nav-resp.section-2 table td {
+    max-width: 273px;
+    min-width: 160px;
+    /*p{
+          width : 100%\9;
+          max-width : 243px\9;
+          min-width : 130px\9;
+      }*/
+  }
+  .con-page-nav-resp.section-3 table td {
+    max-width: 182px;
+    min-width: 130px;
+    /*p{
+          width : 100%\9;
+          max-width : 152px\9;
+          min-width : 100px\9;
+      }*/
+  }
+  .con-page-nav-resp.section-4 table td {
+    max-width: 138px;
+    min-width: 110px;
+    /*p{
+          width : 100%\9;
+          max-width : 108px\9;
+          min-width : 80px\9;
+      }*/
+  }
+  .con-page-nav-resp.section-5 table td {
+    max-width: 110px;
+    min-width: 90px;
+    /*p{
+          width : 100%\9;
+          max-width : 80px\9;
+          min-width : 60px\9;
+      }*/
+  }
+  .con-page-nav-resp.section-6 table td {
+    max-width: 88px;
+    min-width: 60px;
+    /*p{
+          width : 100%\9;
+          max-width : 58px\9;
+          min-width : 30px\9;
+      }*/
+  }
+}
+@media (min-width: 768px) and (max-width: 850px) {
+  .con-page-nav-resp .desktopView.hidden-xs {
+    padding: 0 5px;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .cta {
+    max-width: 135px;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .title {
+    width: 16%;
+    padding: 0 5px 0 0;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .title.has-image {
+    width: 22%;
+    padding: 0 0 0 0;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .title.has-image h2 {
+    padding: 0 0 0 0;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .title.has-image ~ table {
+    width: 60%;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .title.has-image ~ .cta {
+    width: 16%;
+    max-width: none;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .content-container.row {
+    padding: 0 5px;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs .content-container.row .cta.show {
+    padding: 0 5px;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs a.ctaprimary,
+  .con-page-nav-resp .desktopView.hidden-xs a.ctasecondary {
+    padding: 4px 9px 0 9px;
+  }
+  .con-page-nav-resp .desktopView.hidden-xs a.ctaprimary,
+  .con-page-nav-resp .desktopView.hidden-xs a.ctasecondary,
+  .con-page-nav-resp .desktopView.hidden-xs a.ctatertiary,
+  .con-page-nav-resp .desktopView.hidden-xs a.ctaplain {
+    max-width: 100px;
+  }
+  .con-page-nav-resp.section-2 table td {
+    max-width: 245px;
+    min-width: 140px;
+    /*p{
+          width : 100%\9;
+          max-width : 215px\9;
+          min-width : 110px\9;
+      }*/
+  }
+  .con-page-nav-resp.section-3 table td {
+    max-width: 162px;
+    min-width: 110px;
+    /*p{
+          width : 100%\9;
+          max-width : 132px\9;
+          min-width : 80px\9;
+      }*/
+  }
+  .con-page-nav-resp.section-4 table td {
+    max-width: 122px;
+    min-width: 100px;
+    /*p{
+          width : 100%\9;
+          max-width : 92px\9;
+          min-width : 70px\9;
+      }*/
+  }
+  .con-page-nav-resp.section-5 table td {
+    max-width: 98px;
+    min-width: 80px;
+    /*p{
+          width : 100%\9;
+          max-width : 68px\9;
+          min-width : 50px\9;
+      }*/
+  }
+  .con-page-nav-resp.section-6 table td {
+    max-width: 81px;
+    min-width: 60px;
+    /*p{
+          width : 100%\9;
+          max-width : 51px\9;
+          min-width : 30px\9;
+      }*/
+  }
+}
+@media (max-width: 767px) {
+  .con-page-nav-resp + *,
+  .con-page-nav-resp + section {
+    padding-top: 0;
+  }
+}
+/* Removing IE10+ CSS hacks as they are not needed anymore 
+@media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .con-page-nav-resp, .con-page-nav-nonresp{
+        &.section-2 table td { 
+            p{
+                width : 100%;
+                max-width : 250px;
+                min-width : 140px;
+            }
+        }
+        &.section-3 table td { 
+            p{
+                width : 100%;
+                max-width : 154px;
+                min-width : 80px;
+            }
+        }
+        &.section-4 table td { 
+            p{
+                width : 100%;
+                max-width : 105px;
+                min-width : 80px;
+            }
+        }
+        &.section-5 table td { 
+            p{
+                width : 100%;
+                max-width : 76px;
+                min-width : 60px;
+            }
+        }
+        &.section-6 table td {  
+            p{
+                width : 100%;
+                max-width : 56px;
+                min-width : 20px;
+            }
+        }
+    }
+} 
+@media (max-width: 960px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .con-page-nav-resp {
+
+        &.section-2 table td {  
+            p{
+                width : 100%;
+                max-width : 243px;
+                min-width : 130px;
+            }
+        }
+        &.section-3 table td { 
+            p{
+                width : 100%;
+                max-width : 152px;
+                min-width : 100px;
+            }
+        }
+        &.section-4 table td { 
+            p{
+                width : 100%;
+                max-width : 108px;
+                min-width : 80px;
+            }
+        }
+        &.section-5 table td {  
+            p{
+                width : 100%;
+                max-width : 80px;
+                min-width : 60px;
+            }
+        }
+        &.section-6 table td { 
+            p{
+                width : 100%;
+                max-width : 58px;
+                min-width : 30px;
+            }
+        }
+    }
+}
+@media (min-width:768px) and (max-width: 850px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .con-page-nav-resp {
+
+        &.section-2 table td { 
+            p{
+                width : 100%;
+                max-width : 215px;
+                min-width : 110px;
+            }
+        }
+        &.section-3 table td {  
+            p{
+                width : 100%;
+                max-width : 132px;
+                min-width : 80px;
+            }
+        }
+        &.section-4 table td { 
+            p{
+                width : 100%;
+                max-width : 92px;
+                min-width : 70px;
+            }
+        }
+        &.section-5 table td { 
+            p{
+                width : 100%;
+                max-width : 68px;
+                min-width : 50px;
+            }
+        }
+        &.section-6 table td { 
+            p{
+                width : 100%;
+                max-width : 51px;
+                min-width : 30px;
+            }
+        }
+    }
+}
+*/
+.con-page-nav-resp .mobileView.visible-xs {
+  background-color: #f5f6f8;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 6px 6px -3px rgba(0, 0, 0, 0.1);
+}
+.con-page-nav-resp .mobileView.visible-xs .menuBar {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.con-page-nav-resp .mobileView.visible-xs .menuBar div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.con-page-nav-resp .mobileView.visible-xs .menuBar div select {
+  width: 260px;
+  font: normal 14px/1.2 "Helvetica Neue";
+  line-height: 1.2;
+}
+.con-page-nav-resp .mobileView.visible-xs select.custom-select {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  top: 30%;
+}
+.con-page-nav-resp .mobileView.visible-xs .custom-select-wrapper > div.custom-select {
+  display: none;
+}
+.con-page-nav-nonresp .table {
+  width: auto;
+}
+.con-page-nav-nonresp .title {
+  padding: 0px;
+  margin-left: 0px;
+}
+.con-page-nav-nonresp .table {
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 1040px) {
+  .con-page-nav-nonresp .desktopView.hidden-xs {
+    width: 100%;
+    margin-left: -50%;
+  }
+}
+.cpricing-table {
+  background-color: #94cf2c;
+  text-align: center;
+  /*hover states of cells*/
+  /* badge and text below table*/
+}
+.cpricing-table .price-info .crossed {
+  color: #ffffff;
+}
+.cpricing-table .generic-cell {
+  overflow: hidden;
+  zoom: 1;
+  float: left;
+  text-align: center;
+  border-color: #ffffff;
+  border-style: solid;
+  padding: 0;
+  color: #ffffff;
+}
+.cpricing-table .generic-cell .p1 {
+  color: #ffffff;
+}
+.cpricing-table .cell-header {
+  border-width: 1px 0 1px 1px;
+  background-color: #85ba28;
+  margin: 0;
+  width: 100%;
+}
+.cpricing-table .cell-header p {
+  padding: 8px 0;
+}
+.cpricing-table .cell-body {
+  border-width: 0 0 1px 1px;
+  background-color: #94cf2c;
+  margin: 0;
+  width: 100%;
+  height: 81px;
+  padding-top: 31px;
+}
+.cpricing-table .one-col {
+  width: 19%;
+  float: left;
+  position: relative;
+}
+.cpricing-table .one-col.only-3-col {
+  width: 21%;
+}
+.cpricing-table .one-col.only-3-col-margin {
+  margin-left: 144px;
+}
+.cpricing-table .one-col.only-2-col {
+  width: 30%;
+}
+.cpricing-table .one-col.only-2-col-margin {
+  margin-left: 168px;
+}
+.cpricing-table .table-holder {
+  margin-left: 50px;
+}
+.cpricing-table .last-cell {
+  border-right-width: 1px;
+}
+.cpricing-table .bold {
+  font-weight: bold;
+}
+.cpricing-table h2 {
+  color: #ffffff;
+  margin-bottom: 54px;
+  padding-top: 72px;
+}
+.cpricing-table .price-dollar {
+  font-size: 44px;
+  line-height: 44px;
+  letter-spacing: -0.05em;
+}
+.cpricing-table .price-cents {
+  font-size: 24px;
+  position: relative;
+  top: -13px;
+  left: -3px;
+  letter-spacing: -0.05em;
+}
+.cpricing-table .price .aw,
+.cpricing-table .price .as {
+  font-size: 44px;
+  line-height: 44px;
+  letter-spacing: -0.05em;
+}
+.cpricing-table .price .ac,
+.cpricing-table .price .ct {
+  font-size: 24px;
+  position: relative;
+  top: -13px;
+  left: -3px;
+  letter-spacing: -0.05em;
+}
+.cpricing-table .center-align {
+  text-align: center;
+}
+.cpricing-table .cta_container {
+  width: 65%;
+  margin: 0 auto;
+  padding: 16px 0 0 0;
+  display: none;
+}
+.cpricing-table .one-col:hover,
+.cpricing-table .one-col.highlight {
+  top: -15px;
+  margin-bottom: -30px;
+  -webkit-box-shadow: 0 0 0 1px #CCCCCC, 0 2px 0 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 0 1px #CCCCCC, 0 2px 0 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0 1px #CCCCCC, 0 2px 0 1px rgba(0, 0, 0, 0.2);
+}
+.cpricing-table .one-col:hover .price-info .crossed,
+.cpricing-table .one-col.highlight .price-info .crossed {
+  color: #999;
+}
+.cpricing-table .one-col:hover .generic-cell,
+.cpricing-table .one-col.highlight .generic-cell {
+  color: #000000;
+}
+.cpricing-table .one-col:hover .generic-cell .p1,
+.cpricing-table .one-col.highlight .generic-cell .p1 {
+  color: #000000;
+}
+.cpricing-table .one-col:hover .cell-header,
+.cpricing-table .one-col.highlight .cell-header {
+  border-width: 10px 0 1px 1px;
+  background-color: #ffffff;
+}
+.cpricing-table .one-col:hover .cell-header p,
+.cpricing-table .one-col.highlight .cell-header p {
+  padding: 8px 0;
+}
+.cpricing-table .one-col:hover .cell-body,
+.cpricing-table .one-col.highlight .cell-body {
+  border-width: 0 0 20px 1px;
+  background-color: #ffffff;
+  height: 115px;
+  padding-top: 15px;
+}
+.cpricing-table .one-col:hover .cta_container,
+.cpricing-table .one-col.highlight .cta_container {
+  display: block;
+}
+.cpricing-table .one-col:hover .cta_container.hide,
+.cpricing-table .one-col.highlight .cta_container.hide {
+  display: none;
+}
+.cpricing-table .badge-text {
+  margin: 54px 0 0 283px;
+  padding-bottom: 54px;
+}
+.cpricing-table .badge-text .badge {
+  float: left;
+  margin-right: 30px;
+  height: 95px;
+  width: 95px;
+  background-position: -499px -639px;
+}
+.cpricing-table .badge-text p {
+  color: #ffffff;
+  text-align: left;
+  padding: 21px 30px 0 0;
+}
+.cpricing-table * {
+  -moz-transition: all 0.2s ease;
+}
+.outer-container {
+  margin-top: 24px;
+}
+.ctechspecs {
+  clear: both;
+  padding: 72px 0 54px;
+}
+.ctechspecs h2 {
+  margin: 0 0 54px;
+  text-align: center;
+}
+.ctechspecs .ctext ul,
+.ctechspecs .ctext ol,
+.ctechspecs .ctext dl {
+  padding-top: 0;
+}
+.ctext-overview {
+  clear: both;
+  padding-bottom: 54px;
+}
+.ctext-overview h4 {
+  height: 44px;
+  margin: 20px 0;
+  overflow: hidden;
+  line-height: 21px;
+}
+.ctext-overview .ctext {
+  padding-right: 20px;
+}
+.cvideo-overview {
+  text-align: center;
+}
+.top30 {
+  margin-top: 30px;
+}
+.top42 {
+  margin-top: 42px;
+}
+.cwhatsnew {
+  clear: both;
+  padding-bottom: 54px;
+}
+.cwhatsnew .ctext {
+  padding-right: 20px;
+}
+.cwhatsnew .ctext h4 {
+  margin: 20px 0;
+}
+.clineup-techspecs {
+  padding: 54px 0;
+}
+.clineup-techspecs .p1 {
+  line-height: 46px;
+}
+.clineup-techspecs .p2 {
+  line-height: 32px;
+}
+.clineup-techspecs .p3 {
+  line-height: 24px;
+}
+.centering-box-hero-half {
+  height: 100%;
+  width: 940px;
+  margin: 0 auto;
+}
+.centering-box-hero-half h1,
+.centering-box-hero-half h2,
+.centering-box-hero-half h3,
+.centering-box-hero-half h4,
+.centering-box-hero-half h5,
+.centering-box-hero-half h6 {
+  margin: 50px 0 40px 0;
+}
+.centering-box-hero-half .white-text .ctext * {
+  color: #ffffff;
+}
+.centering-box-hero-half .black-text .ctext * {
+  color: #000000;
+}
+.chero-half-box {
+  display: table;
+  top: 0;
+  left: 0;
+}
+.chero-half-box > div {
+  display: table-cell;
+  vertical-align: top;
+}
+.chero-half-box .offset7 h1,
+.chero-half-box .offset7 h2,
+.chero-half-box .offset7 h3,
+.chero-half-box .offset7 h4,
+.chero-half-box .offset7 h5,
+.chero-half-box .offset7 h6 {
+  margin: 40px 20px 30px 40px;
+}
+.chero-half-box .offset7 ul {
+  margin-left: 56px;
+}
+.chero-half-box .offset7.span5 .list-style-text {
+  margin-left: 56px;
+}
+.chero-half-box .offset7.span5 .bullets-section p {
+  margin-left: 42px;
+}
+.chero-half-box .span5 .list-style-text {
+  margin-left: 16px;
+}
+.chero-half-box .bullets-section h1,
+.chero-half-box .bullets-section h2,
+.chero-half-box .bullets-section h3,
+.chero-half-box .bullets-section h4,
+.chero-half-box .bullets-section h5,
+.chero-half-box .bullets-section h6 {
+  margin: 0;
+  line-height: 1px;
+}
+.chero-half-box .ctext .p1 {
+  padding-top: 18px;
+}
+.chero-half-box ul {
+  margin-bottom: 20px;
+}
+.chero-half-box .ctext ul {
+  margin-top: -6px;
+  padding-top: 0;
+}
+.chero-half-box .ctext ul li {
+  line-height: 28px;
+  font-size: 18px;
+}
+.chero-half-box-cta {
+  padding: 20px;
+  margin: 30px 70px 0 0;
+  background: #ffffff;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.chero-half-box-cta .ctext h1,
+.chero-half-box-cta .ctext h2,
+.chero-half-box-cta .ctext h3,
+.chero-half-box-cta .ctext h4,
+.chero-half-box-cta .ctext h5,
+.chero-half-box-cta .ctext h6 {
+  font-family: "FS Albert Web 400", "FS Albert Web", "Calibri", "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  margin: 0;
+  margin-bottom: 4px;
+  color: #000000;
+}
+.chero-half-box-cta p {
+  padding-top: 10px;
+  color: #505050;
+}
+.chero-half-box-cta p .x-price-reg-price {
+  text-decoration: line-through;
+}
+.chero-half-box-cta p .x-price-sale-price {
+  color: #ff0000;
+}
+.chero-half-box-cta p .x-price-discount {
+  color: #ff0000;
+}
+.chero-half-box-cta .ccta {
+  margin-top: 10px;
+}
+.chero-half-box-cta .pricing-box > * {
+  display: inline-block;
+}
+.chero-half-box-cta .pricing-box .crossed {
+  margin-left: 10px;
+}
+.chero-half-box-cta .price-info .crossed {
+  color: #999;
+}
+.chero-half-box-cta .burst {
+  background-position: -911px -641px;
+  height: 72px;
+  width: 72px;
+  position: relative;
+  top: -68px;
+  left: 200px;
+  margin-bottom: -75px;
+}
+.chero-half-box-cta .burst .ctext {
+  padding-top: 22px;
+}
+.chero-half-box-cta .burst .ctext p {
+  padding: 0px;
+  color: #000000;
+  line-height: 12px;
+  font-size: 11px;
+  text-align: center;
+}
+.offset7 .chero-half-box-cta {
+  margin: 0 30px 0 40px;
+}
+.centering-box-hero-full {
+  height: 100%;
+  width: 940px;
+  margin: 0 auto;
+}
+.centering-box-hero-full h1,
+.centering-box-hero-full h2,
+.centering-box-hero-full h3,
+.centering-box-hero-full h4,
+.centering-box-hero-full h5,
+.centering-box-hero-full h6 {
+  margin: 50px 0;
+  color: #ffffff;
+}
+.chero-full-box {
+  display: table;
+  vertically-align: middle;
+  height: 100%;
+  margin-left: -51px;
+}
+.chero-full-box .white-box {
+  padding: 40px;
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.chero-full-box .white-box h1,
+.chero-full-box .white-box h2,
+.chero-full-box .white-box h3,
+.chero-full-box .white-box h4,
+.chero-full-box .white-box h5,
+.chero-full-box .white-box h6 {
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+.chero-full-box .white-box.offset7 {
+  margin: 60px 0 60px 580px;
+}
+.chero-full-box .white-box.offset7.span5 {
+  width: 370px;
+}
+.chero-full-box .white-box .ctext {
+  margin-bottom: 20px;
+}
+.chero-full-box .white-box .ctext .p1 {
+  font-size: 18px;
+  line-height: 22px;
+}
+.chero-full-box .white-box .ccta {
+  margin-top: 20px;
+}
+.chero-full-box > div {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+
