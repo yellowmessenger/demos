@@ -1,0 +1,313 @@
+/* BODY */
+/* CONTAINER */
+/* OUTER CONTAINER */
+/* TYPOGRAPHY */
+/* FONT FAMILY */
+/* FONT WEIGHT */
+/* FONT SIZE */
+/* LINE HEIGHT */
+/* LETTER SPACING */
+/* COLOR PALETTES PRIMARY, SECONDARY, TERTIARY */
+/* PARAGRAPHS */
+/* SECTIONS + header/subheaders */
+/* SUB-SECTIONS */
+/* CTA */
+/* COLORS */
+/* BORDER */
+/* BOX-SHADOW */
+/* CAROUSEL */
+/* CONTAINER */
+/* FAQ-QA */
+/* COMP CHART 2 */
+/* COMP-CHART-2-SIMPLE-HEADER */
+/* DISCLOSURE */
+/* FORM Vars */
+/* PRICING-CARD LAYOUT */
+/*helper vars for Harmony font*/
+/*group headers*/
+/*@pricing-card-layout-header-t-background-color: currentColor;*/
+/* product title */
+/*@pricing-card-layout-productcomponent-title-t-background-color: currentColor;*/
+/* price ct */
+/* price aw */
+/* price per-month */
+/* product offer (red) */
+/* product offer2 */
+/* feature-list */
+/* PRODUCT COMPONENT */
+/* PRICING CARD */
+/* PRICING TABLE */
+/* HERO */
+/* VIDEO */
+/* FOOTER */
+/* RESPONSIVE TABS - added here because it's backwards compatible with non-responsive */
+/* TESTIMONIAL */
+/* Mixin for generating global sprite SVG and its fallback PNG.
+   Ideally this has to be a LESS VAR, but due to how CQ interprets LESS VAR PATHS, its hardcoded this way 
+*/
+.fcolor-prim {
+  color: #f77b00;
+}
+.fcolor-sec {
+  color: #3f6dc9;
+}
+.cproduct-pricing-card .modal-pricing-card,
+.simplemodal-container .modal-pricing-card {
+  background: #fff;
+}
+.cproduct-pricing-card .modal-pricing-card header,
+.simplemodal-container .modal-pricing-card header {
+  min-height: 0;
+  text-align: center;
+  display: table;
+  height: 54px;
+  width: 100%;
+}
+.cproduct-pricing-card .modal-pricing-card header p,
+.simplemodal-container .modal-pricing-card header p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 0;
+}
+.cproduct-pricing-card .modal-pricing-card header > *,
+.simplemodal-container .modal-pricing-card header > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cproduct-pricing-card .modal-pricing-card section,
+.simplemodal-container .modal-pricing-card section {
+  text-align: center;
+}
+.cproduct-pricing-card .modal-pricing-card section p,
+.simplemodal-container .modal-pricing-card section p {
+  padding: 0;
+}
+.cproduct-pricing-card .csimple-pricing-card .cta1,
+.simplemodal-container .csimple-pricing-card .cta1 {
+  padding: 16px 0 0;
+}
+.cproduct-pricing-card .csimple-pricing-card .promo,
+.simplemodal-container .csimple-pricing-card .promo {
+  position: relative;
+}
+.cproduct-pricing-card .csimple-pricing-card .promo p,
+.simplemodal-container .csimple-pricing-card .promo p {
+  text-align: left;
+  margin-left: 20px;
+}
+.cproduct-pricing-card .csimple-pricing-card .promo .poff,
+.simplemodal-container .csimple-pricing-card .promo .poff {
+  background-position: -910px -640px;
+  width: 76px;
+  height: 76px;
+  position: absolute;
+  right: -16px;
+  top: -12px;
+  font-family: "FS Albert Web 700", "FS Albert Web", "Calibri", "Trebuchet MS", sans-serif;
+  font-weight: 700;
+  color: #202020;
+}
+.cproduct-pricing-card .csimple-pricing-card .promo .poff > div,
+.simplemodal-container .csimple-pricing-card .promo .poff > div {
+  position: relative;
+  top: 20px;
+  right: -2px;
+}
+.cproduct-pricing-card .csimple-pricing-card .promo .poff > div .value,
+.simplemodal-container .csimple-pricing-card .promo .poff > div .value {
+  font-size: 24px;
+}
+.cproduct-pricing-card .csimple-pricing-card .promo .poff > div sup,
+.simplemodal-container .csimple-pricing-card .promo .poff > div sup {
+  font-size: 12px;
+  position: relative;
+  top: -8px;
+}
+.cproduct-pricing-card .csimple-pricing-card .promo .poff > div .off,
+.simplemodal-container .csimple-pricing-card .promo .poff > div .off {
+  font-size: 11px;
+  position: relative;
+  top: -5px;
+  left: -3px;
+}
+.cproduct-pricing-card .csimple-pricing-card section .price + p,
+.simplemodal-container .csimple-pricing-card section .price + p {
+  margin-top: -2px;
+  color: #999;
+}
+.cproduct-pricing-card .csimple-pricing-card section .crossed,
+.simplemodal-container .csimple-pricing-card section .crossed {
+  padding-top: 6px;
+}
+.cproduct-pricing-card .csimple-pricing-card .price,
+.simplemodal-container .csimple-pricing-card .price {
+  color: #202020;
+  letter-spacing: -4px;
+  padding: 0;
+  display: inline-block;
+}
+.cproduct-pricing-card .csimple-pricing-card .price .aw,
+.simplemodal-container .csimple-pricing-card .price .aw,
+.cproduct-pricing-card .csimple-pricing-card .price .as,
+.simplemodal-container .csimple-pricing-card .price .as {
+  font-size: 64px;
+  line-height: 64px;
+}
+.cproduct-pricing-card .csimple-pricing-card .price .ct,
+.simplemodal-container .csimple-pricing-card .price .ct,
+.cproduct-pricing-card .csimple-pricing-card .price .ac,
+.simplemodal-container .csimple-pricing-card .price .ac {
+  font-size: 36px;
+  position: relative;
+  top: -18px;
+}
+.cproduct-pricing-card .csimple-pricing-card .price .ac,
+.simplemodal-container .csimple-pricing-card .price .ac,
+.cproduct-pricing-card .csimple-pricing-card .price .per,
+.simplemodal-container .csimple-pricing-card .price .per {
+  color: #505050;
+}
+.cproduct-pricing-card .csimple-pricing-card .price .per,
+.simplemodal-container .csimple-pricing-card .price .per {
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  letter-spacing: 0;
+  margin-left: -15px;
+}
+.cproduct-pricing-card .csimple-pricing-card .price-only,
+.simplemodal-container .csimple-pricing-card .price-only {
+  padding: 30px 0 15px;
+}
+.cproduct-pricing-card .cq-wcm-edit .modal-pricing-card header > div,
+.simplemodal-container .cq-wcm-edit .modal-pricing-card header > div {
+  display: block;
+}
+.cproduct-pricing-card {
+  background: #fafafa;
+}
+.cproduct-pricing-card .price-info p {
+  text-align: center;
+}
+.cproduct-pricing-card .price-info p .crossed {
+  color: #999;
+}
+.cproduct-pricing-card .csimple-pricing-card .price {
+  letter-spacing: -3px;
+}
+.cproduct-pricing-card .csimple-pricing-card .promo .poff {
+  top: 30px;
+  right: 5px;
+}
+.cproduct-pricing-card .csimple-pricing-card .promo .poff > div {
+  /* this is ".centered" container (different from modal pricing card, taking advantage base.less). 
+            Inherits position: relative, override position values to normalize, top: -2px is a design tweak */
+  width: 50px;
+  top: -2px;
+  left: 0;
+  right: 0;
+}
+.cproduct-pricing-card .csimple-pricing-card .promo .poff > div .text {
+  /* burst text container */
+  line-height: 11px;
+  font-size: 11px;
+}
+.cproduct-pricing-card .csimple-pricing-card .cta1 {
+  /* this calculates to spec 36px 0 30px taking into account adjacent element padding */
+  padding: 20px 0 28px;
+}
+.cproduct-pricing-card .centered > div:first-child {
+  padding-right: 0;
+}
+.cproduct-pricing-card header {
+  /* does not perfectly match this selector in simple_pricing_card.less as this pricing card takes advantage of 
+        .centered valign class and is different per spec */
+  text-align: center;
+  height: 67px;
+}
+.cproduct-pricing-card header h3,
+.cproduct-pricing-card header h4 {
+  color: #fff;
+}
+.cproduct-pricing-card header h3 {
+  line-height: 26px;
+}
+.cproduct-pricing-card header h4 {
+  line-height: 16px;
+  font-family: "FS Albert Web 300", "FS Albert Web", "Calibri", "Trebuchet MS", sans-serif;
+  font-weight: 300;
+}
+.cproduct-pricing-card section {
+  text-align: center;
+  padding: 10px;
+}
+.cproduct-pricing-card section p {
+  padding: 0;
+  text-align: left;
+}
+.cproduct-pricing-card section .ctext ul {
+  list-style: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.cproduct-pricing-card section .ctext li {
+  text-align: left;
+  line-height: 36px;
+  border-top: 1px dotted #505050;
+  color: #0098cd;
+}
+.cproduct-pricing-card section .ctext li span {
+  color: #505050;
+}
+.cproduct-pricing-card section .image-price-container.inline {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.cproduct-pricing-card section .image-price-container.inline .image1,
+.cproduct-pricing-card section .image-price-container.inline .price {
+  display: inline-block;
+  position: relative;
+}
+.cproduct-pricing-card section .image-price-container.inline .price {
+  top: -15px;
+}
+.cproduct-pricing-card section .image-price-container.section-icon-disabled {
+  padding-top: 30px;
+}
+.cproduct-pricing-card section .image-price-container.section-icon-disabled.none {
+  padding-top: 10px;
+}
+.cproduct-pricing-card section .onetime {
+  display: inline-block;
+}
+.cproduct-pricing-card section .additionalfee {
+  position: relative;
+  top: 6px;
+}
+.cproduct-pricing-card section .price-container .per {
+  /* identical to ".price .per" in .csimple-pricing-card but required due to markup change caused by 
+                function render_pricing(dynamic.pricing) */
+  margin-left: -15px;
+}
+.cproduct-pricing-card section .price-container sup {
+  left: -3px;
+}
+.cproduct-pricing-card section .price-container.onetime-c sup {
+  top: -3.9em;
+}
+.cproduct-pricing-card section .price-container.onetime-c .per {
+  display: none;
+}
+.cproduct-pricing-card section .price-container.free .ct,
+.cproduct-pricing-card section .price-container.free .as,
+.cproduct-pricing-card section .price-container.free .ac {
+  display: none;
+}
+.cproduct-pricing-card section .price-container.free sup {
+  top: .5em;
+  left: 12px;
+}
+.cproduct-pricing-card section .price-container.none .price,
+.cproduct-pricing-card section .price-container.none .per {
+  display: none;
+}
+
