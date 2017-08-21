@@ -2,76 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bbc0e1e-0f14-4067-bef4-fd057d602190" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/BAMM_Banner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/EL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/PL-disbursal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/Slug_banner_home_loan_new.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/bl_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/cl-small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/competitive_pricing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/dwnldicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/hl_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/home-iconNew.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/impmessageclose.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/login-arrow2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/logo_hdfcbank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/nav-dropdwn.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/nav_knowmore.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/nav_pointer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/newlogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/personal-loan-banner-649w-x-192h-px-V-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/securebanking-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/smartBuy-dropdownImg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/smartbuy_offers_tab.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/tabicon1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/tabicon2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/tabicon3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/tabicon4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/tabicon5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/tabicon6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/transparent_processing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/verisign.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/widerange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/1232.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/1670483629831693" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/GetJsFile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/accordiantabcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/analytics.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/analyze.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/ceebox_min_rewardPopup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/combined.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/conversion_async.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/cookieCallback.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/customjqueryceebox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/fbevents.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/gtm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/j.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/jquery.autocomplete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/jquery_ceebox_min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/jquerycustomslider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/jquerylibrary.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/jqueryparsestring.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/navigation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/new-owl.carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/new-owl.theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/newui.min-v2.2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/opa-853ef9b6f28eaf8557515c4b0187f093.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/owl.carousel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/pixel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/product.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/product.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/saved_resource.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/sfloader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/sw_registration.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/track-1c6a9fdc9089c8d7da53fa2910ef15d3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc_2/index_files/va-1c6a9fdc9089c8d7da53fa2910ef15d3.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/contact.html" afterPath="$PROJECT_DIR$/shop/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hdfc_2/index.html" afterPath="$PROJECT_DIR$/hdfc_2/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -89,9 +21,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hdfc_2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="1798" column="89" lean-forward="true" selection-start-line="1798" selection-start-column="89" selection-end-line="1798" selection-end-column="89" />
-              <folding />
+            <state relative-caret-position="441">
+              <caret line="1796" column="61" lean-forward="true" selection-start-line="1796" selection-start-column="61" selection-end-line="1796" selection-end-column="61" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -398,7 +332,7 @@
       <workItem from="1500454709103" duration="1633000" />
       <workItem from="1501752415227" duration="603000" />
       <workItem from="1501927272865" duration="3077000" />
-      <workItem from="1503288916237" duration="59000" />
+      <workItem from="1503288916237" duration="668000" />
     </task>
     <task id="LOCAL-00001" summary="bfs edits">
       <created>1498805140729</created>
@@ -547,17 +481,24 @@
       <option name="project" value="LOCAL" />
       <updated>1501928791148</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="hdfc ergo chat window">
+      <created>1503288977971</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1503288977971</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28424000" />
+    <option name="totallyTimeSpent" value="29033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18746708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18746708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.50402576" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.49382716" order="7" side_tool="false" content_ui="tabs" />
@@ -575,6 +516,25 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925585" sideWeight="0.49597424" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.50402576" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.49382716" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18746708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -957,9 +917,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hdfc_2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="1798" column="89" lean-forward="true" selection-start-line="1798" selection-start-column="89" selection-end-line="1798" selection-end-column="89" />
-          <folding />
+        <state relative-caret-position="441">
+          <caret line="1796" column="61" lean-forward="true" selection-start-line="1796" selection-start-column="61" selection-end-line="1796" selection-end-column="61" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
