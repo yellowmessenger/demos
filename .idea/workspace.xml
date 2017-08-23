@@ -2,73 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bbc0e1e-0f14-4067-bef4-fd057d602190" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/BAMM_Banner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/EL.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/PL-disbursal.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/Slug_banner_home_loan_new.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/bl_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/cl-small.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/competitive_pricing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/dwnldicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/hl_small.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/home-iconNew.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/impmessageclose.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/login-arrow2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/logo_hdfcbank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/nav-dropdwn.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/nav_knowmore.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/nav_pointer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/newlogo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/personal-loan-banner-649w-x-192h-px-V-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/securebanking-logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/smartBuy-dropdownImg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/smartbuy_offers_tab.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/tabicon1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/tabicon2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/tabicon3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/tabicon4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/tabicon5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/tabicon6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/transparent_processing.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/verisign.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/widerange.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/1232.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/1670483629831693" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/GetJsFile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/accordiantabcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/analytics.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/analyze.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/ceebox_min_rewardPopup.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/combined.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/conversion_async.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/cookieCallback.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/customjqueryceebox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/fbevents.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/gtm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/j.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/jquery.autocomplete.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/jquery_ceebox_min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/jquerycustomslider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/jquerylibrary.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/jqueryparsestring.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/navigation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/new-owl.carousel.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/new-owl.theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/newui.min-v2.2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/opa-853ef9b6f28eaf8557515c4b0187f093.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/owl.carousel.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/pixel.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/product.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/product.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/saved_resource.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/sfloader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/sw_registration.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/track-1c6a9fdc9089c8d7da53fa2910ef15d3.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hdfc/index_files/va-1c6a9fdc9089c8d7da53fa2910ef15d3.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tata_capital/index.html" afterPath="$PROJECT_DIR$/tata_capital/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -83,15 +18,36 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hdfc/index.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hdfc_2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="1789" column="66" lean-forward="true" selection-start-line="1789" selection-start-column="66" selection-end-line="1789" selection-end-column="66" />
+            <state relative-caret-position="2003">
+              <caret line="1807" column="74" lean-forward="false" selection-start-line="1807" selection-start-column="74" selection-end-line="1807" selection-end-column="74" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hdfc/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="1800" column="161" lean-forward="false" selection-start-line="1800" selection-start-column="155" selection-end-line="1800" selection-end-column="161" />
+              <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tata_capital/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,6 +68,7 @@
       <find>&lt;/body</find>
       <find>.over</find>
       <find>overview</find>
+      <find>chat.bot</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,9 +88,11 @@
         <option value="$PROJECT_DIR$/bfs_cw/loan_req.html" />
         <option value="$PROJECT_DIR$/bfs_cw/loan_type.html" />
         <option value="$PROJECT_DIR$/bfs_cw/bundle.html" />
-        <option value="$PROJECT_DIR$/tata_capital/index.html" />
         <option value="$PROJECT_DIR$/pnbmetlife/index.html" />
         <option value="$PROJECT_DIR$/hdfc/index.html" />
+        <option value="$PROJECT_DIR$/shop/contact.html" />
+        <option value="$PROJECT_DIR$/hdfc_2/index.html" />
+        <option value="$PROJECT_DIR$/tata_capital/index.html" />
       </list>
     </option>
   </component>
@@ -163,8 +122,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -187,12 +144,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="tata_capital" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="hdfc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -202,6 +175,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/tagic_cw" />
       <recent name="$PROJECT_DIR$/tata_aig" />
@@ -363,7 +339,10 @@
       <workItem from="1500446741533" duration="157000" />
       <workItem from="1500454709103" duration="1633000" />
       <workItem from="1501752415227" duration="603000" />
-      <workItem from="1501927272865" duration="1493000" />
+      <workItem from="1501927272865" duration="3077000" />
+      <workItem from="1503288916237" duration="1028000" />
+      <workItem from="1503308790669" duration="112000" />
+      <workItem from="1503395572157" duration="46000" />
     </task>
     <task id="LOCAL-00001" summary="bfs edits">
       <created>1498805140729</created>
@@ -505,11 +484,32 @@
       <option name="project" value="LOCAL" />
       <updated>1501928229367</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="hdfc ergo chat window">
+      <created>1501928791148</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1501928791148</updated>
+    </task>
+    <task id="LOCAL-00022" summary="hdfc ergo chat window">
+      <created>1503288977971</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1503288977971</updated>
+    </task>
+    <task id="LOCAL-00023" summary="hdfc ergo chat window">
+      <created>1503289651602</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1503289651602</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26781000" />
+    <option name="totallyTimeSpent" value="29551000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1053" extended-state="6" />
@@ -533,6 +533,25 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32925585" sideWeight="0.49597424" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.50402576" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.49382716" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18746708" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -541,6 +560,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="bfs edits" />
     <MESSAGE value="bupa edits" />
     <MESSAGE value="added  tagic chatwin" />
@@ -555,20 +576,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/maxbupa_cw/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tata_aig/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tagic_cw/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -889,36 +896,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tata_capital/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pnbmetlife/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfc_2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2003">
+          <caret line="1807" column="74" lean-forward="false" selection-start-line="1807" selection-start-column="74" selection-end-line="1807" selection-end-column="74" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hdfc/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="1789" column="66" lean-forward="true" selection-start-line="1789" selection-start-column="66" selection-end-line="1789" selection-end-column="66" />
+        <state relative-caret-position="221">
+          <caret line="1800" column="161" lean-forward="false" selection-start-line="1800" selection-start-column="155" selection-end-line="1800" selection-end-column="161" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tata_capital/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
