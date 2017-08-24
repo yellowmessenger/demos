@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="1bbc0e1e-0f14-4067-bef4-fd057d602190" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hdfc/index.html" afterPath="$PROJECT_DIR$/hdfc/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hdfc_2/index.html" afterPath="$PROJECT_DIR$/hdfc_2/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hdfc_3/index.html" afterPath="$PROJECT_DIR$/hdfc_3/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hdfc_4/index.html" afterPath="$PROJECT_DIR$/hdfc_4/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,10 +22,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hdfc_2/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="1798" column="82" lean-forward="false" selection-start-line="1798" selection-start-column="82" selection-end-line="1798" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hdfc_3/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="1800" column="122" lean-forward="false" selection-start-line="1800" selection-start-column="122" selection-end-line="1800" selection-end-column="122" />
+            <state relative-caret-position="135">
+              <caret line="1798" column="82" lean-forward="false" selection-start-line="1798" selection-start-column="82" selection-end-line="1798" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hdfc/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="1798" column="82" lean-forward="false" selection-start-line="1798" selection-start-column="82" selection-end-line="1798" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -30,9 +54,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hdfc_4/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="1800" column="122" lean-forward="false" selection-start-line="1800" selection-start-column="122" selection-end-line="1800" selection-end-column="122" />
-              <folding />
+            <state relative-caret-position="197">
+              <caret line="1800" column="91" lean-forward="false" selection-start-line="1800" selection-start-column="91" selection-end-line="1800" selection-end-column="91" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,6 +79,7 @@
       <find>&lt;/body</find>
       <find>.over</find>
       <find>overview</find>
+      <find>chat.</find>
       <find>chat.bot</find>
     </findStrings>
   </component>
@@ -74,11 +101,11 @@
         <option value="$PROJECT_DIR$/bfs_cw/loan_type.html" />
         <option value="$PROJECT_DIR$/bfs_cw/bundle.html" />
         <option value="$PROJECT_DIR$/pnbmetlife/index.html" />
-        <option value="$PROJECT_DIR$/hdfc/index.html" />
         <option value="$PROJECT_DIR$/shop/contact.html" />
-        <option value="$PROJECT_DIR$/hdfc_2/index.html" />
         <option value="$PROJECT_DIR$/tata_capital/index.html" />
         <option value="$PROJECT_DIR$/bajaj_finserv/index.html" />
+        <option value="$PROJECT_DIR$/hdfc/index.html" />
+        <option value="$PROJECT_DIR$/hdfc_2/index.html" />
         <option value="$PROJECT_DIR$/hdfc_3/index.html" />
         <option value="$PROJECT_DIR$/hdfc_4/index.html" />
       </list>
@@ -133,6 +160,62 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tata_capital" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdfc_4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdfc_3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdfc_2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advertisement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hdfc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -319,7 +402,7 @@
       <workItem from="1503308790669" duration="112000" />
       <workItem from="1503395572157" duration="1531000" />
       <workItem from="1503467364122" duration="3705000" />
-      <workItem from="1503539661672" duration="101000" />
+      <workItem from="1503539661672" duration="343000" />
     </task>
     <task id="LOCAL-00001" summary="bfs edits">
       <created>1498805140729</created>
@@ -496,17 +579,24 @@
       <option name="project" value="LOCAL" />
       <updated>1503539746393</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="hdfc ergo chat window">
+      <created>1503539770830</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1503539770830</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34842000" />
+    <option name="totallyTimeSpent" value="35084000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4257347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4257347" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882413" sideWeight="0.50402576" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -882,24 +972,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hdfc/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27000">
-          <caret line="1800" column="161" lean-forward="false" selection-start-line="1800" selection-start-column="155" selection-end-line="1800" selection-end-column="161" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tata_capital/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hdfc_2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1807" column="74" lean-forward="false" selection-start-line="1807" selection-start-column="74" selection-end-line="1807" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -911,19 +987,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hdfc/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="1798" column="82" lean-forward="false" selection-start-line="1798" selection-start-column="82" selection-end-line="1798" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hdfc_2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="1798" column="82" lean-forward="false" selection-start-line="1798" selection-start-column="82" selection-end-line="1798" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hdfc_3/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="1800" column="122" lean-forward="false" selection-start-line="1800" selection-start-column="122" selection-end-line="1800" selection-end-column="122" />
+        <state relative-caret-position="135">
+          <caret line="1798" column="82" lean-forward="false" selection-start-line="1798" selection-start-column="82" selection-end-line="1798" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hdfc_4/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="1800" column="122" lean-forward="false" selection-start-line="1800" selection-start-column="122" selection-end-line="1800" selection-end-column="122" />
-          <folding />
+        <state relative-caret-position="197">
+          <caret line="1800" column="91" lean-forward="false" selection-start-line="1800" selection-start-column="91" selection-end-line="1800" selection-end-column="91" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
