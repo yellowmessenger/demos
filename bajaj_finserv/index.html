@@ -23,14 +23,25 @@
 		<script src="//code.jquery.com/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<script type="text/javascript" src="eventHandler.js"></script>
- 		<script type="text/javascript" src="https://chat.botplatform.io/plugin-v2.js?bot=bot_1494260176641"></script>
+		<script type="text/javascript" src="https://chat.botplatform.io/plugin-v2.js?bot=bot_1494260176641&view=compact"></script>
 		<script type="text/javascript">
-		    window.botplatform.init({
-				userId: "12345",
-				name: "Kishore"
+            var loginId = parseInt($($('#welcomeMenuBox a')[0]).text());
+            var loginName = $('.profile_name').text();
+			var open = false;
+            if(document.referrer.toString().indexOf("/B2C_CustomLogin.aspx") !== -1){
+                open=false;
+            }
+            var search = window.location.search.substring(1);
+            if(search){
+                var params = JSON.parse('{"' + decodeURI(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}');
+                open = !!(params && params.bot_event);
+            }
+            window.botplatform.init({
+				autoOpen: open,
+				userId: loginId,
+				name: loginName
 			});
 		</script>
 	</body>
 </html>
+
