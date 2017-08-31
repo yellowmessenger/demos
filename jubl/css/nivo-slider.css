@@ -1,0 +1,75 @@
+.bgstretcher-area{text-align:left}
+.bgstretcher{background:#000;overflow:hidden;width:100%;position:fixed;z-index:1;_position:absolute}
+.bgstretcher,.bgstretcher ul,.bgstretcher li{left:0;top:0}
+.bgstretcher ul,.bgstretcher li{position:absolute;list-style:none;margin:0;padding:0}
+.bgstretcher ul li img{padding:0}
+.sample-div,.second-div{height:400px}
+.second-div{margin-top:50px}
+
+p.pagination ul{margin-left:845px; padding:0; position:fixed; bottom:212px;}
+p.pagination ul li{background:url(../images/dot-pagination.png) 0 -23px no-repeat; width:24px; height:23px; float:left; padding:0;}
+p.pagination ul li.showPage{background:url(../images/dot-pagination.png) 0 0 no-repeat; padding:0;}
+p.pagination ul li a{font-size:0px; font-size:0px; width:14px; height:13px; float:left; margin:5px 0 0 5px; padding:0;}
+p.pagination ul li a{width:14px; height:13px; float:left; margin:5px 0 0 5px; padding:0;}
+
+.navbar{line-height:100%;padding-bottom:70px}
+.inverse .navbar ul{background-color:#111}
+.inverse .navbar ul li a{background-color:#333;text-shadow:1px 0 1px #000;color:#f0f0f0;border:2px solid #111}
+.inverse .navbar ul li.current a{border:2px solid #777;background-color:#555}
+.navbar ul{background-color:#fff;list-style:none;line-height:100%;width:100%;float:left;box-shadow:0 2px 3px rgba(0,0,0,0.3);margin:0;padding:0}
+.navbar ul li{float:left;margin-top:4px;margin-left:4px;margin-right:4px}
+.navbar ul li a{background-color:#f0f0f0;color:#333;font-weight:400;font-size:14px;display:block;text-shadow:0 1px 0 #fff;border:2px solid #fff;padding:9px}
+.navbar ul li.current a{background-color:#fff;border:2px solid #111;font-weight:700}
+.clear{width:100%;clear:both}
+
+.banner-content{display:table;position:fixed;height:100%;width:100%}
+.mid{display:table-cell;vertical-align:middle}
+.caption{width:960px;margin:0 auto; position:relative;}
+
+/*a:hover{background-color:#fff;color:#000;text-decoration:none}
+button{font-size:17px}*/
+
+.caption p{ padding:0!important;}
+
+
+
+.caption h2,
+.bgstretcher ul li.first .caption h2, 
+.bgstretcher ul li.third .caption h2,
+.bgstretcher ul li.fourth .caption h2,
+.bgstretcher ul li.last .caption h2{width:350px; font-family:Arial, Helvetica, sans-serif; font-size:30px; font-weight:500; line-height:32px; text-align:left; margin-left:28px; /*padding-bottom:15px;*/ padding-bottom:0px;}
+
+.caption h3,
+.bgstretcher ul li.first .caption h3,
+.bgstretcher ul li.last.caption h3{margin-left:28px; text-align:left; font-size:19px; line-height:20px; color:#000; font-family:'Open Sans',sans-serif; font-weight:600;}
+
+.caption h3 span,
+.bgstretcher ul li.first .caption h3 span,
+.bgstretcher ul li.last .caption h3 span{font-weight:600;}
+ 
+.caption h2{color:#FFF; border-bottom:1px solid #FFF; width:400px;}
+.caption h3{color:#000;}
+.bgstretcher ul li .caption h3 img{width:162px!important; height:49px!important; vertical-align:middle;}
+
+.bgstretcher ul li.first .caption h2{color:#FFF; border-bottom:1px solid #FFF; width:360px;}
+.bgstretcher ul li.first .caption h3{color:#000;}
+
+.bgstretcher ul li .caption h2 small{color:#fff;}
+.bgstretcher ul li.last .caption h2{color:#000; border-bottom:1px solid #000; width:360px; font-family:Arial, Helvetica, sans-serif; padding:0px; font-size:32px; padding-bottom: 15px;}
+.bgstretcher ul li.last .caption h3{color:#000;}
+.bgstretcher ul li.last .caption h3 img{width:454px!important; height:107px!important}
+
+.bgstretcher ul li .caption h2 small{color:#000;}
+.bgstretcher ul li.third .caption h2{color:#FFF!important; border-bottom:1px solid #000; width:380px; font-family:Arial, Helvetica, sans-serif; padding:0px; font-size:32px; }
+.bgstretcher ul li.third .caption h3{color:#000; }
+.bgstretcher ul li.third .caption h3 img{width:304px!important; height:190px!important}
+
+.bgstretcher ul li .caption h2 small{color:#000;}
+.bgstretcher ul li.fourth .caption h2{color:#000!important; border-bottom:1px solid #000!important; width:370px; font-family:Arial, Helvetica, sans-serif; padding:0px; font-size:32px; padding-bottom: 10px!important;}
+.bgstretcher ul li.fourth .caption h3{color:#FFF;}
+.bgstretcher ul li.fourth .caption h3 img{width:454px!important; height:190px!important}
+
+.bgstretcher ul li .caption h2 small{color:#000;}
+.bgstretcher ul li.fivth .caption h2{color:#FFF!important; border-bottom:1px solid #000!important; width:360px; font-family:Arial, Helvetica, sans-serif; padding:0px; font-size:32px; padding-bottom: 10px!important;}
+.bgstretcher ul li.fivth .caption h3{color:#FFF;}
+.bgstretcher ul li.fivth .caption h3 img{width:454px!important; height:190px!important}
