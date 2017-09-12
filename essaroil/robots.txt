@@ -1,0 +1,3 @@
+Sitemap:http://www.essaroil.co.in/sitemap.xml
+User-agent: *
+Disallow:

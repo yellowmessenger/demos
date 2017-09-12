@@ -1,0 +1,86 @@
+
+@media (max-width:999px) {
+	.pageInner { max-width:760px; }
+	
+	.topLinks { padding:4px 8px 0 0; }
+	.tagLine { display:none; }
+	.groupWebsite { clear:right; margin-right:230px; }
+	#searchBox { margin:-45px 10px 0 0; background-color:#fff; }
+	
+	ul#mainMenu li>a { padding:0 15px; }
+	
+	#footerTop .links { float:none; text-align:center; }
+	.socials { float:none; text-align:center; padding-top:15px; }
+}
+
+@media (max-width:759px) {
+	html { font-size:90%; }
+	.pageInner { max-width:600px; }
+
+	ul#mainMenu li>a { font-size:0.9375rem; padding:0 12px; }
+	
+	#footerCopy .copy {  float:none; text-align:center; padding-top:15px; }
+	#footerCopy .links {  float:none; text-align:center; }
+}
+
+@media (max-width:600px) {
+	html { font-size:85%; }
+	.pageInner { max-width:470px; }
+		
+	.groupWebsite { width:35%; margin-right:10px; }
+	#searchBox { margin:9px 10px 0 0; }
+	
+	.main-navigation { text-align:center; float:none; width:auto; margin:0 -1%; background-color:#253b97; }
+	ul#mainMenu { display:none; clear:both; float:none; border:0; }
+	ul#mainMenu li { float:none;display:block; padding:0; text-align:left; background:none; border:0; border-top:1px solid #ccc; }
+	ul#mainMenu li>a { color:#636363; font-size:16px; font-size:1.142857142857143rem; background-color:#f6f6f6; border:0; line-height:25px; padding:10px; }
+	ul#mainMenu li>a:hover,
+	ul#mainMenu li.active>a,
+	ul#mainMenu li:hover>a { border:0; background-color:#efefef; border:0 none; }
+	
+	ul#mainMenu li .subMenu { display:block; width:auto; padding:0; position:relative; top:0; background:none; border:0px; border-radius:0; box-shadow:none; }
+	ul#mainMenu li .subMenu.call1 { width:auto; }
+	ul#mainMenu li .subMenu.call4 { width:auto; margin-left:0; }
+	ul#mainMenu li .subMenu ul,
+	ul#mainMenu li .subMenu.call1 ul,
+	ul#mainMenu li .subMenu.call4 ul { padding:0; position:relative; top:0; width:100% !important; float:none; }
+	
+	ul#mainMenu li .subMenu li { float:none; padding:0; background:none; border-top:1px dotted #ccc; }
+	ul#mainMenu li .subMenu li>a { color:#636363; font:normal 14px/normal 'Open Sans'; padding:5px 7px 5px 15px; background:none; border:0 none; }
+	ul#mainMenu li .subMenu li>a:hover { color:#db0000; background:none; }
+	
+	ul#mainMenu li .subMenu li ul { float:none; width:auto !important; padding:0; }
+	ul#mainMenu li .subMenu li li { border-top:1px dotted #ccc; }
+	ul#mainMenu li .subMenu li li>a { color:#636363; font-weight:normal; font-size:12px; padding-left:25px; border:0px none; }
+	ul#mainMenu li .subMenu li li>a:hover { color:#db0000; background:none; }
+	
+	ul#mainMenu li ul.nav-menu, .main-navigation div.nav-menu > ul { display:none; }
+	ul#mainMenu li ul, .menuToggle { display:block; }
+	
+	#leftPart { float:none; width:auto; background:none; }
+	#content { float:none; width:auto; }
+	
+	.welcomeTtxt .text { float:none; width:100%; text-align:center; }
+	.welcomeTtxt .discoverOpera { display:none; }
+	.home3Box .box { float:none; width:310px; margin:0 auto 20px !important; height:auto !important; }
+}
+
+@media (max-width:470px) {
+	html { font-size:75%; }
+	
+	#headerOuter { background:#ebebeb; }
+	#header .logo { float:none; text-align:center; }
+	.topLinks { float:none; text-align:center; padding:6px 0 12px; }
+	.groupWebsite { float:none; width:50%; margin:0 auto; padding-bottom:10px; }
+	
+	#content, #leftPart { padding:10px; }
+	
+	.flexslider { }
+	
+}
+@media (max-width:340px) {
+	.home3Box .box { float:none; width:240px; margin:0 auto 20px; }	
+}
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
