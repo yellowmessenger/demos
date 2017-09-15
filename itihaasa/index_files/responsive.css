@@ -1,0 +1,108 @@
+@media (max-width:1150px) {
+	.site-footer p{
+		display: block;
+		text-align: center;
+	}
+	.footer-credits {
+		float: none;
+	}
+	.footer-nav{
+		margin: 20px 0px;
+		text-align: center;
+		display: block;
+		padding: 0;
+	}
+}
+@media (max-width:1024px) {
+	.iPad-main {
+		float: none;
+	}
+	
+}
+@media (max-width:850px) {
+	#coverflow {
+		padding:0 16.5% 10% 15.5%;
+	}
+	.wrap-coverflow {
+		padding-bottom: 0;
+	}
+}
+@media (max-width:767px) {
+	.reach-us {
+		float: none;
+		display: block;
+		margin-top: 20px;
+	}
+	.reach-us li {
+		padding: 0 7px;
+	}
+	.reach-us .email::before {
+		margin-right: 15px;
+	}
+}
+@media (max-width:680px) {
+	
+	.flip-items .flipster__item__content span {
+		font-size: 18px;
+	}
+}
+@media (max-width:600px) {
+	.list-inline.button-list li {
+		padding-right: 20px;
+	}
+	.banner h1 {
+		margin-top: 10px;
+	}
+	.flip-items .flipster__item__content a {
+		font-size: 26px;
+		line-height: 60px;
+		width: 60px;
+		height: 60px;
+		margin-top: -30px;
+		margin-left: -30px;
+	}
+	.box-single h3 {
+		display: block;
+		float: none;
+		padding-left: 0;
+	}
+	.box-single {
+		background: none;
+	}
+	/*.box-description {
+		top:100%;
+		}*/
+	}
+	@media (max-width:480px) {
+		.partners li {
+			margin-bottom: 20px;
+		}
+		.site-footer .copyright {
+			float: none;
+			padding-top: 0;
+		}
+		.flip-items .flipster__item__content span {
+			font-size: 14px;
+		}
+		.iPad::after {
+			background-size: 80%;
+		}
+		.iPad {
+			padding: 4.6% 10.5%;
+		}
+	}
+	@media (max-width:380px) {
+		.reach-us .email::before {
+			display: none;
+		}
+		.reach-us {
+			margin-top: 30px;
+		}
+		.reach-us .email {
+			margin-top: 20px;
+			display: block;
+		}
+		.banner {
+			margin-top: 20px;
+		}
+	}
