@@ -1,0 +1,917 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+"http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-56THQ79');</script>
+<!-- End Google Tag Manager -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="shortcut icon" href="https://bajajfinserv-direct.in/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<title>Page not found | Bajaj FinServ</title>
+<style type="text/css" media="all">
+@import url("https://bajajfinserv-direct.in/modules/system/system.base.css?oxcino");
+@import url("https://bajajfinserv-direct.in/modules/system/system.menus.css?oxcino");
+@import url("https://bajajfinserv-direct.in/modules/system/system.messages.css?oxcino");
+@import url("https://bajajfinserv-direct.in/modules/system/system.theme.css?oxcino");
+</style>
+<style type="text/css" media="all">
+@import url("https://bajajfinserv-direct.in/modules/comment/comment.css?oxcino");
+@import url("https://bajajfinserv-direct.in/sites/all/modules/date/date_api/date.css?oxcino");
+@import url("https://bajajfinserv-direct.in/modules/field/theme/field.css?oxcino");
+@import url("https://bajajfinserv-direct.in/modules/node/node.css?oxcino");
+@import url("https://bajajfinserv-direct.in/modules/search/search.css?oxcino");
+@import url("https://bajajfinserv-direct.in/modules/user/user.css?oxcino");
+@import url("https://bajajfinserv-direct.in/sites/all/modules/views/css/views.css?oxcino");
+@import url("https://bajajfinserv-direct.in/sites/all/modules/ckeditor/css/ckeditor.css?oxcino");
+</style>
+<style type="text/css" media="all">
+@import url("https://bajajfinserv-direct.in/sites/all/modules/ctools/css/ctools.css?oxcino");
+@import url("https://bajajfinserv-direct.in/sites/all/modules/rate/rate.css?oxcino");
+@import url("https://bajajfinserv-direct.in/sites/all/modules/video/css/video.css?oxcino");
+@import url("https://bajajfinserv-direct.in/sites/all/modules/webform/css/webform.css?oxcino");
+</style>
+<style type="text/css" media="all">
+@import url("https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/css/bootstrap.min.css?oxcino");
+@import url("https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/css/style.css?oxcino");
+@import url("https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/css/AllLib.css?oxcino");
+</style>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/misc/drupal.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/misc/jquery.cookie.js?v=1.0"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/misc/jquery.form.js?v=2.52"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/misc/ajax.js?v=7.54"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/modules/video/js/video.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/misc/progress.js?v=7.54"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/modules/webform/js/webform.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/jquery-3.2.1.min.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/bootstrap.min.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/slick.min.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/bootstrap-slider.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/comman.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/chartist.min.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/star-rating.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/cookie-handler.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/http-interceptor.js?oxcino"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bajajfinserv","theme_token":"dIR9--bJyse1j4CIDLr6G8hpeBM0BzZpr-oVmpEFX8I","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/jquery.cookie.js":1,"misc\/jquery.form.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/video\/js\/video.js":1,"misc\/progress.js":1,"sites\/all\/modules\/webform\/js\/webform.js":1,"sites\/all\/themes\/bajajfinserv\/js\/jquery-3.2.1.min.js":1,"sites\/all\/themes\/bajajfinserv\/js\/bootstrap.min.js":1,"sites\/all\/themes\/bajajfinserv\/js\/slick.min.js":1,"sites\/all\/themes\/bajajfinserv\/js\/bootstrap-slider.js":1,"sites\/all\/themes\/bajajfinserv\/js\/comman.js":1,"sites\/all\/themes\/bajajfinserv\/js\/chartist.min.js":1,"sites\/all\/themes\/bajajfinserv\/js\/star-rating.js":1,"sites\/all\/themes\/bajajfinserv\/js\/cookie-handler.js":1,"sites\/all\/themes\/bajajfinserv\/js\/http-interceptor.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/rate\/rate.css":1,"sites\/all\/modules\/video\/css\/video.css":1,"sites\/all\/modules\/webform\/css\/webform.css":1,"sites\/all\/themes\/bajajfinserv\/css\/bootstrap.min.css":1,"sites\/all\/themes\/bajajfinserv\/css\/style.css":1,"sites\/all\/themes\/bajajfinserv\/css\/AllLib.css":1}},"urlIsAjaxTrusted":{"\/?q=search-page":true,"\/?q=system\/ajax":true,"\/sites\/default\/files\/products\/PL_white.svg":true},"ajax":{"edit-webform-ajax-submit-17":{"callback":"webform_ajax_callback","wrapper":"webform-ajax-wrapper-17","progress":{"message":"","type":"throbber"},"event":"click","url":"\/?q=system\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"HEAR FROM US"}}}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-sites page-sites-default page-sites-default-files page-sites-default-files-products page-sites-default-files-products-pl-whitesvg" >
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56THQ79"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="skip-link">
+<a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+</div>
+<script type="text/javascript">
+    $(document).click(function(event) {
+        $(".ShareIcon").html('<img class="insideshareicon" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/images/Assets/share_icon_black.svg">');
+        $('.SearchToggle').addClass('animated flipOutX');
+        setTimeout(function() {
+            if ($('.OUTsideDownArrowLink').hasClass('WhiteFontHeader')) {
+                if ($('.OUTsideDownArrowLink').hasClass('transparentBG')) {
+                    $(".SerachToggleBox").html('<a href="#Search" class="SpcfcBlankHover">SEARCH</a>');
+                } else {
+                    $(".SerachToggleBox").html('<a href="#Search" class="SpcfcBlankHoverWht">SEARCH</a>');
+                }
+            } else {
+                $(".SerachToggleBox").html('<a href="#Search" class="SpcfcBlankHover">SEARCH</a>');
+            }
+            $('.searchOpen').show();
+        }, 500);
+    });
+
+    $(".ShareIcon").click(function(e) { 
+        e.stopPropagation();
+        $(".ShareIcon").html('<img class="insideshareicon" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/images/Assets/share_icon_black.svg">');
+        $(this).html('<a href="https://in.linkedin.com/company/bajaj-finserv-lending" target="_blank"><span  class="OFli"></span></a><a href="https://twitter.com/bajaj_finserv?lang=en" target="_blank"><span  class="OFtw"></span></a><a href="https://www.facebook.com/bajajfinserv" target="_blank"><span  class="OFfb"></span></a>');
+    });
+</script><script type="text/javascript" src="https://bajajfinserv-direct.in/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/misc/drupal.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/misc/jquery.cookie.js?v=1.0"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/misc/jquery.form.js?v=2.52"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/misc/ajax.js?v=7.54"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/modules/video/js/video.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/misc/progress.js?v=7.54"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/modules/webform/js/webform.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/jquery-3.2.1.min.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/bootstrap.min.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/slick.min.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/bootstrap-slider.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/comman.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/chartist.min.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/star-rating.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/cookie-handler.js?oxcino"></script>
+<script type="text/javascript" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/js/http-interceptor.js?oxcino"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"bajajfinserv","theme_token":"dIR9--bJyse1j4CIDLr6G8hpeBM0BzZpr-oVmpEFX8I","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/jquery.cookie.js":1,"misc\/jquery.form.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/video\/js\/video.js":1,"misc\/progress.js":1,"sites\/all\/modules\/webform\/js\/webform.js":1,"sites\/all\/themes\/bajajfinserv\/js\/jquery-3.2.1.min.js":1,"sites\/all\/themes\/bajajfinserv\/js\/bootstrap.min.js":1,"sites\/all\/themes\/bajajfinserv\/js\/slick.min.js":1,"sites\/all\/themes\/bajajfinserv\/js\/bootstrap-slider.js":1,"sites\/all\/themes\/bajajfinserv\/js\/comman.js":1,"sites\/all\/themes\/bajajfinserv\/js\/chartist.min.js":1,"sites\/all\/themes\/bajajfinserv\/js\/star-rating.js":1,"sites\/all\/themes\/bajajfinserv\/js\/cookie-handler.js":1,"sites\/all\/themes\/bajajfinserv\/js\/http-interceptor.js":1}},"urlIsAjaxTrusted":{"\/?q=search-page":true,"\/?q=system\/ajax":true,"\/sites\/default\/files\/products\/PL_white.svg":true},"ajax":{"edit-webform-ajax-submit-17":{"callback":"webform_ajax_callback","wrapper":"webform-ajax-wrapper-17","progress":{"message":"","type":"throbber"},"event":"click","url":"\/?q=system\/ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"HEAR FROM US"}}}});
+//--><!]]>
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".offers_historyspace .view-content").slick({
+        autoplay: false,
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        responsive: [{
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+    $(".offers_historyspace .view-content .views-row").addClass('col-md-4 col-sm-6 col-xs-12 offerImgBox');
+    var OfferKnowMoreModel = $('[id^=OfferKnowMoreModel]').detach();
+    if (OfferKnowMoreModel) {
+        OfferKnowMoreModel.appendTo("body");
+        OfferKnowMoreModel = null;
+    }
+    $(window).resize(function() {
+        if ($(window).width() + 15 < 768) {
+            $('.BundleContent2').insertBefore($('.BundleContent1'));
+        } else {
+            $('.BundleContent1').insertBefore($('.BundleContent2'));
+        }
+    });
+    if ($(window).width() + 15 < 768) {
+        $('.BundleContent2').insertBefore($('.BundleContent1'));
+    } else {
+        $('.BundleContent1').insertBefore($('.BundleContent2'));
+    }
+    $('.IntroductionSlider').slick({
+        dots: false,
+        fade: true,
+        infinite: true,
+        initialSlide: 0,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 300,
+    });
+    $(".loanTypeUL").hide();
+    $(".loanTypeUL").first().show();
+    $(".HomePageLoneTypeUl li a span").first().addClass('lineWith');
+    $(".HomePageLoneTypeUl li a").click(function(e) {
+        e.preventDefault();
+        $(".HomePageLoneTypeUl li a span").removeAttr('style');
+        $(".HomePageLoneTypeUl li a span").removeClass('lineWith');
+        $(".loanTypeUL").hide();
+        var LID = $(this).attr("LID");
+        $("#" + LID).show();
+        $(this).children("p").css("color", "#ffffff");
+        if ($(window).width() + 15 < 768) {
+            $(this).children("span").css({
+                "width": "100%"
+            });
+        } else {
+            $(this).children("span").addClass("lineWith");
+        }
+    });
+    $('.downArrowDiv a').click(function(e) {
+        e.preventDefault();
+        var hrefPage = $(this).attr('href');
+        var AllPgid = $(this).attr('Tid');
+        localStorage.setItem("AllPGID", AllPgid);
+        window.location.href = hrefPage;
+    });
+    $(document).click(function(event) {
+        $('.SearchToggle').addClass('animated flipOutX');
+        setTimeout(function() {
+            if ($('.OUTsideDownArrowLink').hasClass('WhiteFontHeader')) {
+                if ($('.OUTsideDownArrowLink').hasClass('transparentBG')) {
+                    $(".SerachToggleBox").html('<a href="#Search" class="SpcfcBlankHover">SEARCH</a>');
+                } else {
+                    $(".SerachToggleBox").html('<a href="#Search" class="SpcfcBlankHoverWht">SEARCH</a>');
+                }
+            } else {
+                $(".SerachToggleBox").html('<a href="#Search" class="SpcfcBlankHover">SEARCH</a>');
+            }
+            $('.searchOpen').show();
+        }, 500);
+    });
+});
+</script>
+
+<!-- Navigation -->
+<section class=" HomeHeaderBg">
+	<div class="container HomeHeaderBoxFirst ">
+			<div class="row OUTsideDownArrowLink affix" data-spy="affix" data-offset-top="-2">
+			<a href="/">
+				<h3 class="websiteName"><img src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/logo.png" alt="Bajaj FinServ " class="img-responsive"></h3>
+			</a>
+			<div class="headerRightMenu ">
+				<a href="#" data-toggle="modal" data-target="#HamburgarModel"><span></span><span></span></a>
+							</div>
+		</div>
+	
+	 <!-- Home Page Banner Slider -->
+	 	 <!-- Home Page Banner Slider -->
+
+	 <!-- Home Page Banner Links -->
+	 	 <!-- Home Page Banner Links -->
+
+	<!-- Home Page Banner Description -->
+		<!-- Home Page Banner Description -->
+
+	</div>
+</section>
+
+<section class="container-fluid homepageLonetypeBg">
+	<div class="container ">
+		<div class="row HomeloanTypeBox">
+			<div class="col-lg-11 col-lg-offset-1">
+				<div class="col-sm-5 HomeloanTypeBoxInner2">
+					<div class="row">
+						<p class="whyChoose">WHY CHOOSE DIRECT ?</p>
+						<ul class="HomePageLoneTypeUl">
+														<li>
+								<a href="#" class="ViewFull" LID="1">
+								<p> Loan</p><span></span></a></a>
+								</li>
+														<li>
+								<a href="#" class="ViewFull" LID="3">
+								<p> Cards</p><span></span></a></a>
+								</li>
+														<li>
+								<a href="#" class="ViewFull" LID="4">
+								<p> Invest</p><span></span></a></a>
+								</li>
+														<li>
+								<a href="#" class="ViewFull" LID="">
+								<p> </p><span></span></a></a>
+								</li>
+												</ul>
+					</div>
+				</div>
+
+				<div class="col-sm-7 HomeloanTypeBoxInner1">
+					<div class="row">
+													<ul class="loanTypeUL" id="1">
+															<li><a href="product-personal-loan"><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/PL_white.svg" /></span> <div class="ViewFull"><p>Personal <br>Loan</p><span class="LoneTpLine"></span></div></a></li>
+															<li><a href="product-line-of-credit"><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/LOC_white.svg" /></span> <div class="ViewFull"><p>Line of <br>Credit</p><span class="LoneTpLine"></span></div></a></li>
+															<li><a href="product-home-loan"><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/HL_white.svg" /></span> <div class="ViewFull"><p>Home <br>Loan</p><span class="LoneTpLine"></span></div></a></li>
+															<li><a href="product-hl-balance-transfer"><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/BT_white.svg" /></span> <div class="ViewFull"><p>Home Loan <br>Balance <br>Transfer</p><span class="LoneTpLine"></span></div></a></li>
+															<li><a href="product-loan-against-property"><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/LOC_white.svg" /></span> <div class="ViewFull"><p>Loan Against <br>Property</p><span class="LoneTpLine"></span></div></a></li>
+															<li><a href="product-lap-property-balance-transfer"><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/BT_white.svg" /></span> <div class="ViewFull"><p>Loan Against <br>Property Balance <br>Transfer</p><span class="LoneTpLine"></span></div></a></li>
+														</ul>
+													<ul class="loanTypeUL" id="3">
+															<li><a href=""><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/PL_white.svg" /></span> <div class="ViewFull"><p>Coming soon...</p><span class="LoneTpLine"></span></div></a></li>
+														</ul>
+													<ul class="loanTypeUL" id="4">
+															<li><a href=""><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/PL_white.svg" /></span> <div class="ViewFull"><p>Coming soon...</p><span class="LoneTpLine"></span></div></a></li>
+														</ul>
+											</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Bundles Section -->
+<section class="BUNDLERbox">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-sm-6 col-xs-8">
+                    <div class="smartBuyBundl">
+                        <p>FIND WHAT WORKS FOR YOU</p>
+                        <h2>Smart buy <br> bundle</h2>
+                        <p>Choose your product combination and get potential savings on loan interest rate.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-4">
+                    <div class="LayerBoxBundl"> <img src="sites/all/themes/bajajfinserv/images/layerBox.png" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-sm-6 col-md-6 BundleContent1">
+                    <div class="row">
+						                        <ul class="BundlerRightBox">
+                            <li> <a href="#;" class="minus" style="visibility:hidden;">-</a>
+                                <input name="number" id="loanAmtInput" class="loanAmtInput bundleLoanAmount" placeholder="Loan Amount" value="3,00,000" type="text">
+                                <a href="#;" class="plus InrUnit">INR</a>
+                                <div class="errormsgBdlLA" style="visibility:hidden">Maximum ticket size for Home Loan is INR 10 Crore</div>
+                            </li>
+							                            <li> 
+								<a href="#;">&nbsp;</a>									<select id="Loan">
+										<option value="">Select Loan </option>
+																							<option value="SHOL"  >Home Loan</option>
+																									<option value="SOL" selected='selected' >Personal Loan</option>
+																									<option value="SHOLBT"  >Home Loan Balance Transfer</option>
+																									<option value="SLTOL"  >Loan Against Property</option>
+																									<option value="SLTOLBT"  >Loan Against Property Balance Transfer</option>
+																					</select>
+                                <a href="#;" class="plus slcIns">+</a>                                 <button class="BunDleSelectBtn"></button>
+                            </li>
+							                            <li> 
+								<a href="#;" class="minus">-</a>									<select id="Insurance">
+										<option value="">Select Insurance </option>
+																							<option value="GCPP"  >Loan Protection and Property Protection Plan</option>
+																									<option value="GPGP" selected='selected' >Personal Accident Plan</option>
+																									<option value="CCP"  >Comprehensive Care Plan</option>
+																									<option value="GCPP"  >Loan Protection Plan</option>
+																					</select>
+                                <a href="#;" class="plus slcIns">+</a> <a href="#;" class="infoImg"> <span></span></a>                                <button class="BunDleSelectBtn"></button>
+                            </li>
+							                            <li> 
+								<a href="#;" class="minus">-</a>									<select id="VAS">
+										<option value="">Select VAS </option>
+																							<option value="FFR" selected='selected' >Financial Fitness Report</option>
+																									<option value="PDR"  >Property Dossier</option>
+																					</select>
+                                <a href="#;" class="plus slcIns">+</a> <a href="#;" class="infoImg"> <span></span></a>                                <button class="BunDleSelectBtn"></button>
+                            </li>
+							                        </ul>
+                    </div>
+					<div class="calculate_savings">
+                        <a class="btn calculate_savings_btn calculate_savings_btn_disable" id="calculate_savings">Calculate Savings</a>
+                    </div> 
+                </div>
+                <div class="col-sm-6 col-md-6 BundleContent2">
+                    <div class="row">
+                        <div class="bundlerleftBox rateofIntrest ">
+                            <p>Save </p>
+                            <h1 id="saveRateofIntrest">0.8%</h1>
+                            <p> On rate of interest</p>
+                        </div>
+                        <div class="bundlerleftBox bundlerleftBox1">
+                            <p>Save </p>
+                            <h1 id="saveAmount">7440</h1>
+                            <p> INR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <a href="bundles" class="BundlStrtedLink ViewFull">
+                    <p>LEARN HOW TO SAVE</p>
+                    <span></span> </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Bundles Section -->
+
+<!-- Offers Section -->
+ <!-- Offers Section -->
+
+
+<!-- Been Here Before -->
+  <!-- Been Here Before -->
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    		$('[id^=PCAT]:first-child').addClass('active');
+    });
+</script>
+
+<!-- Direct to you -->
+  <section class="subscriptionBox">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 col-lg-offset-1">
+	   <form class="FRMVD">
+        <div class="col-lg-4  col-md-3 col-sm-5">
+          <div class="row"> 
+            <div class="subscriptionBoxLeft">
+              <p>Latest offers and
+                <br>product updates
+              </p>
+              <h2>Direct to you
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="emailMsize">
+			  <div class="region region-email-subscription">
+    <div id="block-webform-client-block-17" class="block block-webform">
+
+    
+  <div class="content">
+    <div id="webform-ajax-wrapper-17"><form class="webform-client-form webform-client-form-17" action="/sites/default/files/products/PL_white.svg" method="post" id="webform-client-form-17" accept-charset="UTF-8"><div><div  class="form-group col-lg-4  col-sm-4  col-md-5 form-item webform-component webform-component-email webform-component--email">
+  <label for="edit-submitted-email"> <span class="form-required" title="This field is required.">*</span></label>
+ <input required="required" class="email subscriptionEmail emailVD form-text form-email required" placeholder="email@example.com" type="email" id="edit-submitted-email" name="submitted[email]" size="60" />
+</div>
+<input type="hidden" name="details[sid]" />
+<input type="hidden" name="details[page_num]" value="1" />
+<input type="hidden" name="details[page_count]" value="1" />
+<input type="hidden" name="details[finished]" value="0" />
+<input type="hidden" name="form_build_id" value="form-kMt6_EpPgjC0Q0mJfsRwDSxs8yzmqhBDUelD0-txi6U" />
+<input type="hidden" name="form_id" value="webform_client_form_17" />
+<input type="hidden" name="webform_ajax_wrapper_id" value="webform-ajax-wrapper-17" />
+<div class="form-actions"><input class="webform-submit button-primary form-submit" type="submit" id="edit-webform-ajax-submit-17" name="op" value="HEAR FROM US" /></div></div></form></div>  </div>
+</div>
+  </div>
+        </div>
+		</form>
+      </div>
+    </div>
+  </div>
+</section> 
+ <!-- Direct to you -->
+
+<footer class="footerBg">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 col-md-3 col-xs-6">
+				<div class="row">
+					<div class="socBtnAlign">
+						<p class="footerHeading">Get the App.</p>
+						<ul class="footerSocialIcon">
+                             <li><a href="#"><img src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/images/Assets/apple_app.svg" /></a></li>
+                             <li><a href="#"><img src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/images/Assets/android.svg" /></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4 col-md-3 col-xs-6">
+				<div class="row">
+					<p class="footerHeading ">Get social.</p>
+					<ul class="footerSocialIcon">
+                            <li><a href="https://www.facebook.com/bajajfinserv" target="_blank"><img src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/images/Assets/facebook.svg" /></a></li>
+                            <li><a href="https://twitter.com/bajaj_finserv?lang=en" target="_blank"><img src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/images/Assets/twitter.svg" /></a></li>
+                            <li><a href="https://in.linkedin.com/company/bajaj-finserv-lending" target="_blank"><img src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/images/Assets/linkedin.svg" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-2 col-md-2 col-xs-12">
+				<div class="row">
+					<h4 class="footerHeadingLink">LOANS</h4>
+					<ul class="footerPageLink  LonetypeFooterLink">
+											</ul>
+				</div>
+			</div>
+			<div class="col-sm-2 col-md-2 col-xs-4 InvestFooterLink">
+				<h4 class="footerHeadingLink ">INVESTMENT</h4>
+				<ul class="footerPageLink ">
+									</ul>
+				<!-- <h4 class="footerHeadingLink ">INSURANCE</h4>
+				<ul class="footerPageLink ">
+									</ul> -->
+			</div>
+			<div class="col-sm-2 col-md-1 col-xs-4">
+				<div class="row">
+					<h4 class="footerHeadingLink">CARDS</h4>
+					<ul class="footerPageLink ">
+											</ul>
+				</div>
+			</div>
+			<div class="col-sm-2 col-md-2 col-xs-4">
+				<div class="row footerLinkPadding">
+					<h4 class="footerHeadingLink">DIRECT</h4>
+					<ul class="footerPageLink ">
+											</ul>
+				</div>
+			</div>
+			<div class="col-sm-2 col-md-3 col-xs-6 ToolsFooter">
+				<div class="row">
+					<h4 class="footerHeadingLink">TOOLS</h4>
+					<ul class="footerPageLink ">
+											</ul>
+				</div>
+			</div>
+			<div class="col-sm-2 col-md-2 col-xs-6">
+				<div class="row">
+					<h4 class="footerHeadingLink">OTHERS</h4>
+					<ul class="footerPageLink ">
+											</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<span class="global-search-form-region">
+  <div class="region region-global-search">
+    <div id="block-views-exp-search-page-page" class="block block-views">
+
+    
+  <div class="content">
+    <form action="/?q=search-page" method="get" id="views-exposed-form-search-page-page" accept-charset="UTF-8"><div>  <input type="hidden" name="q" value="search-page" />
+<div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-keys-wrapper" class="views-exposed-widget views-widget-filter-keys">
+                        <div class="views-widget">
+          <div class="form-item form-type-textfield form-item-keys">
+ <input title="Enter the terms you wish to search for." type="text" id="edit-keys" name="keys" value="" size="15" maxlength="128" class="form-text" />
+</div>
+        </div>
+              </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input type="submit" id="edit-submit-search-page" name="" value="SEARCH" class="form-submit" />    </div>
+      </div>
+</div>
+</div></form>  </div>
+</div>
+  </div>
+</span>
+
+<!-- Hamburgar Modal Content-->
+  <div id="HamburgarModel" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"> </h4>
+            </div>
+			  <div class="region region-hamburgar">
+    <div id="block-block-1" class="block block-block">
+
+    
+  <div class="content">
+    <div class="modal-body">
+	<h3 class="modelContentParagraph">
+		<span>Learn</span>
+		<a class="ViewFull" href="about-us">
+			<p>about us,</p><span></span></a><span> see our </span>
+		<a class="ViewFull" href="allproducts">
+			<p>products,</p><span></span></a><span> find the best </span>
+		<a class="ViewFull" href="bundles">
+			<p>bundles,</p><span></span></a><span> and save </span><span>&nbsp;big with our</span>
+		<a class="ViewFull" href="#">
+			<p>offers.</p><span></span></a><span></span>
+		<a class="ViewFull" target="_blank" href="https://bajajfinserv-direct.in/cust/#/?utm_refCode&utm_source=BFSDWebsite_Portal&utm_medium=DIRECT_portal&utm_campaign&utm_term&utm_content/">
+			<p>Login</p><span></span></a><span>to find a new way</span> <span>of financing with Direct.</span>
+	</h3>
+	<div class="HambuergerLinkMain">
+		<ul class="HambuergerLink">
+			<!-- <li><a class="SpcfcBlankHover" href="blogtestimonials">Blog</a></li> -->
+			<li><a class="SpcfcBlankHover" href="tools">Tools</a></li>
+			<li><a class="SpcfcBlankHover" href="contact-us">Contact us</a></li>
+			<li><a class="SpcfcBlankHover" href="faq">Faq</a></li>
+		</ul>
+	</div>
+</div>  </div>
+</div>
+  </div>
+        </div>
+    </div>
+</div>
+ <!-- Hamburgar Modal Content-->
+
+<div id="GetStartedModel" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"> </h4>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="subProducttabBg pop_bg">
+
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="choose_pro">Choose a product to begin</h2>
+                                    <ul class="nav nav-tabs  subProducttab article_subProducttab pop_bg pop_text">
+																				<li class="active">                                            <a data-toggle="tab" href="#PCAT1"><p>LOAN</p></a>
+                                        </li>
+																				<li>                                            <a data-toggle="tab" href="#PCAT3"><p>CARDS</p></a>
+                                        </li>
+																				<li>                                            <a data-toggle="tab" href="#PCAT4"><p>INVEST</p></a>
+                                        </li>
+																				<li>                                            <a data-toggle="tab" href="#PCAT"><p></p></a>
+                                        </li>
+										                                    </ul>
+                                </div>
+                            </div>
+                            <div class="popicon_bg">
+                                <div class="tab-content">
+																		<div id="PCAT1" class="tab-pane fade in">
+										<div class="container">
+										<ul class="GetloanTypeUL" id="Cards">
+																					<li><a href="product-personal-loan"><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/PL_black.svg" /></span> <div class="ViewFull"><p>Personal <br>Loan</p><span class="LoneTpLine"></span></div></a></li>
+																					<li><a href="product-line-of-credit"><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/LOC_black.svg" /></span> <div class="ViewFull"><p>Line of <br>Credit</p><span class="LoneTpLine"></span></div></a></li>
+																					<li><a href="product-home-loan"><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/HL_black.svg" /></span> <div class="ViewFull"><p>Home <br>Loan</p><span class="LoneTpLine"></span></div></a></li>
+																					<li><a href="product-hl-balance-transfer"><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/BT_black.svg" /></span> <div class="ViewFull"><p>Home Loan <br>Balance <br>Transfer</p><span class="LoneTpLine"></span></div></a></li>
+																					<li><a href="product-loan-against-property"><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/LOC_black.svg" /></span> <div class="ViewFull"><p>Loan Against <br>Property</p><span class="LoneTpLine"></span></div></a></li>
+																					<li><a href="product-lap-property-balance-transfer"><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/BT_black.svg" /></span> <div class="ViewFull"><p>Loan Against <br>Property Balance <br>Transfer</p><span class="LoneTpLine"></span></div></a></li>
+																				</ul>
+										</div>
+										</div>
+																			<div id="PCAT3" class="tab-pane fade in">
+										<div class="container">
+										<ul class="GetloanTypeUL" id="Cards">
+																					<li><a href=""><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/PL_black.svg" /></span> <div class="ViewFull"><p>Coming soon...</p><span class="LoneTpLine"></span></div></a></li>
+																				</ul>
+										</div>
+										</div>
+																			<div id="PCAT4" class="tab-pane fade in">
+										<div class="container">
+										<ul class="GetloanTypeUL" id="Cards">
+																					<li><a href=""><span><img src="https://bajajfinserv-direct.in/sites/default/files/products/PL_black.svg" /></span> <div class="ViewFull"><p>Coming soon...</p><span class="LoneTpLine"></span></div></a></li>
+																				</ul>
+										</div>
+										</div>
+																	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bundles Download Brochure Popup -->
+	<div id="SHOL" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="infoModBody">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="infoModL">
+						<h3>Home Loan</h3>
+						<p></p>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	<div id="SOL" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="infoModBody">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="infoModL">
+						<h3>Personal Loan</h3>
+						<p></p>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	<div id="GCPP" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="infoModBody">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="infoModL">
+						<h3>Loan Protection and Property Protection Plan</h3>
+						<p></p>
+					</div>
+										<div class="infoModR">
+						<a class="downLoadBro ViewFull" href="sites/default/files/brochure/BROCHURE GCPP -Loan Protection Plan.PDF" target="_blank"><p>DOWNLOAD BROCHURE</p><span></span></a>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	<div id="GPGP" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="infoModBody">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="infoModL">
+						<h3>Personal Accident Plan</h3>
+						<p></p>
+					</div>
+										<div class="infoModR">
+						<a class="downLoadBro ViewFull" href="sites/default/files/brochure/GPGP_brochure - Personal Accident Plan.pdf" target="_blank"><p>DOWNLOAD BROCHURE</p><span></span></a>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	<div id="CCP" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="infoModBody">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="infoModL">
+						<h3>Comprehensive Care Plan</h3>
+						<p></p>
+					</div>
+										<div class="infoModR">
+						<a class="downLoadBro ViewFull" href="sites/default/files/brochure/CCP _Brochure - Comprehensive Care Plan.pdf" target="_blank"><p>DOWNLOAD BROCHURE</p><span></span></a>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	<div id="GCPP" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="infoModBody">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="infoModL">
+						<h3>Loan Protection Plan</h3>
+						<p></p>
+					</div>
+										<div class="infoModR">
+						<a class="downLoadBro ViewFull" href="sites/default/files/brochure/BROCHURE GCPP -Loan Protection Plan.PDF" target="_blank"><p>DOWNLOAD BROCHURE</p><span></span></a>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	<div id="SHOLBT" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="infoModBody">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="infoModL">
+						<h3>Home Loan Balance Transfer</h3>
+						<p></p>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	<div id="SLTOL" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="infoModBody">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="infoModL">
+						<h3>Loan Against Property</h3>
+						<p></p>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	<div id="SLTOLBT" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="infoModBody">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="infoModL">
+						<h3>Loan Against Property Balance Transfer</h3>
+						<p></p>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	<div id="FFR" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="infoModBody">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="infoModL">
+						<h3>Financial Fitness Report</h3>
+						<p></p>
+					</div>
+										<div class="infoModR">
+						<a class="downLoadBro ViewFull" href="sites/default/files/brochure/BFSDirect_FFR_AllPages.pdf" target="_blank"><p>DOWNLOAD BROCHURE</p><span></span></a>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+	<div id="PDR" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="infoModBody">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="infoModL">
+						<h3>Property Dossier</h3>
+						<p></p>
+					</div>
+										<div class="infoModR">
+						<a class="downLoadBro ViewFull" href="sites/default/files/brochure/Property Dossier.pdf" target="_blank"><p>DOWNLOAD BROCHURE</p><span></span></a>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+<!-- Bundles Download Brochure Popup -->
+
+<!-- Bundle Page Calculations -->
+<script type="text/javascript">
+$(document).ready(function() {
+    $("body").ready(function() {
+        getSaveRoi();
+    });
+    /// To get data on change of Bundle to get Save ROI
+    var getSaveRoi = function() {
+        let request = {
+            loanAmountenterByCustomer: $("#loanAmtInput").val().replace(/\,/g, '') || '',
+            product: $("#Loan option:selected").val(),
+            insuranceCode: $("#Insurance option:selected") && $("#Insurance option:selected").val() || '',
+            vasCode: $("#VAS option:selected") && $("#VAS option:selected").val() || ''
+        };
+        console.log('request--->', request);
+        // request = {
+        //   "loanAmountenterByCustomer": 80000,
+        //   "product": "SLTOL",
+        //   "insuranceCode": "GCPP",
+        //   "vasCode": "FFR"
+        // };
+        httpInterceptor.Post(
+			"https://apis.qa.bfsgodirect.com/v1/bundles/savings",
+            request,
+            null,
+            function(data) {
+                let productInfo = data.payload.productBundleOutput
+                $('#saveRateofIntrest').text(productInfo.saveRoi+'%');
+                $('#saveAmount').text(productInfo.saveAmount);
+                console.debug(data);
+            },
+            function(error) {
+                console.debug(error);
+            });
+    };
+
+	$("#calculate_savings").click(".BundlSelectOpt span, .BundlerRightBox li .minus, .BundlerRightBox li .plus", function(
+        e) {
+        getSaveRoi();
+    });
+
+});
+</script>
+<!-- Bundle Page Calculations -->
+<script type="text/javascript">
+    $('.emailMsize .form-submit').parent().addClass('subscriptionSubmit ViewFull').append('<span> </span>');
+
+    (function() {
+
+        $("body").on("click", ".SerachToggleBox a", function(e) {
+            var cachedData = $('#views-exposed-form-search-page-page').closest('.content').html(); //'<div class="SearchToggle"><input placeholder="Search" type="text" /><a href="#Search;">SEARCH</a></div>';
+            e.stopPropagation();
+            $('.searchOpen').hide();
+            if ($(this).hasClass('SpcfcBlankHover') || $(this).hasClass('SpcfcBlankHoverWht')) {
+                $(".SerachToggleBox").html('<div class="SearchToggle">' + cachedData + '</div>');
+                $('.SearchToggle').addClass('animated flipInX');
+            }
+        });
+
+        $("body").on("click", ".SerachToggleBox", function(e) {
+            e.stopImmediatePropagation()
+        });
+
+        $(document).click(function(event) {
+            //  var $target = $(event.target);
+            if ($(event.target).closest('.SerachToggleBox').length) {
+                return false;
+            }
+            $(".ShareIcon").html('<img class="insideshareicon" src="https://bajajfinserv-direct.in/sites/all/themes/bajajfinserv/images/Assets/share_icon_black.svg">');
+            $('.SearchToggle').addClass('animated flipOutX');
+            setTimeout(function() {
+                if ($('.OUTsideDownArrowLink').hasClass('WhiteFontHeader')) {
+                    if ($('.OUTsideDownArrowLink').hasClass('transparentBG')) {
+                        $(".SerachToggleBox").html('<a href="#Search" class="SpcfcBlankHover">SEARCH</a>');
+                    } else {
+                        $(".SerachToggleBox").html('<a href="#Search" class="SpcfcBlankHoverWht">SEARCH</a>');
+                    }
+                } else {
+                    $(".SerachToggleBox").html('<a href="#Search" class="SpcfcBlankHover">SEARCH</a>');
+                }
+                $('.searchOpen').show();
+            }, 500);
+        });
+
+    })()
+</script></body>
+</html>
