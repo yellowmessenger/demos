@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- saved from url=(0179)https://apollomunichinsurance.nvpush.com/brand/t1/permissionBox?bid=3212&bid_e=D576330A6237224A1A6F078CF0096FFB&t=420&pageUrl=http://www.apollomunichinsurance.com/&redirect=prompt -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <meta name="google" content="notranslate">
+    
+    <title></title>
+    
+    <!--<link rel="manifest" href="/manifest-test.json">-->
+    <link rel="manifest" href="https://apollomunichinsurance.nvpush.com/manifest.json">
+ 
+    <style>
+    #pushnotify .bgstyle {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1501;
+        background: rgba(0,0,0,.8);
+        opacity: 2;
+        filter: alpha(opacity=2);
+    }
+    #userinfoimg {
+        position: fixed;
+        left: 318px;
+        z-index: 9999;
+        top: 133px;
+    }
+    #userinfoimgmob {
+        position: fixed;
+        left: 318px;
+        z-index: 9999;
+        bottom: 160px;
+    }
+    #pushnotify {
+        position: relative;
+        z-index: 8888;
+   }
+    </style>
+<script src="./jquery.min(1).js"></script></head>
+
+<body style="">
+                
+        <div id="pushnotify" class="noshow" style="display: block;">
+            <div class="bgstyle"></div>
+            <div id="nvpush_popup_background_loader" style="display:none;position: absolute; z-index: 2000; margin-left: 46%;margin-top: -10%;">
+                <svg width="42px" height="42px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-ring"><rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect><circle cx="50" cy="50" r="40" stroke-dasharray="163.36281798666926 87.9645943005142" stroke="#ffffff" fill="none" stroke-width="20" transform="rotate(224.596 50 50)"><animatetransform attributeName="transform" type="rotate" values="0 50 50;180 50 50;360 50 50;" keyTimes="0;0.5;1" dur="0.5s" repeatCount="indefinite" begin="0s"></animatetransform></circle></svg>
+                <span style=" position: absolute; left: -20px; font-size: 15px; margin-top: 13px; letter-spacing: 1px; color: #fff; ">subscribing...</span>
+            </div>
+            <div id="pushnotify_message_image">
+                <img id="userinfoimg" src="./web.png" height="60" width="211" alt="Please Click on allow" style="left: 133px;display:block;">
+                <img id="userinfoimgmob" src="./mobile.png" height="60" width="211" alt="Please Click on allow" style="left: 133px; display: none;">
+            </div>
+        </div> 
+        
+        <script async="" src="./notify-visitors-push-1.0.js"></script><script>
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+           document.getElementById('userinfoimg').style.display = "none";
+        } else {
+           document.getElementById('userinfoimgmob').style.display = "none";
+        }    
+        var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+        if(isSafari == true){
+           document.getElementById('userinfoimg').style.left = "50%";
+           document.getElementById('userinfoimg').style.top = "25%";
+        }
+        </script>
+        
+        <script>	
+        var notify_visitors_push = window.notify_visitors_push || {}; (function() { 
+                notify_visitors_push.auth = { bid_e : 'D576330A6237224A1A6F078CF0096FFB', bid : '3212', t : '420',
+                                                pageUrl : 'http://www.apollomunichinsurance.com/', 
+                                                userID : ''
+                                            };
+        var script = document.createElement('script');script.async = true;
+        script.src = (document.location.protocol == 'https:' ? "//d1m8owsrhatsmg.cloudfront.net" : "//cdnp.notifyvisitors.com") + '/js/notify-visitors-push-1.0.js';
+       // script.src = (document.location.protocol == 'https:' ? "//devpush.notifyvisitors.com" : "//devpush.notifyvisitors.com") + '/js/unminified/notify-visitors-push-1.0.js';
+        var entry = document.getElementsByTagName('script')[0];entry.parentNode.insertBefore(script, entry); })();
+        </script>
+        
+        
+        
+
+
+</body></html>
