@@ -1,0 +1,45 @@
+.redtext
+{
+    color: Red;
+    font-weight: bold;
+}
+
+
+.error-box1
+{
+	border: 1px solid #d35755;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #f21a1a;
+	background: #feebeb url(http://www.jubl.com/assets/error.gif) no-repeat 10px;
+	margin: 10px 0;
+	padding: 10px 33px;
+}
+.error-box
+{
+	border: 1px solid #d35755;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #f21a1a;
+	background: #feebeb;
+	margin: 10px 0;
+	padding: 10px 33px;
+}
+.notic-box
+{
+	border: 1px solid #FFD324;
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #514721;
+	background: #FFF6BF;
+	margin: 0px 0 10px 0;
+	display: block;
+	padding: 10px 13px;
+	list-style: none;
+}
+.error-box ul li
+{
+	background: url(http://www.jubl.com/images/bult3.gif) 0px 4px no-repeat;
+}
+.notice-box ul li
+{
+	background: url(http://www.jubl.com/images/bult3.gif) 0px 4px no-repeat;
+	
+}

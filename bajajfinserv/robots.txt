@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /finance/mailer/
+
+Disallow: /finance/modules/
+
+Disallow: /finance/Modules/

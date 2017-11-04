@@ -1,0 +1,567 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta name="google-site-verification" content="dBJ_-sLn3YmjiLlZ5gl8530wVAeZj43CxAihOGZGKDQ" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	Jubilant Life Sciences
+</title><link rel="shortcut icon" href="images/favicon.ico" /><link rel="stylesheet" type="text/css" href="css/stylesheet.css" /><link rel="stylesheet" type="text/css" href="css/dynamic.css" /><link rel="stylesheet" href="css/default.css" type="text/css" media="screen" /><link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" /><link rel="stylesheet" href="css/uniform.default.css" type="text/css" media="screen" /><link href="http://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet" type="text/css" /><link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	
+	<script>if (window.top !== window.self) window.top.location.replace(window.self.location.href);</script>
+
+    <script type="text/javascript" src="js/jquery-bgstretcher-3.1.0.min.js"></script>
+
+    <script type="text/javascript" src="js/jquery.uniform.js"></script>
+
+    <script type="text/javascript" src="http://www.jubl.com/js/tabs.js"></script>
+
+    <script type="text/javascript">
+    $(window).load(function() {
+ 	//Using For Form Style	
+	$("input, select").uniform();
+
+    //Default Action
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+
+});
+    </script>
+
+
+
+<script type="text/javascript">
+jQuery(function($){
+$("body").bgStretcher({
+images: ["images/junn.jpg", "images/banner01.jpg", "images/banner02.jpg", "images/banner03.jpg"],
+h2: ["Responsible Care®", "Innovation", "<span style='color:#000;'>Partnerships</span>", "<span style='color:#000;'>Sustainability</span>"],
+h3: [<!--"<div style='width:304px; '><img src=images/chem.jpg width='304' height='169'></div>",-->
+
+
+<!--"<div style='width:450px; line-height:18px;'>31 May - 1 June 2017<br> <span>Munich Trade Fair Centre, Munich, Germany </span><br><span>Hall A 6 , Stall D 120</span> <br> <a href='Chemspec_Europe_2017.ics'><img src='images/button.png' style='width:162px!important;'></a></span></div>",-->
+
+<!--"<div style='width:430px;color:#000!important; line-height:25px'>31 May -1 June 2017<br> Munich Trade Fair Centre, Munich, Germany<br>Hall A 6 , Stall D 120<br>Time-9AM to 5 PM</div>", -->
+
+"<div style='width:360px;color:#FFF!important;'>Life Science Ingredients business of Jubilant Life Sciences now Responsible Care® 14001:2013 certified...</div>", 
+
+"<div style='width:360px;color:#FFF!important;'>Fostering a culture of <span>innovation</span> through collaboration for developing enhanced solutions...</div>", 
+
+"<div style='width:360px; color:#000!important;'>Innovating, <span>collaborating</span> and accelerating for our partners and more...</div>", 
+
+"<div style='width:360px; color:#000!important'>Integrated <span>approach</span> towards Social and Economic progress through reduced Environment footprint...</div>",
+
+
+
+],
+imageWidth: 1600,
+imageHeight: 1200,
+buttonNext: ".next",
+buttonPrev: ".prev",
+pagination: ".pagination"
+});
+
+// Product listing Table2 Display
+// Product listing Table2 Display
+$('.bgstretcher ul li:first').addClass ('first');
+$('.bgstretcher ul li:nth-child(3)').addClass ('third');
+$('.bgstretcher ul li:nth-child(4)').addClass ('fourth');
+$('.bgstretcher ul li:nth-child(5)').addClass ('fivth');
+$('.bgstretcher ul li:last').addClass ('last');
+
+
+
+});
+    </script>
+    
+
+    <script type="text/javascript">
+function showOverlay() {
+var o = document.getElementById('overlay');
+o.style.visibility = 'visible';
+}
+function hideOverlay() {
+var o = document.getElementById('overlay');
+o.style.visibility = 'hidden';
+}
+function setVisibility(id, visibility) {
+document.getElementById(id).style.display = visibility;
+}
+    </script>
+
+    <!--banner slider end-->
+</head>
+<body>
+   
+    <form method="post" action="index.html" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTQzNDQwMjAxD2QWAgIED2QWAgIFD2QWFAIBDw8WAh4EVGV4dAUCMTFkZAIDDxYCHgtfIUl0ZW1Db3VudAIGFgxmD2QWBgIBDw8WAh4LTmF2aWdhdGVVcmwFMX4vcHJvZHVjdC1jYXRlZ29yeS5hc3B4P21wZ2lkPTEyNiZwZ2lkPTEyNiZwaWQ9MTFkFgJmDxUBFUFkdmFuY2UgSW50ZXJtZWRpYXRlc2QCAw8PFgIfAAUBMGRkAgUPDxYCHwAFAjExZGQCAQ9kFgYCAQ8PFgIfAgUwfi9wcm9kdWN0LWNhdGVnb3J5LmFzcHg/bXBnaWQ9MTI2JnBnaWQ9MTI2JnBpZD0xZBYCZg8VARBGaW5lIEluZ3JlZGllbnRzZAIDDw8WAh8ABQEwZGQCBQ8PFgIfAAUBMWRkAgIPZBYGAgEPDxYCHwIFMX4vcHJvZHVjdC1jYXRlZ29yeS5hc3B4P21wZ2lkPTEyNiZwZ2lkPTEyNiZwaWQ9MTJkFgJmDxUBGENyb3AgU2NpZW5jZSBJbmdyZWRpZW50c2QCAw8PFgIfAAUBMGRkAgUPDxYCHwAFAjEyZGQCAw9kFgYCAQ8PFgIfAgUxfi9wcm9kdWN0LWNhdGVnb3J5LmFzcHg/bXBnaWQ9MTI2JnBnaWQ9MTI2JnBpZD0xM2QWAmYPFQEUTnV0cml0aW9uYWwgUHJvZHVjdHNkAgMPDxYCHwAFATBkZAIFDw8WAh8ABQIxM2RkAgQPZBYGAgEPDxYCHwIFMX4vcHJvZHVjdC1jYXRlZ29yeS5hc3B4P21wZ2lkPTEyNiZwZ2lkPTEyNiZwaWQ9MTRkFgJmDxUBF0xpZmUgU2NpZW5jZXMgQ2hlbWljYWxzZAIDDw8WAh8ABQEwZGQCBQ8PFgIfAAUCMTRkZAIFD2QWBgIBDw8WAh8CBTB+L3Byb2R1Y3QtY2F0ZWdvcnkuYXNweD9tcGdpZD0xMjYmcGdpZD0xMjYmcGlkPTRkFgJmDxUBD1NwZWNpYWx0eSBHYXNlc2QCAw8PFgIfAAUBMGRkAgUPDxYCHwAFATRkZAIFDxYCHwAFhQINCjxwPlN1c3RhaW5hYmlsaXR5IGlzIGF0IHRoZSBjb3JlIG9mIG91ciBidXNpbmVzcy4gV2UgdW5kZXJzdGFuZCB0aGF0IGxvbmcgdGVybSBzdXN0YWluYWJpbGl0eSBjYW4gYmUgYWNoaWV2ZWQgYnkgcmVkdWNpbmcgZW52aXJvbm1lbnRhbCBmb290cHJpbnQgYW5kIGluY3JlYXNpbmcuLi4NCjxhIGhyZWY9ImNwYWdlLmFzcHg/bXBnaWQ9MTkmYW1wO3BnaWQ9MjAiPjxpbWcgYWx0PSIiIHNyYz0iL2ltYWdlcy9hcnJvdy1ncmVlbi5qcGciPjwvYT48L3A+DQpkAgcPFgIfAAWVAg0KPHA+VGhlIHByb21pc2Ugb2YgQ2FyaW5nLCBTaGFyaW5nLCBHcm93aW5nIGlzIGFuIGludGVncmFsIHBhcnQgb2YgYWxsIHRoYXQgd2UgZG8gYXQgSnViaWxhbnQuIFRoZXJlIGFyZSBzZXZlcmFsIGluaXRpYXRpdmVzIHRha2VuIGZvciBiZXR0ZXJtZW50IG9mIHNvY2lldHkgYXMgd2VsbCBhcyBvdXIgZW1wbG95ZWVzLjxhIGhyZWY9ImNwYWdlLmFzcHg/bXBnaWQ9MTkmYW1wO3BnaWQ9MjEiPjxpbWcgYWx0PSIiIHNyYz0iL2ltYWdlcy9hcnJvdy1ncmVlbi5qcGciPjwvYT48L3A+DQpkAgkPFgIfAAWZAg0KPHA+QXQgSnViaWxhbnQgTGlmZSBTY2llbmNlcywgZW52aXJvbm1lbnQgbWFuYWdlbWVudCBoYXMgZ29uZSB0aHJvdWdoIHZhcmlvdXMgaXRlcmF0aW9ucyBmcm9tIGluaXRpYWxseSBiZWluZyBhIG1lcmUgcmVzcG9uc2liaWxpdHkgaXNzdWUgdG8gZXZlbnR1YWxseSB0cmFuc2Zvcm1pbmcgaW50byBhIGNvbXBldGVuY3kuDQo8YSBocmVmPSJjcGFnZS5hc3B4P21wZ2lkPTE5JmFtcDtwZ2lkPTIyIj48aW1nIGFsdD0iIiBzcmM9Ii9pbWFnZXMvYXJyb3ctZ3JlZW4uanBnIj48L2E+PC9wPg0KZAILDxYCHwAF/AENCjxwPk91ciBwZW9wbGUgYXJlIG91ciBhc3NldHMgYW5kIHRoZWlyIHdlbGZhcmUgaXMgb3VyIHJlc3BvbnNpYmlsaXR5LiBUaGUgcHJvbWlzZSBvZiBDYXJpbmcsIFNoYXJpbmcsIEdyb3dpbmcgaXMgYW4gaW50ZWdyYWwgcGFydCBvZiBKdWJpbGFudCBMaWZlIFNjaWVuY2VzLjxhIGhyZWY9ImNwYWdlLmFzcHg/bXBnaWQ9MTkmYW1wO3BnaWQ9MjMiPjxpbWcgYWx0PSIiIHNyYz0iL2ltYWdlcy9hcnJvdy1ncmVlbi5qcGciPjwvYT48L3A+DQpkAg0PFgIfAAXaAQ0KPHA+V2VsY29tZSB0byBKdWJpbGFudCBMaWZlIFNjaWVuY2VzLCAmbmJzcDthbiBpbnRlZ3JhdGVkIGdsb2JhbCAmbmJzcDtwaGFybWFjZXV0aWNhbCAmbmJzcDthbmQgJm5ic3A7bGlmZSBzY2llbmNlcyBjb21wYW55LjxhIGhyZWY9ImNwYWdlLmFzcHg/bXBnaWQ9MSZhbXA7cGdpZD0yIj48aW1nIGFsdD0iIiBzcmM9Ii9pbWFnZXMvYXJyb3ctZ3JlZW4uanBnIj48L2E+PC9wPg0KZAIPDxYCHwAF2gENCjxwPldpdGggdXRtb3N0IGNhcmUgZm9yIHRoZSBlbnZpcm9ubWVudCBhbmQgc29jaWV0eSwgd2UgY29udGludWUgJm5ic3A7dG8gJm5ic3A7ZW5oYW5jZSAmbmJzcDt2YWx1ZSAmbmJzcDtmb3Igb3VyIGN1c3RvbWVycy48YSBocmVmPSJjcGFnZS5hc3B4P21wZ2lkPTEmYW1wO3BnaWQ9MyI+PGltZyBhbHQ9IiIgc3JjPSIvaW1hZ2VzL2Fycm93LWdyZWVuLmpwZyI+PC9hPjwvcD4NCmQCEQ8WAh8ABcYBDQo8cD5KdWJpbGFudCBMaWZlIFNjaWVuY2VzIGhhcyBiZWVuIHRocm91Z2ggYSB3b25kZXJmdWwgam91cm5leSB3aXRoIGZydWl0ZnVsIGFuZCBsb25nLWxhc3RpbmcgYWxsaWFuY2VzLjxhIGhyZWY9ImNwYWdlLmFzcHg/bXBnaWQ9MSZhbXA7cGdpZD04Ij48aW1nIGFsdD0iIiBzcmM9Ii9pbWFnZXMvYXJyb3ctZ3JlZW4uanBnIj48L2E+PC9wPg0KZAITDxYCHwAFyAENCjxwPldpdGggYSBwb3NpdGl2ZSBzeW5lcmd5LCBKdWJpbGFudCBhbmQgaXRzIFN1YnNpZGlhcmllcyBjb250aW51ZSB0byBleGNlbCBpbiB0aGUgcGhhcm1hY2V1dGljYWwgZG9tYWluLjxhIGhyZWY9ImNwYWdlLmFzcHg/bXBnaWQ9MSZhbXA7cGdpZD0xMCI+PGltZyBhbHQ9IiIgc3JjPSIvaW1hZ2VzL2Fycm93LWdyZWVuLmpwZyI+PC9hPjwvcD4NCmRkipwOVkWgWRTLMGaPyU3QcsTYENg=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="90059987" />
+        <div class="caption">
+            <p class="pagination">
+            </p>
+        </div>
+      
+        <div class="header">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <a href="http://www.jubl.com/index.aspx">
+                        <img src="images/logo.png" width="125" height="89" alt="Jubilant Life Sciences" /></a></div>
+                <div class="top-panel-right">
+                    
+<script type="text/javascript" language="javascript">
+    function valid() {
+        if (document.getElementById('search2_txtsearch').value == '' || document.getElementById('search2_txtsearch').value == 'Search...') {
+            alert("Please enter search keywords.");
+            document.getElementById('search2_txtsearch').focus();
+            return false;
+        }
+    }
+</script>
+<div class="tp-searchbox">
+    <div id="search2_pnlsearch">
+	
+        <div class="searchboxHome">
+            <span class="inpt-lt"><span class="inpt-rt">
+                <input name="search2$txtsearch" type="text" id="search2_txtsearch" onclick="javaScript: if (this.value==&#39;Search...&#39;) {this.value=&#39;&#39;;}" onblur="javaScript: if (this.value==&#39;&#39;) {this.value=&#39;Search...&#39;;}" value="Search..." />
+            </span></span>
+        
+            
+            
+           
+             
+            
+        </div>
+        <a onclick="return valid();" id="search2_lnksearch" class="search-btn" href="javascript:__doPostBack(&#39;search2$lnksearch&#39;,&#39;&#39;)"></a>
+    
+</div>
+</div>
+
+                    
+<div class="topLinks">
+    <ul>
+        <li><a href="http://www.jubl.com/media/announcements">News Room</a></li>
+        <li><a href="http://www.jubl.com/careers/life-at-jubilant">Careers</a></li>
+        <li><a href="http://www.jubl.com/downloads/brochures">Downloads</a></li>
+        <li><a href="http://www.jubl.com/contact/addresses">Contact</a></li>
+        <li><a href="http://www.jubl.com/jubilant-world">Jubilant World</a></li>
+    </ul>
+</div>
+
+                    <!-- #BeginLibraryItem "/Library/navigation.lbi" -->
+                    
+<div class="navigation">
+    <div id="overlay">
+    </div>
+    <div class="nav">
+        <ul id="oe_menu">
+            <li onmouseover="javascript:showOverlay();" onmouseout="javascript:hideOverlay();">
+                
+                
+                
+                <a href="http://www.jubl.com/business-segments/life-science-ingredients">Business Segments</a>
+                <ul>
+                    <li>
+                        <h4>
+                            Over the last three decades, Jubilant Life Sciences has emerged as an integrated
+                            Pharmaceutical and Life Sciences Solution Provider offering products &amp; services
+                            to its customers across the globe.</h4>
+                        <div class="prod meg-menu1">
+                            <ol>
+                                <li>
+                                    <h3>
+                                        <a href="http://www.jubl.com/business-segments/life-science-ingredients" style="font-size: 18px!important;"
+                                            class="pharma">Life Science Ingredients</a>
+                                    </h3>
+                                    <p>
+                                        Industry leading portfolio of Advance Intermediates, Fine Ingredients, Crop Science
+                                        Ingredients, Nutritional Products and Life Science Chemicals <a href="http://www.jubl.com/business-segments/life-science-ingredients">
+                                            <img alt="" src="images/arrow-green.jpg"></a></p>
+                                    
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="http://www.jubl.com/business-segments/pharmaceuticals" style="font-size: 18px!important;" class="pharma">
+                                            Pharmaceuticals</a></h3>
+                                    <p>
+                                        Development, manufacture and supply of generics & specialty pharmaceuticals <a href="http://www.jubl.com/business-segments/pharmaceuticals">
+                                            <img alt="" src="images/arrow-green.jpg"></a></p>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="http://www.jubl.com/business-segments/india-branded-pharmaceuticals" style="font-size: 18px!important;"
+                                            class="pharma">India Branded Pharmaceuticals</a></h3>
+                                    <p>
+                                        Range of pharmaceutical offerings for the Indian Pharmaceuticals Market. <a href="http://www.jubl.com/business-segments/india-branded-pharmaceuticals">
+                                            <img alt="" src="images/arrow-green.jpg"></a></p>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="http://www.jubl.com/business-segments/drug-discovery-solutions" style="font-size: 18px!important;"
+                                            class="pharma">Drug Discovery Solutions</a></h3>
+                                    <p>
+                                        Drug Discovery solutions through a collaborative partnership model <a href="http://www.jubl.com/business-segments/drug-discovery-solutions">
+                                            <img alt="" src="images/arrow-green.jpg"></a></p>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="prod2">
+                            <ol>
+                                <li>
+                            </ol>
+                        </div>
+                        <div class="new_navi">
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li onmouseover="javascript:showOverlay();" onmouseout="javascript:hideOverlay();"><a
+                href="http://www.jubl.com/sustainability/overview">Sustainability</a>
+                <ul>
+                    <li>
+                        <h4>
+                            Sustainability is the investment for the future and it is at the core of our business.
+                            Jubilant Life Sciences believes that addressing the challenges of the future rests
+                            on the Triple bottom line of Sustainability.
+                        </h4>
+                        <div class="sustainability">
+                            <ol>
+                                <li>
+                                    <h3>
+                                        <a href="http://www.jubl.com/sustainability/overview">Overview</a></h3>
+                                    
+<p>Sustainability is at the core of our business. We understand that long term sustainability can be achieved by reducing environmental footprint and increasing...
+<a href="http://www.jubl.com/cpage.aspx?mpgid=19&amp;pgid=20"><img alt="" src="images/arrow-green.jpg"></a></p>
+
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="http://www.jubl.com/sustainability/corporate-social-responsibility">Corporate Social Responsibility</a></h3>
+                                    
+<p>The promise of Caring, Sharing, Growing is an integral part of all that we do at Jubilant. There are several initiatives taken for betterment of society as well as our employees.<a href="http://www.jubl.com/cpage.aspx?mpgid=19&amp;pgid=21"><img alt="" src="images/arrow-green.jpg"></a></p>
+
+                                </li>
+                                <li class="bor-bn">
+                                    <h3>
+                                        <a href="http://www.jubl.com/sustainability/environment">Environment</a></h3>
+                                    
+<p>At Jubilant Life Sciences, environment management has gone through various iterations from initially being a mere responsibility issue to eventually transforming into a competency.
+<a href="http://www.jubl.com/cpage.aspx?mpgid=19&amp;pgid=22"><img alt="" src="images/arrow-green.jpg"></a></p>
+
+                                </li>
+                                <li class="bor-bn">
+                                    <h3>
+                                        <a href="http://www.jubl.com/sustainability/safety-and-occupational-health">Safety and Occupational Health</a></h3>
+                                    
+<p>Our people are our assets and their welfare is our responsibility. The promise of Caring, Sharing, Growing is an integral part of Jubilant Life Sciences.<a href="http://www.jubl.com/cpage.aspx?mpgid=19&amp;pgid=23"><img alt="" src="images/arrow-green.jpg"></a></p>
+
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="sustain-nav2">
+                            <ol>
+                                <li><a href="http://www.jubl.com/sustainability/responsible-care">Responsible Care</a></li>
+                                <li><a href="http://www.jubl.com/sustainability/reach-compliance">REACH Compliance</a></li>
+                                <li><a href="http://www.jubl.com/sustainability/awards-and-recognition">Awards and Recognition</a></li>
+                                <li><a href="http://www.jubl.com/sustainability/stakeholder-engagement">Stakeholder Engagement</a></li>
+                                <li><a href="http://www.jubl.com/sustainability/policy/sustainability-policy">Policy</a></li>
+                                <li><a href="http://www.jubl.com/sustainability/sustainability-report">Sustainability Report</a></li>
+                                <li><a href="http://www.jubl.com/sustainability/biomedical-waste-information">Biomedical Waste Information</a></li>
+                                <li><a href="http://www.jubl.com/sustainability-contact">Sustainability Contact</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li onmouseover="javascript:showOverlay();" onmouseout="javascript:hideOverlay();"><a
+                href="http://www.jubl.com/investors/corporate-governance/philosophy">Investors</a>
+                <ul>
+                    <li>
+                        <h4>
+                            We, with utmost care for the environment, continue to enhance value for our customers
+                            and for our shareholders.</h4>
+                        <div class="investors">
+                            <ol>
+                                <li>
+                                    <h3>
+                                        Financials</h3>
+                                    <a href="http://www.jubl.com/investors/financials/financialstatements/profitandlossaccount">Financial Statements</a>
+                                    <a href="http://www.jubl.com/investors/financials/quarterlyresults">Quarterly Results</a> <a href="http://www.jubl.com/investors/financials/annualreports">
+                                        Annual Reports</a> <a href="http://www.jubl.com/investors/financials/subsidiariesaccounts">Subsidiaries
+                                            Accounts</a>
+                                    <!--  <a href="/investors/financials/earningscall">Earnings Call</a> <a href="/investors/financials/presentation">
+                                        Presentation</a>-->
+                                </li>
+                                <li>
+                                    <h3>
+                                        Stock Information</h3>
+                                    <a href="http://www.jubl.com/investors/stock-information/shareprice">Share Price</a> <a href="http://www.jubl.com/investors/stock-information/sharepricegraph">
+                                        Share Price Graph</a> <a href="http://www.jubl.com/investors/stock-information/historicalshareprice">Historical
+                                            Share Price</a> <a href="http://www.jubl.com/investors/stock-information/analystcoverage">Analyst Coverage</a>
+                                    <a href="http://www.jubl.com/investors/stock-information/listing">Listing</a> <a href="http://www.jubl.com/investors/stock-information/nsemarkettracker">
+                                        NSE Market Trackers</a> <a href="http://www.jubl.com/investors/stock-information/sub-division-of-shares">
+                                            Sub Division of Shares</a> <a href="http://www.jubl.com/investors/stock-information/equity-history">Equity
+                                                History</a></li>
+                                <li>
+                                    <h3>
+                                        Investor Information</h3>
+                                    <a href="http://www.jubl.com/investors/investor-information/share-holding-pattern">Share Holding Pattern</a>
+                                    <a href="http://www.jubl.com/investors/investor-information/share-transfer-information">Share Transfer
+                                        Information</a> <a href="http://www.jubl.com/investors/investor-information/distribution-pattern">Distribution
+                                            Pattern</a> <a href="http://www.jubl.com/investors/investor-information/dividend-payment">Dividend Payment</a>
+                                    <a href="http://www.jubl.com/investors/investor-information/chairman-agm-speech">Chairman's AGM Speech</a>
+                                    <a href="http://www.jubl.com/investors/investor-information/statutory-documents">Statutory Documents</a>
+                                    <a href="http://www.jubl.com/investors/investor-information/forms">Forms</a> <a href="http://www.jubl.com/investors/investor-information/faq">
+                                        FAQs</a> </li>
+                                <li>
+                                    <div class="blue-link">
+                                        <h3><a href="http://www.jubl.com/investors/corporate-governance/philosophy">Corporate Governance</a></h3>
+                                        <h3><a href="http://www.jubl.com/intimation-to-stock-exchanges">Intimation to Stock Exchanges</a></h3>
+                                        <h3><a href="http://jubl.com/cpage.aspx?mpgid=28&pgid=1050">Investor Meets</a></h3>
+                                        <h3><a href="http://www.jubl.com/investors/postal-ballot-november-2016">Postal Ballot–Nov 2016</a></h3>
+                                        <h3><a href="http://www.jubl.com/investors/unclaimed-dividend">Unclaimed Dividend & <rb />Shares</a></h3>
+                                         <h3><a href="http://www.jubl.com/investors/valuable-tips">Valuable Tips</a></h3>
+                                         <h3><a href="http://www.jubl.com/investors/investor-feedback-form">Investor Feedback Form</a></h3>
+                                         <h3><a href="http://www.jubl.com/investors/investor-contact">Investor Contact</a></h3>
+                                                                               </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li onmouseover="javascript:showOverlay();" onmouseout="javascript:hideOverlay();"><a
+                href="http://www.jubl.com/about-us/company-profile">About Us</a>
+                <ul>
+                    <li>
+                        <h4>
+                            Welcome to Jubilant Life Sciences - An integrated global pharmaceutical and life
+                            sciences company.</h4>
+                        <div class="nav-about">
+                            <ol>
+                                <li>
+                                    <h3>
+                                        <a href="http://www.jubl.com/about-us/company-profile">Company Profile</a></h3>
+                                    
+<p>Welcome to Jubilant Life Sciences, &nbsp;an integrated global &nbsp;pharmaceutical &nbsp;and &nbsp;life sciences company.<a href="http://www.jubl.com/cpage.aspx?mpgid=1&amp;pgid=2"><img alt="" src="images/arrow-green.jpg"></a></p>
+
+                                    
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="http://www.jubl.com/about-us/vision-values-promise">Vision Values &amp; Promise</a></h3>
+                                    
+<p>With utmost care for the environment and society, we continue &nbsp;to &nbsp;enhance &nbsp;value &nbsp;for our customers.<a href="http://www.jubl.com/cpage.aspx?mpgid=1&amp;pgid=3"><img alt="" src="images/arrow-green.jpg"></a></p>
+
+                                    
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="http://www.jubl.com/about-us/heritage">Heritage</a></h3>
+                                    
+<p>Jubilant Life Sciences has been through a wonderful journey with fruitful and long-lasting alliances.<a href="http://www.jubl.com/cpage.aspx?mpgid=1&amp;pgid=8"><img alt="" src="images/arrow-green.jpg"></a></p>
+
+                                    
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="http://www.jubl.com/about-us/subsidiaries">Subsidiaries</a></h3>
+                                    
+<p>With a positive synergy, Jubilant and its Subsidiaries continue to excel in the pharmaceutical domain.<a href="http://www.jubl.com/cpage.aspx?mpgid=1&amp;pgid=10"><img alt="" src="images/arrow-green.jpg"></a></p>
+
+                                    
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="nav-about2">
+                            <ol>
+                                <li><a href="http://www.jubl.com/about-us/board-of-directors">Management</a></li>
+                                <li><a href="http://www.jubl.com/about-us/heritage">Heritage</a></li>
+                                <li><a href="http://www.jubl.com/about-us/locations-worldwide">Locations Worldwide</a></li>
+                                <li><a href="http://www.jubl.com/about-us/awards">Awards</a></li>
+                                <li><a href="http://www.jubl.com/about-us/business-enablers/manufacturing">Business Enablers</a></li>
+                                <li><a href="http://www.jubl.com/about-us/jubilant-bhartia-group">Jubilant Bhartia Group</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+                    <!-- #EndLibraryItem -->
+                </div>
+            </div>
+        </div>
+        <div class="home-bottom-area">
+            <div class="wrapper">
+                <div id="tab-box">
+                    <ul class="tabs">
+                        <li class="bor-ln"><a href="index.html#tab1" class="active">Announcements</a></li>
+                        <li><a href="index.html#tab2">News &amp; Events</a></li>
+                        <li><a href="index.html#tab3">Downloads</a></li>
+                    </ul>
+                    <div class="tab_container">
+                        <div id="tab1" class="tab_content">
+                            
+                                    <div class="col1">
+                                        <h2>
+                                            21 Aug 17
+                                        </h2>
+                                        <p>
+                                            Jubilant receives NDA approval for Drax Exametazime
+                                            <a href="http://www.jubl.com/media_press.aspx?mpgid=73&amp;pgid=74" class="pad-tn">
+                                                <img src="images/arrow-green.png" alt="" class="pad-tn" /></a>
+                                        </p>
+                                    </div>
+                                
+                                    <div class="col1">
+                                        <h2>
+                                            18 Jul 17
+                                        </h2>
+                                        <p>
+                                            Jubilant Reports Q1 FY2018 Revenue of Rs. 1,596 Crore, UP 10% YOY Phar...
+                                            <a href="http://www.jubl.com/media_press.aspx?mpgid=73&amp;pgid=74" class="pad-tn">
+                                                <img src="images/arrow-green.png" alt="" class="pad-tn" /></a>
+                                        </p>
+                                    </div>
+                                
+                                    <div class="col1">
+                                        <h2>
+                                            21 Jun 17
+                                        </h2>
+                                        <p>
+                                            Jubilant Life Sciences and Barentz International Enter into a Strategi...
+                                            <a href="http://www.jubl.com/media_press.aspx?mpgid=73&amp;pgid=74" class="pad-tn">
+                                                <img src="images/arrow-green.png" alt="" class="pad-tn" /></a>
+                                        </p>
+                                    </div>
+                                
+                        </div>
+                        <div id="tab2" class="tab_content">
+                            
+                                    <div class="col1">
+                                        <h2>
+                                            28 Nov 17
+                                        </h2>
+                                        <p>
+                                            Food Ingredients Europe
+                                            <a href="http://www.jubl.com/media-event-listing.aspx?mpgid=73&amp;pgid=83" class="pad-tn">
+                                                <img src="images/arrow-green.png" alt="" class="pad-tn" />
+                                            </a>
+                                        </p>
+                                    </div>
+                                
+                                    <div class="col1">
+                                        <h2>
+                                            22 Nov 17
+                                        </h2>
+                                        <p>
+                                            Poultry India
+                                            <a href="http://www.jubl.com/media-event-listing.aspx?mpgid=73&amp;pgid=83" class="pad-tn">
+                                                <img src="images/arrow-green.png" alt="" class="pad-tn" />
+                                            </a>
+                                        </p>
+                                    </div>
+                                
+                                    <div class="col1">
+                                        <h2>
+                                            09 Nov 17
+                                        </h2>
+                                        <p>
+                                            Food Ingredients India
+                                            <a href="http://www.jubl.com/media-event-listing.aspx?mpgid=73&amp;pgid=83" class="pad-tn">
+                                                <img src="images/arrow-green.png" alt="" class="pad-tn" />
+                                            </a>
+                                        </p>
+                                    </div>
+                                
+                        </div>
+                        <div id="tab3" class="tab_content">
+                            <div class="home-download">
+                                <ul>
+                                    
+                                            <li>
+                                                <a id="repdnld_hlkpageurl_0" href="http://www.jubl.com/downloads.aspx?mpgid=92&amp;pgid=93&amp;dcatid=1">Brochures</a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a id="repdnld_hlkpageurl_1" href="http://www.jubl.com/downloads.aspx?mpgid=92&amp;pgid=93&amp;dcatid=2">Corporate Presentation</a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a id="repdnld_hlkpageurl_2" href="http://www.jubl.com/downloads.aspx?mpgid=92&amp;pgid=93&amp;dcatid=3">Annual Report</a>
+                                                
+                                            </li>
+                                        
+                                            <li>
+                                                <a id="repdnld_hlkpageurl_3" href="http://www.jubl.com/downloads.aspx?mpgid=92&amp;pgid=93&amp;dcatid=6">Sustainability Report</a>
+                                                
+                                            </li>
+                                        
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stock_updates">
+                   <iframe src="http://content.cmlinks.com/jubl/ticker.aspx" allowtransparency="true" marginheight="0" marginwidth="0"
+                        frameborder="0" width="100%" height="85"></iframe>
+                        <span style="font-size:9px; padding-left:100px;">Minimum 15 minutes delayed</span>
+                        <div style="padding-top:15px;"></div>
+                </div>
+            </div>
+            <div class="footer">
+                
+<div class="wrapper">
+    <ul class="footer-left">
+      <li><a href="http://www.jubl.com/disclaimer">Disclaimer</a></li>
+      <li><a href="http://www.jubl.com/privacy-policy">Privacy Policy</a></li>
+      <li class="bor-rn">&copy; 2017 Jubilant Life Sciences Ltd. All Rights Reserved</li>
+      
+    </ul>
+       <ul class="footer-right">
+      <li><a href="http://www.jubl.com/supplier-portal">Supplier Portal</a></li>
+      
+      <li class="bor-rn"><a href="http://www.jubl.com/sitemap">Sitemap</a></li>
+    </ul>
+    <p class="">Regd. Office : Bhartiagram, Gajraula, Distt. Amroha - 244223, Uttar Pradesh,   India, Ph: +91 120 4361000, CIN: L24116UP1978PLC004624</br>Email : <a href="mailto:support@jubl.com">support@jubl.com</a> &nbsp;|  <a href="http://www.jubl.com/contact/addresses">Contact Details</a> </p>
+
+  </div>
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47201847-1', 'jubl.com');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript" src="https://chat.botplatform.io/plugin-v2.js?bot=bot_1503561110935"></script>
+<script type="text/javascript">
+    window.botplatform.init({});
+</script>
+
+
+            </div>
+        </div>
+    </form>
+</body>
+</html>

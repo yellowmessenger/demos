@@ -1,0 +1,16 @@
+/* Body, links, basics */
+html { font-size:100%; }
+body { color:#444; font-size:13px; font-size:0.8125rem; font-family:"Open Sans",Arial,Helvetica,sans-serif; line-height:18px; line-height:1.125rem; text-rendering:optimizeLegibility; }
+
+.pageInner { max-width:1000px; margin:0 auto; }
+
+#headerOuter { background:none; }
+#header { border:0 none; }
+#header .logo { float:left; }
+
+.topLinks, .tagLine, .mainOuter, .breadcrumb,
+.groupWebsite, #leftPart, #footerTop, #footerCopy { display:none; }
+
+#content { float:none; width:100%; }
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
