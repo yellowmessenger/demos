@@ -28,12 +28,23 @@
 <body>
 <div class="bot-container">
     <div style="height: 100%; margin:auto" id="adsByBotplatform-bot_1489627706753"></div>
-    <script src="https://chat.botplatform.io/plugin-ad-v1.js?bot=bot_1489627706753&input=true&showTitle=false&skin=test" async defer> </script>
+    <!-- <script src="https://chat.botplatform.io/plugin-ad-v1.js?bot=bot_1489627706753&input=true&showTitle=false&skin=test" async defer> </script>-->
 </div>
 <script type="text/javascript">
     if (window.navigator && window.navigator.userAgent && window.navigator.userAgent.toLowerCase().indexOf('iphone') !== -1) {
         document.getElementById ("bot-container").style.height = "calc(100% - 75px)"
     }
+</script>
+
+<script>
+    (function(d) {
+        try { sessionStorage.setItem('recime-bot', '{"id":"3aa7093108bd7d150d44989aedb139d5","title":"Recime Bot","description":"Recime Bot Description","region":"ap-south-1","meta":{"user":{"firstName":"Jaya","lastName":"Kishore Reddy"}}}'); } catch(e) { window['recime-bot'] = '{"id":"3aa7093108bd7d150d44989aedb139d5","title":"Recime Bot","description":"Recime Bot Description","region":"ap-south-1","meta":{"user":{"firstName":"Jaya","lastName":"Kishore Reddy"}}}'; }
+        var s = d.createElement('script');
+        s.setAttribute('id', 'recime-chatbot-script');
+        s.setAttribute('src', 'https://headchat.recime.io/shim.js');
+        s.setAttribute('async', 'true');
+        d.getElementsByTagName('body')[0].appendChild(s);
+    })(document);
 </script>
 </body>
 </html>
