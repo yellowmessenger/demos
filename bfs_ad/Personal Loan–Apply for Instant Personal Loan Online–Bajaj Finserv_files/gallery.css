@@ -1,0 +1,509 @@
+﻿.productsinn {
+    float: left;
+    position: relative;
+    max-width: 755px;
+}
+#product-images img {height:435px\0/; width:755px\0/; _height:435px; _width:755px; *height:435px; *width:755px; max-width:755px; height:aoto;}
+@media screen and (max-width: 1024px) {
+    .productsinn {
+        max-width: 530px;
+        width: 100%;
+    }
+    #product-images img {max-width:530px; width:100%;
+    }
+
+}
+
+
+
+
+/*********************** newSDP *****************************/
+.product-title-small {
+    font-size: 1.2em !important;
+    font-weight: bold;
+    margin: 3px 0px 15px 0px;
+    font-family: arial,sans-serif;
+}
+
+.product-title-big {
+    font-size: 1.5em !important;
+    font-family: arial,sans-serif;
+    font-weight: bold;
+    margin: 0 0 8px;
+    color: black;
+}
+
+#custom-doc #container_sdp {
+    width: auto;
+    padding-top: 10px;
+}
+
+.facebox-popup {
+    cursor: pointer;
+}
+
+#container_sdp .promotions-message {
+    float: left;
+    width: 88%;
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    padding: 5px 15px;
+    background: #ecf3e1;
+}
+
+#festive-offer-title {
+    color: #ff6000;
+}
+
+#festive-offer-message {
+    color: black;
+}
+
+.promotions {
+    height: 40px;
+    width: 105%;
+}
+
+    .promotions .cross-button:hover {
+        cursor: pointer;
+    }
+
+    .promotions .cross-button {
+        float: right;
+        margin-right: 60px;
+        padding: 4px;
+        font-size: 1.2em;
+        color: white;
+        width: 12px;
+        height: 19px;
+        background: #cfd8c3;
+    }
+
+#ticker {
+    height: 18px;
+    overflow: hidden;
+}
+
+    #ticker li {
+        height: 40px;
+    }
+
+#container_sdp div.left_sdp {
+    float: left;
+    height: auto;
+    position: relative;
+}
+
+#container_sdp div.center_sdp {
+    font-size: 0.9em;
+    width: 64%;
+    float: left;
+    position: relative;
+    color: #777;
+}
+
+#container_sdp .center_sdp .center_sdp_right #fake-market-place {
+    overflow-y: auto;
+    float: left;
+    padding-left: 20px;
+}
+
+#container_sdp .center_sdp .center_sdp_right #fmp {
+    float: left;
+}
+
+#container_sdp .center_sdp .center_sdp_right #fmp-wrapper {
+    float: left;
+    width: 90%;
+}
+
+div.center_sdp_left {
+    width: 65%;
+    float: left;
+    position: relative;
+}
+
+div.center_sdp_right {
+    width: 34.5%;
+    float: left;
+    position: relative;
+    border-left: 1px dotted #efefef;
+    background: -webkit-linear-gradient(top, #efefef, white);
+    background: -moz-linear-gradient(top, #efefef, white);
+    background: -ms-linear-gradient(top, #efefef, white);
+}
+
+#price_table {
+    position: relative;
+}
+
+#product-images {
+    position: relative;
+    height: 435px;
+    overflow: hidden;
+}
+
+
+
+    #product-images div {
+        display: none;
+    }
+
+        #product-images div:first-child {
+            display: block;
+        }
+
+        #product-images div .Disc {
+            display: block;
+        }
+
+.Disc {
+    display: none;
+    position: absolute;
+    bottom: -119px;
+    left: 0px;
+    max-width: 745px;
+    padding: 10px 10px 0 10px;
+    transition: all ease 0.5s;
+    background-image: url('/media/finance/bg.png');
+    background-repeat: repeat;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+}
+
+@media screen and (max-width: 1024px) {
+    .Disc {
+        display: none;
+        position: absolute;
+        bottom: -119px;
+        left: 0px;
+        max-width: 520px;
+        width: 100%;
+        padding: 10px 5px 0 5px;
+        transition: all ease 0.5s;
+        background-image: url('/media/finance/bg.png');
+        background-repeat: repeat;
+        opacity: 0.9;
+        filter: alpha(opacity=90);
+    }
+
+}
+@media screen and (max-width: 1024px) {
+         .Disc p{font-size: 0.9em;}
+     .Disc p strong {font-size: 0.8em;}
+}
+
+.Disc p {
+    clear: both;
+    color: #20252d;
+    font-family: 'daxotregular';
+    font-size: 1.2em;
+    font-weight: normal;
+    line-height: 21px;
+    padding-bottom: 9px;
+}
+
+.Disc p strong {
+        clear: both;
+        color: #0072BC;
+        font-family: 'daxotregular';
+        font-size: 1em;
+        font-weight: normal;
+        line-height: 21px;
+        padding-bottom: 9px;
+    }
+
+
+#ib_img_viewer {
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+}
+
+#ib_img_thumb {
+    left: 0px;
+    top: 250px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding: 0px;
+    overflow: hidden;
+    height: 68px;
+}
+
+    #ib_img_thumb li {
+        list-style: none;
+        float: left;
+        list-style-type: none;
+        padding: 0px;
+        cursor: pointer;
+        width: 56px !important;
+        height: 55px!important;
+    }
+
+.hidden {
+    display: none;
+}
+
+.thumbs {
+    margin: 0px 2px 2px 0px;
+    padding: 2px;
+    border: 1px solid #0072BC;
+}
+
+.selectedThumb {
+    padding: 1px;
+    margin-bottom: 0px;
+    border: 2px solid #0072BC;
+}
+
+.clearfix:after, .container:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix, .container {
+    display: block;
+}
+
+#product-social-buttons {
+    min-width: 175px;
+    display: inline-block;
+}
+
+
+/**************************************************** Skin CSS *******************************************************/
+
+
+
+
+.jcarousel-skin-ib .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-ib .jcarousel-clip-horizontal {
+    max-width: 485px;
+    margin: 0 auto;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .jcarousel-skin-ib .jcarousel-clip-horizontal {
+        max-width: 485px;
+        width: 275px;
+        margin: 0 auto;
+        padding-right: 5px;
+    }
+}
+
+.jcarousel-skin-ib .jcarousel-item-horizontal {
+    margin: 4px 5px 4px 9px;
+}
+
+.jcarousel-skin-ib .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-ib .jcarousel-next-horizontal {
+    position: absolute;
+    top: 22px;
+    right: 8px;
+    cursor: pointer;
+    background: transparent url('/media/finance/sli-prev-next.png') no-repeat top left;
+    background-position: 0 0;
+    width: 17px;
+    height: 24px;
+}
+
+    .jcarousel-skin-ib .jcarousel-next-horizontal:hover,
+    .jcarousel-skin-ib .jcarousel-next-horizontal:focus {
+        background-position: 0 -74px;
+    }
+
+    .jcarousel-skin-ib .jcarousel-next-horizontal:active {
+        background-position: 0 -147px;
+    }
+
+.jcarousel-skin-ib .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-ib .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-ib .jcarousel-next-disabled-horizontal:focus,
+.jcarousel-skin-ib .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: 0 -222px;
+}
+.jcarousel-skin-ib .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 22px;
+    left: 14px;
+    cursor: pointer;
+    background: transparent url('/media/finance/sli-prev-next.png') no-repeat top left;
+    background-position: 0 -296px;
+    width: 17px;
+    height: 24px;
+}
+
+
+    .jcarousel-skin-ib .jcarousel-prev-horizontal:hover,
+    .jcarousel-skin-ib .jcarousel-prev-horizontal:focus {
+        background-position: 0 -370px;
+    }
+
+    .jcarousel-skin-ib .jcarousel-prev-horizontal:active {
+        background-position: 0 -443px;
+    }
+
+.jcarousel-skin-ib .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-ib .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-ib .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-ib .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: 0 -518px;
+}
+
+
+/* Related items */
+
+.jcarousel-skin-ritems {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #eee;
+    padding: 10px;
+    -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 9px rgba(0, 0, 0, 0.1);
+}
+
+    .jcarousel-skin-ritems .jcarousel-container-horizontal {
+    }
+
+    .jcarousel-skin-ritems .jcarousel-clip {
+        overflow: hidden;
+    }
+
+    .jcarousel-skin-ritems .jcarousel-clip-horizontal {
+        width: 850px;
+        margin: 0 auto;
+    }
+
+
+    .jcarousel-skin-ritems .jcarousel-item {
+        width: 160px !important;
+        height: 190px !important;
+    }
+
+    .jcarousel-skin-ritems .jcarousel-item-horizontal {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .jcarousel-skin-ritems .jcarousel-item-placeholder {
+        background: #fff;
+        color: #000;
+    }
+
+    /**
+ *  Horizontal Buttons
+ */
+    .jcarousel-skin-ritems .jcarousel-next-horizontal {
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        cursor: pointer;
+        background: transparent url(sli-prev-next.png) no-repeat top left;
+        background-position: 0 0;
+        width: 17px;
+        height: 24px;
+    }
+
+        .jcarousel-skin-ritems .jcarousel-next-horizontal:hover,
+        .jcarousel-skin-ritems .jcarousel-next-horizontal:focus {
+            background-position: 0 -74px;
+        }
+
+        .jcarousel-skin-ritems .jcarousel-next-horizontal:active {
+            background-position: 0 -147px;
+        }
+
+    .jcarousel-skin-ritems .jcarousel-next-disabled-horizontal,
+    .jcarousel-skin-ritems .jcarousel-next-disabled-horizontal:hover,
+    .jcarousel-skin-ritems .jcarousel-next-disabled-horizontal:focus,
+    .jcarousel-skin-ritems .jcarousel-next-disabled-horizontal:active {
+        cursor: default;
+        background-position: 0 -222px;
+    }
+
+    .jcarousel-skin-ritems .jcarousel-prev-horizontal {
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        cursor: pointer;
+        background: transparent url(sli-prev-next.png) no-repeat top left;
+        background-position: 0 -296px;
+        width: 17px;
+        height: 24px;
+    }
+
+
+        .jcarousel-skin-ritems .jcarousel-prev-horizontal:hover,
+        .jcarousel-skin-ritems .jcarousel-prev-horizontal:focus {
+            background-position: 0 -370px;
+        }
+
+        .jcarousel-skin-ritems .jcarousel-prev-horizontal:active {
+            background-position: 0 -443px;
+        }
+
+    .jcarousel-skin-ritems .jcarousel-prev-disabled-horizontal,
+    .jcarousel-skin-ritems .jcarousel-prev-disabled-horizontal:hover,
+    .jcarousel-skin-ritems .jcarousel-prev-disabled-horizontal:focus,
+    .jcarousel-skin-ritems .jcarousel-prev-disabled-horizontal:active {
+        cursor: default;
+        background-position: 0 -518px;
+    }
+
+/* slider next and previous button */
+
+#nxtimg {background: url("/media/finance/sli-prev-next2.png") no-repeat -32px 0px ;
+    height: 32px;
+    width:32px;
+    position: absolute;
+    right: 15px;
+    top: 152px;
+    z-index: 9999;
+    cursor:pointer;.jcarousel-skin-ib .jcarousel-next-horizontal
+}
+#prvimg {background: url("/media/finance/sli-prev-next2.png") no-repeat 0px 0px;
+    height: 32px;
+    width:32px;
+    position: absolute;
+    left: 15px;
+    top: 152px;
+    z-index: 9999;
+    cursor:pointer;
+}
+
+/*#nxtimg:hover {background-position: -32px -32px!important;}*/
+
+/*#prvimg:hover {background-position: 0px -32px!important;}*/
+
+.nextDisabled {background-position: -32px -64px!important;}
+.prevDisabled {background-position: 0 -64px!important;}
+
+.nextDisabled:hover {background-position: -32px -64px!important;}
+.prevDisabled:hover {background-position: 0 -64px!important;}
+
+#nxtimg strong, #prvimg strong {visibility:hidden;}
+
+
+
+/*.productsinn {float:left; position:relative; width:309px}
+*/

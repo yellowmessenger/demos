@@ -1,0 +1,68 @@
+﻿@font-face {
+	font-family: 'DaxOT-Light';
+	src: url('fonts/DaxOT-Light.eot');
+	src: local('☺'), url('fonts/DaxOT-Light.woff') format('woff'), url('fonts/DaxOT-Light.ttf') format('truetype'), url('fonts/DaxOT-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DaxOT-Bold';
+	src: url('fonts/DaxOT-Bold.eot');
+	src: local('☺'), url('fonts/DaxOT-Bold.woff') format('woff'), url('fonts/DaxOT-Bold.ttf') format('truetype'), url('fonts/DaxOT-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'DaxOT-Medium';
+	src: url('fonts/DaxOT-Medium.eot');
+	src: local('☺'), url('fonts/DaxOT-Medium.woff') format('woff'), url('fonts/DaxOT-Medium.ttf') format('truetype'), url('fonts/DaxOT-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body {
+  	font-size: 15px;
+    color: #20252d;
+    font-family: 'DaxOT-Light';
+  	margin: 0px;
+}
+b.name {
+    color: #0072BC;
+    font-family: 'DaxOT-Bold';
+}
+b.last {
+    font-weight: normal;
+    padding-left: 15px;
+    color:#666666;
+}
+b.change {
+    font-weight: normal;
+    padding-left: 10px;
+    color:#666666;
+}
+b.volume {
+    font-weight: normal;
+    padding-left: 15px;
+    color:#666666;
+}
+div.ScrollerMainContainer {
+    height: 25px;
+    line-height: 25px;
+    background: #F1F1F1;
+    vertical-align: middle;
+    width: 100%;
+}
+div.ScrollerContainer {
+    margin: 0px;
+}
+.positive {
+    color: #008800;
+}
+.negative {
+    color: #ff0000;
+}
+.negative_changePer{
+}
+.positive_changePer{
+}
+.neutral_changePer{
+}

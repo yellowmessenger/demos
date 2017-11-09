@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0083)https://tools.euroland.com/tools/ticker/scrolling/?companycode=in-532978&lang=en-gb -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="Chrome"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=9,10,11">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    
+    <title>Scrolling Ticker</title>
+    
+    <style rel="stylesheet" type="text/css">
+        body {
+            background-color: transparent;
+        }
+    </style>
+
+    <script type="text/javascript" src="./EurolandToolAutoSizeObject.js"></script>
+
+    <script type="text/javascript">
+        var True = true, False = false;
+    </script>
+
+    
+
+
+
+    <script src="./scrolling.js"></script>
+
+
+    <script type="text/javascript">
+
+        var scroller;
+               
+        ScrollingTickerObject.prototype.instrumentSeparator = " | ";
+        
+        function load() {
+            scroller = new ScrollingTickerObject();
+            document.body.appendChild(scroller.dom);
+
+            
+
+scroller.scrollFromRight = true;
+scroller.scrollingType = 1;
+scroller.spaceBetweenScrollers = 50; 
+
+            scroller.InstrumentsSettings.push({"timeZone":"India Standard Time","winterTimeMarker":"","summerTimeMarker":"","instrumentID":66237,"activationInstrumentID":0,"activationDateTimestamp":0,"name":"532978","isArabic":false,"containerTag":"","isExtended":false,"Layout":[{"Children":[{"value":"Bajaj Finserv (BSE)","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"name","hasSpace":true},{"value":"date","format":"dd/MM/yyyy HH:mm","divider":1.0,"tag":"value","className":"","hasSpace":true},{"Children":[{"value":"Last:","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"last","hasSpace":true},{"value":"last","format":"0_#,##0.00","divider":1.0,"tag":"value","className":"","hasSpace":true},{"Children":[{"value":"Change:","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"change","hasSpace":true},{"value":"change","format":"0_+#,##0.00;-#,##0.00;","divider":1.0,"tag":"value","className":"","hasSpace":true},{"value":"changePer","format":"0_(+#,##0.00\\%);(-#,##0.00\\%);","divider":1.0,"tag":"value","className":"","hasSpace":true},{"Children":[{"value":"Volume:","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"volume","hasSpace":true},{"value":"volume","format":"0_#,##0;","divider":1.0,"tag":"value","className":"","hasSpace":true}]});scroller.InstrumentsSettings.push({"timeZone":"India Standard Time","winterTimeMarker":"","summerTimeMarker":"","instrumentID":68963,"activationInstrumentID":0,"activationDateTimestamp":0,"name":"BAJAJFINSV","isArabic":false,"containerTag":"","isExtended":false,"Layout":[{"Children":[{"value":"Bajaj Finserv (NSE)","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"name","hasSpace":true},{"value":"date","format":"dd/MM/yyyy HH:mm","divider":1.0,"tag":"value","className":"","hasSpace":true},{"Children":[{"value":"Last:","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"last","hasSpace":true},{"value":"last","format":"0_#,##0.00","divider":1.0,"tag":"value","className":"","hasSpace":true},{"Children":[{"value":"Change:","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"change","hasSpace":true},{"value":"change","format":"0_+#,##0.00;-#,##0.00;","divider":1.0,"tag":"value","className":"","hasSpace":true},{"value":"changePer","format":"0_(+#,##0.00\\%);(-#,##0.00\\%);","divider":1.0,"tag":"value","className":"","hasSpace":true},{"Children":[{"value":"Volume:","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"volume","hasSpace":true},{"value":"volume","format":"0_#,##0;","divider":1.0,"tag":"value","className":"","hasSpace":true}]});scroller.InstrumentsSettings.push({"timeZone":"India Standard Time","winterTimeMarker":"","summerTimeMarker":"","instrumentID":63508,"activationInstrumentID":0,"activationDateTimestamp":0,"name":"500034","isArabic":false,"containerTag":"","isExtended":false,"Layout":[{"Children":[{"value":"Bajaj Finance (BSE)","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"name","hasSpace":true},{"value":"date","format":"dd/MM/yyyy HH:mm","divider":1.0,"tag":"value","className":"","hasSpace":true},{"Children":[{"value":"Last:","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"last","hasSpace":true},{"value":"last","format":"0_#,##0.00","divider":1.0,"tag":"value","className":"","hasSpace":true},{"Children":[{"value":"Change:","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"change","hasSpace":true},{"value":"change","format":"0_+#,##0.00;-#,##0.00;","divider":1.0,"tag":"value","className":"","hasSpace":true},{"value":"changePer","format":"0_(+#,##0.00\\%);(-#,##0.00\\%);","divider":1.0,"tag":"value","className":"","hasSpace":true},{"Children":[{"value":"Volume:","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"volume","hasSpace":true},{"value":"volume","format":"0_#,##0;","divider":1.0,"tag":"value","className":"","hasSpace":true}]});scroller.InstrumentsSettings.push({"timeZone":"India Standard Time","winterTimeMarker":"","summerTimeMarker":"","instrumentID":68284,"activationInstrumentID":0,"activationDateTimestamp":0,"name":"BAJFINANCE","isArabic":false,"containerTag":"","isExtended":false,"Layout":[{"Children":[{"value":"Bajaj Finance (NSE)","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"name","hasSpace":true},{"value":"date","format":"dd/MM/yyyy HH:mm","divider":1.0,"tag":"value","className":"","hasSpace":true},{"Children":[{"value":"Last:","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"last","hasSpace":true},{"value":"last","format":"0_#,##0.00","divider":1.0,"tag":"value","className":"","hasSpace":true},{"Children":[{"value":"Change:","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"change","hasSpace":true},{"value":"change","format":"0_+#,##0.00;-#,##0.00;","divider":1.0,"tag":"value","className":"","hasSpace":true},{"value":"changePer","format":"0_(+#,##0.00\\%);(-#,##0.00\\%);","divider":1.0,"tag":"value","className":"","hasSpace":true},{"Children":[{"value":"Volume:","tag":"text","className":"","hasSpace":true}],"tag":"B","className":"volume","hasSpace":true},{"value":"volume","format":"0_#,##0;","divider":1.0,"tag":"value","className":"","hasSpace":true}]});
+            
+            scroller.isRTL = false;
+            scroller.speed = 55;
+            scroller.scrollingWidth = 0;
+            scroller.fadingEdgeBackground = "";
+
+            scroller.isVisibleOnInitialLoad = true;
+
+
+            scroller.load();
+
+            EurolandToolAutoSizeObject.load(scroller.dom);
+
+            Graphics.frameCall = function () {
+                scroller.frameCall();
+            };
+        }
+    </script> 
+
+    <script type="text/javascript">
+
+
+        function getApplicationBase()
+        {
+            var path = location.href;
+            path = path.substring(0, path.indexOf(location.search));
+
+            if(path.length > 0)
+            {
+                switch(String.fromCharCode(path.charCodeAt(path.length - 1)))
+                {
+                    case '\\':
+                    case '/':
+                        break;
+                    default:
+                        path += "/";
+                        break;
+                }
+            }
+            path += "../";
+            return path;
+        }
+        var strApplicationBase = getApplicationBase();
+
+        ScrollingTickerInstrumentObject.prototype.lang = "en-GB";
+        ScrollingTickerInstrumentObject.prototype.decimalMarket = ".";
+        ScrollingTickerInstrumentObject.prototype.thousandGroupMarker = ",";
+        ScrollingTickerInstrumentObject.prototype.numberFormat = "#,##0.00";
+        ScrollingTickerInstrumentObject.prototype.dataURI = "/tools/Ticker/Scrolling/GetInstrumentData/";
+        ScrollingTickerInstrumentObject.prototype.isAzure = false;
+        ScrollingTickerInstrumentObject.prototype.errorLogUri = "/tools/Ticker/DataRetriver/addErrorToEventlog/";
+        ScrollingTickerInstrumentObject.prototype.appBaseLocation = strApplicationBase;
+        ScrollingTickerInstrumentObject.prototype.allowsGraph = False;
+
+        ScrollingTickerInstrumentObject.prototype.companyCode = "in-532978";
+        ScrollingTickerInstrumentObject.prototype.version = "";
+                
+        Page.DomainData.dataRetriverUrl = "/tools/Ticker/DataRetriver/";
+
+    </script>
+
+    
+
+    
+    <script type="text/javascript">
+
+            document.cssBodyVisibility = '';
+            (function () {
+                /*
+                Because the BASE tag requires the full URL and not a relative URI,
+                this script is required in order to keep any domain name from entering into the HTML output.
+                */
+                var link = "Solutions/ScrollingTicker/in-532978/",
+                    dom = document.createElement('base'),
+                    head = document.getElementsByTagName('head')[0],
+                    url = "style.css";
+
+                switch (link.substr(0, 5).toLowerCase()) {
+                    case 'http:':
+                    case 'https':
+                        break;
+                    default:
+                        link = strApplicationBase + link;
+                        break;
+                }
+
+                dom.setAttribute("href", link);
+
+                head.appendChild(dom);
+                /*
+                LazyLoader([url], function () {
+                document.cssBodyVisibility = 'visible';
+                if (document.body)
+                document.body.style.visibility = document.cssBodyVisibility;
+                });
+                */
+
+                link = document.createElement('link');
+                link.setAttribute('href', url);
+                link.setAttribute('rel', 'stylesheet');
+                link.setAttribute('type', 'text/css');
+
+                if (typeof document.createStyleSheet == 'function')
+                    document.createStyleSheet(url);
+
+                head.appendChild(link);
+
+                Page.getData(url, null, function () {
+
+                    document.cssBodyVisibility = 'visible';
+                    if (document.body)
+                        document.body.style.visibility = document.cssBodyVisibility;
+
+                }, null, null, 5, function (http) {
+
+                    document.cssBodyVisibility = 'visible';
+                    if (document.body)
+                        document.body.style.visibility = document.cssBodyVisibility;
+
+                }, true);
+
+            })();
+
+            function sysLoad() {
+                if (document.cssBodyVisibility.length)
+                    document.body.style.visibility = document.cssBodyVisibility;
+                document.body.style.height = '100%';
+            }
+
+    </script><!--<base href="https://tools.euroland.com/tools/ticker/scrolling/../Solutions/ScrollingTicker/in-532978/">--><base href="."><link href="./style(1).css" rel="stylesheet" type="text/css"> 
+    
+</head>
+<body style="visibility: visible; height: 100%;" class="en-GB" onload="sysLoad(); Page.load(); load();" marginwidth="0" marginheight="0">
+
+
+<div class="ScrollerMainContainer"><div class="ScrollerContainer"><div style="position: relative; top: 0px; left: 0px; overflow: hidden; width: 0px; height: 25px;"><div style="margin: 0px; position: absolute; white-space: nowrap; top: 0px; left: -2314.58px; visibility: visible; display: inline-block;"><span class="instrument instrument_66237"><b class="name" style="white-space: nowrap;">Bajaj Finserv (BSE) </b><span class="date">09/11/2017 11:26</span> <b class="last" style="white-space: nowrap;">Last: </b><span class="last">5,024.30</span> <b class="change" style="white-space: nowrap;">Change: </b><span class="change negative negative_change">-3.15</span> <span class="changePer negative negative_changePer">(-0.06%)</span> <b class="volume" style="white-space: nowrap;">Volume: </b><span class="volume">2,803</span> </span> | <span class="instrument instrument_68963"><b class="name" style="white-space: nowrap;">Bajaj Finserv (NSE) </b><span class="date">09/11/2017 11:43</span> <b class="last" style="white-space: nowrap;">Last: </b><span class="last">5,014.00</span> <b class="change" style="white-space: nowrap;">Change: </b><span class="change negative negative_change">-8.70</span> <span class="changePer negative negative_changePer">(-0.17%)</span> <b class="volume" style="white-space: nowrap;">Volume: </b><span class="volume">51,934</span> </span> | <span class="instrument instrument_63508"><b class="name" style="white-space: nowrap;">Bajaj Finance (BSE) </b><span class="date">05/10/2017 15:28</span> <b class="last" style="white-space: nowrap;">Last: </b><span class="last">1,869.00</span> <b class="change" style="white-space: nowrap;">Change: </b><span class="change">+0.00</span> <span class="changePer">(+0.00%)</span> <b class="volume" style="white-space: nowrap;">Volume: </b><span class="volume">0</span> </span> | <span class="instrument instrument_68284"><b class="name" style="white-space: nowrap;">Bajaj Finance (NSE) </b><span class="date">05/10/2017 16:04</span> <b class="last" style="white-space: nowrap;">Last: </b><span class="last">1,866.20</span> <b class="change" style="white-space: nowrap;">Change: </b><span class="change">+0.00</span> <span class="changePer">(+0.00%)</span> <b class="volume" style="white-space: nowrap;">Volume: </b><span class="volume">0</span> </span></div></div></div></div></body></html>
