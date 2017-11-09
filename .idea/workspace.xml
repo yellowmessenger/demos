@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bbc0e1e-0f14-4067-bef4-fd057d602190" name="Default" comment="hdfc ergo chat window">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bfs_ad/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bfs_ad/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bfs_ad/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bfs_ad/4.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bfs_ad/index.html" afterPath="$PROJECT_DIR$/bfs_ad/index.html" />
-    </list>
+    <list default="true" id="1bbc0e1e-0f14-4067-bef4-fd057d602190" name="Default" comment="hdfc ergo chat window" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -320,7 +314,7 @@
       <workItem from="1504612582985" duration="1241000" />
       <workItem from="1505107685947" duration="1560000" />
       <workItem from="1509775616741" duration="277000" />
-      <workItem from="1510207926331" duration="334000" />
+      <workItem from="1510207926331" duration="389000" />
     </task>
     <task id="LOCAL-00001" summary="bfs edits">
       <created>1498805140729</created>
@@ -515,7 +509,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42568000" />
+    <option name="totallyTimeSpent" value="42623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="-4" width="1863" height="1084" extended-state="6" />

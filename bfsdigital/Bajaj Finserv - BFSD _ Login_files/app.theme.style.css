@@ -1,0 +1,21 @@
+/* Bootstrap render */
+@import url('bootstrap.min.css');
+/* Bootstrap slider css */
+@import url('../../external/bootstrap-slider.css');
+/* Custom font render */
+@import url('custom.fonts.css');
+/* Custom Icons font render*/
+@import url('custom.icons.css');
+/* Custome Loader Css */
+@import url('loader.css');
+
+/* Common Desktop css */
+@import url('app.desktop.style.css');
+/* Common Tablet css */
+@import url('app.tablet.style.css') only screen and (min-width: 768px) and (max-width: 991px);
+/* Common Mobile css */
+@import url('app.mobile.style.css') only screen and (max-width: 767px);
+
+@-ms-viewport     { width: device-width; }
+@-o-viewport      { width: device-width; }
+@viewport         { width: device-width; }
