@@ -1,0 +1,1105 @@
+
+
+
+.banner-bottom {
+  background: #fff;
+  padding: 1em;
+  height:150px;
+}
+.banner-bottom h4 {
+  color: #050506;
+  font-size: 1.4em;
+  margin: 0;
+  font-weight: 600;
+  text-align:left;
+}
+.banner-bottom p {
+  color: #50504f;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  margin: 0em 0;
+  font-weight: 400;
+  text-align:left;
+}
+.workes h2 a {
+  background: #000000;
+  color: #fff600;
+  text-transform: uppercase;
+  padding: 1em 5em;
+  text-decoration: none;
+  margin: 0;
+  border-radius: 5px;
+}
+.workes h2 a:hover{
+  background: #2D2C28;
+  color: #fff;
+}
+.workes h2 {
+  font-size: 1.3em;
+  margin: 0;
+}
+.workes {
+  position: absolute;
+  top: -9px;
+  left: 44em;
+}
+.Here {
+  background: #6b6b6b;
+  padding: 7em 0 4em;
+  position: relative;
+}
+.here-left {
+  float: left;
+  width: 14%;
+}
+.here-right {
+  float: left;
+  width: 80%;
+}
+.Here h5 {
+  color: #fff600;
+  font-size: 1.3em;
+  margin: 0;
+  font-weight: 400;
+  vertical-align: middle;
+  padding: 0.4em 0.6em;
+}
+.Here p {
+  color: #e6e6e6;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.8em;
+  margin: 1em 0;
+}
+i.bulb {
+  width: 34px;
+  height: 34px;
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -13px -6px;
+  float:left;
+  display: inline-block;
+  vertical-align: middle;
+}
+i.lock {
+  width: 34px;
+  height: 34px;
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -61px -6px;
+  float:left;
+  display: inline-block;
+  vertical-align: middle;
+}
+i.pen {
+  width: 34px;
+  height: 34px;
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -114px -6px;
+  float:left;
+  display: inline-block;
+  vertical-align: middle;
+}
+i.adm {
+  width: 34px;
+  height: 34px;
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -165px -6px;
+  float:left;
+  display: inline-block;
+  vertical-align: middle;
+}
+.company {
+  background: #f1f1f1;
+  padding: 4em 0;
+  border-bottom: 1px solid #1f1f1f;
+}
+.company h3 {
+  color: #0f0f10;
+  font-size: 1.7em;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+.company p {
+  color: #50504f;
+  font-size: 1em;
+  line-height: 1.8em;
+  font-weight: 400;
+}
+.company h6 {
+  color: #50504f;
+  font-size: 1em;
+  font-style: italic;
+  margin: 0;
+  font-weight: 400;
+}
+.company h5{
+  font-size: 1.1em;
+}
+.company h5 a{
+  color: #b72706;
+  margin-bottom: 1em;
+  font-weight: 600;
+  text-decoration:none;
+}
+.company h5 a:hover{
+	color:#090909;
+}
+.our {
+  margin: 1em 0;
+}
+.sleek {
+  margin: 1em 0;
+  padding: 0 0 1em;
+  border-bottom: 1px solid rgba(85, 85, 85, 0.13);
+}
+.later {
+  background: #1f1f1f;
+  padding: 1.8em 0;
+  border-top: 10px solid #fff600;
+}
+.stay-left {
+  float: left;
+  width: 71%;
+  margin-right: 0.5%;
+}
+.button {
+  float: left;
+  width: 28.5%;
+}
+.stay form input[type="text"] {
+  width: 100%;
+  color: #898888;
+  outline: none;
+  font-size: 1em;
+  padding: .3em;
+  border: none;
+  -webkit-appearance: none;
+}
+.button form input[type="submit"] {
+  background: #fff600;
+  padding: .3em;
+  color: #010100;
+  font-size: 1em;
+  font-weight: 600;
+  display: block;
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 0px 5px 5px 0px;
+}
+.button form input[type="submit"]:hover{
+  background: #919175;
+  color: #fff600;
+}
+.later li {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.5em;
+  
+}
+.later h5 {
+  color: #f1f1f1;
+  font-size: 1.2em;
+  vertical-align: middle;
+  margin: 0;
+}
+.later h6 {
+  color: #f1f1f1;
+  font-size: 1em;
+  vertical-align: middle;
+  margin: 0;
+  font-weight: 400;
+}
+i.ttt {
+  width: 36px;
+  height: 30px;
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -216px -8px;
+  float: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+.later span a {
+  color: #fff600;
+  text-decoration:none;
+}
+.later span a:hover{
+  color: #f1f1f1;
+}
+.footer {
+  background: #3c3c3c;
+  padding: 3em 0;
+}
+.footer h3 {
+  color: #ffffff;
+  font-size: 1.4em;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+.foot-nav ul {
+  padding: 0;
+}
+.foot-nav li  {
+  display: block;
+  margin:0.4em 0;
+}
+.foot-nav li a {
+  color: #c0c0c0;
+  font-size: 1em;
+  text-transform: capitalize;#fff600
+}
+.foot-nav li a:hover, .foot-nav ul li.active a {
+ color: #fff600;
+}
+.footer p {
+  color: #c0c0c0;
+  font-size: 1em;
+  font-weight: 400;
+  line-height:1.8em;
+}
+.foot-bottom p {
+  color: #747474;
+  font-size: 1em;
+  margin: 1em 0 0;
+}
+.foot-bottom a{
+  color: #747474;
+  text-decoration:none;
+}
+.foot-bottom a:hover{
+  color: #fff600;
+}
+i.facebok {
+  width: 35px;
+  height: 35px;
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -15px -87px;
+  float: left;
+  vertical-align: middle;
+}
+i.facebok:hover{
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -15px -47px;
+}
+i.twiter {
+  width: 35px;
+  height: 35px;
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -65px -87px;
+  float: left;
+  vertical-align: middle;
+}
+i.twiter:hover{
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -65px -47px;
+}
+i.in {
+  width: 35px;
+  height: 35px;
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -115px -87px;
+  float: left;
+  vertical-align: middle;
+}
+i.in:hover{
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -115px -47px;
+}
+i.pp {
+  width: 35px;
+  height: 35px;
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -165px -87px;
+  float: left;
+  vertical-align: middle;
+}
+i.pp:hover{
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -165px -47px;
+}
+i.goog {
+  width: 35px;
+  height: 35px;
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -215px -87px;
+  float: left;
+  vertical-align: middle;
+}
+i.goog:hover{
+  background: url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -215px -47px;
+}
+.social-ic ul {
+  padding: 0;
+}
+.social-ic li {
+  display: inline-block;
+  margin: 0 0.2em;
+}
+.social-ic {
+  margin-top: 1.5em;
+}
+/*-- flexisel --*/
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+	display: none;	
+}
+.nbs-flexisel-container {
+	position: relative;
+	max-width: 100%;
+	
+}
+.nbs-flexisel-ul {
+	position: relative;
+	width: 9999px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-align: center;
+}
+.nbs-flexisel-inner {
+	overflow: hidden;
+	margin: 0 auto;
+}
+.nbs-flexisel-item {
+	float: left;
+	margin:0px;
+	padding:0px;
+	cursor: pointer;
+	position: relative;
+	line-height: 0px;
+	
+}
+.nbs-flexisel-item > img {
+	cursor: pointer;
+	positon: relative;
+	margin-top:5px;
+	margin-bottom: 10px;
+	max-width:240px;
+	max-height:240px;
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	-o-border-radius:3px;
+}
+.nbs-flexisel-item p{
+	padding:0px;
+}
+.nbs-flexisel-item p a{
+	color:#000;
+}
+.nbs-flexisel-item p a:hover{
+	color:#6CC372;
+}
+.nbs-flexisel-nav-left, .nbs-flexisel-nav-right {
+	width: 22px;
+	height: 40px;
+	position: absolute;
+	cursor: pointer;
+	z-index: 100;
+	margin-top:30px;
+}
+.nbs-flexisel-nav-left {
+	left:-2em;
+	background: url(lef.png) no-repeat 1px 1px;
+}
+.nbs-flexisel-nav-right {
+	right:-2em;
+	background: url(righ.png) no-repeat 1px 1px;
+}
+.banner-1 {
+  margin: 0em 0.5em;
+  margin-top:60px;
+}
+/*-- flexisel --*/
+/*-- error-page --*/
+.main {
+	padding: 12em 0px;
+	  border-bottom: 1px solid #5d5d5d;
+}
+.error-404 h1 {
+  font-weight: 700;
+  color: #b72706;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.error-404 p{
+	color: #090909;
+	margin: 0;
+	font-size: 1.2em;
+	text-transform: uppercase;
+} 
+a.b-home{
+	background:#b72706;
+	padding:0.8em 3em;
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	margin-top:1em;
+}
+a.b-home:hover{
+	background:#E4DD2C;
+	color:#000;
+}
+/*--start-about--*/
+.about{
+	padding:4em 0px;
+}
+.about-top-left img {
+	width: 100%;
+}
+.about-top-right h4 {
+  color: #090909;
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.35em;
+}
+.about-top-right p {
+  color: #50504f;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.8em;
+  margin-top: 1em;
+}
+.about-top {
+	margin-top: 2em;
+}
+.advantage-top {
+  margin: 3em 0px 0;
+}
+.a-left {
+	width: 15%;
+	float: left;
+	text-align: center;
+	background: #FFF600;
+	padding: 14px 0px;
+}
+.a-left h4 {
+	color: #000;
+	margin: 0;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+.a-right {
+	width: 77%;
+	float: right;
+}
+.a-right h4 {
+  font-size: 1.3em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #090909;
+  margin: 0;
+}
+.a-right p {
+  color: #50504f;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 1em 0;
+  line-height: 1.8em;
+}
+/*--start-team--*/
+.ch-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  cursor: default;
+  box-shadow: inset 0 0 0 0 rgba(255, 246, 0, 0.24), inset 0 0 0 16px rgba(255, 246, 0, 0.52), 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.ch-img-1 { 
+	background-image: url(http://www.stridessoftware.com/safetrans/assets/js/images/team-1.jpg);
+}
+
+.ch-img-2 { 
+	background-image: url(http://www.stridessoftware.com/safetrans/assets/js/images/team-2.jpg);
+}
+
+.ch-img-3 { 
+	background-image: url(http://www.stridessoftware.com/safetrans/assets/js/images/team-3.jpg);
+}
+.ch-img-4 { 
+	background-image: url(http://www.stridessoftware.com/safetrans/assets/js/images/team-4.jpg);
+}
+.ch-img-5 { 
+	background-image: url(http://www.stridessoftware.com/safetrans/assets/js/images/team-5.jpg);
+}
+.ch-img-6 { 
+	background-image: url(http://www.stridessoftware.com/safetrans/assets/js/images/team-6.jpg);
+}
+.ch-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	opacity: 0;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+	-webkit-backface-visibility: hidden; /*for a smooth font */
+}
+
+.ch-info h3 {
+	color: #fff;
+	text-transform: uppercase;
+	position: relative;
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin: 0 30px;
+	padding: 85px 0 0 0;
+	height: 137px;
+	font-family: 'Droid Serif', serif;
+	text-shadow: 0 0 1px #fff, 
+	 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.ch-info p {
+	color: #fff;
+	padding: 10px 5px;
+	font-style: italic;
+	margin: 0 30px;
+	font-size: 12px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.ch-info p a {
+	display: block;
+	color: #fff;
+	color: rgba(255,255,255,0.7);
+	font-style: normal;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+	padding-top: 4px;
+	font-family: 'Droid Serif', serif;
+}
+
+.ch-info p a:hover {
+	color: #fff222;
+	color: rgba(255,242,34, 0.8);
+}
+
+.ch-item:hover {
+  box-shadow: inset 0 0 0 110px rgba(255, 246, 0, 0.37), inset 0 0 0 16px rgba(255,255,255,0.8), 0 1px 2px rgba(255, 246, 0, 0.35);
+}
+
+.ch-item:hover .ch-info {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);	
+}
+.team {
+	padding: 4em 0px;
+}
+.about-main h3, .advn-main h3, .team-top h3, .services-main h3, .add-mian h3, .clients-main h3 {
+  font-size: 2.6em;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  color: #b72706;
+}
+/*--end-team--*/
+/*--end-about--*/
+/*--stat-services--*/
+.services{
+	padding:1em 0px;
+	
+}
+.services-top{
+	margin-top:3em;
+}
+.services-top-left img {
+	width: 100%;
+}
+.services-top-right h4{
+	color: #090909;
+	font-size: 1.15em;
+	font-weight: 700;
+	margin: 0;
+	line-height: 1.35em;
+}
+.services-top-right p{
+	color: #888d91;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.7em;
+	margin-top: 1.2em;
+}
+.services-top-right ul {
+	padding: 0;
+	margin-top: 1.2em;
+}
+.services-top-right ul li{
+	list-style-image: url(http://www.stridessoftware.com/safetrans/assets/js/images/fd.png);
+	margin: 0px 0px 10px 18px;
+}
+.services-top-right ul li a {
+  color: #999393;
+  font-size: 1em;
+  font-weight: 400;
+}
+.services-top-right ul li a:hover{
+	color:#fa2b17;
+	text-decoration:none;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+.add-top{
+	margin-top:3em;
+}
+.add-left{
+	width:20%;
+	float:left;
+}
+.add-right{
+	width:80%;
+	float:right;
+}
+.add-right h4{
+	color:#090909;
+	font-size:1.2em;
+	font-weight:700;
+	margin:0;
+}
+.add-right p {
+	color: #888d91;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.7em;
+	margin-top: 1em;
+}
+.additional {
+	padding-bottom: 5em;
+}
+/*--end-services--*/
+/*--start-contact--*/
+.contact{
+	padding-top:4em;
+}
+.contact-main h3,.about-main h3,
+.advn-main h3,.team-top h3,
+.services-main h3,.add-mian h3,
+.clients-main h3,.login-main h3,
+.rgstr-top h3{
+	font-size:2.6em;
+	font-weight:600;
+	margin:0;
+	text-align:center;
+	color:#b72706;
+}
+.contact-top-one h4 {
+	color: #b72706;
+	font-size: 1.5em;
+	font-weight: 600;
+	margin: 0;
+}
+.contact-top-one h6 {
+	color: #1E1E1E;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 1.6em;
+	margin: 1em 0;
+}
+.contact-top-one span {
+	display: block;
+}
+.contact-top-one p {
+	color: #858585;
+	font-size: 1em;
+	margin: 1em 0px;
+	line-height: 1.8em;
+}
+.contact-top-one p a {
+	color: #858585;
+	font-size: 1em;
+	margin: 1em 0px;
+	line-height: 1.8em;
+}
+.contact-top-one p a:hover {
+	color: #f92c16;
+	text-decoration: none;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+.contact-top-right form input[type="text"] {
+	width: 32.95%;
+	color: #898888;
+	outline: none;
+	font-size: 1em;
+	padding: 10px 10px;
+	margin-bottom: 1em;
+	border: solid 1px #D5D4D4;
+	-webkit-appearance: none;
+}
+.contact-top-right form textarea {
+	resize: none;
+	width: 100%;
+	color: #898888;
+	font-size: 1em;
+	outline: none;
+	padding: 10px 10px;
+	border: solid 1px #D5D4D4;
+	min-height: 12em;
+	-webkit-appearance: none;
+}
+.sub-button input[type="submit"] {
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #b72706;
+	padding: 10px 20px;
+	font-size: 1em;
+	font-weight: 600;
+	-webkit-appearance: none;
+}
+.sub-button input[type="submit"]:hover {
+	background: #E4DD2C;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+.sub-button {
+	margin-top: 1.5em;
+	text-align: center;
+}
+.contact-top {
+	margin-top: 3em;
+}
+.contact-bottom iframe{
+	width:100%;
+	height:400px;
+}
+.contact-bottom {
+  margin: 4em 0;
+}
+/*--end-contact--*/
+/*--gallery-Part-starts-Here--*/
+/*-- portfolio --*/
+.port {
+  padding: 3em 0;
+}
+.portfolio {
+	padding: 0.5em 0em;
+}
+.project-section-head h3{
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: 500;
+	font-size: 3.2em;
+}	
+.project-section-head p{
+	color: #FFF;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width: 23.75%;
+	display: none;
+	float: left;
+	overflow: hidden;
+	margin: 0em 0.5em;
+}
+div#portfoliolist {
+  padding: 0em 0 3em;
+}
+.portfolio-wrapper {
+	overflow:hidden;
+	position: relative !important;
+	cursor:pointer;
+}
+.portfolio img {
+	width:100%;
+	transition: all 300ms!important;
+	-webkit-transition: all 300ms!important;
+	-moz-transition: all 300ms!important;
+}
+.portfolio .label {
+	position: absolute;
+	width: 100%;
+	height:40px;
+	bottom:-40px;
+}
+.portfolio .label-bg {
+	background: #22B4B8;
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.portfolio .label-text {
+	color:#fff;
+	position: relative;
+	z-index:500;
+	padding:5px 8px;
+}
+.portfolio .text-category {
+	display:block;
+	font-size:9px;
+	font-size: 12px;
+	text-transform:uppercase;
+}
+/* Self Clearing Goodness */
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; 
+}
+.row:after,
+.clearfix:after {
+  clear: both; 
+}
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.zoom-icon {
+	position: absolute;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+	display: block;
+	left: 0;
+	top: -152px;
+	width: 290px;
+	height: 219px;
+	background: url(http://www.stridessoftware.com/safetrans/assets/js/images/zoom.png) center center no-repeat rgba(77, 78, 98, 0.45);
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+}
+.grid_box .zoom-icon {
+	top: -5px;
+	width: 100%;
+	height: 203px;
+}
+.grid_box a:hover .zoom-icon {
+	top: 0;
+	opacity: 1;
+	filter: alpha(opacity=99); 
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=99)";
+}
+.entertain_box{
+	margin-bottom:3em;
+}
+.portfolio h3 {
+  color: #b72706;
+  text-align: center;
+  font-size: 2.6em;
+  font-weight: 600;
+}
+/*--single--*/
+.artical-links{
+	padding: 10px 0px;
+	border:1px dashed rgba(0, 0, 0, 0.61);
+	border-left: none;
+	margin-top: 5px;
+	border-right: none;
+}
+.artical-links ul li{
+	display:inline-block;
+}
+.artical-links ul li:last-child{
+	float:right;
+}
+.artical-links ul li a span{
+	vertical-align:top;
+}
+.artical-links ul li small{
+	background:url(http://www.stridessoftware.com/safetrans/assets/js/images/img-sprite.png)no-repeat -20px -136px;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-right:3px;
+	vertical-align: middle;
+}
+.artical-links ul li small.admin{
+	background-position:-49px -136px;
+}
+.artical-links ul li small.no{
+	background-position:-75px -138px;
+}
+.artical-links ul li small.posts{
+	background-position:-102px -136px;
+}
+.artical-links ul li small.link{
+	background-position:-127px -136px;
+}
+.artical-links ul li a{
+	color: #50504f;
+	padding-left: 20px;
+}
+.artical-links ul li a:hover{
+	text-decoration:underline;
+}
+.artical-content h3 {
+  color: #b72706;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px 0px;
+  font-size: 1.5em;
+  margin: 0;
+}
+.artical-content p {
+	color: #50504f;
+	font-size: 1em;
+	line-height: 1.8em;
+	margin: 1em 0;
+}
+
+.artical-commentbox h3, .comment-grid-top h3 {
+	color: #b72706;
+	text-align: left;
+	text-transform: uppercase;
+	padding-top: 1em;
+	margin: 0;
+	font-size: 1.5em;
+}
+.top-comment-left{
+	float: left;
+	width: 13%;
+}
+.top-comment-right{
+	float: left;
+	width:84%;
+	margin-left:1em;
+}
+.top-comment-right ul{
+	padding: 0;
+	margin: 0;
+}
+.top-comment-right ul li {
+	display: inline-block;
+	color: #333;
+	padding: 0.3em;
+	font-weight: 700;
+}
+.top-comment-right ul li a{
+	text-decoration: none;
+	font-size: 1.1em;
+	color: #FFF600;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+}
+.top-comment-right ul li a:hover{
+	color: #000;
+}
+.top-comment-right p {
+	color:#50504f;
+	font-size: 1em;
+	margin: 0;
+}
+.top-comment-right ul li span.left-at{
+	font-size: 1.2em;
+}
+.top-comment-right ul li span.right-at{
+	font-size: 1em;
+}
+.comments-top-top {
+	margin: 1.5em 0;
+	background: #eee;
+	padding: 2em;
+	width: 70%;
+}
+.single-page-artical {
+	padding: 2em 0 4em;
+}
+.blog-top p {
+	font-size: 1em;
+	color: #fff;
+	line-height: 1.8em;
+	text-align: left;
+	margin: 1em 0;
+}
+.artical-links ul {
+  padding: 0;
+}
+/*---*/
+/*--gallery-Part-Ends-Here--*/
+/*-- responsive-mediaquries --*/
+@media(max-width:1440px){
+
+}
+/*-- responsive-mediaquries --*/
+@media(max-width:1366px){
+
+}
+/*-- responsive-mediaquries --*/
+@media(max-width:1280px){
+
+}
+/*-- responsive-mediaquries --*/
+@media(max-width:1024px){
+
+.banner-bottom h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.banner {
+  padding: 3em 0;
+}
+}
+/*-- responsive-mediaquries --*/
+@media(max-width:768px){
+
+}
+/*-- responsive-mediaquries --*/
+@media(max-width:640px){
+
+.banner-bottom h4 {
+  font-size: 1.2em;
+}
+
+}
+/*-- responsive-mediaquries --*/
+@media(max-width:480px){
+
+.banner {
+  padding: 2em 0 3em;
+}
+}
+/*-- responsive-mediaquries --*/
+@media(max-width:320px){
+.banner-1 {
+  margin: 0em 0.1em;
+}
+.banner-bottom {
+
+  padding: 0.5em;
+}
+.banner-bottom p {
+  font-size: 0.875em;
+}
+.banner-bottom h4 {
+  font-size: 0.96em;
+}
+}
