@@ -1,0 +1,73 @@
+.menu-section { float: left; width: 100%; height: 45px; position: relative; z-index: 9000; text-align: center; background: #007ec4; text-shadow: 0 1px 1px rgba(0,0,0,.2) }
+.ie7 .menu-section { z-index: 5000 !important; }
+.ie7 .menu-section ul.sm-blue li ul { z-index: 5000 !important; }
+.navbar-toggle { display: none }
+.sm, .sm li, .sm ul { display: block; list-style: none; padding: 0; margin: 0; line-height: normal; direction: ltr }
+ul.sm ul { position: absolute; top: -999999px; width: 100px }
+ul.sm a, ul.sm li { position: relative }
+ul.sm li { float: left }
+ul.sm a { display: block; white-space: nowrap }
+ul.sm li>a .sub-arrow { display: none }
+ul.sm li li>a .sub-arrow, ul.sm:after { display: block }
+ul.sm a.disabled { cursor: default }
+.sm-rtl, .sm-rtl li, .sm-rtl ul { direction: rtl }
+ul.sm-rtl li { float: right }
+ul.sm ul li, ul.sm-vertical li { float: none }
+ul.sm ul a, ul.sm-vertical a { white-space: normal }
+ul.sm ul.sm-nowrap>li>a { white-space: nowrap }
+ul.sm:after { content: "\00a0"; height: 0; clear: both; visibility: hidden; overflow: hidden }
+ul.sm, ul.sm *, ul.sm :after, ul.sm :before { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box }
+ul.sm { -webkit-tap-highlight-color: transparent }
+.sm-blue {/*background: #007ec4;*/ display: inline-block }
+.sm-blue ul { padding: 0; background: #fafafa; border-bottom: 4px solid #007ec4; text-align: left }
+.sm-blue ul ul { margin-top: 0!important; top: 0!important; display: none }
+.sm-blue a { padding: 11px 16px; color: #fff; font-size: 14px; line-height: 23px; font-weight: 400; text-decoration: none }
+.sm-blue a.highlighted, .sm-blue a:active, .sm-blue a:focus, .sm-blue a:hover { background: #fafafa; color: #787878 }
+.sm-blue ul a { padding: 3px 30px 3px 23px; background: 0 0; color: #787878; text-shadow: none; border-left: 3px solid #fafafa }
+.sm-blue ul a.highlighted, .sm-blue ul a:active, .sm-blue ul a:focus, .sm-blue ul a:hover { background: #fff; color: #007ec4; border-left: 3px solid #ffdc05 }
+.sm-blue ul ul a.highlighted, .sm-blue ul ul a:active, .sm-blue ul ul a:focus, .sm-blue ul ul a:hover { background: #fff; color: #007ec4; border-left: 3px solid #007ec4 }
+.sm-blue a.current, .sm-blue a.current:active, .sm-blue a.current:focus, .sm-blue a.current:hover, .sm-blue ul a.current, .sm-blue ul a.current:active, .sm-blue ul a.current:focus, .sm-blue ul a.current:hover { background: #006892; color: #fff }
+.sm-blue a span.sub-arrow { position: absolute; bottom: 2px; left: 50%; margin-left: -5px; width: 0; height: 0; overflow: hidden; border-width: 5px; border-style: solid dashed dashed; border-color: #a4cde1 transparent transparent; }
+.sm-blue ul a span.sub-arrow, .sm-blue-vertical a span.sub-arrow { bottom: auto; top: 50%; margin-top: -5px; right: 15px; left: auto; margin-left: 0; border-style: dashed dashed dashed solid; border-color: transparent transparent transparent #a4cde1 }
+.sm-blue span.scroll-down, .sm-blue span.scroll-up { position: absolute; display: none; visibility: hidden; overflow: hidden; background: #fff; height: 20px }
+.sm-blue span.scroll-down-arrow, .sm-blue span.scroll-up-arrow { position: absolute; top: -2px; left: 50%; margin-left: -8px; width: 0; height: 0; overflow: hidden; border-width: 8px; border-style: dashed dashed solid; border-color: transparent transparent #247eab }
+.sm-blue span.scroll-down-arrow { top: 6px; border-style: solid dashed dashed; border-color: #247eab transparent transparent }
+@media only screen and (max-width :1200px) {
+.sm-blue a { padding: 13px 11px }
+.sm-blue ul a { padding: 8px 30px 8px 11px }
+}
+@media only screen and (max-width :1024px) {
+.sm-blue a { padding: 11px 9px }
+}
+@media screen and (max-width:850px) {
+.sm-blue:not(.sm-blue-vertical)>li>a { padding-left: 18px; padding-right: 18px }
+}
+@media screen and (max-width:750px) {
+.sm-blue:not(.sm-blue-vertical)>li>a { padding-left: 10px; padding-right: 10px }
+}
+@media screen and (max-width:980px) {
+.navbar-toggle { display: block; background: url(../images/menu_btn.png) top left no-repeat; height: 39px; width: 46px; border: none; padding: 10px; float: right; font-size: 0; cursor: pointer; margin-top: 3px }
+ul.sm-blue { width: 400px; position: absolute; right: 0; display: none; text-align: left; top: 48px }
+ul.sm li>a .sub-arrow { display: block }
+ul.sm-blue ul { display: none; position: static!important; top: auto!important; left: auto!important; margin-left: 0!important; margin-top: 0!important; width: auto!important; min-width: 0!important; max-width: none!important }
+ul.sm-blue>li { float: none; text-align: left }
+ul.sm-blue ul.sm-nowrap>li>a, ul.sm-blue>li>a { white-space: normal }
+ul.sm-blue iframe { display: none }
+.sm-blue ul { border: 0; padding: 0; background: #fff }
+.sm-blue ul ul { background: rgba(100,100,100,.1) }
+.sm-blue a { padding: 10px 5px 10px 28px!important; background: #007cc3!important; color: #fff!important }
+.sm-blue ul a { background: 0 0!important; color: #247eab!important; text-shadow: none!important; padding: 10px 5px 10px 26px!important }
+.sm-blue a.current { background: #006892!important; color: #fff!important }
+.sm-blue a span.sub-arrow, .sm-blue ul a span.sub-arrow { top: 50%; margin-top: -9px; right: auto; left: 6px; margin-left: 0; width: 17px; height: 17px; font: 700 16px/16px monospace!important; text-align: center; border: 0; text-shadow: none; background: rgba(0,0,0,.1); -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px }
+.sm-blue li { border-left: 0 }
+.sm-blue ul li { border-top: 1px solid rgba(0,0,0,.05) }
+.sm-blue ul li:first-child { border-top: 0 }
+}
+@media screen and (max-width:760px) {
+.menu-section { position: absolute; right: 15px; top: 60px; width: 46px; height: auto; background: 0 0 }
+.menu-section .container { padding: 0 }
+}
+@media screen and (max-width:480px) {
+ul.sm-blue { width: 270px; z-index: 100 }
+}
+.ie7 .sm-blue {/*margin-top:-44px;*/ z-index: 500; position: relative; }

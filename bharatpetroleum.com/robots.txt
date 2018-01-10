@@ -1,0 +1,28 @@
+User-agent: *
+
+Disallow: /Careers/pwdpdf2016v1
+Disallow: /Careers/pwdcertificate2016v1
+Disallow: /Careers/photos
+Disallow: /Careers/OperatorFieldPosition2016v1	
+Disallow: /Careers/OperatorFieldPosition
+Disallow: /Careers/mumbaiCareerPhotos2016v1
+Disallow: /Careers/mumbaiCareerPdf2016v1
+Disallow: /Careers/mumbaiCareerAdmitCard2016v1	
+Disallow: /Careers/mumbaiCareerAdmitCard - Copy123
+Disallow: /Careers/kochiCareerPhotos2016v1
+Disallow: /Careers/kochiCareerPdf2016v1
+Disallow: /Careers/kochicareerAdmitCard2016v1
+Disallow: /Careers/gate2017v1
+Disallow: /Careers/images
+Disallow: /Careers/Gate2017Correction
+Disallow: /Careers/Gate2016pdfv1
+Disallow: /Careers/ExpEngPdf2016v1
+Disallow: /CMS/
+Disallow: /Careers/mumbaiCareerPdf2017
+Disallow: /Careers/mumbaiCareerPhotos2017
+Disallow: /Careers/mumbaiCareerAdmitCard2017
+Disallow: /Careers/kochiCareer2017Pdf
+Disallow: /Careers/kochiCareer2017Photos
+Disallow: /Careers/kochicareer2017AdmitCard
+Disallow: /Careers/Gate2018
+Disallow: /Careers/Gate2018Docs
