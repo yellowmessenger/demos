@@ -1,0 +1,598 @@
+.flex-container, .flexslider, .flexslider .slides>li, .flexslider4 {
+	position: relative
+}
+.flex-direction-nav li .flex-next, .flex-direction-nav li .flex-next:hover, .flex-direction-nav li .flex-prev, .flex-direction-nav li .flex-prev:hover {
+	background-position: center center;
+	background-repeat: no-repeat
+}
+body, html {
+	/*height: 100%;*/
+	margin: 0;
+	padding: 0
+}
+.flex-container a:active, .flex-container a:focus, .flexslider a:active, .flexslider a:focus {
+	outline: 0
+}
+.flex-control-nav, .flex-direction-nav, .slides {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+.flexslider {
+	display: block;
+	height: 100%!important;
+	overflow: hidden!important;
+	width: 100%!important
+}
+
+
+/* jan-16-17 */
+.flexslider .slides.compressed_banner li {
+	background-size:100% auto !important;
+	background-position: top center !important;
+}
+/**/
+
+
+
+
+.flexslider .slides>li {
+	display: none;
+	-webkit-backface-visibility: hidden
+}
+.no-js .slides>li:first-child, .slides:after, html[xmlns] .slides {
+	display: block
+}
+.flexslider .slides, .flexslider .slides li {
+	width: 100%!important;
+	height: 100%!important;
+	background-size: 100%
+}
+.flexslider .slides img {
+	min-height: 100%;
+	min-width: 100%;
+	max-width: 10000%!important;
+	margin: 0 auto!important
+}
+.slides:after {
+	content: ".";
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0
+}
+* html .slides {
+	height: 1%
+}
+.flex-container {
+	clear: both
+}
+.flex-direction-nav {
+	float: left;
+	display: none;
+	position: absolute;
+	top: 48%;
+	margin-top: 82px
+}
+.flex-direction-nav li a {
+	margin: 0;
+	display: block;
+	position: relative;
+	cursor: pointer;
+	z-index: 10;
+	background-color: #110906;
+	height: 28px;
+	text-indent: -9999px;
+	width: 39px
+}
+.flex-direction-nav li a:hover {
+	opacity: 1;
+	background-color: #fff
+}
+.flex-direction-nav li .flex-next {
+	right: 0;
+	background-image: url(https://www.bharatpetroleum.com/images/next-small.png)
+}
+.flex-direction-nav li .flex-prev {
+	left: 1px;
+	background-image: url(https://www.bharatpetroleum.com/images/prev-small.png)
+}
+.flex-direction-nav li .flex-next:hover {
+	background-image: url(https://www.bharatpetroleum.com/images/next-small.png)
+}
+.flex-direction-nav li .flex-prev:hover {
+	background-image: url(https://www.bharatpetroleum.com/images/prev-small.png)
+}
+.flex-pauseplay .flex-pause, .flex-pauseplay .flex-pause:hover {
+	background-image: url(https://www.bharatpetroleum.com/images/pause-small.png);
+	background-position: center center;
+	background-repeat: no-repeat
+}
+.flex-direction-nav li .disabled {
+	opacity: 1;
+	cursor: default
+}
+.slider-1 .flex-direction-nav li .flex-next {
+	position: absolute;
+	left: 81px;
+	opacity: 1;
+	-webkit-transition: all .3s ease
+}
+.slider-1 .flex-direction-nav li .flex-prev {
+	position: absolute;
+	left: 1px;
+	opacity: 1;
+	-webkit-transition: all .3s ease
+}
+.flex-pauseplay span {
+	text-transform: capitalize
+}
+.flex-pauseplay {
+	float: left;
+	display: none;
+	position: absolute;
+	top: 48%;
+	margin-top: 82px;
+	z-index: 9
+}
+.flex-pauseplay .flex-pause, .flex-pauseplay .flex-play {
+	cursor: pointer;
+	text-indent: -9999px;
+	z-index: 10;
+	margin: 0;
+	display: block;
+	background-color: #110906;
+	height: 28px;
+	width: 39px
+}
+.flex-pauseplay .flex-pause {
+	left: 1px
+}
+.flex-pauseplay .flex-play, .flex-pauseplay .flex-play:hover {
+	background-image: url(https://www.bharatpetroleum.com/images/play-small.png);
+	background-position: center center;
+	background-repeat: no-repeat
+}
+.slider-1 .flex-pauseplay .flex-pause {
+	position: absolute;
+	left: 41px;
+	opacity: 1;
+	-webkit-transition: all .3s ease
+}
+.flex-pauseplay .flex-play {
+	left: 1px
+}
+.slider-1 .flex-pauseplay .flex-play {
+	position: absolute;
+	left: 41px;
+	opacity: 1;
+	-webkit-transition: all .3s ease
+}
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: 85px;
+	text-align: center;
+	z-index: 10
+}
+.flex-control-nav li {
+	margin: 0 6px;
+	display: inline-block
+}
+.flex-control-paging li a {
+	width: 14px;
+	height: 14px;
+	display: block;
+	background: 0 0;
+	cursor: pointer;
+	text-indent: -9999px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+	border: 1px solid #eb9000
+}
+.flex-control-paging li a:hover {
+	background: #036095
+}
+.flex-control-paging li a.flex-active {
+	background: #fff;
+	cursor: default
+}
+.flex-control-thumbs {
+	margin: 5px 0 0;
+	position: static;
+	overflow: hidden
+}
+.flex-control-thumbs li {
+	width: 25%;
+	float: left;
+	margin: 0
+}
+.flex-control-thumbs img {
+	width: 100%;
+	display: block;
+	opacity: .7;
+	cursor: pointer
+}
+.flex-control-thumbs img:hover {
+	opacity: 1
+}
+.flex-control-thumbs .flex-active {
+	opacity: 1;
+	cursor: default
+}
+.inner-content {
+	float: none;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	text-align: left;
+	position: absolute;
+	padding: 25px;
+	bottom: 0;
+	background: url(../images/caption-yellowbg.png)
+}
+.flexslider .inner-content h2 {
+	font-family: proxima_nova_rgregular;
+	font-size: 2.1em!important;
+	color: #000!important;
+	text-transform: uppercase;
+	padding: 0 15px 0 0!important;
+	float: left;
+	line-height: 1em!important;
+	border-right: 1px solid #000
+}
+.box-top {
+	border-bottom: 0;
+	height: 35px;
+	width: 200px;
+	margin-bottom: 10px
+}
+.text-top h1, .text-top p {
+	text-transform: uppercase;
+	font-family: proxima_nova_rgregular;
+	width: 100%;
+	height: auto
+}
+.box-bot, .box-top {
+	display: none;
+	border: 3px solid #ffdc05
+}
+.text-top {
+	float: left;
+	margin-right: 15px
+}
+.text-top p {
+	font-size: 18px;
+	color: #15648d
+}
+.text-top h1 {
+	font-size: 1.6em!important;
+	color: #000;
+	vertical-align: middle
+}
+.text-top h1 br {
+	display: none
+}
+.box-bot {
+	border-top: 0;
+	height: 35px;
+	width: 200px;
+	clear: both
+}
+.btn-sec {
+	text-align: center;
+	float: left
+}
+.btn-sec a {
+	display: inline-block;
+	background: #007ec4;
+	padding: 3px 20px;
+	text-align: center;
+	font-family: proxima_nova_rgregular;
+	font-size: 1.2em;
+	color: #fff;
+	text-transform: uppercase
+}
+.slider-1 .slides li h2, .slider-1 .slides li p {
+	z-index: 50;
+	font-family: proxima_nova_rgregular;
+	min-width: 50px;
+	color: #fff
+}
+.btn-sec a:hover {
+	background: #007ec4;
+	color: #fff;
+	text-decoration: none
+}
+.slider-1 {
+	overflow: hidden
+}
+.slider-1 .loading, .slider-1 .slides li .contain {
+	position: relative
+}
+.slider-1 .slides li h2 {
+	font-size: 21px;
+	line-height: 24px;
+	padding: 10px 0 0;
+	margin: 0 15px 0 0
+}
+.slider-1 .slides li p {
+	font-size: 14px;
+	padding-top: 6px;
+	margin: 0
+}
+.slider-1 .slides li .links {
+	left: -100%;
+	opacity: 0;
+	z-index: 50
+}
+.slider-1 .slides li .item {
+	right: -100%;
+	opacity: 0;
+	z-index: 10
+}
+.slider-1 .slides li p, .slider-2 .slides li p {
+	line-height: normal
+}
+.slider-1 .loading {
+	background: url(../images/loading.gif) center center no-repeat #999da1
+}
+.slider-1 .slides li .item .video-wrap {
+	min-width: 425px;
+	min-height: 244px
+}
+.slider-1.iphone li {
+	background: url(https://www.bharatpetroleum.com/images/img/sliders/pattern.png)
+}
+.slider-1.iphone li img {
+	margin-top: 37px
+}
+.banner-inner-section .flexslider .slides li {
+	height: 410px
+}
+.banner-inner-section .flexslider .slides li .inner-content h1 {
+	font-family: proxima_nova_rgregular;
+	font-size: 2.1em!important;
+	color: #000!important;
+	text-transform: uppercase;
+	padding: 0 15px 0 0!important;
+	margin-right: 15px;
+	float: left;
+	line-height: 1em!important;
+	border-right: 1px solid #000
+}
+.banner-inner-section .flexslider .slides li .inner-content p {
+	width: 100%;
+	height: auto;
+	font-family: proxima_nova_rgregular;
+	font-size: 1.6em!important;
+	font-weight: 700;
+	color: #000;
+	text-transform: uppercase;
+	vertical-align: middle
+}
+.banner-inner-section .flexslider .slides li .inner-content p br {
+	display: none
+}
+.banner-inner-section .slider-2 .flexslider .slides li {
+	height: 410px!important
+}
+
+@media only screen and (min-width:768px) and (max-width:959px) {
+.slider-1 .slides li h2 {
+	font-size: 18px;
+	padding-top: 15px
+}
+.slider-1 .slides li p {
+	font-size: 14px
+}
+.flex-direction-nav {
+	margin-top: -29px
+}
+.contentLeft {
+	padding: 0 1%
+}
+.banner-inner-section .slider-2 .flexslider .slides li {
+	height: 100%!important
+}
+.inner-content {
+	padding: 10px
+}
+}
+@media only screen and (min-width:980px) and (max-width:1024px) {
+.slider-1 .slides li h2 {
+	font-size: 14px;
+	line-height: 18px;
+	padding-top: 5px;
+	letter-spacing: .1px
+}
+.slider-1 .slides li p {
+	font-size: 12px;
+	padding-top: 5px
+}
+.contentLeft {
+	padding: 0 1%
+}
+.banner-inner-section .slider-2 .flexslider .slides li {
+	height: 100%!important
+}
+}
+@media only screen and (max-width:767px) {
+.slider-1 .loading, .slider-1 .slides li .contain {
+	position: relative
+}
+.slider-1 .slides li .links, .slider-1 .slides p {
+	display: block!important
+}
+.flexslider ul.slides p {
+	width: 100%;
+	top: 37px
+}
+.slider-1 .slides li .item {
+	display: none!important
+}
+.slider-1 .slides li h2 {
+	font-size: 15px!important;
+	line-height: 18px
+}
+.slider-1 {
+	height: 100%
+}
+.inner-content {
+	padding: 10px
+}
+.text-top h1 {
+	font-size: 12px!important
+}
+}
+@media only screen and (min-width:480px) and (max-width:767px) {
+.slider-1 .loading, .slider-1 .slides li .contain {
+	position: relative;
+	min-height: 536px
+}
+.slider-1 .slides li .links, .slider-1 .slides p {
+	display: block!important
+}
+.slider-1 .slides li .item {
+	max-width: 40%;
+	top: 42%!important;
+	display: block!important
+}
+.slider-1 .slides li h2 {
+	font-size: 17px;
+	line-height: 29px
+}
+.flex-direction-nav {
+	visibility: visible;
+	margin-top: 127px
+}
+.slider-1 {
+	height: 100%
+}
+}
+@media (max-width :1024px) {
+.flex-container {
+	height: 200px
+}
+.text-top h1 {
+	font-size: 5em
+}
+.slider-1 .slides li p {
+	font-size: 1.5em
+}
+.box-bot, .box-top {
+	height: 25px
+}
+.banner-inner-section .flex-container {
+	height: 250px
+}
+.slider-2 .flexslider .slides li {
+	height: 250px!important
+}
+.banner-inner-section .flexslider .slides li .inner-content h1 {
+	font-size: 2.8em
+}
+.banner-inner-section .flexslider .slides li .inner-content p {
+	font-size: 2em
+}
+}
+@media (max-width :768px) {
+.box-content .content h2 {
+	font-size: 1.5em
+}
+.box-content .content p {
+	min-height: 126px
+}
+.slider-1 .slides li p {
+	font-size: 1.3em
+}
+.box-bot, .box-top {
+	height: 25px
+}
+.flex-container {
+	height: 190px;
+	margin-top: -5px
+}
+.banner-inner-section .slider-2 .flexslider .slides li {
+	height: 100%!important
+}
+.inner-content {
+	padding: 10px
+}
+}
+@media (max-width :650px) {
+.banner-inner-section .flexslider .slides li .inner-content h1, .text-top {
+	float: none
+}
+.flex-container {
+	margin-top: 5px
+}
+.flex-control-nav {
+	bottom: 0;
+	text-align: right
+}
+.flex-control-paging li a {
+	text-indent: 2000%;
+	width: 10px;
+	height: 10px
+}
+.slider-1 .slides li h2 {
+	float: none;
+	min-width: 100%
+}
+.inner-content {
+	padding: 5px
+}
+.btn-sec a {
+	font-size: 11px
+}
+.banner-inner-section .flex-container {
+	height: 160px
+}
+}
+@media (max-width :400px) {
+.container {
+	width: 100%
+}
+.text-top h1 {
+	font-size: 20px
+}
+.box-bot, .box-top {
+	width: 100px;
+	height: 25px
+}
+.slides p {
+	display: block!important
+}
+.slider-1 .slides li p {
+	font-size: 1em
+}
+.flex-container {
+	margin-top: -10px
+}
+.banner-inner-section .flex-container {
+	margin-top: 0
+}
+.banner-inner-section .flexslider .slides li .inner-content h1 {
+	font-size: 16px!important;
+	display: block;
+	padding-top: 30px
+}
+.banner-inner-section .flexslider .slides li .inner-content p {
+	font-size: 12px!important
+}
+.banner-inner-section .flexslider .slides li .inner-content h1, .flexslider .inner-content h2 {
+	border-right: none
+}
+}
+@media only screen and (max-device-width:667px) and (-webkit-device-pixel-ratio:2) {
+.slider-1 .loading, .slider-1 .slides li .contain {
+	min-height: 0!important
+}
+}
+
+.ie7 .banner-inner-section .slider-2 .flexslider{ float:left; height:410px; !important; border:1px solid transparent; width:99.9% !important;}
+.ie7 .flex-control-nav{ bottom:-280px;}
+.ie7 .flexslider{ z-index:0 !important;}
