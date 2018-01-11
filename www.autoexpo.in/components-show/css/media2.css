@@ -1,0 +1,243 @@
+@media screen and (max-width: 1700px) { 
+
+}
+
+@media screen and (max-width: 1500px) { 
+	
+} 
+
+@media screen and (max-width: 1366px) { 
+
+}
+
+@media screen and (max-width:1255px) { 
+
+}
+
+@media screen and (max-width:1024px) { 
+/********Show Outline Start********/
+.show_outline .centring { max-width: 96%;}
+.show_outline h2 span { width: 90%;}
+.show_outline .right { width: 67%;}
+.show_outline .right .components{ font-size:16px; line-height:28px;}
+.show_outline .right .imgBox li {  margin-left: 8px;}
+/********Show Outline End********/
+
+/********General Start********/
+.GeneralRight { width: 74%;}
+.GeneralRight.list{ width:100%;}
+/********General End********/
+
+/********Daily News Start********/
+.Daily_News li{  margin:0 20px 20px 0; width:28%;}
+.Daily_News li img{ width:100%}
+/********Daily News Start********/
+
+/********Search List Start********/
+.searchList .select-dropdown{ width:27%;}
+.searchList input[type="text"]{ width:27%;}
+.searchList .btnDiv { margin-top: 0; width:auto;}
+.searchList .btnDiv .btnSearch { margin-right: 7px; padding: 11px 22px;}
+.searchList .btnDiv .btnSearch:hover{ margin-right: 7px; padding: 11px 22px;}
+/********Search List End********/
+
+/********Contact Start********/
+.contact .centring { max-width: 95%;}
+/********Contact End********/
+}
+
+
+
+@media screen and (max-width:990px) { 
+
+/********Show Outline Start********/
+.show_outline .left{ display:none;}
+.show_outline .right{ width:100%;}
+/********Show Outline End********/
+
+
+/********Mobile Menu********/
+.mobileMenu{ display:block; width: auto; cursor:pointer; position:relative; float:right;top: 10px;}
+.mobileMenuNav {  background: #e0e4e8; position: absolute; width: 93%; z-index: 9; padding: 2% 4%; left: -1%; }
+.mobileMenuNav ul{ list-style:none; }
+.mobileMenuNav li{ line-height:normal; padding:12px 0; border-bottom:dashed #a1a5a8 1px;}
+.mobileMenuNav li.list{ border-bottom:none;}
+.mobileMenuNav li a{ font-family: 'Asap', sans-serif; font-size: 15px; color:#575353 !important; text-decoration:none;}
+.mobileMenuNav li a:hover{ color:#d7251b !important;}
+/********Mobile Menu********/
+
+/********Daily News Start********/
+.Daily_News li{  margin:0 20px 20px 0; width:28%;}
+.Daily_News li img{ width:100%}
+/********Daily News End********/
+
+/********Search List Start********/
+.searchList .select-dropdown{ width:30%;}
+.searchList input[type="text"]{ width:29%;}
+.searchList .btnDiv { margin-top: 0; width:auto;}
+/********Search List End********/
+
+/********Contact Start********/
+.contact .centring { max-width: 95%;}
+/********Contact End********/
+
+}
+
+
+@media screen and (max-width:767px) { 
+
+
+/********Mobile Menu********/
+	.mobileMenu{ display:block; width: auto; cursor:pointer; position:relative; float:right;top: 0px;}
+	.mobileMenuNav {  background: #e0e4e8; position: absolute; width: 93%; z-index: 9; padding: 2% 4%; left: -1%; top: 30px;}
+	.mobileMenuNav ul{ list-style:none; }
+	.mobileMenuNav li{ line-height:normal; padding:12px 0; border-bottom:dashed #a1a5a8 1px;}
+	.mobileMenuNav li.list{ border-bottom:none;}
+	.mobileMenuNav li a{ font-family: 'Asap', sans-serif; font-size: 15px; color:#575353 !important; text-decoration:none;}
+	.mobileMenuNav li a:hover{ color:#d7251b !important;}
+	/********Mobile Menu********/
+	
+	/********Show Outline********/
+	.show_outline .right{ width:100%; position:relative}
+	.show_outline .right p{ font-size:13px;}
+	.show_outline .right .components { font-size: 13px; line-height: 18px;margin-bottom: 10px;}
+	.show_outline .right table{ display: block;  overflow-x: auto; white-space: nowrap; font-size:13px;}
+	.show_outline .right .imgBox { width: auto; float: left; }
+	.show_outline .right h1{ font-size:22px; margin-bottom: 10px;width:auto; background-position: right bottom;padding: 0px 85px 0px 0px;}
+	.show_outline .BreadCrumb .BreadCrumb_right{ margin-bottom:20px;}
+	.show_outline .right .click h3{ font-size:13px;}
+	.show_outline .right .click a{ font-size:13px;}
+	/********Show Outline********/
+	
+	/********General Start********/
+	.GeneralBox{margin-top: 0;}
+	.GeneralLeft{ margin-bottom:10px;}
+	.GeneralRight{ width:100%;}
+	.GeneralRight.list{ width:100%;}
+	.GeneralRight a.delhi { font-size: 14px !important;}
+	/********General End********/
+	
+	/********Edition Start********/
+	.Edition{ margin-top:20px;}
+	.Edition .imgSmall { width: 100%; height: auto;}
+	.Edition .Media { float: left; margin: 0 auto; padding: 0 20px 11px 0;    width: 28%;}
+	/********Edition End********/
+	
+	/********Daily News Start********/
+	.Daily_News ul { margin-top: 15px;}
+	.Daily_News li{  margin:0 5% 5% 0; width:40%;}
+	.Daily_News li img{ width:100%}
+	/********Daily News Start********/
+	
+	/********Search List Start********/
+	.searchList .topBox{ margin-top:15px;}
+	.searchList .select-dropdown{ width:47%;}
+	.searchList input[type="text"]{ width:47%;}
+	.searchList .btnDiv { margin-top: 15px; width: 100%;}
+	.searchList .btnDiv .btnSearch {  margin-right: 7px; padding: 11px 28px;}
+	/********Search List End********/
+	
+	.popupBox { width:75%; height:220px; }
+	.popupBox h3{ font-size:18px;}
+	.popupBox p{ font-size:13px;}
+	.popupBox2 { width:75%; height:130px; }
+	.popupBox2 h3{ font-size:18px;}
+	.popupBox2 p{ font-size:13px;}
+	.popupBox3 { width:75%; height:220px; }
+	.popupBox3 h3{ font-size:18px;}
+	.popupBox3 p{ font-size:13px;}
+	.popupBox4 { width:75%; height:220px; }
+	.popupBox4 h3{ font-size:18px;}
+	.popupBox4 p{ font-size:13px;}
+	.popupBox5 { width:75%; height:220px; }
+	.popupBox5 h3{ font-size:18px;}
+	.popupBox5 p{ font-size:13px;}
+	.popupBox6 { width:75%; height:220px; }
+	.popupBox6 h3{ font-size:18px;}
+	.popupBox6 p{ font-size:13px;}
+	
+	/********Contact Start********/
+	.contact .centring { max-width: 93%;}
+	/********Contact End********/
+}
+
+@media screen and (max-width:479px) {	
+
+	/********Mobile Menu********/
+	.mobileMenu{ display:block; width: auto; cursor:pointer; position:relative; float:right;top: 0px;}
+	.mobileMenuNav {  background: #e0e4e8; position: absolute; width: 93%; z-index: 9; padding: 2% 4%; left: -1%; top: 30px;}
+	.mobileMenuNav ul{ list-style:none; }
+	.mobileMenuNav li{ line-height:normal; padding:12px 0; border-bottom:dashed #a1a5a8 1px;}
+	.mobileMenuNav li.list{ border-bottom:none;}
+	.mobileMenuNav li a{ font-family: 'Asap', sans-serif; font-size: 15px; color:#575353 !important; text-decoration:none;}
+	.mobileMenuNav li a:hover{ color:#d7251b !important;}
+	/********Mobile Menu********/
+	
+	/********Show Outline********/
+	.show_outline .centring{ width:92%}
+	.show_outline .right{ width:100%; position:relative}
+	.show_outline .right p{ font-size:13px;}
+	.show_outline .right .components { font-size: 13px; line-height: 18px;margin-bottom: 10px;}
+	.show_outline .right table{ display: block;  overflow-x: auto; white-space: nowrap; font-size:13px;}
+	.show_outline .right .imgBox { width: auto; float: left; }
+	.show_outline .right h1{ font-size:22px; margin-bottom: 10px;width:60%; background-position: right bottom;padding: 0px 85px 0px 0px;}
+	.show_outline .BreadCrumb .BreadCrumb_right{ margin-bottom:20px;}
+	.show_outline .right .click h3{ font-size:13px;}
+	.show_outline .right .click a{ font-size:13px;}
+	.show_outline .right .imgBox li { margin-left: 8px; width: 47%;}
+	.show_outline .right .imgBox img{ width:100%}
+	/********Show Outline********/
+	
+	/********General Start********/
+	.GeneralBox{margin-top: 0;}
+	.GeneralLeft{ margin-bottom:10px;}
+	.GeneralRight{ width:100%;}
+	.GeneralRight.list{ width:100%;}
+	.GeneralRight a.delhi { font-size: 14px !important;}
+	/********General End********/
+	
+	/********Edition Start********/
+	.Edition{ margin-top:20px;}
+	.Edition .imgSmall { width: 100%; height: auto;}
+	.Edition .Media { float: left; margin: 0 auto; padding: 0 20px 11px 0; width: 43%;}
+	/********Edition End********/
+	
+	/********Daily News Start********/
+	.Daily_News ul { margin-top: 15px;}
+	.Daily_News li{  margin:0 5% 5% 0; width:40%;}
+	.Daily_News li img{ width:100%}
+	/********Daily News Start********/
+	
+	/********Search List Start********/
+	.searchList .select-dropdown{ width:100%; margin-bottom:15px !important;}
+	.searchList input[type="text"]{ width:100%; margin-left: 0;}
+	.searchList .btnDiv { margin-top: 15px;width: 100%;}
+	.searchList .btnDiv .btnSearch { margin-left: 0; padding: 11px 24px;}
+	.searchList .btnDiv .btnSearch:hover{ margin-left: 0; padding: 11px 24px;}
+	/********Search List End********/
+	
+	.popupBox { width:75%; height:220px;}
+	.popupBox h3{ font-size:15px; line-height:20px;}
+	.popupBox p{ font-size:13px; line-height:normal;}
+	.popupBox2 { width:75%; height:130px; }
+	.popupBox2 h3{ font-size:15px; line-height:20px;}
+	.popupBox2 p{ font-size:13px; line-height:normal;}
+	.popupBox3 { width:75%; height:220px; }
+	.popupBox3 h3{ font-size:15px; line-height:20px;}
+	.popupBox3 p{ font-size:13px; line-height:normal;}
+	.popupBox4 { width:75%; height:220px; }
+	.popupBox4 h3{ font-size:15px; line-height:20px;}
+	.popupBox4 p{ font-size:13px; line-height:normal;}
+	.popupBox5 { width:75%; height:220px; }
+	.popupBox5 h3{ font-size:15px; line-height:20px;}
+	.popupBox5 p{ font-size:13px; line-height:normal;}
+	.popupBox6 { width:75%; height:220px; }
+	.popupBox6 h3{ font-size:15px; line-height:20px;}
+	.popupBox6 p{ font-size:13px; line-height:normal;}
+	
+	/********Contact Start********/
+	.contact .centring { max-width: 93%;}
+	.contact .contactInner p{ font-size:13px; line-height:20px; text-align: left;}
+	.contact .contactInner a{ font-size:13px; line-height:20px; text-align: left;}
+	/********Contact End********/
+}

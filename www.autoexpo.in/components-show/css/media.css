@@ -1,0 +1,1114 @@
+
+
+@media screen and (max-width: 1700px) { 
+
+#menu-hide{display:block;}
+#myNav{visibility:hidden;}
+.overlay-btn{ visibility:hidden;}
+
+}
+
+@media screen and (max-width: 1500px) { 
+
+.banner{ width:100%; height:100%; background:url(../images/banner-1.jpg); background-position: left; background-repeat: no-repeat; background-size: cover;}
+header{ width:80%; height:auto; margin:0 10%;  position:absolute; top:0px;}
+.banner-content{ width:70%; height:auto; padding:10px 0px; margin:0 auto; background:rgba(7, 42, 84, 0.6); margin-top: 15%; }
+
+.visitor-bg{ width:100%; height:100%; background:url(../images/visitor-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;
+	    float: left;}
+header .toplogo{ width:60%; float:right; margin:10px 0 0;}
+		
+nav{ width:100%; float:left; padding:0px; margin:0px; width:auto; background-color:transparent;}		
+nav ul{padding:0px; margin:0px; position:relative;}		
+nav ul li{padding:0px; margin:0px; display:inline-block; padding:12px 8px; color:#000000; text-decoration:none; font-size:14px;}		
+nav ul li a{ display:inline;  color:#000000; text-decoration:none; width: 100%; padding:10px 8px ;}		
+nav ul li a:hover{border-bottom:2px #ff0000 solid; color:#ff0000; background-position: top; background-repeat: no-repeat; background-size:100% auto; }
+	
+nav ul li ul{ display:none; position:absolute; top:42px; left:0px; background:rgba(247,246,245,0.9) ; width:auto;}
+nav ul li ul li{  display:inline-block; width:44%; }		
+nav ul li:hover ul{display:block; }	
+nav ul li:hover ul li{ position:relative; padding:12px 15px; font-size:14px; display:inline-block; border-bottom:1px #cccccc solid; text-align:left; }
+nav ul li:hover ul li a{ padding:12px 15px;  borde-bottom:2px #ff0000 solid; }				
+			
+					
+		
+		
+.visitor-bg-content{ width: 80%; height: 100%; margin: 0 10%; position: relative; float: left;}	
+.visitor-bg .part-detail{ width:192px; height:197px; float:left; position:relative; top:60%; left:10%; z-index:99; }
+.visitor-bg .photo-gallery{ width:192px; height:197px; float:left; position:relative; top:40%; left:32%; z-index:99; }
+.visitor-bg .down-kit{ width:192px; height:197px; float:left; position:relative; top:160px; left:45%; z-index:99; }
+
+.spn-logo-cont{width: 1200px; margin:0 auto;}
+.spn-logo{ width:auto; float:left; height:auto; margin:40px 4% 0 0; padding-right:3%; }
+.spn-logo img{ width:100%; }
+.spn-logo:last-child{ width:auto; float:left; height:auto; margin-right:0%; border-right:none;;}
+.spn-logo:last-child img{ width:100%; float:left; height:auto; margin-right:0%;}
+
+.newsletter-logo img{ position:absolute; left:52%;  background:url(../images/autoexpo-new-logo.jpg);  background-repeat: no-repeat;background-size:156px 159px; z-index:9999; margin-top:5%; }
+.newsletter-cont{ width:auto; height:auto; float:left; position:absolute;  right:12%; margin-top:5%; }
+.newsletter button{width: 45px; height: auto; float:left; background-position:center; background:url(../images/newsletter-btn-bg.png); background-repeat: no-repeat; margin:6px -30px; background-size:contain;}
+
+.newsletter-cont span{  width:100%;font-size:16px;color:#e1f0ff;text-transform:uppercase; margin: 0 0 15px; float:left;}
+.span-last{ width:auto; float:left; margin-top:50px !important;}
+
+.newsletter input[type=text] { width: 110%; float:left; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 1px solid #555; outline: none; 
+	font-family: 'Asap', sans-serif; font-weight:400; border-radius:15px; color:#696969; border:none; background:#0b5295; color:#7ea1c2;}
+	
+	
+.media-gallery{width: 1200px; height: 600px; float: left; margin: 25px 10%; float:left; position:relative;}
+.media-header{ width:100%; height:100px; font-size:40px; color:#535353; font-family: 'Asap', sans-serif; font-wieght:700; background:url(../images/head-bg.png); background-position: center; background-repeat: no-repeat; position: absolute; float: left; text-align:center; margin:15px 0px; 
+	padding:10px 0px 20px 0px }
+
+.media-img-one{ width:325px; height:326px; color:#535353; background:url(../images/media-img-1.png); background-repeat: no-repeat; position:absolute; top:27%; left:0%; float:left;}
+.media-img-two{ width:219px; height:218px; color:#535353; background:url(../images/media-img-2.png); background-repeat: no-repeat; position: absolute; top:24%; left:23%; float:left;}
+.media-img-three{ width:219px; height:218px; color:#535353; background:url(../images/media-img-3.png); background-repeat: no-repeat; position: absolute; top:58%; left:18%; float:left;}
+.media-img-four{ width:325px; height:326px; color:#535353; background:url(../images/media-img-4.png); background-repeat: no-repeat; position: absolute; top:37%; left:34%; float:left;}
+.media-img-five{ width:219px; height:218px; color:#535353; background:url(../images/media-img-5.png); background-repeat: no-repeat; position: absolute; top:23%; left:53%; float:left;}
+.media-img-six{ width:219px; height:218px; color:#535353; background:url(../images/media-img-6.png); background-repeat: no-repeat; position: absolute; top:57%; left:58%; float:left;}
+.media-img-seven{ width:325px; height:326px; color:#535353; background:url(../images/media-img-7.png); background-repeat: no-repeat; position: absolute; top:26%; left:69%; float:left;} 	
+	
+	
+#menu-hide{display:block;}
+#myNav{visibility:hidden;}
+.overlay-btn{ visibility:hidden;}
+
+
+header .toplogo{ width:60%; float:right; margin:10px 0;}
+header .toplogo-left{ width:70%; float:left;}
+header .toplogo-left-box{ width:100%; float:left;}
+header .toplogo-left-box img{ max-width:100%; text-align:center;}
+header .toplogo-left-cont{ width:33%; float:left;}
+header .toplogo-left-text{ width:100%; float:left; font-family: 'Asap', sans-serif; font-weight:500; font-size:12px; color:#3b3b3b; text-align:center;}
+
+header .toplogo-center{ width:1%; float:left;}
+header .toplogo-center-box{ width:100%; float:left;}
+
+header .toplogo-right{ width:29%; float:left;}
+header .toplogo-right-box{ width:100%; float:left;}
+header .toplogo-right-box img{ max-width:100%; text-align:center; margin: 0 auto;}
+header .toplogo-right-cont{ width:33%; float:left;}
+header .toplogo-right-text{ width:100%; float:left; font-family: 'Asap', sans-serif; font-weight:500; font-size:12px; color:#3b3b3b; text-align:center;}
+
+
+/*
+.counter-main{ width:1280px;  margin: 0 auto;}
+.counter-prop{ width:auto; float:left; margin:0 30px;}
+*/
+
+.counter-main{ width:1280px;  margin: 25px auto; display:table;}
+
+
+.counter-prop{ width:auto; float:left; margin:0 2.5%}
+.counter-prop h2{ font-size:55px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h3{ width: 55px; float: left; font-size: 95px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h5{ font-size:22px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-prop h6{float: left; width: 60px;margin-top: 62px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-text{ font-size:27px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; text-align:justify; color:#da251c;}
+.counter-side-text{ font-size:27px; margin-top:62px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-linebg{ width:auto; float:left;}
+
+
+
+
+
+	
+} 
+
+@media screen and (max-width: 1366px) { 
+
+header{ width:85%; height:auto; margin:0 8%;  position:absolute; top:0px;}
+
+/*header .site-menu{ width:100%; height:auto; float:left; margin-left:0%;}
+header .site-menu ul{ margin:0px 0px; padding:0px; width: 100%; float: left;}
+header .toplogo{ width:65%; float:right; margin:10px 0;}
+header ul li{ width:auto; float:right; text-align:right;  font-family: 'Asap', sans-serif; font-weight:500; font-size:16px; color:#3b3b3b; padding:20px 18px; text-transform:uppercase;}
+header ul li:hover{ text-transform:uppercase; -webkit-transition: all 0.3s ease 0s; -moz-transition:all 0.3s ease 0s; -o-transition:all 0.3s ease 0s;  transition:all 0.3s ease 0s; cursor:pointer; background:url(../images/menu-top-hover.png); background-position: top; background-repeat: no-repeat; background-size:auto auto; }*/
+
+
+nav{ width:100%; float:left; padding:0px; margin:0px; width:auto; background-color:transparent;}		
+nav ul{padding:0px; margin:0px; position:relative;}		
+nav ul li{padding:0px; margin:0px; display:inline-block; padding:12px 10px; color:#000000; text-decoration:none; font-size:15px;}		
+nav ul li a{ display:inline;  color:#000000; text-decoration:none; width: 100%; padding:12px 10px;}		
+nav ul li a:hover{border-bottom:2px #ff0000 solid; color:#ff0000; background-position: top; background-repeat: no-repeat; background-size:100% auto; }
+	
+nav ul li ul{ display:none; position:absolute; top:44px; left:0px; background:rgba(247,246,245,0.9) ; width:auto;}
+nav ul li ul li{  display:inline-block; width:200px; }		
+nav ul li:hover ul{display:block; }	
+nav ul li:hover ul li{ position:relative; padding:12px 15px; font-size:14px; display:inline-block; border-bottom:1px #cccccc solid; text-align:left; }
+nav ul li:hover ul li a{ padding:12px 15px;  borde-bottom:2px #ff0000 solid; }	
+
+.exhibit { height: auto; margin: 0 auto; width: 85%; }
+
+
+.container { height: auto; margin: 0 auto; width: 85%; }
+.container .show-outline-bg { width: 100%; height: 450px; background: url(../images/show-outline-img.png); background-position: right; background-repeat: no-repeat; background-size: 65% 450px; position:relative; }
+.container .show-outline-bg a img { width: 75px; height: 75px; position: absolute; top: 63%; left: 80%;  z-index: 9999; float: left; }
+
+
+.media-gallery{width: 1200px; height: 700px; float: left; margin: 25px 5%;}
+
+
+
+.visitor-bg{ width:100%; height:100%; background:url(../images/visitor-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;
+	    float: left;}
+		
+.visitor-bg-content{ width: 80%; height: 100%; margin: 0 10%; position: relative; float: left;}	
+.visitor-bg .part-detail{ width:192px; height:197px; float:left; position:relative; top:60%; left:10%; z-index:99; }
+.visitor-bg .photo-gallery{ width:192px; height:197px; float:left; position:relative; top:40%; left:32%; z-index:99; }
+.visitor-bg .down-kit{ width:192px; height:197px; float:left; position:relative; top:160px; left:45%; z-index:99; }
+
+
+
+.media-gallery{width: 1200px; height: 600px; float: left; margin: 25px 4%; float:left; position:relative;}
+.media-header{ width:100%; height:100px; font-size:40px; color:#535353; font-family: 'Asap', sans-serif; font-wieght:700; background:url(../images/head-bg.png); background-position: center; background-repeat: no-repeat; position: absolute; float: left; text-align:center; margin:15px 0px; 
+	padding:10px 0px 20px 0px }
+
+.media-img-one{ width:325px; height:325px; color:#535353; background:url(../images/media-img-1.png); background-size:100% 100%; background-repeat: no-repeat; position:absolute; top:27%; left:0%; float:left;}
+.media-img-two{ width:218px; height:218px; color:#535353; background:url(../images/media-img-2.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:23%; left:25%; float:left;}
+.media-img-three{ width:218px; height:218px; color:#535353; background:url(../images/media-img-3.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:58%; left:20%; float:left;}
+.media-img-four{ width:325px; height:325px; color:#535353; background:url(../images/media-img-4.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:37%; left:36%; float:left;}
+.media-img-five{ width:218px; height:218px; color:#535353; background:url(../images/media-img-5.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:23%; left:56%; float:left;}
+.media-img-six{ width:218px; height:218px; color:#535353; background:url(../images/media-img-6.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:57%; left:61%; float:left;}
+.media-img-seven{ width:325px; height:325px; color:#535353; background:url(../images/media-img-7.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:23%; left:73%; float:left;} 
+ 
+
+.media-left-content{ width: 80%; float: left; margin: 60px 0 0px 15%;}
+.newsletter-logo{ width:auto; height:auto; float:left; }
+.newsletter-logo img{ position:absolute; left:680px;  background:url(../images/autoexpo-new-logo.jpg);  background-repeat: no-repeat;background-size:145px 145px; z-index:9999; margin-top:6%; }
+.newsletter-cont{ width:auto; height:auto; float:left; position:absolute;  right:15%; margin-top:5%; }
+.span-last{ float: left; margin-top: 0px; width: auto;}
+.media-right {width: 35%; height: auto; float: left; margin: 0 0% 0% 5%; }
+
+
+.spn-logo:last-child img{ width:100%; float:left; height:auto; margin-right:0%;}
+
+.newsletter-cont span{  width:100%;font-size:16px;color:#e1f0ff;text-transform:uppercase; margin: 0 0 10px; float:left;}
+.span-last{ width:auto; float:left; margin-top:50px !important;}
+.newsletter input[type=text] { width: 110%; float:left; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 1px solid #555; outline: none; 
+	font-family: 'Asap', sans-serif; font-weight:400; border-radius:15px; color:#696969; border:none; background:#0b5295; color:#7ea1c2;}
+
+
+#menu-hide{display:block;}
+#myNav{visibility:hidden;}
+.overlay-btn{ visibility:hidden;}
+
+
+/*
+
+.counter-main{ width: 86%; margin: 0 auto; }
+.counter-prop{ width:auto; float:left; margin:0 1.6%;}*/
+
+
+
+.counter-main{ width:1080px;  margin: 40px auto 40px; display:table;}
+
+
+.counter-prop{ width:auto; float:left; margin:0 2.1%}
+.counter-prop h2{ font-size:45px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h3{ width: 55px; float: left; font-size: 75px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h5{ font-size:22px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-prop h6{float: left; width: 60px;margin-top: 62px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-text{ font-size:27px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; text-align:justify; color:#da251c;}
+.counter-side-text{ font-size:27px; margin-top:62px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-linebg{ width:auto; float:left;}
+
+}
+
+@media screen and (max-width:1255px) { 
+
+
+
+header{ width:85%; height:auto; margin:0 8%;  position:absolute; top:0px;}
+header .logo {    width: 15%;    height: auto;    float: left;}
+header .logo img{    width: 100%;    height: auto;    float: left;}
+
+/*header .site-menu{ width:100%; height:auto; float:left; margin-left:0%;}
+header .site-menu ul{ margin:0px 0px; padding:0px; width: 100%; float: left;}
+header ul li{ width:auto; float:right; text-align:right;  font-family: 'Asap', sans-serif; font-weight:500; font-size:14px; color:#3b3b3b; padding:20px 1.7%; text-transform:uppercase;}
+header ul li:hover{ text-transform:uppercase; -webkit-transition: all 0.3s ease 0s; -moz-transition:all 0.3s ease 0s; -o-transition:all 0.3s ease 0s;  transition:all 0.3s ease 0s; cursor:pointer; background:url(../images/menu-top-hover.png); background-position: top; background-repeat: no-repeat; background-size:auto auto; }*/
+
+nav{ width:100%; float:left; padding:0px; margin:0px; width:auto; background-color:transparent;}		
+nav ul{padding:0px; margin:0px; position:relative;}		
+nav ul li{padding:0px; margin:0px; display:inline-block; padding:12px 6px; color:#000000; text-decoration:none; font-size:14px;}		
+nav ul li a{ display:inline;  color:#000000; text-decoration:none; width: 100%; padding:10px 5px;}		
+nav ul li a:hover{border-bottom:2px #ff0000 solid; color:#ff0000; background-position: top; background-repeat: no-repeat; background-size:100% auto; }
+	
+nav ul li ul{ display:none; position:absolute; top:42px; left:0px; background:rgba(247,246,245,0.9) ; width:auto;}
+nav ul li ul li{  display:inline-block; width:44%; }		
+nav ul li:hover ul{display:block; }	
+nav ul li:hover ul li{ position:relative; padding:12px 15px; font-size:14px; display:inline-block; border-bottom:1px #cccccc solid; text-align:left; }
+nav ul li:hover ul li a{ padding:12px 15px;  borde-bottom:2px #ff0000 solid; }				
+			
+			
+
+.banner-content{ width:70%; height:auto; padding:10px 0px; margin:0 auto; background:rgba(7, 42, 84, 0.6); margin-top: 30%; }
+.banner-content h3{ width: 100%; font-size: 30px; }
+.banner-content h5 { width: 100%; font-size: 16px; }
+.container { height: auto; margin: 0 auto; width: 980px; }
+.container .show-outline-bg { width: 100%; height: 400px; background: url(../images/show-outline-img.png); background-position: right; background-repeat: no-repeat; background-size: 65% 400px; }
+.container .show-outline-bg a img { width: 55px; height: 55px; position: relative; top: 63%; left: 17%;  z-index: 9999; float: left; }
+.exhibit { height: auto; margin: 0 auto; width: 85%; }
+
+.media-gallery{width: 1200px; height: 700px; float: left; margin: 25px 5%;}
+
+
+.visitor-bg{ width:100%; height:80%; background:url(../images/visitor-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: 100% 100%; float: left;}	
+.visitor-bg-content {width: 900px; height: 100%; margin: 0 8%; position: relative; float: left;}
+.visitor-bg .part-detail{ width:177px; height:182px; float:left; position:relative; top:58%; left:6%; z-index:99; }
+.visitor-bg .part-detail img{ width:auto; height:80%; }
+.visitor-bg .photo-gallery{ width:177px; height:182px; float:left; position:relative; top:38%; left:30%; z-index:99; }
+.visitor-bg .photo-gallery img{ width:auto; height:85%; }
+.visitor-bg .down-kit{ width:177px; height:182px; float:left; position:relative; top:15%; left:42%; z-index:99; }
+.visitor-bg .down-kit img{ width:auto; height:80%; }
+
+
+
+.media-gallery{width: 900px; height: 550px; float: left; margin: 25px 10%; float:left; position:relative;}
+.media-header{ width:100%; height:100px; font-size:40px; color:#535353; font-family: 'Asap', sans-serif; font-wieght:700; background:url(../images/head-bg.png); background-position: center; background-repeat: no-repeat; position: absolute; float: left; text-align:center; margin:15px 0px; 
+	padding:10px 0px 20px 0px }
+
+.media-img-one{ width:250px; height:250px; color:#535353; background:url(../images/media-img-1.png); background-size:100% 100%; background-repeat: no-repeat; position:absolute; top:27%; left:0%; float:left;}
+.media-img-one img{ width:100%; height:100%; }
+.media-img-one img:hover{ width:125px; height:126px; position: absolute; top: 27%; }
+
+
+.media-img-two{ width:170px; height:170px; color:#535353; background:url(../images/media-img-2.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:22%; left:25%; float:left;}
+.media-img-two img{ width:100%; height:100%; }
+.media-img-two img:hover{ width:100px; height:101px; position: absolute; top: 25%;}
+
+
+.media-img-three{ width:170px; height:170px; color:#535353; background:url(../images/media-img-3.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:54%; left:20%; float:left;}
+.media-img-three img{ width:100%; height:100%; }
+.media-img-three img:hover{ width:100px; height:101px; position: absolute; top: 25%; }
+
+
+.media-img-four{ width:250px; height:250px; color:#535353; background:url(../images/media-img-4.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:35%; left:37%; float:left;}
+.media-img-four img{ width:100%; height:100%; }
+.media-img-four img:hover{ width:100px; height:101px; position: absolute; top: 27%; }
+
+
+.media-img-five{ width:170px; height:170px; color:#535353; background:url(../images/media-img-5.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:23%; left:58%; float:left;}
+.media-img-five img{ width:100%; height:100%; }
+.media-img-five img:hover{ width:100px; height:101px; position: absolute; top: 25%; }
+
+
+
+.media-img-six{ width:170px; height:170px; color:#535353; background:url(../images/media-img-6.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:57%; left:60%; float:left;}
+.media-img-six img{ width:100%; height:100%; }
+.media-img-six img:hover{ width:100px; height:101px; position: absolute; top: 25%; }
+
+
+.media-img-seven{ width:250px; height:250px; color:#535353; background:url(../images/media-img-7.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:31%; left:72%; float:left;} 
+.media-img-seven img{ width:100%; height:100%;}
+.media-img-seven img:hover{ width:125px; height:126px; position: absolute; top: 27%; }
+
+
+
+.media-left-content{ width: 80%; float: left; margin: 60px 0 0px 15%;}
+.newsletter-logo { width: 12%; height: 12%; float: left;position: absolute; left: 45%; margin-top: 3%; }
+.newsletter-logo img{ width:100%; position:absolute; left:45%;  background:url(../images/autoexpo-new-logo.jpg);  background-repeat: no-repeat;background-size:100% 100%; z-index:9999; margin-top:20%; }
+.newsletter-cont{ width:auto; height:auto; float:left; position:absolute;  right:12%; margin-top:3%; }
+.span-last{ float: left; margin-top: 0px; width: auto;}
+.media-right {width: 35%; height: auto; float: left; margin: 0 0% 0% 5%; }
+
+
+
+.newsletter-cont span{  width:100%;font-size:14px;color:#e1f0ff;text-transform:uppercase; margin: 0 0 10px; float:left;}
+.span-last{ width:auto; float:left; margin-top:50px !important;}
+.newsletter input[type=text] { width: 110%; float:left; padding: 12px 20px; margin: 8px 0; box-sizing: border-box; border: 1px solid #555; outline: none; 
+	font-family: 'Asap', sans-serif; font-weight:400; border-radius:15px; color:#696969; border:none; background:#0b5295; color:#7ea1c2;}
+	
+.spn-logo-cont{width: 980px; margin:0 auto;}
+.spn-logo{ width:25%; float:left; height:auto; margin:40px 2% 0 0;}
+.spn-logo img{ width:100%; }
+.spn-logo:last-child{width:25%; float:left; height:auto; }
+.spn-logo:last-child img{ width:100%; float:left; height:auto; margin-right:0%;}
+	
+footer{width: 1024px; height: auto; margin: 0 auto;}
+.copymain{ width:100%; float:left; margin:15px 0px;}
+.copymain-left{ width:500px; float:left;}
+.copymain-left .cont{ width:220px; float:left; font-family: 'Asap', sans-serif; font-size:16px; color:#bababa}
+.copymain-left .img{ width:220px; float:left;  padding:6px }
+
+.copymain-right{ width:auto; float:right;}
+.copymain-right .cont{ width:auto; float:left; font-family: 'Asap', sans-serif; font-size:16px; color:#bababa}
+
+.copymain-img{ width:125px; padding:0px 10px}
+.copymain p{ width:auto; float:right; color:#bababa; font-family: 'Asap', sans-serif; font-size:16px;} 
+
+
+
+#menu-hide{display:block;}
+#myNav{visibility:hidden;}
+.overlay-btn{ visibility:hidden;}
+
+
+
+
+
+
+
+/*
+
+.counter-main{ width: 1000px; margin: 0 auto; padding: 120px 0 25px;}
+.counter-prop{ width:auto; float:left; margin:25px 3%;}
+.counter-prop h2{ font-size:40px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h3{ width: 32px; float: left; font-size: 60px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h5{ font-size:22px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-prop h6{float: left; width: 20px;margin-top: 45px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-text{ font-size:20px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; text-align:justify; color:#da251c;}
+.counter-side-text{ font-size:22px; margin-top:35px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-linebg{ width:auto; float:left;}*/
+
+
+.counter-main{ width:980px;  margin: 40px auto 40px; display:table;}
+
+
+.counter-prop{ width:auto; float:left; margin:25px 2%}
+.counter-prop h2{ font-size:30px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h3{ width: 30px; float: left; font-size: 50px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h5{ font-size:18px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-prop h6{float: left; width: 60px;margin-top: 62px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-text{ font-size:22px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; text-align:justify; color:#da251c;}
+.counter-side-text{ font-size:27px; margin-top:22px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-linebg{ width:auto; float:left;}
+	
+}
+
+@media screen and (max-width:1024px) { 
+
+
+
+
+nav{ width:100%; float:left; padding:0px; margin:0px; width:auto; background-color:transparent;}		
+nav ul{padding:0px; margin:0px; position:relative;}		
+nav ul li{padding:0px; margin:0px; display:inline-block; padding:12px 6px; color:#000000; text-decoration:none; font-size:14px;}		
+nav ul li a{ display:inline;  color:#000000; text-decoration:none; width: 100%; padding:12px 6px;}		
+nav ul li a:hover{border-bottom:2px #ff0000 solid; color:#ff0000; background-position: top; background-repeat: no-repeat; background-size:100% auto; }
+	
+nav ul li ul{ display:none; position:absolute; top:43px; left:0px; background:rgba(247,246,245,0.9) ; width:auto;}
+nav ul li ul li{  display:inline-block; width:44%; }		
+nav ul li:hover ul{display:block; }	
+nav ul li:hover ul li{ position:relative; padding:12px 15px; font-size:14px; display:inline-block; border-bottom:1px #cccccc solid; text-align:left; }
+nav ul li:hover ul li a{ padding:12px 15px;  borde-bottom:2px #ff0000 solid; }	
+
+
+
+.banner{ width:100%; height:100%; background:url(../images/banner-1.jpg); background-position: left; background-repeat: no-repeat; background-size: cover;}
+.container .show-outline-content h1{ width:auto; height:auto; font-size:30px; font-weight:bolder; color:#535353; font-family: 'Asap', sans-serif; font-weight:700; 
+	background:url(../images/head-bg.png); background-position: right; background-repeat: no-repeat; position: relative; margin: 40px 0px 0px; float: left; 
+	padding: 5px 115px 20px 0px;}
+.container .show-outline-content p{ width:70%; height:auto; float: left; font-size:14px; color:#535353; font-family: 'Asap', sans-serif; font-weight:400; margin-top:10px; line-height:22px; text-align:justify;}	
+.container .show-outline-content span{ width:100%; height:auto; float: left; font-size:16px; color:#535353; font-family: 'Asap', sans-serif; font-weight:400; margin-top:20px; 
+	line-height:25px; text-align:justify;}
+
+.btn{ width:auto; float:left; border:1px #FF0000 solid; text-align:center; padding:6px 14px; border-radius:25px; color:#FF0000; text-transform:uppercase; margin:8px 0px; font-family: 'Asap', sans-serif; font-weight:400; }
+.btn:hover{ border:1px #FF0000 solid; background:#FF0000; text-align:center; color:#ffffff; text-transform:uppercase; margin:8px 0px; -webkit-transition: all 0.3s ease 0s; -moz-transition:all 0.3s ease 0s;   -o-transition:all 0.3s ease 0s;  transition:all 0.3s ease 0s; cursor:pointer; }
+
+.exhibit-left table{ width:100%; height:auto; float:left; font-family: 'Asap', sans-serif; font-weight:400; font-size:14px; margin-top:15px; color:#939393; 
+	border:1px #d1d1d1 solid; border-collapse:collapse; }
+.exhibit-left table td { padding:15px;}
+	
+header .logo {    width: 15%;    height: auto;    float: left;}
+header .logo img{    width: 100%;    height: auto;    float: left;}
+
+/*header .site-menu{ width:100%; height:auto; float:left; margin-left:0%;}
+header .site-menu ul{ margin:0px 0px; padding:0px; width: 100%; float: left;}
+header .toplogo{ width:75%; float:right; margin:10px 0;}
+
+header ul li{ width:auto; float:right; text-align:right;  font-family: 'Asap', sans-serif; font-weight:500; font-size:14px; color:#3b3b3b; padding:20px 1.5%; text-transform:uppercase;}
+header ul li:hover{ text-transform:uppercase; -webkit-transition: all 0.3s ease 0s; -moz-transition:all 0.3s ease 0s; -o-transition:all 0.3s ease 0s;  transition:all 0.3s ease 0s; cursor:pointer; background:url(../images/menu-top-hover.png); background-position: top; background-repeat: no-repeat; background-size:auto auto; }*/
+
+.container .show-outline-content{ width:500px; height:auto; position: relative; left: 0; top: 0px; float: left;}
+
+.container .show-outline-bg{ width:80%; height:370px; background-size:80% 100% !important; background:url(../images/show-outline-img.png); background-position: center; background-repeat: no-repeat; position: relative; left: 24%;}
+.banner-content{ width:80%; height:auto; padding:10px 0px; margin:0 auto; background:rgba(7, 42, 84, 0.6); margin-top: 400px; }
+header{ width:90%; height:auto; margin:0 5%;  position:absolute; top:0px;}
+.container { height: auto; margin: 0 auto; width: 90%; }
+.exhibit { height: auto; margin: 0 auto; width: 90%; }
+
+.container .show-outline-bg a img{ width: 55px; height: 55px; position: relative; top: 65%; left: -6%; z-index: 9999; float: left;}
+
+
+.visitor-bg-content { height: auto; margin: 0 auto; position: relative; width: 100%;}
+
+
+.media-gallery{width: 85%; height: 550px; float: left; margin: 25px 7%; float:left; position:relative;}
+.media-header{ width:100%; height:100px; font-size:40px; color:#535353; font-family: 'Asap', sans-serif; font-wieght:700; background:url(../images/head-bg.png); background-position: center; background-repeat: no-repeat; position: absolute; float: left; text-align:center; margin:15px 0px; 
+	padding:10px 0px 20px 0px }
+
+.media-img-one{ width:230px; height:230px; color:#535353; background:url(../images/media-img-1.png); background-size:100% 100%; background-repeat: no-repeat; position:absolute; top:27%; left:0%; float:left;}
+.media-img-one img{ width:100%; height:100%; }
+.media-img-one img:hover{ width:125px; height:126px; position: absolute; top: 27%; }
+
+
+.media-img-two{ width:170px; height:170px; color:#535353; background:url(../images/media-img-2.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:22%; left:25%; float:left;}
+.media-img-two img{ width:100%; height:100%; }
+.media-img-two img:hover{ width:100px; height:101px; position: absolute; top: 25%; }
+
+
+.media-img-three{ width:170px; height:170px; color:#535353; background:url(../images/media-img-3.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:54%; left:20%; float:left;}
+.media-img-three img{ width:100%; height:100%; }
+.media-img-three img:hover{ width:100px; height:101px; position: absolute; top: 25%; }
+
+
+.media-img-four{ width:230px; height:230px; color:#535353; background:url(../images/media-img-4.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:35%; left:37%; float:left;}
+.media-img-four img{ width:100%; height:100%; }
+.media-img-four img:hover{ width:100px; height:101px; position: absolute; top: 27%; }
+
+
+.media-img-five{ width:170px; height:170px; color:#535353; background:url(../images/media-img-5.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:23%; left:58%; float:left;}
+.media-img-five img{ width:100%; height:100%;}
+.media-img-five img:hover{ width:100px; height:101px; position: absolute; top: 25%; }
+
+
+
+.media-img-six{ width:170px; height:170px; color:#535353; background:url(../images/media-img-6.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:57%; left:60%; float:left;}
+.media-img-six img{ width:100%; height:100%; }
+.media-img-six img:hover{ width:100px; height:101px; position: absolute; top: 25%; }
+
+
+.media-img-seven{ width:230px; height:230px; color:#535353; background:url(../images/media-img-7.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:31%; left:72%; float:left;} 
+.media-img-seven img{ width:100%; height:100%; }
+.media-img-seven img:hover{ width:125px; height:126px; position: absolute; top: 27%; }
+	
+.exhibit-left h1{ width:auto; height:auto; font-size:32px; color:#535353; font-family: 'Asap', sans-serif; font-weight:700; background:url(../images/head-bg.png); background-position: right; background-repeat: no-repeat; position: relative; margin: 25px 0px 0px; float: left; padding: 0px 95px 15px 0px;}	
+.exhibit-left table { font-family: 'Asap', sans-serif; font-weight: 400; font-size: 14px; color: #939393; border-collapse: collapse; margin-top:8px }
+.exhibit-left table td { padding: 10px; }
+.exhibit-left table h4 {  color: black; font-family: 'Asap', sans-serif; font-weight:500; font-size:16px; float:left; color:#939393; }
+.exhibit-left table span{ color: red; font-family: 'Asap', sans-serif; font-weight:400; font-size:16px; float:left; color:#d8251c;}
+.exhibit-left p{ font-size:16px;}
+
+.visitor-bg{ width:100%; height:100%; background:url(../images/visitor-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: 100% 100%; float: left;}	
+.visitor-bg-content {width: 80%; height: 100%; margin: 0 8%; position: relative; float: left;}
+.visitor-bg .part-detail{ width:157px; height:162px; }
+.visitor-bg .part-detail img{ width:auto; height:80%; }
+.visitor-bg .photo-gallery{ width:157px; height:162px;}
+.visitor-bg .photo-gallery img{ width:auto; height:85%; }
+.visitor-bg .down-kit{ width:157px; height:162px; }
+.visitor-bg .down-kit img{ width:auto; height:80%; }
+
+
+
+
+
+.exhibit-right img{ width:100%; height:auto; margin-top:195px;}
+.media-left{width: 50%; height: 375px; float:left;  background-position: right;  background:url(../images/media-img.jpg);  background-repeat: no-repeat; 
+	 background-size: cover; }	
+.media-left-content{ width: 90%; float: left; margin: 20px 0 0px 10%;}
+.media-left-box{ width:90%; float:left; padding:10px 0px; border-bottom:3px #da2520 solid;}
+.media-left-box-img{ width:10%; float:left; padding:0px 0px ;}
+
+
+.media-form-start input[type=text] { width: 100%; padding: 8px 15px; margin: 8px 0; box-sizing: border-box; border: 1px solid #555; outline: none; 
+	font-family: 'Asap', sans-serif; font-weight:400; border-radius:25px; color:#696969; border:none; background:#f3f4f6;} 
+.media-form-start input[type=text]:focus { background-color: #cccccc; color:#555555; transition:ease-in-out 0.5s; }
+.media-form-btn{ padding:10px 25px; border-radius:25px; border:1px #f0a8a4 solid; color:#f0a8a4; text-transform:uppercase; font-family: 'Asap', sans-serif; font-weight:400; margin-top:20px; float:left;}
+.media-form-btn:hover{ padding:10px 25px; border-radius:25px; border:1px #f0a8a4 solid; color:#ffffff; text-transform:uppercase; font-family: 'Asap', sans-serif; font-weight:400; margin-top:20px; float:left; background:#f0a8a4;}
+
+
+.newsletter-logo { width: 12%; height: 12%; float: left;position: absolute; left: 45%; margin-top: 3%; }
+.newsletter-logo img{ position:absolute; left:55%;  background:url(../images/autoexpo-new-logo.jpg);  background-repeat: no-repeat;background-size:100% 100%; z-index:9999; margin-top:20%; }
+.newsletter-cont{ width:auto; height:auto; float:left; position:absolute;  right:5%; margin-top:4%; }
+
+
+.span-last{ float: left; margin-top: 0px; width: auto;}
+.spn-logo-cont{width: 90%; margin:0 auto;}
+.spn-logo{ width:18%; float:left; height:auto; margin:40px 4% 0 0;}
+.spn-logo img{ width:100%; }
+.spn-logo:last-child{ width:18%; float:left; height:auto; margin-right:0%; border-right:none;;}
+.spn-logo:last-child img{ width:100%; float:left; height:auto; margin-right:0%;}
+
+
+
+.spn-logo-main{width: 100%; height: auto; float:left; margin:20px 0%; border-top:3px #7a4618 solid; }
+.newsletter-cont span{ font-family: 'Asap', sans-serif; font-weight:400; width:100%;font-size:14px;color:#e1f0ff; text-transform:uppercase; margin: 0 0 3px; float:left;}
+.span-last{ width:auto; float:left; margin-top:30px !important;}
+
+footer{width: 80%; height: auto; margin: 0 auto;}
+.copymain{ width:100%; float:left; margin:15px 0px;}
+.copymain-left{ width:375px; float:left;}
+.copymain-left .cont{ width:220px; float:left; font-family: 'Asap', sans-serif; font-size:16px; color:#bababa}
+.copymain-left .img{ width:120px; float:left;  padding:6px }
+.copymain-right{ width:auto; float:right;}
+
+
+
+#menu-hide{display:block;}
+#myNav{visibility:hidden;}
+.overlay-btn{ visibility:hidden;}
+
+
+/*
+.counter-main{ width:90%; padding:35px 5% 0px; float:left;}
+.counter-prop{ width:auto; float:left; margin:25px 1.5%}
+.counter-prop h2{ font-size:35px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h3{ width: 42px; float: left; font-size: 65px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h5{ font-size:18px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+
+.counter-text{ font-size:20px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; text-align:justify; color:#da251c;}
+.counter-side-text{ font-size:27px; margin-top:30px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-linebg{ width:auto; float:left;}
+.counter-linebg img{ width:100%;}
+*/
+
+
+.counter-main{ width:980px;  margin: 40px auto 40px; display:table;}
+
+
+.counter-prop{ width:auto; float:left; margin:25px 2%}
+.counter-prop h2{ font-size:30px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h3{ width: 30px; float: left; font-size: 50px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h5{ font-size:18px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-prop h6{float: left; width: 60px;margin-top: 62px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-text{ font-size:22px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; text-align:justify; color:#da251c;}
+.counter-side-text{ font-size:27px; margin-top:22px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-linebg{ width:auto; float:left;}
+}
+
+
+
+@media screen and (max-width:980px) { 
+
+
+nav{ width:100%; float:left; padding:0px; margin:0px; width:auto; background-color:transparent;}		
+nav ul{padding:0px; margin:0px; position:relative;}		
+nav ul li{padding:0px; margin:0px; display:inline-block; padding:12px 6px; color:#000000; text-decoration:none; font-size:12px;}		
+nav ul li a{ display:inline;  color:#000000; text-decoration:none; width: 100%; padding:12px 6px;}		
+nav ul li a:hover{border-bottom:2px #ff0000 solid; color:#ff0000; background-position: top; background-repeat: no-repeat; background-size:100% auto; }
+	
+nav ul li ul{ display:none; position:absolute; top:44px; left:0px; background:rgba(247,246,245,0.9) ; width:auto;}
+nav ul li ul li{  display:inline-block; width:200px; }		
+nav ul li:hover ul{display:block; }	
+nav ul li:hover ul li{ position:relative; padding:12px 15px; font-size:14px; display:inline-block; border-bottom:1px #cccccc solid; text-align:left; }
+nav ul li:hover ul li a{ padding:12px 15px;  borde-bottom:2px #ff0000 solid; }	
+
+
+
+
+
+.banner{ width:100%; height:100%; background:url(../images/banner-1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;}
+.container .show-outline-content h1{ width:auto; height:auto; font-size:24px; font-weight:bolder; color:#535353; font-family: 'Asap', sans-serif; font-weight:700; 
+	background:url(../images/head-bg.png); background-position: right; background-repeat: no-repeat; position: relative; margin: 40px 0px 0px; float: left; 
+	padding: 5px 95px 20px 0px;}
+.container .show-outline-content p{ width:70%; height:auto; float: left; font-size:14px; color:#535353; font-family: 'Asap', sans-serif; font-weight:400; margin-top:10px; line-height:22px; text-align:justify;}	
+.container .show-outline-content span{ width:100%; height:auto; float: left; font-size:16px; color:#535353; font-family: 'Asap', sans-serif; font-weight:400; margin-top:20px; 
+	line-height:25px; text-align:justify;}
+
+.btn{ width:auto; float:left; border:1px #FF0000 solid; text-align:center; padding:6px 14px; border-radius:25px; color:#FF0000; text-transform:uppercase; margin:8px 0px; font-family: 'Asap', sans-serif; font-weight:400; }
+.btn:hover{ border:1px #FF0000 solid; background:#FF0000; text-align:center; color:#ffffff; text-transform:uppercase; margin:8px 0px; -webkit-transition: all 0.3s ease 0s; -moz-transition:all 0.3s ease 0s;   -o-transition:all 0.3s ease 0s;  transition:all 0.3s ease 0s; cursor:pointer; }
+
+.exhibit-left table{ width:100%; height:auto; float:left; font-family: 'Asap', sans-serif; font-weight:400; font-size:14px; margin-top:15px; color:#939393; 
+	border:1px #d1d1d1 solid; border-collapse:collapse; }
+.exhibit-left table td { padding:15px;}
+	
+	
+	
+header .logo {    width: 15%;    height: auto;    float: left;}
+header .logo img{    width: 100%;    height: auto;    float: left;}
+header .right-port { width: 80%;  height: auto; float: left;margin-left: 5%; }
+/*header .site-menu{ width:100%; height:auto; float:left; margin-left:0%;}
+header .site-menu ul{ margin:0px 0px; padding:0px; width: 100%; float: left;}
+header ul li{ width:auto; float:right; text-align:right;  font-family: 'Asap', sans-serif; font-weight:500; font-size:12px; color:#3b3b3b; padding:18px 6px; text-transform:uppercase;}
+header ul li:hover{ text-transform:uppercase; -webkit-transition: all 0.3s ease 0s; -moz-transition:all 0.3s ease 0s; -o-transition:all 0.3s ease 0s;  transition:all 0.3s ease 0s; cursor:pointer; background:url(../images/menu-top-hover.png); background-position: top; background-repeat: no-repeat; background-size:auto auto; }
+.banner-content { width: 77%; height: auto; padding: 10px 0px; margin: 0 auto; margin-top: 0px; background: rgba(7, 42, 84, 0.6); margin-top: 100px;}
+
+header ul li{ width:auto; float:right; text-align:right;  font-family: 'Asap', sans-serif; font-weight:500; font-size:14px; color:#3b3b3b; padding:20px 15px 0 0; text-transform:uppercase;}
+header ul li:hover{ text-transform:uppercase; -webkit-transition: all 0.3s ease 0s; -moz-transition:all 0.3s ease 0s; -o-transition:all 0.3s ease 0s;  transition:all 0.3s ease 0s; cursor:pointer; background:url(../images/menu-top-hover.png); background-position: top; background-repeat: no-repeat; background-size:auto auto; }
+header .toplogo{ width:85%; float:right; margin:10px 0;}*/
+
+
+.container .show-outline-content{ width:50%; height:auto; position: relative; left: 0; top: 0px; float: left;}
+
+.container .show-outline-bg{ width:80%; height:310px; background-size:80% 100% !important; background:url(../images/show-outline-img.png); background-position: center; background-repeat: no-repeat; position: relative; left: 24%;}
+
+header{ width:90%; height:auto; margin:0 5%;  position:absolute; top:0px;}
+.container { height: auto; margin: 0 auto; width: 90%; }
+.exhibit { height: auto; margin: 0 auto; width: 90%; }
+.container .show-outline-bg a img{ width: 55px; height: 55px; position: relative; top: 65%; left: 3%; z-index: 9999; float: left;}
+
+
+.visitor-bg{ width:100%; height:60%; background:url(../images/visitor-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: 100% 100%; float: left;}	
+.visitor-bg-content {width: 80%; height: 100%; margin: 0 8%; position: relative; float: left;}
+.visitor-bg .part-detail{ width:117px; height:142px; float:left; position:relative; top:58%; left:6%; z-index:99; }
+.visitor-bg .part-detail img{ width:auto; height:80%; align-content:center; }
+.visitor-bg .photo-gallery{ width:117px; height:142px; float:left; position:relative; top:38%; left:30%; z-index:99;}
+.visitor-bg .photo-gallery img{ width:auto; height:85%; align-content:center;}
+.visitor-bg .down-kit{ width:117px; height:142px; float:left; position:relative; top:19%; left:48%; z-index:99;}
+.visitor-bg .down-kit img{ width:auto; height:80%;  align-content:center;}
+.exhibit-sub{ font-size:13px;}
+.exhibit-red-sub{font-size: 16px;}
+
+.media-gallery { width: 94%; height: 500px; float: left; margin: 25px 3%; float: left; position: relative; }
+.media-img-one{ width:190px; height:190px; color:#535353; background:url(../images/media-img-1.png); background-size:100% 100%; background-repeat: no-repeat; position:absolute; top:27%; left:0%; float:left;}
+.media-img-one img{ width:100%; height:100%; }
+.media-img-one img:hover{ width:125px; height:126px; position: absolute; top: 27%; }
+
+
+.media-img-two{ width:150px; height:150px; color:#535353; background:url(../images/media-img-2.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:22%; left:25%; float:left;}
+.media-img-two img{ width:100%; height:100%; }
+.media-img-two img:hover{ width:100px; height:101px; position: absolute; top: 25%; }
+
+
+.media-img-three{ width:150px; height:150px; color:#535353; background:url(../images/media-img-3.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:51%; left:19%; float:left;}
+.media-img-three img{ width:100%; height:100%; }
+.media-img-three img:hover{ width:100px; height:101px; position: absolute; top: 25%; }
+
+
+.media-img-four{ width:190px; height:190px; color:#535353; background:url(../images/media-img-4.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:36%; left:38%; float:left;}
+.media-img-four img{ width:100%; height:100%; }
+.media-img-four img:hover{ width:100px; height:101px; position: absolute; top: 27%; }
+
+
+.media-img-five{ width:150px; height:150px; color:#535353; background:url(../images/media-img-5.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:21%; left:57%; float:left;}
+.media-img-five img{ width:100%; height:100%;}
+.media-img-five img:hover{ width:100px; height:101px; position: absolute; top: 25%; }
+
+
+
+.media-img-six{ width:150px; height:150px; color:#535353; background:url(../images/media-img-6.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:49%; left:63%; float:left;}
+.media-img-six img{ width:100%; height:100%; }
+.media-img-six img:hover{ width:100px; height:101px; position: absolute; top: 25%; }
+
+
+.media-img-seven{ width:190px; height:190px; color:#535353; background:url(../images/media-img-7.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:25%; left:75%; float:left;} 
+.media-img-seven img{ width:100%; height:100%; }
+.media-img-seven img:hover{ width:125px; height:126px; position: absolute; top: 27%; }
+
+.media-left-box h4 { font-size:16px; font-weight:bold; }
+.media-left-box h6{ font-size:14px; font-weight:normal; margin: 8px 0 0;}
+
+.media-right {width: 35%; height: auto; float: left; margin: 0 0% 0% 1%; }
+.media-form-start input[type=text] { width: 100%; padding: 8px 15px; margin: 8px 0 !important; box-sizing: border-box; border: 1px solid #555; outline: none; 
+	font-family: 'Asap', sans-serif; font-weight:400; border-radius:25px; color:#696969; border:none; background:#f3f4f6;} 
+
+
+.newsletter-cont { width: auto; height: auto; float: left; position: absolute; right: 5%; margin-top: 3%; }
+.newsletter-cont span{ font-size:14px;}
+.newsletter input[type=text] { width: 95%; float:left; padding: 10px 20px; margin: 8px 0; box-sizing: border-box; border: 1px solid #555; outline: none; 
+	font-family: 'Asap', sans-serif; font-weight:400; border-radius:15px; color:#696969; border:none; background:#0b5295; color:#7ea1c2;}
+
+
+footer{width: 90%; height: auto; margin: 0 auto;}
+.copymain{ width:100%; float:left; margin:15px 0px;}
+.copymain-left{ width:315px; float:left;}
+.copymain-left .cont{ width:190px; float:left; font-family: 'Asap', sans-serif; font-size:14px; color:#bababa}
+.copymain-left .img{ width:90px; float:left;  padding:6px }
+.copymain-right{ width:auto; float:right;}
+.copymain-right .cont { width: auto; float: left; font-family: 'Asap', sans-serif; font-size: 14px; color: #bababa; }
+
+
+.spn-logo-cont{width: 90%; margin:0 auto;}
+.spn-logo{ width:18%; float:left; height:auto; margin:40px 4% 0 0;}
+.spn-logo img{ width:100%; }
+.spn-logo:last-child{ width:18%; float:left; height:auto; margin-right:0%; border-right:none;;}
+.spn-logo:last-child img{ width:100%; float:left; height:auto; margin-right:0%;}
+
+
+#menu-hide{display:block;}
+#myNav{visibility:hidden;}
+.overlay-btn{ visibility:hidden;}
+
+
+/*.counter-main{ width:94%; float:left;}
+.counter-prop{ width:auto; float:left; margin:25px 1.5%}
+.counter-prop h2{ font-size:30px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h3{ width: 30px; float: left; font-size: 50px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h5{ font-size:18px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+
+.counter-text{ font-size:18px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; text-align:justify; color:#da251c;}
+.counter-side-text{ font-size:22px; margin-top:30px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-linebg{ width:auto; float:left;}
+.counter-linebg img{ width:100%;}*/
+
+
+.counter-main{ width:90%;  margin: 40px auto 40px; display:table;}
+
+
+.counter-prop{ width:auto; float:left; margin:25px 2%}
+.counter-prop h2{ font-size:20px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h3{ width: 20px; float: left; font-size: 35px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h5{ font-size:18px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-prop h6{float: left; width: 60px;margin-top:45px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-text{ font-size:16px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; text-align:justify; color:#da251c;}
+.counter-side-text{ font-size:18px; margin-top:11px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-linebg{ width:auto; float:left;}
+
+.contact .historytInner h1{ font-size:30px; }
+
+
+
+}
+
+
+@media screen and (max-width:767px) { 
+
+
+header .site-menu{ }
+header .right-port { width: 70%; height: auto; float: left; margin-left: 0%; }
+header .part-logo span {width: 18%; height: auto; float: right; margin: 0 0 0 6%; }
+header .part-logo span img{width: 100%;}
+
+#menu-hide{display:none !important;}
+#myNav{visibility:visible !important;}
+
+
+.overlay { height: 0%; width: 100%; position: fixed; z-index: 1; top: 0; left: 0; background-color: rgb(0,0,0); background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden; transition: 0.5s; }
+.overlay-content { position: relative; top: 15%; width: 100%; text-align: center; margin-top: 30px; }
+.overlay a { padding: 8px; text-decoration: none; font-size: 20px; color: #FFFFFF ; font-weight:700; display: block; transition: 0.3s; font-family: 'Asap', sans-serif;}
+.overlay a:hover, .overlay a:focus { color: #000000; }
+.overlay .closebtn { position: absolute; top: 20px; right: 45px; font-size: 60px; }
+.overlay-btn{ font-size: 30px; cursor: pointer; margin: 22px 0 0 7%; visibility: visible; width: 40px; height: 40px; float: left; text-align: right; color:#d7261e;} 
+.banner{ width:100%; height:100%; background:url(../images/banner-1.jpg); background-position: center; background-repeat: no-repeat; background-size: cover;}
+.banner-content h3{ width: 100%; font-size: 24px; }
+.banner-content h5 { width: 100%; font-size: 14px; }
+
+.container { height: auto; margin: 0 auto; width: 96%; }
+.container .show-outline-content { width: 50%; height: auto; position: relative; left: 0; top: 0px; float: left;}
+.container .show-outline-content h1{ width:auto; height:auto; font-size:18px; }
+.container .show-outline-bg{ width:65%; height:280px; background-size:100% 100% !important; background:url(../images/show-outline-img.png); background-position: center; background-repeat: no-repeat; position: relative; left: 30%;}
+.container .show-outline-bg a img{ width: 45px; height: 45px; position: relative; top: 65%; left: -7%; z-index: 9999; float: left;}
+
+.container .show-outline-content p{ width:90%; height:auto; float: left; font-size:13px; color:#535353; font-family: 'Asap', sans-serif; font-weight:400; margin-top:10px; line-height:20px; text-align:justify;}	
+.container .show-outline-content span{font-size:13px; font-weight:400; margin-top:10px; line-height:20px; }
+.exhibit { height: auto; margin: 0 auto; width: 95%; }
+.exhibit-left h1{ font-size:20px; }	
+.exhibit-right img{ width:100%; height:auto; margin-top:132px;}
+.exhibit-left table { font-family: 'Asap', sans-serif; font-weight: 400; font-size: 12px; color: #939393; border-collapse: collapse; margin-top:8px }
+.exhibit-left table td { padding: 7px; }
+.exhibit-left table h4 {  color: black; font-family: 'Asap', sans-serif; font-weight:500; font-size:14px; float:left; color:#939393; }
+.exhibit-left table span{ color: red; font-family: 'Asap', sans-serif; font-weight:400; font-size:14px; float:left; color:#d8251c;}
+.exhibit-left p{ font-size:14px;}
+
+
+.visitor-bg{ width:100%; height:60%; background:url(../images/visitor-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: 100% 100%; float: left;}	
+.visitor-bg-content {width: 90%; height: 100%; margin: 0 5%; position: relative; float: left;}
+.visitor-bg .part-detail{ width:87px; height:112px; float:left; position:relative; top:58%; left:6%; z-index:99; }
+.visitor-bg .part-detail img{ width:auto; height:80%; align-content:center; }
+.visitor-bg .photo-gallery{ width:87px; height:112px;  float:left; position:relative; top:38%; left:30%; z-index:99;}
+.visitor-bg .photo-gallery img{ width:auto; height:85%; align-content:center;}
+.visitor-bg .down-kit{ width:87px; height:112px; float:left; position:relative; top:19%; left:48%; z-index:99;}
+.visitor-bg .down-kit img{ width:auto; height:80%;  align-content:center;}
+
+.media-gallery { width: 94%; height: 400px; float: left; margin: 25px 2% 0; float: left; position: relative; }
+.media-header{ width:100%; height:100px; font-size:40px; color:#535353; font-family: 'Asap', sans-serif; font-wieght:700; background:url(../images/head-bg.png); background-position: center; background-repeat: no-repeat; position: absolute; float: left; text-align:center; margin:0px 0px; 
+	padding:10px 0px 19px 0px; }
+
+.media-img-one{ width:160px; height:160px; color:#535353; background:url(../images/media-img-1.png); background-size:100% 100%; background-repeat: no-repeat; position:absolute; top:27%; left:0%; float:left;}
+.media-img-one img{ width:100%; height:100%; }
+.media-img-one img:hover{ width:105px; height:106px; position: absolute; top: 20%; }
+
+.media-img-two{ width:125px; height:125px; color:#535353; background:url(../images/media-img-2.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:22%; left:25%; float:left;}
+.media-img-two img{ width:100%; height:100%; }
+.media-img-two img:hover{ width:80px; height:81px; position: absolute; top: 20%; }
+
+.media-img-three{ width:125px; height:125px; color:#535353; background:url(../images/media-img-3.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:51%; left:19%; float:left;}
+.media-img-three img{ width:100%; height:100%; }
+.media-img-three img:hover{ width:80px; height:81px; position: absolute; top: 20%; }
+
+.media-img-four{ width:160px; height:160px; color:#535353; background:url(../images/media-img-4.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:36%; left:38%; float:left;}
+.media-img-four img{ width:100%; height:100%; }
+.media-img-four img:hover{ width:100px; height:101px; position: absolute; top: 20%; }
+
+.media-img-five{ width:125px; height:125px; color:#535353; background:url(../images/media-img-5.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:21%; left:57%; float:left;}
+.media-img-five img{ width:100%; height:100%;}
+.media-img-five img:hover{ width:80px; height:81px; position: absolute; top: 20%; }
+
+.media-img-six{ width:125px; height:125px; color:#535353; background:url(../images/media-img-6.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:49%; left:63%; float:left;}
+.media-img-six img{ width:100%; height:100%; }
+.media-img-six img:hover{ width:80px; height:81px; position: absolute; top: 20%; }
+
+.media-img-seven{ width:160px; height:160px; color:#535353; background:url(../images/media-img-7.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:25%; left:75%; float:left;} 
+.media-img-seven img{ width:100%; height:100%; }
+.media-img-seven img:hover{ width:105px; height:106px; position: absolute; top: 20%; }
+
+
+.media-left{width: 100%; height: 375px; float:left;  background-position: right;  background:url(../images/media-img.jpg);  background-repeat: no-repeat; 
+	 background-size: cover; }	
+.media-right {width: 90%; height: auto; float: left; margin: 25px 5% 0 5%; }
+
+.spn-logo-cont{width: 95%; margin:0 auto;}
+.spn-logo{ width:17%; float:left; height:auto; margin:40px 4% 0 0;}
+.spn-logo img{ width:100%; }
+.spn-logo:last-child{ width:17%; float:left; height:auto; margin-right:0%; border-right:none;;}
+.spn-logo:last-child img{ width:100%; float:left; height:auto; margin-right:0%;}
+
+.banner-content { width: 77%; height: auto; padding: 5px 0px; margin: 0 auto; margin-top: 0px; background: rgba(7, 42, 84, 0.6); margin-top: 35%;}
+.banner-content h3{ width: 100%; font-size: 20px; }
+.banner-content h5 { width: 100%; font-size: 12px; }
+
+.newsletter-cont { width: 26%; height: auto; float: left; position: absolute; right: 2%; margin-top: 2%; }
+.newsletter-cont span{ font-size:13px; color:#e1f0ff; text-transform:uppercase; margin: 0 0 0px; float:left;}
+.span-last{ width:auto; float:left; margin-top:10px !important;}
+.newsletter input[type=text] { width: 95%; float:left; padding: 6px 20px; margin: 0px 0; box-sizing: border-box; border: 1px solid #555; outline: none; 
+	font-family: 'Asap', sans-serif; font-weight:400; border-radius:15px; color:#696969; border:none; background:#0b5295; color:#7ea1c2;}
+.newsletter button{width: 25px !important; height: 42px !important; float:left; background-position:center; background:url(../images/newsletter-btn-bg.png); background-repeat: no-repeat; margin:-2px -24px; background-size:100% 70%;padding: 0px 0px;}
+footer{width: 277px; height: auto; margin: 0 auto;}
+.copymain-left{ width:290px; float:left;}
+.copymain-left .cont{ width:170px; float:left; font-family: 'Asap', sans-serif; font-size:13px; color:#bababa}
+.copymain-right{ width:275px; float:right;}
+.copymain-right .cont { width: auto; float: left; font-family: 'Asap', sans-serif; font-size: 13px; color: #bababa; }
+
+.spn-logo-full{width:100%; float:left; font-family: 'Asap', sans-serif; font-size:16px; text-align:center}	
+.spn-line-sep{width: 1%; float: left;}
+.spn-line-sep img{width: 12%;}
+.spn-logo-cont { width: 95%; margin: 15px auto;}
+header .toplogo{ width:95%; float:right; margin:10px 0;}
+header .toplogo-left-box img{ max-width:80%; text-align:center;}
+header .toplogo-left-text{ width:100%; float:left; font-family: 'Asap', sans-serif; font-weight:500; font-size:10px; color:#3b3b3b; text-align:center;}
+header .toplogo-right-text{ width:100%; float:left; font-family: 'Asap', sans-serif; font-weight:500; font-size:10px; color:#3b3b3b; text-align:center;}
+
+.counter-main{ width:94%; padding:35px 3% 0px; float:left; margin:0; display:table;}
+.counter-prop{ width:auto; float:left; margin:25px 1%}
+
+.contact .historytInner h1{ font-size:20px; }
+
+/*.counter-main{ width:94%; float:left;}
+.counter-prop{ width:auto; float:left; margin:25px 1.5%}
+.counter-prop h2{ font-size:18px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h3{ width: 23px; float: left; font-size: 35px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h5{ font-size:12px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+
+.counter-text{ font-size:13px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; text-align:justify; color:#da251c;}
+.counter-side-text{ font-size:18px; margin-top:20px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-linebg{ width:auto; float:left;}
+.counter-linebg img{ width:100%;}*/
+
+
+}
+
+
+@media screen and (max-width:599px) { 
+
+header { width: 96%; height: auto; margin: 0 2%; position: absolute; top: 0px; }
+header .part-logo span {width: 16%; height: auto; float: right; margin: 0 0 0 6%; }
+header .part-logo span img{width: 100%; }
+
+
+.spn-logo-full{width:100%; float:left; font-family: 'Asap', sans-serif; font-size:12px; text-align:center}	
+.container .show-outline-bg{ width:45%; height:260px; background-size:90% 50% !important; background:url(../images/show-outline-img-small.png); background-position: center; background-repeat: no-repeat; position: relative; /*! left: 54%; */float: left;margin-top: -19%;}
+.container .show-outline-bg a img{ width: 55px; height: 55px; position: absolute; top: 70%; left: 40%; z-index: 9999; float: left;}
+
+.container .show-outline-content { width: 100%; height: auto; position: relative; left: 0; top: 0px; float: left; }
+.visitor-bg{ width:100%; height:75%; background:url(../images/visitor-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: 100% 100%; float: left;}	
+.visitor-bg-content {width: 94%; height: 100%; margin: 0 3%; position: relative; float: left;}
+.visitor-bg .part-detail{ width:67px; height:92px; float:left; position:relative; top:58%; left:6%; z-index:99; }
+.visitor-bg .part-detail img{ width:auto; height:80%; align-content:center; }
+.visitor-bg .photo-gallery{ width:67px; height:92px; float:left; position:relative; top:38%; left:30%; z-index:99;}
+.visitor-bg .photo-gallery img{ width:auto; height:85%; align-content:center;}
+.visitor-bg .down-kit{ width:67px; height:92px; float:left; position:relative; top:19%; left:48%; z-index:99;}
+.visitor-bg .down-kit img{ width:auto; height:80%;  align-content:center;}
+
+.media-img-one{ width:125px; height:125px; color:#535353; background:url(../images/media-img-1.png); background-size:100% 100%; background-repeat: no-repeat; position:absolute; top:27%; left:0%; float:left;}
+.media-img-one img{ width:100%; height:100%; }
+.media-img-one img:hover{ width:85px; height:86px; position: absolute; top: 15%; }
+
+.media-img-two{ width:100px; height:101px; color:#535353; background:url(../images/media-img-2.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:22%; left:25%; float:left;}
+.media-img-two img{ width:100%; height:100%; }
+.media-img-two img:hover{ width:80px; height:81px; position: absolute; top: 15%; }
+
+.media-img-three{ width:100px; height:101px; color:#535353; background:url(../images/media-img-3.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:51%; left:19%; float:left;}
+.media-img-three img{ width:100%; height:100%; }
+.media-img-three img:hover{ width:80px; height:81px; position: absolute; top: 15%; }
+
+.media-img-four{ width:130px; height:130px; color:#535353; background:url(../images/media-img-4.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:36%; left:38%; float:left;}
+.media-img-four img{ width:100%; height:100%; }
+.media-img-four img:hover{ width:85px; height:86px; position: absolute; top: 15%; }
+
+.media-img-five{ width:100px; height:101px; color:#535353; background:url(../images/media-img-5.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:21%; left:57%; float:left;}
+.media-img-five img{ width:100%; height:100%;}
+.media-img-five img:hover{ width:80px; height:81px; position: absolute; top: 15%; }
+
+.media-img-six{ width:100px; height:101px; color:#535353; background:url(../images/media-img-6.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:49%; left:63%; float:left;}
+.media-img-six img{ width:100%; height:100%; }
+.media-img-six img:hover{ width:80px; height:81px; position: absolute; top: 15%; }
+
+.media-img-seven{ width:125px; height:125px; color:#535353; background:url(../images/media-img-7.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:25%; left:75%; float:left;} 
+.media-img-seven img{ width:100%; height:100%; }
+.media-img-seven img:hover{ width:85px; height:86px; position: absolute; top: 15%; }
+
+.spn-logo-full{width:100%; float:left; font-family: 'Asap', sans-serif; font-size:10px; text-align:center}	
+.spn-logo { width: 26%; float: left; height: auto; margin: 40px 4% 0 0; }
+.spn-line-sep{width: 1%; float: left;}
+.spn-line-sep img{width: 12%;}
+.spn-logo-cont { width: 95%; margin: 15px auto;}
+
+.newsletter-cont { width: 26%; height: auto; float: left; position: absolute; right: 2%;  margin-top: 1% !important; }
+.newsletter-cont span{ font-size:11px; color:#e1f0ff; text-transform:uppercase; margin: 0 0 0px; float:left;}
+.span-last{ width:auto; float:left; margin-top:5px !important;}
+.overlay-btn{ font-size: 30px; cursor: pointer; margin: 12px 0 0 3%; visibility: visible; width: 40px; height: 40px; float: left; text-align: right; color:#d7261e;} 
+.exhibit-left{ width:75%; height:auto; float:left;}
+.exhibit-right{ width:20%; height:auto; float:left; margin-left:5%;}
+
+.newsletter-right img { width: 143%; height: 100%; float: right; position: relative; top: -1px; left: 0; }
+
+.newsletter-left{width: 65%; height: 140px; float:left;}
+.newsletter-right{width: 35%; height: 141px; float:left; position:relative; top:0; left:0;}
+.newsletter-logo { width: 12%; height: 12%; float: left;position: absolute; left: 45%; margin-top: 3%; }
+
+
+
+header .toplogo{ width:95%; float:right; margin:10px 0;}
+header .toplogo-left{ width:67%; float:left;}
+header .toplogo-left-box{ width:100%; float:left;}
+header .toplogo-left-box img{ max-width:85%; text-align:center;}
+header .toplogo-left-cont{ width:30%; float:left; margin-left:1%;}
+header .toplogo-left-text{ width:100%; float:left; font-family: 'Asap', sans-serif; font-weight:400; font-size:10px; color:#3b3b3b; text-align:center;}
+
+header .toplogo-center{ width:1%; float:left;}
+header .toplogo-center-box{ width:100%; float:left;}
+header .toplogo-center-box img{ max-width:30%; float:left;}
+
+header .toplogo-right{ width:32%; float:left;}
+header .toplogo-right-box{ width:100%; float:left;}
+header .toplogo-right-box img{ max-width:85%; text-align:center; margin: 0 auto;}
+header .toplogo-right-cont{ width:30%; float:left;}
+header .toplogo-right-text{ width:100%; float:left; font-family: 'Asap', sans-serif; font-weight:400; font-size:10px; color:#3b3b3b; text-align:center;}
+
+/*
+.counter-main{ width:96%; padding:35px 2% 0px; float:left;}
+.counter-prop{ width:auto; float:left; margin:25px 4px;}
+.counter-prop h2{ font-size:24px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h3{ width: 30px; float: left; font-size: 45px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h5{ font-size:16px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+
+.counter-text{ font-size:16px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; text-align:justify; color:#da251c;}
+.counter-side-text{ font-size:16px; margin-top:30px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-linebg{ width:auto; float:left;}
+.counter-linebg img{ width:100%;}
+*/
+
+
+.counter-main{ width:94%; padding:35px 3% 0px; float:left; margin:0; display:table;}
+.counter-prop{ width:auto; float:left; margin:25px 6%}
+.counter-linebg{ display:none;}
+.counter-linebg img{ display:none;}
+
+}
+
+
+
+@media screen and (max-width:479px) {
+	
+
+header .part-logo span {width: 18%; height: auto; float: right; margin: 0 0 0 2%; }
+header .part-logo span img{width: 100%; }
+
+.container { height: auto; margin: 0 auto; width: 85%; }
+.banner-content { width: 85%; height: auto; padding: 5px 0px; margin: 0 auto; margin-top: 0px; background: rgba(7, 42, 84, 0.6); margin-top: 40%;}
+.container .show-outline-bg{ width:80%; height:280px; background-size:100% 50% !important; background:url(../images/show-outline-img-small.png); background-position: center; background-repeat: no-repeat; position: relative; /*! left: 54%; */float: left;margin-top: -12%;display: table-cell;left: 12%;}
+
+.visitor-bg{ width:100%; height:75%; background:url(../images/visitor-bg.jpg); background-position: center; background-repeat: no-repeat; background-size: 100% 100%; float: left;}	
+.visitor-bg-content {width: 96%; height: 100%; margin: 0 2%; position: relative; float: left;}
+.visitor-bg .part-detail{ width:47px; height:72px; float:left; position:relative; top:58%; left:6%; z-index:99; }
+.visitor-bg .part-detail img{ width:auto; height:80%; align-content:center; }
+.visitor-bg .photo-gallery{ width:47px; height:72px; float:left; position:relative; top:38%; left:30%; z-index:99;}
+.visitor-bg .photo-gallery img{ width:auto; height:85%; align-content:center;}
+.visitor-bg .down-kit{ width:47px; height:72px; float:left; position:relative; top:19%; left:48%; z-index:99;}
+.visitor-bg .down-kit img{ width:auto; height:80%;  align-content:center;}
+
+.media-gallery { width: 98%; height: 300px; float: left; margin: 25px 1% 0; float: left; position: relative; }
+.media-img-one{ width:85px; height:85px; color:#535353; background:url(../images/media-img-1.png); background-size:100% 100%; background-repeat: no-repeat; position:absolute; top:40%; left:0%; float:left;}
+.media-img-one img{ width:100%; height:100%; }
+.media-img-one img:hover{ width:65px; height:66px; position: absolute; top: 15%; }
+
+.media-img-two{ width:70px; height:70px; color:#535353; background:url(../images/media-img-2.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:32%; left:24%; float:left;}
+.media-img-two img{ width:100%; height:100%; }
+.media-img-two img:hover{ width:45px; height:46px; position: absolute; top: 15%; }
+
+.media-img-three{ width:70px; height:70px;  color:#535353; background:url(../images/media-img-3.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:61%; left:18%; float:left;}
+.media-img-three img{ width:100%; height:100%; }
+.media-img-three img:hover{ width:45px; height:46px; position: absolute; top: 15%; }
+
+.media-img-four{ width:90px; height:90px;  color:#535353; background:url(../images/media-img-4.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:48%; left:37%; float:left;}
+.media-img-four img{ width:100%; height:100%; }
+.media-img-four img:hover{width:65px; height:66px; position: absolute; top: 15%; }
+
+.media-img-five{ width:70px; height:70px;  color:#535353; background:url(../images/media-img-5.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:31%; left:56%; float:left;}
+.media-img-five img{ width:100%; height:100%;}
+.media-img-five img:hover{ width:45px; height:46px; position: absolute; top: 15%; }
+
+.media-img-six{ width:70px; height:70px;  color:#535353; background:url(../images/media-img-6.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:59%; left:62%; float:left;}
+.media-img-six img{ width:100%; height:100%; }
+.media-img-six img:hover{ width:45px; height:46px; position: absolute; top: 15%; }
+
+.media-img-seven{ width:85px; height:85px;  color:#535353; background:url(../images/media-img-7.png); background-size:100% 100%; background-repeat: no-repeat; position: absolute; top:38%; left:74%; float:left;} 
+.media-img-seven img{ width:100%; height:100%; }
+.media-img-seven img:hover{ width:65px; height:66px; position: absolute; top: 15%; }
+
+.media-left{width: 100%; height: 246px; float:left;  background-position: right;  background:url(../images/media-img.jpg);  background-repeat: no-repeat; 
+	 background-size: cover; }	
+.media-left-content{ width: 94%; float: left; margin:8px 3%;}
+.media-left-box h4 { font-size:13px; font-weight:bold; }
+.media-left-box h6{ font-size:12px; font-weight:normal; margin: 0px 0 0;}
+.media-left-box{ width:94%; float:left; padding:8px 0px; border-bottom:3px #da2520 solid;}
+
+
+.media-left-box-img{ width:10%; float:left; padding:0px 0px ;}
+.media-left-box-img img{ width:80%; float:left; padding:0px 0px ;}
+.media-social-div{ width:10%; float:left; padding:0px 0px; margin: 0 5px 0 0;}
+.media-social-div img{ width:100%; }
+.media-left-box-img{ width:10%; float:left; padding:0px 0px ;}
+.media-left-box-img img{ width:80%; float:left; padding:0px 0px ;}
+
+
+
+.spn-logo-full{width:100%; float:left; font-family: 'Asap', sans-serif; font-size:10px; text-align:center}	
+.spn-logo { width: 26%; float: left; height: auto; margin: 40px 4% 0 0; }
+.spn-line-sep{width: 1%; float: left;}
+.spn-line-sep img{width: 12%;}
+.spn-logo-cont { width: 95%; margin: 15px auto;}
+
+.newsletter-cont { width: 36%; height: auto; float: left; position: absolute; right: 2%;  margin-top: 1% !important; }
+.newsletter-cont span{ font-size:11px; color:#e1f0ff; text-transform:uppercase; margin: 0 0 0px; float:left;}
+.span-last{ width:auto; float:left; margin-top:5px !important;}
+.overlay-btn{ font-size: 28px; cursor: pointer; margin: 8px 0 0 1%; visibility: visible; width: 36px; height: 36px; float: left; text-align: right; color:#d7261e;} 
+.exhibit-left{ width:96%; height:auto; float:left; margin:0 2%}
+.exhibit-right{ width:90%; height:auto; float:left; margin:0 5%;}
+.exhibit-right img{ width:60%; height:auto; margin:25px auto 0;}
+
+
+.newsletter-right img { width: 143%; height: 100%; float: right; position: relative; top: -1px; left: 0; }
+
+.newsletter-left{width: 55%; height: 140px; float:left;}
+.newsletter-right{width: 45%; height: 141px; float:left; position:relative; top:0; left:0;}
+.newsletter-logo { width: 20%; height: 20%; float: left;position: absolute; left: 24%; margin-top: 5%; }
+
+
+
+header .toplogo{ width:95%; float:right; margin:10px 0;}
+header .toplogo-left{ width:67%; float:left;}
+header .toplogo-left-box{ width:100%; float:left;}
+header .toplogo-left-box img{ max-width:85%; text-align:center;}
+header .toplogo-left-cont{ width:30%; float:left; margin-left:1%;}
+header .toplogo-left-text{ width:100%; float:left; font-family: 'Asap', sans-serif; font-weight:400; font-size:7px; color:#3b3b3b; text-align:center;}
+
+header .toplogo-center{ width:1%; float:left;}
+header .toplogo-center-box{ width:100%; float:left;}
+header .toplogo-center-box img{ max-width:30%; float:left;}
+
+header .toplogo-right{ width:32%; float:left;}
+header .toplogo-right-box{ width:100%; float:left;}
+header .toplogo-right-box img{ max-width:85%; text-align:center; margin: 0 auto;}
+header .toplogo-right-cont{ width:30%; float:left;}
+header .toplogo-right-text{ width:100%; float:left; font-family: 'Asap', sans-serif; font-weight:400; font-size:7px; color:#3b3b3b; text-align:center;}
+
+/*.counter-main{ width:96%; padding:35px 2% 0px; float:left;}
+.counter-prop{ width:auto; float:left; margin:25px 4px;}
+.counter-prop h2{ font-size:20px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h3{ width: 24px; float: left; font-size: 35px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+.counter-prop h5{ font-size:12px; display:inline-block; font-weight:bolder; font-family: 'Asap', sans-serif; color:#da251c; }
+
+.counter-text{ font-size:12px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; text-align:justify; color:#da251c;}
+.counter-side-text{ font-size:12px; margin-top:25px;  display:inline-block; font-weight:lighter; font-family: 'Asap', sans-serif; color:#da251c;}
+.counter-linebg{ width:auto; float:left;}
+.counter-linebg img{ width:100%;}*/
+
+.counter-main{ width:73%; padding:35px 13% 0px; float:left; margin:0; display:table;}
+.counter-prop{ width:auto; float:left; margin:15px 20%}
+.counter-linebg{ display:none;}
+.counter-linebg img{ display:none;}
+
+}
+
