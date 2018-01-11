@@ -1,0 +1,388 @@
+/********Show Outline Start********/
+.show_outline{ width:100%; float:left; margin:27px 0 0 0;}
+.show_outline .centring{ max-width:1170px; width:100%;  margin:0 auto;}
+.show_outline .BreadCrumb{ width:100%; float:left;}
+.show_outline .BreadCrumb .BreadCrumb_left { width:auto; float:left;}
+.show_outline .BreadCrumb .BreadCrumb_right { font-family: 'Asap', sans-serif; font-size:20px; line-height:25px; margin-left: 18px; margin-bottom:40px; padding-left: 14px; 
+background: url(../images/divider.jpg) left bottom no-repeat, url(../images/divider-gray.jpg) left bottom repeat-x;}
+.show_outline .left{ width:293px; float:left; }
+.show_outline .left .listBox{ width:100%; float:left; border:#ccc solid 1px; background:#f5f5f5;}
+.show_outline .left .listBox ul{ list-style:none; padding:7px 20px 10px 20px;}
+.show_outline .left .listBox li{ line-height:normal;  background:url(../images/car.png) no-repeat left top 10px; margin-top:15px;}
+.show_outline .left .listBox li a{font-family: 'Asap', sans-serif; font-size:16px; line-height:25px; color:#4f4f4f; border-bottom:#ccc solid 1px; margin-left:44px; display:block;  padding-bottom:15px;}
+.show_outline .left .listBox li a:hover, .show_outline .left .listBox li a.active{ color:#d8251c;}
+
+
+.show_outline .left .advertisement{ width:auto; float:left; margin-top:20px;}
+.show_outline .left .advertisement img{ width:100%; float:left; margin-top:20px;}
+.show_outline .left .listBox li a.list{ border-bottom:none;}
+.show_outline .right{ width:803px; float:right;}
+.show_outline .right h1{ width:auto; height:auto; font-size:40px; color:#535353; font-family: 'Asap', sans-serif; font-weight:700; background:url(../images/head-bg.png); background-position: right; background-repeat: no-repeat; position: relative; float: left; padding: 0px 85px 30px 0px;}
+.show_outline .right p{ width:100%; height:auto; float: left; font-size:16px; color:#535353; font-family: 'Asap', sans-serif; margin-top:10px; line-height:20px; text-align:justify;}
+.show_outline .right a {text-decoration:none; color:#939393; font-family: 'Asap', sans-serif; font-weight:400;font-size:16px;}
+.show_outline .right a:hover {color:#ce2129;}
+.show_outline .right table{ width:100%; height:auto; float:left;font-family: 'Asap', sans-serif; font-weight:400;font-size:16px; color:#939393;  }
+.show_outline .right table td a { text-decoration:none; color:#939393;}
+.show_outline .right table td a:hover { color:#0769CB;}
+.show_outline .right table h4 { font-family: 'Asap', sans-serif; font-weight:400; font-size:20px; float:left; color:#939393; }
+.show_outline .right table span{ font-family: 'Asap', sans-serif; font-weight:400; font-size:20px; float:left; color:#d8251c;}
+.show_outline .right .exhibit-list{ font-family: 'Asap', sans-serif; font-weight:400; font-size:14px; float:left; color:#d8251c;}
+.show_outline .right .exhibit-list span{ font-family: 'Asap', sans-serif; font-weight:400; font-size:12px; float:left; color:#4f4f4f;}
+.show_outline .right .components{ width:auto; float:left; font-size:18px; color:#535353; font-family: 'Asap', sans-serif; }
+.show_outline .right .imgBox{ width:auto; float:right;margin-bottom: 15px;}
+.show_outline .right .imgBox ul{ list-style:none}
+.show_outline .right .imgBox li{ float:left; margin-left:20px;}
+.show_outline .right .click{ width:auto; float:right; margin-top:25px;}
+.show_outline .right .click h3{font-family: 'Asap', sans-serif; font-size:16px; line-height:25px; color:#4f4f4f; display:inline-block;  }
+.show_outline .right .click a{font-family: 'Asap', sans-serif; font-size:16px; line-height:25px; color:#da251c; text-decoration:underline }
+.show_outline .right .click a:hover{ text-decoration:none}
+.show_outline .right .click img{ float:right; margin-left:6px; margin-top:-3px;}
+.show_outline .tableImg{ float: left; padding-top: 5px; padding-right: 7px;}
+
+
+
+.show_outline .BreadCrumb2 .BreadCrumb_left { width:auto; float:left; display:none}
+.show_outline .BreadCrumb2 .BreadCrumb_cen { width:auto; float:left; font-family: 'Asap', sans-serif; font-size:20px; line-height:25px;margin-bottom:40px; 
+background: url(../images/divider.jpg) left bottom repeat-x; margin-left: -3px;
+padding-left: 10px;}
+.show_outline .BreadCrumb2 .BreadCrumb_right {  width:auto; float:left; font-family: 'Asap', sans-serif; font-size:20px; line-height:25px; margin-bottom:40px; 
+background: url(../images/divider-gray.jpg) left bottom repeat-x;}
+/********Show Outline End********/
+
+/********General Start********/
+.GeneralBox { width: 100%; float: left; margin-top:15px;}
+.GeneralBox.list{ margin-top:0}
+.GeneralLeft { width: auto; float: left;}
+.GeneralRight { width: 79%; float: right; border: 1px solid #CCC; padding: 0px 0 20px 0; margin-bottom: 15px;}
+.GeneralRight.list{ width:76%}
+.GeneralRight h4 { font-family: 'Asap', sans-serif; font-size: 15px; padding: 5px; font-weight:bold; border-bottom: 1px solid #CCC; color: #005aab; background-color: #e1e1e1;}
+.GeneralRight p {  width:auto !important; padding: 5px 15px 1px 15px; margin-bottom:0; float:none !important;font-family: 'Asap', sans-serif;font-weight: 400 !important;font-size: 16px;color: #939393;}
+.GeneralRight a.delhi { font-family: 'Asap', sans-serif; font-size: 15px !important; line-height: 25px; color: #da251c; text-decoration: none;}
+.GeneralRight a.delhi:hover{ text-decoration:underline}
+.GeneralRight .imgGreneral{ float:left; margin-right: 15px;}
+.GeneralRight  ul{ list-style:none; padding:10px 0 5px 28px;}
+.GeneralRight  li{ line-height:normal; font-family: 'Asap', sans-serif; font-size: 15px !important; list-style:outside; color:#535353}
+/********General End********/
+
+.mobileMenu{ display:none;}
+
+/********Edition Start********/
+.Edition{ width: 100%; float: left;  float:left; }
+.Edition img{ border:#ccc solid 5px;border-radius:10px;}
+.Edition img:hover{ border:#d8251c solid 5px;border-radius:10px;}
+.Edition .imgSmall{ width:215px; height:143px; }
+.Edition .Media{ float:left; margin:0 20px 20px 0;}
+/********Edition End********/
+
+/********Daily News Start********/
+.Daily_News { width: 100%; float: left;  float:left; }
+.Daily_News ul{ list-style:none;}
+.Daily_News li{ line-height:normal; float:left; margin:0 20px 20px 0; border:#ccc solid 5px;border-radius:10px;}
+.Daily_News li:hover{ border:#d8251c solid 5px;border-radius:10px;}
+/********Daily News End********/
+
+/********Search List Start********/
+.searchList{ width: 100%; float: left;  float:left; }
+.searchList .topBox{ width:100%; float:left;}
+.searchList .select-dropdown { position: relative; background-color: #f3f4f6; float: left; width: 28%; border-radius: 25px; margin:0 !important; }
+.searchList .select-dropdown select { font-family: 'Asap', sans-serif;  font-size: 14px; font-weight: 200; width: 100%; padding: 5px 24px 5px 10px; border: none;  background-color: transparent; -webkit-appearance: none; -moz-appearance: none; appearance: none; color:#999797; height:39px; }
+.searchList .select-dropdown select option{ outline: none;  box-shadow: none;  font-size: 14px; font-weight: 200; padding: 6px 24px 6px 10px; }
+.searchList .select-dropdown select:active, .select-dropdown select:focus { outline: none; box-shadow: none; }
+.searchList .select-dropdown:after { content: " "; position: absolute; top: 50%; margin-top: -2px; right: 8px; width: 0; height: 0; border-left: 5px solid transparent;
+ border-right: 5px solid transparent; border-top: 5px solid #aaa; }
+.searchList input[type="text"] { width: 28%; padding: 12px 20px;  box-sizing: border-box; border: 1px #555555 solid; outline: none; font-family: 'Asap', sans-serif; font-weight: 400; border-radius: 25px; color: #616161; border: none; background: #f3f4f6; margin-left:10px; float:left; margin-right:10px;}
+.searchList .btnDiv{ width:auto; float:left;}
+.searchList .btnDiv .btnSearch{ margin-right:8px; padding:11px 30px; border-radius:25px; border:1px #f0a8a4 solid; color:#f0a8a4; text-transform:uppercase; font-family: 'Asap', sans-serif; font-weight:400; float:left; background:#fff; cursor:pointer;}
+.searchList .btnDiv .btnSearch:hover{ padding:11px 30px;border-radius:25px; border:1px #f0a8a4 solid; color:#ffffff; text-transform:uppercase; font-family: 'Asap', sans-serif; font-weight:400; float:left; background:#f0a8a4;}.searchList table{ width:100%; height:auto; float:left;font-family: 'Asap', sans-serif; font-weight:400;font-size:16px; margin-top:15px; color:#939393; 
+border:1px #d1d1d1 solid; border-collapse:collapse; }
+.searchList table tr{ margin:15px 0px; }
+.searchList table td { padding:5px 10px; font-size:12px;}
+.searchList table td a { text-decoration:none; color:#939393; }
+.searchList  a:hover { color: #d8251c !important;}
+/********Search List End********/
+
+/*First Popup Bookingc Announcement page Start*/
+.firstPop {  width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99; background: url(../images/bgblack.png) repeat; text-align: center; display: none;}
+.popupBox { width:600px; height:220px; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; background: #FFF; border: 2px solid #000;  border-radius: 3px; color: #000; font-family: Arial,Helvetica,sans-serif; font-size: 14px; line-height: 20px; padding: 25px; text-align:left;}
+.popupBox h3 { line-height:25px; font-size: 20px; color: #535353; font-family: 'Asap', sans-serif; font-weight: 700;}
+.popupBox p { font-size: 16px; color: #535353; font-family: 'Asap', sans-serif; line-height: 20px; text-align: justify;}
+.firstcloseBtn { position: absolute; right: -1px; top: -1px; cursor: pointer;}
+/*First Popup Bookingc Announcement page End*/
+
+/*Second Popup Bookingc Announcement page Start*/
+.secondPop {  width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99; background: url(../images/bgblack.png) repeat; text-align: center; display: none;}
+.popupBox2 { width:600px; height:120px; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; background: #FFF; border: 2px solid #000;  border-radius: 3px; color: #000; font-family: Arial,Helvetica,sans-serif; font-size: 14px; line-height: 20px; padding: 25px; text-align:left;}
+.popupBox2 h3 { line-height:25px; font-size: 20px; color: #535353; font-family: 'Asap', sans-serif; font-weight: 700;}
+.popupBox2 p { font-size: 16px; color: #535353; font-family: 'Asap', sans-serif; line-height: 20px; text-align: justify;}
+.secondcloseBtn { position: absolute; right: -1px; top: -1px; cursor: pointer;}
+/*Second Popup Bookingc Announcement page End*/
+
+/*Third Popup Bookingc Announcement page Start*/
+.thirdPop {  width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99; background: url(../images/bgblack.png) repeat; text-align: center; display: none;}
+.popupBox3 { width:600px; height:220px; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; background: #FFF; border: 2px solid #000;  border-radius: 3px; color: #000; font-family: Arial,Helvetica,sans-serif; font-size: 14px; line-height: 20px; padding: 25px; text-align:left;}
+.popupBox3 h3 { line-height:25px; font-size: 20px; color: #535353; font-family: 'Asap', sans-serif; font-weight: 700;}
+.popupBox3 p { font-size: 16px; color: #535353; font-family: 'Asap', sans-serif; line-height: 20px; text-align: justify;}
+.thirdcloseBtn { position: absolute; right: -1px; top: -1px; cursor: pointer;}
+/*Third Popup Bookingc Announcement page End*/
+
+/*Forth Popup Bookingc Announcement page Start*/
+.forthPop {  width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99; background: url(../images/bgblack.png) repeat; text-align: center; display: none;}
+.popupBox4 { width:600px; height:220px; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; background: #FFF; border: 2px solid #000;  border-radius: 3px; color: #000; font-family: Arial,Helvetica,sans-serif; font-size: 14px; line-height: 20px; padding: 25px; text-align:left;}
+.popupBox4 h3 { line-height:25px; font-size: 20px; color: #535353; font-family: 'Asap', sans-serif; font-weight: 700;}
+.popupBox4 p { font-size: 16px; color: #535353; font-family: 'Asap', sans-serif; line-height: 20px; text-align: justify;}
+.forthcloseBtn { position: absolute; right: -1px; top: -1px; cursor: pointer;}
+/*Third Popup Bookingc Announcement page End*/
+
+/*Fifth Popup Bookingc Announcement page Start*/
+.fifthPop {  width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99; background: url(../images/bgblack.png) repeat; text-align: center; display: none;}
+.popupBox5 { width:600px; height:220px; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; background: #FFF; border: 2px solid #000;  border-radius: 3px; color: #000; font-family: Arial,Helvetica,sans-serif; font-size: 14px; line-height: 20px; padding: 25px; text-align:left;}
+.popupBox5 h3 { line-height:25px; font-size: 20px; color: #535353; font-family: 'Asap', sans-serif; font-weight: 700;}
+.popupBox5 p { font-size: 16px; color: #535353; font-family: 'Asap', sans-serif; line-height: 20px; text-align: justify;}
+.fifthcloseBtn { position: absolute; right: -1px; top: -1px; cursor: pointer;}
+/*Fifth Popup Bookingc Announcement page End*/
+
+/*Sixth Popup Bookingc Announcement page Start*/
+.sixthPop {  width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: 99; background: url(../images/bgblack.png) repeat; text-align: center; display: none;}
+.popupBox6 { width:600px; height:220px; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto; background: #FFF; border: 2px solid #000;  border-radius: 3px; color: #000; font-family: Arial,Helvetica,sans-serif; font-size: 14px; line-height: 20px; padding: 25px; text-align:left;}
+.popupBox6 h3 { line-height:25px; font-size: 20px; color: #535353; font-family: 'Asap', sans-serif; font-weight: 700;}
+.popupBox6 p { font-size: 16px; color: #535353; font-family: 'Asap', sans-serif; line-height: 20px; text-align: justify;}
+.sixthcloseBtn { position: absolute; right: -1px; top: -1px; cursor: pointer;}
+/*Sixth Popup Bookingc Announcement page End*/
+
+/********Contact Start********/
+.contact{ width:100%; float:left; margin:27px 0 0 0; border-bottom:#ccc solid 1px; padding-bottom:30px;}
+.contact .centring{ max-width:1170px; width:100%;  margin:0 auto;}
+.contact .BreadCrumb{ width:100%; float:left;}
+.contact .BreadCrumb .BreadCrumb_left { width:auto; float:left;}
+.contact .BreadCrumb .BreadCrumb_right { font-family: 'Asap', sans-serif; font-size:20px; line-height:25px; margin-left: 18px; margin-bottom:40px; padding-left: 14px; background: url(../images/divider.jpg) left bottom no-repeat, url(../images/divider-gray.jpg) left bottom repeat-x;}
+
+.contact .contactInner{ width:100%; float:left;}
+
+.contact .contactInner h1{ width:auto; height:auto; font-size:40px; color:#535353; font-family: 'Asap', sans-serif; font-weight:700; background:url(../images/head-bg.png); background-position: right; background-repeat: no-repeat; position: relative; float: left; padding: 0px 85px 30px 0px;}
+.contact .contactInner h3 { font-weight:bold; font-size: 20px; color: #535353; font-family: 'Asap', sans-serif; line-height: 20px; text-align: justify; margin-bottom:10px;}
+.contact .contactInner h4 { font-weight:bold; font-size: 16px; color: #535353; font-family: 'Asap', sans-serif; line-height: 20px; text-align: justify; margin-bottom:10px;}
+.contact .contactInner p{ width:100%; height:auto; float: left; font-size:16px; color:#535353; font-family: 'Asap', sans-serif; line-height:25px; text-align:justify; margin:0; padding-bottom:25px;}
+
+.contact .contactInner .left{ width:40%; float:left;}
+.contact .contactInner .right{ width:60%; float:left; margin-top:75px;}
+.contact .contactInner a {text-decoration:none; color:#d8251c; font-family: 'Asap', sans-serif; font-weight:400;font-size:16px;}
+.contact .contactInner img{ float:left; margin-right:20px;}
+.contact .contactInner .redClass{ color:#d8251c;}
+.contact .contactInner .blackClass{ color:#000;}
+.contact .contactInner .fax{ margin: 16px 0; float: left;} 
+
+
+
+/********Contact End********/
+
+
+.contact .historytInner{ width:100%; float:left;}
+.contact .historytInner h1{ width:auto; height:auto; font-size:40px; color:#535353; font-family: 'Asap', sans-serif; font-weight:700; background:url(../images/head-bg.png); background-position: right; background-repeat: no-repeat; position: relative; float: left; padding: 0px 85px 30px 0px;}
+
+.contact .historytInner .left{ width:45%; float:left;}
+.contact .historytInner .left center .main-pdf{ display:inline-block; text-align:left; }
+.contact .historytInner .left center .main-pdf img{ display:inline-block; width:auto; float:none !important;}
+
+
+.contact .historytInner .right{ width:45%; float:left; margin-top:75px; margin-left:5%;}
+.contact .historytInner a {text-decoration:none; color:#d8251c; font-family: 'Asap', sans-serif; font-weight:400;font-size:16px; text-decoration:underline;}
+.contact .historytInner center {margin: 20px 0px;display: inline-block;width: 100%; font-family: 'Asap', sans-serif; font-weight:400; cursor:pointer}
+.contact .historytInner span { width:100%; margin:0 auto 25px; display:inline-block; text-align:center;}
+.contact .historytInner p { width: auto;  margin: 0 20% 25px; display: inline-block; cursor:pointer;}
+.contact .historytInner img{ float:left; width:100%;}
+.contact .historytInner .redClass{ color:#d8251c;}
+.contact .historytInner .blackClass{ color:#000;}
+.contact .historytInner .fax{ margin: 16px 0; float: left;} 
+
+/********history End********/
+
+
+
+
+/********forms css********/
+.forms{ width:100%; float:left; margin:27px 0 0 0; border-bottom:#ccc solid 1px; padding-bottom:30px;}
+.forms .centring{ max-width:1170px; width:100%;  margin:0 auto;}
+.forms .BreadCrumb{ width:100%; float:left;}
+.forms .BreadCrumb .BreadCrumb_left { width:auto; float:left;}
+.forms .BreadCrumb .BreadCrumb_right { font-family: 'Asap', sans-serif; font-size:20px; line-height:25px; margin-left: 18px; margin-bottom:40px; padding-left: 14px; background: url(../images/divider.jpg) left bottom no-repeat, url(../images/divider-gray.jpg) left bottom repeat-x;}
+
+.forms .BreadCrumb-subtext{ font-family: 'Asap', sans-serif; font-size:20px; line-height:25px; margin-left: 18px; margin-bottom:40px; padding-left: 14px; }
+.BreadCrumb-subtextmain{ width:auto; height:auto; font-size:24px; color:#535353; font-family: 'Asap', sans-serif; font-weight:700; background-position: right; background-repeat: no-repeat; position: relative; float: left; padding: 0px 0px 15px 0px; }
+.BreadCrumb-subtext{ width:auto; height:auto; font-size:30px; color:#535353; font-family: 'Asap', sans-serif; font-weight:700; background:url(../images/head-bg.png); background-position: right; background-repeat: no-repeat; position: relative; float: left; padding: 0px 85px 30px 0px; }
+.gst-men-head{width:100%; text-align:center; color:#125396; text-transform:uppercase; padding:20px 0 0 0 ; font-size:20px; font-weight:bold;font-family: 'Asap', sans-serif; margin:0;}
+.gst-men-grey{width:100%; text-align:center; color:#515252; font-family: 'Asap', sans-serif;}
+
+.gst-field-main{width:100%; float:left; margin:12px 0px; text-align:left; font-family: 'Asap', sans-serif;}
+
+.gst-field-box{width:100%; float:left;}
+.gst-men-left{width:45%; float:left;}
+.gst-blue-left{width:100%; float:left; color:#125396; font-size:15px; font-family: 'Asap', sans-serif; font-weight:bold; padding:0 0 10px 0; text-align:left;}
+.gst-grey-left{width:100%; float:left; color:#515252; font-size:13px; font-family: 'Asap', sans-serif; text-align:left;}
+.gst-field{border-radius: 2px; font-size: 14px; color: #515252; text-align: justify; padding:10px; margin: 0px 0px; font-weight: bold; border: 1px #cccccc solid; width: 100% !important; }
+.get-field-two{height: 30px; border-radius: 2px; font-size: 14px; text-align: justify; color: #515252; font-weight: bold; border: 1px #cccccc solid; padding-left:8px;}
+.gst-men-right{width:45%; float:left; margin-left:5%;}
+.gst-more{ float:left; padding:8px 15px; width:40%;}
+.gst-more-label{ float:left;font-size:14px; font-family: 'Asap', sans-serif; text-align:left; color:#515252;}
+.gst-more-text{ float:left;height: 30px; border-radius: 2px; font-size: 14px; text-align: justify; color: #515252; margin: 5px 0px; font-weight: bold; border: 1px #cccccc solid; padding-left:8px;}
+.gst-tbl-contact{ width:97%; height: 30px; margin: -10px 0px 15px;text-align: center; color: #515252;  background:#d9e4ee; border-right:1px #FFFFFF solid; float:left;}
+.gst-tbl-contact td{ width:33%; border-right:1px #ffffff solid; padding:10px 0; }
+.gst-tbl-contact td:last-child{ width:33%; border-right:inherit; padding:10px 0; }
+.gst-print{ margin: 0 37% 25px 38%; text-align: center; border-radius: 2px;  font-size: 14px; color: #515252; padding:12px 15px; background:#ffffff; border:1px #515252 solid; float:left; text-transform:uppercase; width:100px; cursor:pointer;}
+.print-grey{ width: 94%; float:left; padding:15px 3%; background-color:#E7E7E7; border: 1px #999999 solid;}
+.gst-blue-head{width:90%; text-align:left; float:left; background:#00468e; color:#ffffff; padding:10px 5%; margin:10px 0; font-size:14px; font-weight:bold; font-family: 'Asap', sans-serif; }
+.p-head-style { font-size: 16px; text-align: justify; color: #515252; margin: 15px 0px; font-weight: bold; }
+.p-style { font-size: 16px; color: #515252; margin: 5px 0px;}
+.p-style input { height: 30px; border-radius: 2px; font-size: 12px; text-align: justify; color: #515252; margin: 5px 0px; border: 1px #cccccc solid; font-weight: bold; padding-left:15px;} 
+.p-note { width: 90%; height: auto; float: left; background-color: #d9e4ee; padding: 5%; margin-bottom: 20px; }
+.p-Submit { width: auto; height: auto; background-color: #00468e; padding: 15px 30px; text-transform: uppercase; color: #FFF; border-radius: 4px; border:none; }
+.table-form{ border:1px #999999 solid; border-collapse:collapse; font-family: 'Asap', sans-serif;  margin-bottom:20px;}	
+/********forms css********/
+
+/********Enquiry form********/
+.show_outline .centring .left-sec{ width:70%;  margin:0 auto; float:left;}
+.show_outline .centring .left-sec p{ width:90%;  margin:0 auto; float:left; font-family: 'Asap', sans-serif;  font-size:16px; color:#555555; text-align:justify; line-height:18px;}
+.show_outline .centring .left-sec b{ width:100%;  margin:0 auto; float:left;  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;  font-size:20px;}
+.show_outline .centring .left-sec span{ color:#FF0000;}
+.show_outline .centring .form-main{ width:90%; float:left; padding:15px 2%; background-color:#eeecec; border: 1px solid #e4e4e4; }
+.show_outline .centring .form-main p{ width:100%; height:auto; float:left; margin: 0 0 15px 0; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;}
+.show_outline .centring .form-main label{ width:300px; float:left; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; border-collapse:collapse; }
+.show_outline .centring .form-main font{ float:left; font-family: font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; border-collapse:collapse; }
+.show_outline .centring .form-main .table-code{ width:75%;  float:left; border-collapse:collapse;}
+.show_outline .centring .form-main .select-drop{ width:75%; padding:8px 10px; margin-bottom:25px; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;border-collapse:collapse; border-radius:2px;}
+.show_outline .centring .form-main .btn-style{width: 100%; padding: 8px 10px; font-family: 'Asap', sans-serif; border-collapse: collapse;  border-radius: 2px;
+  background-color: #ce2129; color:#FFFFFF} 
+.show_outline .centring .form-main .product-table{width: 100%; float:left; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+.show_outline .centring .form-main .product-table input{width:auto; padding: 8px 10px 0 0;float:left; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; background:none !important; } 
+.show_outline .centring .form-main .product-table label{width: 80%; padding:0px 10px; float:left; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;background:none !important;}
+
+
+
+
+.show_outline .centring .form-main .table-code input{ width:100%; padding:8px 10px; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; border-collapse:collapse; border-radius:2px; }
+.show_outline .centring .form-main .table-code .btnstyle{ width:100%; padding:7px 10px; font-family: 'Asap', sans-serif; border-collapse:collapse; border-radius:2px; border:1px #cccccc solid;}
+.show_outline .centring .form-main .Product-class{width:75%; padding:8px 10px; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;border-collapse:collapse; border-radius:2px;}
+.show_outline .centring .form-main table label{ width:auto;  float:left;font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; border-collapse:collapse; }
+.show_outline .centring .form-main table input{ width:90%; padding:8px 10px;font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; border-collapse:collapse; border-radius:2px; border:1px #cccccc solid;}
+.show_outline .centring .form-main h3{ width:73%; float:left; padding:8px 10px; font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif; border-radius:2px; background:#d4d4d4; margin: 0 0 15px 0;}
+.show_outline .centring .form-main select{width:50%; padding:8px 10px; font-family: 'Asap', sans-serif; border-collapse:collapse; border-radius:2px;}
+.show_outline .centring .form-main input{width:48%; padding:8px 10px; font-family: 'Asap', sans-serif; border-collapse:collapse; border-radius:2px; border:1px #cccccc solid;}
+.show_outline .centring .form-main textarea{width:48%; padding:8px 10px; font-family: 'Asap', sans-serif; border-collapse:collapse; border-radius:2px; border:1px #cccccc solid;}
+.show_outline .centring .form-main img{width:125px; padding:0px 10px 0 0 ; float:left; font-family: 'Asap', sans-serif; border-collapse:collapse; }
+.show_outline .centring .form-main input[type="submit"]{ width:100px;font-family: 'Asap', sans-serif; border-radius: 2px; border: none; font-size:16px;
+	color:#ffffff !important; padding: 8px 10px; background-color:#ce2129; cursor:pointer; text-align:center; margin-right:20px;}
+.show_outline .centring .right-sec{ width:30%; float:left; margin:0 auto;}
+
+/********Enquiry form********/
+
+/*Company new start*/
+.show_outline .centring .compdetails { width:100%; float:left;}
+.show_outline .centring .compdetails ul { margin:0; padding:0; list-style-type:none;}
+.show_outline .centring .compdetails ul li { width:150px; float:left; border:#f8d8d6 solid 1px; margin:0 35px 20px; padding:10px; text-align:center;}
+.show_outline .centring .compdetails ul li {}
+
+
+/*Company new end*/
+
+
+
+/********Exhibitor login********/
+.exbhibitor-login{width:100%; height:100vh; float:left; background:url(../images/exh_log_bg.png) no-repeat; background-repeat:no-repeat; background-size:100% auto;}
+.exbhibitor-main{width:50%; padding:25px; margin:10% 22%; background:rgba(204,204,204,0.5); float:left; box-shadow: 0px 5px 5px #888888; border-radius:10px; border-top:5px #ce2129 solid;}
+.exbhibitor-main p{ width:100%; float:left; margin:0px;}
+.exbhibitor-main p a{ text-decoration:none; color:#555555; font-family: 'Asap', sans-serif; font-size:16px;}
+.exbhibitor-main p a:hover{ text-decoration:underline; color:#ce2129; font-family: 'Asap', sans-serif; font-size:16px !important;}
+.exbhibitor-main input{width:92%; padding:12px 15px; margin:0 0 15px 0; float:left; font-family: 'Asap', sans-serif; border-radius:2px; border:1px #cccccc solid;}
+.exbhibitor-main .btn-input{width:100px; padding:7px 0; float:left; display:inline-block; background-color: #ce2129;color: #FFFFFF; border-radius:2px;border:none; margin-right:15px; cursor:pointer;}
+/********Exhibitor login********/
+
+/********Exhibitor company********/
+.exhibitor-com-tab{ width:100% !important; border:solid 1px #d8251c; border-collapse:collapse;}
+
+.exhibitor-com-tab tr td{  font-family: 'Asap', sans-serif; font-size:16px; color:#999999;}
+.exhibitor-com-tab tr td a{ font-family: 'Asap', sans-serif; font-size:12px; color:#555555;}
+.exhibitor-com-tab tr td img{ float:left; padding:0 5px}
+.exhibitor-com-tab tr td span{ float:left;}
+.exhibitor-com-tab tr td strong{ float:left; font-family: 'Asap', sans-serif; font-size:12px; color:#555555;}
+/********Exhibitor company********/
+
+/********company page********/
+.comp_left{ float: left; width: 32% !important; margin-left: 5%;} 
+.comp_banner { margin-top: 20px;}
+.comp_banner img{ width:100%;}
+.comp_form{ background-color: #005baa; color: #fff; font-family: 'Asap', sans-serif;  font-size: 14px; font-weight: bold; padding: 8px 5px; margin-top: 20px;}
+ul.comp_list {list-style-type: none; width: 100%;  border: none; height: 250px; overflow: scroll;}
+ul.comp_list{list-style-type:none; width:100%; border:none; height:250px; overflow:scroll}
+ul.comp_list li{padding:4px 4px 4px 10px; background:url(../images/comp_grad.jpg) repeat; border:none; }
+ul.comp_list li a{color:#FFF; text-decoration:none; font:normal 14px Arial, Helvetica, sans-serif}
+ul.comp_list li a img{ display:inline !important;}
+ul.comp_list li a:hover{color:#FFF; font:normal 14px Arial, Helvetica, sans-serif}
+/********company page********/
+
+
+.gap{ width:100% !important; }
+.gap input[type="checkbox"]{ width:24px !important; !important; float:left; }
+
+
+.exh_guest{width:100%; padding-top:20px;}
+.exh_guest .eg_row{width:100%;}
+.exh_guest .eg_col{width:50%; float:left; text-align: left; margin: 0 0 15px;}
+.exh_guest p{margin:10px 0; padding:0; text-align:center;}	
+.eg_col label span{color:#f0212a; margin:0 0 0 3px !important;}
+.eg_col input{width:300px; background:#f5f5f5; border:1px solid #c4c4c4; padding: 8px 10px; float: left; margin: 0 15px 0 0; background-color:#FFFFFF;}
+.eg_col select{width:315px;  background:#f5f5f5; border:1px solid #c4c4c4; padding: 8px 10px; float: left; margin: 0 15px 0 0; background-color:#FFFFFF;}
+.eg_col select option{padding:3px 8px; height:16px;width:300px; }
+.eg_btn{width:200px; margin:30px auto 0;}
+.eg_btn input{width:80px; font-family: 'Asap', sans-serif; border-radius: 2px; border: none; font-size: 16px;  color: #ffffff !important; padding: 8px 10px; background-color: #ce2129; 
+	cursor: pointer; text-align: center; margin-right: 20px;} 
+.eg_btn input:first-child{margin-left:0;}
+
+
+#para{ width:100%; margin:0 auto; padding:0px; font-family: 'Asap', sans-serif; }
+#para ul{ list-style:none; float:left;  width:305px; color:#ffffff; 	margin-top:0px;	}
+#para ul li{ display:block; font-size:13px; font-family: Arial, Helvetica, sans-serif !important; background-color:#fff;  padding:10px; border: none; color:#545454; border:1px solid #d7251b; border-left:none; border-top:none; }
+#para ul li a {  text-decoration:none; color:#545454; font-family: Arial, Helvetica, sans-serif !important;}  
+#para ul li a:hover {  text-decoration:underline; color:#545454;}  
+#para .tit{ background-color:#005baa; color:#ffffff; font-family: 'Asap', sans-serif; font-weight:bold; font-size:14px; background:none !important;}
+
+.social-icon{ position:fixed; right:0; top:25%; z-index:999;}
+.social-icon img { margin-right:-8px; margin-bottom:5px; display:inline !important; float:right; clear:both;}
+.social-icon img:hover {margin-right:0px; transition: all 0.5s ease; }
+
+
+
+
+
+/*Company start*/
+.BreadCrumb-subtext-new{ width:auto; height:auto; font-size:33px; color:#535353; font-family: 'Asap', sans-serif; font-weight:700; background:url(../images/head-bg.png); background-position: right; background-repeat: no-repeat; position: relative; float: left; padding: 0px 85px 30px 0px; }
+.show_outline .centring .compdetails { width:100%; float:left;}
+.show_outline .centring .compdetails ul { margin:0; padding:0; list-style-type:none;}
+.show_outline .centring .compdetails ul li { width:170px; display:inline-block; vertical-align:top; float:none; border:#f8d8d6 solid 1px; margin:0 55px 40px 0; padding:20px 0 0; min-height:180px; text-align:center; box-sizing: border-box;}
+.show_outline .centring .compdetails ul li img { display:inline-block; margin:0;}
+.show_outline .centring .compdetails ul li p {font-family: 'Asap', sans-serif; font-size:18px; color:#555555; margin:15px 0;}
+.show_outline .centring .compdetails ul li:hover { border-bottom:#d8251c solid 3px; border-right:#d8251c solid 3px;}
+.show_outline .centring .compdetails ul li:hover p {color:#d8251c;}
+.show_outline .centring .compbottom { width:100%; float:left; margin-bottom:20px;}
+.show_outline .centring .compbottom .invite { width:350px; float:left; margin-right:40px;}
+.visaletter {font-family: 'Asap', sans-serif; font-size:18px; color:#FFFFFF; padding:10px 10px 10px 47px; background:#da251c url(../images/visa-icon.png) 14px 8px no-repeat; margin-top:50px; margin-right:25px; display:inline-block;}
+.loremipsum {background:#da251c url(../images/itpo-icon.png) 14px 8px no-repeat; margin-right:0;}
+.visaletter:hover { background-color:#404040;}
+.itpo {font-family: 'Asap', sans-serif; font-size:18px; color:#FFFFFF; padding:10px 10px 10px 47px; background:#404040 url(../images/itpo-icon.png) 14px 8px no-repeat; margin-top:50px; margin-right:25px; display:inline-block;}
+.itpo:hover { background-color:#da251c;}
+
+/*Company end*/
+
+/*sitemap start*/
+.sitemap{ width:100%;}
+.sitemap ul{ width:48%; display: inline-block; vertical-align: top; margin-top: 20px;}
+.sitemap ul li{ width:100%; float:left; font-family: 'Asap', sans-serif; font-size:18px; color:#535353;  margin-bottom:15px; } 
+.sitemap ul li b{ width:100%; font-size:16px; color:#535353; font-family: 'Asap', sans-serif !important; }
+.sitemap ul li a{ font-size:14px; color:#535353;  background:url(../images/bullets.png) no-repeat; background-position:top left;  padding-left:20px; margin-bottom:15px;}
+.sitemap ul li a:hover{ color:#ff0000; padding-left: 25px; font-weight:bold;}
+
+/*sitemap ends*/
+
+/*newsletter*/
+.newsletter{ width:100%; float:left;}
+.newsletter figure{ width:45%; float:left; margin-right:5%; margin-bottom:30px;}
+.newsletter figure:last-child { width:45%; float:left; margin-right:0; margin-bottom:30px;}
+/*newsletter*/
