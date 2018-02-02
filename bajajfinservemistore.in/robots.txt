@@ -1,0 +1,4 @@
+user-agent: *
+Disallow: /checkout/
+Disallow: /wishlist/
+Disallow: /sales/order/history/
