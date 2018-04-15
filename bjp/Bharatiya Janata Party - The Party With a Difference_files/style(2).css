@@ -1,0 +1,78 @@
+body, html {background-color: transparent;font-family: arial, verdana;padding:0;margin:0;font-size:14px;width:100%;}
+h1 {margin:0;color:#555;}
+//h3 {margin-top:0;}
+input[type=text] {padding:5px;border:1px solid #ccc;}
+select {padding:2px;height:28px;border:1px solid #ccc;width:112px;}
+
+#header {width:100%;min-height:55px;padding:20px 0 20px 0;border-bottom:0px solid #e6e6e6;overflow:hidden;
+}
+p {margin-top:0;}
+#ytce-wrapper {width:980px;margin:0 auto;}
+#table {display: table;width:100%;}
+#cell {display: table-cell;vertical-align:top;}
+#row  {width:100%;line-height:35px;overflow:hidden; }
+#left, #right {vertical-align:top;float:left;}
+#left { width:65%;}
+#right {width:35%;}
+#colspan {display: table-cell;width:100%;}
+#title_wrap {width:980px;margin:0 auto;position:relative;}
+#intro {padding:5px 0 20px 0;line-height:20px;margin-bottom:0;}
+#container {margin:0 auto;width:980px;}
+#code {width:99%;border:1px solid #ccc;}
+#textareacode {width:99%;border:1px solid #ccc;}
+#selectButton {padding:5px; border:1px solid #bbb;font-weight:bold;padding:5px 30px;float:right;}
+#submit {padding:5px; border:1px solid #bbb;width:140px;font-weight:bold;float:right;}
+#reset{padding:5px; border:1px solid #bbb;width:140px;font-weight:bold;margin-bottom:20px;}
+#user {width:100px;margin:0;}
+#textid_text {width:200px;padding:5px;}
+#footer_wrap {border-top:1px solid #e2e2e2;width:100%;clear:both;}
+#footer {width:980px;margin:0 auto;padding:20px 0px;font-size:11px;color:#555;}
+#note {font-size:11px;color:#666;}
+#preset-cell {width:25%;height:100px;float:left;}
+#additional {float:left;font-size: 11px;color: #9e9e9e;width:50%;display:block;}
+#preset-cell-divider {width:50%;float:left;font-size:12px;line-height:18px;text-align:center;}
+#preset-cell-divider span {color:#999;font-size:10px;}
+#padding-10 {padding:20px;border-right:1px solid #e8e8e8;height:100%;}
+
+.margin {padding:0 20px;}
+.title {margin-top:5px;float:left;margin-bottom:5px;width:100%;}
+.left-col {width:433px !important;}
+.explain {color:#888;}
+.preview {padding:30px 0 30px 30px;border-left:1px solid #e6e6e6;}	
+.selection_table {padding:30px 30px 30px 0;margin:0 auto;}
+.square_input {padding:5px;width:100px;margin-right:5px;}
+.clip_button {background:#ddd;padding:4px 12px 3px 12px;border:1px solid #ccc;width:80px;}
+.clearfix {clear: both;}
+.subscribers {width:300px;font-size:17px;color:#555;}
+
+/* Single Video Player */
+div.video_block {margin: 0 auto;width:980px;clear:both;border-top:0px solid #e6e6e6;}
+div.video_block h2 {margin: 0px;font-size: 24px;color: #333333;}
+div.video_block .explain {margin-top: 10px;font-size: 14px;font-style: italic;color: #555;}
+
+/* Gallery */
+div.gallery {overflow:auto;}
+div.gallery ul{list-style-type: none;padding: 0;margin: 0;overflow: hidden;}
+div.gallery li{line-height: 1.1em;width: 180px;margin-right: 18px;float: left;margin-bottom:18px;}
+div.gallery li img {width: 180px;height: 138px;border: 0;}
+//div.gallery li div {margin: 5px;}
+div.gallery li div a {text-decoration: none;font-weight: bold;color: #333333;font-size: 13px;}
+div.gallery li div a:hover {text-decoration: underline;}
+div.gallery li p {margin: 0;margin-top: 5px;font-size: 11px;color: #9e9e9e;margin-bottom:5px;}
+
+/* Right Column */
+ul.right_col {list-style-type: none;padding: 0;margin: 0;overflow: hidden;width:280px;}
+ul.right_col li{line-height: 1.1em;width: 300px;float: left;padding: 10px 0;}
+ul.right_col li img {width: 120px;border: 0;float:left;}
+ul.right_col li p {float: right;width:170px;padding:0;margin:0;}
+ul.right_col li p.title {margin-bottom:10px;}
+ul.right_col li p a {text-decoration:none;color:#333;font-weight:bold;margin-bottom:10px;}
+ul.right_col li  .views {color: #999;font-size: 11px;}
+
+/* Recent Video Gallery */
+div.recent_video {margin-top: 25px;width: 640px;}
+//div.recent_video div{margin-top: 5px;}
+div.recent_video img {border: 0;}
+div.recent_video p {margin: 0;margin-top: 5px;font-size: 13px;color: #555;line-height: 1.5em;}
+div.recent_video a {text-decoration: none;font-weight: bold;color: #333333;font-size: 18px;}
+div.recent_video a:hover {text-decoration: underline;}
