@@ -22,7 +22,7 @@
 	        }
         	return params;
         };
-        window.ymConfig = { bot: 'x1536039067221', init_message:"INIT:" + getParams(window.location.href)["botPayload"] };
+        window.ymConfig = { bot: 'x1536039067221', payload:getParams(window.location.href)["botPayload"] };
         console.log(window.ymConfig);
         (function () {
             var w=window,ic=w.YellowMessenger;
