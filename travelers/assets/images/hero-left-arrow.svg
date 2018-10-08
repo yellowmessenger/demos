@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="612px" height="792px" viewBox="0 0 612 792" enable-background="new 0 0 612 792" xml:space="preserve">
+<title>slider-left-arrow</title>
+<g id="Layer_2">
+	<g id="Layer_1-2">
+		<path fill-opacity="0.4" d="M306,90C137.001,90,0,227.001,0,396s137.001,306,306,306s306-137.001,306-306S474.999,90,306,90
+			L306,90z M384.094,496.406l-31.875,31.875L215.156,391.219l137.063-137.063l31.875,31.875L278.906,391.219L384.094,496.406z"/>
+		<polygon fill="#FFFFFF" points="352.219,252.563 213.563,391.219 352.219,528.281 384.094,496.406 278.906,391.219 
+			384.094,286.031 		"/>
+	</g>
+</g>
+</svg>
