@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bajaj Auto</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+        $(function () {
+            $("#submit").click(function () {
+                if ($("#username").val() && $("#password").val()) {
+                    window.parent.postMessage(JSON.stringify({
+                        event_code: 'ym-client-event', data: JSON.stringify({
+                            event: {
+                                code: "auth",
+                                data: {
+                                    login: $("#username").val(),
+                                    password: $("#password").val()
+                                }
+                            }
+                        })
+                    }), '*');
+
+
+                    $('#custom :input').attr('disabled', 'disabled');
+                    $('#custom').fadeTo("slow", 0.15, function () {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor', 'default');
+                        $('#add').append('Submitted');
+                    });
+                } else {
+                    alert("Please enter the username and password");
+                }
+            })
+        })
+    </script>
+</head>
+<body>
+
+<div class="container" id="custom">
+  <h2>Login</h2>
+    <div class="form-group">
+      <label for="email" >Username:</label>
+      <input class="form-control" id="username" placeholder="Enter Username" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="password" placeholder="Enter password" name="pwd">
+    </div>
+    <button type="submit" id= "submit" class="btn btn-default">Submit</button>
+
+</div>
+  <center><strong>
+            <ul id="add"></ul>
+        </strong></center>
+ 
+</body>
+</html>
