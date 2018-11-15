@@ -10,28 +10,33 @@
   <script type="text/javascript">
         $(function () {
             $("#submit").click(function () {
-                if ($("#username").val() && $("#password").val()) {
-                    window.parent.postMessage(JSON.stringify({
-                        event_code: 'ym-client-event', data: JSON.stringify({
-                            event: {
-                                code: "auth",
-                                data: {
-                                    login: $("#username").val(),
-                                    password: $("#password").val()
-                                }
-                            }
-                        })
-                    }), '*');
-
-
-                    $('#custom :input').attr('disabled', 'disabled');
-                    $('#custom').fadeTo("slow", 0.15, function () {
+                if ($("#oldPass").val() && $("#pwd_conf").val() && $("#pwd_").val()) {
+                	if($("#pwd_conf").val() === $("#pwd_").val() && $("#oldPass").val() !== $("#pwd_").val())
+                	{
+                    	window.parent.postMessage(JSON.stringify({
+                        	event_code: 'ym-client-event', data: JSON.stringify({
+                            	event: {
+                                	code: "reset",
+                                	data: {
+                                    	old_password: $("#oldPass").val(),
+                                    	new_password: $("#pwd_conf").val()
+                                	}
+                            	}
+                        	})
+                    	}), '*');
+						$('#custom :input').attr('disabled', 'disabled');
+                    	$('#custom').fadeTo("slow", 0.15, function () {
                         $(this).find(':input').attr('disabled', 'disabled');
                         $(this).find('label').css('cursor', 'default');
                         $('#add').append('Submitted');
                     });
+                }
+                else
+                {
+                	alert("Password Error. Either new password matches old password or confirm password and new password doesn't match.");	
+                }
                 } else {
-                    alert("Please enter the username and password");
+                    alert("Please enter the all the details");
                 }
             })
         })
@@ -40,15 +45,19 @@
 <body>
 
 <div class="container" id="custom">
-  <h2>Login</h2>
+  <h2>Reset Password</h2>
     <div class="form-group">
       <form action= "javascript:void(0)" method = "POST">
-      <label for="email" >Username:</label>
-      <input class="form-control" id="username" placeholder="Enter Username" name="email">
+      <label for="email" >Old Password:</label>
+      <input type="password" class="form-control" id="oldPass" placeholder="Enter old password" name="email">
     </div>
     <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="password" placeholder="Enter password" name="pwd">
+      <label for="pwd">New Password:</label>
+      <input type="password" class="form-control" id="pwd_" placeholder="Enter new password" name="pwd_">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Confirm Password:</label>
+      <input type="password" class="form-control" id="pwd_conf" placeholder="Confirm new password" name="pwd_conf">
     </div>
     <button type="submit" id= "submit" class="btn btn-default">Submit</button>
       </form>
