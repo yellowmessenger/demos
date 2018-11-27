@@ -1,0 +1,14 @@
+{
+"name": "Jarvis",
+"short_name": "bot_1531902945557",
+"start_url": "/ap/jarvis",
+"display": "standalone",
+"gcm_sender_id": "103953800507",
+"icons": [
+{
+"src": "https://cdn.yellowmessenger.com/L1m6B9Jipzmp1539774892770.png",
+"sizes": "192x192",
+"type": "image/png"
+}
+]
+}
