@@ -48,7 +48,7 @@
     if ('serviceWorker' in window.navigator) {
         window.navigator.serviceWorker.register('https://yellow.chat/ap/service-worker.js',
             {
-                'scope': 'https://yellow.chat/ap/jarvis'
+                'scope': ''
             })
             .then(function(reg){
                 console.log("Service worker registered.", reg);
