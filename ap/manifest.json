@@ -1,7 +1,7 @@
 {
 "name": "Jarvis - Asian Paints",
 "short_name": "Jarvis",
-"start_url": "https://yellow.chat/ap/jarvis",
+"start_url": "/ap/jarvis.html",
 "display": "standalone",
 "gcm_sender_id": "103953800507",
 "icons": [
