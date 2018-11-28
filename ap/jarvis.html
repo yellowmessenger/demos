@@ -46,10 +46,7 @@
         document.getElementById ("bot-container").style.height = "calc(100% - 25px)"
     }
     if ('serviceWorker' in window.navigator) {
-        window.navigator.serviceWorker.register('https://yellow.chat/ap/service-worker.js',
-            {
-                'scope': ''
-            })
+        window.navigator.serviceWorker.register('https://yellow.chat/ap/service-worker.js')
             .then(function(reg){
                 console.log("Service worker registered.", reg);
             }).catch(function(err) {
