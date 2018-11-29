@@ -1,7 +1,7 @@
 {
 "name": "Jarvis - Asian Paints",
 "short_name": "Jarvis",
-"start_url": "/ap/jarvis.html",
+"start_url": "/ad/mobile-bot/jarvis2.0.html",
 "display": "standalone",
 "gcm_sender_id": "103953800507",
 "icons": [
