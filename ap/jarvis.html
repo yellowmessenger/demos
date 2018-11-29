@@ -4,6 +4,15 @@
     <meta name="viewport" content="width=device-width">
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="manifest" href="https://yellow.chat/ap/manifest.json">
+    <link rel="pwa-setup" href="https://yellow.chat/ap/manifest.json">
+    <script src="https://yellow.chat/ap/pwacompat.js"></script>
+    <script>
+    var iOS = !!navigator.platform && /iPhone|iPod/.test(navigator.platform);
+    if(iOS) {
+      document.querySelector('link[rel="manifest"]').setAttribute("rel", "no-on-ios");
+    }
+    </script>
+<!--     <link rel="manifest" href="https://yellow.chat/ap/manifest.json"> -->
     <link rel="apple-touch-icon" href="https://cdn.yellowmessenger.com/L1m6B9Jipzmp1539774892770.png">
 
     <!-- Latest compiled and minified CSS -->
