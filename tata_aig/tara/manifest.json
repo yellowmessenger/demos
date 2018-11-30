@@ -1,0 +1,14 @@
+{
+"name": "Tara - Tata AIG",
+"short_name": "Tara - Tata AIG",
+"start_url": "/tata_aig/tara",
+"display": "standalone",
+"gcm_sender_id": "103953800507",
+"icons": [
+{
+"src": "https://cdn.yellowmessenger.com/x7h6p9oyeAaj1543550728200.png",
+"sizes": "192x192",
+"type": "image/png"
+}
+]
+}
