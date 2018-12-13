@@ -1,119 +1,62 @@
-<!DOCTYPE html>
-<html lang="" ng-app="myApp">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Title Page</title>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="https://yellow.chat/lh/">
+    <script>
+    var iOS = !!navigator.platform && /iPhone|iPod/.test(navigator.platform);
+    if(iOS) {
+      document.querySelector('link[rel="manifest"]').setAttribute("rel", "no-on-ios");
+    }
+    </script>
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <title>Tara - Your virtual assistant</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .bot-container{
+            height: 100vh;
+        }
+        @media screen and (max-device-width: 640px) {
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+            .bot-container{
+                height: calc(100%);
+                height: -webkit-calc(100%);
+                height: -moz-calc(100%);
+                margin-top: 0;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
 
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	</head>
-	<body ng-controller ="View1Ctrl">
-	<div class="container">
-	<div style="text-align: center;margin-top: 20px">
-		<img src="https://yt3.ggpht.com/-MlAj_JVoTfo/AAAAAAAAAAI/AAAAAAAAAAA/C4L_QusIkRg/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="" width="60px">
-	</div>
-	<br>
-	<table class="table table-hover">
-		<thead>
-			<tr>
-				<th colspan="4" style="text-align: center;">Schedule of Premium</th>
-			</tr>
-			<tr>
-				<th>A. Own Damage</th>
-				<th>Rs.</th>
-				<th>B. Liability</th>
-				<th>Rs.</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Premium on Vehicle and non electrical accessories </td>
-				<td>0.00</td>
-				<td>Basic</td>
-				<td>0.00</td>
-			</tr>
-			<tr>
-				<td>Less : X% for NCB</td>
-				<td>0.00</td>
-				<td>Add: Compulsory PA Cover for OwnerDriver</td>
-				<td>0.00</td>
-			</tr>
-			<tr>
-				<td>A. TOTAL OWN DAMAGE PREMIUM </td>
-				<td>0.00</td>
-				<td>Add: Legal Liability to paid driver as per (IMT 28) </td>
-				<td>0.00</td>
-			</tr>
-			<tr>
-				<td>C. TOTAL ADD ON PREMIUM</td>
-				<td>0.00</td>
-				<td>PA cover to unnamed passengers (IMT 16) </td>
-				<td>0.00</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>0.00</td>
-				<td>B. TOTAL LIABILITY PREMIUM</td>
-				<td>0.00</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>0.00</td>
-				<td>COMPREHENSIVE PREMIUM(A+B+C)</td>
-				<td>0.00</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>0.00</td>
-				<td>NET PREMIUM</td>
-				<td>0.00</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>0.00</td>
-				<td>Service Tax @14% </td>
-				<td>0.00</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>0.00</td>
-				<td>Swachh Bharat Cess @0.5%</td>
-				<td>0.00</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>0.00</td>
-				<td>TOTAL PREMIUM</td>
-				<td ng-bind="amount"></td>
-			</tr>
-		</tbody>
-	</table>
-	<div class="well well-sm">
-		<a href ="http://paynowtataaig.com/" class="btn btn-block btn-success">Pay now</a>
-	</div>
-	</div>
-		<!-- <h1 class="text-center">{{names}}</h1> -->
-		<!-- jQuery -->
-		<script src="//code.jquery.com/jquery.js"></script>
-		<!-- Bootstrap JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	</body>
-	<script type="text/javascript">
-		var app = angular.module('myApp', []);
+<div id="bot-container" class="bot-container">
+    <div style="height: 100%; margin:auto" id="adsByBotplatform-x1532195756954"></div>
+    <script src="https://botplatform.io/chat/plugin-ad-v1.js?name=x1532195756954&bot=x1532195756954&input=true&showTitle=true&skin=mobile" async defer> </script>
+</div>
+<script type="text/javascript">
+    if (window.navigator.userAgent.toLowerCase().indexOf('iphone') !== -1) {
+        document.getElementById ("bot-container").style.height = "calc(100% - 25px)"
+    }
+    if ('serviceWorker' in window.navigator) {
+        window.navigator.serviceWorker.register('https://yellow.chat/tata_aig/tara/service-worker.js')
+            .then(function(reg){
+                console.log("Service worker registered.", reg);
+            }).catch(function(err) {
+            console.log("No it didn't. This happened:", err)
+        });
+    }
+</script>
 
-		app.controller('View1Ctrl', [ '$scope', '$location', function($scope,$location) {
-			$scope.amount = $location.search().amount;
-		}]);
-	</script>
+</body>
 </html>
