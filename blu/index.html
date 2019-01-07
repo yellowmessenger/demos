@@ -1,0 +1,91 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="manifest" href="https://yellow.chat/blu/manifest.json">
+	<script>
+		var iOS = !!navigator.platform && /iPhone|iPod/.test(navigator.platform);
+		if (iOS) {
+			document.querySelector('link[rel="manifest"]').setAttribute("rel", "no-on-ios");
+		}
+	</script>
+
+	<!-- Latest compiled and minified CSS -->
+	<title>BLU</title>
+	<style>
+		html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .bot-container{
+            height: 100vh;
+        }
+        @media screen and (max-device-width: 640px) {
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            .bot-container{
+                height: calc(100%);
+                height: -webkit-calc(100%);
+                height: -moz-calc(100%);
+                margin-top: 0;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+	<div id="bot-container" class="bot-container">
+		<div style="height: 100%; margin:auto" id="adsByBotplatform-x1546596048124"></div>
+	</div>
+
+	<script type="text/javascript">
+
+		function getUrlVars() {
+			var vars = {};
+			var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+				vars[key] = value;
+			});
+			return vars;
+		}
+
+		function getUrlParam(parameter) {
+			var urlparameter = '';
+			if (window.location.href.indexOf(parameter) > -1) {
+				urlparameter = getUrlVars()[parameter];
+			}
+			return urlparameter;
+		}
+
+		var trigger = getUrlParam('trigger');
+		var script = document.createElement('script');
+		script.src = "https://botplatform.io/chat/plugin-ad-v1.js?name=x1546596048124&bot=x1546596048124&input=true&showTitle=true&skin=mobile&trigger=" + trigger;
+		script.setAttribute('defer', true);
+		script.setAttribute('async', true);
+		document.getElementsByTagName('script')[0].parentNode.appendChild(script);
+
+		if (window.navigator.userAgent.toLowerCase().indexOf('iphone') !== -1) {
+			document.getElementById("bot-container").style.height = "calc(100% - 25px)"
+		}
+		if ('serviceWorker' in window.navigator) {
+			window.navigator.serviceWorker.register('https://yellow.chat/blu/service-worker.js')
+				.then(function (reg) {
+					console.log("Service worker registered.", reg);
+				}).catch(function (err) {
+					console.log("No it didn't. This happened:", err)
+				});
+		}
+	</script>
+
+</body>
+
+</html>

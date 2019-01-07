@@ -1,0 +1,14 @@
+{
+"name": "BLU - Bajaj Finance",
+"short_name": "BLU - Bajaj Finance",
+"start_url": "/blu",
+"display": "standalone",
+"gcm_sender_id": "103953800507",
+"icons": [
+{
+"src": "https://cdn.yellowmessenger.com/30dRIKOu21n11525327469288.png",
+"sizes": "192x192",
+"type": "image/png"
+}
+]
+}
