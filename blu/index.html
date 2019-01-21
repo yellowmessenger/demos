@@ -67,8 +67,9 @@
 		}
 
 		var trigger = getUrlParam('trigger');
+		var init_message = getUrlParam('init_message');
 		var script = document.createElement('script');
-		script.src = "https://botplatform.io/chat/plugin-ad-v1.js?name=x1546596048124&bot=x1546596048124&input=true&showTitle=true&skin=mobile&trigger=" + trigger;
+		script.src = "https://botplatform.io/chat/plugin-ad-v1.js?name=x1546596048124&bot=x1546596048124&input=true&showTitle=true&skin=mobile&trigger=" + trigger + "&init_message=" +init_message;
 		script.setAttribute('defer', true);
 		script.setAttribute('async', true);
 		document.getElementsByTagName('script')[0].parentNode.appendChild(script);
