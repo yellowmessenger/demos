@@ -22,7 +22,11 @@
 	        }
         	return params;
         };
-        window.ymConfig = { bot: 'x1546596048124', payload:getParams(window.location.href)["p"] };
+
+        let options = { bot: 'x1546596048124' };
+        let params = getParams(window.location.href);
+        
+        window.ymConfig = { ...params, ...options};
         console.log(window.ymConfig);
         (function () {
             var w=window,ic=w.YellowMessenger;
