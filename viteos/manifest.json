@@ -1,7 +1,7 @@
 {
 "name": "Viteos - Investor Chatbot",
 "short_name": "Viteos",
-"start_url": "/viteos/viteos.html",
+"start_url": "/viteos/investor.html",
 "display": "standalone",
 "gcm_sender_id": "103953800507",
 "icons": [
