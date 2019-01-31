@@ -1,0 +1,14 @@
+{
+"name": "Viteos - Investor Chatbot",
+"short_name": "Viteos",
+"start_url": "/viteos/viteos.html",
+"display": "standalone",
+"gcm_sender_id": "103953800507",
+"icons": [
+{
+"src": "https://cdn.yellowmessenger.com/SQZFJ5cMM2Wv1532517346695.png",
+"sizes": "192x192",
+"type": "image/png"
+}
+]
+}
