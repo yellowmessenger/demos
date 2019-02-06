@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <title>HDFC Bank - VRM Survey</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/png" href="https://cdn.yellowmessenger.com/dT5oDOu2FvfU1536230028645.png"/>
+</head>
+
+
+<body>
+    <script type="text/javascript">
+        var getParams = function (url) {
+	        var params = {};
+    	    var parser = document.createElement('a');
+        	parser.href = url;
+        	var query = parser.search.substring(1);
+        	var vars = query.split('&');
+        	for (var i = 0; i < vars.length; i++) {
+		        var pair = vars[i].split('=');
+        		params[pair[0]] = decodeURIComponent(pair[1]);
+	        }
+        	return params;
+        };
+        window.ymConfig = { bot: 'x1545388675672', payload:getParams(window.location.href)["botPayload"] };
+        console.log(window.ymConfig);
+        (function () {
+            var w=window,ic=w.YellowMessenger;
+            if("function"===typeof ic)
+                ic("reattach_activator"),ic("update",ymConfig);
+            else{
+                var d=document,i=function(){i.c(arguments)};
+                function l(){
+                    var e=d.createElement("script");
+                    e.type="text/javascript",e.async=!0,e.src="https://app.yellowmessenger.com/widget/mobile.js";
+                    var t=d.getElementsByTagName("script")[0];
+                    t.parentNode.insertBefore(e,t)
+                }
+                i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}
+        })();
+    </script>
+</body>
+</html>
