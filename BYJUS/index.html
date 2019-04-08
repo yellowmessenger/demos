@@ -10,36 +10,38 @@
 <!-- Start of LiveChat (www.livechatinc.com) code -->
 <script type="text/javascript">
 	window.addEventListener("message", function(event){
-		console.log(event)
 		// if(typeof event.data === 'string') {
 		// 	event.data = JSON.parse(event.data);
 		// }
+
+		var ldata = {}
 		try {
 			event.data = JSON.parse(event.data);
+			ldata = JSON.parse(event.data);
+			ldata = ldata.data
 
 		} catch(e) {
 			//do nothins
 		}
-		console.log(event.data);
-		event = event.data;
 		var loadLivechat = false;
-		try{
-			loadLivechat = event.indexOf('custom-event') !== -1;
-
-		} catch (e) {
-
-		}
-		console.log(event.event_code)
-        if(loadLivechat){
+        if(ldata.code === 'transfer_to_agent'){
         	console.log('im inside')
             window.__lc = window.__lc || {};
 			window.__lc.license = 10787252;
-			window.YellowMessengerPlugin.toggleChat();
+			window.YellowMessengerPlugin.removeChat();
 			(function() {
 			  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
 			  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
 			  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
 			})();
+			
+			setTimeout(function(){
+				var LC_API = window.LC_API || {};
+				console.log(ldata.data)
+				LC_API.set_visitor_name(ldata.data.name);
+				LC_API.set_visitor_email(ldata.data.email);
+				LC_API.open_chat_window();
+			},5000)
         }
     }, false);
 </script>
