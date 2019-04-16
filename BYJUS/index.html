@@ -29,19 +29,17 @@
             window.__lc = window.__lc || {};
 			window.__lc.license = 10787252;
 			window.YellowMessengerPlugin.removeChat();
-			(function() {
-			  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+			var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
 			  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
 			  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-			})();
-			
-			setTimeout(function(){
 				var LC_API = window.LC_API || {};
 				console.log(ldata.data)
-				LC_API.set_visitor_name(ldata.data.name);
-				LC_API.set_visitor_email(ldata.data.email);
-				LC_API.open_chat_window();
-			},5000)
+				var LC_API = LC_API || {};
+				LC_API.on_after_load = function() {
+					LC_API.set_visitor_name(ldata.data.name);
+					LC_API.set_visitor_email(ldata.data.email);
+					LC_API.open_chat_window();
+				};
         }
     }, false);
 </script>
