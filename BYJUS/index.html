@@ -28,6 +28,18 @@
 			}
 			var loadLivechat = false;
 			if (ldata.code === 'transfer_to_agent') {
+				
+				window.YellowMessengerPlugin.removeChat();
+				var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+				//lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+				lc.src = 'https://cdn.livechatinc.com/tracking.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+				var LC_API = window.LC_API || {};
+				console.log(ldata.data)
+				var LC_API = LC_API || {};
+				LC_API.on_before_load = function () {
+					LC_API.open_chat_window();
+				};
 
 				window.__lc = window.__lc || {};
 				window.__lc.license = 10893087;
@@ -41,26 +53,27 @@
 					{ name: 'tag2', value: ldata.data.tag2 }
 				];
 
-				window.YellowMessengerPlugin.removeChat();
-				var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-				lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-				var LC_API = window.LC_API || {};
-				console.log(ldata.data)
-				var LC_API = LC_API || {};
-				LC_API.on_before_load = function () {
-					LC_API.open_chat_window();
-				};
+// 				window.YellowMessengerPlugin.removeChat();
+// 				var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+// 				//lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+// 				lc.src = 'https://cdn.livechatinc.com/tracking.js';
+// 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+// 				var LC_API = window.LC_API || {};
+// 				console.log(ldata.data)
+// 				var LC_API = LC_API || {};
+// 				LC_API.on_before_load = function () {
+// 					LC_API.open_chat_window();
+// 				};
 			}
 		}, false);
 	</script>
 	<script type="text/javascript">
 		window.ymConfig = { bot: 'x1554200725393' }; (function () { var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/main.js"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1) } })();
 	</script>
-	<noscript>
+<!-- 	<noscript>
 		<a href="https://www.livechatinc.com/chat-with/10787252/" rel="nofollow">Chat with us</a>,
 		powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
-	</noscript>
+	</noscript> -->
 	<!-- End of LiveChat code -->
 </body>
 
