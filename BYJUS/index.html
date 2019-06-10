@@ -4,15 +4,6 @@
 <head>
 	<title>BYJUS Beta</title>
 	
-	<script type="text/javascript">
-
-		window.__lc = window.__lc || {};
-		window.__lc.license = 10893087;
-		window.__lc.src = 'https://cdn.livechatinc.com/tracking.js';
-		var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-		var s = document.getElementsByTagName('script')[0]; 
-		
-	</script>
 </head>
 
 <body>
@@ -64,14 +55,18 @@
 				*/
 				
 				//Added this block starts here
-				window.YellowMessengerPlugin.removeChat();
+				/*window.YellowMessengerPlugin.removeChat();
 				lc.src = window.__lc.src;
 				var s = document.getElementsByTagName('script')[0]; 
-				s.parentNode.insertBefore(lc, s);
+				s.parentNode.insertBefore(lc, s);*/
 				//Added this block ends here
 
 				//window.__lc = window.__lc || {};
 				//window.__lc.license = 10893087;
+				
+				window.YellowMessengerPlugin.removeChat();
+				window.s.parentNode.insertBefore(window.lc, window.s);
+
 				window.__lc.group = ldata.data.group;
 				window.__lc.visitor = {
 					name: ldata.data.name,
@@ -98,6 +93,13 @@
 	</script>
 	<script type="text/javascript">
 		window.ymConfig = { bot: 'x1554200725393' }; (function () { var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/main.js"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1) } })();
+	
+		window.__lc = window.__lc || {};
+		window.__lc.license = 10893087;
+		window.lc = document.createElement('script'); window.lc.type = 'text/javascript'; window.lc.async = true;
+		window.lc.src = 'https://cdn.livechatinc.com/tracking.js';
+		window.s = document.getElementsByTagName('script')[0];
+	
 	</script>
 <!-- 	<noscript>
 		<a href="https://www.livechatinc.com/chat-with/10787252/" rel="nofollow">Chat with us</a>,
