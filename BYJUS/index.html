@@ -3,6 +3,16 @@
 
 <head>
 	<title>BYJUS Beta</title>
+	
+	<script type="text/javascript">
+
+		window.__lc = window.__lc || {};
+		window.__lc.license = 10893087;
+		window.__lc.src = 'http://cdn.livechatinc.com/tracking.js';
+		var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+		var s = document.getElementsByTagName('script')[0]; 
+		
+	</script>
 </head>
 
 <body>
@@ -16,6 +26,10 @@
 			// if(typeof event.data === 'string') {
 			// 	event.data = JSON.parse(event.data);
 			// }
+			
+			//Added this block starts
+			
+			
 
 			var ldata = {}
 			try {
@@ -29,6 +43,7 @@
 			var loadLivechat = false;
 			if (ldata.code === 'transfer_to_agent') {
 				
+				/* Comment begins
 				window.YellowMessengerPlugin.removeChat();
 				var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
 				//lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
@@ -40,9 +55,17 @@
 				LC_API.on_before_load = function () {
 					LC_API.open_chat_window();
 				};
+				*/
+				
+				//Added this block starts here
+				window.YellowMessengerPlugin.removeChat();
+				lc.src = window.__lc.src;
+				var s = document.getElementsByTagName('script')[0]; 
+				s.parentNode.insertBefore(lc, s);
+				//Added this block ends here
 
-				window.__lc = window.__lc || {};
-				window.__lc.license = 10893087;
+				//window.__lc = window.__lc || {};
+				//window.__lc.license = 10893087;
 				window.__lc.group = ldata.data.group;
 				window.__lc.visitor = {
 					name: ldata.data.name,
