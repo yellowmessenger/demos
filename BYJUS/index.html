@@ -8,11 +8,38 @@
 
 <body>
 
-
-
 	<!-- Start of LiveChat (www.livechatinc.com) code -->
 	<script type="text/javascript">
+		
+		var LC_API = LC_API || {};
+		var livechat_chat_started = false;
 
+		LC_API.on_before_load = function () {
+			// don't hide the chat window only if visitor
+			// is currently chatting with an agent
+			if (LC_API.visitor_engaged() === false && livechat_chat_started === false) {
+				LC_API.hide_chat_window();
+				// trigger event
+				//BOT WILL LOAD
+			} else {
+				window.YellowMessengerPlugin.removeChat();
+				// talking to an agent
+				// SHOULD NOT LOAD YM BOT
+				// TRIGGER AN EVENT
+			}
+		};
+
+		LC_API.on_chat_started = function () {
+			livechat_chat_started = true;
+		};
+
+		window.__lc = window.__lc || {};
+		window.__lc.license = 10893087;
+		var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+		lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+		
+		
 		window.addEventListener("message", function (event) {
 			// if(typeof event.data === 'string') {
 			// 	event.data = JSON.parse(event.data);
@@ -28,35 +55,12 @@
 			} catch (e) {
 				//do nothins
 			}
-			var loadLivechat = false;
-			if (ldata.code === 'transfer_to_agent') {
-				
-				/* Comment begins
-				window.YellowMessengerPlugin.removeChat();
-				var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-				//lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-				lc.src = 'https://cdn.livechatinc.com/tracking.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-				var LC_API = window.LC_API || {};
-				console.log(ldata.data)
-				var LC_API = LC_API || {};
-				LC_API.on_before_load = function () {
-					LC_API.open_chat_window();
-				};
-				*/
-				
-				//Added this block starts here
-				/*window.YellowMessengerPlugin.removeChat();
-				lc.src = window.__lc.src;
-				var s = document.getElementsByTagName('script')[0]; 
-				s.parentNode.insertBefore(lc, s);*/
-				//Added this block ends here
 
-				//window.__lc = window.__lc || {};
-				//window.__lc.license = 10893087;
-				
+			if (ldata.code === 'transfer_to_agent') {
+
 				window.YellowMessengerPlugin.removeChat();
-				window.s.parentNode.insertBefore(window.lc, window.s);
+
+				LC_API.open_chat_window();
 
 				window.__lc.group = ldata.data.group;
 				window.__lc.visitor = {
@@ -67,30 +71,11 @@
 					{ name: 'tag1', value: ldata.data.tag1 },
 					{ name: 'tag2', value: ldata.data.tag2 }
 				];
-
-// 				window.YellowMessengerPlugin.removeChat();
-// 				var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-// 				//lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-// 				lc.src = 'https://cdn.livechatinc.com/tracking.js';
-// 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
-// 				var LC_API = window.LC_API || {};
-// 				console.log(ldata.data)
-// 				var LC_API = LC_API || {};
-// 				LC_API.on_before_load = function () {
-// 					LC_API.open_chat_window();
-// 				};
 			}
 		}, false);
 	</script>
 	<script type="text/javascript">
 		window.ymConfig = { bot: 'x1554200725393' }; (function () { var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/main.js"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1) } })();
-	
-		window.__lc = window.__lc || {};
-		window.__lc.license = 10893087;
-		window.lc = document.createElement('script'); window.lc.type = 'text/javascript'; window.lc.async = true;
-		window.lc.src = 'https://cdn.livechatinc.com/tracking.js';
-		window.s = document.getElementsByTagName('script')[0];
-	
 	</script>
 <!-- 	<noscript>
 		<a href="https://www.livechatinc.com/chat-with/10787252/" rel="nofollow">Chat with us</a>,
