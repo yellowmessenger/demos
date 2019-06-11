@@ -62,15 +62,14 @@
 
 				LC_API.open_chat_window();
 
-				window.__lc.group = ldata.data.group;
-				window.__lc.visitor = {
-					name: ldata.data.name,
-					email: ldata.data.email
-				};
-				window.__lc.params = [
-					{ name: 'tag1', value: ldata.data.tag1 },
-					{ name: 'tag2', value: ldata.data.tag2 }
+				var custom_variables = [
+  				{ name: 'tag1', value: ldata.data.tag1  },
+  				{ name: 'tag2', value: ldata.data.tag2 }
 				];
+
+				LC_API.update_custom_variables(custom_variables);
+				LC_API.set_visitor_name(ldata.data.name);
+				LC_API.set_visitor_email(ldata.data.email);
 			}
 		}, false);
 	</script>
