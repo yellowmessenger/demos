@@ -1,0 +1,7 @@
+.watermark{
+    background:url("mg_hector.jpg") center center no-repeat;opacity:0.6;
+  opacity: 0.6;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
