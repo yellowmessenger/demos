@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://prathap-chandra.github.io/adityabirla.github.io/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Rater Js Example</title>
+<script type="text/javascript">
+        // $(function () {
+        //     $("#submit").click(function () {
+        //         var date = $("#datetimepicker12").data("DateTimePicker").date().toLocaleString()
+        //         console.log(date)
+        //             window.parent.postMessage(JSON.stringify({
+        //                 event_code: 'ym-client-event', data: JSON.stringify({
+        //                     event: {
+        //                         code: "Date",
+        //                         data: {
+        //                             selectedDate: date
+        //                         }
+        //                     }
+        //                 })
+        //             }), '*');
+        //             $('#custom :input').attr('disabled', 'disabled');
+        //             $('#custom').fadeTo("slow", 0.15, function () {
+        //                 $(this).find(':input').attr('disabled', 'disabled');
+        //                 $(this).fin d('label').css('cursor', 'default');
+        //                 $('#add').append('Submitted');
+        //             });
+        //
+        //     })
+        // })
+    </script>
+    <style>
+    body{
+        background-color: #ffffff;
+    }
+    </style>
+<style type="text/css" data-href="lib\style.css">.star-rating {
+  width: 0;
+  position: relative;
+  display: inline-block;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDguOSIgaGVpZ2h0PSIxMDMuNiIgdmlld0JveD0iMCAwIDEwOC45IDEwMy42Ij48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2UzZTZlNjt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPnN0YXJfMDwvdGl0bGU+PGcgaWQ9IkxheWVyXzIiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj48cG9seWdvbiBjbGFzcz0iY2xzLTEiIHBvaW50cz0iMTA4LjkgMzkuNiA3MS4zIDM0LjEgNTQuNCAwIDM3LjYgMzQuMSAwIDM5LjYgMjcuMiA2Ni4xIDIwLjggMTAzLjYgNTQuNCA4NS45IDg4LjEgMTAzLjYgODEuNyA2Ni4xIDEwOC45IDM5LjYiLz48L2c+PC9nPjwvc3ZnPg0K);
+  background-position: 0 0;
+  background-repeat: repeat-x;
+  cursor: pointer;
+}
+.star-rating .star-value {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url('data:image/svg+xml;base64,PHN2Zw0KCXhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwOC45IiBoZWlnaHQ9IjEwMy42IiB2aWV3Qm94PSIwIDAgMTA4LjkgMTAzLjYiPg0KCTxkZWZzPg0KCQk8c3R5bGU+LmNscy0xe2ZpbGw6I2YxYzk0Nzt9PC9zdHlsZT4NCgk8L2RlZnM+DQoJPHRpdGxlPnN0YXIxPC90aXRsZT4NCgk8ZyBpZD0iTGF5ZXJfMiIgZGF0YS1uYW1lPSJMYXllciAyIj4NCgkJPGcgaWQ9IkxheWVyXzEtMiIgZGF0YS1uYW1lPSJMYXllciAxIj4NCgkJCTxwb2x5Z29uIGNsYXNzPSJjbHMtMSIgcG9pbnRzPSI1NC40IDAgNzEuMyAzNC4xIDEwOC45IDM5LjYgODEuNyA2Ni4xIDg4LjEgMTAzLjYgNTQuNCA4NS45IDIwLjggMTAzLjYgMjcuMiA2Ni4xIDAgMzkuNiAzNy42IDM0LjEgNTQuNCAwIi8+DQoJCTwvZz4NCgk8L2c+DQo8L3N2Zz4NCg==');
+  background-repeat: repeat-x;
+}
+.star-rating.disabled {
+  cursor: default;
+}
+.star-rating.is-busy {
+  cursor: wait;
+}
+.star-rating .star-value.rtl {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  right: 0;
+  left: auto;
+}
+</style></head>
+<body>
+
+<!-- <h1>Rater Js Example</h1>
+<! <a href="https://fredolss.github.io/rater-js/">Back to home page</a> -->
+<!-- <h2>Basic 5 star rater</h2> -->
+
+<center><div id="rater" class="star-rating" style="width: 160px; height: 32px; background-size: 32px;"><div class="star-value" style="background-size: 32px; width: 0px;"></div></div></center>
+
+<!-- <pre>
+    <code>
+    {
+        starSize:32,
+        element:document.querySelector("#rater"),
+        rateCallback:function rateCallback(rating, done) {
+            this.setRating(rating);
+            done();
+        }
+    }
+</code>
+</pre> -->
+
+
+<div dir="rtl">
+    <span id="rater7"></span>
+</div>
+
+<script src="https://cdn.yellowmessenger.com/l00SP6ItjBaw1561376694806.js?v=2"></script>
+<script src="https://cdn.yellowmessenger.com/XffVa6ppdJZE1561376622401.js?v=2"></script>
+
+
+</body></html>
