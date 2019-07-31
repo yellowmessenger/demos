@@ -1,0 +1,183 @@
+﻿(function($){
+    Drupal.behaviors.billsFees = {
+		attach : function(context,settings){
+			language = Drupal.settings.pathPrefix.replace('/',''); 	
+			/* common action */
+			submit_on_eter('edit-store-search-key','find-stores');
+			submit_on_eter('edit-bills-search-key','find-bills');
+			submit_on_eter('edit-dining-search-key','find-dining');
+			submit_on_eter('edit-trv-search-key','find-travel');
+			
+			var division_name = Drupal.t('Division');
+			var shop_name = Drupal.t('Payment Places');
+			var shop_add = Drupal.t('Address');
+			var mobile_number = Drupal.t('Contact');
+			var discount = Drupal.t('Type');
+			
+			
+			$('#bills-add').submit(function(){
+				var division_en = $('#division_en').val();
+				var shop_name_en = $('#shop_name_en').val();
+				var shop_logo = $('#shop_logo').val();
+				var shop_address_en = $('#shop_address_en').val();
+				var mobile_number_en = $('#mobile_number_en').val();
+				var discount_en = $('#discount_en').val();
+				var division_bn = $('#division_bn').val();
+				var shop_name_bn = $('#shop_name_bn').val();
+				var shop_address_bn = $('#shop_address_bn').val();
+				var mobile_number_bn = $('#mobile_number_bn').val();
+				var discount_bn = $('#discount_bn').val();
+
+				if ((division_en == "") || (shop_name_en == "") || (shop_logo == "") || (shop_name_en == "") || (shop_address_en == "") || (mobile_number_en == "") || (discount_en == "") || (division_bn == "") || (shop_name_bn == "") || (shop_address_bn == "") || (mobile_number_bn == "") || (discount_bn == "")){
+					alert("Please fill in all forms. Thanks.");
+					return false;
+				} 
+			});
+			
+			
+			$('#edit-bills-division').change(function(){		
+				var key = $('#edit-bills-search-key').val();
+				var division = $(this).val();
+				
+				if(division != '0'){
+					$('.bills-loader').fadeIn(100);
+				}
+				
+				if(language == 'bn'){
+					var base_url = path+'/'+language+'/ajax-get-bills-divisions'
+				}
+				else {
+					var base_url = path+'/ajax-get-bills-divisions'
+				}
+				
+				$.ajax({
+					type: 'POST',
+					url: base_url,
+					data:'division='+division,
+					success: function(data) {
+						p=data; 					
+						var tbl='<table><thead><tr></tr><tr border="1"><th style="width:10%;">'+division_name+'</th><th style="width:26%;">'+shop_name+'</th><th style="width:25%;">'+shop_add+'</th><th style="width:10%;">'+discount+'</th></tr></thead><tbody>';	
+						m=document.getElementById('edit-bills-division'); 										
+						$.each(p, function(key, value) {
+							if(value.logo == '') {
+								tbl +='<tr><td>'+value.division+'</td><td class="address-right-align"><span>'+value.shop_name+'</span></td><td class="address-left-align">'+value.shop_address+'</td><td class="address-left-align">'+value.discount+'</td></tr></tbody>';	
+							}
+							else {
+								tbl +='<tr><td>'+value.division+'</td><td class="address-right-align"><span>'+value.shop_name+'</span><img src="'+path+'/'+value.logo+'" alt="'+value.logo+'" /></td><td class="address-left-align">'+value.shop_address+'</td><td class="address-left-align">'+value.discount+'</td></tr></tbody>';	
+							}
+						});
+						
+						tbl +='</table>';
+						$('#des-bills').html(tbl);
+						$('.bills-loader').fadeOut(800);	
+					}
+				});
+			
+			});
+			
+			
+			
+			$('#find-bills').click(function(){
+				$('.bills-loader').fadeIn(100);
+				var division = $('#edit-bills-division').val();
+				var key = $('#edit-bills-search-key').val();
+				
+				if(language == 'bn'){				
+					var base_url=path+'/'+language+'/ajax-bills-list-by-search'
+				}
+				else {				
+					var base_url=path+'/ajax-bills-list-by-search'
+				}
+				
+				$.ajax({
+					type: 'POST',
+					url: base_url,
+					data:'key='+key,
+					success: function(data) {					
+						p=data;							
+						
+						var tbl='<table><thead><tr></tr><tr border="1"><th style="width:10%;">'+division_name+'</th><th style="width:26%;">'+shop_name+'</th><th style="width:25%;">'+shop_add+'</th><th style="width:10%;">'+discount+'</th></tr></thead><tbody>';
+			
+						$.each(p, function(key, value) {
+							if(value.logo == '') {
+								tbl +='<tr><td>'+value.division+'</td><td class="address-right-align"><span>'+value.shop_name+'</span></td><td class="address-left-align">'+value.shop_address+'</td><td class="address-left-align">'+value.discount+'</td></tr></tbody>';
+							}
+							else {
+								tbl +='<tr><td>'+value.division+'</td><td class="address-right-align"><span>'+value.shop_name+'</span><img src="'+path+'/'+value.logo+'" alt="'+value.logo+'" /></td><td class="address-left-align">'+value.shop_address+'</td><td class="address-left-align">'+value.discount+'</td></tr></tbody>';
+							}						
+						});
+						
+						tbl +='</table>';
+						$('#des-bills').html(tbl);
+						$('.bills-loader').fadeOut(800);	
+					} 				
+					
+				}); 			
+			});
+			
+			
+			/*click on the quicktab*/
+			$('#quicktabs-tab-payment_placement-1').click(function(){
+				$('#quicktabs_tabpage_payment_placement_1').css('display','block');
+				$('#quicktabs-tab-payment_placement').css('display','none');
+				$('#quicktabs_tabpage_payment_placement_2').css('display','none');
+			});
+			$('#quicktabs-tab-payment_placement-0').click(function(){
+				$('#quicktabs_tabpage_payment_placement_1').css('display','none');
+				$('#quicktabs_tabpage_payment_placement_2').css('display','none');
+				$('#quicktabs_container_payment_placement').css('display','block');
+			});
+			$('#quicktabs-tab-payment_placement-2').click(function(){
+				$('#quicktabs_container_payment_placement').css('display','none');
+				$('#quicktabs_tabpage_payment_placement_1').css('display','none');
+				$('#quicktabs_tabpage_payment_placement_2').css('display','block');
+			});
+			/*click on the quicktab end*/
+		}
+    }
+	
+	function submit_on_eter(textf,submitb){
+		$("#"+textf).keydown(function(e){
+			if(e.keyCode === 13){								
+				e.preventDefault();
+				$("#"+submitb).click();
+				return false;
+			}
+		});
+	}
+	
+	function removeAllOptions(selectbox){
+		var i;
+		for(i=selectbox.options.length-1;i>=0;i--){
+			selectbox.remove(i);
+		}
+	}
+
+	function addOption(selectbox,text,value ){
+		var optn = document.createElement("OPTION");
+		optn.text = text;
+		optn.value = value;
+		selectbox.options.add(optn);
+	}
+
+	function create_option(obj,obj_id){		
+		var value=document.getElementById(obj).value;
+		var m=document.getElementById('test_option'); 
+		removeAllOptions(m);
+		var str=value.split('+');	
+		var str2=value.split('+');		
+		for(var i=2;i<str.length;i++){			
+			for(var j=0; j< str[i].length ; j++){					
+				str[i]=str[i].replace("_"," ");
+			}			
+			addOption(m, str[i], str2[i]);			
+		}	
+	}
+
+}(jQuery));
+
+
+
+
+
+

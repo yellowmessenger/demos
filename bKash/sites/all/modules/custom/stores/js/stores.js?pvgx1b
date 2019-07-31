@@ -1,0 +1,121 @@
+﻿(function($){
+	Drupal.behaviors.stores = {
+		attach : function(context,settings){
+			var division;
+			var key;
+			language = Drupal.settings.pathPrefix.replace('/',''); 	
+			var division_name = Drupal.t('Division');
+			var shop_name = Drupal.t('Payment Places');
+			var shop_add = Drupal.t('Address');
+			var mobile_number = Drupal.t('Contact');
+			var discount = Drupal.t('Type');
+			
+			
+			$('#places-add').submit(function(){
+				var division_en = $('#division_en').val();
+				var shop_name_en = $('#shop_name_en').val();
+				var shop_logo = $('#shop_logo').val();
+				var shop_address_en = $('#shop_address_en').val();
+				var mobile_number_en = $('#mobile_number_en').val();
+				var discount_en = $('#discount_en').val();
+				var division_bn = $('#division_bn').val();
+				var shop_name_bn = $('#shop_name_bn').val();
+				var shop_address_bn = $('#shop_address_bn').val();
+				var mobile_number_bn = $('#mobile_number_bn').val();
+				var discount_bn = $('#discount_bn').val();
+				
+				if ((division_en == "") || (shop_name_en == "") || (shop_logo == "") || (shop_name_en == "") || (shop_address_en == "") || (mobile_number_en == "") || (discount_en == "") || (division_bn == "") || (shop_name_bn == "") || (shop_address_bn == "") || (mobile_number_bn == "") || (discount_bn == ""))
+				{
+					
+					alert("Please fill in all forms. Thanks.");
+					return false;
+				} 
+			});
+			
+			$('#edit-store-division').change(function(){		
+				var key = $('#edit-store-search-key').val();
+				var division = $(this).val();
+				
+				if(division != '-1'){
+					$('.stores-loader').fadeIn(100);
+				}
+				
+				if(language == 'bn'){
+					var base_url=path+'/'+language+'/ajax-get-stores-divisions'
+				}
+				else {
+					var base_url=path+'/ajax-get-stores-divisions'
+				}
+				$.ajax({
+					type: 'POST',
+					url: base_url,
+					data:'division='+division,
+					success: function(data) {
+						p=data;
+						var tbl='<table><thead><tr></tr><tr border="1"><th style="width:10%;">'+division_name+'</th><th style="width:26%;">'+shop_name+'</th><th style="width:25%;">'+shop_add+'</th><th style="width:10%;">'+discount+'</th></tr></thead><tbody>';
+						m=document.getElementById('edit-store-division');
+						
+						$.each(p, function(key, value) {
+							if(value.logo == '') {
+								tbl +='<tr><td>'+value.division+'</td><td class="address-right-align"><span>'+value.shop_name+'</span></td><td class="address-left-align">'+value.shop_address+'</td><td class="address-left-align">'+value.discount+'</td></tr></tbody>';
+							}
+							else {
+								tbl +='<tr><td>'+value.division+'</td><td class="address-right-align"><span>'+value.shop_name+'</span><img src="'+path+'/'+value.logo+'" alt="'+value.logo+'" /></td><td class="address-left-align">'+value.shop_address+'</td><td class="address-left-align">'+value.discount+'</td></tr></tbody>';
+							}
+						
+						});
+						tbl +='</table>';
+						$('#des').html(tbl);
+						$('.stores-loader').fadeOut(800);	
+					}
+					
+					
+				});
+				
+			});
+			
+			$('#search-stores').click(function(){
+				$('.stores-loader').fadeIn(100);
+				
+				var division = $('#edit-store-division').val();
+				var key = $('#edit-store-search-key').val();
+				
+				if(language == 'bn'){
+					var base_url=path+'/'+language+'/ajax-stores-list-by-search'
+				}
+				else {				
+					var base_url=path+'/ajax-stores-list-by-search'
+				}
+				
+				$.ajax({
+					type: 'POST',
+					url: base_url,
+					data:'key='+key,
+					success: function(data) {
+						p=data;
+							
+						var tbl='<table><thead><tr></tr><tr border="1"><th style="width:10%;">'+division_name+'</th><th style="width:26%;">'+shop_name+'</th><th style="width:25%;">'+shop_add+'</th><th style="width:10%;">'+discount+'</th></tr></thead><tbody>';
+			
+						$.each(p, function(key, value) {
+							if(value.logo == '') {
+								tbl +='<tr><td>'+value.division+'</td><td class="address-right-align"><span>'+value.shop_name+'</span></td><td class="address-left-align">'+value.shop_address+'</td><td class="address-left-align">'+value.discount+'</td></tr></tbody>';
+							}
+							else {
+								tbl +='<tr><td>'+value.division+'</td><td class="address-right-align"><span>'+value.shop_name+'</span><img src="'+path+'/'+value.logo+'" alt="'+value.logo+'" /></td><td class="address-left-align">'+value.shop_address+'</td><td class="address-left-align">'+value.discount+'</td></tr></tbody>';
+							}
+							
+						});
+						tbl +='</table>';
+						$('#des').html(tbl);
+						$('.stores-loader').fadeOut(800);	
+					}
+					
+					
+				});
+			
+			});
+		
+		
+		}	
+	}	
+}(jQuery));

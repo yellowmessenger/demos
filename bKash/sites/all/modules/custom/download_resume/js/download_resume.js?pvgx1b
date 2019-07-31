@@ -1,0 +1,10 @@
+(function($){
+	Drupal.behaviors.downloadResume = {
+		attach : function(context,settings){
+			$('.download-resume a').click(function(){
+				var con = confirm('Are You sure, You want to download all resumes for this post?');		
+				if(!con) return false; 	
+			});	
+		}	
+	}
+}(jQuery));

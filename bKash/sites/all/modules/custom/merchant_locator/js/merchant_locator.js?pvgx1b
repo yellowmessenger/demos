@@ -1,0 +1,191 @@
+﻿(function($){
+	Drupal.behaviors.merchantLocator = {
+		attach : function(){
+			var district_name = Drupal.t('District');
+			var thana_name = Drupal.t('Thana/Area');
+			var merchant_nm = Drupal.t('Merchant Name');
+			var outlet = Drupal.t('Outlet Address');
+			
+			$('#merchant-locator-list-form').submit(function(){
+				return false;
+			});
+					
+			//add data - admin table
+			$('#merchant-add').submit(function(){
+				var division_en = $('#division_en').val();
+				var district_en = $('#district_en').val();
+				var thana_en = $('#thana_en').val();
+				var merchant_name_en = $('#merchant_name_en').val();
+				var outlet_address_en = $('#outlet_address_en').val();
+				var division_bn = $('#division_bn').val();
+				var district_bn = $('#district_bn').val();
+				var thana_bn = $('#thana_bn').val();
+				var merchant_name_bn = $('#merchant_name_bn').val();
+				var outlet_address_bn = $('#outlet_address_bn').val();
+				
+				if ((division_en == "") || (district_en == "") || (thana_en == "") || (merchant_name_en == "") || (outlet_address_en == "") || (division_bn == "") || (district_bn == "") || (thana_bn == "") || (merchant_name_bn == "") || (outlet_address_bn == ""))
+				{
+					//Update the sending status.
+					alert("Please fill in all forms. Thanks.");
+					return false;
+				} 
+			});
+			
+			//search by keyword
+			$('#merchant_find').click(function(){
+				
+				$('.merchant-loader').fadeIn(100);
+				var key = $('#edit-search-key-1').val();
+				
+				if(language == 'bn'){
+					var base_url=path+'/'+language+'/merchant-list-by-search'
+				}
+				else {
+					var base_url=path+'/merchant-list-by-search'
+				}
+				
+				$.ajax({
+					type: 'POST',
+					url: base_url,
+					data:'key='+key,
+					success: function(data) {
+						//var p=JSON.parse(data);
+						p=data;
+						var tbl='<table><thead><tr></tr><tr border="1"><th>'+district_name+'</th><th>'+thana_name+'</th><th>'+merchant_nm+'</th><th>'+outlet+'</th></tr></thead><tbody>';
+			
+						$.each(p, function(key, value) {
+							tbl +='<tr><td>'+value.district+'</td><td>'+value.thana+'</td><td class="name-left-align">'+value.merchant_name+'</td><td class="address-left-align">'+value.outlet_address+'</td></tr></tbody>';			
+						});
+						tbl +='</table>';
+						$('#merchant_des').html(tbl);
+						$('.merchant-loader').fadeOut(800);					
+					}
+				});			
+			});
+		
+			//filter by district
+			$('#edit-merchant-district').change(function(){
+				var district = $(this).val();
+				if(district != '-1'){
+					$('.merchant-loader').fadeIn(100);
+				}
+				
+				if(language == 'bn'){
+					var base_url=path+'/'+language+'/merchant-table-by-district'
+				}
+				else {
+					var base_url=path+'/merchant-table-by-district'
+				}
+				
+				$.ajax({
+					type: 'POST',
+					url: base_url,
+					data:'district='+district,
+					success: function(data) {
+					
+						//var p=JSON.parse(data);
+							
+							p=data;
+							var tbl='<table><thead><tr></tr><tr border="1"><th>'+district_name+'</th><th>'+thana_name+'</th><th>'+merchant_nm+'</th><th>'+outlet+'</th></tr></thead><tbody>';
+							m=document.getElementById('edit-merchant-thana');
+							removeAllOptions(m);
+							addOption(m, Drupal.t('Select Thana/Area'), 'select');
+							
+						$.each(p.thana, function(key, value) {
+							addOption(m, value, value);				
+							//alert(value)		
+						});			
+						$.each(p.list, function(key, value) {
+							tbl +='<tr><td>'+p.list[0].district+'</td><td>'+value.thana+'</td><td class="name-left-align">'+value.merchant_name+'</td><td class="address-left-align">'+value.outlet_address+'</td></tr></tbody>';
+						
+						});
+						tbl +='</table>';
+						$('#merchant_des').html(tbl);
+						$('.merchant-loader').fadeOut(800);
+					}
+				});
+			});
+			
+			//filter by thana
+			$('#edit-merchant-thana').change(function(){
+				var dist = $('#edit-merchant-district').val();
+				var thana = $(this).val();
+				if(thana != 'select') {
+					$('.merchant-loader').fadeIn(100);
+				}
+				if(language == 'bn'){
+					var base_url=path+'/'+language+'/merchant-table-by-thana'
+				}
+				else {
+					var base_url=path+'/merchant-table-by-thana'
+				}
+				
+				$.ajax({
+					type: 'POST',
+					url: base_url,
+					data:'dist='+dist+' & '+'thana='+thana,
+					success: function(data) {
+						//var p=JSON.parse(data);
+						p=data;
+						var tbl='<table><thead><tr></tr><tr border="1"><th>'+district_name+'</th><th>'+thana_name+'</th><th>'+merchant_nm+'</th><th>'+outlet+'</th></tr></thead><tbody>';
+			
+						$.each(p.list, function(key, value) {
+							tbl +='<tr><td>'+p.list[0].district+'</td><td>'+value.thana+'</td><td class="name-left-align">'+value.merchant_name+'</td><td class="address-left-align">'+value.outlet_address+'</td></tr></tbody>';
+						
+						});
+						tbl +='</table>';
+						$('#merchant_des').html(tbl);
+						$('.merchant-loader').fadeOut(800);
+					}
+				});
+			});	
+		}	
+	}
+}(jQuery));
+
+if (Drupal.jsEnabled) {
+	$(document).ready(function() {
+		
+
+	});	
+}
+
+function removeAllOptions(selectbox){
+	var i;
+	for(i=selectbox.options.length-1;i>=0;i--)
+	{
+	selectbox.remove(i);
+	}
+}
+
+function addOption(selectbox,text,value ){
+	var optn = document.createElement("OPTION");
+	optn.text = text;
+	optn.value = value;
+	selectbox.options.add(optn);
+}
+
+function create_option(obj,obj_id){
+	
+	var value=document.getElementById(obj).value;
+	var m=document.getElementById('test_option');
+
+	
+	removeAllOptions(m);
+	//var sel=Drupal.t('Select');
+	//addOption(m, 'Select', sel);	
+	
+	var str=value.split('+');	
+	var str2=value.split('+');		
+	for(var i=2;i<str.length;i++){
+		
+			for(var j=0; j< str[i].length ; j++){
+				
+				str[i]=str[i].replace("_"," ");
+			}
+	
+		
+		addOption(m, str[i], str2[i]);	
+	}				
+}
+

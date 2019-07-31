@@ -1,0 +1,196 @@
+(function($){
+	Drupal.behaviors.tariffCalculation = {
+		attach : function(context,settings){
+			$('#amount').hide();
+			$('#variable-rate').hide(); 
+			
+			$('#edit-charge').change(function(){
+				var a= $(this).val(); 	    
+				if(a==1){
+				  $('#amount').hide();
+				  $('#variable-rate').hide();
+				  $('#show-table').hide(); 
+				}
+				else if (a==2){
+				$('#variable-rate').hide();
+				$('#amount').show();
+				$('#show-table').hide();
+				}
+				else if(a==3){
+				$('#variable-rate').show();
+				$('#amount').show(); 
+				var table='<table border="1">';
+				table += '<tr><th> From </th><th> To </th><th> Charges(taka)</th></tr>';
+				table +='</table>';
+				$('#show-table').html(table);
+				}			
+			});
+		
+		
+			/* click function for add more */
+			$('#add-more').click(function(){
+				$('#show-table').show();
+				var from = $('#edit-amount-from').val();
+				var to = $('#edit-amount-to').val();
+				var amount = $('#edit-charge-amount').val();
+				var type_value = $('#edit-amount-suffix').val();
+				var type= type_value.split('.');
+
+				var multi = $('#edit-multi-value').val();
+				//from data+ to+depen+value+charge type
+				var new_data = from+'-'+to+'-'+amount+'-'+type;
+				$('#edit-multi-value').val(multi+'#'+new_data);
+
+				var table='<table border="1">';
+				table += '<tr><td> '+from+' </td><td> '+to+' </td><td> '+amount+' '+type[1]+' </td></tr>';
+				table +='</table>';
+
+				$('#show-table').append(table);
+			});
+			
+			/* form submit functions */
+			$('#tariff-user-form').submit(function(event){ 
+				$('.tariff-loader').fadeIn(100);
+				event.preventDefault();
+				var service=$('#edit-service').val();
+				var amount=$('#edit-amount').val();
+
+				if(service == 0){	
+					alert(Drupal.t('Please select a service'));	
+					$('.tariff-loader').fadeOut(100);	
+					return 0;
+				}
+				else if( isNaN(amount) ||  amount ==''){
+					alert(Drupal.t('Amount invalid'));		
+					$('.tariff-loader').fadeOut(100);					
+					return 0;
+
+				}
+				
+				$.ajax({
+					type: 'POST',
+					url: path+'/tariff-calculate',
+					data:'service='+service+'&amount='+amount,					
+
+					success: function(data) {
+						var max = parseInt(data.max,10);
+						var min = parseInt(data.min,10);
+						var scale = parseInt(data.scale,10);
+
+					
+						if((amount > max) || (amount < min)){
+							alert(Drupal.t('Amount invalid'));
+							return 0;						
+						}
+						else {
+							if(scale){
+								if(amount % scale === 0){
+									$('#edit-charges').val(data.charge);
+									$('#info').html(Drupal.t('This charge will be automatically deducted from your bKash Account; no cash charge applicable.'));
+								}	
+								else {
+									alert(Drupal.t('Please re-enter in multiples of BDT 500'));
+								}						
+							}
+							else {
+								$('#edit-charges').val(data.charge);
+								$('#info').html(Drupal.t('This charge will be automatically deducted from your bKash Account; no cash charge applicable.'));
+							}
+						}			
+					}
+				});
+				
+				$('span#info').html('');	
+				$('.tariff-loader').fadeOut(800);	
+			});
+			
+			
+			/* edit service change action */
+			$('#edit-service').change(function(){			
+				var service = decodeURIComponent($(this).val());
+				var charge_type= service.split('=');
+				
+
+				$('#edit-amount').val('');
+				$('#edit-charges').val('');
+				$('span#info').html('');	
+
+				
+
+				if(charge_type[2]==1){
+						$('#charge-amount').hide();
+						$(this).parent().find('span').remove();
+
+						$(this).parent().append('<span  ><font color="#0071bb">'+Drupal.t('No charge applicable (Free)')+'</font></span>');			
+				}
+				else{
+						$(this).parent().find('span').remove();
+						$('#charge-amount').show();	
+						if (service == 0) {
+								alert(Drupal.t('Please select a service'));
+						}
+						else {
+								
+							$.ajax({
+								type: 'POST',
+								url: path+'/tariff-calculate',
+								data:'service='+service,	
+								success: function(data) {
+									 var max = parseInt(data.max,10);
+									 max = numberWithCommas(max);
+									 var min = parseInt(data.min,10);
+									 min = numberWithCommas(min);
+
+									 //$('#edit-amount-wrapper').append('<span></span>');
+									var x = '<div><span class="text-start" ><font >'+Drupal.t('Valid amount BDT ')+'</span><span class="min-amount"> '+min+' </span><span class="text-end">'+Drupal.t(' to BDT ')+' </span><span class="max-amount"> '+max+'</span></font></div>';
+									
+									if($('.tariff_buton > div').length > 0){
+										$('.tariff_buton > div').html(x);
+									}
+									else{
+										$('.tariff_buton').prepend(x);
+									}
+									
+									 
+
+									 //$('#edit-amount-wrapper span').text(Drupal.t('Valid amount BDT ')+Drupal.t(min)+Drupal.t(' to BDT ')+Drupal.t(max));
+									}
+							});	
+						}
+				}
+				$('#edit-amount-wrapper span').remove();
+			});
+
+			$('#edit-amount').change(function(){	
+				$('#edit-charges').val('');
+				$('span#info').html('');
+			});
+			
+		}	
+	}
+	
+	function numberWithCommas(x) {
+		return x.toString().replace(/\B(?=(?:\d{3})+(?!\d))/g, ",");
+	}
+
+	function edit(obj,option){
+		var id=$('#id_'+obj).val();
+		var from=$('#from_'+obj).val();
+		var to =$('#to_'+obj).val();
+		var value=$('#value_'+obj).val();
+		var cate=$('#cat_'+obj).val();
+
+		$.ajax({
+		 type: 'POST',
+		 url: path+'/tariff-update',
+		 data:'op='+option+'&id='+id+'&from='+from+'&to='+to+'&value='+value+'&category='+cate,
+
+			success: function(data) {
+					alert(data);
+					window.location=path+'/tariff-for-admin';									 
+			}			
+
+		});	
+	}
+	
+}(jQuery));
