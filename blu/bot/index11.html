@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>BFS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<style type="text/css">
+	
+	.noshadow {
+		
+		display: none !important;
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+	background-origin: none !important;
+	background-color: transparent !important;
+	background-attachment: none !important;
+	background-clip: none !important;	
+	background:none !important;
+	opacity: 1 !important;
+	transform:scale(2) !important;
+	bottom: 10% !important;
+	}
+
+	.test{
+	display: none !important;			
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;	
+	background-origin: none !important;	
+	background-attachment: none !important;
+	background-clip: none !important;	
+	background:transparent !important;
+	background-color: rgba(255,255,255,0) !important;	
+	}
+
+	.myImg{
+		position: absolute;
+		left: 90%;
+		width: 10em;	
+		bottom: 1%;
+		padding: 0;
+		margin: 0;
+	}
+
+	.myImg:hover{
+		cursor: pointer; 
+	}
+
+	body{
+		background-color: #eee;
+	}
+
+	#ymDivCircle{
+		display: none !important;
+	}
+
+</style>
+
+<body>
+	<div>
+		<a onclick="window.YellowMessengerPlugin.toggleChat();"> <img src="blue1.png"  class="myImg"> <a/>
+	</div>
+    <script type="text/javascript">
+
+
+    
+
+    	var myFun = function(){
+
+    			
+        
+        		console.log('body loading done');
+        		document.getElementById('ymDivCircle').childNodes[0].setAttribute('src','blue1.png');
+        		 // document.getElementById("ymDivCircle").childNodes[0].style.transform = "scale(1.5)";
+        		 // document.getElementById("ymDivCircle").childNodes[0].style.backgroundSize = "cover";		
+        		 document.getElementById("ymDivCircle").style.removeProperty("-webkit-box-shadow");
+        		 document.getElementById("ymDivCircle").style.removeProperty("box-shadow");
+        		 document.getElementById("ymDivCircle").style.width = "1px";
+        		 document.getElementById("ymDivCircle").style.left = "80%";
+        		 document.getElementById("ymDivCircle").style.bottom = "0%";
+        		         		 document.getElementById("ymDivCircle").style.padding = 0;
+        		         		 document.getElementById("ymDivCircle").style.margin = 0;
+
+        		 //document.getElementById("ymDivCircle").childNodes[0].parentNode.style.display = "none";
+        		 document.getElementById("ymDivCircle").classList.add('test');
+        		 document.getElementById("ymDivCircle").childNodes[0].classList.add('noshadow');        		         		     
+        		 return true;
+        		        		
+        	};
+
+   window.ymConfig = {  bot: 'x1545628873053',
+         //autoOpen: true,
+        targetLanguage: 'en-in-male',
+        logging: true };
+     (function() {
+    var w = window,
+        ic = w.YellowMessenger;
+        //console.log(ic);
+    if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
+    else {
+
+        var d = document,
+            i = function() {
+                i.c(arguments)                
+            };
+
+        function l() {
+            var e = d.createElement("script");
+            e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/main.js";
+            // e.onload = myFun;
+            var t = d.getElementsByTagName("script")[0];            
+
+            e.removeAttribute('async');
+            console.log(e);
+            
+            t.parentNode.insertBefore(e, t);
+            if(e.readyState) {  // only required for IE <9
+    		e.onreadystatechange = function() {
+		      	if ( e.readyState === "loaded" || e.readyState === "complete" ) {
+		        e.onreadystatechange = null;
+		        
+		      }
+		    };
+			  } else {  //Others
+			    e.onload = function() {
+			      
+			    };
+			  }
+        }
+        	
+
+        i.q = [], i.c = function(e) {
+
+            i.q.push(e);
+
+        }, w.YellowMessenger = i, w.attachEvent  ? ( w.attachEvent("onload", l)) : (w.addEventListener("load", l, !1))
+    };
+    
+})();
+
+
+
+
+
+        	
+        	window.setTimeout(function(){
+        		document.getElementById('ymDivCircle').childNodes[0].setAttribute('src','blue1.png');
+        		 // document.getElementById("ymDivCircle").childNodes[0].style.transform = "scale(1.5)";
+        		 // document.getElementById("ymDivCircle").childNodes[0].style.backgroundSize = "cover";		
+        		 document.getElementById("ymDivCircle").style.removeProperty("-webkit-box-shadow");
+        		 document.getElementById("ymDivCircle").style.removeProperty("box-shadow");
+        		 document.getElementById("ymDivCircle").style.width = "1px";
+        		 document.getElementById("ymDivCircle").style.left = "80%";
+        		 document.getElementById("ymDivCircle").style.bottom = "5%";
+        		         		 document.getElementById("ymDivCircle").style.padding = 0;
+        		         		 document.getElementById("ymDivCircle").style.margin = 0;
+
+        		 //document.getElementById("ymDivCircle").childNodes[0].parentNode.style.display = "none";
+        		 document.getElementById("ymDivCircle").classList.add('test');
+        		 document.getElementById("ymDivCircle").childNodes[0].classList.add('noshadow');
+        		 
+        		 
+
+        		 
+
+
+
+        		
+        		//document.getElementById("ymDivCircle").removeChild(document.getElementById("ymDivCircle").childNodes[0]);   
+        		        		
+        		//document.getElementById("ymDivCircle").style.removeProperty("background");
+        		//document.getElementById("ymDivCircle").style.backgroundImage = "url('blue1.png')";	        		
+        		//document.getElementById("ymDivCircle").style.backgroundSize = "cover";	
+        		//document.getElementById("ymDivCircle").style.transform = "scale(1.5)";	        		
+        		//document.getElementById("ymDivCircle").style.borderRadius = "";
+        		//document.getElementById("ymDivCircle").style.padding = "2em;";	
+        		
+        		
+        		//document.getElementById("ymDivCircle").classList.add('noshadow');
+        		// document.getElementById("ymDivCircle").style.removeProperty('background');
+        		// document.getElementById("ymDivCircle").style.removeProperty('background-color');
+        		// document.getElementById("ymDivCircle").style.removeProperty('background-image');
+        		//document.getElementsByTagName("body")[0].classList.add('noshadow');
+        		//document.querySelector('body > div').classList.add('noshadow');
+        	},2000);     
+      </script>
+</body>
+
+</html>
