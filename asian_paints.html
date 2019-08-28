@@ -1,0 +1,40 @@
+<script type="text/javascript">
+    window.ymConfig = { bot: 'x1542172830067' }; (function () { var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/main.js"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1) } })();
+</script>
+<script id="ze-snippet"
+    src="https://static.zdassets.com/ekr/snippet.js?key=c0a7cd3d-01bc-443a-88b3-758da5bda647"> </script>
+<!-- End of example3237 Zendesk Widget script -->
+
+<script>
+
+    zE('webWidget', 'hide');
+
+    window.addEventListener("message", function (event) {
+        var ldata = {}
+        try {
+            event.data = JSON.parse(event.data);
+            ldata = JSON.parse(event.data);
+            ldata = ldata.data
+            name = ldata.data.name
+        } catch (e) {
+            //do nothing
+        }
+
+        if (ldata.code === 'transfer_to_agent') {
+            zE('webWidget', 'open')
+            zE('webWidget', 'show');
+            window.YellowMessengerPlugin.removeChat();
+
+
+            zE('webWidget', 'chat:send', `It seems that you are looking for "${name}",our agent will help you out in solving this.`)
+            zE('webWidget:on', 'chat:start', function () {
+                console.log('successfully started a Zendesk Chat!')
+                zE('webWidget', 'show')
+            })
+            document.getElementById('launcher').style.display = 'none';
+        }
+    })
+
+    zE('webWidget', 'hide');
+
+</script>
