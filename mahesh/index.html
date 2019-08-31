@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#submit").click(function () {
+                console.log('Inside submit function');
+                if ($("#years").val() && $("#months").val()) {
+                    console.log($("#years").val(),'Value from years');
+                    console.log($("#months").val(),'Value from months');
+                    console.log('Inside years and months true');
+                    window.parent.postMessage(JSON.stringify({
+                        event_code: 'ym-client-event',
+                        data: JSON.stringify({
+                            event: {
+                                code: "commission",
+                                data: {
+                                    months: $("#months").val(),
+                                    years: $("#years").val()
+                                }
+                            }
+                        })
+                    }), '*');
+
+                    $('#custom :input').attr('disabled', 'disabled');
+                    $('#custom').fadeTo("slow", 0.15, function () {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor', 'default');
+                        // $('#add').append('Submitted');
+                    });
+                } else {
+                    alert("Please select the year and the respective month");
+                }
+            })
+        })
+    </script>
+</head>
+
+<body style="background: #FFFFFF;">
+
+
+<div class="container" style="padding: 0;" id="custom">
+    <h3 style="color: #0077bd"><b>Payslip Drop Down Menu</b></h3>
+    <div class="form-group" style="margin-top: 20px">
+        <h4 style="color: #0077bd"><b>Year</b></h4>
+        <select name="years" id="years" style="margin-right: 70px">
+            <option id="2017">2017</option>
+            <option id="2018">2018</option>
+            <option id="2019">2019</option>
+
+        </select>
+
+
+        <h4 style="color: #0077bd"><b>Month</b></h4>
+        <select name="months" id="months">
+            <option id="1">January</option>
+            <option id="2">February</option>
+            <option id="3">March</option>
+            <option id="4">April</option>
+            <option id="5">May</option>
+            <option id="6">June</option>
+            <option id="7">July</option>
+            <option id="8">August</option>
+            <option id="9">September</option>
+            <option id="10">October</option>
+            <option id="11">November</option>
+            <option id="12">December</option>
+        </select>
+    </div>
+    <button id="submit" type="submit" class="btn btn-default" style="margin-top: 10px">Submit</button>
+</div>
+<center><strong>
+        <ul id="add"></ul>
+    </strong></center>
+</body>
+
+</html>
