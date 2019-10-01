@@ -51,52 +51,35 @@
                                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
                     })(window, document, 'script', 'dataLayer', 'GTM-5VKBRT6');
 
+                    window.parent.postMessage(JSON.stringify({
+                        event_code: 'custom-event', data: JSON.stringify({
+                            event: {
+                                code: "custom-event",
+                                data: {
+                                    _ga: 'e.data'
+                                }
+                            }
+                        })
+                    }), '*');
+
                 }
-                }
+            }
         }, false);
-        window.ymConfig = {
-                    bot: 'x1545628873053',
-                    autoOpen: true,
-                    targetLanguage: 'en-in-male',
-                    logging: true
-                };
-                var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/main.js"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1) }
-            
+        
+
     </script>
 </head>
 
 <body>
     <iframe src="https://prm.bajajfinserv.in" height="1px" width="1px" style="display:none"></iframe>
 
-
-
-
     <script type="text/javascript">
-        // setTimeout(function(){ 
+        window.ymConfig = {  bot: 'x1545628873053',
+        autoOpen: true,
+        targetLanguage: 'en-in-male',
+        logging: true };  (function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://app.yellowmessenger.com/widget/main.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
+      </script>
 
-        //  }, 3000);
-        // setTimeout(
-        //         function () {
-        //             window.ymConfig = {
-        //                 bot: 'x1545628873053',
-        //                 autoOpen: true,
-        //                 targetLanguage: 'en-in-male',
-        //                 logging: true
-        //             };
-        //             var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/main.js"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1) }
-        // }, 100);
-        // (function () {
-        //     window.addEventListener("message", function (event) {
-        //         var event = JSON.parse(event.data);
-        //         if (event.event_code === 'custom-event') {
-        //             var eventData = event.data.data;
-        //             console.log(eventData);
-        //             // window.location.assign(window.location.protocol + '//' + window.location.host + eventData.redirect_path)
-        //         }
-        //     }, false);
-        // })();
-
-    </script>
 </body>
 
 </html>
