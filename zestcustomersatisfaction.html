@@ -225,7 +225,7 @@ body {
 }
   </style>
 </head>
-<body>
+<body  id="custom">
 <!-- partial:index.partial.html -->
 <div id="full-stars-example">
     <p class="desc" style="margin-bottom: 2rem; font-family: sans-serif; font-size:0.9rem">Overall Chat</p>
@@ -302,7 +302,8 @@ body {
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js">
 <script type="text/javascript">
     (function () {
-        debugger      
+        debugger
+      
     })
 </script>
 <script type='text/javascript'>
@@ -324,6 +325,21 @@ body {
             'friendliness': ratingValue4
         }
         console.log(ratings)
+        // window.parent.postMessage(JSON.stringify({
+        //   event_code: 'ym-client-event', data: JSON.stringify({
+        //     event: {
+        //       code: "Rating",
+        //       data: {
+        //         ratingValue: ratingValue
+        //       }
+        //     }
+        //   })
+        // }),'*');
+        // $('input[type="radio"]').attr('disabled', 'disabled');
+        // $('input[type="radio"]').fadeTo("slow", 0.15, function () {
+        //   $(this).find(':input').attr('disabled', 'disabled');
+        //   $(this).find('label').css('cursor', 'default');
+        // });
         window.parent.postMessage(JSON.stringify({
          event_code: 'ym-client-event', data: JSON.stringify({
            event: {
@@ -334,7 +350,12 @@ body {
            }
          })
        }), '*');
-        $('input[type="radio"]').attr('disabled', 'disabled');
+            $('#custom :input').attr('disabled', 'disabled');
+            $('#custom').fadeTo("slow", 0.15, function () {
+            $(this).find(':input').attr('disabled', 'disabled');
+            $(this).find('label').css('cursor', 'default');
+            $('#add').append('Submitted');
+          });
       })
         });
     </script>
