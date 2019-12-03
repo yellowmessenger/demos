@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <style type="text/css">
+        .container {
+            padding: 75px;
+            width: 100%;
+        }
+        /*** Thumbs UP and DOWN ***/
+        .thumbs-area {
+            margin: 25px 0px 0px 0px;
+        }
+ .thumbs-area a {
+            color: #111;
+            text-align: center;
+            border: 2px solid #111;
+            ;
+            border-radius: 5px;
+            background: #effbff;
+            margin: 5px;
+            padding: 50px 0px;
+            display: inline-block;
+            height: 250px;
+            width: 250px;
+        }
+        #thumbs-up:hover,
+        #thumbs-down:hover {
+            text-decoration: none;
+        }
+        #thumbs-up:hover {
+            background: #98ed74;
+        }
+        #thumbs-down:hover {
+            background: #ed7474;
+        }
+.thumbs-up,
+        .thumbs-down {
+            display: inline-block;
+        }
+        /*** POP UP BOX ***/
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+            z-index: 999;
+        }
+  .overlay:target {
+            visibility: visible;
+            opacity: 1;
+        }
+  .popup {
+            margin: 200px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            width: 30%;
+            position: relative;
+            transition: all 5s ease-in-out;
+        }
+  .popup h3 {
+            margin: 0px 15px 15px 0px;
+            color: #333;
+            font-family: Tahoma, Arial, sans-serif;
+        }
+       .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: all 200ms;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+       .popup .close:hover {
+            color: #06D85F;
+        }
+.popup .content {
+            max-height: 100%;
+            overflow: auto;
+        }
+        /* @media screen and (max-width: 700px) {
+            .popup {
+                width: 100%;
+                height: 50%;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    </div>
+    <h2 class="text-center">Dominos Feedback</h2><br>
+    <p class="text-center"> Please take a moment to review your experience with us. Your feedback not only helps us, it
+        helps other potential customers. </p>
+    <div class="thumbs-area text-center">
+        <div style="display: inline-block" class='thumbs-up'>
+            <img id="event1" src="https://cdn.yellowmessenger.com/wWWYGfXb7cnX1575370527823.PNG" width="240"
+                height="240">
+        </div>
+        <div class='thumbs-down'  style="display: inline-block" href="#popup1">
+            <img id="event2" src="https://cdn.yellowmessenger.com/lGnEByqh19pN1575370552549.PNG" width="240"
+                height="240">
+        </div>
+        <br></br>
+    </div>
+    </div>
+    
+    <!-- <div id="popup2" class="overlay">
+        <div class="popup">
+            <h2>Disatisfied Form</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                FORM HERE
+            </div>
+        </div>
+    </div> -->
+    <script>
+        let thumbsUp = document.getElementById('event1');
+        thumbsUp.addEventListener('click', () => {
+            console.log("INSIDE THUMBS UP")
+            window.parent.postMessage(JSON.stringify({
+                event_code: 'ym-client-event', data: JSON.stringify({
+                    event: {
+                        code: "thumbsUp",
+                        data: {
+                            feedback: "thumbsUp"
+                        }
+                    }
+                })
+            }), '*');
+        })
+    let thumbsDown = document.getElementById('event2');
+        thumbsDown.addEventListener('click', () => {
+            window.parent.postMessage(JSON.stringify({
+                event_code: 'ym-client-event', data: JSON.stringify({
+                    event: {
+                        code: "thumbsDown",
+                        data: {
+                            feedback: "thumbsDown"
+                        }
+                    }
+                })
+            }), '*');
+        })
+    </script>
+</body>
+</html>
