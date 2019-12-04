@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#submit').click(function() {
+          if ($('#client').val() && $('#password').val()) {
+            window.parent.postMessage(
+              JSON.stringify({
+                event_code: 'ym-client-event',
+                data: JSON.stringify({
+                  event: {
+                    code: 'auth',
+                    data: {
+                      login: $('#client').val(),
+                      password: $('#password').val()
+                    }
+                  }
+                })
+              }),
+              '*'
+            );
+            $('#custom :input').attr('disabled', 'disabled');
+            $('#custom').fadeTo('slow', 0.15, function() {
+              $(this)
+                .find(':input')
+                .attr('disabled', 'disabled');
+              $(this)
+                .find('label')
+                .css('cursor', 'default');
+              $('#add').append('Details Submitted');
+            });
+          } else {
+            alert('Please enter Merchant ID and password');
+          }
+        });
+      });
+    </script>
+  </head>
+  <body style="background: #D51900;">
+    <div class="container">
+      <div id="custom">
+        <h3 style="color: #FFFFFF"><b>Merchant Login</b></h3>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="client"
+            placeholder="Merchant Id"
+            name="client"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder="Password"
+            name="pwd"
+          />
+        </div>
+        <button
+          id="submit"
+          type="submit"
+          class="btn btn-default"
+          style="margin-top: 10px"
+        >
+        Submit
+        </button>
+      </div>
+    </div>
+    <div class="container">
+      <strong><ul id="add"></ul></strong>
+    </div>
+  </body>
+</html>
