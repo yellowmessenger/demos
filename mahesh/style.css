@@ -58,7 +58,7 @@ ol {
   transition-property: all;
   transition-duration: 1s;
   font-size: 150px;
-  color: black;
+  color: white;
   opacity: 1;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 2;
