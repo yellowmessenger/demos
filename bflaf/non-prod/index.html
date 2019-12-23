@@ -11,6 +11,7 @@
 <body>
     <script type="text/javascript">
         var getParams = function (url) {
+		console.log(url,"in url")
 	        var params = {};
     	    var parser = document.createElement('a');
         	parser.href = url;
@@ -20,6 +21,7 @@
 		        var pair = vars[i].split('=');
         		params[pair[0]] = decodeURIComponent(pair[1]);
 	        }
+		console.log(params,"in params")
         	return params;
         };
         window.ymConfig = { bot: 'x1568208660495', view:'compact', payload:getParams(window.location.href)["botPayload"] };
