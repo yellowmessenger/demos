@@ -11,9 +11,16 @@ window.addEventListener("message", function (event) {
         //do nothing
     }
     if (ldata.code === 'transfer_to_agent') {
+        window.__lc = LC_API || {};
+    window.__lc.license = 1952541;
+    window.__lc.group = 23;
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(lc, s);
         window.YellowMessengerPlugin.removeChat();
         var custom_variables = [
-            { name: 'Chat History', value: ldata.data.chatHistory },
+            { name: 'Chat History', value: ldata.data.chatHistory }
         ];
         LC_API.set_custom_variables(custom_variables);
         LC_API.open_chat_window();
@@ -21,11 +28,12 @@ window.addEventListener("message", function (event) {
 }, false);
 
 window.onload = function () {
-    window.__lc = LC_API || {};
-    window.__lc.license = 1952541;
-    window.__lc.group = 23;
-    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(lc, s);
+    console.log('onLoad')
+//     window.__lc = LC_API || {};
+//     window.__lc.license = 1952541;
+//     window.__lc.group = 23;
+//     var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+//     lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+//     var s = document.getElementsByTagName('script')[0];
+//     s.parentNode.insertBefore(lc, s);
  };
