@@ -21,7 +21,7 @@ window.addEventListener("message", function (event) {
 }, false);
 
 window.onload = function () {
-    window.__lc = window.__lc || {};
+    window.__lc = LC_API || {};
     window.__lc.license = 1952541;
     window.__lc.group = 23;
     var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
