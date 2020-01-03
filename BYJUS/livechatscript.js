@@ -1,14 +1,6 @@
 // <!-- Start of LiveChat (www.livechatinc.com) code -->
 var LC_API = LC_API || {};
- window.onload = function () {
-    window.__lc = window.__lc || {};
-    window.__lc.license = 1952541;
-    window.__lc.group = 23;
-    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
-    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(lc, s);
- };
+
 window.addEventListener("message", function (event) {
     var ldata = {}
     try {
@@ -27,3 +19,13 @@ window.addEventListener("message", function (event) {
         LC_API.open_chat_window();
     }
 }, false);
+
+window.onload = function () {
+    window.__lc = window.__lc || {};
+    window.__lc.license = 1952541;
+    window.__lc.group = 23;
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(lc, s);
+ };
