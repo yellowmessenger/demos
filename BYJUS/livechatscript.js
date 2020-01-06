@@ -9,7 +9,7 @@ var LC_API = LC_API || {};
 // 	LC_API.hide_chat_window();
 // };
 
-window.onload = function () {
+//window.onload = function () {
     window.__lc = window.__lc || {};
     window.__lc.license = 1952541;
     //window.__lc.group = 23;
@@ -30,7 +30,7 @@ window.onload = function () {
     LC_API.on_chat_started = function () {
         livechat_chat_started = true;
     };
-};
+//};
 
 window.addEventListener("message", function (event) {
     var ldata = {}
