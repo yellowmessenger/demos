@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title>Bob - Your virtual assistant</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/png" href="http://vignette3.wikia.nocookie.net/mycun-the-movie/images/c/c0/Bob.jpeg/revision/latest/scale-to-width-down/304?cb=20160110034246"/>
+</head>
+
+
+<body>
+    <script type="text/javascript">
+        window.ymConfig = { bot: 'x1548085318486', channel: 'salesforce' };
+        console.log(window.ymConfig);
+        (function () {
+            var w=window,ic=w.YellowMessenger;
+            if("function"===typeof ic)
+                ic("reattach_activator"),ic("update",ymConfig);
+            else{
+                var d=document,i=function(){i.c(arguments)};
+                function l(){
+                    var e=d.createElement("script");
+                    e.type="text/javascript",e.async=!0,e.src="https://app.yellowmessenger.com/widget/mobile.js";
+                    var t=d.getElementsByTagName("script")[0];
+                    t.parentNode.insertBefore(e,t)
+                }
+                i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}
+        })();
+    </script>
+</body>
+</html>
