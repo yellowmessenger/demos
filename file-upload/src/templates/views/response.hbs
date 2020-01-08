@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>yellowmessenger</title>
+    <link rel="icon" href="https://yellowmessenger.com/images/favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="/style/style.css">
+
+</head>
+
+<body>
+
+
+    <div class="main-content">
+        {{>header}}
+
+        {{#if_eq status "success"}}
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 24 24"
+            style=" fill:#000000;">
+            <path
+                d="M12,2C6.477,2,2,6.477,2,12c0,5.523,4.477,10,10,10s10-4.477,10-10C22,6.477,17.523,2,12,2z M10,17.414l-4.707-4.707 l1.414-1.414L10,14.586l7.293-7.293l1.414,1.414L10,17.414z">
+            </path>
+            <h3>Document uploaded successfully.</h3>
+        </svg>
+        {{else}}
+        {{#if_eq status "error_timed_out"}}
+        <img src="/error.png" style="width: 100px; height:100px" />
+        <h3>Error: {{message}}</h3>
+        {{else}}
+        <img src="/error.png" style="width: 100px; height:100px" />
+        <h3>Error: {{message}}</h3>
+        <a href={{try_again}} class="atag">Try again...☑️</a>
+        {{/if_eq}}
+        {{/if_eq}}
+    </div>
+    <div id="status" style="display: none;">{{status}}</div>
+    <div id="message" style="display: none;">{{message}}</div>
+    <div id="base64" style="display: none;">{{base64}}</div>
+    <div id="doc_type" style="display: none;">{{doc_type}}</div>
+    <div id="campaign" style="display: none;">{{campaign}}</div>
+    <div id="extension" style="display: none;">{{extension}}</div>
+    {{>footer}}
+    <script src="/js/app.js"> </script>
+    {{!-- <script src="/js/bot.js"> </script> --}}
+    <script src="/js/sendEvent.js"> </script>
+</body>
+
+</html>
