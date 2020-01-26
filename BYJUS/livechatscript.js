@@ -41,7 +41,8 @@ window.addEventListener("message", function (event) {
         //do nothing
     }
     if (ldata.code === 'transfer_to_agent') {
-        window.YellowMessengerPlugin.removeChat();
+        //window.YellowMessengerPlugin.removeChat();
+	window.YellowMessengerPlugin.hide();    
         var custom_variables = [
             { name: 'Chat History', value: ldata.data.chatHistory }
         ];
