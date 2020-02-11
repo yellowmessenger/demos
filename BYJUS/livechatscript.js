@@ -31,9 +31,9 @@ LC_API.on_after_load = function() {
         //];
         //LC_API.set_custom_variables(custom_variables);
 	    
-        LC_API.on_after_load = function () {
+        //LC_API.on_after_load = function () {
           window.YellowMessengerPlugin.hide();
           LC_API.open_chat_window();
-        };
+        //};
     }
 }, false);
