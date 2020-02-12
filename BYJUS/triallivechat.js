@@ -7,7 +7,6 @@ LC_API.on_after_load = function() {
 
     window.__lc = window.__lc || {};
     window.__lc.license = 11710455;
-    //window.__lc.group = 23;
     var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
     lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
     var s = document.getElementsByTagName('script')[0];
@@ -24,16 +23,7 @@ LC_API.on_after_load = function() {
     }
     if (ldata.code === 'transfer_to_agent') {
 	    
-        //window.YellowMessengerPlugin.removeChat();
-	//window.YellowMessengerPlugin.hide();    
-        //var custom_variables = [
-        //    { name: 'Chat History', value: ldata.data.chatHistory }
-        //];
-        //LC_API.set_custom_variables(custom_variables);
-	    
-        //LC_API.on_after_load = function () {
           window.YellowMessengerPlugin.hide();
           LC_API.open_chat_window();
-        //};
     }
 }, false);
