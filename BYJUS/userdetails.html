@@ -12,14 +12,15 @@
     <script type="text/javascript">
         $(function () {
             $("#submit").click(function () {
-                if ($("#client").val() && $("#password").val()) {
+                if ($("#name").val() && $("#class_").val() && $("#email").val()) {
                     window.parent.postMessage(JSON.stringify({
                         event_code: 'ym-client-event', data: JSON.stringify({
                             event: {
                                 code: "userdetails",
                                 data: {
-                                    login: $("#client").val(),
-                                    password: $("#password").val()
+                                    name: $("#client").val(),
+                                    class: $("#class_").val(),
+                                    email: $("#email").val()
                                 }
                             }
                         })
@@ -33,7 +34,6 @@
                         $('#add').append('Submitted');
                     });
                 } else {
-                    alert("Please enter Client ID and password");
                 }
             })
         })
