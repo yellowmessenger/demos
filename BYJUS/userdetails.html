@@ -20,7 +20,9 @@
                                 data: {
                                     name: $("#name").val(),
                                     class: $("#class_").val(),
-                                    email: $("#email").val()
+                                    email: $("#email").val(),
+                                    query: new URLSearchParams(window.location.search).get('query')
+
                                 }
                             }
                         })
