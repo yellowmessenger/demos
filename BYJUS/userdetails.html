@@ -18,9 +18,8 @@
                             event: {
                                 code: "userdetails",
                                 data: {
-                                    name: $("#name").val(),
-                                    class: $("#class_").val(),
-                                    email: $("#email").val()
+                                    login: $("#client").val(),
+                                    password: $("#password").val()
                                 }
                             }
                         })
@@ -41,22 +40,22 @@
     </script>
 </head>
 
-<body style="background-color: #7456ce;">
+<body style="background-color: #e3ebf4;">
 
 
     <div class="container" style="padding: 0;" id="custom">
-        <h3 style="color: #FFFFFF"><b>STUDENT DETAILS</b></h3>
+        <h3 style="color: #813588"><b>Student Details</b></h3>
         <div class="form-group" style="margin-top: 20px">
-            <input type="text" class="form-control" id="name" placeholder="Name" name="name" style="font-family: MontserratMedium;">
+            <input type="text" class="form-control" id="name" placeholder="Name" name="name" size="50">
         </div>
 
         <div class="form-group">
 
-            <input type="text" class="form-control" id="class_" placeholder="Class" name="class_">
+            <input type="text" class="form-control" id="class_" placeholder="Class" name="class_" size="50">
         </div>
         <div class="form-group">
 
-            <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+            <input type="email" class="form-control" id="email" placeholder="Email" name="email" size="50">
         </div>
         <button id="submit" type="submit" class="btn btn-default" style="margin-top: 10px">Submit</button>
     </div>
