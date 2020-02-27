@@ -13,6 +13,7 @@
         $(function () {
             $("#submit").click(function () {
                 if ($("#name").val() && $("#class_").val() && $("#email").val()) {
+                    let queryback = new URLSearchParams(window.location.search).get('query')
                     window.parent.postMessage(JSON.stringify({
                         event_code: 'ym-client-event', data: JSON.stringify({
                             event: {
@@ -21,7 +22,7 @@
                                     name: $("#name").val(),
                                     class: $("#class_").val(),
                                     email: $("#email").val(),
-                                    query: new URLSearchParams(window.location.search).get('query')
+                                    query: queryback
 
                                 }
                             }
