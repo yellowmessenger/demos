@@ -10,9 +10,29 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
+
+        var x = setTimeout(function () {
+            let queryback = new URLSearchParams(window.location.search).get('query')
+                    window.parent.postMessage(JSON.stringify({
+                        event_code: 'ym-client-event', data: JSON.stringify({
+                            event: {
+                                code: "userdetails",
+                                data: {
+                                    name: '',
+                                    class: '',
+                                    email: '',
+                                    query: queryback
+
+                                }
+                            }
+                        })
+                    }), '*');
+        }, 20000)
+
         $(function () {
             $("#submit").click(function () {
                 if ($("#name").val() && $("#class_").val() && $("#email").val()) {
+                    clearTimeout(x)
                     let queryback = new URLSearchParams(window.location.search).get('query')
                     window.parent.postMessage(JSON.stringify({
                         event_code: 'ym-client-event', data: JSON.stringify({
@@ -34,8 +54,9 @@
                     $('#custom').fadeTo("slow", 0.15, function () {
                         $(this).find(':input').attr('disabled', 'disabled');
                         $(this).find('label').css('cursor', 'default');
-                        $('#add').append('Submitted');
+
                     });
+                    $('#add').append("Thank You");
                 } else {
                 }
             })
@@ -48,9 +69,13 @@
 
     <div class="container" style="padding: 0;" id="custom">
         <h3 style="color: #813588"><b>Student Details</b></h3>
+
         <div class="form-group" style="margin-top: 20px">
             <input type="text" class="form-control" id="name" placeholder="Name" name="name" size="50">
         </div>
+        <center><strong>
+                <ul id="add"></ul>
+            </strong></center>
 
         <div class="form-group">
 
@@ -60,11 +85,9 @@
 
             <input type="email" class="form-control" id="email" placeholder="Email" name="email" size="50">
         </div>
-        <button id="submit" type="submit" class="btn btn-default" style="margin-top: 10px; color: #813588">Submit</button>
+        <button id="submit" type="submit" class="btn btn-default"
+            style="margin-top: 10px; color: #813588">Submit</button>
     </div>
-    <center><strong>
-            <ul id="add"></ul>
-        </strong></center>
 </body>
 
 </html>
