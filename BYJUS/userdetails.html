@@ -20,18 +20,18 @@
                                 data: {
                                     name: '',
                                     class: '',
-                                    email: '',
+                                    phone: '',
                                     query: queryback
 
                                 }
                             }
                         })
                     }), '*');
-        }, 20000)
+        }, 30000)
 
         $(function () {
             $("#submit").click(function () {
-                if ($("#name").val() && $("#class_").val() && $("#email").val()) {
+                if ($("#name").val() && $("#class_").val() && $("#phone").val()) {
                     clearTimeout(x)
                     let queryback = new URLSearchParams(window.location.search).get('query')
                     window.parent.postMessage(JSON.stringify({
@@ -41,7 +41,7 @@
                                 data: {
                                     name: $("#name").val(),
                                     class: $("#class_").val(),
-                                    email: $("#email").val(),
+                                    email: $("#phone").val(),
                                     query: queryback
 
                                 }
@@ -83,7 +83,7 @@
         </div>
         <div class="form-group">
 
-            <input type="email" class="form-control" id="email" placeholder="Email" name="email" size="50">
+            <input type="text" class="form-control" id="phone" placeholder="Mobile No." name="phone" size="50">
         </div>
         <button id="submit" type="submit" class="btn btn-default"
             style="margin-top: 10px; color: #813588">Submit</button>
