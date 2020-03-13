@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#submit").click(function () {
+                if ($("#client").val() && $("#password").val()) {
+                    window.parent.postMessage(JSON.stringify({
+                        event_code: 'ym-client-event', data: JSON.stringify({
+                            event: {
+                                code: "auth",
+                                data: {
+                                    login: $("#client").val(),
+                                    password: $("#password").val()
+                                }
+                            }
+                        })
+                    }), '*');
+                    $('#custom :input').attr('disabled', 'disabled');
+                    $('#custom').fadeTo("slow", 0.15, function () {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor', 'default');
+                        $('#add').append('Submitted');
+                    });
+                } else {
+                    alert("Please enter Client ID and password");
+                }
+            })
+        })
+    </script>
+</head>
+<body style="background: #3275B7;">
+    <div class="container" style="padding: 0;" id="custom">
+        <h3 style="color: #FFFFFF"><b>CLIENT LOGIN</b></h3>
+        <div class="form-group" style="margin-top: 20px">
+            <input type="text" class="form-control" id="client" placeholder="Client ID" name="client">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" id="password" placeholder="Password" name="pwd">
+        </div>
+        <button id="submit" type="submit" class="btn btn-default" style="margin-top: 10px">Login</button>
+    </div>
+    <center><strong>
+            <ul id="add"></ul>
+        </strong></center>
+</body>
+</html>
