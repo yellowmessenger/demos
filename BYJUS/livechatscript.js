@@ -22,7 +22,7 @@ LC_API.on_after_load = function() {
     } catch (e) {
         //do nothing
     }
-    if (ldata.code === 'transfer_to_agent') {
+    if (ldata.hasOwnProperty("code") && ldata.code === 'transfer_to_agent') {
 	    
         //window.YellowMessengerPlugin.removeChat();
 	//window.YellowMessengerPlugin.hide();    
