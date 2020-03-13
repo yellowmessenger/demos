@@ -22,16 +22,9 @@ LC_API.on_after_load = function() {
     } catch (e) {
         //do nothing
     }
-    if (ldata.hasOwnProperty("code") && ldata.code === 'transfer_to_agent') {
+    if (typeof(ldata) == "object" && ldata.hasOwnProperty("code") && ldata.code === "transfer_to_agent") {
 	    
-        //window.YellowMessengerPlugin.removeChat();
-	//window.YellowMessengerPlugin.hide();    
-        //var custom_variables = [
-        //    { name: 'Chat History', value: ldata.data.chatHistory }
-        //];
-        //LC_API.set_custom_variables(custom_variables);
-	    
-        //LC_API.on_after_load = function () {
+        //window.YellowMessengerPlugin.removeChat()
           window.YellowMessengerPlugin.hide();
           LC_API.open_chat_window();
         //};
