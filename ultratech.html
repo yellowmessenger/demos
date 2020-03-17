@@ -10,14 +10,18 @@
     <script type="text/javascript">
         $(function () {
             $("#submit").click(function () {
-                if ($("#client").val() && $("#password").val()) {
+                //write logic here, aks for phone number, media_url, medi-type, and caption
+                if($("#phonenumber").val() && $("#mediatype").val() && $("#mediaurl").val() && $("#caption").val())
+                {
                     window.parent.postMessage(JSON.stringify({
                         event_code: 'ym-client-event', data: JSON.stringify({
                             event: {
-                                code: "auth",
+                                code: "notification",
                                 data: {
-                                    login: $("#client").val(),
-                                    password: $("#password").val()
+                                    phoneNumber: $("#phonenumber").val(),
+                                    mediaType: $("#mediatype").val(),
+                                    mediaURL:$("#mediaurl").val(),
+                                    caption: $("#caption").val()
                                 }
                             }
                         })
@@ -28,7 +32,8 @@
                         $(this).find('label').css('cursor', 'default');
                         $('#add').append('Submitted');
                     });
-                } else {
+                }
+                else {
                     alert("Please enter Client ID and password");
                 }
             })
@@ -37,14 +42,20 @@
 </head>
 <body style="background: #3275B7;">
     <div class="container" style="padding: 0;" id="custom">
-        <h3 style="color: #FFFFFF"><b>CLIENT LOGIN</b></h3>
+        <h3 style="color: #FFFFFF"><b>Send Notification</b></h3>
+        <div class="form-group">
+            <input type="text" class="form-control" id="phonenumber" placeholder="Phone Number" name="phoneNumber">
+        </div>
         <div class="form-group" style="margin-top: 20px">
-            <input type="text" class="form-control" id="client" placeholder="Client ID" name="client">
+            <input type="text" class="form-control" id="mediatype" placeholder="Media Type" name="mediatype">
         </div>
         <div class="form-group">
-            <input type="password" class="form-control" id="password" placeholder="Password" name="pwd">
+            <input type="text" class="form-control" id="mediaurl" placeholder="Media URL" name="mediaurl">
         </div>
-        <button id="submit" type="submit" class="btn btn-default" style="margin-top: 10px">Login</button>
+        <div class="form-group" >
+            <input type="text" class="form-control" id="caption" placeholder="Caption" name="caption">
+        </div>
+        <button id="submit" type="submit" class="btn btn-default" style="margin-top: 10px">send</button>
     </div>
     <center><strong>
             <ul id="add"></ul>
