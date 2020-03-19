@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Chat bot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <script type="text/javascript">
+        var config = { autoOpen: true };
+        var sPageURL = window.location.search.substring(1);
+        var temp;
+        sPageURL.split("&").forEach(function (item) {
+            temp = item.split("=");
+            config[temp[0]] = temp[1] && temp[1];
+        })
+        window.ymConfig = config;
+        (function () { var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/sdk/dist/main.js"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, l() } })();
+    </script>
+
+</body>
+
+</html>
