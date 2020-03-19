@@ -13,6 +13,15 @@
                 //write logic here, aks for phone number, media_url, medi-type, and caption
                 if($("#phonenumber").val() && $("#mediatype").val() && $("#mediaurl").val() && $("#caption").val())
                 {
+                    console.log($("#phonenumber").val())
+                    let regex = /(91)\d{10}/
+                    let number = Number($("#phonenumber").val());
+                    console.log(typeof(number))
+                    console.log(regex.test(number))
+                    if(!regex.test(number))
+                    {
+                        alert("Please enter valid phone number");
+                    }
                     window.parent.postMessage(JSON.stringify({
                         event_code: 'ym-client-event', data: JSON.stringify({
                             event: {
@@ -34,7 +43,7 @@
                     });
                 }
                 else {
-                    alert("Please enter Client ID and password");
+                    alert("Please fill out all fields.");
                 }
             })
         })
@@ -43,7 +52,7 @@
 <body style="background: #3275B7;">
     <div class="container" style="padding: 0;" id="custom">
         <h3 style="color: #FFFFFF"><b>Send Notification</b></h3>
-        <div class="form-group">
+        <div class="form-group col-md-1">
             <input type="text" class="form-control" id="phonenumber" placeholder="Phone Number" name="phoneNumber">
         </div>
         <div class="form-group" style="margin-top: 20px">
