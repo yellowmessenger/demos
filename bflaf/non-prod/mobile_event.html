@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <title></title>
     <meta charset="utf-8">
@@ -20,18 +19,9 @@
          background: url(https://thumbs.gfycat.com/ImpoliteLivelyGenet-max-1mb.gif) center no-repeat #fff;
          }
       </style>
-      <script>
-         document.addEventListener("DOMContentLoaded", function(){
-//              document.getElementById("se-pre-con").style.display = "none";
-         });
-      </script>
-
 </head>
-
-
 <body>
     <div id="se-pre-con" class="se-pre-con"></div>
-
     <script type="text/javascript">
         var getParams = function (url) {
             var params = {};
@@ -48,37 +38,30 @@
         let payload = getParams(window.location.href)["ym.payload"];
         let botId = getParams(window.location.href)["botId"];
         let enableHistory = getParams(window.location.href)["enableHistory"];
-        
         let payloadJSON = {};
         try{
             payloadJSON = JSON.parse(payload);
         }catch(e){
         }
-        
-
         window.ymConfig = {
-            bot: botId || 'x1569558732722',
+            bot: botId || 'x1568208660495',
             pwa: true,
             enableHistory: (enableHistory === 'true') ,
             handlers: {
                 sendIOSEvent: function (data) {
-                    try {
-                        window.webkit.messageHandlers.ymHandler.postMessage(data);
-                    } catch (e) { }
-                    try {
-                        window.YMHandler.receiveMessage(JSON.stringify(data));
-                    } catch (e) { }
+                    console.log(data);
+                    try{
+                        window.webkit.messageHandlers.cordova_iab.postMessage(JSON.stringify(data));
+                    } catch(e) {console.log(e);}                    
                 }
             },
             payload: payload,
             triggerJourneyOnEnableHistory: payloadJSON.JourneySlug ? true: false ,
             triggerJourney: payloadJSON.JourneySlug
         };
-        
         if(payloadJSON.UserId) {
             window.ymConfig.userId = payloadJSON.UserId;
         }
-
         function sendEvent(s = "") {
             console.log("Message from Android" + s);
             const iframe = document.getElementById('ymIframe');
@@ -86,8 +69,6 @@
                     event_code: 'send-voice-text',
                     data: s
                 }));
-            
-
             try {
                 window.YMHandler.receiveMessage(JSON.stringify({ code: "Message Received", data: s }));
             } catch (e) { }
@@ -95,7 +76,6 @@
                 window.webkit.messageHandlers.ymHandler.postMessage({ code: "Message Received", data: s });
             } catch (e) { }
         }
-        
         (function () {
             var w = window, ic = w.YellowMessenger;
             if ("function" === typeof ic)
@@ -104,14 +84,12 @@
                 var d = document, i = function () {
                     i.c(arguments)
                 };
-
                 function l() {
                     var e = d.createElement("script");
-                    e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/mobile.js";
+                    e.type = "text/javascript", e.async = !0, e.src = "https://botplatform.io/components/securedwidget/mobile.js";
                     var t = d.getElementsByTagName("script")[0];
                     t.parentNode.insertBefore(e, t)
                 }
-
                 i.q = [], i.c = function (e) {
                     i.q.push(e)
                 }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
@@ -130,5 +108,4 @@
         })();
     </script>
 </body>
-
 </html>
