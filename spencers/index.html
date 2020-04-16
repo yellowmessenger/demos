@@ -6,12 +6,28 @@
 </head>
 
 <body>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
     window.ymConfig = {
         bot: "x1586927640772",
         autoOpen: true
     };
     (function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.yellowmessenger.com/sdk/dist/main.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,l()}})();
+</script> -->
+
+
+<script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-messaging.js"></script>
+<script type="text/javascript">
+    window.ymConfig = {
+        bot: "x1586927640772",
+        autoOpen: true,
+        logging: true,
+        enableMapSelection: true,
+        serviceWorkerPath: './messaging-sw.js',
+        // view:'compact',
+        // alignLeft:true
+    };
+    (function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.yellowmessenger.com/sdk/dist/main.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
 </script>
 
 </body>
