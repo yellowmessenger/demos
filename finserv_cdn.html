@@ -343,7 +343,7 @@ Main Components
 </head>
 
 <body data-gr-c-s-loaded="true" class="chat-open">
-  <script type="text/javascript" async="" src="https://cdn.yellowmessenger.com/sdk/dist/main.js"></script>
+  <!-- <script type="text/javascript" async="" src="https://cdn.yellowmessenger.com/plugin/latest/dist/main.min.js"></script> -->
   <script type="text/javascript">
     var config = { autoOpen: true };
     var sPageURL = window.location.search.substring(1);
@@ -353,7 +353,7 @@ Main Components
       config[temp[0]] = temp[1] && temp[1];
     })
     window.ymConfig = config;
-    (function () { var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/sdk/dist/main.js"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, l() } })();
+    (function () { var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/latest/dist/main.min.js"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, l() } })();
   </script>
 </body>
 
