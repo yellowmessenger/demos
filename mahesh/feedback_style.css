@@ -1,0 +1,129 @@
+body {
+    font-family: 'Dosis', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*background-color: rgba(0,0,0,0.4)*/
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 5px auto;
+  }
+  
+  ol {
+    width: 350px;
+    margin: 10px auto;
+  }
+  
+  .reset-container {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 15px;
+  }
+  
+  #reset-btn {
+    color: white;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+    text-decoration: none;
+    opacity: 1;
+  }
+  
+  /* ### The effect starts here ### */
+  /* Ensures that the filter covers the dimensions of the image */
+  .wrapper {
+    justify-content: center;
+    display: flex;
+    height:320px;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+  }
+  
+  /* Filter with thumbs-up/thumbs-down to display once the user has clicked on "like"/"dislike" */
+  .rated {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    font-size: 150px;
+    color: white;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+  .rated i {
+    opacity: 0.7;
+    position: absolute;
+    top: calc(50% - 80px);
+    left: calc(50% - 70px);
+  }
+  
+  /* "Like"/"Dislike" buttons to display when the user hovers over the image */
+  .links {
+    z-index: 4;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s;
+    opacity: 1;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  }
+  
+  /* Button styles */
+  .like-btn {
+    color: #2EBDD1;
+    font-size: 60px;
+    border-radius: 35px 0px 0px 35px;
+    margin-right: 2px;
+    padding: 5px 10px 8px 18px;
+    transition: all 0.3s;
+    background-color: whitesmoke;
+    color: #2EBDD1;
+    background-color: gainsboro;
+  }
+  
+  .dislike-btn {
+    color: #2EBDD1;
+    font-size: 60px;
+    border-radius: 0px 35px 35px 0px;
+    margin-left: 2px;
+    padding: 5px 18px 8px 10px;
+    transition: all 0.3s;
+    background-color: whitesmoke;
+    background-color: gainsboro;
+    color: #2EBDD1;
+  }
+  
+  .image{
+    position: fixed;
+      bottom: 0;
+      right: 0;
+    height:18%;
+    width:20%;
+  }
+  .heading{
+    margin-top: 30px;
+  }
+  
