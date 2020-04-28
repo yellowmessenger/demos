@@ -39,7 +39,7 @@ body {
   .wrapper {
     justify-content: center;
     display: flex;
-    height:320px;
+    height:100px;
   }
   
   .container {
@@ -94,10 +94,10 @@ body {
   /* Button styles */
   .like-btn {
     color: #2EBDD1;
-    font-size: 60px;
+    font-size: 20px;
     border-radius: 35px 0px 0px 35px;
     margin-right: 2px;
-    padding: 5px 10px 8px 18px;
+    padding: 5px 10px 8px 10px;
     transition: all 0.3s;
     background-color: whitesmoke;
     color: #2EBDD1;
@@ -106,10 +106,10 @@ body {
   
   .dislike-btn {
     color: #2EBDD1;
-    font-size: 60px;
+    font-size: 20px;
     border-radius: 0px 35px 35px 0px;
     margin-left: 2px;
-    padding: 5px 18px 8px 10px;
+    padding: 5px 10px 8px 10px;
     transition: all 0.3s;
     background-color: whitesmoke;
     background-color: gainsboro;
@@ -126,4 +126,3 @@ body {
   .heading{
     margin-top: 30px;
   }
-  
