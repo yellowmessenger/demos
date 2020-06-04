@@ -1,30 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Bajaj Finserv Chatbot</title>
+    <title>Bajaj Finserv Personal Chatbot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="https://yellow.chat/widget-lite.min.css">
+    <style>
+        body {
+            background-color: #74b3f7;
+            display: block;
+        }
 
-    <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="data:,">
-    <script async charset="utf-8" src="https://cdn.yellowmessenger.com/sdk/dist/base-css.js"></script>
-    <style type="text/css">
-        @font-face{font-family:botplatform-font}@font-face{font-family:botplatform-font;font-weight:700}@font-face{font-family:botplatform-font;font-style:italic}@font-face{font-family:botplatform-font;font-weight:700;font-style:italic}body{margin:0;padding:0}#ymFrameHolder{display:none;right:20px;bottom:95px;position:fixed;width:370px;min-width:320px;border-radius:8px;z-index:99999;background:#fff;-webkit-box-shadow:0 5px 40px rgba(0,0,0,.16)!important;-moz-box-shadow:0 5px 40px rgba(0,0,0,.16)!important;box-shadow:0 5px 40px rgba(0,0,0,.16)!important;line-height:.6}#ymIframe{border:none;width:100%;height:calc(100vh - 120px);max-height:600px}@media screen and (max-device-width:768px){#ymFrameHolder{width:auto;right:0!important;bottom:0!important;top:0!important;left:0!important;border-radius:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;height:100%!important;position:fixed}#ymFrameHolder.left{left:0!important}#ymIframe{border:none!important;min-height:100%!important;bottom:0!important;z-index:999999999;overflow:hidden;height:100%!important;width:100%!important}body.chat-open{position:fixed}}#ymDivCircle.open{background-image:url(https://cdn.yellowmessenger.com/files/images/close.png)!important;-webkit-transition:background-image .3s ease-in-out;-moz-transition:background-image .3s ease-in-out;-o-transition:background-image .3s ease-in-out;transition:background-image .3s ease-in-out}#ymDivCircle{display:none;z-index:99999;width:60px;height:60px;background:#4384f5;-moz-border-radius:50%;-webkit-border-radius:50%;border-radius:50%;-webkit-box-shadow:0 5px 40px rgba(0,0,0,.5)!important;-moz-box-shadow:0 5px 40px rgba(0,0,0,.5)!important;box-shadow:0 5px 40px rgba(0,0,0,.5)!important;cursor:pointer;position:fixed;right:20px;bottom:20px;background-image:url(https://cdn.yellowmessenger.com/T30Ya9q28aXo1568730999153.svg);background-size:40px;background-position:center;background-repeat:no-repeat;-webkit-transition:background-image .3s ease-in-out;-moz-transition:background-image .3s ease-in-out;-o-transition:background-image .3s ease-in-out;transition:background-image .3s ease-in-out}#ymDivCircle.left{right:auto;left:20px}#ymFrameHolder.left{right:auto;left:20px}#ymDivCircle img{width:60px;height:60px;border-radius:50%;background:#4384f5;padding:0}#ymDivCircle.open img{display:none}#ymDivCircle.square{border-radius:15%}.removeBackground{background:0 0!important}#ymDivCircle.noneDisplay{display:none}#ymDivCircle.removeBoxShadow{box-shadow:none!important}#ymDivCircle.square img{border-radius:15%}#ymDivCircle.autoHeight{height:auto}#ym-notification .close{position:absolute;top:5px;right:10px}#ym-notification.ym-hidden{display:none}#ym-notification.hide{display:none}#ym-notification{bottom:95px;max-width:300px;padding:15px;font-size:14px;text-align:left;background:#fff;min-height:20px;-webkit-box-shadow:1px 1px 10px #999!important;-moz-box-shadow:1px 1px 10px #999!important;box-shadow:1px 1px 10px #999!important;box-sizing:border-box;z-index:9999999999;background-size:70px;line-height:1.4;color:#485256;position:fixed;right:20px;border-radius:5px;cursor:pointer;letter-spacing:0;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:botplatform-font,"Helvetica Neue",Helvetica,Arial,sans-serif}#ym-notification.left{right:auto;left:20px}#ym-notification.left-side{right:95px;left:auto;bottom:24px;height:55px;width:300px;text-overflow:ellipsis;overflow:hidden;padding:10px 20px 0 10px;border-bottom:solid 10px transparent;max-width:calc(100vw - 105px)}.unread{position:absolute;color:#fff;background:#e63f52;padding:0 6px;border-radius:20px;top:-5px;right:0;font-size:13px}.no-touch{outline:0;background:#ffa346}.ym-img-holder{z-index:999999;background:rgba(0,0,0,.5);width:100%;height:100vh;position:fixed;top:0;text-align:center;display:table}.ym-img-holder .fixer{height:100%;vertical-align:middle;display:inline-block}.ym-img-holder .img-popup{margin:auto;width:auto;transform:scale(0);position:relative;text-align:center;vertical-align:middle;display:table-cell}.ym-img-holder .img-popup .close{position:absolute;top:10px;right:1px;padding:3px 10px;background:#000;border:2px solid #fff;border-radius:50%;line-height:22px;opacity:.6;color:#fff;font-family:botplatform-font,"Helvetica Neue",Helvetica,Arial,sans-serif;cursor:pointer}.ym-img-holder .img-popup.show{z-index:200;transform:scale(1);transition:all .3s ease-in-out}.ym-img-holder .img-popup.show .holder{display:inline-block;position:relative}.ym-img-holder .img-popup img{width:auto;border-radius:10px;overflow:hidden}#ymFrameHolder.compact{bottom:0!important}#ymIrameId.compact{border:none!important;width:100%!important;min-height:500px!important}
+        #ymFrameHolder {
+            max-width: 468px !important;
+            margin: 100px auto;
+            height: calc(100vh - 200px);
+        }
+
+        @media screen and (max-width: 768px) {
+            #ymFrameHolder {
+                max-width: 468px !important;
+                height: 100%;
+                margin: 0px;
+            }
+        }
     </style>
 </head>
 
-<body data-gr-c-s-loaded="true" class="chat-open">
+<body>
+    <div id="ymFrameHolder">
+        <div id="chatContainer" class="container">
+            <div>
+                <div id="chatDetails" class="full">
+                    <div class="icon-bg"></div>
+                    <img class="icon" src="https://cdn.yellowmessenger.com/files/images/avatar.png">
+                    <div class="title"></div>
+                    <div class="sub-title"></div>
+                    <div class="actions">
+                    </div>
+                </div>
+                <div class="chat-background " id="player"
+                    style="background-image: none; background-color: rgb(255, 255, 255);"></div>
+                <div class="choose-bot-container hide">
+                    <div class="choose-bot">
+                        Get started by selecting a bot
+                    </div>
+                    <div class="bots">
+                    </div>
+                </div>
+                <div id="chatBoxMainContainer" class="message-icons live-chat iphone-fix"
+                    style="height:calc(100vh - 140px);">
+                    <div class="location-selector">
+                        <div id="map"
+                            style="height: calc(100% - 50px); width: 100%; position: absolute;top: 0; left: 0;z-index: 999;">
+                        </div>
+                    </div>
+                    <div class="welcome-message hide">
+                        <div></div>
+                    </div>
+                    <div id="chatBoxMain" class="row">
+
+                    </div>
+                    <div id="chatOptions" class=""></div>
+                    <div class="typingDiv" id="typing"><span class="dot"></span><span class="dot"></span><span
+                            class="dot"></span></div>
+                </div>
+            </div>
+            <div class="send-input">
+                <div class="send-input-form">
+                    <form id="ymChatForm">
+                        <input class="form-control input-lg input auto-complete" id="ymMsgInput" type="text"
+                            placeholder="Type your message ..." autocomplete="off">
+                    </form>
+                    <ul class="language-menu hide">
+                        <li class="EN">English</li>
+                    </ul>
+                    <div class="listeningAudioText hide">I am listening...</div>
+                    <div class="listeningAudio hide"><i class="fa fa-times close-listening" aria-hidden="true"></i>
+                        <svg class="listeningSVG">
+                            <path class="listeningPath" d="M10,10 L50,100 L90,50"></path>
+                        </svg>
+                    </div>
+                    <div class="send-button hide"><i id="sendIcon" title="Send" class="fa fa-send send"></i></div>
+                    <div class="language-button moveRight" style="display: none;"><i class="fa fa-language"
+                            aria-hidden="true"></i></div>
+                    <div class="home-button hide"><i class="fa fa-home" aria-hidden="true"></i></div>
+                    <div class="mic-button" style="display: none;">
+                        <div class="tap-to-speak hide">Tap to speak</div>
+                        <img class="speak-logo speak-logo-cursor"
+                            src="https://cdn.yellowmessenger.com/files/images/voice-logo.png">
+                    </div>
+                </div>
+                <div class="input-actions hidden-input-brand">
+                    <div class="powered-by hide">yellow<span style="font-weight: normal;">messenger</span></div>
+                    <span id="bot-type"></span>
+                    <div class="ym-action-items"><i class="call-button fa fa-phone" style="display: none"></i> <i
+                            id="emailIcon" class="fa fa-envelope hide"></i>
+                        <i class="fa fa-paperclip attach" style="display: none; right: 5px;">
+                            <form id="fileForm"
+                                action="https://app.yellowmessenger.com/api/chat/upload?bot=x1588070234479&amp;uid=136202586651719492908004036"
+                                method="post" enctype="multipart/form-data" target="upload_target">
+                                <input type="file" title="Upload file" name="images" id="chatFile">
+                                <input type="hidden" name="botID" value="">
+                            </form>
+                        </i>
+                        <i class="speak-icon fa fa-volume-off hide"></i>
+                        <div class="language-action-tab hide"><i class="fa fa-language" aria-hidden="true"></i></div>
+                        <i title="Main menu" class="fa fa-home"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript">
-        var config = { autoOpen: true };
-        var sPageURL = window.location.search.substring(1);
-        var temp;
-        sPageURL.split("&").forEach(function (item) {
-            temp = item.split("=");
-            config[temp[0]] = temp[1] && temp[1];
-        })
-        window.ymConfig = config;
-        (function () { var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/sdk/dist/main.js"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, l() } })();
+        window.ymConfig = {
+            host: 'https://app.yellowmessenger.com',
+            xmpp_domain: 'xmpp.yellowmssngr.com',
+            lite: true
+        };
+
+        let query = window.location.search.substring(1);
+        let vars = query.split('&');
+        for (let i = 0; i < vars.length; i++) {
+            let pair = vars[i].split('=');
+            window.ymConfig[pair[0].replace('ym.', '')] = decodeURIComponent(pair[1]);
+        }
     </script>
+    <script src="https://cdn.yellowmessenger.com/plugin/latest/dist/widget.min.js"></script>
 </body>
 
 </html>
