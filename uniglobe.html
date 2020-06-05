@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#submit").click(function () {
+                if ($("#email").val() && $("#password").val()) {
+                    window.parent.postMessage(JSON.stringify({
+                        event_code: 'ym-client-event', data: JSON.stringify({
+                            event: {
+                                code: "auth",
+                                data: {
+                                    login: $("#email").val(),
+                                    password: $("#password").val()
+                                }
+                            }
+                        })
+                    }), '*');
+                    $('#custom :input').attr('disabled', 'disabled');
+                    $('#custom').fadeTo("slow", 0.15, function () {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor', 'default');
+                        $('#add').append('Submitted');
+                    });
+                } else {
+                    alert("Please enter email and password");
+                }
+            })
+        })
+    </script>
+    <style>
+        .uniglobeBg {
+            /* background-image: url(https://uniglobe.com/content/02_duffelbag-HongKong-20200221170043.jpg); */
+            /* background-color: #00476B; */
+            background-size: auto auto;
+            background-repeat: no-repeat;
+            background-position: top;
+            height: auto;
+            opacity: 0.9;
+            z-index: -100000;
+            position: absolute;
+        }
+        .slide_overlay {
+            width: 100vw;
+            height: 100vh;
+        }
+        @media (max-width: 479px) {
+            .uniglobeBg {
+                background-size: auto 265px;
+            }
+        }
+        .slide {
+            /* position: absolute;
+            width: 100%; */
+            height: 450px;
+            /* top: 0;
+            left: 0; */
+            background: transparent linear-gradient(180deg, #fffFFF00 49%, #2d375E80 51%, #151e47 59%) 0 0 no-repeat padding-box;
+            opacity: 1;
+            /* z-index: 0; */
+        }
+        .form-control {
+            width: 95%;
+        }
+    </style>
+</head>
+<body >
+    <!-- <div class="uniglobeBg">hi</div> -->
+    <div class="uniglobeBg"
+        style="background-image: url(https://uniglobe.com/content/02_duffelbag-HongKong-20200221170043.jpg);">
+        <div class="slide_overlay slide">
+        </div>
+    </div>
+    <div class="container" style="padding: 2%; opacity: 0.9;" id="custom">
+        <h3 style="text-align:center;color: #FFFFFF;opacity: 1;"><b>LOGIN PAGE</b></h3>
+        <div class="form-group" style="margin-top: 2%">
+            <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" id="password" placeholder="Password" name="pwd">
+        </div>
+        <div class="text-center">
+            <button id="submit" type="submit" class="btn btn-secondary " style=" margin-top: 2%">Login</button>
+        </div>
+    </div>
+    <center><strong>
+            <ul id="add"></ul>
+        </strong></center>
+</body>
+</html>
