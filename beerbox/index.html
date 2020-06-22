@@ -46,8 +46,47 @@
                 }
                 i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
             }
+            //pixel code starts here
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '237912880965916');
+            fbq('track', 'PageView');
+
+            window.addEventListener("message", function (event) {
+                var event = JSON.parse(event.data);
+                console.log("event", event);
+                if (event.event_code === 'custom-event') {
+                    var eventData = event.data.data;
+                    console.log("eventData", eventData);
+
+                    if (eventData && eventData.type === 'facebook-pixel') {
+                        console.log("eventData", eventData);
+                        var args = ['track', eventData.data.name, eventData.data.data]
+                        console.log("args", args);
+                        fbq('track', eventData.data.name, eventData.data.data);
+                    }
+                }
+            }, false);
+            //pixel code ends here
+
         })();
     </script>
+
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=237912880965916&ev=PageView&noscript=1" />
+    </noscript>
+
+
 </body>
 
 </html>
