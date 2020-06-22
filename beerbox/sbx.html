@@ -62,7 +62,6 @@
             fbq('init', '237912880965916');
             fbq('track', 'PageView');
 
-            //pixel code starts here
             window.addEventListener("message", function (event) {
                 var event = JSON.parse(event.data);
                 console.log("event", event);
@@ -78,6 +77,7 @@
                     }
                 }
             }, false);
+            //pixel code ends here
         })();
 
     </script>
