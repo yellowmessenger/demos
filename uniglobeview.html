@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial;
+            /* font-size: 12px; */
+        }
+        .btn-shadow {
+            box-shadow: 3px 4px 0px 0px #6c757d82;
+            /* padding-bottom: 10px; */
+        }
+        /* button{
+            padding-bottom: 20px;
+        } */
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        /* Style the buttons inside the tab */
+        button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        /* Create an active/current tablink class */
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <!-- <div class="tab"> -->
+    <div class="row">
+        <div class="col-12">
+            <!-- <div class="pb-3"> -->
+            <button class="btn btn-default btn-shadow" onclick="openCity(event, 'Flight details')">Flight
+                details</button>
+            <!-- </div> -->
+            <!-- <div class="pb-3"> -->
+            <button class="btn btn-default btn-shadow" onclick="openCity(event, 'Fare summary')">Fare summary</button>
+            <!-- </div> -->
+        </div>
+    </div>
+    <!-- </div> -->
+    <div id="Flight details" class="tabcontent">
+        <h3>Flight details</h3>
+        <div class="row">
+            <div class="col-12">
+                Source
+            </div>
+            <div class="col-12">
+                Destination
+            </div>
+            <div class="col-12">
+                Boarding Date
+            </div>
+            <div class="col-12">
+                duration
+            </div>
+            <br><br>
+            <div class="col-2">
+                <img src="/Airline Logos/Indigo.jpg" class="img-responsive" alt="">
+            </div>
+            <div class="col-10">
+                Indigo 6E FlightNo.| 320
+            </div>
+            <div class="col-12">
+                <h1></h1>
+            </div>
+            <br>
+            <div class="col-4">
+                11:20 <br>
+                tue,30 jun 20 <br>
+                Hyderabad <br>
+            </div>
+            <div class="col-4">
+                <u>02 hrs 20 mins</u>
+            </div>
+            <div class="col-4">
+                13:40 <br>
+                tue,30 jun 20 <br>
+                New Delhi <br>
+            </div>
+        </div>
+    </div>
+    <div id="Fare summary" class="tabcontent">
+        <div class="col-12">
+            Airline- Indigo
+        </div>
+        <table class="table table-responsive">
+            <tr>
+                <th>
+                    fare type
+                </th>
+                <th>
+                    Cancellation Charges
+                </th>
+                <th>
+                    Reissue charges
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Corporate
+                </td>
+                <td>
+                    NIL can be done before 24 hours of departure
+                </td>
+                <td>
+                    NIL can be done before 24 hours of departure
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Retail
+                </td>
+                <td>
+                    3000  can be done before 24 hours of departure
+                </td>
+                <td>
+                    3000  can be done before 24 hours of departure
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Flexi
+                </td>
+                <td>
+                    "0-3 days*: Up to INR 3000 <br>
+                    4 days * & above:No Fee"
+                </td>
+                <td>
+                    "0-3 days* : INR 3500
+                    4 days* &above : INR 500"
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
