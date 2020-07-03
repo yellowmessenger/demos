@@ -19,6 +19,20 @@
             }
         })();
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script>
+        // TODO wait till iframe loaded
+        setTimeout(() => {
+            let doc = document.getElementById('ymIframe');
+            doc = doc.contentDocument;
+            let r = doc.lastChild.getElementsByClassName('title');
+            if (r.length) {
+                r = r[0];
+                r.innerText = window.ymConfig.payload;
+            }
+        }, 1000);
+    </script>
 </body>
 
-</html>
+</html>/
