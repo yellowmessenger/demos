@@ -4,7 +4,8 @@
 <body>
     <script type="text/javascript">
         window.ymConfig = {
-            bot: 'x1592376562393',
+            //prod botID
+            bot: 'x1592540926480',
             payload: 'LSPR'
         };
         (function () {
@@ -22,7 +23,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script>
-        // TODO wait till iframe loaded
+        //wait till iframe loaded
         setTimeout(() => {
             let doc = document.getElementById('ymIframe');
             doc = doc.contentDocument;
@@ -31,8 +32,8 @@
                 r = r[0];
                 r.innerText = window.ymConfig.payload;
             }
-        }, 1000);
+        }, 2000);
     </script>
 </body>
 
-</html>/
+</html>
