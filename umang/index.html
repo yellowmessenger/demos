@@ -1,18 +1,57 @@
+<!DOCTYPE html>
 <html>
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
     <title>Usha from Umang</title>
 </head>
-
 <body>
-    <!-- https://cdn.yellowmessenger.com/6yHo8POxLOGm1594069521255.jpg -->
-    <!-- https://cdn.yellowmessenger.com/8VKCLqGLS5HI1594068882295.jpg -->
-    <div style="text-align: center"><img style="width: 100%" src="https://cdn.yellowmessenger.com/bFhqv6nDIDEF1594163785019.jpg"/></div>
-    <script type="text/javascript">
-        // window.ymConfig = { bot: 'x1593710665132' }; (function () { var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/main.js"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1) } })();
-        window.ymConfig = { bot: 'x1593710665132' };  (function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://app.yellowmessenger.com/widget/main.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
-    </script>
+<script type="text/javascript">
+    window.ymConfig = {
+        bot: 'x1593710665132',
+        containerId: 'test'
+    };
+    (function () {
+        var w=window,ic=w.YellowMessenger;
+        if("function"===typeof ic)
+            ic("reattach_activator"),ic("update",ymConfig);
+        else{
+            var d=document,i=function(){i.c(arguments)};
+            function l(){
+                var e=d.createElement("script");
+                e.type="text/javascript",e.async=!0,e.src="https://app.yellowmessenger.com/widget/main.js";
+                var t=d.getElementsByTagName("script")[0];
+                t.parentNode.insertBefore(e,t)
+            }
+            i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}
+    })();
+</script>
 </body>
 
+<style>
+    body {
+        /* Location of the image */
+        background-image: url('https://cdn.yellowmessenger.com/bFhqv6nDIDEF1594163785019.jpg');
+
+        /* Background image is centered vertically and horizontally at all times */
+        background-position: center center;
+
+        /* Background image doesn't tile */
+        background-repeat: no-repeat;
+
+        /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+        background-attachment: fixed;
+
+        /* This is what makes the background image rescale based
+     on the container's size */
+        background-size: cover;
+
+        /* Set a background color that will be displayed
+     while the background image is loading */
+        background-color: #464646;
+    }
+</style>
 
 </html>
