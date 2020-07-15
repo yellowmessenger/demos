@@ -1,445 +1,601 @@
 <html>
+
 <head>
-    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
-    <style type="text/css">
-        ol {
-            margin: 0;
-            padding: 0
-        }
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+        <style type="text/css">
+                ol {
+                        margin: 0;
+                        padding: 0
+                }
 
-        table td,
-        table th {
-            padding: 0
-        }
+                table td,
+                table th {
+                        padding: 0
+                }
 
-        .c1 {
-            -webkit-text-decoration-skip: none;
-            color: #1155cc;
-            font-weight: 400;
-            text-decoration: underline;
-            vertical-align: baseline;
-            text-decoration-skip-ink: none;
-            font-size: 11pt;
-            font-family: "Arial";
-            font-style: normal
-        }
+                .c1 {
+                        -webkit-text-decoration-skip: none;
+                        color: #1155cc;
+                        font-weight: 400;
+                        text-decoration: underline;
+                        vertical-align: baseline;
+                        text-decoration-skip-ink: none;
+                        font-size: 11pt;
+                        font-family: "Arial";
+                        font-style: normal
+                }
 
-        .c9 {
-            padding-top: 0pt;
-            padding-bottom: 0pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-            text-align: left;
-            height: 11pt
-        }
+                .c9 {
+                        padding-top: 0pt;
+                        padding-bottom: 0pt;
+                        line-height: 1.15;
+                        orphans: 2;
+                        widows: 2;
+                        text-align: left;
+                        height: 11pt
+                }
 
-        .c4 {
-            color: #000000;
-            font-weight: 400;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 11pt;
-            font-family: "Arial";
-            font-style: normal
-        }
+                .c4 {
+                        color: #000000;
+                        font-weight: 400;
+                        text-decoration: none;
+                        vertical-align: baseline;
+                        font-size: 11pt;
+                        font-family: "Arial";
+                        font-style: normal
+                }
 
-        .c8 {
-            padding-top: 24pt;
-            padding-bottom: 6pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-            text-align: center
-        }
+                .c8 {
+                        padding-top: 24pt;
+                        padding-bottom: 6pt;
+                        line-height: 1.15;
+                        orphans: 2;
+                        widows: 2;
+                        text-align: center
+                }
 
-        .c6 {
-            color: #000000;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 11pt;
-            font-family: "Arial";
-            font-style: normal
-        }
+                .c6 {
+                        color: #000000;
+                        text-decoration: none;
+                        vertical-align: baseline;
+                        font-size: 11pt;
+                        font-family: "Arial";
+                        font-style: normal
+                }
 
-        .c7 {
-            color: #2a2828;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 31.5pt;
-            font-family: "Arial";
-            font-style: normal
-        }
+                .c7 {
+                        color: #2a2828;
+                        text-decoration: none;
+                        vertical-align: baseline;
+                        font-size: 31.5pt;
+                        font-family: "Arial";
+                        font-style: normal
+                }
 
-        .c0 {
-            padding-top: 12pt;
-            padding-bottom: 12pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
+                .c0 {
+                        padding-top: 12pt;
+                        padding-bottom: 12pt;
+                        line-height: 1.15;
+                        orphans: 2;
+                        widows: 2;
+                        text-align: left
+                }
 
-        .c5 {
-            text-decoration-skip-ink: none;
-            -webkit-text-decoration-skip: none;
-            color: #1155cc;
-            text-decoration: underline
-        }
+                .c5 {
+                        text-decoration-skip-ink: none;
+                        -webkit-text-decoration-skip: none;
+                        color: #1155cc;
+                        text-decoration: underline
+                }
 
-        .c10 {
-            background-color: #ffffff;
-            /* max-width: 468pt; */
-            padding: 10px;
-        }
+                .c10 {
+                        background-color: #ffffff;
+                        /* max-width: 468pt; */
+                        padding: 10px;
+                }
 
-        .c2 {
-            color: inherit;
-            text-decoration: inherit
-        }
+                .c2 {
+                        color: inherit;
+                        text-decoration: inherit
+                }
 
-        .c3 {
-            font-weight: 700
-        }
+                .c3 {
+                        font-weight: 700
+                }
 
-        .title {
-            padding-top: 0pt;
-            color: #000000;
-            font-size: 26pt;
-            padding-bottom: 3pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
+                .title {
+                        padding-top: 0pt;
+                        color: #000000;
+                        font-size: 26pt;
+                        padding-bottom: 3pt;
+                        font-family: "Arial";
+                        line-height: 1.15;
+                        page-break-after: avoid;
+                        orphans: 2;
+                        widows: 2;
+                        text-align: left
+                }
 
-        .subtitle {
-            padding-top: 0pt;
-            color: #666666;
-            font-size: 15pt;
-            padding-bottom: 16pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
+                .subtitle {
+                        padding-top: 0pt;
+                        color: #666666;
+                        font-size: 15pt;
+                        padding-bottom: 16pt;
+                        font-family: "Arial";
+                        line-height: 1.15;
+                        page-break-after: avoid;
+                        orphans: 2;
+                        widows: 2;
+                        text-align: left
+                }
 
-        li {
-            color: #000000;
-            font-size: 11pt;
-            font-family: "Arial"
-        }
+                li {
+                        color: #000000;
+                        font-size: 11pt;
+                        font-family: "Arial"
+                }
 
-        p {
-            margin: 0;
-            color: #000000;
-            font-size: 11pt;
-            font-family: "Arial"
-        }
+                p {
+                        margin: 0;
+                        color: #000000;
+                        font-size: 11pt;
+                        font-family: "Arial"
+                }
 
-        h1 {
-            padding-top: 20pt;
-            color: #000000;
-            font-size: 20pt;
-            padding-bottom: 6pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
+                h1 {
+                        padding-top: 20pt;
+                        color: #000000;
+                        font-size: 20pt;
+                        padding-bottom: 6pt;
+                        font-family: "Arial";
+                        line-height: 1.15;
+                        page-break-after: avoid;
+                        orphans: 2;
+                        widows: 2;
+                        text-align: left
+                }
 
-        h2 {
-            padding-top: 18pt;
-            color: #000000;
-            font-size: 16pt;
-            padding-bottom: 6pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
+                h2 {
+                        padding-top: 18pt;
+                        color: #000000;
+                        font-size: 16pt;
+                        padding-bottom: 6pt;
+                        font-family: "Arial";
+                        line-height: 1.15;
+                        page-break-after: avoid;
+                        orphans: 2;
+                        widows: 2;
+                        text-align: left
+                }
 
-        h3 {
-            padding-top: 16pt;
-            color: #434343;
-            font-size: 14pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
+                h3 {
+                        padding-top: 16pt;
+                        color: #434343;
+                        font-size: 14pt;
+                        padding-bottom: 4pt;
+                        font-family: "Arial";
+                        line-height: 1.15;
+                        page-break-after: avoid;
+                        orphans: 2;
+                        widows: 2;
+                        text-align: left
+                }
 
-        h4 {
-            padding-top: 14pt;
-            color: #666666;
-            font-size: 12pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
+                h4 {
+                        padding-top: 14pt;
+                        color: #666666;
+                        font-size: 12pt;
+                        padding-bottom: 4pt;
+                        font-family: "Arial";
+                        line-height: 1.15;
+                        page-break-after: avoid;
+                        orphans: 2;
+                        widows: 2;
+                        text-align: left
+                }
 
-        h5 {
-            padding-top: 12pt;
-            color: #666666;
-            font-size: 11pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
+                h5 {
+                        padding-top: 12pt;
+                        color: #666666;
+                        font-size: 11pt;
+                        padding-bottom: 4pt;
+                        font-family: "Arial";
+                        line-height: 1.15;
+                        page-break-after: avoid;
+                        orphans: 2;
+                        widows: 2;
+                        text-align: left
+                }
 
-        h6 {
-            padding-top: 12pt;
-            color: #666666;
-            font-size: 11pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            font-style: italic;
-            orphans: 2;
-            widows: 2;
-            text-align: left
-        }
-    </style>
+                h6 {
+                        padding-top: 12pt;
+                        color: #666666;
+                        font-size: 11pt;
+                        padding-bottom: 4pt;
+                        font-family: "Arial";
+                        line-height: 1.15;
+                        page-break-after: avoid;
+                        font-style: italic;
+                        orphans: 2;
+                        widows: 2;
+                        text-align: left
+                }
+        </style>
 </head>
 
 <body class="c10">
-    <h1 class="c8" id="h.fg68cq1ptdx1"><span class="c3 c7">PRIVACY POLICY</span></h1>
-    <p class="c0"><span class="c4">Effective: 25 July 2016</span></p>
-    <p class="c0"><span>This privacy policy (&quot;</span><span class="c3">Privacy</span><span>&nbsp;</span><span
-            class="c3">Policy</span><span>&quot;) forms an electronic contract within the provisions of the (Indian)
-            Information Technology Act, 2000 (&quot;</span><span class="c3">IT Act</span><span class="c4">&quot;) and
-            the rules made thereunder and the amended provisions pertaining to electronic documents/records in various
-            statutes as amended by the IT Act, from time to time. This Privacy Policy does not require any physical,
-            electronic or digital signature and this Privacy Policy shall be a legally binding document between you and
-            Crown Beers India Private Limited.</span></p>
-    <p class="c0"><span>By visiting this Site (as defined in the Terms of Use available at </span><span class="c5"><a
-                class="c2"
-                href="https://yellow.chat/beerbox/terms_of_use.html">link</a></span><span>),
-            mobile applications, or other mobile sites (collectively, the &ldquo;</span><span
-            class="c3">Website</span><span>&rdquo;), you agree to be bound by the terms and conditions of this Privacy
-            Policy and the Terms of Use available at </span><span class="c5"><a class="c2"
-                href="https://yellow.chat/beerbox/terms_of_use.html">link</a></span><span
-            class="c4">). In the event you are not agreeable with the terms and conditions hereof, you are requested to
-            please refrain from using this Website.</span></p>
-    <p class="c0"><span>Crown Beers India Private Limited and its affiliates (&ldquo;</span><span
-            class="c3">we</span><span>&rdquo; or &ldquo;</span><span class="c3">us</span><span class="c4">&rdquo;) value
-            and respect your privacy, and we have prepared this Privacy Policy to provide you with important information
-            about how we collect, use, and share the information about you that we may collect. This Privacy Policy
-            applies to the Website. It does not govern or apply to information collected or used by Crown Beers India
-            Private Limited or its affiliates through other means.</span></p>
-    <p class="c0"><span>1.</span><span class="c6 c3">&nbsp; Information We Collect</span></p>
-    <p class="c0"><span>The Website may during the course of the your usage of the Website collect the following
-            personal and non-personal information (&ldquo;</span><span class="c3">Information</span><span
-            class="c4">&rdquo;) and such other information from you as may be required for accessing this Website from
-            time to time. We may collect information about our users in various ways, including those described below.
-            &nbsp;For example, we may collect information that you provide to us, information that we collect through
-            your use of the Website, and information that we collect from publicly available sources or from third
-            parties. We also may collect other information about you, your device, or your use of the Website in ways
-            that we describe to you at the point of collection or otherwise with your consent.</span></p>
-    <p class="c0"><span>(a) </span><span class="c3">Information You Provide to Us</span><span class="c4">: In order to
-            use the Website or to register or otherwise interact with the Website, you may need to provide content or
-            other information. &nbsp;For example, during account registration we may ask for information such as your
-            name, age, street address, city, postcode, mobile telephone number, email address, comments, suggestions or
-            any other information that you may provide us with when you participate in a contest or activity.</span></p>
-    <p class="c0"><span>(b) </span><span class="c3">Information About Your Use of the Website and Other Interactions
-            with Us</span><span>:</span><span class="c3">&nbsp; </span><span>In addition to the information you provide
-            to us directly, we may collect information about your use of the Website, such as device information, your
-            IP address, usage and location data. To do this, we may use cookies, web beacons (sometimes called
-            &ldquo;</span><span class="c3">action tags</span><span>&rdquo; or &ldquo;</span><span class="c3">one pixel
-            .gif files</span><span>&rdquo;), web server logs, and other statistics programs as explained in more
-            detailed </span><span class="c5"><a class="c2"></a> </p>
-               
-    <p class="c0"><span>(c) </span><span class="c3">Information From Third-Party Sources</span><span class="c4">:We may
-            receive information about you from publicly and commercially available sources. &nbsp;For example, we may
-            receive information about you from a social media site if you connect to the Website through that site. We
-            may combine your information with information we receive from third-party sources.</span></p>
-    <p class="c0"><span>2. &nbsp;</span><span class="c6 c3">How We Use Your Information</span></p>
-    <p class="c0"><span>(a) </span><span class="c3">To Provide, Manage, and Improve functionality our
-            Website</span><span class="c4">:We may use your information to provide, manage, and improve our operations,
-            features and Website, including to deliver the Website, personalize content, understand how you use and
-            interact with the Website. For example, we may use your information to process a transaction you initiate,
-            to respond to inquiries or requests we receive from you or otherwise communicate with you about the Website,
-            to conduct surveys and research and test features in development, and to diagnose and correct technical
-            issues relating to the performance of the Website.</span></p>
-    <p class="c0"><span>(b) </span><span class="c3">To Deliver Communications</span><span>:We may use your information
-            to deliver communications to you both on and off the Website and to improve those communications so that
-            they are more relevant to you. 
-    <p class="c0"><span>(c) </span><span class="c3">To Protect the Rights of the Website and Others</span><span
-            class="c4">:We may use your information as we believe is necessary or appropriate to protect, enforce, or
-            defend the legal rights, privacy, safety, or property of the Website, our employees or agents, or other
-            users and to comply with applicable law.</span></p>
-    <p class="c0"><span class="c4">If there are purposes other than those identified above we will identify the purposes
-            for which we wish to collect your personal information at or before the time the information is collected or
-            before using your personal information for a purpose not previously identified.</span></p>
-    <p class="c0"><span class="c4">We will retain your personal information only as long as necessary for fulfillment of
-            the purposes described above or as required by law.</span></p>
-    <p class="c0"><span class="c4">You will be able to unsubscribe from receiving marketing information from us, by
-            simply texting back &quot;stop&quot; or emailing back &quot;Unsubscribe&quot; at any time to any text
-            message or by following the &#39;unsubscribe&#39; link in the e-mail that we may send to you. Alternatively,
-            you may send us a request using the contact details as mentioned in this Privacy Policy.</span></p>
-    <p class="c0"><span>3. </span><span class="c3 c6">How We Share Your Information</span></p>
-    <p class="c0"><span>(a)</span><span class="c3">&nbsp;Affiliated Companies and Vendors</span><span class="c4">:We may
-            share information we collect among our affiliated companies and with vendors, service providers, and other
-            partners that provide contractual Website to us.</span></p>
-    <p class="c0"><span>(b)</span><span class="c3">&nbsp;Business Partners</span><span class="c4">: We may also share
-            your information with business partners to provide you with our features and Website and for direct
-            marketing purposes. For example, if you log into the Website with a social media service or if you connect a
-            social media account with the Website, we may share your information with that social media service. If you
-            do not want your information shared in this way, do not connect your social media service account with the
-            Website. Crown Beers India Private Limited is not responsible for the privacy practices of these
-            entities.</span></p>
-    <p class="c0"><span>(c)</span><span class="c3">&nbsp;Third Parties that Provide Content or other Functionality:
-        </span><span class="c4">Some of the content, advertising, and functionality on our Website may be provided by
-            third parties, such as our advertisers and providers of social network plugins, and we may use third-party
-            advertising companies and media partners to serve ads on the Website. These third-parties may collect or
-            receive certain information about your use of the Website, including through the use of cookies, beacons,
-            and similar technologies, and this information may be combined with information collected across different
-            websites and online Website.</span></p>
-    <p class="c0"><span>(d) </span><span class="c3">Other Parties When Required by Law, As Necessary to Protect Our
-            Users and Website, or In Connection With a Corporate Transaction:</span><span class="c4">&nbsp;We may share
-            your information as we believe is necessary or appropriate to protect, enforce, or defend the legal rights,
-            privacy, security, integrity, safety, or property of the Website, our employees, agents or users, and to
-            comply with applicable law or legal process, including responding to requests from public and government
-            authorities and defending against third-party claims. We also reserve the right to transfer any information
-            in the event that we sell or transfer all or a portion of our business or assets to a third party, such as
-            in the event of a merger, acquisition, bankruptcy reorganization or other similar transaction.</span></p>
-    <p class="c0"><span>(e) </span><span class="c3">Otherwise With Your Consent or At Your Direction: </span><span
-            class="c4">In addition to the sharing described in this Privacy Policy, we may share information about you
-            with third parties whenever you consent to or direct such sharing. For example, if you voluntarily disclose
-            or post information to a community forum, such information will be published to the community and may be
-            published more widely by a member of the community or the nature of the forum.</span></p>
-    <p class="c0"><span>(f) </span><span class="c3">Aggregated Data</span><span class="c4">: We also may provide
-            aggregated data or data that we have taken other measures to de-identify to third parties.</span></p>
-    <p class="c0"><span>4. </span><span class="c6 c3">Links to Third-Party Sites</span></p>
-    <p class="c0"><span class="c4">The Website may link to third-party websites and Website that are outside our
-            control. &nbsp;We are not responsible for the security or privacy of any information collected by other
-            websites, applications, or other Website or by your mobile operating system operator, wireless carrier, or
-            other similar providers. You should exercise caution, and review the privacy statements applicable to the
-            third-party websites and Website you use.</span></p>
-    <p class="c0"><span>5. </span><span class="c6 c3">Data Security</span></p>
-    <p class="c0"><span class="c4">We have in place physical and technical measures to protect information we collect
-            online. However, as effective as these measures may be, no security system is impenetrable. We cannot
-            guarantee the security of our databases, nor can we guarantee that the information you supply will not be
-            intercepted while being transmitted to us over the Internet.</span></p>
-    <p class="c0"><span>6. </span><span class="c6 c3">Other Important Information</span></p>
-    <p class="c0"><span>(a) </span><span class="c3">Legal Drinking Age</span><span class="c4">: Our Website are not
-            intended for individuals under the legal drinking age. If we learn that an individual under the legal
-            drinking age in his/her country of residence and the country from which he/she is accessing the Site has
-            provided us with personal information, we will delete it.</span></p>
-    <p class="c0"><span>(b) </span><span class="c3">Do-Not-Track Signals and Similar Mechanisms</span><span
-            class="c4">:Some web browsers may transmit &ldquo;do-not-track&rdquo; signals to the websites with which the
-            user communicates. Because of differences in how web browsers incorporate and activate this feature, it is
-            not always clear whether users intend for these signals to be transmitted, or whether they even are aware of
-            them. Because there currently is no industry standard concerning what, if anything, websites should do when
-            they receive such signals, the Website currently do not take action in response to these signals. If and
-            when a final standard is established and accepted, we will reassess how to respond to these signals.</span>
-    </p>
-    <p class="c0"><span>(c)</span><span class="c3">&nbsp;International Transfers</span><span class="c4">: Please be
-            aware that we may transfer your personal information to another country where privacy standards may not be
-            equivalent to those in your country. </span></p>
-    <p class="c0"><span>(d) </span><span class="c3">Changes to Our Privacy</span><span>&nbsp;</span><span
-            class="c3">Policy: </span><span class="c4">We may modify this Privacy Policy. We will notify you of changes
-            by posting changes here or by other appropriate means. Any changes to the Privacy Policy will become
-            effective when the updated policy is posted on the Website. Your use of the Website or your provision of
-            information to use the Website following such changes indicates your acceptance of the revised Privacy
-            Policy.</span></p>
-    <p class="c0"><span>(e) </span><span class="c3">Queries</span><span class="c4">: If, at any time, you have any
-            grievances, requests or queries concerning this Privacy Policy or want to update your details, please
-            contact us at:</span></p>
-    <p class="c0"><span class="c6 c3">Name: Crown Beers India Private Limited</span></p>
-    <p class="c0"><span class="c3">Address</span><span class="c4">: &nbsp;8-2-684/A. Road No. 12, Banjara Hills,
-            Hyderabad-500 034, Telangana, India</span></p>
-    <p class="c0"><span class="c3">Telephone</span><span class="c4">:
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-9711550015</span></p>
-    <p class="c0"><span class="c3">E-mail</span><span class="c4">: &nbsp; &nbsp; CustomerCare@in.ab-inbev.com
-            &nbsp;</span></p>
-    <p class="c0"><span class="c4">Thank you for visiting our Website.</span></p>
-    <p class="c0"><span class="c4">***********************</span></p>
-    <p class="c0"><span class="c6 c3">(1) How We Use Cookies, Web Beacons, and similar technologies </span></p>
-    <p class="c0"><span>We and third parties that provide content, marketing or functionality on the Website, may use
-            cookies, web beacons (sometimes called &ldquo;</span><span class="c3">action tags</span><span>&rdquo; or
-            &ldquo;</span><span class="c3">one pixel .gif files</span><span class="c4">&rdquo;), web server logs,
-            standard web measurement or other statistics programs, and similar technologies to facilitate administration
-            and navigation on the Site, to better understand and improve the Website, to determine and improve the
-            marketing shown to you here or elsewhere, and to provide you with a customized online experience.</span></p>
-    <p class="c0"><span>(a)</span><span class="c3">&nbsp;Cookies</span><span class="c4">:Cookies are small files that
-            are placed on your computer when you visit a website. Cookies may be used to store a unique identification
-            number tied to your computer or device so that you can be recognized as the same user across one or more
-            browsing sessions, and across one or more sites. Cookies serve many useful purposes. For example:</span></p>
-    <p class="c0"><span class="c4">(i) Cookies can remember your sign-in credentials so you do not have to enter those
-            credentials each time you visit a Service;</span></p>
-    <p class="c0"><span class="c4">(ii) Cookies can help us and third parties understand which parts of the Website are
-            the most popular because they help us see which pages and features visitors access and how much time they
-            spend on the pages. By studying this kind of information, we are better able to adapt the Website and
-            provide you with a better experience;</span></p>
-    <p class="c0"><span class="c4">(iii) Cookies help us and third parties understand which ads you have seen so that
-            you do not receive the same ad each time you access a Service.</span></p>
-    <p class="c0"><span class="c4">Most browsers accept cookies automatically, but can be configured not to do so or to
-            notify the user when a cookie is being sent. If you wish to disable cookies, refer to your browser help menu
-            to learn how to disable cookies. If you disable browser cookies or flash cookies, it may interfere with the
-            proper functioning of the Website.</span></p>
-    <p class="c0"><span>(b) </span><span class="c3">Beacons</span><span>: We, along with third parties, also may use
-            technologies called beacons (or &ldquo;</span><span class="c3">pixels</span><span class="c4">&rdquo;) that
-            communicate information from your device to a server. Beacons can be embedded in online content, videos, and
-            emails, and can allow a server to read certain types of information from your device, know when you have
-            viewed particular content or a particular email message, determine the time and date on which you viewed the
-            beacon, and the IP address of your device. &nbsp;We and third parties use beacons for a variety of purposes,
-            including to analyze the use of the Website and (in conjunction with cookies) to provide content and ads
-            that are more relevant to you.</span></p>
-    <p class="c0"><span>(c)</span><span class="c3">&nbsp;Local Storage &amp; Other Tracking
-            Technologies</span><span>:We, along with third parties, may use other kinds of technologies, such as Local
-            Shared Objects (also referred to as &ldquo;</span><span class="c3">Flash cookies</span><span>&rdquo;) and
-            HTML5 local storage, in connection with the Website. These technologies are similar to the cookies discussed
-            above in that they are stored on your device and can be used to store certain information about your
-            activities and preferences. However, these technologies may make use of different parts of your device from
-            standard cookies, and so you might not be able to control them using standard browser tools and settings.
-            For information about disabling or deleting information contained in Flash cookies, please click
-        </span><span class="c5"><a class="c2"
-                href="https://www.google.com/url?q=http://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html&amp;sa=D&amp;ust=1591284960685000">here</a></span><span
-            class="c4">. </span></p>
-    <p class="c0"><span>(2) </span><span class="c6 c3">Examples of usage information, including location information, we
-            may collect include the following:</span></p>
-    <p class="c0"><span class="c4">- Device information&mdash;such as your hardware model, IP address, other unique
-            device identifiers, operating system version, and settings of the device you use to access the
-            Website.</span></p>
-    <p class="c0"><span class="c4">- Usage information&mdash;such as information about the Website you use, the time and
-            duration of your use of the Website and other information about your interaction with content offered
-            through a Service, and any information stored in cookies and similar technologies that we have set on your
-            device. </span></p>
-    <p class="c0"><span class="c4">- Location information&mdash;such as your device&rsquo;s GPS signal or information
-            about nearby WiFi access points, location beacons and cell towers that may be transmitted to us when you use
-            the Website or certain location-based informational, marketing or public service applications that we or our
-            business partners offer.</span></p>
-    <p class="c0"><span>(3) </span><span class="c6 c3">Targeted Advertising</span></p>
-    <p class="c0"><span>In some cases, we and advertisers on the Website, work with third-party partners to help deliver
-            advertisements of third parties tailored to your interests. These vendors include ad networks, audience
-            segment providers, ad serving vendors. Through tracking technologies such as cookies, these parties may
-            collect information about your online activity (e.g., the sites and pages you have visited) in order to
-            deliver ads on our Website and other websites and online Website that are relevant to you. You can learn
-            more about targeted advertising and make certain privacy choices </span><span class="c5"><a class="c2"
-                href="https://www.google.com/url?q=http://www.aboutads.info/&amp;sa=D&amp;ust=1591284960686000">here</a></span><span
-            class="c4">.</span></p>
-    <p class="c9"><span class="c4"></span></p>
+        <h1 class="c8" id="h.fg68cq1ptdx1"><span class="c3 c7">Terms and Conditions</span></h1>
+        <p class="c0"> For your safety during the Covid-19 lockdown, you can place your orders
+                        remotely on this link.</span></p>
+        <p class="c0">To order liquor, you must have a valid drinking permit. You can apply for
+                        permits on</span><a class="c2" href="https://stateexcise.maharashtra.gov.in/"> https://stateexcise.maharashtra.gov.in</a>and <a href="https://exciseservices.mahaonline.gov.in/"> https://exciseservices.mahaonline.gov.in</a>. An annual permit costs Rs. 100.</span></p>
+        <p class="c0">Home delivery timings are from 10AM to 6PM.</span></p>
+        <p class="c0">Failure to comply with excise rules can lead to prosecution. Consume
+                        moderately and enjoy responsibly!</span></p>
+        <h1 class="c8" id="h.fg68cq1ptdx1"><span class="c3 c7">PRIVACY POLICY</span></h1>
+        <p class="c0"><span class="c4">Effective: 25 July 2016</span></p>
+        <p class="c0"><span>This privacy policy (&quot;</span><span class="c3">Privacy</span><span>&nbsp;</span><span
+                        class="c3">Policy</span><span>&quot;) forms an electronic contract within the provisions of the
+                        (Indian)
+                        Information Technology Act, 2000 (&quot;</span><span class="c3">IT Act</span><span
+                        class="c4">&quot;) and
+                        the rules made thereunder and the amended provisions pertaining to electronic documents/records
+                        in various
+                        statutes as amended by the IT Act, from time to time. This Privacy Policy does not require any
+                        physical,
+                        electronic or digital signature and this Privacy Policy shall be a legally binding document
+                        between you and
+                        Crown Beers India Private Limited.</span></p>
+        <p class="c0"><span>By visiting this Site (as defined in the Terms of Use available at </span><span
+                        class="c5"><a class="c2"
+                                href="https://yellow.chat/beerbox/terms_of_use.html">link</a></span><span>),
+                        mobile applications, or other mobile sites (collectively, the &ldquo;</span><span
+                        class="c3">Website</span><span>&rdquo;), you agree to be bound by the terms and conditions of
+                        this Privacy
+                        Policy and the Terms of Use available at </span><span class="c5"><a class="c2"
+                                href="https://yellow.chat/beerbox/terms_of_use.html">link</a></span><span class="c4">).
+                        In the event you are not agreeable with the terms and conditions hereof, you are requested to
+                        please refrain from using this Website.</span></p>
+        <p class="c0"><span>Crown Beers India Private Limited and its affiliates (&ldquo;</span><span
+                        class="c3">we</span><span>&rdquo; or &ldquo;</span><span class="c3">us</span><span
+                        class="c4">&rdquo;) value
+                        and respect your privacy, and we have prepared this Privacy Policy to provide you with important
+                        information
+                        about how we collect, use, and share the information about you that we may collect. This Privacy
+                        Policy
+                        applies to the Website. It does not govern or apply to information collected or used by Crown
+                        Beers India
+                        Private Limited or its affiliates through other means.</span></p>
+        <p class="c0"><span>1.</span><span class="c6 c3">&nbsp; Information We Collect</span></p>
+        <p class="c0"><span>The Website may during the course of the your usage of the Website collect the following
+                        personal and non-personal information (&ldquo;</span><span class="c3">Information</span><span
+                        class="c4">&rdquo;) and such other information from you as may be required for accessing this
+                        Website from
+                        time to time. We may collect information about our users in various ways, including those
+                        described below.
+                        &nbsp;For example, we may collect information that you provide to us, information that we
+                        collect through
+                        your use of the Website, and information that we collect from publicly available sources or from
+                        third
+                        parties. We also may collect other information about you, your device, or your use of the
+                        Website in ways
+                        that we describe to you at the point of collection or otherwise with your consent.</span></p>
+        <p class="c0"><span>(a) </span><span class="c3">Information You Provide to Us</span><span class="c4">: In order
+                        to
+                        use the Website or to register or otherwise interact with the Website, you may need to provide
+                        content or
+                        other information. &nbsp;For example, during account registration we may ask for information
+                        such as your
+                        name, age, street address, city, postcode, mobile telephone number, email address, comments,
+                        suggestions or
+                        any other information that you may provide us with when you participate in a contest or
+                        activity.</span></p>
+        <p class="c0"><span>(b) </span><span class="c3">Information About Your Use of the Website and Other Interactions
+                        with Us</span><span>:</span><span class="c3">&nbsp; </span><span>In addition to the information
+                        you provide
+                        to us directly, we may collect information about your use of the Website, such as device
+                        information, your
+                        IP address, usage and location data. To do this, we may use cookies, web beacons (sometimes
+                        called
+                        &ldquo;</span><span class="c3">action tags</span><span>&rdquo; or &ldquo;</span><span
+                        class="c3">one pixel
+                        .gif files</span><span>&rdquo;), web server logs, and other statistics programs as explained in
+                        more
+                        detailed </span><span class="c5"><a class="c2"></a> </p>
+
+        <p class="c0"><span>(c) </span><span class="c3">Information From Third-Party Sources</span><span class="c4">:We
+                        may
+                        receive information about you from publicly and commercially available sources. &nbsp;For
+                        example, we may
+                        receive information about you from a social media site if you connect to the Website through
+                        that site. We
+                        may combine your information with information we receive from third-party sources.</span></p>
+        <p class="c0"><span>2. &nbsp;</span><span class="c6 c3">How We Use Your Information</span></p>
+        <p class="c0"><span>(a) </span><span class="c3">To Provide, Manage, and Improve functionality our
+                        Website</span><span class="c4">:We may use your information to provide, manage, and improve our
+                        operations,
+                        features and Website, including to deliver the Website, personalize content, understand how you
+                        use and
+                        interact with the Website. For example, we may use your information to process a transaction you
+                        initiate,
+                        to respond to inquiries or requests we receive from you or otherwise communicate with you about
+                        the Website,
+                        to conduct surveys and research and test features in development, and to diagnose and correct
+                        technical
+                        issues relating to the performance of the Website.</span></p>
+        <p class="c0"><span>(b) </span><span class="c3">To Deliver Communications</span><span>:We may use your
+                        information
+                        to deliver communications to you both on and off the Website and to improve those communications
+                        so that
+                        they are more relevant to you.
+                        <p class="c0"><span>(c) </span><span class="c3">To Protect the Rights of the Website and
+                                        Others</span><span class="c4">:We may use your information as we believe is
+                                        necessary or appropriate to protect, enforce, or
+                                        defend the legal rights, privacy, safety, or property of the Website, our
+                                        employees or agents, or other
+                                        users and to comply with applicable law.</span></p>
+                        <p class="c0"><span class="c4">If there are purposes other than those identified above we will
+                                        identify the purposes
+                                        for which we wish to collect your personal information at or before the time the
+                                        information is collected or
+                                        before using your personal information for a purpose not previously
+                                        identified.</span></p>
+                        <p class="c0"><span class="c4">We will retain your personal information only as long as
+                                        necessary for fulfillment of
+                                        the purposes described above or as required by law.</span></p>
+                        <p class="c0"><span class="c4">You will be able to unsubscribe from receiving marketing
+                                        information from us, by
+                                        simply texting back &quot;stop&quot; or emailing back &quot;Unsubscribe&quot; at
+                                        any time to any text
+                                        message or by following the &#39;unsubscribe&#39; link in the e-mail that we may
+                                        send to you. Alternatively,
+                                        you may send us a request using the contact details as mentioned in this Privacy
+                                        Policy.</span></p>
+                        <p class="c0"><span>3. </span><span class="c3 c6">How We Share Your Information</span></p>
+                        <p class="c0"><span>(a)</span><span class="c3">&nbsp;Affiliated Companies and
+                                        Vendors</span><span class="c4">:We may
+                                        share information we collect among our affiliated companies and with vendors,
+                                        service providers, and other
+                                        partners that provide contractual Website to us.</span></p>
+                        <p class="c0"><span>(b)</span><span class="c3">&nbsp;Business Partners</span><span class="c4">:
+                                        We may also share
+                                        your information with business partners to provide you with our features and
+                                        Website and for direct
+                                        marketing purposes. For example, if you log into the Website with a social media
+                                        service or if you connect a
+                                        social media account with the Website, we may share your information with that
+                                        social media service. If you
+                                        do not want your information shared in this way, do not connect your social
+                                        media service account with the
+                                        Website. Crown Beers India Private Limited is not responsible for the privacy
+                                        practices of these
+                                        entities.</span></p>
+                        <p class="c0"><span>(c)</span><span class="c3">&nbsp;Third Parties that Provide Content or other
+                                        Functionality:
+                                </span><span class="c4">Some of the content, advertising, and functionality on our
+                                        Website may be provided by
+                                        third parties, such as our advertisers and providers of social network plugins,
+                                        and we may use third-party
+                                        advertising companies and media partners to serve ads on the Website. These
+                                        third-parties may collect or
+                                        receive certain information about your use of the Website, including through the
+                                        use of cookies, beacons,
+                                        and similar technologies, and this information may be combined with information
+                                        collected across different
+                                        websites and online Website.</span></p>
+                        <p class="c0"><span>(d) </span><span class="c3">Other Parties When Required by Law, As Necessary
+                                        to Protect Our
+                                        Users and Website, or In Connection With a Corporate Transaction:</span><span
+                                        class="c4">&nbsp;We may share
+                                        your information as we believe is necessary or appropriate to protect, enforce,
+                                        or defend the legal rights,
+                                        privacy, security, integrity, safety, or property of the Website, our employees,
+                                        agents or users, and to
+                                        comply with applicable law or legal process, including responding to requests
+                                        from public and government
+                                        authorities and defending against third-party claims. We also reserve the right
+                                        to transfer any information
+                                        in the event that we sell or transfer all or a portion of our business or assets
+                                        to a third party, such as
+                                        in the event of a merger, acquisition, bankruptcy reorganization or other
+                                        similar transaction.</span></p>
+                        <p class="c0"><span>(e) </span><span class="c3">Otherwise With Your Consent or At Your
+                                        Direction: </span><span class="c4">In addition to the sharing described in this
+                                        Privacy Policy, we may share information about you
+                                        with third parties whenever you consent to or direct such sharing. For example,
+                                        if you voluntarily disclose
+                                        or post information to a community forum, such information will be published to
+                                        the community and may be
+                                        published more widely by a member of the community or the nature of the
+                                        forum.</span></p>
+                        <p class="c0"><span>(f) </span><span class="c3">Aggregated Data</span><span class="c4">: We also
+                                        may provide
+                                        aggregated data or data that we have taken other measures to de-identify to
+                                        third parties.</span></p>
+                        <p class="c0"><span>4. </span><span class="c6 c3">Links to Third-Party Sites</span></p>
+                        <p class="c0"><span class="c4">The Website may link to third-party websites and Website that are
+                                        outside our
+                                        control. &nbsp;We are not responsible for the security or privacy of any
+                                        information collected by other
+                                        websites, applications, or other Website or by your mobile operating system
+                                        operator, wireless carrier, or
+                                        other similar providers. You should exercise caution, and review the privacy
+                                        statements applicable to the
+                                        third-party websites and Website you use.</span></p>
+                        <p class="c0"><span>5. </span><span class="c6 c3">Data Security</span></p>
+                        <p class="c0"><span class="c4">We have in place physical and technical measures to protect
+                                        information we collect
+                                        online. However, as effective as these measures may be, no security system is
+                                        impenetrable. We cannot
+                                        guarantee the security of our databases, nor can we guarantee that the
+                                        information you supply will not be
+                                        intercepted while being transmitted to us over the Internet.</span></p>
+                        <p class="c0"><span>6. </span><span class="c6 c3">Other Important Information</span></p>
+                        <p class="c0"><span>(a) </span><span class="c3">Legal Drinking Age</span><span class="c4">: Our
+                                        Website are not
+                                        intended for individuals under the legal drinking age. If we learn that an
+                                        individual under the legal
+                                        drinking age in his/her country of residence and the country from which he/she
+                                        is accessing the Site has
+                                        provided us with personal information, we will delete it.</span></p>
+                        <p class="c0"><span>(b) </span><span class="c3">Do-Not-Track Signals and Similar
+                                        Mechanisms</span><span class="c4">:Some web browsers may transmit
+                                        &ldquo;do-not-track&rdquo; signals to the websites with which the
+                                        user communicates. Because of differences in how web browsers incorporate and
+                                        activate this feature, it is
+                                        not always clear whether users intend for these signals to be transmitted, or
+                                        whether they even are aware of
+                                        them. Because there currently is no industry standard concerning what, if
+                                        anything, websites should do when
+                                        they receive such signals, the Website currently do not take action in response
+                                        to these signals. If and
+                                        when a final standard is established and accepted, we will reassess how to
+                                        respond to these signals.</span>
+                        </p>
+                        <p class="c0"><span>(c)</span><span class="c3">&nbsp;International Transfers</span><span
+                                        class="c4">: Please be
+                                        aware that we may transfer your personal information to another country where
+                                        privacy standards may not be
+                                        equivalent to those in your country. </span></p>
+                        <p class="c0"><span>(d) </span><span class="c3">Changes to Our
+                                        Privacy</span><span>&nbsp;</span><span class="c3">Policy: </span><span
+                                        class="c4">We may modify this Privacy Policy. We will notify you of changes
+                                        by posting changes here or by other appropriate means. Any changes to the
+                                        Privacy Policy will become
+                                        effective when the updated policy is posted on the Website. Your use of the
+                                        Website or your provision of
+                                        information to use the Website following such changes indicates your acceptance
+                                        of the revised Privacy
+                                        Policy.</span></p>
+                        <p class="c0"><span>(e) </span><span class="c3">Queries</span><span class="c4">: If, at any
+                                        time, you have any
+                                        grievances, requests or queries concerning this Privacy Policy or want to update
+                                        your details, please
+                                        contact us at:</span></p>
+                        <p class="c0"><span class="c6 c3">Name: Crown Beers India Private Limited</span></p>
+                        <p class="c0"><span class="c3">Address</span><span class="c4">: &nbsp;8-2-684/A. Road No. 12,
+                                        Banjara Hills,
+                                        Hyderabad-500 034, Telangana, India</span></p>
+                        <p class="c0"><span class="c3">Telephone</span><span class="c4">:
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-9711550015</span></p>
+                        <p class="c0"><span class="c3">E-mail</span><span class="c4">: &nbsp; &nbsp;
+                                        CustomerCare@in.ab-inbev.com
+                                        &nbsp;</span></p>
+                        <p class="c0"><span class="c4">Thank you for visiting our Website.</span></p>
+                        <p class="c0"><span class="c4">***********************</span></p>
+                        <p class="c0"><span class="c6 c3">(1) How We Use Cookies, Web Beacons, and similar technologies
+                                </span></p>
+                        <p class="c0"><span>We and third parties that provide content, marketing or functionality on the
+                                        Website, may use
+                                        cookies, web beacons (sometimes called &ldquo;</span><span class="c3">action
+                                        tags</span><span>&rdquo; or
+                                        &ldquo;</span><span class="c3">one pixel .gif files</span><span
+                                        class="c4">&rdquo;), web server logs,
+                                        standard web measurement or other statistics programs, and similar technologies
+                                        to facilitate administration
+                                        and navigation on the Site, to better understand and improve the Website, to
+                                        determine and improve the
+                                        marketing shown to you here or elsewhere, and to provide you with a customized
+                                        online experience.</span></p>
+                        <p class="c0"><span>(a)</span><span class="c3">&nbsp;Cookies</span><span class="c4">:Cookies are
+                                        small files that
+                                        are placed on your computer when you visit a website. Cookies may be used to
+                                        store a unique identification
+                                        number tied to your computer or device so that you can be recognized as the same
+                                        user across one or more
+                                        browsing sessions, and across one or more sites. Cookies serve many useful
+                                        purposes. For example:</span></p>
+                        <p class="c0"><span class="c4">(i) Cookies can remember your sign-in credentials so you do not
+                                        have to enter those
+                                        credentials each time you visit a Service;</span></p>
+                        <p class="c0"><span class="c4">(ii) Cookies can help us and third parties understand which parts
+                                        of the Website are
+                                        the most popular because they help us see which pages and features visitors
+                                        access and how much time they
+                                        spend on the pages. By studying this kind of information, we are better able to
+                                        adapt the Website and
+                                        provide you with a better experience;</span></p>
+                        <p class="c0"><span class="c4">(iii) Cookies help us and third parties understand which ads you
+                                        have seen so that
+                                        you do not receive the same ad each time you access a Service.</span></p>
+                        <p class="c0"><span class="c4">Most browsers accept cookies automatically, but can be configured
+                                        not to do so or to
+                                        notify the user when a cookie is being sent. If you wish to disable cookies,
+                                        refer to your browser help menu
+                                        to learn how to disable cookies. If you disable browser cookies or flash
+                                        cookies, it may interfere with the
+                                        proper functioning of the Website.</span></p>
+                        <p class="c0"><span>(b) </span><span class="c3">Beacons</span><span>: We, along with third
+                                        parties, also may use
+                                        technologies called beacons (or &ldquo;</span><span
+                                        class="c3">pixels</span><span class="c4">&rdquo;) that
+                                        communicate information from your device to a server. Beacons can be embedded in
+                                        online content, videos, and
+                                        emails, and can allow a server to read certain types of information from your
+                                        device, know when you have
+                                        viewed particular content or a particular email message, determine the time and
+                                        date on which you viewed the
+                                        beacon, and the IP address of your device. &nbsp;We and third parties use
+                                        beacons for a variety of purposes,
+                                        including to analyze the use of the Website and (in conjunction with cookies) to
+                                        provide content and ads
+                                        that are more relevant to you.</span></p>
+                        <p class="c0"><span>(c)</span><span class="c3">&nbsp;Local Storage &amp; Other Tracking
+                                        Technologies</span><span>:We, along with third parties, may use other kinds of
+                                        technologies, such as Local
+                                        Shared Objects (also referred to as &ldquo;</span><span class="c3">Flash
+                                        cookies</span><span>&rdquo;) and
+                                        HTML5 local storage, in connection with the Website. These technologies are
+                                        similar to the cookies discussed
+                                        above in that they are stored on your device and can be used to store certain
+                                        information about your
+                                        activities and preferences. However, these technologies may make use of
+                                        different parts of your device from
+                                        standard cookies, and so you might not be able to control them using standard
+                                        browser tools and settings.
+                                        For information about disabling or deleting information contained in Flash
+                                        cookies, please click
+                                </span><span class="c5"><a class="c2"
+                                                href="https://www.google.com/url?q=http://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html&amp;sa=D&amp;ust=1591284960685000">here</a></span><span
+                                        class="c4">. </span></p>
+                        <p class="c0"><span>(2) </span><span class="c6 c3">Examples of usage information, including
+                                        location information, we
+                                        may collect include the following:</span></p>
+                        <p class="c0"><span class="c4">- Device information&mdash;such as your hardware model, IP
+                                        address, other unique
+                                        device identifiers, operating system version, and settings of the device you use
+                                        to access the
+                                        Website.</span></p>
+                        <p class="c0"><span class="c4">- Usage information&mdash;such as information about the Website
+                                        you use, the time and
+                                        duration of your use of the Website and other information about your interaction
+                                        with content offered
+                                        through a Service, and any information stored in cookies and similar
+                                        technologies that we have set on your
+                                        device. </span></p>
+                        <p class="c0"><span class="c4">- Location information&mdash;such as your device&rsquo;s GPS
+                                        signal or information
+                                        about nearby WiFi access points, location beacons and cell towers that may be
+                                        transmitted to us when you use
+                                        the Website or certain location-based informational, marketing or public service
+                                        applications that we or our
+                                        business partners offer.</span></p>
+                        <p class="c0"><span>(3) </span><span class="c6 c3">Targeted Advertising</span></p>
+                        <p class="c0"><span>In some cases, we and advertisers on the Website, work with third-party
+                                        partners to help deliver
+                                        advertisements of third parties tailored to your interests. These vendors
+                                        include ad networks, audience
+                                        segment providers, ad serving vendors. Through tracking technologies such as
+                                        cookies, these parties may
+                                        collect information about your online activity (e.g., the sites and pages you
+                                        have visited) in order to
+                                        deliver ads on our Website and other websites and online Website that are
+                                        relevant to you. You can learn
+                                        more about targeted advertising and make certain privacy choices </span><span
+                                        class="c5"><a class="c2"
+                                                href="https://www.google.com/url?q=http://www.aboutads.info/&amp;sa=D&amp;ust=1591284960686000">here</a></span><span
+                                        class="c4">.</span></p>
+                        <p class="c9"><span class="c4"></span></p>
 </body>
 
 </html>
