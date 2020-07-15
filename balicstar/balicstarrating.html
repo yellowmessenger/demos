@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bajaj Allianz Life</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="REVISIT-AFTER" content="7 days">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="icon" href="img/bajaj-favicon.ico" type="image/x-icon">
+    <style>
+        .rating-stars ul {
+            list-style-type: none;
+            padding: 0;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .rating-stars ul>li.star {
+            display: inline-block;
+            position: relative;
+        }
+
+        .rating-stars ul>li.star span {
+            position: absolute;
+            top: 20%;
+            left: 44%;
+        }
+
+        /* Idle State of the stars */
+
+        .rating-stars ul>li.star>i.fa {
+            font-size: 3.5em;
+            /* Change the size of the stars */
+            color: #ccc;
+            /* Color on idle state */
+        }
+
+        /* Hover state of the stars */
+
+        .rating-stars ul>li.star.hover>i.fa {
+            color: #FFCC36;
+        }
+
+        /* Selected state of the stars */
+
+        .rating-stars ul>li.star.selected>i.fa {
+            color: #FF912C;
+        }
+
+        #starModal h4 {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .rating-options li {
+            text-align: left;
+            font-size: 1rem;
+            line-height: 25px;
+        }
+
+        .rating-options ul {
+            margin: 0 auto;
+            display: table;
+        }
+
+        #starModal .modal-footer .btn {
+            margin: 0 auto;
+            display: table;
+        }
+
+        .rating-stars ul>li.star.selected span {
+            color: #fff;
+        }
+
+        .rating-stars h5 {
+            font-weight: 600;
+        }
+
+        .custom-checkbox {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Hide the browser's default checkbox */
+
+        .custom-checkbox input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        /* Create a custom checkbox */
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+        }
+
+        /* On mouse-over, add a grey background color */
+
+        .custom-checkbox:hover input~.checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+
+        .custom-checkbox input:checked~.checkmark {
+            background-color: #2196F3;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the checkmark when checked */
+
+        .custom-checkbox input:checked~.checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+
+        .custom-checkbox .checkmark:after {
+            left: 9px;
+            top: 2px;
+            width: 9px;
+            height: 15px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .form-control.others {
+            margin-left: 35px;
+            width: 90%;
+        }
+
+        .btn {
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+        }
+
+        .btn {
+            background: #f89c30;
+            padding: 6px 20px;
+            min-width: 100px;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            float: left;
+            clear: both;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            text-align: center;
+            border: 1px solid #f89c30;
+            margin-top: 20px;
+        }
+
+        .btn:hover:before {
+            -webkit-transform: scale3d(12, 12, 1);
+            -moz-transform: scale3d(12, 12, 0) !important;
+            transform: scale3d(12, 12, 1);
+        }
+
+        .btn:before {
+            content: '';
+            z-index: -1;
+            background: #fff;
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin: -15px 0 0 1px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            -webkit-transform-origin: 0 50%;
+            -moz-transform-origin: 0 50% !important;
+            transform-origin: 0 50%;
+            -webkit-transform: scale3d(1, 2, 1);
+            -moz-transform: scale3d(1, 2, 1) !important;
+            transform: scale3d(1, 2, 1);
+            -webkit-transition: .5s all;
+            -moz-transition: .5s all !important;
+            transition: .5s all;
+        }
+
+        .btn:hover {
+            color: #f89c30;
+        }
+    </style>
+</head>
+
+<body id="homepage">
+    <!-- <div class="wraper"><button data-toggle="modal" data-target="#starModal">Star Rating</button></div> -->
+    <!-- Star rating popup-->
+    <!-- <div id="starModal" class="modal fade" role="dialog"> -->
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <button type="button" class="close" data-dismiss="modal">&times;
+                    </button> -->
+                    <h4 class="modal-title">How would you rate your experience?</h4>
+                </div>
+                <div class="modal-body">
+                    <div class='rating-stars text-center'>
+                        <ul id='stars'>
+                            <li class='star' title='Poor' data-value='1'><i class='fa fa-star fa-fw'></i><span>1</span>
+                                <p>Poor</p>
+                            </li>
+                            <li class='star' title='Fair' data-value='2'><i class='fa fa-star fa-fw'></i><span>2</span>
+                                <p>Below Average</p>
+                            </li>
+                            <li class='star' title='Good' data-value='3'><i class='fa fa-star fa-fw'></i><span>3</span>
+                                <p>Average</p>
+                            </li>
+                            <li class='star' title='Excellent' data-value='4'><i
+                                    class='fa fa-star fa-fw'></i><span>4</span>
+                                <p>Good</p>
+                            </li>
+                            <li class='star' title='WOW!!!' data-value='5'><i
+                                    class='fa fa-star fa-fw'></i><span>5</span>
+                                <p>Excellent</p>
+                            </li>
+                        </ul>
+                        <div class="threeStar">
+                            <h5>We are committed to provide you a better experience.</h5>
+                            <h5>Please let us know what went wrong.</h5>
+                            <ul class="rating-options">
+                                <li><label class="custom-checkbox">Payment: Not reflecting / unitized / over payment not
+                                        refunded <input type="checkbox"><span class="checkmark"></span></label></li>
+                                <li><label class="custom-checkbox">Account: unable to see multiple policies / unable to
+                                        log-in <input type="checkbox"><span class="checkmark"></span></label></li>
+                                <li><label class="custom-checkbox">Auto-debit: premium not debited / unable to activate
+                                        <input type="checkbox"><span class="checkmark"></span></label></li>
+                                <li><label class="custom-checkbox">Bank details: Unable to update <input
+                                            type="checkbox"><span class="checkmark"></span></label></li>
+                                <li><label class="custom-checkbox">Others(Please Specify) <input type="checkbox"><span
+                                            class="checkmark"></span></label><input type="text"
+                                        class="form-control others" /></li>
+                            </ul>
+                        </div>
+                        <div class="fourStar">
+                            <h5>Looks like we have scope for improvement.</h5>
+                            <h5>Please let us know how we can enhance your experience.</h5><textarea rows="5" cols="2"
+                                class="form-control"></textarea>
+                        </div>
+                        <div class="fiveStar">
+                            <h5>We are glad you had an amazing experience!</h5>
+                            <h5>Would you like to share any feedback?</h5><textarea rows="5" cols="2"
+                                class="form-control"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><button type="button"
+                        class="btn btn-md btn-default btn-submit-hover white-text AllianzSansBold text-uppercase btn-border-radius border-color-orange"
+                        data-dismiss="modal">Submit</button></div>
+            </div>
+        </div>
+    <!-- </div> -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#starModal").modal('show');
+        });
+    </script>
+</body>
+
+</html>
