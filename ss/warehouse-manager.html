@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Saravana Stores</title>
+        <meta charset="utf-8" />
+        <script src="/pwa/install"></script>
+        <link
+            rel="manifest"
+            href="https://app.yellowmessenger.com/pwa/manifest.json?bot=x1592201089378&name=Saravana Stores&icon=https://cdn.yellowmessenger.com/SBulB9sPwtfO1588946351592.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="https://cdn.yellowmessenger.com/SBulB9sPwtfO1588946351592.png"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <style>
+            body {
+                background-color: #74b3f7;
+                background-image: -webkit-linear-gradient(
+                    bottom left,
+                    #74b3f7 10%,
+                    #baf5ff 65%,
+                    #ffffff 125%
+                );
+                background-image: linear-gradient(
+                    to top right,
+                    #74b3f7 10%,
+                    #baf5ff 65%,
+                    #ffffff 125%
+                );
+                min-height: 100vh;
+            }
+
+            @media screen and (max-device-width: 640px) {
+                html,
+                body {
+                    margin: 0;
+                    padding: 0;
+                    height: 100%;
+                }
+
+                iframe {
+                    width: 100%;
+                    height: 100vh;
+                    margin-top: 0;
+                    border-radius: 0 !important;
+                    position: relative;
+                }
+
+                .col-md-8 {
+                    padding: 0;
+                }
+            }
+
+            @media screen and (max-device-width: 768px) {
+                #ymFrameHolder {
+                    width: auto !important;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.5.0/firebase-messaging.js"></script>
+        <script type="text/javascript">
+            window.ymConfig = {
+                bot: "x1592201089378",
+                pwa: true,
+                fullScreen: "true",
+                linkType: "live",
+                triggerJourney: "wm-login",
+            };
+            (function () {
+                var w = window,
+                    ic = w.YellowMessenger;
+                if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
+                else {
+                    var d = document,
+                        i = function () {
+                            i.c(arguments);
+                        };
+
+                    function l() {
+                        var e = d.createElement("script");
+                        (e.type = "text/javascript"),
+                            (e.async = !0),
+                            (e.src = "https://app.yellowmessenger.com/widget/live.js");
+                        var t = d.getElementsByTagName("script")[0];
+                        t.parentNode.insertBefore(e, t);
+                    }
+
+                    (i.q = []),
+                        (i.c = function (e) {
+                            i.q.push(e);
+                        }),
+                        (w.YellowMessenger = i),
+                        w.attachEvent
+                            ? w.attachEvent("onload", l)
+                            : w.addEventListener("load", l, !1);
+                }
+                if ("serviceWorker" in window.navigator) {
+                    window.navigator.serviceWorker
+                        .register("https://app.yellowmessenger.com/pwa/service-worker", {
+                            scope: "/pwa/live/x1592201089378",
+                        })
+                        .then(function (reg) {
+                            console.log("Service worker registered.", reg);
+                        })
+                        .catch(function (err) {
+                            console.log("No it didn't. This happened:", err);
+                        });
+                }
+            })();
+        </script>
+    </body>
+</html>
