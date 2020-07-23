@@ -1,0 +1,31 @@
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<script>
+		const params = new URLSearchParams(document.location.search);
+		const state = params.get("state");
+		const data = params.get("data");
+		$.ajax({
+			url: "http://localhost:8080/ccavenue/ccavRequestHandler",
+			type: "POST",
+			data: {
+				state,
+				data
+			},
+			success: function (data, textStatus, jqXHR) {
+				// redirect to the response page
+				$("body").html(data);
+			},
+			error: function (jqXHR, textStatus, errorThrown) {
+				console.log("error while posting to ccavRequestHandler");
+			}
+		});
+	</script>
+
+</body>
+
+</html>
