@@ -6,24 +6,8 @@
 
 <body>
 	<script>
-		const params = new URLSearchParams(document.location.search);
-		const state = params.get("state");
-		const data = params.get("data");
-		$.ajax({
-			url:  "https://staging.yellowmessenger.com/integrations/ccavenue/ccavRequestHandler",//"http://localhost:8080/ccavenue/ccavRequestHandler",
-			type: "POST",
-			data: {
-				state,
-				data
-			},
-			success: function (data, textStatus, jqXHR) {
-				// redirect to the response page
-				$("body").html(data);
-			},
-			error: function (jqXHR, textStatus, errorThrown) {
-				console.log("error while posting to ccavRequestHandler");
-			}
-		});
+		const url = "https://staging.yellowmessenger.com/integrations/ccavenue/about?state=eyJib3QiOiJ4MTU5NDcyNTg1OTg4NCIsInNvdXJjZSI6InllbGxvd21lc3NlbmdlciIsInNlbmRlciI6IjEzMjY0MzkzOTc4MTgyNTM0MDY5OTM1MTk4MTAifQ%3D%3D&data=eyJtZXJjaGFudF9pZCI6IjQiLCJvcmRlcl9pZCI6IjEyMzQ1NiIsImN1cnJlbmN5IjoiSU5SIiwiYW1vdW50IjoiMSIsImxhbmd1YWdlIjoiRU4iLCJiaWxsaW5nX25hbWUiOiJQZXRlciIsImJpbGxpbmdfYWRkcmVzcyI6IlNhbnRhY3J1eiIsImJpbGxpbmdfY2l0eSI6Ik11bWJhaSIsImJpbGxpbmdfc3RhdGUiOiJNSCIsImJpbGxpbmdfemlwIjoiNDAwMDU0IiwiYmlsbGluZ19jb3VudHJ5IjoiSW5kaWEiLCJiaWxsaW5nX3RlbCI6Ijk4NzY1NDMyMTAiLCJiaWxsaW5nX2VtYWlsIjoidGVzdGluZ0Bkb21haW4uY29tIiwiZGVsaXZlcnlfbmFtZSI6IlNhbSIsImRlbGl2ZXJ5X2FkZHJlc3MiOiJWaWxlIFBhcmxlIiwiZGVsaXZlcnlfY2l0eSI6Ik11bWJhaSIsImRlbGl2ZXJ5X3N0YXRlIjoiTWFoYXJhc2h0cmEiLCJkZWxpdmVyeV96aXAiOiI0MDAwMzgiLCJkZWxpdmVyeV9jb3VudHJ5IjoiSW5kaWEiLCJkZWxpdmVyeV90ZWwiOiIwMTIzNDU2Nzg5IiwibWVyY2hhbnRfcGFyYW0xIjoiYWRkaXRpb25hbCBJbmZvLiIsIm1lcmNoYW50X3BhcmFtMiI6ImFkZGl0aW9uYWwgSW5mby4iLCJtZXJjaGFudF9wYXJhbTMiOiJhZGRpdGlvbmFsIEluZm8uIiwibWVyY2hhbnRfcGFyYW00IjoiYWRkaXRpb25hbCBJbmZvLiIsIm1lcmNoYW50X3BhcmFtNSI6ImFkZGl0aW9uYWwgSW5mby4iLCJwcm9tb19jb2RlIjoiIiwiY3VzdG9tZXJfaWRlbnRpZmllciI6IiJ9"
+		window.open(url);
 	</script>
 
 </body>
