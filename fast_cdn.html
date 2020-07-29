@@ -116,6 +116,10 @@
         </div>
     </div>
     <script type="text/javascript">
+        if (window.matchMedia('(display-mode: standalone)').matches) {
+            console.log("standalone detected");
+            alert("standalone detected");
+        }
         window.ymConfig = {
             host: 'https://app.yellowmessenger.com',
             xmpp_domain: 'xmpp.yellowmssngr.com',
