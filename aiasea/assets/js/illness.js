@@ -205,6 +205,14 @@ function handleForm(event) {
         }
 
         console.log('Data -> ', data)
+        window.parent.postMessage(JSON.stringify({
+            event_code: 'ym-client-event', data: JSON.stringify({
+                event: {
+                    code: "personal-info",
+                    data: data
+                }
+            })
+        }), '*');
 
         $('#form_wrapper').hide();
         $('#stepper_intro').hide();
