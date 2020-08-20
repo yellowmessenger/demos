@@ -278,6 +278,14 @@ function handleForm(event) {
             $('#requirements')[0].scrollIntoView(true);
 
             console.log('Data -> ', data)
+            window.parent.postMessage(JSON.stringify({
+                        event_code: 'ym-client-event', data: JSON.stringify({
+                            event: {
+                                code: "personalinfo",
+                                data: data
+                            }
+                        })
+                    }), '*');
         }
     }
 }
