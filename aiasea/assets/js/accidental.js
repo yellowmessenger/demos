@@ -291,6 +291,8 @@ function handleForm(event) {
 }
 
 file1.onchange = function (e) {
+    console.log("INNNNNNNN")
+    console.log(this.files[0], "EEEEEEEEEE")
     var ext = this.value.match(/\.([^\.]+)$/)[1];
     switch (ext) {
         case 'jpg':
