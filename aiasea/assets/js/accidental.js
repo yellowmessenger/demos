@@ -291,8 +291,10 @@ function handleForm(event) {
 }
 
 file1.onchange = function (e) {
-    console.log("INNNNNNNN")
-    console.log(this.files[0], "EEEEEEEEEE")
+    console.log("INNNNNNNN");
+    console.log(this.files[0], "EEEEEEEEEE");
+    var filePath = file1.value;
+    console.log(filePath, "filePath");
     var ext = this.value.match(/\.([^\.]+)$/)[1];
     switch (ext) {
         case 'jpg':
