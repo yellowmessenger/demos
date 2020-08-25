@@ -110,6 +110,16 @@ function validateNotNumber(evt) {
     return;
 }
 
+const postForm = (body) => {
+  return fetch('http://localhost:3000/claim', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body
+  });
+};
+
 function handleForm(event) {
     event.preventDefault();
     var field_firstName = $("#field_firstName").val();
@@ -293,19 +303,6 @@ function handleForm(event) {
 //         }
     }
 }
-
-const localCall = async () => {
-    const response = await fetch('http://localhost:3000/claim', {
-      method: 'POST',
-      body: myBody, // string or object
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    });
-    const myJson = await response.json(); //extract JSON from the http response
-    console.log(myJson)
-    // do something with myJson
-  }
 
 file1.onchange = function (e) {
     var ext = this.value.match(/\.([^\.]+)$/)[1];
