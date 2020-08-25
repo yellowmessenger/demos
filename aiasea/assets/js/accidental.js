@@ -278,17 +278,34 @@ function handleForm(event) {
             $('#requirements')[0].scrollIntoView(true);
 
             console.log('Data -> ', data)
-            window.parent.postMessage(JSON.stringify({
-                        event_code: 'ym-client-event', data: JSON.stringify({
-                            event: {
-                                code: "personalinfo",
-                                data: data
-                            }
-                        })
-                    }), '*');
-        }
+            localCall(data)
+            postForm(data)
+            .then(res => res.json())
+            .then(callData => console.log(callData.json));
+//             window.parent.postMessage(JSON.stringify({
+//                         event_code: 'ym-client-event', data: JSON.stringify({
+//                             event: {
+//                                 code: "personalinfo",
+//                                 data: data
+//                             }
+//                         })
+//                     }), '*');
+//         }
     }
 }
+
+const localCall = async () => {
+    const response = await fetch('http://localhost:3000/claim', {
+      method: 'POST',
+      body: myBody, // string or object
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+    const myJson = await response.json(); //extract JSON from the http response
+    console.log(myJson)
+    // do something with myJson
+  }
 
 file1.onchange = function (e) {
     var ext = this.value.match(/\.([^\.]+)$/)[1];
