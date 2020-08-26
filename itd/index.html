@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Bootstrap 3 Datepicker Example</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/css/bootstrap-datepicker.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <!-- datepicker source: https://github.com/uxsolutions/bootstrap-datepicker -->
+    <!-- tutorial: https://formden.com/blog/date-picker -->
+
+    <div class="container">
+      <br />
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="form-group">
+            <div id="filterDate2">
+              <!-- Datepicker as text field -->
+              <div
+                class="input-group date"
+                id="dateTime"
+                data-date-format="dd.mm.yyyy"
+              ></div>
+              <div class="center">
+                <br />
+                <div
+                  class="btn-group btn-group-justified"
+                  role="group"
+                  id="slots"
+                  aria-label="..."
+                >
+                  <div class="btn-group" role="group">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      onclick="Data('8-12', this)"
+                    >
+                      8:00-12:00
+                    </button>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      onclick="Data('12-4', this)"
+                    >
+                      12:00-4:00
+                    </button>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      onclick="Data('4-8', this)"
+                    >
+                      4:00-8:00
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js"></script>
+    <!-- <script src="./script.js"></script> -->
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(function() {
+          $("#dateTime").datepicker({
+            format: "dd.mm.yyyy",
+            inline: true
+          });
+        });
+      });
+
+      function Data(string, el) {
+        console.log(string);
+        // console.log(el);
+        var dateTime = $("#dateTime").data().datepicker.dates[0];
+        console.log(dateTime);
+        $("#filterDate2").fadeTo("slow", 0.15, function() {
+          $(this)
+            .find(":input")
+            .attr("disabled", "disabled");
+          $(this)
+            .find("label")
+            .css("cursor", "default");
+          $("#add").append("Submitted");
+        });
+      }
+
+      // $(function() {
+      //   $("#datesubmit").on("click", function() {
+      //     var selecteddate = $("#dateTime").data().date;
+      //     console.log(selecteddate);
+      // window.parent.postMessage(
+      //   JSON.stringify({
+      //     event_code: "ym-client-event",
+      //     data: JSON.stringify({
+      //       event: {
+      //         code: "Date",
+      //         data: {
+      //           selectedDate: selecteddate
+      //         }
+      //       }
+      //     })
+      //   }),
+      //   "*"
+      // );
+      //     $("#datesubmit").attr("disabled", "disabled");
+      //     $("#datesubmit").fadeTo("slow", 0.15, function() {
+      //       $(this)
+      //         .find(":input")
+      //         .attr("disabled", "disabled");
+      //       $(this)
+      //         .find("label")
+      //         .css("cursor", "default");
+      //       $("#add").append("Submitted");
+      //     });
+      //   });
+      // });
+    </script>
+  </body>
+</html>
