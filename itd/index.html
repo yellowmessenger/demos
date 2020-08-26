@@ -109,7 +109,7 @@
       }
 
       $(function() {
-        $("#datesubmit").on("click", function() {
+        $("#filterDate2").on("click", function() {
           var selecteddate = $("#dateTime").data().date;
           console.log(selecteddate);
       window.parent.postMessage(
@@ -126,8 +126,8 @@
         }),
         "*"
       );
-          $("#datesubmit").attr("disabled", "disabled");
-          $("#datesubmit").fadeTo("slow", 0.15, function() {
+          $("#filterDate2").attr("disabled", "disabled");
+          $("#filterDate2").fadeTo("slow", 0.15, function() {
             $(this)
               .find(":input")
               .attr("disabled", "disabled");
