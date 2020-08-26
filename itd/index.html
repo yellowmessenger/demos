@@ -108,36 +108,36 @@
         });
       }
 
-      // $(function() {
-      //   $("#datesubmit").on("click", function() {
-      //     var selecteddate = $("#dateTime").data().date;
-      //     console.log(selecteddate);
-      // window.parent.postMessage(
-      //   JSON.stringify({
-      //     event_code: "ym-client-event",
-      //     data: JSON.stringify({
-      //       event: {
-      //         code: "Date",
-      //         data: {
-      //           selectedDate: selecteddate
-      //         }
-      //       }
-      //     })
-      //   }),
-      //   "*"
-      // );
-      //     $("#datesubmit").attr("disabled", "disabled");
-      //     $("#datesubmit").fadeTo("slow", 0.15, function() {
-      //       $(this)
-      //         .find(":input")
-      //         .attr("disabled", "disabled");
-      //       $(this)
-      //         .find("label")
-      //         .css("cursor", "default");
-      //       $("#add").append("Submitted");
-      //     });
-      //   });
-      // });
+      $(function() {
+        $("#datesubmit").on("click", function() {
+          var selecteddate = $("#dateTime").data().date;
+          console.log(selecteddate);
+      window.parent.postMessage(
+        JSON.stringify({
+          event_code: "ym-client-event",
+          data: JSON.stringify({
+            event: {
+              code: "Date",
+              data: {
+                selectedDate: selecteddate
+              }
+            }
+          })
+        }),
+        "*"
+      );
+          $("#datesubmit").attr("disabled", "disabled");
+          $("#datesubmit").fadeTo("slow", 0.15, function() {
+            $(this)
+              .find(":input")
+              .attr("disabled", "disabled");
+            $(this)
+              .find("label")
+              .css("cursor", "default");
+            $("#add").append("Submitted");
+          });
+        });
+      });
     </script>
   </body>
 </html>
