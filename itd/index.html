@@ -37,7 +37,7 @@
               <div class="center">
                 <br />
                 <div
-                  class="btn-group btn-group-justified"
+                  class="btn-group btn-group-justified buttons"
                   role="group"
                   id="slots"
                   aria-label="..."
@@ -45,7 +45,7 @@
                   <div class="btn-group" role="group">
                     <button
                       type="button"
-                      class="btn btn-primary"
+                      class="btn btn-primary col-sm-1"
                       onclick="Data('8-12', this)"
                     >
                       8:00-12:00
@@ -54,7 +54,7 @@
                   <div class="btn-group" role="group">
                     <button
                       type="button"
-                      class="btn btn-primary"
+                      class="btn btn-primary col-sm-1"
                       onclick="Data('12-4', this)"
                     >
                       12:00-4:00
@@ -63,7 +63,7 @@
                   <div class="btn-group" role="group">
                     <button
                       type="button"
-                      class="btn btn-primary"
+                      class="btn btn-primary col-sm-1"
                       onclick="Data('4-8', this)"
                     >
                       4:00-8:00
@@ -82,12 +82,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.1/js/bootstrap-datepicker.min.js"></script>
     <!-- <script src="./script.js"></script> -->
     <script type="text/javascript">
+      function Showslot() {
+        console.log("in show slots");
+        let myElement = document.querySelector("#slots");
+        myElement.style.display = "table";
+        // myElement.style.removeProperty("display");
+      }
       $(document).ready(function() {
         $(function() {
-          $("#dateTime").datepicker({
-            format: "dd.mm.yyyy",
-            inline: true
-          });
+          $("#dateTime")
+            .datepicker({
+              format: "dd.mm.yyyy",
+              inline: true,
+              daysOfWeekDisabled: [0, 6]
+            })
+            .on("changeDate", function(ev) {
+              console.log("changed");
+              Showslot();
+            });
         });
       });
 
@@ -96,30 +108,34 @@
         // console.log(el);
         var dateTime = $("#dateTime").data().datepicker.dates[0];
         console.log(dateTime);
-        window.parent.postMessage(
-          JSON.stringify({
-            event_code: "ym-client-event",
-            data: JSON.stringify({
-              event: {
-                code: "Date",
-                data: {
-                  selectedDate: dateTime,
-                  selectedSlot: string
+        if (dateTime) {
+          window.parent.postMessage(
+            JSON.stringify({
+              event_code: "ym-client-event",
+              data: JSON.stringify({
+                event: {
+                  code: "Date",
+                  data: {
+                    selectedDate: dateTime,
+                    selectedSlot: string
+                  }
                 }
-              }
-            })
-          }),
-          "*"
-        );
-        $("#filterDate2").fadeTo("slow", 0.15, function() {
-          $(this)
-            .find(":input")
-            .attr("disabled", "disabled");
-          $(this)
-            .find("label")
-            .css("cursor", "default");
-          $("#add").append("Submitted");
-        });
+              })
+            }),
+            "*"
+          );
+          $("#filterDate2").fadeTo("slow", 0.15, function() {
+            $(this)
+              .find(":input")
+              .attr("disabled", "disabled");
+            $(this)
+              .find("label")
+              .css("cursor", "default");
+            $("#add").append("Submitted");
+          });
+        } else {
+          alert(`Select a date`);
+        }
       }
 
       // $(function() {
