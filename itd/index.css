@@ -3,6 +3,11 @@
   width: 270px;
   height: 250px;
 }
-#slots {
+/* .buttons {
   width: 270px;
+} */
+#slots {
+  width: 250px;
+  margin-left: 10px;
+  display: none;
 }
