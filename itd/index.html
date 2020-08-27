@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodePen - Bootstrap 3 Datepicker Example</title>
     <link
       rel="stylesheet"
@@ -23,7 +22,7 @@
     <!-- datepicker source: https://github.com/uxsolutions/bootstrap-datepicker -->
     <!-- tutorial: https://formden.com/blog/date-picker -->
 
-    <div class="container">
+    <div class="">
       <br />
       <div class="row">
         <div class="col-sm-3">
@@ -97,6 +96,21 @@
         // console.log(el);
         var dateTime = $("#dateTime").data().datepicker.dates[0];
         console.log(dateTime);
+        window.parent.postMessage(
+          JSON.stringify({
+            event_code: "ym-client-event",
+            data: JSON.stringify({
+              event: {
+                code: "Date",
+                data: {
+                  selectedDate: dateTime,
+                  selectedSlot: string
+                }
+              }
+            })
+          }),
+          "*"
+        );
         $("#filterDate2").fadeTo("slow", 0.15, function() {
           $(this)
             .find(":input")
@@ -108,36 +122,36 @@
         });
       }
 
-      $(function() {
-        $("#filterDate2").on("click", function() {
-          var selecteddate = $("#dateTime").data().date;
-          console.log(selecteddate);
-      window.parent.postMessage(
-        JSON.stringify({
-          event_code: "ym-client-event",
-          data: JSON.stringify({
-            event: {
-              code: "Date",
-              data: {
-                selectedDate: selecteddate
-              }
-            }
-          })
-        }),
-        "*"
-      );
-          $("#filterDate2").attr("disabled", "disabled");
-          $("#filterDate2").fadeTo("slow", 0.15, function() {
-            $(this)
-              .find(":input")
-              .attr("disabled", "disabled");
-            $(this)
-              .find("label")
-              .css("cursor", "default");
-            $("#add").append("Submitted");
-          });
-        });
-      });
+      // $(function() {
+      //   $("#datesubmit").on("click", function() {
+      //     var selecteddate = $("#dateTime").data().date;
+      //     console.log(selecteddate);
+      // window.parent.postMessage(
+      //   JSON.stringify({
+      //     event_code: "ym-client-event",
+      //     data: JSON.stringify({
+      //       event: {
+      //         code: "Date",
+      //         data: {
+      //           selectedDate: selecteddate
+      //         }
+      //       }
+      //     })
+      //   }),
+      //   "*"
+      // );
+      //     $("#datesubmit").attr("disabled", "disabled");
+      //     $("#datesubmit").fadeTo("slow", 0.15, function() {
+      //       $(this)
+      //         .find(":input")
+      //         .attr("disabled", "disabled");
+      //       $(this)
+      //         .find("label")
+      //         .css("cursor", "default");
+      //       $("#add").append("Submitted");
+      //     });
+      //   });
+      // });
     </script>
   </body>
 </html>
