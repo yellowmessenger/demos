@@ -17,7 +17,16 @@
 	            }
 	        })
 	    }), '*');
+
+	    (function () {
+		    window.addEventListener("message", function (event) {
+		    	console.log("dasdas");
+		        console.log(event);
+			}, false);		
+		})();
     </script>
+
+
 
 </body>
 </html>
