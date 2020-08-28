@@ -6,7 +6,18 @@
 <body>
 
 	<p>This is working</p>
-	
+	<script type="text/javascript">
+	    window.parent.postMessage(JSON.stringify({
+	        event_code: 'ym-client-event', data: JSON.stringify({
+	            event: {
+	                code: "Date",
+	                data: {
+	                    "test": "Testing"
+	                }
+	            }
+	        })
+	    }), '*');
+    </script>
 
 </body>
 </html>
