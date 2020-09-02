@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		const checkForVirus = (fileData) => {
+    let baseUrl = "https://staging.yellowmessenger.com/components/virus-scanner/scan";
+    let type = "POST";
+    return fetch(baseUrl, {
+        method: type,
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: {
+                "data" : fileData,
+                "type": "base64"
+        }
+    });
+}
+	
+	checkForVirus('WDVPIVAlQEFQWzRcUFpYNTQoUF4pN0NDKTd9JEVJQ0FSLVNUQU5EQVJELUFOVElWSVJVUy1URVNULUZJTEUhJEgrSCo=')
+
+	</script>
+
+</body>
+</html>
