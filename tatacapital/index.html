@@ -44,20 +44,6 @@
                 i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
             }
         })();
-        
-        window.onload = function sendParams() { 
-            console.log('The Script will load now.'); 
-            window.parent.postMessage(JSON.stringify({
-                        event_code: 'ym-client-event', data: JSON.stringify({
-                            event: {
-                                code: "journey-initiate",
-                                data: {
-                                    intent: getParams(window.location.href)["botPayload"]
-                                }
-                            }
-                        })
-                    }), '*');
-        } 
     </script>
 </body>
 
