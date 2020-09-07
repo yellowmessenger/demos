@@ -1,0 +1,3623 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://www.philamlife.com/en/help-support/claim-guide.html -->
+<html lang="en" prefix="">
+<div id="twoseven-scripts" data-info="Scripts added by TwoSeven extension"
+  style="display: none !important; position: static !important; top: 0px !important; left: 0px !important; width: 0px !important; height: 0px !important;">
+  <script type="text/javascript" async=""
+    src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/f.txt"></script>
+  <script type="text/javascript" async="" src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/js"></script>
+  <script type="text/javascript" id="__tmpScript-534728809" data-added-by-two-seven="1">(function () {
+      window.twoseven = {};
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-625247599" data-added-by-two-seven="1">(function () {
+      window.twoseven.waitForDOMNode = async function waitForDOMNode(e, t = document) { e = e || {}; const { type: n, value: o } = e; if (!n || !o) throw new Error("Must specify identifier"); let s = o; switch (n) { case "tag": s = o.toUpperCase() }if ("check" !== n) { const e = await i({ type: "selector", value: s }, [], t); if (e) return new Promise(t => t(e)) } async function i({ type: e, value: t }, n, o) { let s; switch (e) { case "tag": s = n.find(e => e.tagName === t); break; case "selector": s = o.querySelector(t); break; case "check": for (const e of n) { if (await t(e)) return e } }return s } return new Promise((e, o) => { const r = new MutationObserver(async o => { for (const a of o) if ("childList" === a.type) { const o = Array.from(a.addedNodes), c = await i({ type: n, value: s }, o, t); if (c) return r.disconnect(), e(c) } }); r.observe(t, { childList: !0, subtree: !0 }) }) };
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-63872125" data-added-by-two-seven="1">(function () {
+
+      window.twoseven.reportError = function reportError(e, t, n) { "string" == typeof n && (n = { message: n }), Object.assign(n, { error: { message: t.message, stack: t.stack } }), window.tsExtGetPostToParent()({ name: name, tag: e, action: "report-error", json: n }), console.error(JSON.stringify(n.error)) }
+        ;
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-463980886" data-added-by-two-seven="1">(function () {
+
+      window.twosevenHmsToSecondsOnly = function (str) {
+        var p = str.split(':'),
+          s = 0, m = 1;
+
+        while (p.length > 0) {
+          s += m * parseInt(p.pop(), 10);
+          m *= 60;
+        }
+
+        return s;
+      }
+        ;
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-496256482" data-added-by-two-seven="1">(function () {
+      window.twosevenExtLog = function twosevenExtLog(e, o, c) { o || (o = e, e = void 0); let n = c || "black"; if (c) switch (c) { case "success": n = "Green"; break; case "info": n = "DodgerBlue"; break; case "error": n = "Red"; break; case "warning": n = "Orange"; break; default: n = c }e ? console.log("%c" + e + ": " + o, `color:${n}`) : console.log("%c" + o, `color:${n}`) };
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-282011182" data-added-by-two-seven="1">(function () {
+
+      document.twosevenGET = function (url, callback) {
+        var xmlhttp = new XMLHttpRequest();
+
+        xmlhttp.onreadystatechange = function () {
+          if (xmlhttp.readyState == XMLHttpRequest.DONE) {
+            if (xmlhttp.status == 200) {
+              callback(null, xmlhttp.responseText);
+            } else {
+              callback('something else other than 200 was returned', '');
+            }
+          }
+        };
+        xmlhttp.open("GET", url, true);
+        xmlhttp.send();
+      };
+      ;
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-760732288" data-added-by-two-seven="1">(function () {
+
+      window.triggerEvent = function (e, t, n, o = !1) { let s; window.twosevenScriptsDiv && n && "object" == typeof n && (console.warn(`WARNING: Attempting to send an object via event.detail from CS->Page does not work on Firefox: ${JSON.stringify(n)}`), console.error((new Error).stack)), s = o ? n : { data: n }; var i = new CustomEvent(t, { bubbles: !0, composed: !0, detail: s }); e.dispatchEvent(i) }
+        ;
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-468603609" data-added-by-two-seven="1">(function () {
+      window.twoseven.postTo = async function postTo(e, t, n = !1) { let o; return t.name = t.name || name, o = n ? new Promise(e => { const n = `ack-${t.action}-${1e9 * Math.random() | 0}`; t.ack = { event: n }; window.debug && ["play", "pause", "currentTime"].some(e => t.action.includes(e)), window.addEventListener("message", function t({ data: o = {} }) { o.action === n && (window.removeEventListener("message", t), e(o.json)) }) }) : new Promise(e => e()), e.postMessage(t, "*"), o };
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-65281945" data-added-by-two-seven="1">(function () {
+      window.tsExtGetPostTo = function tsExtGetPostTo() { return window.twoseven && window.twoseven.postTo || window.postTo };
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-367853549" data-added-by-two-seven="1">(function () {
+      window.tsExtGetPostToParent = function tsExtGetPostToParent() { return window.twoseven && window.twoseven.postToParent || window.postToParent };
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-323061598" data-added-by-two-seven="1">(function () {
+      window.twoseven.postResponse = async function postResponse(e, t) { const { source: n, data: { ack: { event: o } } } = e; window.tsExtGetPostTo()(n, { action: o, json: t }) };
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-21687631" data-added-by-two-seven="1">(function () {
+      window.twoseven.postToParent = async function postToParent(e, t = !1) { return window.tsExtGetPostTo()(window.parent, e, t) };
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-467601195" data-added-by-two-seven="1">(function () {
+      window.twoseven.postToTop = async function postToTop(e, t = !1) { return window.tsExtGetPostTo()(window.top, e, t) };
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-8764438" data-added-by-two-seven="1">(function () {
+
+      window.twoseven.getFromStorage = e => new Promise((t, n) => { const o = "get-from-storage-" + (1e9 * Math.random() | 0); window.addEventListener(o, e => { window.removeEventListener(o, this); const { detail: { data: { value: n } } } = e; t(n) }), triggerEvent(window, "get-from-storage", { key: e, evt: o }) })
+      window.twoseven.saveToStorage = e => { triggerEvent(window, "save-to-storage", e) }
+        ;
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-836748199" data-added-by-two-seven="1">(function () {
+
+      function attachHistoryListeners() { var e = history.pushState; history.pushState = function (t, n, o) { return "function" == typeof history.onpushstate && history.onpushstate({ state: t }), triggerEvent(window, "pushstate", { uri: o }), e.apply(history, arguments) }; var t = history.replaceState; history.replaceState = function (e) { return "function" == typeof history.onreplacestate && history.onreplacestate({ state: e }), t.apply(history, arguments) } }
+      attachHistoryListeners()
+        ;
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-680490073" data-added-by-two-seven="1">(function () {
+      window.twoseven.once = function once(e, t, n) { e.addEventListener(t, function o(s) { e.removeEventListener(t, o), n(s) }) };
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-73269774" data-added-by-two-seven="1">(function () {
+
+      window.twoseven.isOnTwoSevenTab = async () => {
+        const result = await window.twoseven.postTo(window, { action: 'is-on-twoseven-tab' }, true)
+        return result
+      }
+        ;
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-563737651" data-added-by-two-seven="1">(function () {
+
+      window.twoseven.isPaused = async () => {
+        const result = await window.twoseven.postTo(window, { action: 'twoseven:pause-state' }, true)
+        return result
+      }
+        ;
+    })();</script>
+  <script type="text/javascript" id="__tmpScript-1122893" data-added-by-two-seven="1">(function () {
+
+      const modal = document.querySelector('.twoseven-ext-tab-media-modal')
+      const modalCloseBtn = modal.querySelector('.close')
+      function closeModal() {
+        modal.style.display = 'none'
+        const frame = document.querySelector('#twoseven-ext-tab-media-iframe').contentWindow
+        frame.postMessage({
+          __evt_name: 'modal-hide'
+        }, '*')
+      }
+      modalCloseBtn.onclick = closeModal
+
+      window.onmessage = function (e) {
+        if (e.data.__evt_name === 'modal-hide') {
+          closeModal()
+        }
+      }
+
+      window.twoseven.closeTabMediaModal = closeModal
+
+      window.onclick = function (e) {
+        if (e.target.id === 'twoseven-ext-tab-media-modal' && modal.style.display === 'block') {
+          closeModal()
+        }
+      }
+        ;
+    })();</script>
+  <script src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/f(1).txt"></script>
+</div>
+
+<head>
+  <style>
+    #ymFrameHolder {
+      width: 75% !important;
+      height: 80% !important;
+      margin: auto !important;
+      left: 0px !important;
+    }
+  </style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="keywords" content="">
+  <meta name="description"
+    content="Follow these simple and easy steps to file an insurance claim. From Living to Death Claims, we got it all covered. Click here to find out more.">
+  <meta name="format-detection" content="telephone=no">
+
+  <script type="text/javascript">
+    if (document.addEventListener) {
+      document.addEventListener("DOMContentLoaded", function (event) {
+
+        var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+        if (isSafari) {
+
+
+          var svgs = document.getElementsByTagName("svg");
+
+          while (svgs.length) {
+            var svg = svgs[0];
+            var img = svg.getElementsByTagName("image")[0];
+
+            svg.outerHTML = img.outerHTML.replace("image", "img");
+          }
+        }
+
+      });
+    }
+  </script>
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://www.philamlife.com/favicon.ico">
+
+
+  <meta name="description"
+    content="Follow these simple and easy steps to file an insurance claim. From Living to Death Claims, we got it all covered. Click here to find out more.">
+
+
+
+
+
+
+  <link rel="stylesheet"
+    href="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/aia-header.min.bb631a5a85d88bd6bf752c0191d234b5.css"
+    type="text/css">
+  <script type="text/javascript"
+    src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/aia-header.min.6fca20b1fd51fdd15c4b629c6c00ea90.js"></script>
+
+
+
+  <meta name="test-country" value="ph">
+  <link rel="canonical" href="http://www.philamlife.com/en/help-support/claim-guide.html">
+
+
+
+
+
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lte IE 9]>
+<link rel="stylesheet" href="/etc/clientlibs/aia/ie-fixes.min.css" type="text/css"/>
+<script type="text/javascript" src="/etc/clientlibs/aia/ie-fixes.min.js"></script>
+
+<![endif]-->
+  <script
+    src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/satelliteLib-a09735fa2f3c8230d779ef42c8c55edb5b8f1bf2.js"></script>
+  <script
+    src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/mbox-contents-0ea58df43e243cba1a43f30d37c6a4703100ff74.js"></script>
+  <script
+    src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/satellite-56a70fcd64746d42a4002aba.js"></script>
+  <script
+    src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/satellite-56a70fcd64746d42a4002abc.js"></script>
+  <script
+    src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/satellite-56a70fcd64746d42a4002abb.js"></script>
+  <!--Start of global snippet: Please do not remove
+Place this snippet between the <head> and </head> tags on every page of your site.
+-->
+  <!-- Global site tag (gtag.js) - Google Marketing Platform -->
+  <script async="" src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/js(1)"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'DC-8034780');
+  </script>
+  <!-- End of global snippet: Please do not remove-->
+  <script src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/analytics.js"></script>
+
+
+
+
+  <meta name="loginpath" content="null">
+  <meta name="loginapi" content="null">
+  <meta name="logoutapi" content="null">
+  <meta name="serviceapi" content="null">
+  <meta name="country" content="ph">
+
+
+
+
+
+
+
+  <title>Insurance Claim Guide | Make A Claim | Philam Life</title>
+
+
+  <script
+    src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/s-code-contents-f5eeff404b041c8067d05110a8f37f1ef80b14a1.js"></script>
+  <link href="chrome-extension://cjdnfmjmdligcpfcekfmenlhiopehjkd/web_resources/modal/modal.css" rel="stylesheet"
+    id="__tmpStyle">
+  <script
+    src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/satellite-5b617cca64746d06d1002471.js"></script>
+  <style id="card-style">
+    @media (min-width: 768px) {
+      .card-2 .card-head {
+        height: 0px
+      }
+
+      .card-2 .card-desc {
+        height: 0px
+      }
+    }
+  </style>
+</head>
+
+
+
+<body data-gr-c-s-loaded="true">
+
+
+
+  <a id="gotocontent" href="https://www.philamlife.com/en/help-support/claim-guide.html#main" class="lk2 gotocontent"
+    tabindex="1">Skip to main content</a>
+
+
+
+  <script type="text/javascript">
+    window._q = [];
+  </script>
+
+
+
+
+
+
+
+  <div class="topnav global-nav parbase">
+    <div class="navmenu-backdrop"></div>
+    <div class="navmenu navmenu-default navmenu-fixed-left offcanvas">
+
+
+
+
+
+
+
+
+
+      <ul class="nav navmenu-nav navmenu-search-button border-bottom-dark border-top-dark">
+        <li>
+          <a href="https://www.philamlife.com/en/search.html" class="clearfix">
+            <svg class="icon-xs hide-on-fallback" role="img" title="icon-search-nav">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#search-nav">
+              </use>
+              <image class="icon icon-xs " src="/content/dam/aia/icons/navigation/search-nav.png"
+                xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+            </svg>
+            <span class="h5 w">Search</span>
+          </a>
+        </li>
+      </ul>
+
+
+      <ul class="nav navmenu-nav" data-user-menu="individual">
+        <li>
+          <a class="clearfix" href="https://www.philamlife.com/en/index.html">
+
+            <svg class="icon icon-xs hide-on-fallback " role="img">
+              <g>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#home-menu">
+                </use>
+                <image class="icon icon-xs " src="/content/dam/aia/icons/menu/home-menu.png" alt="undefined"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+              </g>
+            </svg>
+
+            <span class="h5 w">Home</span>
+          </a>
+        </li>
+
+        <li class="dropdown">
+          <div class="mobile-firstlevel">
+            <a class="" href="https://www.philamlife.com/en/our-products.html">
+
+              <svg class="icon icon-xs hide-on-fallback " role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#life-menu"></use>
+                  <image class="icon icon-xs " src="/content/dam/aia/icons/menu/life-menu.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+              <span>Our Products</span>
+            </a>
+            <a class="dropdown-toggle pull-right" data-toggle="dropdown">
+
+              <svg class="icon icon-xs hide-on-fallback pull-right closed-show" role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#open-2ndg"></use>
+                  <image class="icon icon-xs pull-right closed-show"
+                    src="/content/dam/aia/icons/secondary/open-2ndg.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+
+              <svg class="icon icon-xs hide-on-fallback pull-right closed-hide" role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#close-2ndg"></use>
+                  <image class="icon icon-xs pull-right closed-hide"
+                    src="/content/dam/aia/icons/secondary/close-2ndg.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+            </a>
+          </div>
+          <ul class="dropdown-menu navmenu-nav navmenu-dropdown-menu" role="menu">
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/our-products/protection.html">Protection</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/our-products/health.html">Health</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/our-products/medical.html">Medical</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/our-products/education.html">Education</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/our-products/savings.html">Savings</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/our-products/investment.html">Investment</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/our-products/vitality-landing.html">Philam
+                Vitality</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/our-products/group-life.html">Group Life</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/our-products/group-accident.html">Group
+                Accident</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/our-products/group-medical.html">Group Medical</a>
+            </li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/our-products/credit-life.html">Credit Life</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <div class="mobile-firstlevel">
+            <a class="" href="https://www.philamlife.com/en/about-philamlife.html">
+
+              <svg class="icon icon-xs hide-on-fallback " role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#aia-menu"></use>
+                  <image class="icon icon-xs " src="/content/dam/aia/icons/menu/aia-menu.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+              <span>About Us</span>
+            </a>
+            <a class="dropdown-toggle pull-right" data-toggle="dropdown">
+
+              <svg class="icon icon-xs hide-on-fallback pull-right closed-show" role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#open-2ndg"></use>
+                  <image class="icon icon-xs pull-right closed-show"
+                    src="/content/dam/aia/icons/secondary/open-2ndg.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+
+              <svg class="icon icon-xs hide-on-fallback pull-right closed-hide" role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#close-2ndg"></use>
+                  <image class="icon icon-xs pull-right closed-hide"
+                    src="/content/dam/aia/icons/secondary/close-2ndg.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+            </a>
+          </div>
+          <ul class="dropdown-menu navmenu-nav navmenu-dropdown-menu" role="menu">
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/about-philamlife/our-management-team.html">Our
+                Management Team</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/about-philamlife/careers.html">Careers</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/about-philamlife/our-advocacy.html">Our
+                Advocacy</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/about-philamlife/media-centre.html">Media
+                Centre</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/about-philamlife/our-affliliates.html">Our
+                Affiliates</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/about-philamlife/our-corporate-governance.html">Our
+                Corporate Governance</a></li>
+
+            <li><a class="h6 b5"
+                href="https://www.philamlife.com/en/about-philamlife/doing-business-with-philam-life.html">Doing
+                Business with Philam Life</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/about-philamlife/our-customer-charter.html">Our
+                Customer Charter</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <div class="mobile-firstlevel">
+            <a class="" href="https://www.philamlife.com/en/live-better.html">
+
+              <svg class="icon icon-xs hide-on-fallback " role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#myclaims-menu"></use>
+                  <image class="icon icon-xs " src="/content/dam/aia/icons/menu/myclaims-menu.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+              <span>Live Better</span>
+            </a>
+            <a class="dropdown-toggle pull-right" data-toggle="dropdown">
+
+              <svg class="icon icon-xs hide-on-fallback pull-right closed-show" role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#open-2ndg"></use>
+                  <image class="icon icon-xs pull-right closed-show"
+                    src="/content/dam/aia/icons/secondary/open-2ndg.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+
+              <svg class="icon icon-xs hide-on-fallback pull-right closed-hide" role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#close-2ndg"></use>
+                  <image class="icon icon-xs pull-right closed-hide"
+                    src="/content/dam/aia/icons/secondary/close-2ndg.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+            </a>
+          </div>
+          <ul class="dropdown-menu navmenu-nav navmenu-dropdown-menu" role="menu">
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/live-better/protection.html">Protection</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/live-better/savings.html">Savings</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/live-better/education.html">Education</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/live-better/health.html">Health</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <div class="mobile-firstlevel">
+            <a class="" href="https://www.philamlife.com/en/help-support.html">
+
+              <svg class="icon icon-xs hide-on-fallback " role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#agents-nav"></use>
+                  <image class="icon icon-xs " src="/content/dam/aia/icons/navigation/agents-nav.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+              <span>Help &amp; Support</span>
+            </a>
+            <a class="dropdown-toggle pull-right" data-toggle="dropdown">
+
+              <svg class="icon icon-xs hide-on-fallback pull-right closed-show" role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#open-2ndg"></use>
+                  <image class="icon icon-xs pull-right closed-show"
+                    src="/content/dam/aia/icons/secondary/open-2ndg.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+
+              <svg class="icon icon-xs hide-on-fallback pull-right closed-hide" role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#close-2ndg"></use>
+                  <image class="icon icon-xs pull-right closed-hide"
+                    src="/content/dam/aia/icons/secondary/close-2ndg.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+            </a>
+          </div>
+          <ul class="dropdown-menu navmenu-nav navmenu-dropdown-menu" role="menu">
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/help-support/contact-us.html">Contact Us</a></li>
+
+            <li><a class="h6 b5"
+                href="https://www.philamlife.com/en/help-support/frequently-asked-questions.html">Frequently Asked
+                Questions</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/help-support/locate-us.html">Locate Us</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/help-support/philam-funds.html">Philam Funds</a>
+            </li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/help-support/payment-facilities.html">Payment
+                Facilities</a></li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/help-support/forms-library.html">Forms Library</a>
+            </li>
+
+            <li><a class="h6 b5" href="https://www.philamlife.com/en/help-support/claim-guide.html">Claim Guide</a></li>
+          </ul>
+        </li>
+
+
+
+        <li class="dropdown myaia-mobile-section">
+          <div class="mobile-firstlevel">
+            <a class="" href="https://www.philamlife.com/en/help-support/claim-guide.html#">
+
+              <svg class="icon icon-xs hide-on-fallback " role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#myinsurance-menu"></use>
+                  <image class="icon icon-xs " src="/content/dam/aia/icons/menu/myinsurance-menu.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+              <span>My Philam</span>
+            </a>
+            <a class="dropdown-toggle pull-right" data-toggle="dropdown">
+
+              <svg class="icon icon-xs hide-on-fallback pull-right closed-show" role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#open-2ndg"></use>
+                  <image class="icon icon-xs pull-right closed-show"
+                    src="/content/dam/aia/icons/secondary/open-2ndg.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+
+              <svg class="icon icon-xs hide-on-fallback pull-right closed-hide" role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#close-2ndg"></use>
+                  <image class="icon icon-xs pull-right closed-hide"
+                    src="/content/dam/aia/icons/secondary/close-2ndg.png" alt="undefined"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg>
+
+            </a>
+          </div>
+          <ul class="dropdown-menu navmenu-nav navmenu-dropdown-menu" role="menu">
+            <li>
+
+
+              <a class="h6 b5" href="https://portal.philamlife.com/ePlan/philam" target="_self">Customer Portal</a>
+
+
+
+            </li>
+            <li>
+
+
+              <a class="h6 b5" href="https://portal.philamlife.com/agencyportal/portal/philamlife/login"
+                target="_blank">Agency portal</a>
+
+
+
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+
+
+      <ul class="nav promomenu-nav">
+        <li>
+          <a href="https://www.philamlife.com/en/protect-your-loved-ones.html">
+            <div class="h5 w">Tuloy ang buhay</div>
+            <div class="b5 bt5">Protektado ka at ang mga mahal mo</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.philamlife.com/en/financial-needs-calculator.html">
+            <div class="h5 w">CALCULATE YOUR FINANCIAL NEEDS</div>
+            <div class="b5 bt5">Meet Liv, your financial assistant who will help you stay one step ahead</div>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.philamlife.com/en/help-support/contact-us.html">
+            <div class="h5 w">CONTACT US</div>
+            <div class="b5 bt5">Contact us in your preferred way.</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    <div class="navbar navbar-default navbar-fixed">
+      <div class="navbar-slim">
+        <div class="navbar-title-slim">Philam Life</div>
+      </div>
+
+
+
+
+      <div class="navbar-one">
+        <button type="button" class="navbar-btn hide-sd-up" data-toggle="offcanvas" data-target=".navmenu"
+          data-canvas="body">
+
+          <svg class="icon icon-xs hide-on-fallback " role="img">
+            <g>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#menu-nav">
+              </use>
+              <image class="icon icon-xs " src="/content/dam/aia/icons/navigation/menu-nav.png" alt="undefined"
+                xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+            </g>
+          </svg>
+
+        </button>
+        <a class="navbar-brand" href="https://www.philamlife.com/en/index.html" tabindex="99">
+
+          <svg title="Philam Life" class="icon icon-s hide-on-fallback visible-xs-inline-block" role="img">
+            <g>
+              <title>Philam Life</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                xlink:href="/content/dam/aia/icons/icons.svg#philamwhilte-logo"></use>
+              <image class="icon icon-s visible-xs-inline-block" src="/content/dam/aia/logos/philamwhilte-logo.png"
+                alt="Philam Life" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+            </g>
+          </svg>
+
+          <img class="navbar-brand-img hidden-xs"
+            src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/philam-logo-lockup-2x.png"
+            alt="Philam Life">
+        </a>
+
+
+        <ul class="nav navbar-nav" data-user-menu="individual">
+
+          <li class="dropdown">
+            <a href="https://www.philamlife.com/en/our-products.html" class="dropdown-toggle h6" data-hover="dropdown"
+              data-delay="100" data-hover-delay="300" style="width:100px" tabindex="100" aria-expanded="false">
+              Our Products
+            </a>
+            <div class="dropdown-menu">
+              <div class="container-fluid margin-bottom-xxl">
+                <div class="row">
+                  <div class="col-sm-3 margin-top-3xl">
+
+
+
+
+
+                    <h4 class="p1 margin-bottom-m">Our Products</h4>
+                    <p class="bt3 p3 margin-bottom-m">Find the right product solution for your needs.</p>
+                    <a class="lk1" href="https://www.philamlife.com/en/our-products.html">See More</a>
+                    <div class="link-arrow"></div>
+                    <div class="margin-bottom-l"></div>
+                    <a href="https://www.philamlife.com/en/protect-your-loved-ones.html">
+                      <div class="overlay"
+                        style="background-size: cover; background-repeat: no-repeat; background-image: url(&#39;/content/dam/ph/en/morgan-assets/images/backgrounds/Morgan_Navigation_250x100.jpg&#39;); opacity:0.8;">
+                        <div style="padding: 32px 20px;background-color: rgba(0,0,0,0.4);">
+                          <h6 class="w">Tuloy ang buhay</h6>
+                          <p class="w bt5">Protektado ka at ang mga mahal mo</p>
+                        </div>
+                      </div>
+                    </a>
+                    <div class="margin-bottom-xxl"></div>
+                    <a href="http://www.philamlife.com/en/financial-needs-calculator.html">
+                      <div class="overlay"
+                        style="background-size: cover; background-repeat: no-repeat; background-image: url(&#39;/content/dam/ph/en/photos/financial-calculator/liv-banner-new-052518.jpg&#39;); opacity:0.8;">
+                        <div style="padding: 32px 20px;background-color: rgba(0,0,0,0.4);">
+                          <h6 class="w">CALCULATE YOUR FINANCIAL NEEDS</h6>
+                          <p class="w bt5">Meet Liv, your financial assistant who will help you stay one step ahead</p>
+                        </div>
+                      </div>
+                    </a>
+
+                  </div>
+                  <div class="col-sm-9 border-left margin-top-4xl">
+
+
+                    <div class="row">
+                      <div class="col-sm-8">
+                        <p class="p2 bt9 margin-bottom-m">For Individuals</p>
+                      </div>
+                      <div class="col-sm-4">
+                        <p class="p2 bt9 margin-bottom-m">For Business</p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+
+
+
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/our-products/protection.html" tabindex="110">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#lifepro-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/lifepro-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Protection</h6>
+                                <p class="p3 bt5">Make sure that the needs of your loved ones are taken care of no
+                                  matter what happens to you.</p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/our-products/health.html" tabindex="111">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#medicalpro-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/medicalpro-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Health</h6>
+                                <p class="p3 bt5">Get coverage for expensive health setbacks so you can focus on getting
+                                  better.</p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/our-products/medical.html" tabindex="112">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#medicalcare-prime3"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/product-detail/medicalcare-prime3.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Medical</h6>
+                                <p class="p3 bt5">Make sure that the needs of your loved ones are taken care of no
+                                  matter what happens to you.</p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/our-products/education.html" tabindex="113">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#education-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/education-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Education</h6>
+                                <p class="p3 bt5">When the time comes, be ready to give your child the best
+                                  opportunities available.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/our-products/savings.html" tabindex="140">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#savings-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/savings-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Savings</h6>
+                                <p class="p3 bt5">Have the right savings plan to help you achieve your dream goal.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/our-products/investment.html" tabindex="141">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#investment-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/investment-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Investment</h6>
+                                <p class="p3 bt5">Grow your wealth further and get the most out of life.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/our-products/vitality-landing.html" tabindex="142">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#vitality-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/vitality-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Philam Vitality</h6>
+                                <p class="p3 bt5">Philam Vitality is a science-backed wellness programme that works with
+                                  you to make real change to your health.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/our-products/group-life.html" tabindex="170">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#sme_solutions-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/sme_solutions-prime1.png"
+                                      alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Group Life</h6>
+                                <p class="p3 bt5">Increase engagement by providing your employees more than the basic
+                                  paycheck.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/our-products/group-accident.html" tabindex="171">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#accidentpro-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/accidentpro-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Group Accident</h6>
+                                <p class="p3 bt5">Have peace of mind when you protect your people from unforeseen
+                                  incidents.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/our-products/group-medical.html" tabindex="172">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#medicalpro-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/medicalpro-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Group Medical</h6>
+                                <p class="p3 bt5">Grow your company by ensuring your employees' health.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/our-products/credit-life.html" tabindex="173">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#corporate_solutions-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/corporate_solutions-prime1.png"
+                                      alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Credit Life</h6>
+                                <p class="p3 bt5">Protect your assets by ensuring loans will be paid.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <button class="btn-glyph close-nav-dropdown-btn" data-dismiss="navbar-dropdown" tabindex="199">
+
+                <svg title="Dismiss" class="icon icon-xs hide-on-fallback " role="img">
+                  <g>
+                    <title>Dismiss</title>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/content/dam/aia/icons/icons.svg#closedark-glyph"></use>
+                    <image class="icon icon-xs " src="/content/dam/aia/icons/glyph/closedark-glyph.png" alt="undefined"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                  </g>
+                </svg>
+
+              </button>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="https://www.philamlife.com/en/about-philamlife.html" class="dropdown-toggle h6"
+              data-hover="dropdown" data-delay="100" data-hover-delay="300" style="width:100px" tabindex="200"
+              aria-expanded="false">
+              About Us
+            </a>
+            <div class="dropdown-menu">
+              <div class="container-fluid margin-bottom-xxl">
+                <div class="row">
+                  <div class="col-sm-3 margin-top-3xl">
+
+                    <h4 class="p1 margin-bottom-m">About Us</h4>
+                    <p class="bt3 p3 margin-bottom-xxl">For over 70 years, Philam Life has empowered Filipinos to
+                      achieve financial security and prosperity.
+                    </p>
+
+                    <a class="lk1" href="https://www.philamlife.com/en/about-philamlife.html" tabindex="201">LEARN
+                      MORE</a>
+                    <div class="link-arrow"></div>
+
+
+
+                  </div>
+                  <div class="col-sm-9 border-left margin-top-4xl">
+
+
+
+
+                    <div class="row">
+
+
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/about-philamlife/our-management-team.html"
+                              tabindex="210">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#aboutus_leadership-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/aboutus_leadership-prime1.png"
+                                      alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Our Management Team</h6>
+                                <p class="p3 bt5">The leaders of Philam Life.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/about-philamlife/careers.html" tabindex="211">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#aboutus_careers-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/aboutus_careers-prime1.png"
+                                      alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Careers</h6>
+                                <p class="p3 bt5">Explore opportunities to work at Philam Life.</p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/about-philamlife/our-advocacy.html" tabindex="212">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#hand_globe-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/hand_globe-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Our Advocacy</h6>
+                                <p class="p3 bt5">Through Philam Foundation, we build an educated nation empowered for
+                                  the future. </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/about-philamlife/media-centre.html" tabindex="240">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#aboutus_mediacenter-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/aboutus_mediacenter-prime1.png"
+                                      alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Media Centre</h6>
+                                <p class="p3 bt5">News about Philam Life.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/about-philamlife/our-affliliates.html"
+                              tabindex="241">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#agreed_value-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/agreed_value-prime1.png"
+                                      alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Our Affiliates</h6>
+                                <p class="p3 bt5">We strengthen our life insurance and wealth management business to
+                                  better deliver our commitments to our customers.</p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/about-philamlife/our-corporate-governance.html"
+                              tabindex="242">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#easy_entry-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/easy_entry-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Our Corporate Governance</h6>
+                                <p class="p3 bt5">We are committed to maintaining good corporate governance in a manner
+                                  that adds value to our company and is beneficial to all our stakeholders.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/about-philamlife/doing-business-with-philam-life.html"
+                              tabindex="270">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#aboutus_ourcommiment-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/aboutus_ourcommiment-prime1.png"
+                                      alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Doing Business with Philam Life</h6>
+                                <p class="p3 bt5">We are committed to maintaining strong relationships with our business
+                                  partners.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/about-philamlife/our-customer-charter.html"
+                              tabindex="271">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#agreed_value-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/agreed_value-prime1.png"
+                                      alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Our Customer Charter</h6>
+                                <p class="p3 bt5">This is our commitment to you.</p>
+                              </div>
+
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+
+
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <button class="btn-glyph close-nav-dropdown-btn" data-dismiss="navbar-dropdown" tabindex="299">
+
+                <svg title="Dismiss" class="icon icon-xs hide-on-fallback " role="img">
+                  <g>
+                    <title>Dismiss</title>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/content/dam/aia/icons/icons.svg#closedark-glyph"></use>
+                    <image class="icon icon-xs " src="/content/dam/aia/icons/glyph/closedark-glyph.png" alt="undefined"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                  </g>
+                </svg>
+
+              </button>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="https://www.philamlife.com/en/live-better.html" class="dropdown-toggle h6" data-hover="dropdown"
+              data-delay="100" data-hover-delay="300" style="width:100px" tabindex="300" aria-expanded="false">
+              Live Better
+            </a>
+            <div class="dropdown-menu">
+              <div class="container-fluid margin-bottom-xxl">
+                <div class="row">
+                  <div class="col-sm-3 margin-top-3xl">
+
+                    <h4 class="p1 margin-bottom-m">Live Better</h4>
+                    <p class="bt3 p3 margin-bottom-xxl">A mix of how-to’s, stories, and guides to help you live better.
+                    </p>
+
+                    <a class="lk1" href="https://www.philamlife.com/en/live-better.html" tabindex="301">KNOW MORE</a>
+                    <div class="link-arrow"></div>
+
+
+
+                  </div>
+                  <div class="col-sm-9 border-left margin-top-4xl">
+
+
+
+
+                    <div class="row">
+
+
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/live-better/protection.html" tabindex="310">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#csr-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/csr-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Protection</h6>
+                                <p class="p3 bt5">Stay one step ahead and take care of your future today!</p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/live-better/savings.html" tabindex="311">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#budget_everything-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/budget_everything-prime1.png"
+                                      alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Savings</h6>
+                                <p class="p3 bt5">Equip yourself with the knowledge and skills you need to grow your
+                                  money.</p>
+                              </div>
+
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/live-better/education.html" tabindex="340">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#education-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/education-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Education</h6>
+                                <p class="p3 bt5">Help you kids reach their dreams by investing in their future today!
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/live-better/health.html" tabindex="341">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#health_living-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/health_living-prime1.png"
+                                      alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Health</h6>
+                                <p class="p3 bt5">Worry less about you and your loved ones’ health with these important
+                                  tips.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-sm-4">
+
+                      </div>
+
+
+
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <button class="btn-glyph close-nav-dropdown-btn" data-dismiss="navbar-dropdown" tabindex="399">
+
+                <svg title="Dismiss" class="icon icon-xs hide-on-fallback " role="img">
+                  <g>
+                    <title>Dismiss</title>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/content/dam/aia/icons/icons.svg#closedark-glyph"></use>
+                    <image class="icon icon-xs " src="/content/dam/aia/icons/glyph/closedark-glyph.png" alt="undefined"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                  </g>
+                </svg>
+
+              </button>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="https://www.philamlife.com/en/help-support.html" class="dropdown-toggle h6" data-hover="dropdown"
+              data-delay="100" data-hover-delay="300" style="width:100px" tabindex="400">
+              Help &amp; Support
+            </a>
+            <div class="dropdown-menu">
+              <div class="container-fluid margin-bottom-xxl">
+                <div class="row">
+                  <div class="col-sm-3 margin-top-3xl">
+
+                    <h4 class="p1 margin-bottom-m">Help &amp; Support</h4>
+                    <p class="bt3 p3 margin-bottom-xxl">We strive to assist you for all your inquiries with high-touch
+                      customer service.</p>
+
+                    <a class="lk1" href="https://www.philamlife.com/en/help-support.html" tabindex="401">Contact Philam
+                      Life</a>
+                    <div class="link-arrow"></div>
+
+
+
+                  </div>
+                  <div class="col-sm-9 border-left margin-top-4xl">
+
+
+
+
+                    <div class="row">
+
+
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/help-support/contact-us.html" tabindex="410">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#schedulecall-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/schedulecall-prime1.png"
+                                      alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Contact Us</h6>
+                                <p class="p3 bt5">Contact us in your preferred way.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/help-support/frequently-asked-questions.html"
+                              tabindex="411">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#faq-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/faq-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Frequently Asked Questions</h6>
+                                <p class="p3 bt5">Have a question? You may find the answer here.</p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/help-support/locate-us.html" tabindex="412">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#ubication-2nd"></use>
+                                    <image class="icon icon-s " src="/content/dam/aia/icons/secondary/ubication-2nd.png"
+                                      alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Locate Us</h6>
+                                <p class="p3 bt5">Find a Philam Life branch near you.</p>
+                              </div>
+
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/help-support/philam-funds.html" tabindex="440">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#investment-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/investment-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Philam Funds</h6>
+                                <p class="p3 bt5">Get updates on the performance of Philam Life’s Variable Funds.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/help-support/payment-facilities.html" tabindex="441">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#payment_internet-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/payment_internet-prime1.png"
+                                      alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Payment Facilities</h6>
+                                <p class="p3 bt5">Paying your premiums is easy. Choose the best payment option for you.
+                                </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/help-support/forms-library.html" tabindex="442">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#pdf-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/pdf-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Forms Library</h6>
+                                <p class="p3 bt5">A selection of forms you can download, fill in and submit to us.</p>
+                              </div>
+
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele" style="height:98px">
+                            <a href="https://www.philamlife.com/en/help-support/claim-guide.html" tabindex="470">
+
+                              <div class="thumbnail">
+
+                                <svg class="icon icon-s hide-on-fallback " role="img">
+                                  <g>
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="/content/dam/aia/icons/icons.svg#myclaims-prime1"></use>
+                                    <image class="icon icon-s "
+                                      src="/content/dam/aia/icons/primary/normal/myclaims-prime1.png" alt="undefined"
+                                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                  </g>
+                                </svg>
+
+                              </div>
+                              <div class="content">
+                                <h6 class="p3">Claim Guide</h6>
+                                <p class="p3 bt5">Know the requirements in filing a claim. </p>
+                              </div>
+
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+
+
+
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+              <button class="btn-glyph close-nav-dropdown-btn" data-dismiss="navbar-dropdown" tabindex="499">
+
+                <svg title="Dismiss" class="icon icon-xs hide-on-fallback " role="img">
+                  <g>
+                    <title>Dismiss</title>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/content/dam/aia/icons/icons.svg#closedark-glyph"></use>
+                    <image class="icon icon-xs " src="/content/dam/aia/icons/glyph/closedark-glyph.png" alt="undefined"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                  </g>
+                </svg>
+
+              </button>
+            </div>
+          </li>
+
+
+          <li class="dropdown">
+            <a href="https://www.philamlife.com/en/help-support/claim-guide.html#" tabindex="9600"
+              class="dropdown-toggle h6" data-hover="dropdown" data-delay="100" data-hover-delay="300"
+              style="width:100px">
+              My Philam
+            </a>
+            <div class="dropdown-menu">
+              <div class="container-fluid margin-bottom-xxl">
+                <div class="row loggedout">
+                  <style>
+                    .navbar-nav {
+                      margin-left: 174px;
+                    }
+
+                    .myaia-list-margin {
+                      margin-bottom: 5px;
+                    }
+
+                    .navbar-default .navbar-nav .open .dropdown-menu .list-ele.normal-height {
+                      height: initial;
+                    }
+
+                    .link-arrow.brown {
+                      border-left: 8px solid #554344;
+                    }
+
+                    .navbar-default .navbar-nav .open .dropdown-menu .list-ele a:hover h6:hover .link-arrow.brown {
+                      border-left: 8px solid #D31145;
+                    }
+
+                    .navbar-default .navbar-nav .open .dropdown-menu .border-right {
+                      border-right: 0px;
+                    }
+                  </style>
+
+                  <div class="col-sm-3 margin-top-3xl">
+                    <h4 class="p1 margin-bottom-m">My Philam</h4>
+                    <p class="bt3 p3 margin-bottom-xxl">Access your Philam Life Accounts by clicking on the links.</p>
+                  </div>
+
+                  <div class="col-sm-9 border-left margin-top-4xl">
+                    <div class="row">
+                      <!-- customer portal -->
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele" style="min-height:145px; height: auto;">
+
+                            <div class="thumbnail">
+                              <svg class="icon icon-s hide-on-fallback " role="img">
+                                <g>
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="/content/dam/aia/icons/icons.svg#mailhome-prime1"></use>
+                                  <image class="icon icon-s "
+                                    src="/content/dam/aia/icons/primary/normal/mailhome-prime1.png" alt="undefined"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="content">
+                              <h6 class="p3">CUSTOMER PORTAL</h6>
+                              <a href="https://portal.philamlife.com/ePlan/philam" tabindex="410" target="_blank">
+                                <p class="p3 myaia-list-margin">ePlan<span class="link-arrow brown"></span></p>
+                              </a>
+                              <p class="p3 bt5 margin-bottom-xxs">View the status of your policy &amp; claim requests,
+                                monitor your policy’s account values, and keep tabs of your payments &amp; benefits
+                                history.</p>
+                              <p class="p3 bt5"></p>
+                            </div>
+                          </li>
+                          <li class="list-ele">
+                            <div class="thumbnail">
+                              <svg class="icon icon-s hide-on-fallback " role="img">
+                                <g>
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="/content/dam/aia/icons/icons.svg#complementary-prime1"></use>
+                                  <image class="icon icon-s "
+                                    src="/content/dam/aia/icons/primary/normal/complementary-prime1.png" alt="undefined"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="content">
+                              <h6 class="p3">PREMIUM CLUB</h6>
+                              <a href="https://www.philamlife.com/en/premiumclub.html" tabindex="411" target="_blank">
+                                <p class="p3 myaia-list-margin">Learn more<span class="link-arrow brown"></span></p>
+                              </a>
+                            </div>
+                            <div class="thumbnail">
+
+                            </div>
+                            <div class="content">
+                              <a href="https://philam.giftaway.ph/premiumclub/" target="_blank">
+                                <p class="p3 myaia-list-margin">Redeem rewards<span class="link-arrow brown"></span></p>
+                              </a>
+                            </div>
+
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Vitality Member portal -->
+
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele" style="min-height:145px; height: auto;">
+
+                            <div class="thumbnail">
+                              <svg class="icon icon-s hide-on-fallback " role="img">
+                                <g>
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="/content/dam/aia/icons/icons.svg#vitality-prime1"></use>
+                                  <image class="icon icon-s "
+                                    src="/content/dam/aia/icons/primary/normal/vitality-prime1.png" alt="undefined"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="content">
+                              <h6 class="p3">VITALITY MEMBER PORTAL</h6>
+                              <a href="https://www.philamvitality.com/vmp-ph/" tabindex="412" target="_blank">
+                                <p class="p3 myaia-list-margin">Vitality Member Portal<span
+                                    class="link-arrow brown"></span></p>
+                              </a>
+                              <p class="p3 bt5">Get the knowledge, tools and motivation you need to do well on your
+                                journey towards healthy living so that you get more out of life and enjoy the rewards,
+                                whilst being protected against risk.</p>
+                              <p class="p3 bt5"></p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <!-- Distribution -->
+
+                      <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                          <li class="list-ele">
+                            <div class="thumbnail">
+                              <svg class="icon icon-s hide-on-fallback " role="img">
+                                <g>
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="/content/dam/aia/icons/icons.svg#agent-prime1"></use>
+                                  <image class="icon icon-s "
+                                    src="/content/dam/aia/icons/primary/normal/agent-prime1.png" alt="undefined"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                                </g>
+                              </svg>
+                            </div>
+                            <div class="content">
+                              <h6 class="p3">DISTRIBUTION</h6>
+                              <a href="https://portal.philamlife.com/agencyportal/portal/philamlife/login"
+                                tabindex="413" target="_blank">
+                                <p class="p3 myaia-list-margin">Agency Portal<span class="link-arrow brown"></span></p>
+                              </a>
+                            </div>
+
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <script>
+                    var menu = $(".navbar-nav").children("li:last-child");
+                    if (menu.children().length == 1) {
+                      var dropdown = menu.children().detach();
+                      var loginLabel = menu.text().trim();
+
+                      dropdown.find("script").remove();
+                      var tab = '<a href="#" tabindex="9600" class="dropdown-toggle h6" data-hover="dropdown" data-delay="100" data-hover-delay="300" style="width:100px" aria-expanded="false">' + loginLabel + '</a>' + dropdown[0].outerHTML;
+
+                      menu.html(tab);
+                    }
+                  </script>
+
+                  <div style="padding-right: 17px;" id="leads-advisory-modal" class="advisory-modal modal fade in"
+                    data-backdrop="static" data-keyboard="false">
+                    <div class="modal-dialog partial-screen-modal-dialog">
+                      <div class="modal-content overflow-auto">
+                        <div class="modal-header bg-t2">
+                          <button class="modal-header-btn pull-right" data-dismiss="modal">
+                            <svg class="icon-xs hide-on-fallback" role="img" title="closewhite-glyph">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                xlink:href="dist/img/icons/icons.svg#closewhite-glyph">
+                              </use>
+                              <image class="icon icon-xs" src="dist/img/icons/closewhite-glyph.png"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                            </svg>
+                          </button>
+                          <h6 class="w text-center">SYSTEM MAINTENANCE</h6>
+                        </div>
+                        <div class="modal-container padding-top-xxl" style="padding: 40px 65px 0;">
+
+                          <h5>We'll be back in a bit!</h5>
+                          <p><br></p>
+                          <p>
+                            Our website is undergoing routine maintenance to make sure your browsing experience remains
+                            top-notch. We'll be back on March 10, 2019, ready to serve you better.
+                          </p>
+
+                          <div class="accept-wrapper text-center" style="margin: 40px 0;">
+                            <button type="button" class="btn btn-default btn-primary accept">OKAY</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <style>
+                    .advisory-modal .modal-header {
+                      background-color: #b8123e;
+                    }
+
+                    .advisory-modal .modal-content {
+                      background-color: #fff;
+                    }
+                  </style>
+
+                  <script>
+
+                    window.addEventListener('load', function () {
+                      var now = new Date();
+
+                      if (now.getDate() === 9 && now.getMonth() === 2 && now.getFullYear() === 2019) {
+                        isEditMode()
+                        cookieChecker()
+                        onModalButtonClick()
+                      }
+                    })
+
+                    function onModalButtonClick() {
+                      $('.accept-wrapper').find('.accept').click(function () {
+                        document.cookie = "leads_advisory=true";
+                        $('#leads-advisory-modal').modal('hide');
+                      })
+
+                    }
+
+                    // ON LOAD
+                    function isEditMode() {
+                      if ($("button[data-layer='Edit']").hasClass("is-selected")) {
+                        $('#leads-advisory-modal').modal('hide');
+                      }
+                    }
+                    function cookieChecker() {
+                      if (!document.cookie.split(';').filter(function (item) {
+                        // check if cookie already exist
+                        return item.trim().indexOf('leads_advisory=') == 0
+                      }).length) {
+                        console.log('COOKIE NOT EXIST!');
+                        $('#leads-advisory-modal').modal('show');
+                      } else {
+                        console.log('COOKIE EXIST!');
+                      }
+                    }
+
+
+
+                  </script>
+                </div>
+                <div class="row hide loggedin">
+
+                </div>
+              </div>
+              <button class="btn-glyph close-nav-dropdown-btn" data-dismiss="navbar-dropdown" tabindex="9699">
+
+                <svg title="Dismiss" class="icon icon-xs hide-on-fallback " role="img">
+                  <g>
+                    <title>Dismiss</title>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/content/dam/aia/icons/icons.svg#closedark-glyph"></use>
+                    <image class="icon icon-xs " src="/content/dam/aia/icons/glyph/closedark-glyph.png" alt="undefined"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                  </g>
+                </svg>
+
+              </button>
+            </div>
+          </li>
+        </ul>
+        <ul class="nav navbar-tools pull-right">
+
+
+          <li class="dropdown navbar-search-btn hidden-below-sd" tabindex="9800">
+            <div class="dropdown-toggle" data-toggle="dropdown">
+              <div class="navbar-tool-label">
+
+                <svg title="Search" class="icon icon-xs hide-on-fallback " role="img">
+                  <g>
+                    <title>Search</title>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/content/dam/aia/icons/icons.svg#search-nav"></use>
+                    <image class="icon icon-xs " src="/content/dam/aia/icons/navigation/search-nav.png" alt="Search"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                  </g>
+                </svg>
+
+              </div>
+            </div>
+            <ul class="dropdown-menu search-dropdown-menu">
+              <li class="search-bar">
+                <form class="search-form" id="search-form1">
+
+                  <input type="hidden" name="searchExecutor" value="/en/search" id="searchExecutor">
+                  <input type="hidden" name="type" value="123" id="search_type">
+                  <!--*/ end, by Ocean Lan */-->
+                  <div class="search-col-left">
+                    <input name="keyword" data-id="search-input" class="search-input" type="search"
+                      placeholder="Type Keywords" tabindex="9801"
+                      data-search-options="{&quot;hideAllFilter&quot;:true,&quot;hideProductsFilter&quot;:true,&quot;hideArticlesFilter&quot;:true,&quot;hideFormsFilter&quot;:true}"
+                      autocomplete="off">
+                  </div>
+                  <div class="search-col-right">
+                    <button class="btn btn-primary go-btn" tabindex="9802">Go</button>
+
+                    <button class="btn dismiss-search-btn" tabindex="9803">
+
+                      <svg title="Dismiss" class="icon icon-xs hide-on-fallback " role="img">
+                        <g>
+                          <title>Dismiss</title>
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                            xlink:href="/content/dam/aia/icons/icons.svg#closewhite-glyph"></use>
+                          <image class="icon icon-xs " src="/content/dam/aia/icons/glyph/closewhite-glyph.png"
+                            alt="undefined" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                        </g>
+                      </svg>
+
+                    </button>
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown" tabindex="9900" data-contact="">
+            <div class="dropdown-toggle" data-toggle="dropdown">
+              <div class="navbar-tool-label">
+
+                <svg title="Contact Us" class="icon icon-xs hide-on-fallback " role="img">
+                  <g>
+                    <title>Contact Us</title>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                      xlink:href="/content/dam/aia/icons/icons.svg#contact-nav"></use>
+                    <image class="icon icon-xs " src="/content/dam/aia/icons/navigation/contact-nav.png"
+                      alt="Contact Us" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                  </g>
+                </svg>
+
+              </div>
+            </div>
+            <ul class="dropdown-menu contact-dropdown-menu">
+              <li>
+
+                <a href="tel:0285282000" target="_self" tabindex="9901">
+
+
+                  <h6 class="p3">CALL US</h6>
+                  <p class="p3 bt5">Philippines : (02) 8 528 2000. We are open Monday to Friday between 7:30 AM to 5:00
+                    PM, and Saturday between 8:00 AM to 12:00 NN</p>
+                </a>
+              </li>
+
+              <li role="separator" class="divider"></li>
+              <li>
+
+
+                <a href="tel:1800105282000" target="_self" tabindex="9902">
+
+
+                  <h6 class="p3">Call our pldt ndd toll-free number 1800 10 528 2000</h6>
+                  <p class="p3 bt5"></p>
+                </a>
+
+              </li>
+
+              <li role="separator" class="divider"></li>
+              <li>
+
+
+                <a href="https://www.philamlife.com/en/help-support/contact-us.html#get-in-touch.html" target="_self"
+                  tabindex="9903">
+
+
+                  <h6 class="p3">SCHEDULE A CALL</h6>
+                  <p class="p3 bt5"></p>
+                </a>
+
+              </li>
+
+              <li role="separator" class="divider"></li>
+              <li>
+
+
+                <a href="mailto:philamlife@aia.com" target="_self" tabindex="9904">
+
+
+                  <h6 class="p3">Email Us</h6>
+                  <p class="p3 bt5"></p>
+                </a>
+
+              </li>
+
+            </ul>
+          </li>
+
+
+
+        </ul>
+      </div>
+      <div class="search-suggest-box" data-id="search-suggest-box1">
+      </div>
+
+      <div class="navbar-three navbar-sub">
+        <a href="https://www.philamlife.com/en/help-support.html" class="h6 navbar-three-up w" tabindex="10000">
+
+          <svg class="icon icon-xs hide-on-fallback " role="img">
+            <g>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/content/dam/aia/icons/icons.svg#back-nav">
+              </use>
+              <image class="icon icon-xs " src="/content/dam/aia/icons/navigation/back-nav.png" alt="undefined"
+                xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+            </g>
+          </svg>
+
+          Help &amp; Support
+        </a>
+        <div class="pull-right navbar-three-nav h6">
+          <a class="w" tabindex="10001" href="https://www.philamlife.com/en/help-support/forms-library.html">Prev</a>
+
+
+        </div>
+      </div>
+    </div>
+    <div class="navbar-fixed-spacer"></div>
+
+    <div class="navbar-sub-spacer"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+      var search = {};
+      search.productString = "Product with:";
+      search.articleString = "Article with:";
+      search.formString = "Form with:";
+      search.emptyMsg = "Please type your question.";
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <a href="https://www.philamlife.com/en/help-support/claim-guide.html#" class="back-to-top"
+      style="display: none;">Back to Top</a>
+
+
+
+
+    <div id="notification-template" class="hide nito">
+      <li>
+        <div class="contextual-alert error contextual-alert-inline">
+          <div class="alert-wrapper">
+
+            <div class="text-wrapper">
+              <p class="small warning-text" data-notificationid="{{id}}">{{title}}</p>
+              <a class="single-notification lk1" data-notificationid="{{id}}" data-polnum="{{polNum}}"
+                data-type="{{type}}" {{path}}="">{{label}}</a>
+            </div>
+          </div>
+
+        </div>
+      </li>
+    </div>
+  </div>
+
+
+
+
+
+  <div role="main" id="main" tabindex="11000"></div>
+  <script>
+    var aiaDatalayer = {
+      pageInfo: {
+        'pageType': 'AIA Blank Page',
+        'channel': 'corporate',
+      },
+      profile: {
+        'myAIAUserLoginID': ''
+      }
+    }
+  </script>
+  <div class="container">
+    <div class="content parsys">
+    </div>
+
+  </div>
+  <div class="full-content parsys">
+    <div class="section-container section">
+    </div>
+
+
+    <br>
+  </div>
+  <!-- <div class="grid-control-1-col section"> -->
+  <!-- <div id="test" style=" height: 50vh; " >
+      
+    </div> -->
+  <!-- <script type="text/javascript">
+      window.ymConfig = {
+        bot: 'x1596608779900',
+        containerId: 'test'
+      };
+      (function () {
+        var w = window, ic = w.YellowMessenger;
+        if ("function" === typeof ic)
+          ic("reattach_activator"), ic("update", ymConfig);
+        else {
+          var d = document, i = function () { i.c(arguments) };
+          function l() {
+            var e = d.createElement("script");
+            e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/banner.js";
+            var t = d.getElementsByTagName("script")[0];
+            t.parentNode.insertBefore(e, t)
+          }
+          i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
+        }
+      })();
+    </script> -->
+  <!-- <iframe style="z-index: 100; position: absolute; top: 20%; width: 60vw; height: 70vh; right: 20%; border-radius:4%; overflow:hidden" scrolling="no" src="https://app.yellowmessenger.com/pwa/mobile/x1596608779900?fullScreen=true" frameborder="0" height="500" width="1310">
+    </iframe> -->
+  <!-- <div class="row" id="test" style="padding-left: 100px;"> -->
+  <!-- <iframe style="z-index: 100; position: absolute; top: 20%; width: 60vw; height: 70vh; right: 20%; border-radius:4%; overflow:hidden" scrolling="no" src="https://app.yellowmessenger.com/pwa/mobile/x1596608779900?fullScreen=true" frameborder="0" height="500" width="1310">
+      </iframe> -->
+  <!-- <iframe style="border-radius:2%;" src="https://app.yellowmessenger.com/pwa/mobile/x1596608779900?fullScreen=true" height="600"
+            width="1310">
+          </iframe> -->
+
+
+  <!-- </div> -->
+  <!-- <div class="grid-control-1-col section">
+    
+  </div> -->
+  <!-- <div id="test" style=" height: 100vh;"> -->
+  <!-- <iframe style="border-radius:2%;" src="https://app.yellowmessenger.com/pwa/mobile/x1596608779900?fullScreen=true" height="600"
+            width="1310">
+          </iframe> -->
+  <!-- </div> -->
+  <!-- <div id="test" style=" height: 100vh;">
+  </div> -->
+  <!-- <script type="text/javascript">
+      window.ymConfig = {
+          bot: 'x1593514906226',
+          containerId: 'test'
+      };
+      (function () {
+          var w=window,ic=w.YellowMessenger;
+          if("function"===typeof ic)
+              ic("reattach_activator"),ic("update",ymConfig);
+          else{
+              var d=document,i=function(){i.c(arguments)};
+              function l(){
+                  var e=d.createElement("script");
+                  e.type="text/javascript",e.async=!0,e.src="https://app.yellowmessenger.com/widget/live.js";
+                  var t=d.getElementsByTagName("script")[0];
+                  t.parentNode.insertBefore(e,t)
+              }
+              i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}
+      })();
+  </script> -->
+  <!-- </div> -->
+
+  <!-- </div> -->
+  <!-- x1597897266505 -->
+
+  <div id="test" style=" height: 100vh; width: 100vh;">
+  </div>
+  <script type="text/javascript">
+    window.ymConfig = {
+      bot: 'x1596608779900',
+      containerId: 'test'
+    };
+    (function () {
+      var w = window, ic = w.YellowMessenger;
+      if ("function" === typeof ic)
+        ic("reattach_activator"), ic("update", ymConfig);
+      else {
+        var d = document, i = function () { i.c(arguments) };
+        function l() {
+          var e = d.createElement("script");
+          e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/banner.js";
+          var t = d.getElementsByTagName("script")[0];
+          t.parentNode.insertBefore(e, t)
+        }
+        i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
+      }
+    })();
+  </script>
+
+
+  <div class="footer global-footer parbase">
+
+
+
+    <footer class="footer">
+      <div class="container bg-b8 footer-main">
+        <div class="row margin-bottom-xxl margin-bottom-sm-xxl"></div>
+        <div class="row margin-bottom-xxl">
+
+          <div class="col-md-3 hidden-xs hidden-sm">
+
+
+
+
+            <h3 class="h5 text-left b5 ">CONTACT PHILAM LIFE</h3>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="text parbase">
+
+
+              <div class="aia-text  text-left w bt4 margin-top-md-l" data-emptytext="Text">
+                <h4 style="color: white;">PH: (02) 8 528 2000<br> INT PLDT NDD: 1800 10 528 2000</h4>
+                <p>&nbsp;</p>
+                <p>Philam Life Head Office<br> 15-18F Net Lima Building<br> 5th Avenue corner 26th Street<br> Bonifacio
+                  Global City, Taguig<br> Metro Manila, Philippines 1634</p>
+
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+          </div>
+
+
+          <div class="col-xs-12 hidden-sd hidden-md hidden-lg text-center">
+
+
+
+
+            <h2 class="h5 text-center b5 margin-bottom-sm-0 margin-bottom-0">CONTACT PHILAM LIFE</h2>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="text parbase">
+
+
+              <div class="aia-text  text-center w bt4 margin-top-md-l margin-top-sm-l margin-top-l"
+                data-emptytext="Text">
+                <h4 style="color: white;">PH: (02) 8 528 2000<br> INT PLDT NDD: 1800 10 528 2000<br> </h4>
+                <p>&nbsp;</p>
+                <p>Philam Life Head Office<br> 15-18F Net Lima Building<br> 5th Avenue corner 26th Street<br> Bonifacio
+                  Global City, Taguig<br> Metro Manila, Philippines 1634</p>
+
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+          </div>
+
+          <!-- xs viewport -->
+          <div class="col-xs-12 visible-xs margin-bottom-xxl margin-bottom-sm-xxl">
+
+
+
+
+
+
+
+            <div class="sub-title">
+
+              <h2 class="h5 text-center b5 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l">GO TO</h2>
+
+            </div>
+
+
+
+
+
+            <div class="text parbase">
+
+
+              <div class="aia-text  text-center w bt4 margin-top-md-l" data-emptytext="Text">
+                <h4><a href="http://www.aia.com/" style="text-decoration: none; color: white;"
+                    target="_blank">AIA.COM</a><br> <br> </h4>
+                <p>Visit our corporate site to learn more about AIA.</p>
+
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="text parbase">
+
+
+              <div class="aia-text  text-center w bt4 margin-top-md-l" data-emptytext="Text">
+                <h4><a href="https://www.philamvitality.com/vmp-ph" style="text-decoration: none; color: white;"
+                    target="_blank">PHILAM VITALITY </a><br> <br> </h4>
+
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="col-xs-offset-1 col-xs-5">
+
+
+
+
+
+
+
+              <div class="sub-title">
+
+                <h2 class="h5 text-left b5 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l">Explore Philam Life
+                </h2>
+
+              </div>
+
+
+
+
+
+              <div class="text parbase">
+
+
+                <div class="aia-text  text-left w bt4 margin-top-md-l margin-top-sm-l margin-top-l"
+                  data-emptytext="Text">
+                  <p><a href="https://www.philamlife.com/en/our-products.html">Our Products</a></p>
+
+
+
+
+
+
+                </div>
+
+
+
+
+              </div>
+
+
+
+
+
+              <div class="text parbase">
+
+
+                <div class="aia-text  text-left w bt4 margin-top-md-l margin-top-sm-l margin-top-l"
+                  data-emptytext="Text">
+                  <p><a href="https://www.philamlife.com/en/live-better.html" target="_self">Live Better</a></p>
+
+
+
+
+
+
+                </div>
+
+
+
+
+              </div>
+
+
+
+
+
+              <div class="text parbase">
+
+
+                <div class="aia-text  text-left w bt4 margin-top-md-l margin-top-sm-l margin-top-l"
+                  data-emptytext="Text">
+                  <p><a href="https://www.philamlife.com/en/help-support/contact-us.html" target="_self">Contact Us</a>
+                  </p>
+
+
+
+
+
+
+                </div>
+
+
+
+
+              </div>
+
+
+
+
+
+              <div class="text parbase">
+
+
+                <div class="aia-text  text-left w bt4 margin-top-md-l margin-top-sm-l margin-top-l"
+                  data-emptytext="Text">
+                  <p><a href="https://www.philamlife.com/en/help-support/philam-funds.html">Philam Funds</a></p>
+
+
+
+
+
+
+                </div>
+
+
+
+
+              </div>
+
+
+
+
+
+            </div>
+            <div class="col-xs-5">
+
+
+
+
+
+
+
+              <div class="sub-title">
+
+                <h2 class="h5 text-left b5 margin-bottom-md-l margin-bottom-sm-l margin-bottom-l">About Philam Life</h2>
+
+              </div>
+
+
+
+
+
+              <div class="text parbase">
+
+
+                <div class="aia-text  text-left w bt4 margin-top-md-l margin-top-sm-l margin-top-l"
+                  data-emptytext="Text">
+                  <p><a href="https://www.philamlife.com/en/about-philamlife/media-centre.html">Media Center</a></p>
+
+
+
+
+
+
+                </div>
+
+
+
+
+              </div>
+
+
+
+
+
+              <div class="text parbase">
+
+
+                <div class="aia-text  text-left w bt4 margin-top-md-l margin-top-sm-l margin-top-l"
+                  data-emptytext="Text">
+                  <p><a href="https://www.philamlife.com/en/about-philamlife/our-corporate-governance.html">Our
+                      Corporate Governance</a></p>
+
+
+
+
+
+
+                </div>
+
+
+
+
+              </div>
+
+
+
+
+
+            </div>
+          </div>
+
+          <!-- sm and md viewport -->
+          <div class="col-md-3 col-sm-4 hidden-xs">
+
+
+
+
+            <h2 class="h5 text-left b5 ">GO TO</h2>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="text parbase">
+
+
+              <div class="aia-text  text-left w bt4 margin-top-md-l" data-emptytext="Text">
+                <h4><a href="https://www.philamvitality.com/vmp-ph">PHILAM VITALITY&nbsp;<br> </a><br> </h4>
+                <h4><a href="https://www.philamfunds.com/">PAMI&nbsp;<br> </a><br> </h4>
+                <h4><a href="https://www.bpi-philam.com/">BPI-PHILAM<br> </a><br> </h4>
+                <h4><a href="http://www.aia.com/">AIA.COM<br> </a><br> </h4>
+                <p>Visit our corporate site to learn more about AIA.</p>
+
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+          </div>
+
+          <div class="col-md-3 col-sm-4 hidden-xs">
+
+
+
+
+            <h2
+              class="h5   b5 margin-top-md-0 margin-bottom-md-0 margin-top-sm-0 margin-bottom-sm-0 margin-top-0 margin-bottom-0">
+
+              EXPLORE PHILAM LIFE
+
+            </h2>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="text parbase">
+
+
+              <div class="aia-text  text-left w bt4 margin-top-md-l margin-top-sm-l margin-top-l" data-emptytext="Text">
+                <p><a href="https://www.philamlife.com/en/our-products.html">Our Products</a></p>
+
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="text parbase">
+
+
+              <div class="aia-text  text-left w bt4 margin-top-md-l margin-top-sm-l margin-top-l" data-emptytext="Text">
+                <p><a href="https://www.philamlife.com/en/live-better.html" target="_self">Live Better</a></p>
+
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="text parbase">
+
+
+              <div class="aia-text  text-left w bt4 margin-top-md-l margin-top-sm-l margin-top-l" data-emptytext="Text">
+                <p><a href="https://www.philamlife.com/en/help-support/contact-us.html" target="_self">Contact Us</a>
+                </p>
+
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="text parbase">
+
+
+              <div class="aia-text  text-left w bt4 margin-top-md-l margin-top-sm-l margin-top-l" data-emptytext="Text">
+                <p><a href="https://www.philamlife.com/en/help-support/philam-funds.html">Philam Funds</a></p>
+
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+          </div>
+
+          <div class="col-md-3 col-sm-4 hidden-xs">
+
+
+
+
+            <h2
+              class="h5   b5 margin-top-md-0 margin-bottom-md-0 margin-top-sm-0 margin-bottom-sm-0 margin-top-0 margin-bottom-0">
+
+              ABOUT PHILAM LIFE
+
+            </h2>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="text parbase">
+
+
+              <div class="aia-text  text-left w bt4 margin-top-md-l margin-top-sm-l margin-top-l" data-emptytext="Text">
+                <p><a href="https://www.philamlife.com/en/about-philamlife/media-centre.html">Media Center</a></p>
+
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="text parbase">
+
+
+              <div class="aia-text  text-left w bt4 margin-top-md-l margin-top-sm-l margin-top-l" data-emptytext="Text">
+                <p><a href="https://www.philamlife.com/en/about-philamlife/our-corporate-governance.html">Our Corporate
+                    Governance</a></p>
+
+
+
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+
+
+
+
+            <div class="form-hidden-field form-base">
+              <div class="margin-bottom-l" style="display: none;">
+                <label class="form-label margin-bottom-xxs p3 bt4">hiddenfield</label>
+                <input type="text" id="aia2139159790" name="attr-link">
+                <div class="fieldError label-error" id="aia2139159790_msg"></div>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <hr class="bg-b7 margin-bottom-l">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 text-center">
+
+
+            <a href="https://www.facebook.com/AIAPhilamLife" target="_blank"><svg title="Facebook"
+                class="icon icon-s hide-on-fallback " role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#facebook-2ndg"></use>
+                  <image class="icon icon-s " src="/content/dam/aia/icons/secondary/facebook-2ndg.png" alt="Facebook"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg></a>
+
+
+
+            <a href="https://www.youtube.com/aiaphilamlife" target="_blank"><svg title="Youtube"
+                class="icon icon-s hide-on-fallback " role="img">
+                <g>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/content/dam/aia/icons/icons.svg#youtube-2ndg"></use>
+                  <image class="icon icon-s " src="/content/dam/aia/icons/secondary/youtube-2ndg.png" alt="Youtube"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href=""></image>
+                </g>
+              </svg></a>
+
+
+          </div>
+        </div>
+
+        <div class="row hidden-sm hidden-xs margin-bottom-m"></div>
+        <div class="row hidden-md hidden-lg margin-bottom-m margin-bottom-sm-s"></div>
+        <div class="row">
+          <div class="col-xs-12 text-center bt5 b5">
+            Copyright © 2015, AIA Group Limited and its subsidiaries. All rights reserved.
+          </div>
+        </div>
+        <div class="row hidden-sm hidden-xs margin-bottom-xl"></div>
+        <div class="row hidden-md hidden-lg margin-bottom-xxl margin-bottom-sm-xl"></div>
+
+      </div>
+
+      <div class="container bg-b9">
+        <div class="row">
+          <div class="col-xs-12 margin-bottom-l margin-bottom-sm-l"></div>
+          <div
+            class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8 text-center margin-bottom-l margin-bottom-sm-l">
+
+
+            <a href="https://www.philamlife.com/en/index/terms-of-use.html" class="b5 bt5" target="_self">Terms of
+              Use</a>
+
+            <span class="b5 link-seperator"> | </span>
+
+
+            <a href="https://www.philamlife.com/en/index/privacy-statement.html" class="b5 bt5" target="_self">Privacy
+              Statement</a>
+
+            <span class="b5 link-seperator"> | </span>
+
+
+            <a href="https://www.philamlife.com/en/index/cookie-policy.html" class="b5 bt5" target="_self">Cookie
+              Policy</a>
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </footer>
+    <style>
+      footer a.b5.bt5 {
+        font-size: 15px;
+      }
+
+      .jssocials-share.jssocials-share-googleplus {
+        display: none;
+      }
+
+      .exisiting-modal .partial-screen-modal-dialog {
+        width: 400px;
+        max-width: 400px;
+      }
+
+      .exisiting-modal {
+        background: rgba(0, 0, 0, 0.5);
+      }
+
+      .exisiting-modal .modal-header {
+        background-color: #b8123e;
+      }
+
+      .exisiting-modal .modal-content {
+        background-color: #fff;
+      }
+
+      .exisiting-modal .modal-header .modal-header-btn {
+        right: 4px;
+      }
+
+      .alert-strong {
+        z-index: 9999999;
+      }
+
+      @media screen and (max-width: 767px) {
+        .alertFooterContent button.contentFooterCloseBtn {
+          margin-top: 0px;
+          right: 12px;
+          font-size: 14px;
+          transform: translateY(-50%);
+          top: 50% !important;
+        }
+
+        .alertFooterContent .alert-strong-thumbnail {
+          top: 50% !important;
+          transform: translateY(-50%);
+        }
+
+        .alertFooterContent .alert-strong-body {
+          margin-right: 70px !important;
+          padding-bottom: 0 !important;
+          padding-top: 0 !important;
+        }
+
+        .alertFooterContent .alert-strong-content {
+          padding-top: 5px !important;
+          padding-bottom: 5px !important;
+        }
+
+        .alertFooterContent .alert-strong-content p {
+          margin-bottom: 0px;
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+    </style>
+
+    <div class="html-script">
+      <div class="alertFooterContent alert-strong alert alert-dismissable best-experience-div" role="alert"
+        style="display: none;">
+        <button type="button" class="btn-glyph alert-strong-close bt2 w margin-bottom-m contentFooterCloseBtn"
+          data-dismiss="alert" aria-label="Close" style="color:white;top:60px;">
+          Confirm
+        </button>
+        <div class="alert-strong-cols bg-p4">
+          <div class="alert-strong-thumbnail">
+            <svg class="icon-xs hide-on-fallback" role="img" title="notification-2nd">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="dist/img/icons/icons.svg#notification-2nd">
+              </use>
+            </svg><img src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/notification-2nd.png"
+              xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="" width="30px" height="30px"
+              style="position:relative; right:30px;">
+
+          </div>
+          <div class="alert-strong-body" style="margin-right:115px;">
+            <div class="alert-strong-content">
+              <p class="bt2 w margin-bottom-m">
+                This website uses cookies for the purpose of enhancing your user experience. You can find more
+                information on the types of cookies we collect, what we use these for, and how to manage your cookie
+                settings in our
+                <a href="https://www.philamlife.com/en/index/cookie-policy.html">
+                  <font color="#22A8DA">Cookie Policy</font>
+                </a>
+                and
+                <a href="https://www.philamlife.com/en/index/privacy-statement.html">
+                  <font color="#22A8DA">Privacy Policy Statement</font><span class="w">.</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(function () {
+        function DevicesConfig() {
+          this.userAgent = navigator.userAgent;
+          this.height = document.documentElement.clientHeight;
+          this.width = document.documentElement.clientWidth;
+          this.isPCdevice;
+          this.MobileType;
+        }
+        DevicesConfig.prototype.isPC = function () {
+          var userAgentInfo = navigator.userAgent;
+          var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+          var flag = true;
+          for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) {
+              flag = false;
+              break;
+            }
+          }
+          this.isPCdevice = flag;
+          return flag;
+        };
+        DevicesConfig.prototype.whichPhone = function () {
+          var u = navigator.userAgent;
+          this.MobileType = false;
+          if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {
+            this.MobileType = "Android";
+          } else if (u.indexOf('iPhone') > -1) {
+            this.MobileType = "iPhone";
+          } else if (u.indexOf('Windows Phone') > -1) {
+            this.MobileType = "Windows Phone";
+          } else if (u.indexOf('iPad') > -1) {
+            this.MobileType = "iPad";
+          } else if (u.indexOf('iPod') > -1) {
+            this.MobileType = "iPod";
+          }
+        };
+
+        DevicesConfig.prototype.init = function () {
+          this.isPC();
+          this.whichPhone();
+        };
+
+        var gobalCustomerDevice = "";
+
+        var newDeviveInfor = new DevicesConfig();
+        newDeviveInfor.init();
+
+        if (newDeviveInfor.isPCdevice) {
+          gobalCustomerDevice = "PC";
+
+        } else {
+          if (newDeviveInfor.MobileType == "iPad") {
+
+          } else {
+
+          }
+        }
+
+        var cookiePolicyGroup = getCookie('cookiePolicyPH');
+        if (!cookiePolicyGroup) {
+          $('.alertFooterContent').show();
+          $('.container-buddy').css('bottom', '90px');
+        }
+        $('.contentFooterCloseBtn').click(function () {
+          $('.alertFooterContent .contentFooterCloseBtn').on('click', function () {
+          });
+          var cookiePolicyTip = getCookie('cookiePolicyPH');
+
+          $('.container-buddy').css('bottom', '-20px');
+          if (!cookiePolicyTip) {
+            setCookie('cookiePolicyPH', 'true');
+            $('.alertFooterContent').hide();
+          }
+        });
+      });
+      function setCookie(name, value) {
+        var Days = 7;
+        var exp = new Date();
+        exp.setTime(exp.getTime() + Days * 24 * 60 * 60 * 1000);
+        document.cookie = name + "=" + value + ";expires=" + 'Fri, 31 Dec 9999 23:59:59 GMT' + ";path=/";
+      }
+      function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+        if (arr = document.cookie.match(reg)) {
+          return arr[2];
+        } else {
+          return null;
+        }
+
+      }
+    </script>
+
+  </div>
+
+
+  <div class="modal-content">
+
+    <script type="text/javascript">
+      $(function () {
+
+        function loadModalContent() {
+
+          var list = [], modalId = [];
+
+          $.ajaxPrefilter(function (options, originalOptions, jqXHR) {
+            var requestUrl = options.url || originalOptions.url;
+            if ((options.dataType == 'script' || originalOptions.dataType == 'script')
+              && requestUrl.indexOf(location.host) >= 0) {
+              options.cache = true;
+            }
+          });
+
+          $('.aia-modal').each(function () {
+
+            var self = $(this);
+            var target = $(this).attr('data-target'),
+              container = $(this).find('.modal-container');
+
+            var wcmmode = '';
+
+            if (target && container && typeof target != 'undefined' && target.length > 0 && container.length > 0) {
+              var idx = -1,
+                btnId = self.attr('id'),
+                param = { parentUrl: "/content/ph/en/help-support/claim-guide" };
+
+              if (!Array.prototype.indexOf) {
+                for (var i = 0; i < list.length; i++) {
+                  if (list[i] == target) {
+                    idx = i;
+                    break;
+                  }
+                }
+              } else {
+                idx = list.indexOf(target);
+              }
+
+              if (wcmmode != '') {
+                param.wcmmode = wcmmode;
+              }
+
+              if (idx < 0) {
+                if (btnId.length > 0) {
+                  list.push(target);
+                  modalId.push(btnId);
+                }
+                $.ajax({
+                  url: target,
+                  method: 'GET',
+                  data: param
+                }).success(function (data) {
+                  container.html(data);
+                  if (self.data("modalTagMoveTo") == "body") {
+                    self.appendTo(document.body)
+                  }
+                });
+              } else {
+                $('[data-target="#' + btnId + '"]').attr('data-target', '#' + modalId[idx]);
+              }
+            } else if (self.data("modalTagMoveTo")) {
+              if (self.data("modalTagMoveTo") == "body") {
+                self.detach().appendTo(document.body)
+              }
+            }
+          });
+        }
+
+        $(document).ready(function () {
+          loadModalContent();
+        });
+      });
+    </script>
+  </div>
+  <input type="hidden" value="en" id="website-locale">
+  <script type="text/javascript"
+    src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/login.min.4eee6c0acc4bcc7081515a3850d719f2.js"></script>
+  <script type="text/javascript"
+    src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/aia-footer.min.473b10dc73af52361238cf7891a12fc3.js"></script>
+  <script type="text/javascript"
+    src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/aia-footer.min.f4d7a76c8f55d298ef9625dcc311af1c.js"></script>
+
+
+
+  <div class="cloudservices servicecomponents">
+    <script type="text/javascript">_satellite.pageBottom();</script>
+    <script>
+      /*Facebook Pixels*/
+      var tagID = "";
+      var tracker = "";
+      var pathname = document.location.href;
+
+      if (pathname.indexOf("index.html") > 0) {
+        tagID = '540042793085959';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("help-support/contact-us.html") > 0) {
+        tagID = '1167343363401440';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products.html") > 0) {
+        tagID = '1133006673519689';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/protection.html") > 0) {
+        tagID = '2247365501975880';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/protection/life-smart.html") > 0) {
+        tagID = '184819512130454';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/protection/vanguard-100.html") > 0) {
+        tagID = '160652104651977';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/protection/guardian.html") > 0) {
+        tagID = '201551753927135';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/protection/family-secure.html") > 0) {
+        tagID = '1713227318716347';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/protection/family-provider.html") > 0) {
+        tagID = '1592829467491682';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/protection/active-family-provider.html") > 0) {
+        tagID = '202850260470787';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/health.html") > 0) {
+        tagID = '2012078645523290';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/health/active-health-invest-plus.html") > 0) {
+        tagID = '671877089869744';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/health/health-invest.html") > 0) {
+        tagID = '599199083761609';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/health/health-invest-plus.html") > 0) {
+        tagID = '342116016299069';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/health/health-achieve.html") > 0) {
+        tagID = '373571396444667';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/health/health-100.html") > 0) {
+        tagID = '1022259527934044';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/health/cancer-life-shield.html") > 0) {
+        tagID = '717227745331672';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/health/active-joint-critical-protect.html") > 0) {
+        tagID = '562029857585530';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/education.html") > 0) {
+        tagID = '220272015536016';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/education/moneyworks-for-education.html") > 0) {
+        tagID = '153052578693657';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/education/future-scholar.html") > 0) {
+        tagID = '214483409103079';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("camplivebetter.html") > 0) {
+        tagID = '1230243473777161';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/savings.html") > 0) {
+        tagID = '361621074589046';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/savings/moneyworks.html") > 0) {
+        tagID = '416174622150267';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/savings/future-protect.html") > 0) {
+        tagID = '391876374617521';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/savings/active-moneyworks.html") > 0) {
+        tagID = '255700828496427';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/investment.html") > 0) {
+        tagID = '436070893593784';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/investment/money-tree-elite.html") > 0) {
+        tagID = '337736596734426';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/investment/money-tree-elite.html#get-in-touch") > 0) {
+        tagID = '337736596734426';
+        tracker = "fbq('trackCustom', 'GetInTouch');";
+      } else if (pathname.indexOf("our-products/investment/money-tree.html") > 0) {
+        tagID = '2108159646073488';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/investment/money-tree.html#get-in-touch") > 0) {
+        tagID = '2108159646073488';
+        tracker = "fbq('track', 'GetInTouch');";
+      } else if (pathname.indexOf("our-products/investment/income-assure-7.html") > 0) {
+        tagID = '2249361825352955';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/investment/income-assure-7.html#get-in-touch") > 0) {
+        tagID = '2249361825352955';
+        tracker = "fbq('track', 'GetInTouch');";
+      } else if (pathname.indexOf("our-products/vitality.html") > 0) {
+        tagID = '825855824472896';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("our-products/vitality.html#get-in-touch") > 0) {
+        tagID = '825855824472896';
+        tracker = "fbq('track', 'GetInTouch');";
+      } else if (pathname.indexOf("financial-needs-calculator.html") > 0) {
+        tagID = '368722903650899';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("financial-needs-calculator/results.html") > 0) {
+        tagID = '368722903650899';
+        tracker = "fbq('track', 'SubmittedResults');";
+      } else if (pathname.indexOf("financial-needs-calculator/form.html") > 0) {
+        tagID = '2124697521133318';
+        tracker = "fbq('track', 'FormsPage');";
+      } else if (pathname.indexOf("key-moments.html") > 0) {
+        tagID = '673562156349735';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("key-moments/getting-your-first-million.html") > 0) {
+        tagID = '2389331587760477';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("key-moments/living-a-healthier-life.html") > 0) {
+        tagID = '861688120676827';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("key-moments/becoming-a-parent.html") > 0) {
+        tagID = '620073178389911';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("key-moments/growing-your-business.html") > 0) {
+        tagID = '327540137650815';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("key-moments/fighting-cancer.html") > 0) {
+        tagID = '306324743455973';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("key-moments/coming-home-for-good.html") > 0) {
+        tagID = '1935323986783970';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("key-moments/helping-your-kids-reach-their-dreams.html") > 0) {
+        tagID = '201670854081542';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("key-moments/planning-to-retire.html") > 0) {
+        tagID = '205853177006242';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("about-philamlife/careers.html") > 0) {
+        tagID = '298660217529418';
+        tracker = "fbq('track', 'PageView');";
+      } else if (pathname.indexOf("financial-needs-calculator/thank-you.html?ref=FNC") > 0) {
+        tagID = '368722903650899';
+        tracker = "fbq('track', 'CompleteRegistration');";
+      } else if (pathname.indexOf("financial-needs-calculator/thank-you.html") > 0) {
+        tagID = '368722903650899';
+        tracker = "fbq('track', 'CompleteRegistration');";
+      } else if (pathname.indexOf("our-products/health/aia-critical-protect-100.html") > 0) {
+        tagID = '2224286171011591';
+        tracker = "fbq('track', 'PageView');fbq('track', 'ViewContent');";
+      } else if (pathname.indexOf("about-philamlife/careers/genesis.html") > 0) {
+        tagID = '2401510113459721';
+        tracker = "fbq('track', 'PageView');fbq('track', 'ViewContent');";
+      } else if (pathname.indexOf("our-products/protection/aia-all-in-one.html") > 0) {
+        tagID = '947117525646596';
+        tracker = "fbq('track', 'PageView');fbq('track', 'ViewContent');";
+      } else if (pathname.indexOf("our-products/protection/aia-all-in-one-lcp.html") > 0) {
+        tagID = '422680598402071';
+        tracker = "fbq('track', 'PageView');fbq('track', 'ViewContent');";
+      } else if (pathname.indexOf("our-products/medical/aia-med-assist.html") > 0) {
+        tagID = '809542436224442';
+        tracker = "fbq('track', 'PageView');fbq('track', 'ViewContent');";
+      }
+      var dynamicTag = `<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '`+ tagID + `');
+</`+ `script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=`+ tagID + `&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<script>`
+        + tracker + `
+</`+ `script>`
+
+      var test = function (iframe) {
+        document.write(iframe);
+      };
+      if (tagID == "") {
+        console.log("no tag");
+      } else {
+        test(dynamicTag);
+      }
+/*Facebook Pixels end*/
+    </script><!-- Global site tag (gtag.js) - Google Ads: 848356478 ** -->
+    <script async="" src="./Insurance Claim Guide _ Make A Claim _ Philam Life_files/js(2)"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'AW-848356478');
+    </script>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div>
+    <div id="twoseven-ext-tab-media-modal" class="twoseven-ext-tab-media-modal" style="display: none;">
+      <!-- Modal content -->
+      <div class="twoseven-ext-tab-media-modal-content">
+        <div class="iframe-container" style="height: 100%; width: 100%;">
+          <span class="close">×</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
