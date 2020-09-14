@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+  This page will autoclose
+	<script type="text/javascript">
+		const params = new URLSearchParams(document.location.search);
+		const url = params.get("url");
+    const timeout = params.get("timeout") || 5000;
+		console.log(url);
+    console.log(timeout);
+		window.open(url);
+		setTimeout(function(){
+			window.close();
+	 	}, timeout);
+	</script>
+
+</body>
+</html>
