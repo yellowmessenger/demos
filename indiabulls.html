@@ -1,122 +1,171 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <title></title>
-      <style type="text/css">
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
         body {
-          -webkit-box-align: center;
-          align-items: center;
-          display: -webkit-box;
-          display: flex;
-          font-family: Helvetica, sans-serif;
-          height: 100vh;
-          -webkit-box-pack: center;
-          justify-content: center;
-          margin: 0;
+            -webkit-box-align: center;
+            align-items: center;
+            display: -webkit-box;
+            display: flex;
+            font-family: Helvetica, sans-serif;
+            height: 100vh;
+            -webkit-box-pack: center;
+            justify-content: center;
+            margin: 0;
         }
         .container {
-          /*background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete-texture.png");*/
-          display: flex;
-          flex-wrap: wrap;
-          height: 100vh;
-          align-items: center;
-          justify-content: center;
-          padding: 0 20px;
-
+            /*background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/concrete-texture.png");*/
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
         }
-
+        .main{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+        }
         .feedback {
-          max-width: 280px;
-          width: 100%;
-          border-radius: 8px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          background-color: #D1FDE4;
+            max-width: 280px;
+            width: 100%;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #D1FDE4;
         }
-
-
+        .rating{
+            max-width: 215px;
+            height:240px;
+            width: 100%;
+            right: 150px;
+            border-radius: 8px;
+            align-items: center;
+            background-color: #D1FDE4;
+            display:none;
+        }
+        .button{
+            background-color: #4466BB;
+            border: none;
+            color: white;
+            padding: 2px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 4px 4px;
+            font-size: 16px;
+            outline:none;
+            width:150px;
+            border-radius: 8px;
+            cursor:pointer;
+        }
+        .button:hover
+        {
+            background-image:none;
+            background-color:#cc3300;
+        }
+        .label{
+            border: none;
+            color: #365196;
+            font-weight: bold;
+            padding: 2px;
+            text-align: center;
+            font-size: 16px;
+            display: inline-block;
+            margin: 3px 2px;
+            border-radius: 8px;
+        }
+        .label1{
+            border: none;
+            font-weight: bold;
+            color: #CC3300;
+            padding: 2px 4px;
+            text-align: center;
+            font-size: 10px;
+            display: inline-block;
+            margin: 3px 2px;
+            border-radius: 8px;
+            display:none;
+        }
+        .textarea {
+            width: 200px;
+            height: 120px;
+            box-sizing: border-box;
+            border-radius: 8px;
+            resize: none;
+        }
         body div {
-          font-size: 15px;
-          margin-top: 15px;
-          text-align: center;
+            font-size: 15px;
+            margin-top: 15px;
+            text-align: center;
         }
-
         form#smileys input[type="radio"] {
-          -webkit-appearance: none;
-          width: 65px;
-          height: 65px;
-          border: none;
-          cursor: pointer;
-          -webkit-transition: border .2s ease;
-          transition: border .2s ease;
-          /*-webkit-filter: grayscale(100%);*/
-          /*filter: grayscale(100%);*/
-          margin: 0 5px;
-          -webkit-transition: all .2s ease;
-          transition: all .2s ease;
+            -webkit-appearance: none;
+            width: 60px;
+            height: 60px;
+            border: none;
+            cursor: pointer;
+            -webkit-transition: border .2s ease;
+            transition: border .2s ease;
+            /*-webkit-filter: grayscale(100%);*/
+            /*filter: grayscale(100%);*/
+            margin: 0 5px;
+            -webkit-transition: all .2s ease;
+            transition: all .2s ease;
         }
         form#smileys input[type="radio"]:hover, form#smileys input[type="radio"]:checked {
-          -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
         }
         form#smileys input[type="radio"]:focus {
-          outline: 0;
+            outline: 0;
         }
         form#smileys input[type="radio"].good {
-          background-image: url("data:image/svg+xml,%3Csvg class='rating-3' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Ccircle cx='256' cy='256' r='256' fill='%23ffd93b'/%3E%3Cpath d='M407.7 352.8a163.9 163.9 0 0 1-303.5 0c-2.3-5.5 1.5-12 7.5-13.2a780.8 780.8 0 0 1 288.4 0c6 1.2 9.9 7.7 7.6 13.2z' fill='%233e4347'/%3E%3Cpath d='M512 256A256 256 0 0 1 56.7 416.7a256 256 0 0 0 360-360c58.1 47 95.3 118.8 95.3 199.3z' fill='%23f4c534'/%3E%3Cg fill='%23fff'%3E%3Cpath d='M115.3 339c18.2 29.6 75.1 32.8 143.1 32.8 67.1 0 124.2-3.2 143.2-31.6l-1.5-.6a780.6 780.6 0 0 0-284.8-.6z'/%3E%3Cellipse cx='356.4' cy='205.3' rx='75' ry='70'/%3E%3C/g%3E%3Cellipse cx='356.4' cy='205.3' rx='37' ry='37' fill='%233e4347'/%3E%3Cg fill='%23fff'%3E%3Cellipse transform='scale(-1) rotate(45 454 -906)' cx='370.3' cy='180.1' rx='12' ry='8.1'/%3E%3Cellipse cx='155.6' cy='205.3' rx='75' ry='70'/%3E%3C/g%3E%3Cellipse cx='155.6' cy='205.3' rx='37' ry='37' fill='%233e4347'/%3E%3Cellipse transform='scale(-1) rotate(45 454 -421.3)' cx='174.5' cy='180' rx='12' ry='8.1' fill='%23fff'/%3E%3C/svg%3E");
-          background-size: cover;
+            background-image: url("data:image/svg+xml,%3Csvg class='rating-3' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Ccircle cx='256' cy='256' r='256' fill='%23ffd93b'/%3E%3Cpath d='M407.7 352.8a163.9 163.9 0 0 1-303.5 0c-2.3-5.5 1.5-12 7.5-13.2a780.8 780.8 0 0 1 288.4 0c6 1.2 9.9 7.7 7.6 13.2z' fill='%233e4347'/%3E%3Cpath d='M512 256A256 256 0 0 1 56.7 416.7a256 256 0 0 0 360-360c58.1 47 95.3 118.8 95.3 199.3z' fill='%23f4c534'/%3E%3Cg fill='%23fff'%3E%3Cpath d='M115.3 339c18.2 29.6 75.1 32.8 143.1 32.8 67.1 0 124.2-3.2 143.2-31.6l-1.5-.6a780.6 780.6 0 0 0-284.8-.6z'/%3E%3Cellipse cx='356.4' cy='205.3' rx='75' ry='70'/%3E%3C/g%3E%3Cellipse cx='356.4' cy='205.3' rx='37' ry='37' fill='%233e4347'/%3E%3Cg fill='%23fff'%3E%3Cellipse transform='scale(-1) rotate(45 454 -906)' cx='370.3' cy='180.1' rx='12' ry='8.1'/%3E%3Cellipse cx='155.6' cy='205.3' rx='75' ry='70'/%3E%3C/g%3E%3Cellipse cx='155.6' cy='205.3' rx='37' ry='37' fill='%233e4347'/%3E%3Cellipse transform='scale(-1) rotate(45 454 -421.3)' cx='174.5' cy='180' rx='12' ry='8.1' fill='%23fff'/%3E%3C/svg%3E");
+            background-size: cover;
         }
         form#smileys input[type="radio"].average {
-          background-image: url("data:image/svg+xml,%3Csvg class='rating-3' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Ccircle cx='256' cy='256' r='256' fill='%23ffd93b'/%3E%3Cpath d='M512 256c0 141.44-114.64 256-256 256-80.48 0-152.32-37.12-199.28-95.28 43.92 35.52 99.84 56.72 160.72 56.72 141.36 0 256-114.56 256-256 0-60.88-21.2-116.8-56.72-160.72C474.8 103.68 512 175.52 512 256z' fill='%23f4c534'/%3E%3Cellipse transform='scale(-1) rotate(31.21 715.433 -595.455)' cx='166.318' cy='199.829' rx='60.146' ry='56.13' fill='%23fff'/%3E%3Cellipse transform='rotate(-148.804 180.87 175.82)' cx='175' cy='140' rx='30' ry='30' fill='%233e4347'/%3E%3Cellipse transform='rotate(-113.778 194.434 165.995)' cx='158' cy='120' rx='6.016' ry='5.296' fill='%23fff'/%3E%3Cellipse transform='scale(-1) rotate(31.21 715.397 -1237.664)' cx='345.695' cy='199.819' rx='56.13' ry='60.146' fill='%23fff'/%3E%3Cellipse transform='rotate(-148.804 360.25 175.837)' cx='355' cy='140' rx='30' ry='30' fill='%233e4347'/%3E%3Cellipse transform='scale(-1) rotate(66.227 254.508 -573.138)' cx='339' cy='120' rx='6.016' ry='5.296' fill='%23fff'/%3E%3Cpath d='M370.56 362.4c0 7.696-6.224 13.92-13.92 13.92H155.36c-7.616 0-13.92-6.224-13.92-13.92s6.304-13.92 13.92-13.92h201.296c7.696.016 13.904 6.224 13.904 13.92z' fill='%233e4347'/%3E%3C/svg%3E");
-          background-size: cover;
+            background-image: url("data:image/svg+xml,%3Csvg class='rating-3' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Ccircle cx='256' cy='256' r='256' fill='%23ffd93b'/%3E%3Cpath d='M512 256c0 141.44-114.64 256-256 256-80.48 0-152.32-37.12-199.28-95.28 43.92 35.52 99.84 56.72 160.72 56.72 141.36 0 256-114.56 256-256 0-60.88-21.2-116.8-56.72-160.72C474.8 103.68 512 175.52 512 256z' fill='%23f4c534'/%3E%3Cellipse transform='scale(-1) rotate(31.21 715.433 -595.455)' cx='166.318' cy='199.829' rx='60.146' ry='56.13' fill='%23fff'/%3E%3Cellipse transform='rotate(-148.804 180.87 175.82)' cx='175' cy='140' rx='30' ry='30' fill='%233e4347'/%3E%3Cellipse transform='rotate(-113.778 194.434 165.995)' cx='158' cy='120' rx='6.016' ry='5.296' fill='%23fff'/%3E%3Cellipse transform='scale(-1) rotate(31.21 715.397 -1237.664)' cx='345.695' cy='199.819' rx='56.13' ry='60.146' fill='%23fff'/%3E%3Cellipse transform='rotate(-148.804 360.25 175.837)' cx='355' cy='140' rx='30' ry='30' fill='%233e4347'/%3E%3Cellipse transform='scale(-1) rotate(66.227 254.508 -573.138)' cx='339' cy='120' rx='6.016' ry='5.296' fill='%23fff'/%3E%3Cpath d='M370.56 362.4c0 7.696-6.224 13.92-13.92 13.92H155.36c-7.616 0-13.92-6.224-13.92-13.92s6.304-13.92 13.92-13.92h201.296c7.696.016 13.904 6.224 13.904 13.92z' fill='%233e4347'/%3E%3C/svg%3E");
+            background-size: cover;
         }
         form#smileys input[type="radio"].poor {
-          background-image: url("data:image/svg+xml,%3Csvg class='rating-2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Ccircle cx='256' cy='256' r='256' fill='%23ffd93b'/%3E%3Cpath d='M512 256A256 256 0 0 1 56.7 416.7a256 256 0 0 0 360-360c58.1 47 95.3 118.8 95.3 199.3z' fill='%23f4c534'/%3E%3Cpath d='M336.6 403.2c-6.5 8-16 10-25.5 5.2a117.6 117.6 0 0 0-110.2 0c-9.4 4.9-19 3.3-25.6-4.6-6.5-7.7-4.7-21.1 8.4-28 45.1-24 99.5-24 144.6 0 13 7 14.8 19.7 8.3 27.4z' fill='%233e4347'/%3E%3Cpath d='M276.6 244.3a79.3 79.3 0 1 1 158.8 0 79.5 79.5 0 1 1-158.8 0z' fill='%23fff'/%3E%3Ccircle cx='340' cy='260.4' r='36.2' fill='%233e4347'/%3E%3Cg fill='%23fff'%3E%3Cellipse transform='rotate(-135 326.4 246.6)' cx='326.4' cy='246.6' rx='6.5' ry='10'/%3E%3Cpath d='M231.9 244.3a79.3 79.3 0 1 0-158.8 0 79.5 79.5 0 1 0 158.8 0z'/%3E%3C/g%3E%3Ccircle cx='168.5' cy='260.4' r='36.2' fill='%233e4347'/%3E%3Cellipse transform='rotate(-135 182.1 246.7)' cx='182.1' cy='246.7' rx='10' ry='6.5' fill='%23fff'/%3E%3C/svg%3E") ;
-          background-size: cover;
+            background-image: url("data:image/svg+xml,%3Csvg class='rating-2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Ccircle cx='256' cy='256' r='256' fill='%23ffd93b'/%3E%3Cpath d='M512 256A256 256 0 0 1 56.7 416.7a256 256 0 0 0 360-360c58.1 47 95.3 118.8 95.3 199.3z' fill='%23f4c534'/%3E%3Cpath d='M336.6 403.2c-6.5 8-16 10-25.5 5.2a117.6 117.6 0 0 0-110.2 0c-9.4 4.9-19 3.3-25.6-4.6-6.5-7.7-4.7-21.1 8.4-28 45.1-24 99.5-24 144.6 0 13 7 14.8 19.7 8.3 27.4z' fill='%233e4347'/%3E%3Cpath d='M276.6 244.3a79.3 79.3 0 1 1 158.8 0 79.5 79.5 0 1 1-158.8 0z' fill='%23fff'/%3E%3Ccircle cx='340' cy='260.4' r='36.2' fill='%233e4347'/%3E%3Cg fill='%23fff'%3E%3Cellipse transform='rotate(-135 326.4 246.6)' cx='326.4' cy='246.6' rx='6.5' ry='10'/%3E%3Cpath d='M231.9 244.3a79.3 79.3 0 1 0-158.8 0 79.5 79.5 0 1 0 158.8 0z'/%3E%3C/g%3E%3Ccircle cx='168.5' cy='260.4' r='36.2' fill='%233e4347'/%3E%3Cellipse transform='rotate(-135 182.1 246.7)' cx='182.1' cy='246.7' rx='10' ry='6.5' fill='%23fff'/%3E%3C/svg%3E") ;
+            background-size: cover;
         }
-
         .mtt {
-          position: fixed;
-          bottom: 10px;
-          right: 20px;
-          color: #999;
-          text-decoration: none;
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            color: #999;
+            text-decoration: none;
         }
         .mtt span {
-          color: #e74c3c;
+            color: #E74C3C;
         }
         .mtt:hover {
-          color: #666;
+            color: #666;
         }
         .mtt:hover span {
-          color: #c0392b;
+            color: #C0392B;
         }
-
-      </style>
-
-      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-      <script type="text/javascript">
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
         $(function () {
+            let message=""
+            let count=0;
           $('input[type="radio"]').click('change',function(e){
-            var ratingValue = $('input[name="smiley"]:checked').val();
-            console.log(ratingValue)
-            // window.parent.postMessage(JSON.stringify({
-            //   event_code: 'ym-client-event', data: JSON.stringify({
-            //     event: {
-            //       code: "Rating",
-            //       data: {
-            //         ratingValue: ratingValue
-            //       }
-            //     }
-            //   })
-            // }),'*');
-            // $('input[type="radio"]').attr('disabled', 'disabled');
-            // $('input[type="radio"]').fadeTo("slow", 0.15, function () {
-            //   $(this).find(':input').attr('disabled', 'disabled');
-            //   $(this).find('label').css('cursor', 'default');
-            // });
-            window.parent.postMessage(JSON.stringify({
+     var ratingValue = $('input[name="smiley"]:checked').val();
+     if(ratingValue==='Poor'){
+document.getElementById('feedback-reason').style.display = 'inline';
+            }
+   $('input[type="radio"]').attr('disabled','disabled');
+        if(ratingValue!=='Poor'){
+        window.parent.postMessage(JSON.stringify({
              event_code: 'ym-client-event', data: JSON.stringify({
                event: {
                  code: "feedback",
@@ -126,43 +175,92 @@
                }
              })
            }), '*');
-            $('input[type="radio"]').attr('disabled', 'disabled');
+        }
           })
+        $('textarea').on("keydown",function(e){
+        currentWords = $('textarea').val().replace(/  +/g, ' ').split(/[\s]+/).length;
+        if (currentWords > 500) {
+        if ( e.which == 46 || e.which == 8 )
+        {
+        }
+        else if (e.which < 48 || e.which > 57 )
+        {
+        e.preventDefault();
+        }
+        }
+  });
+$('textarea').on("keyup",function(e){
+ let text=$('textarea').val();
+ var patt = new RegExp("^[a-zA-Z0-9 .,/-]*$");
+  var res = patt.test(text);
+     count=0;
+    if(!res){
+        message="Please enter only Alpha Numeric characters.<br>"
+          document.getElementById('error').style.display = 'inline';
+   document.getElementById('error').innerHTML = message
+        }
+        else{
+            message=""
+           document.getElementById('error').style.display = 'none';
+        }
+  });
+ $('button').on("click",function(e) {
+     document.getElementById("txt").style.backgroundColor = "#FFFFFF";
+var x = document.getElementById("txt").value.replace(/  +/g, ' ').trim();
+let currentWords1 = document.getElementById("txt").value.replace(/  +/g, ' ').split(/[\s]+/).length;
+     if(x.length>0){
+if(currentWords1<50 && x.length<100){
+    count=count+1
+    if(count===1){
+message=message.concat("Please provide min 100 characters/50 words to proceed.")
+    }
+document.getElementById('error').style.display = 'inline';
+   document.getElementById('error').innerHTML = message;
+}
+else{
+    document.getElementById('error').style.display = 'none';
+    document.getElementById("btn").style.visibility = "hidden";
+     document.getElementById("txt").disabled = true;
+ window.parent.postMessage(JSON.stringify({
+             event_code: 'ym-client-event', data: JSON.stringify({
+               event: {
+                 code: "feedback",
+                 data: {
+                   value: x.concat("$Poor")
+                 }
+               }
+             })
+           }), '*');
+ }
+     }
+ });
         })
       </script>
-
-    </head>
-    <body>
-      <div class="container">
+</head>
+<body>
+<div class="main">
+    <div class="container" id="smiley-container">
         <form id="smileys" class="feedback">
-          <div class="myelement">
-            <input type="radio" name="smiley" value="Good" id ="good" class="good">
-            <label for="good" style="line-height: 30px;">Good</label>
-          </div>
-
-          <div class="myelement">
-            <input type="radio" name="smiley" value="Average" id ="average" class="average">
-            <label for="average" style="line-height: 30px;">Average</label>
-          </div>
-
-          <div class="myelement">
-            <input type="radio" name="smiley" value="Poor" id="poor" class="poor">
-            <label for="poor" style="line-height: 30px;">Poor</label>
-          </div>
-
+            <div class="myelement">
+                <input type="radio" name="smiley" value="Good" id ="good" class="good">
+                <label for="good" style="line-height: 30px;">Good</label>
+            </div>
+            <div class="myelement">
+                <input type="radio" name="smiley" value="Average" id ="average" class="average">
+                <label for="average" style="line-height: 30px;">Average</label>
+            </div>
+            <div class="myelement">
+                <input type="radio" name="smiley" value="Poor" id="poor" class="poor">
+                <label for="poor" style="line-height: 30px;">Poor</label>
+            </div>
         </form>
-      </div>
-    </body>
-    </html>
-
-<!-- <svg class="rating-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                             <circle cx="256" cy="256" r="256" fill="#ffd93b"/>
-                        <path d="M512 256c0 141.44-114.64 256-256 256-80.48 0-152.32-37.12-199.28-95.28 43.92 35.52 99.84 56.72 160.72 56.72 141.36 0 256-114.56 256-256 0-60.88-21.2-116.8-56.72-160.72C474.8 103.68 512 175.52 512 256z" fill="#f4c534"/>
-                        <ellipse transform="scale(-1) rotate(31.21 715.433 -595.455)" cx="166.318" cy="199.829" rx="60.146" ry="56.13" fill="#fff"/>
-                        <ellipse transform="rotate(-148.804 180.87 175.82)" cx="175" cy="140" rx="30" ry="30" fill="#3e4347"/>
-                        <ellipse transform="rotate(-113.778 194.434 165.995)" cx="158" cy="120" rx="6.016" ry="5.296" fill="#fff"/>
-                        <ellipse transform="scale(-1) rotate(31.21 715.397 -1237.664)" cx="345.695" cy="199.819" rx="56.13" ry="60.146" fill="#fff"/>
-                        <ellipse transform="rotate(-148.804 360.25 175.837)" cx="355" cy="140" rx="30" ry="30" fill="#3e4347"/>
-                        <ellipse transform="scale(-1) rotate(66.227 254.508 -573.138)" cx="339" cy="120" rx="6.016" ry="5.296" fill="#fff"/>
-                       <path d="M370.56 362.4c0 7.696-6.224 13.92-13.92 13.92H155.36c-7.616 0-13.92-6.224-13.92-13.92s6.304-13.92 13.92-13.92h201.296c7.696.016 13.904 6.224 13.904 13.92z" fill="#3e4347"/>
-                    </svg> -->
+    </div>
+    <!--placeholder="Provide your feedback.."-->
+    <div class="rating" id='feedback-reason'>
+        <textarea class="textarea" name="txt1" id="txt" placeholder="Provide your feedback..." maxlength=1000></textarea><br>
+        <label  class="label1" id='error'>Error</label><br>
+        <button class="button" id="btn">Submit Feedback</button>
+    </div>
+</div>
+</body>
+</html>
