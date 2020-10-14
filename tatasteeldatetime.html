@@ -3005,14 +3005,14 @@
             mindate = param.get('minDate')
         }
 
-
+        console.log(mindate)
         $(".form_datetime")
             .datetimepicker({
                 //language:  'fr',
                 // weekStart: 1,
                 // todayBtn: 1,
                 // autoclose: 1,
-                // todayHighlight: 1,
+                todayHighlight: false,
                 // startView: 2,
                 // forceParse: 0,
                 // showMeridian: 1,
@@ -3022,6 +3022,7 @@
                 todayBtn: true,
                 startDate: mindate,
                 minuteStep: 10,
+                initialDate: new Date(mindate)
             })
             .on("changeDate", function (ev) {
                 date = new Date(ev.date).valueOf();
@@ -3043,4 +3044,5 @@
         $('.icon-remove').click()
     </script> -->
 </body>
+
 </html>
