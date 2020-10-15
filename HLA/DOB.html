@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css" />
+    <link rel="stylesheet" href="./custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <style type="text/css">
+        .glyphicon-time {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class='col-sm-6'>
+                <div id="datetimepicker4"></div>
+                <div class="modal-footer">
+                    <center>
+                        <button type="button" id="datesubmit" class="btn pmd-ripple-effect btn-primary">
+                            Select
+                        </button>
+                    </center>
+                </div>
+            </div>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    const params = {};
+                    function setQueryParams() {
+                        let queryString = window.location.search;
+                        if (queryString) {
+                            queryString = queryString.replace('?', '').trim();
+                        }
+                        else {
+                            queryString = '';
+                        }
+                        queryString = queryString.split("&").filter(v => v);
+                        for (const param of queryString) {
+                            const [key, value] = param.split("=");
+                            params[key] = value;
+                        }
+                    }
+                    function validateRange(min, max, date) {
+                        if (date < new Date()) {
+                            return false;
+                        }
+                        min = Number(min);
+                        max = Number(max);
+                        if (!min || !max || min < 0 || min > 24 || max < 0 || max > 24 || min > max) {
+                            console.log('invalid range values');
+                            return false;
+                        }
+                        if (date.getHours() < min || date.getHours() > max) {
+                            console.log(`invalid range given expected time between: ${min}-${max}`);
+                            return false;
+                        }
+                        return true;
+                    }
+                    // initialization
+                    setQueryParams();
+                    $('#datetimepicker4').datetimepicker({
+                        inline: true
+                    });
+
+                    if (params['range']) {
+                        const selecteddate = new Date($("#datetimepicker4").data().date);
+                        const [min, max] = params.range.split("-");
+                        if (!validateRange(min, max, selecteddate)) {
+                            $('#datesubmit').attr('disabled', 'disabled');
+                        }
+                    }
+
+                    // datepicker events
+                    $('#datetimepicker4').datetimepicker().on('dp.change', function (event) {
+                        if (params['range']) {
+                            const date = new Date(event.date);
+                            const [min, max] = params.range.split("-");
+                            if (validateRange(min, max, date)) {
+                                $('#datesubmit').removeAttr("disabled");
+                            } else {
+                                $('#datesubmit').attr('disabled', 'disabled');
+                            }
+                        }
+                    });
+
+                    $("#datesubmit").on("click", function () {
+                        // const selecteddate = $("#datetimepicker4").data().date;
+                        const selecteddate = $("#datetimepicker4").data("DateTimePicker").date().toLocaleString();
+                        let formatedDate = selecteddate.split(' ');
+                        formatedDate = `${formatedDate[0] + ' ' + formatedDate[1] + ' ' + formatedDate[2] + ' ' + formatedDate[3]}`;
+                        console.log('sending event', formatedDate);
+                        window.parent.postMessage(JSON.stringify({
+                            event_code: 'ym-client-event', data: {
+                                event: {
+                                    code: "Date",
+                                    data: {
+                                        selectedDate: formatedDate
+                                    }
+                                }
+                            }
+                        }), '*');
+                        $('#datesubmit').attr('disabled', 'disabled');
+                        $('#datesubmit').fadeTo("slow", 0.15, function () {
+                            $(this).find(':input').attr('disabled', 'disabled');
+                            $(this).find('label').css('cursor', 'default');
+                            $('#add').append('Submitted');
+                        });
+                    })
+                })
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Latest compiled and minified CSS -->
+    <title>BOING</title>
+    <style>
+        .bot-container{
+            height: 350px;
+            margin-top: 20px;
+        }
+        @media screen and (max-device-width: 640px) {
+            html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+            }
+
+            .bot-container{
+                height: calc(100% - 50px);
+                height: -webkit-calc(100% - 50px);
+                height: -moz-calc(100% - 50px);
+                margin-top: 0;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="">
+        <div class="" style="text-align:center; background:#f1f1f1">
+            <img src="https://bpvault.blob.core.windows.net/uploads/Cvj4pzU1Dc3M1496803460459.png" style="height:50px;">
+            <img style="height: 50px" src="https://bpvault.blob.core.windows.net/uploads/Ltbymbm6xSDn1495083450645.png"/>
+        </div>
+    </div>
+
+<div id="bot-container" class="bot-container">
+    <div style="height: 100%; margin:auto" id="adsByBotplatform-bot_1493214269480"></div>
+    <!--script src="https://chat.botplatform.io/plugin-ad-v1.js?bot=bot_1493214269480&input=true&showTitle=false&skin=mobile" async defer> </script-->
+    <script type="text/javascript">
+        window.ymConfig = {
+            bot: "x1545990145814",
+            autoOpen: true
+        };
+
+        (function () {
+            var w = window, ic = w.YellowMessenger;
+            if ("function" === typeof ic)
+                ic("reattach_activator"), ic("update", ymConfig);
+            else {
+                var d = document, i = function () { i.c(arguments) };
+                function l() {
+                    var e = d.createElement("script");
+                    e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/mobile.js";
+                    var t = d.getElementsByTagName("script")[0];
+                    t.parentNode.insertBefore(e, t)
+                }
+                i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
+            }
+        })();
+    </script>
+
+</div>
+<script type="text/javascript">
+        if (window.navigator.userAgent.toLowerCase().indexOf('iphone') != -1) {
+                document.getElementById ("bot-container").style.height = "calc(100% - 75px)"
+        }
+</script>
+
+</body>
+
+</html>
