@@ -150,7 +150,8 @@
                 "url": "https://api-pp.homecredit.co.in/leads/v1/applications/1285884060/offers?filter=safepay",
                 "method": "get",
                 "headers": {
-                    "Authorization": "Bearer " + token
+                    "Authorization": "Bearer " + token,
+                    "Access-Control-Allow-Origin": "https://yellow.chat"
                 }
             };
             $.ajax(settings).done(function (response) {
