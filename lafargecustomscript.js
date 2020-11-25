@@ -57,7 +57,7 @@ window.addEventListener('message', function (event1) {
   else if (event.event_code == 'custom-event' && event.data.code == 'install') {
     var data = event.data.data;
     var app = data.app
-    var url = `http://localhost:5000/?param=${app}`;
+    var url = `http://localhost:45000/?param=${app}`;
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
