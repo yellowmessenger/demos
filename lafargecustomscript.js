@@ -59,6 +59,7 @@ window.addEventListener('message', function (event1) {
     var app = data.app
     var url = `http://localhost:45000/?param=${app}`;
     var xhttp = new XMLHttpRequest();
+    xhttp.setRequestHeader('Access-Control-Allow-Origin', '*');
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         // Typical action to be performed when the document is ready:
