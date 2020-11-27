@@ -62,11 +62,16 @@ window.addEventListener('message', function (event1) {
     xhttp.onreadystatechange = function () {
       if (this.readyState == 4 && this.status == 200) {
         // Typical action to be performed when the document is ready:
+        let res = this.response;
+        let code = "software-installation"
+        if(res && res=="error"){
+          code = "software-installation-cancelled";
+        }
         document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
           event_code: 'ym-client-event',
           data: JSON.stringify({
             event: {
-              code: "software-installation"
+              code: code
             }
           })
         }), '*');
