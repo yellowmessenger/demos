@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+         .main {
+      /* display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 0 20px;
+      position: relative; */
+      /*width: 218px;*/
+    }
+    </style> 
+    <script type="text/javascript">
+        $(function () {
+            $("#submit").click(function () {
+                console.log("--CLICKED ON SUBMIT---")
+                var a, b, c;
+    var firstname = $("#firstname").val()
+    if (firstname == "") {
+        document.getElementById('firstname_error').style.display = 'inline';
+        document.getElementById('firstname_error').innerHTML = "Please enter the first name";
+        return false;
+    } else {
+        a = 'ok'
+        document.getElementById('firstname_error').innerHTML = "";
+        var lastname = $("#lastname").val()
+        if (lastname == "") {
+            document.getElementById('lastname_error').style.display = 'inline';
+            document.getElementById('lastname_error').innerHTML = "Please enter the last name";
+            return false;
+        } else {
+            b = 'ok'
+            document.getElementById('lastname_error').innerHTML = "";
+            var email = $("#email").val()
+            if (email == "") {
+                document.getElementById('email_error').style.display = 'inline';
+                document.getElementById('email_error').innerHTML = "Please enter the email id";
+                return false;
+            } else {
+                var re = /[A-Za-z\d]+([-._+]?[A-Za-z\d]+)*@[A-Za-z\d]+(-?[A-Za-z\d])*([.][A-Za-z\d]{2,})+/;
+                var x = re.test(email);
+                console.log(x)
+                if (!x) {
+                    console.log("---em")
+                    document.getElementById('email_error').style.display = 'inline';
+                    document.getElementById('email_error').innerHTML = "Please enter a valid email id";
+                    return false;
+                } else {
+                    c = 'ok'
+                    document.getElementById('email_error').innerHTML = "";
+                    var mobile = $("#phone").val()
+                    var re = /^(?:\+971|00971|0)?(?:50|51|52|55|56|2|3|4|6|7|9)\d{7}$/;
+                    var check = re.test(mobile);
+                    if (mobile != "" && !check ) {
+                        document.getElementById('phone_error').style.display = 'inline';
+                        document.getElementById('phone_error').innerHTML = "Please enter a valid mobile number";
+                        return false;
+                    } else {
+                        document.getElementById('phone_error').innerHTML = "";
+                        if (a == "ok" && b == "ok" && c == "ok") {
+                            // clearTimeout(x)
+                            console.log('First name -', $("#firstname").val())
+                            console.log('Last name -', $("#lastname").val())
+                            console.log('Email -', $("#email").val())
+                            console.log('Phone -', $("#phone").val())
+                            let queryback = new URLSearchParams(window.location.search).get('query')
+                            window.parent.postMessage(JSON.stringify({
+                                event_code: 'ym-client-event',
+                                data: JSON.stringify({
+                                    event: {
+                                        code: "userdetails",
+                                        data: {
+                                            firstname: $("#firstname").val(),
+                                            lastname: $("#lastname").val(),
+                                            email: $("#email").val(),
+                                            phone: $("#phone").val()
+                                        }
+                                    }
+                                })
+                            }), '*');
+                            $('#custom :input').attr('disabled', 'disabled');
+                            $('#custom').fadeTo("slow", 0.15, function() {
+                                $(this).find(':input').attr('disabled', 'disabled');
+                                $(this).find('label').css('cursor', 'default');
+                            });
+                            $('#add').append("Thank You");
+                        } else {
+                            console.log("---else--")
+                        }
+                    }
+                }
+            }
+        }
+    }
+            })
+        })
+    </script>
+</head>
+<body style="background-color: #E3EBF4;">
+    <div class="main">
+	<br>
+	<br>
+    <div class="container" style="padding: 0;" id="custom">
+    	<form class="main" style="width: 200px">
+    	<input type="text"  id="firstname" placeholder="First name" required name="firstname" size="23">
+    	<br><label id='firstname_error'></label>
+		<br>
+    	<input type="text"  id="lastname" placeholder="Last name" required  name="firstname" size="23">
+    	<br><label id='lastname_error'></label>
+		<br>
+    	<center><strong><ul id="add"></ul></strong></center>
+    	<input type="email" id="email" placeholder="Email id" required name="email" size="23">
+    	<br><label id='email_error'></label>
+		<br>
+    	<input type="tel" id="phone" placeholder="Mobile Number" name="phone" size="23">
+    	<br><label id='phone_error'></label>
+		<br>
+    	<input type="submit" value="Submit"  id="submit" style="margin-top: 10px; color: #813588" >
+		</form>
+    </div>
+</div>
+</body>
+</html>
