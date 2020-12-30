@@ -1,0 +1,171 @@
+<html>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif, sans-serif;
+  }
+
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+  }
+
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+
+  .dvTable {
+    padding: 0px 0;
+    background: #eee;
+    margin: 0;
+  }
+
+  .dvTable {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+  }
+
+  .days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+  }
+
+  /* Add media queries for smaller screens */
+  @media screen and (max-width:720px) {
+
+    .weekdays li,
+    .days li {
+      width: 13.1%;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+
+    .weekdays li,
+    .days li {
+      width: 12.5%;
+    }
+
+    .days li .active {
+      padding: 2px;
+    }
+  }
+
+  @media screen and (max-width: 290px) {
+
+    .weekdays li,
+    .days li {
+      width: 12.2%;
+    }
+  }
+
+  .overlay {
+    background-color: #EFEFEF;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    top: 0px;
+    left: 0px;
+    opacity: .5;
+    /* in FireFox */
+    filter: alpha(opacity=50);
+    /* in IE */
+  }
+</style>
+<script type="text/javascript">
+  function GenerateTable() {
+    //Build an array containing Calendar records.
+    var calendar = new Array();
+    calendar.push(["1", "2", "3", "4", "5", "6", "7"]);
+    calendar.push(["8", "9", "10", "11", "12", "13", "14"]);
+    calendar.push(["15", "16", "17", "18", "19", "20", "21"]);
+    calendar.push(["22", "23", "24", "25", "26", "27", "28"]);
+    calendar.push(["29", "30", "31"]);
+
+    let dates = new URLSearchParams(window.location.search).get('sipdates')
+
+    var enabledDates = ["1", "2", "3", "4", "5", "6", "7","8", "9", "10", "11", "12", "13", "14","15", "16", "17", "18", "19", "20", "21","22", "23", "24", "25", "26", "27", "28","29", "30", "31"]
+    enabledDates = dates.split(',');
+
+    //Create a HTML Table element.
+    var table = document.createElement("TABLE");
+    table.border = "0";
+
+    //Get the count of columns.
+    var columnCount = calendar[0].length;
+
+    //Add the data rows.
+    for (var i = 0; i < calendar.length; i++) {
+      row = table.insertRow(-1);
+      for (var j = 0; j < calendar[i].length; j++) {
+        var cell = row.insertCell(-1);
+        cell.innerHTML = calendar[i][j];
+        cell.style.border = "1.3px solid #527a98";
+        cell.style.padding = "2.8px";
+        if (enabledDates.indexOf(calendar[i][j]) == -1) {
+          cell.style.color = "black"
+          // On click of any date element
+          cell.onclick = e => {
+            console.log(e.target.innerText);
+            e.target.style.backgroundColor = "#9fc5e0";
+            // Send event to bot
+            window.parent.postMessage(
+              JSON.stringify({
+                event_code: "ym-client-event",
+                data: JSON.stringify({
+                  event: {
+                    code: "Date",
+                    data: {
+                      selectedDate: e.target.innerText
+                    }
+                  }
+                })
+              }),
+              "*"
+            );
+            // Disable the Webview
+            var div = document.createElement("div");
+            div.className += "overlay";
+            document.body.appendChild(div);
+
+
+          }
+        }
+        else {
+          // Disabled dates in Grey
+          cell.style.color = "grey";
+        }
+      }
+    }
+    // Dynamically create the calendar
+    var dvTable = document.getElementById("dvTable");
+    dvTable.innerHTML = "";
+    dvTable.appendChild(table);
+  }
+</script>
+
+<body onload="GenerateTable()">
+  <div id="dvTable">
+    </div-->
+</body>
+
+</html>
