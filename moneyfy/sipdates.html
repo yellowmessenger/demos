@@ -121,7 +121,7 @@
         cell.innerHTML = calendar[i][j];
         cell.style.border = "1.3px solid #527a98";
         cell.style.padding = "2.8px";
-        if (enabledDates.indexOf(calendar[i][j]) == -1) {
+        if (enabledDates.indexOf(calendar[i][j]) != -1) {
           cell.style.color = "black"
           // On click of any date element
           cell.onclick = e => {
