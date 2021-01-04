@@ -54,7 +54,7 @@
         text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
         -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
         box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
-        margin-left: 20vw;
+        margin-left: 10vw;
       }
       .btn:disabled {
         background-color: #ffffff;
@@ -169,6 +169,7 @@
         }
       }
       function sendEvent() {
+        console.log("sending");
         window.parent.postMessage(
           JSON.stringify({
             event_code: "ym-client-event",
