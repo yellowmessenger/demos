@@ -17,6 +17,25 @@
       position: relative; */
       /*width: 218px;*/
     }
+      label {
+        font-family: "Arial";
+        font-size: 16px;
+        color: #0f3661;
+    }
+    ::placeholder {
+        color : #DEDEDF;
+    }
+    input[type=submit] {
+        color: #fff;
+        background-color: #00893E;
+        height: 36px;
+    }
+    input[type=reset] {
+        color: #fff;
+        background-color: #00893E;
+        height: 36px;
+    }
+     
     </style> 
     <script type="text/javascript">
         var language_ 
@@ -31,6 +50,7 @@
                 document.getElementById('email').placeholder= 'عنوان الايميل';
                 document.getElementById('phone').placeholder= 'رقم الهاتف المحمول';
                 document.getElementById('submit').value= 'إرسال';
+                document.getElementById('reset').value= 'إعادة تعيين';
 
             }
             else {
@@ -172,7 +192,8 @@
         <input type="tel" id="phone" placeholder="" name="phone" size="23">
         <br><label id='phone_error'></label>
         <br>
-        <input type="submit" value="Submit"  id="submit" style="margin-top: 10px; color: #813588" >
+        <input type="submit" value="Submit"  id="submit" >
+        <input type="reset" value="Reset" id="reset">
         </form>
     </div>
 </div>
