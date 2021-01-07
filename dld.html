@@ -35,23 +35,29 @@
         background-color: #00893E;
         height: 36px;
     }
-     
     </style> 
     <script type="text/javascript">
         var language_ 
         $(document).ready(function () {
             let params = new URLSearchParams(window.location.search)
-            // console.log(params.get('language'))
+            console.log(params.get('language'))
              language_ = params.get('language')
-
             if (language_ == 'ar') {
-                document.getElementById('firstname').placeholder= 'الاسم الاول';
-                document.getElementById('lastname').placeholder= 'الكنية';
-                document.getElementById('email').placeholder= 'عنوان الايميل';
-                document.getElementById('phone').placeholder= 'رقم الهاتف المحمول';
-                document.getElementById('submit').value= 'إرسال';
-                document.getElementById('reset').value= 'إعادة تعيين';
-
+                document.getElementById('firstname').lang= 'ar';
+                document.getElementById('lastname').lang= 'ar';
+                document.getElementById('email').lang= 'ar';
+                document.getElementById('phone').lang= 'ar';
+                document.getElementById('submit').lang= 'ar';
+                document.getElementById('reset').lang= 'ar';
+                document.getElementById('firstname').placeholder= 'पहला नाम';
+                document.getElementById('email').placeholder= 'ईमेल';
+                // document.getElementById('firstname').placeholder= 'الاسم الاول';
+                // document.getElementById('lastname').placeholder= 'الكنية';
+                // document.getElementById('email').placeholder= 'عنوان الايميل';
+                // document.getElementById('phone').placeholder= 'رقم الهاتف المحمول';
+                // document.getElementById('submit').value= 'إرسال';
+                // document.getElementById('reset').value= 'إعادة تعيين';
+                console.log(document.getElementById('firstname').placeholder)
             }
             else {
                 document.getElementById('firstname').placeholder = "First name";
@@ -59,9 +65,7 @@
                 document.getElementById('email').placeholder = "Email id";
                 document.getElementById('phone').placeholder = "Mobile Number";
             }
-
         })
-
         $(function () {
             $("#submit").click(function () {
                 console.log("--CLICKED ON SUBMIT---")
@@ -75,7 +79,6 @@
         else{
                 document.getElementById('firstname_error').innerHTML = "Please enter the first name";
             }
-        
         return false;
     } else {
         a = 'ok'
@@ -179,21 +182,21 @@
     <br>
     <div class="container" style="padding: 0;" id="custom">
         <form class="main" style="width: 200px">
-        <input type="text"  id="firstname" placeholder="" required name="firstname" size="23">
+        <input type="text"  id="firstname" placeholder="" required name="firstname" translate="no" lang="" size="23">
         <br><label id='firstname_error'></label>
         <br>
-        <input type="text"  id="lastname" placeholder="" required  name="firstname" size="23">
+        <input type="text"  id="lastname" placeholder="" required  name="lastname" translate="no" lang="" size="23">
         <br><label id='lastname_error'></label>
         <br>
         <center><strong><ul id="add"></ul></strong></center>
-        <input type="email" id="email" placeholder="" required name="email" size="23">
+        <input type="email" id="email" placeholder="" required name="email" translate="no" lang="" size="23">
         <br><label id='email_error'></label>
         <br>
-        <input type="tel" id="phone" placeholder="" name="phone" size="23">
+        <input type="tel" id="phone" placeholder="" name="phone" translate="no" lang="" size="23">
         <br><label id='phone_error'></label>
         <br>
-        <input type="submit" value="Submit"  id="submit" >
-        <input type="reset" value="Reset" id="reset">
+        <input type="submit" value="Submit"  id="submit" translate="no" lang="">
+        <input type="reset" value="Reset" id="reset" translate="no" lang="">
         </form>
     </div>
 </div>
