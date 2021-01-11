@@ -1,4 +1,3 @@
-<script type="text/javascript">
     // <!-- Start of LiveChat (www.livechatinc.com) code -->
 
     window.addEventListener("message", function (event) {
@@ -21,4 +20,3 @@
             setTimeout(function () { window.YellowMessengerPlugin.hide(); }, 2000);
         }
     }, false);
-</script>
