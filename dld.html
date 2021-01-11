@@ -40,7 +40,6 @@
         var language_ 
         $(document).ready(function () {
             let params = new URLSearchParams(window.location.search)
-            console.log(params.get('language'))
              language_ = params.get('language')
             if (language_ == 'ar') {
                 document.getElementById('firstname').lang= 'ar';
@@ -49,15 +48,12 @@
                 document.getElementById('phone').lang= 'ar';
                 document.getElementById('submit').lang= 'ar';
                 document.getElementById('reset').lang= 'ar';
-                document.getElementById('firstname').placeholder= 'पहला नाम';
-                document.getElementById('email').placeholder= 'ईमेल';
-                // document.getElementById('firstname').placeholder= 'الاسم الاول';
-                // document.getElementById('lastname').placeholder= 'الكنية';
-                // document.getElementById('email').placeholder= 'عنوان الايميل';
+                document.getElementById('firstname').placeholder= 'الاسم الاول';
+                document.getElementById('lastname').placeholder= 'الكنية';
+                document.getElementById('email').placeholder= 'عنوان الايميل';
                 document.getElementById('phone').placeholder= 'رقم الهاتف المحمول';
                 document.getElementById('submit').value= 'إرسال';
                 document.getElementById('reset').value= 'إعادة تعيين';
-                console.log(document.getElementById('firstname').placeholder)
             }
             else {
                 document.getElementById('firstname').placeholder = "First name";
@@ -185,7 +181,7 @@
         <input type="text"  id="firstname" placeholder="" required name="firstname" translate="no" lang="" size="23">
         <br><label id='firstname_error'></label>
         <br>
-        <input type="text"  id="lastname" placeholder="الكنية" required  name="lastname" translate="no" lang="" size="23">
+        <input type="text"  id="lastname" placeholder="" required  name="lastname" translate="no" lang="" size="23">
         <br><label id='lastname_error'></label>
         <br>
         <center><strong><ul id="add"></ul></strong></center>
