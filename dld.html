@@ -26,8 +26,20 @@
     ul {
         font-family: "Arial";
         font-weight: normal;
-        font-size: 12px;
+        font-size: 14px;
         color: #0f3661;
+    }
+    #firstname_head, #lastname_head, #email_head, #mobile_head{
+        font-family: "Arial";
+        font-weight: normal;
+        font-size: 13px;
+        color: #0f3661;
+    }
+    #head{
+        font-family: "Arial";
+        font-weight: normal;
+        font-size: 12px;
+        color: #0f3661
     }
     ::placeholder {
         color : #DEDEDF;
@@ -41,17 +53,36 @@
     ::-webkit-input-placeholder {
         color : #DEDEDF;
     }
+    #firstname, #lastname, #email, #phone{
+        /*font-size: 1rem;*/
+        font-weight: 400;
+        line-height: 1.5;
+        /*height: 36px;*/
+        width: 100%;
+        border: 1px solid #DEDEDF;
+        padding: .375rem .75rem;
+       /* border-left: 2px solid #ff0000;  for red color border line*/
+    }
+     #firstname, #lastname, #email{
+        border-left: 2px solid #ff0000; /* for red color border line*/
+    }   
     input[type=submit] {
         color: #fff;
+        padding: .375rem .75rem;
+        width: 40%;
+        border: 0px;
         background-color: #00893E;
-        height: 36px;
-        border: 1px solid #000000;
+        height: 38px;
+        
     }
     input[type=reset] {
-        color: #fff;
-        background-color: #00893E;
-        height: 36px;
-        border: 1px solid #000000;
+        color: gray;
+        padding: .375rem .75rem;
+        border: 0px;
+        width: 40%;
+        background-color: #fff;
+        height: 38px;
+        
     }
      
     </style> 
@@ -70,12 +101,23 @@
                 document.getElementById('submit').value= 'إرسال';
                 document.getElementById('reset').value= 'إعادة تعيين';
 
+                document.getElementById('head').innerHTML= 'جميع الحقول التي تحمل علامة * إلزامية';
+                document.getElementById('firstname_head').innerHTML= 'الاسم الاول *';
+                document.getElementById('lastname_head').innerHTML= 'الكنية *';
+                document.getElementById('email_head').innerHTML= 'عنوان البريد الالكترونى *';
+                document.getElementById('mobile_head').innerHTML= 'رقم الهاتف المحمول';
             }
             else {
-                document.getElementById('firstname').placeholder = "First name";
-                document.getElementById('lastname').placeholder = "Last name";
-                document.getElementById('email').placeholder = "Email id";
+                document.getElementById('firstname').placeholder = "First Name";
+                document.getElementById('lastname').placeholder = "Last Name";
+                document.getElementById('email').placeholder = "Email Address";
                 document.getElementById('phone').placeholder = "Mobile Number";
+
+                document.getElementById('head').innerHTML= 'All fields marked with * are mandatory';
+                document.getElementById('firstname_head').innerHTML= 'First Name *';
+                document.getElementById('lastname_head').innerHTML= 'Last Name *';
+                document.getElementById('email_head').innerHTML= 'Email Address *';
+                document.getElementById('mobile_head').innerHTML= 'Mobile Number';
             }
 
         })
@@ -116,7 +158,7 @@
                 if(language_ == 'ar'){
                             document.getElementById('email_error').innerHTML = "الرجاء إدخال عنوان البريد الإلكتروني";
                 }else{
-                            document.getElementById('email_error').innerHTML = "Please enter the email id";
+                            document.getElementById('email_error').innerHTML = "Please enter the email address";
                 }
                 return false;
             } else {
@@ -193,24 +235,28 @@
 </head>
 <body style="background-color: #E3EBF4;">
     <div class="main">
-    <br>
-    <br>
     <div class="container" style="padding: 0;" id="custom">
+        <label id="head"></label>
+        <br><br>
         <form class="main" style="width: 200px">
+        <label id="firstname_head"></label>
         <input type="text"  id="firstname" placeholder="" required name="firstname" size="23">
         <br><label id='firstname_error'></label>
         <br>
+        <label id="lastname_head"></label>
         <input type="text"  id="lastname" placeholder="" required  name="firstname" size="23">
         <br><label id='lastname_error'></label>
         <br>
         <center><strong><ul id="add"></ul></strong></center>
+        <label id="email_head"></label>
         <input type="email" id="email" placeholder="" required name="email" size="23">
         <br><label id='email_error'></label>
         <br>
+        <label id="mobile_head"></label>
         <input type="tel" id="phone" placeholder="" name="phone" size="23">
         <br><label id='phone_error'></label>
         <br>
-        <input type="submit" value="Submit"  id="submit" >
+        <input type="submit" value="Submit"  id="submit" >  &nbsp;
         <input type="reset" value="Reset" id="reset">
         </form>
     </div>
