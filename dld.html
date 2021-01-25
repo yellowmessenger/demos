@@ -61,25 +61,22 @@
         width: 100%;
         border: 1px solid #DEDEDF;
         padding: .375rem .75rem;
-       /* border-left: 2px solid #ff0000;  for red color border line*/
+        border-left: 2px solid #ff0000;  /*for red color border line*/
     }
-     #firstname, #lastname, #email{
-        border-left: 2px solid #ff0000; /* for red color border line*/
-    }   
     input[type=submit] {
         color: #fff;
         padding: .375rem .75rem;
-        width: 40%;
+        width: 46.5%;
         border: 0px;
         background-color: #00893E;
         height: 38px;
         
     }
     input[type=reset] {
-        color: gray;
+        color: #0f3661;
         padding: .375rem .75rem;
+        width: 46.5%;
         border: 0px;
-        width: 40%;
         background-color: #fff;
         height: 38px;
         
@@ -105,7 +102,7 @@
                 document.getElementById('firstname_head').innerHTML= 'الاسم الاول *';
                 document.getElementById('lastname_head').innerHTML= 'الكنية *';
                 document.getElementById('email_head').innerHTML= 'عنوان البريد الالكترونى *';
-                document.getElementById('mobile_head').innerHTML= 'رقم الهاتف المحمول';
+                document.getElementById('mobile_head').innerHTML= 'رقم الهاتف المحمول *';
             }
             else {
                 document.getElementById('firstname').placeholder = "First Name";
@@ -117,7 +114,7 @@
                 document.getElementById('firstname_head').innerHTML= 'First Name *';
                 document.getElementById('lastname_head').innerHTML= 'Last Name *';
                 document.getElementById('email_head').innerHTML= 'Email Address *';
-                document.getElementById('mobile_head').innerHTML= 'Mobile Number';
+                document.getElementById('mobile_head').innerHTML= 'Mobile Number *';
             }
 
         })
@@ -125,7 +122,7 @@
         $(function () {
             $("#submit").click(function () {
                 console.log("--CLICKED ON SUBMIT---")
-                var a, b, c;
+                var a, b, c, d;
     var firstname = $("#firstname").val()
     if (firstname == "") {
         document.getElementById('firstname_error').style.display = 'inline';
@@ -177,10 +174,21 @@
                 } else {
                     c = 'ok'
                     document.getElementById('email_error').innerHTML = "";
+                    //
                     var mobile = $("#phone").val()
+                    if (mobile == "") {
+                        document.getElementById('phone_error').style.display = 'inline';
+                        if(language_ == 'ar'){
+                                    document.getElementById('phone_error').innerHTML = "الرجاء إدخال رقم الهاتف المحمول";
+                        }else{
+                                    document.getElementById('phone_error').innerHTML = "Please enter the mobile number";
+                        }
+                        return false;
+                    }else{
+                        //
                     var re = /^(?:\+971|00971|0)?(?:50|51|52|55|56|2|3|4|6|7|9)\d{7}$/;
                     var check = re.test(mobile);
-                    if (mobile != "" && !check ) {
+                    if (!check ) {
                         document.getElementById('phone_error').style.display = 'inline';
                         if(language_ == 'ar'){
                                     document.getElementById('phone_error').innerHTML = "الرجاء إدخال رقم جوال صحيح";
@@ -189,8 +197,9 @@
                         }
                         return false;
                     } else {
+                        d = 'ok'
                         document.getElementById('phone_error').innerHTML = "";
-                        if (a == "ok" && b == "ok" && c == "ok") {
+                        if (a == "ok" && b == "ok" && c == "ok" && d == "ok") {
                             // clearTimeout(x)
                             console.log('First name -', $("#firstname").val())
                             console.log('Last name -', $("#lastname").val())
@@ -225,6 +234,7 @@
                             console.log("---else--")
                         }
                     }
+                } //
                 }
             }
         }
@@ -253,7 +263,7 @@
         <br><label id='email_error'></label>
         <br>
         <label id="mobile_head"></label>
-        <input type="tel" id="phone" placeholder="" name="phone" size="23">
+        <input type="tel" id="phone" placeholder="" required name="phone" size="23">
         <br><label id='phone_error'></label>
         <br>
         <input type="submit" value="Submit"  id="submit" >  &nbsp;
