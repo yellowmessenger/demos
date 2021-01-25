@@ -23,7 +23,7 @@
         font-size: 12px;
         color: #0f3661;
     }
-    ul {
+    #add {
         font-family: "Arial";
         font-weight: normal;
         font-size: 14px;
@@ -66,7 +66,7 @@
     input[type=submit] {
         color: #fff;
         padding: .375rem .75rem;
-        width: 46.5%;
+        width: 45%;
         border: 0px;
         background-color: #00893E;
         height: 38px;
@@ -75,7 +75,7 @@
     input[type=reset] {
         color: #0f3661;
         padding: .375rem .75rem;
-        width: 46.5%;
+        width: 45%;
         border: 0px;
         background-color: #fff;
         height: 38px;
@@ -216,7 +216,7 @@
                         return false;
                     }else{
                         //
-                    var re = /^(?:\+971|00971|0)?(?:50|51|52|55|56|2|3|4|6|7|9)\d{7}$/;
+                    var re = /^(?:\+971|00971|0)?(?:50|51|52|55|56|54|58|2|3|4|6|7|9)\d{7}$/;
                     var check = re.test(mobile);
                     if (!check ) {
                         document.getElementById('phone_error').style.display = 'inline';
@@ -289,7 +289,7 @@
         <input type="text"  id="lastname" placeholder="" required  name="firstname" size="23">
         <br><label id='lastname_error'></label>
         <br>
-        <center><strong><ul id="add"></ul></strong></center>
+
         <label id="email_head"></label>
         <input type="email" id="email" placeholder="" required name="email" size="23">
         <br><label id='email_error'></label>
@@ -297,9 +297,12 @@
         <label id="mobile_head"></label>
         <input type="tel" id="phone" placeholder="" required name="phone" size="23">
         <br><label id='phone_error'></label>
-        <br>
-        <input type="submit" value="Submit"  id="submit" >  &nbsp;
+        <br><br>
+        <input type="submit" value="Submit"  id="submit" > &nbsp;&nbsp;&nbsp;
         <input type="reset" value="Reset" id="reset">
+        <br><br>
+        <center><strong><label id="add"></label></strong></center>
+            <br>
         </form>
     </div>
 </div>
