@@ -132,21 +132,51 @@
         else{
                 document.getElementById('firstname_error').innerHTML = "Please enter the first name";
             }
-        
         return false;
-    } else {
+    }else{
+         var re = /[0-9!@#\$%\^\&*\)\(+=._-]+$/;
+
+        var fchk = re.test(firstname);
+        if (fchk) {
+                    console.log("---em")
+                    document.getElementById('firstname_error').style.display = 'inline';
+                    if(language_ == 'ar'){
+                                document.getElementById('firstname_error').innerHTML = "الرجاء ادخال الأسم الأول";
+                    }else{
+                                document.getElementById('firstname_error').innerHTML = "Please enter a valid first name";
+                    }
+                    return false;
+                }
+    //} // this pracet shoud go to after 160 
+
+     else {
         a = 'ok'
         document.getElementById('firstname_error').innerHTML = "";
         var lastname = $("#lastname").val()
         if (lastname == "") {
             document.getElementById('lastname_error').style.display = 'inline';
             if(language_ == 'ar'){
-                        document.getElementById('lastname_error').innerHTML = "الرجاء إدخال الاسم الأخير";
+                        document.getElementById('lastname_error').innerHTML = "رجاء قم بإدخال الاسم الاخير بشكل صحيح";
             }else{
                         document.getElementById('lastname_error').innerHTML = "Please enter the last name";
             }
             return false;
-        } else {
+        } else{
+            var re = /[0-9!@#\$%\^\&*\)\(+=._-]+$/;
+        var lchk = re.test(lastname);
+        if (lchk) {
+                    console.log("---em")
+                    document.getElementById('lastname_error').style.display = 'inline';
+                    if(language_ == 'ar'){
+                                document.getElementById('lastname_error').innerHTML = "الرجاء ادخال أسم العائلة";
+                    }else{
+                                document.getElementById('lastname_error').innerHTML = "Please enter a valid last name";
+                    }
+                    return false;
+                }
+    //} // this pracet before fcheck 
+
+        else {
             b = 'ok'
             document.getElementById('lastname_error').innerHTML = "";
             var email = $("#email").val()
@@ -166,7 +196,7 @@
                     console.log("---em")
                     document.getElementById('email_error').style.display = 'inline';
                     if(language_ == 'ar'){
-                                document.getElementById('email_error').innerHTML = "الرجاء إدخال معرف بريد إلكتروني صالح";
+                                document.getElementById('email_error').innerHTML = "الرجاء ادخال بريد الكتروني معرف";
                     }else{
                                 document.getElementById('email_error').innerHTML = "Please enter a valid email id";
                     }
@@ -235,8 +265,10 @@
                         }
                     }
                 } //
-                }
-            }
+                } // email check contion else
+            } // 163
+        } // last name 
+         }// fname else 136
         }
     }
             })
