@@ -156,33 +156,9 @@
             "*"
           );
           // delete form
-          //   document.body.innerHTML = `Thanks for providing the information`;
+          document.body.innerHTML = `Thanks for providing the information`;
           event.preventDefault();
         });
-        function updateProgressBar() {
-          let formData = $(`#${window.form_id}`).serializeArray();
-          let completedInputs = 0;
-          formData.forEach((item) => {
-            if (item.value !== "") {
-              completedInputs++;
-            }
-          });
-          $("#progress_bar_id").css(
-            "width",
-            Math.ceil(completedInputs * 12.5) + "%"
-          );
-          if (completedInputs == 8) {
-            if ($("#progress_bar_id").parent().hasClass("active")) {
-              $("#progress_bar_id").parent().removeClass("active");
-            }
-          } else {
-            if (!$("#progress_bar_id").parent().hasClass("active")) {
-              $("#progress_bar_id").parent().addClass("active");
-            }
-          }
-        }
-        $(".form-control").change(updateProgressBar);
-        $(".form-check-input").change(updateProgressBar);
       });
     </script>
   </body>
