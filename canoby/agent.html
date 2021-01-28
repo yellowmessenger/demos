@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="data:;base64,=" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap and jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <br />
+    <form id="form_id">
+      <div class="form-floating mb-3">
+        <input
+          required
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          name="name"
+          placeholder="Agent Name"
+        />
+        <label for="floatingInput">Agent Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          required
+          type="email"
+          class="form-control"
+          id="floatingInput"
+          name="email_id"
+          placeholder="name@example.com"
+        />
+        <label for="floatingInput">Email address</label>
+        <small id="utteranceHelper" class="form-text text-muted">
+          Please ensure that this email address is registered with the yellow
+          messenger platform
+        </small>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="form-control btn btn-primary">
+          Add Agent
+        </button>
+      </div>
+    </form>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        let searchParams = new URLSearchParams(window.location.search);
+        let form_id = searchParams.get("form_id");
+        if (form_id) {
+          window.form_id = form_id;
+          document.getElementById("form_id").id = form_id;
+        }
+        const form = document.getElementById(form_id);
+        form.addEventListener("submit", function submitHandler(event) {
+          let formData = $(`#${window.form_id}`).serializeArray();
+          let eventData = {};
+          for (let item of formData) {
+            eventData[item.name] = item.value;
+          }
+          window.parent.postMessage(
+            JSON.stringify({
+              event_code: "ym-client-event",
+              data: JSON.stringify({
+                event: {
+                  code: `faq-${form_id}`,
+                  data: eventData,
+                },
+              }),
+            }),
+            "*"
+          );
+          // delete form
+          document.body.innerHTML = `Thanks for providing the information`;
+          event.preventDefault();
+        });
+      });
+    </script>
+  </body>
+</html>
