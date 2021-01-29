@@ -39,6 +39,23 @@
           placeholder="Group Name"
         />
         <label for="floatingInput">Group Name</label>
+        <small id="groupNameHelper" class="form-text text-muted">
+          Please ensure that this group name doesn't already exist in your bot
+        </small>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          required
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          name="group_code"
+          placeholder="Group Code"
+        />
+        <label for="floatingInput">Group Code</label>
+        <small id="groupCodeHelper" class="form-text text-muted">
+          Please ensure that this group code doesn't already exist in your bot
+        </small>
       </div>
       <div class="form-group mb-3">
         <label for="agentList">Select Agents</label>
