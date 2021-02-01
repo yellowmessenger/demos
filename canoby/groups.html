@@ -120,6 +120,20 @@
           // catches a malformed URI
           console.error(e);
         }
+        if (
+          /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+            navigator.userAgent
+          ) === false
+        ) {
+          // make the options selectable on laptops and bigger devices
+          $("option").mousedown(function (e) {
+            e.preventDefault();
+            $(this).toggleClass("selected");
+
+            $(this).prop("selected", !$(this).prop("selected"));
+            return false;
+          });
+        }
       });
     </script>
   </body>
