@@ -1,14 +1,14 @@
 <!doctype html>
 <html>
-​
+
 <head>
     <title>Colgate</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="shortcut icon" type="image/png" href="https://cdn.yellowmessenger.com/bU09WH9QuLn51587042142370.png" />
 </head>
-​
-​
+
+
 <body>
 <script type="text/javascript">
     var getParams = function (url) {
@@ -33,7 +33,7 @@
         serviceWorkerPath: './messaging-sw.js',
         payload: getParams(window.location.href)["botPayload"]
     };
-​
+    
     (function () {
         var w = window, ic = w.YellowMessenger;
         if ("function" === typeof ic)
@@ -62,14 +62,14 @@
             'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '237912880965916');
         fbq('track', 'PageView');
-​
+        
         window.addEventListener("message", function (event) {
             var event = JSON.parse(event.data);
             console.log("event", event);
             if (event.event_code === 'custom-event') {
                 var eventData = event.data.data;
                 console.log("eventData", eventData);
-​
+                
                 if (eventData && eventData.type === 'facebook-pixel') {
                     console.log("eventData", eventData);
                     var args = ['track', eventData.data.name, eventData.data.data]
@@ -79,10 +79,9 @@
             }
         }, false);
         //pixel code ends here
-​
     })();
 </script>
-​
+
 </body>
-​
+
 </html>
