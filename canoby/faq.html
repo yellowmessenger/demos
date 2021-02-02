@@ -162,6 +162,10 @@
           document.body.innerHTML = `Thanks for providing the information`;
           event.preventDefault();
         });
+        let sequenceNumber = searchParams.get("sequence");
+        if (sequenceNumber) {
+          $("#sequence")[0].value = sequenceNumber;
+        }
       });
     </script>
   </body>
