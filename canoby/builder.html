@@ -131,9 +131,8 @@
         // render view
         $("<iframe>", {
           src: `https://app.yellowmessenger.com/pwa/live/${window.currentBotID}?fullScreen=true`,
-          height: "650px",
-          width: "400px",
           id: "cloneFrame",
+          style: "height: 650px; width: 400px; border: 0",
         }).appendTo("#cloneContainer");
       };
       const removeView = () => {
