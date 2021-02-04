@@ -69,7 +69,7 @@
     </div>
     <script>
       $(".countrypicker").countrypicker();
-      $("#send_button").click(function () {
+      $("#send_button").click(function handler() {
         let selectedCountries = [];
         var countries = $("#selector option:selected");
         for (let country of countries) {
@@ -79,7 +79,6 @@
           alert("Please select some countries");
           return false;
         }
-        console.log(selectedCountries, "electedCountries");
         window.parent.postMessage(
           JSON.stringify({
             event_code: "ym-client-event",
@@ -92,9 +91,11 @@
           }),
           "*"
         );
-        // delete form
-        document.body.innerHTML = `Thanks for providing the information`;
-        event.preventDefault();
+        // disable the whole form
+        // make all input fields validated
+        $(`#selector`).prop("disabled", true).addClass("is-valid");
+        // change button style
+        $("#send_button").removeClass("btn-primary").addClass("btn-success");
       });
     </script>
   </body>

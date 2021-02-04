@@ -100,7 +100,11 @@
         </button>
       </div>
       <div class="form-group">
-        <button type="submit" class="form-control btn btn-primary">
+        <button
+          type="submit"
+          class="form-control btn btn-primary"
+          id="submitButton"
+        >
           Submit
         </button>
       </div>
@@ -136,6 +140,7 @@
         }
         const form = document.getElementById(form_id);
         form.addEventListener("submit", function submitHandler(event) {
+          event.preventDefault();
           let formData = $(`#${window.form_id}`).serializeArray();
           let eventData = {};
           for (let item of formData) {
@@ -158,10 +163,14 @@
             }),
             "*"
           );
-          // delete form
-          document.body.innerHTML = `Thanks for providing the information`;
-          event.preventDefault();
+          // disable the whole form
+          $(`#${window.form_id} :input`).prop("disabled", true);
+          // make all input fields validated
+          $(`#${window.form_id} :input`).addClass("is-valid");
+          // change button style
+          $("#submitButton").removeClass("btn-primary").addClass("btn-success");
         });
+        // pre fill sequence number if supplied
         let sequenceNumber = searchParams.get("sequence");
         if (sequenceNumber) {
           $("#sequence")[0].value = sequenceNumber;

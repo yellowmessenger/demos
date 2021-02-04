@@ -174,7 +174,11 @@
           />
         </div>
         <div class="form-group">
-          <button type="submit" class="form-control btn btn-primary">
+          <button
+            type="submit"
+            class="form-control btn btn-primary"
+            id="submitButton"
+          >
             Submit
           </button>
         </div>
@@ -190,6 +194,7 @@
         }
         const form = document.getElementById(form_id);
         form.addEventListener("submit", function submitHandler(event) {
+          event.preventDefault();
           let formData = {};
           for (let i = 0; i < event.srcElement.length; i++) {
             if (
@@ -216,9 +221,12 @@
             }),
             "*"
           );
-          // delete form
-          document.body.innerHTML = `Thanks for providing the information`;
-          event.preventDefault();
+          // disable the whole form
+          $(`#${window.form_id} :input`).prop("disabled", true);
+          // make all input fields validated
+          $(`#${window.form_id} :input`).addClass("is-valid");
+          // change button style
+          $("#submitButton").removeClass("btn-primary").addClass("btn-success");
         });
         function updateProgressBar() {
           let formData = $(`#${window.form_id}`).serializeArray();
