@@ -81,9 +81,18 @@
     </div>
     <script type="text/javascript">
       window.ymConfig = {
-        bot: "x1603878974582",
+        bot: "x1609934424739",
         containerId: "canoby",
       };
+      let searchParams = new URLSearchParams(window.location.search);
+      let shouldLoadSandbox = searchParams.get("shouldLoadSandbox");
+      if (shouldLoadSandbox) {
+        window.ymConfig.bot = "x1603878974582";
+      }
+      let shouldLoadStaging = searchParams.get("shouldLoadStaging");
+      if (shouldLoadStaging) {
+        window.ymConfig.bot = "x1606905268396";
+      }
       (function () {
         var w = window,
           ic = w.YellowMessenger;
