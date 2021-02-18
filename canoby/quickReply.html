@@ -1,0 +1,146 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="data:;base64,=" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- bootstrap and jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <br />
+    <h3>
+      Buttons
+      <br />
+      <br />
+      <small class="text-muted">
+        Create up to 3 buttons that let customers respond to your message or
+        take action.
+      </small>
+    </h3>
+    <form id="form_id" class="mt-5">
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          name="button"
+          required
+          class="form-control"
+          id="button"
+          placeholder="Enter Button Text"
+          maxlength="20"
+        />
+        <label for="button" class="mx-auto">Button Text</label>
+      </div>
+      <div class="form-group mb-3" id="beforeThis">
+        <button
+          type="button"
+          class="form-control btn btn-secondary"
+          id="addOneMore"
+        >
+          ➕ Add Another Button
+        </button>
+      </div>
+      <div class="form-group">
+        <button
+          type="submit"
+          class="form-control btn btn-primary"
+          id="submitButton"
+        >
+          Submit
+        </button>
+      </div>
+    </form>
+    <script type="text/javascript">
+      window.buttonCount = 1;
+      $("#addOneMore").on("click", () => {
+        window.buttonCount = window.buttonCount + 1;
+        $(`<div class="form-floating mb-3 input-group" id="button${window.buttonCount}">
+        <input
+          type="text"
+          name="button"
+          required
+          class="form-control"
+          id="button${window.buttonCount}"
+          placeholder="Enter Button Text"
+          maxlength="20"
+        />
+        <label for="button${window.buttonCount}" class="mx-auto">Button Text</label>
+        <button class="btn btn-outline-danger" type="button" id="removebutton${window.buttonCount}">Remove</button>
+        </div>`).insertBefore("#beforeThis");
+        if (window.buttonCount == 3) {
+          $("#addOneMore").prop("disabled", true);
+        }
+        let count = window.buttonCount;
+        $(`#removebutton${count}`).on("click", function () {
+          window.buttonCount = window.buttonCount - 1;
+          $(`#button${count}`).remove();
+          $("#addOneMore").prop("disabled", false);
+        });
+      });
+
+      $(document).ready(function () {
+        let searchParams = new URLSearchParams(window.location.search);
+        let form_id = searchParams.get("form_id");
+        if (form_id) {
+          window.form_id = form_id;
+          document.getElementById("form_id").id = form_id;
+        }
+        const form = document.getElementById(form_id);
+        form.addEventListener("submit", function submitHandler(event) {
+          event.preventDefault();
+          let formData = $(`#${window.form_id}`).serializeArray();
+          let eventData = {};
+          for (let item of formData) {
+            if (eventData[item.name]) {
+              eventData[item.name] += `,${item.value.replace(/,/g, "")}`;
+            } else {
+              eventData[item.name] = item.value;
+            }
+          }
+          console.log(eventData);
+          window.parent.postMessage(
+            JSON.stringify({
+              event_code: "ym-client-event",
+              data: JSON.stringify({
+                event: {
+                  code: `button-${form_id}`,
+                  data: eventData,
+                },
+              }),
+            }),
+            "*"
+          );
+          // disable the whole form
+          $(`#${window.form_id} :input`).prop("disabled", true);
+          // make all input fields validated
+          $(`#${window.form_id} :input`).addClass("is-valid");
+          // change button style
+          $("#submitButton").removeClass("btn-primary").addClass("btn-success");
+        });
+        // pre fill sequence number if supplied
+        let sequenceNumber = searchParams.get("sequence");
+        if (sequenceNumber) {
+          $("#sequence")[0].value = sequenceNumber;
+        }
+      });
+    </script>
+  </body>
+</html>
