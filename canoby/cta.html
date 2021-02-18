@@ -28,11 +28,11 @@
   <body>
     <br />
     <h3 class="display-4">
-      Buttons
+      Call to Action
       <br />
       <br />
       <small class="text-muted">
-        Create up to 3 buttons that let customers respond to your message or
+        Create up to 2 buttons that let customers respond to your message or
         take action.
       </small>
     </h3>
@@ -40,14 +40,26 @@
       <div class="form-floating mb-3">
         <input
           type="text"
-          name="button"
+          name="text0"
           required
           class="form-control"
           id="button"
-          placeholder="Enter Button Text"
+          placeholder="Button Text"
           maxlength="20"
         />
         <label for="button" class="mx-auto">Button Text</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input
+          type="text"
+          name="phone0"
+          required
+          class="form-control"
+          id="button"
+          placeholder="+919876543210"
+          maxlength="20"
+        />
+        <label for="button" class="mx-auto">Phone Number</label>
       </div>
       <div class="form-group mb-3" id="beforeThis">
         <button
@@ -71,27 +83,35 @@
     <script type="text/javascript">
       window.buttonCount = 1;
       $("#addOneMore").on("click", () => {
-        window.buttonCount = window.buttonCount + 1;
-        $(`<div class="form-floating mb-3 input-group" id="button${window.buttonCount}">
+        $(`<div class="form-floating mb-3 input-group" id="group1">
         <input
           type="text"
-          name="button"
+          name="text1"
           required
           class="form-control"
-          id="button${window.buttonCount}"
-          placeholder="Enter Button Text"
+          id="button1"
+          placeholder="Button Text"
           maxlength="20"
         />
-        <label for="button${window.buttonCount}" class="mx-auto">Button Text</label>
-        <button class="btn btn-outline-danger" type="button" id="removebutton${window.buttonCount}">Remove</button>
-        </div>`).insertBefore("#beforeThis");
-        if (window.buttonCount == 3) {
-          $("#addOneMore").prop("disabled", true);
-        }
-        let count = window.buttonCount;
-        $(`#removebutton${count}`).on("click", function () {
-          window.buttonCount = window.buttonCount - 1;
-          $(`#button${count}`).remove();
+        <label for="button" class="mx-auto">Button Text</label>
+      </div>
+      <div class="form-floating mb-3 input-group" id="group2">
+        <input
+          type="text"
+          name="phone1"
+          required
+          class="form-control"
+          id="phone1"
+          placeholder="+919876543210"
+          maxlength="20"
+        />
+        <button class="btn btn-outline-danger" type="button" id="removephone1">Remove</button>
+        <label for="button" class="mx-auto">Phone Number</label>
+      </div>`).insertBefore("#beforeThis");
+        $("#addOneMore").prop("disabled", true);
+        $(`#removephone1`).on("click", function () {
+          $(`#group1`).remove();
+          $(`#group2`).remove();
           $("#addOneMore").prop("disabled", false);
         });
       });
