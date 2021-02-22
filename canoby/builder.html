@@ -155,27 +155,61 @@
       const reloadFrame = () => {
         $("#cloneFrame").attr("src", $("#cloneFrame").attr("src"));
       };
+
+      const clearAllTimeout = () => {
+        if (window.postRender) {
+          $("#placeholder").hide();
+          renderView(window.botIDAfterDelay);
+          clearTimeout(window.postRender);
+        }
+      };
+
       window.addEventListener(
         "message",
         function (event1) {
           try {
             console.log(event1);
             var event = JSON.parse(event1.data);
-            if (
-              event.event_code == "custom-event" &&
-              event.data.code == "render-view"
-            ) {
-              renderView(event.data.data);
-            } else if (
-              event.event_code == "custom-event" &&
-              event.data.code == "remove-view"
-            ) {
-              removeView();
-            } else if (
-              event.event_code == "custom-event" &&
-              event.data.code == "reload-view"
-            ) {
-              reloadFrame();
+            if (event.event_code !== "custom-event") {
+              return;
+            }
+            switch (event.data.code) {
+              case "render-view": {
+                clearAllTimeout();
+                renderView(event.data.data);
+                break;
+              }
+              case "remove-view": {
+                clearAllTimeout();
+                removeView();
+                break;
+              }
+              case "reload-view": {
+                clearAllTimeout();
+                reloadFrame();
+                break;
+              }
+              case "wa-header": {
+                break;
+              }
+              case "render-with-delay": {
+                // showing the loader first and hiding the bot 
+                $("#placeholder").show();
+                $("#cloneContainer").empty();
+                window.botIDAfterDelay = event.data.data;
+                window.currentBotID = "";
+                window.postRender = setTimeout(() => {
+                  // function that gets executed after delay which 
+                  // removes the loader and renders the bot
+                  $("#placeholder").hide();
+                  // render view
+                  renderView(window.botIDAfterDelay);
+                }, 300000);
+                break;
+              }
+              default: {
+                break;
+              }
             }
           } catch (error) {
             console.log(error, "error-customScript");
