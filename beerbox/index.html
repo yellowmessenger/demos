@@ -75,6 +75,7 @@
                 'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '474036263593549');
             fbq('track', 'PageView');
+            fbq('track', 'AddToCart');
 
             window.addEventListener("message", function (event) {
                 var event = JSON.parse(event.data);
