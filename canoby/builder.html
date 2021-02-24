@@ -62,15 +62,199 @@
           opacity: 0;
         }
       }
+
+      /* Styles for the whatsapp bubble */
+      .msg {
+        height: auto;
+        display: block;
+        overflow: hidden;
+      }
+      .msg .bubble {
+        float: left;
+        max-width: 75%;
+        width: auto;
+        height: auto;
+        display: block;
+        background: #ebebeb;
+        border-radius: 5px;
+        position: relative;
+        margin: 10px 0 3px 25px;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+      }
+      .msg .bubble .txt {
+        padding: 8px 0 8px 0;
+        width: 100%;
+      }
+      .msg .bubble .txt .message {
+        font-size: 14px;
+        font-weight: 500;
+        padding: 0 15px 0 15px;
+        margin: auto;
+        color: #2b2b2b;
+        display: table;
+      }
+      .msg .bubble .txt .header {
+        font-weight: 500;
+        padding: 0 15px 0 15px;
+        display: table;
+        color: #282828;
+        font-size: 13.6px;
+      }
+      .msg .bubble .txt .image {
+        margin: auto;
+        display: table;
+      }
+      .msg .bubble .txt .timestamp {
+        font-size: 11px;
+        margin: auto;
+        padding: 0 15px 0 0;
+        display: table;
+        float: right;
+        position: relative;
+        text-transform: uppercase;
+        color: #999;
+      }
+      .msg .bubble .txt .footer {
+        font-size: 11px;
+        margin: auto;
+        padding: 0 15px 0 15px;
+        display: table;
+        float: left;
+        position: relative;
+        color: #999;
+      }
+      .msg .bubble .bubble-arrow {
+        position: absolute;
+        float: left;
+        left: -11px;
+        top: 0px;
+      }
+      .msg .bubble .bubble-arrow:after {
+        content: "";
+        position: absolute;
+        border-top: 15px solid #ebebeb;
+        border-left: 15px solid transparent;
+        border-radius: 4px 0 0 0px;
+        width: 0;
+        height: 0;
+      }
+      .msg .bubble .bubble-arrow.alt:after {
+        border-top: 15px solid #dcf8c6;
+        transform: scaleX(-1);
+      }
+      .ctaImage {
+        width: 16px;
+        height: 16px;
+        float: "left";
+      }
+
+      .ctaPhone {
+        color: #00a5f4;
+        font-size: 14px;
+        height: 34px;
+        line-height: 20px;
+        padding: 0 16px;
+      }
+
+      .ctaHolder {
+        text-align: center;
+        padding-top: 6px;
+      }
+
+      @media only screen and (max-width: 450px) {
+        .timestamp {
+          display: none;
+          color: red;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="grid-container">
       <div class="render">
+        <!-- loading spinner -->
         <div id="placeholder">
           <div class="lds-ripple">
             <div></div>
             <div></div>
+          </div>
+        </div>
+        <!-- whatsapp message bubble preview -->
+        <div id="whatsappMessageBubble" class="msg" style="display: none">
+          <!-- <div id="whatsappMessageBubble" class="msg"> -->
+          <div class="bubble">
+            <div class="txt">
+              <!-- <span class="header" id="textHeader"> -->
+              <span style="display: none" class="header" id="textHeader">
+                <strong id="textHeaderContent">
+                  header message goes here
+                </strong>
+              </span>
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/Up5VCS90L9f.png"
+                class="image"
+                id="imageHeader"
+                style="display: none"
+              />
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/HLeiKHmyUAo.png"
+                class="image"
+                id="videoHeader"
+                style="display: none"
+              />
+              <img
+                src="https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/UgKSZzjwFgH.png"
+                class="image"
+                id="documentHeader"
+                style="display: none"
+              />
+            </div>
+            <div id="wa_body" class="txt">
+              <span class="message" id="bodyContent" style="display: none">
+                <!-- <span class="message" id="bodyContent"> -->
+                Test content with variables {{1}} {{2}} {{3}}
+              </span>
+            </div>
+            <div id="footer" class="txt">
+              <div class="footer">
+                <span id="footerContent" style="display: none">
+                  <!-- <span id="footerContent">  -->
+                  footer message goes here
+                </span>
+              </div>
+              <time class="timestamp">12:00</time>
+            </div>
+            <div id="quickReplyButtons"></div>
+            <div id="callToAction" style="display: none">
+              <hr />
+              <div
+                class="ctaHolder"
+                style="display: none"
+                id="ctaPhoneContainer"
+              >
+                <span class="ctaPhone">
+                  <img
+                    src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/8o77vvYFLgb.png"
+                    class="ctaImage"
+                  />
+                  ctaContentHere
+                </span>
+              </div>
+              <div
+                class="ctaHolder"
+                style="display: none"
+                id="ctaLinkContainer"
+              >
+                <span class="ctaPhone">
+                  <img
+                    src="https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/OzOCQC-ukqH.png"
+                    class="ctaImage"
+                  />
+                  ctaContentHere
+                </span>
+              </div>
+            </div>
+            <div class="bubble-arrow"></div>
           </div>
         </div>
         <div id="cloneContainer"></div>
@@ -135,6 +319,7 @@
         window.currentBotID = botID;
         // first hide the placeholder
         $("#placeholder").hide();
+        $("#whatsappMessageBubble").hide();
         // clear residue if any
         $("#cloneContainer").empty();
         // render view
@@ -147,6 +332,7 @@
       const removeView = () => {
         // clear residue if any
         $("#cloneContainer").empty();
+        $("#whatsappMessageBubble").hide();
         // show the placeholder
         $("#placeholder").show();
         // delete window.currentBotID
@@ -164,6 +350,54 @@
         }
       };
 
+      const showElement = (elementID) => $(`#${elementID}`).show();
+      const hideElement = (elementID) => $(`#${elementID}`).hide();
+      const showEntireBubble = () => $("#whatsappMessageBubble").show();
+      const waTClearOthers = () => {
+        // first hide the placeholder
+        $("#placeholder").hide();
+        // clear residue if any
+        $("#cloneContainer").empty();
+      };
+      const showHideMap = {
+        "show-header": (data) => {
+          console.log(data, "Showing header with data");
+          waTClearOthers();
+          showEntireBubble();
+          if (typeof data === "object") {
+            showElement(`textHeader`);
+            $(`#textHeaderContent`).text(data.textContent);
+          } else {
+            showElement(`${data.toLowerCase()}Header`);
+          }
+        },
+        "hide-header": () => {
+          hideElement("textHeader");
+          hideElement("imageHeader");
+          hideElement("videoHeader");
+          hideElement("documentHeader");
+        },
+        "show-body": (bodyContent) => {
+          console.log(bodyContent, "Showing body with data");
+          waTClearOthers();
+          showEntireBubble();
+          showElement(`bodyContent`);
+          $(`#bodyContent`).text(bodyContent);
+        },
+        "hide-body": () => {
+          hideElement(`bodyContent`);
+        },
+        "show-footer": (footerContent) => {
+          console.log(footerContent, "Showing footer with data");
+          waTClearOthers();
+          showEntireBubble();
+          showElement(`footerContent`);
+          $(`#footerContent`).text(footerContent);
+        },
+        "hide-footer": () => {
+          hideElement(`footerContent`);
+        },
+      };
       window.addEventListener(
         "message",
         function (event1) {
@@ -189,17 +423,24 @@
                 reloadFrame();
                 break;
               }
-              case "wa-header": {
+              case "wa-preview": {
+                if (
+                  Object.keys(showHideMap).includes(event.data.data.previewCode)
+                ) {
+                  showHideMap[event.data.data.previewCode](
+                    event.data.data.previewData
+                  );
+                }
                 break;
               }
               case "render-with-delay": {
-                // showing the loader first and hiding the bot 
+                // showing the loader first and hiding the bot
                 $("#placeholder").show();
                 $("#cloneContainer").empty();
                 window.botIDAfterDelay = event.data.data;
                 window.currentBotID = "";
                 window.postRender = setTimeout(() => {
-                  // function that gets executed after delay which 
+                  // function that gets executed after delay which
                   // removes the loader and renders the bot
                   $("#placeholder").hide();
                   // render view
