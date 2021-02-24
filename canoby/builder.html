@@ -226,38 +226,40 @@
             </div>
             <div id="quickReplyButtons"></div>
             <div id="callToAction" style="display: none">
-              <hr />
-              <div
-                class="ctaHolder"
-                style="display: none"
-                id="ctaPhoneContainer"
-              >
-                <span class="ctaPhone">
-                  <img
-                    src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/8o77vvYFLgb.png"
-                    class="ctaImage"
-                  />
-                  ctaContentHere
-                </span>
+              <div id="callToAction">
+                <hr />
+                <div
+                  class="ctaHolder"
+                  style="display: none"
+                  id="ctaPhoneContainer"
+                >
+                  <span class="ctaPhone">
+                    <img
+                      src="https://static.xx.fbcdn.net/rsrc.php/v3/yO/r/8o77vvYFLgb.png"
+                      class="ctaImage"
+                    />
+                    <span id="ctaPhoneContentHolder">ctaContentHere</span>
+                  </span>
+                </div>
+                <div
+                  class="ctaHolder"
+                  style="display: none"
+                  id="ctaLinkContainer"
+                >
+                  <span class="ctaPhone" id="ctaPhoneContent">
+                    <img
+                      src="https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/OzOCQC-ukqH.png"
+                      class="ctaImage"
+                    />
+                    <span id="ctaLinkContentHolder">ctaContentHere</span>
+                  </span>
+                </div>
               </div>
-              <div
-                class="ctaHolder"
-                style="display: none"
-                id="ctaLinkContainer"
-              >
-                <span class="ctaPhone">
-                  <img
-                    src="https://static.xx.fbcdn.net/rsrc.php/v3/y0/r/OzOCQC-ukqH.png"
-                    class="ctaImage"
-                  />
-                  ctaContentHere
-                </span>
-              </div>
+              <div class="bubble-arrow"></div>
             </div>
-            <div class="bubble-arrow"></div>
           </div>
+          <div id="cloneContainer"></div>
         </div>
-        <div id="cloneContainer"></div>
       </div>
       <div class="canoby" id="canoby">
         <!-- the chatbot will get loaded here -->
@@ -396,6 +398,22 @@
         },
         "hide-footer": () => {
           hideElement(`footerContent`);
+        },
+        "show-cta": (ctaData) => {
+          $("callToAction").show();
+          if (ctaData.link) {
+            $("ctaLinkContainer").show();
+            $("ctaLinkContentHolder").text(ctaData.linkText);
+          }
+          if (ctaData.phone) {
+            $("ctaPhoneContainer").show();
+            $("ctaPhoneContentHolder").text(ctaData.phoneText);
+          }
+        },
+        "hide-cta": () => {
+          $("callToAction").hide();
+          $("ctaPhoneContainer").hide();
+          $("ctaLinkContainer").hide();
         },
       };
       window.addEventListener(
