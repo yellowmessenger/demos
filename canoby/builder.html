@@ -68,6 +68,7 @@
         height: auto;
         display: block;
         overflow: hidden;
+        margin-bottom: -10px;
       }
       .msg .bubble {
         float: left;
@@ -117,7 +118,7 @@
       .msg .bubble .txt .footer {
         font-size: 11px;
         margin: auto;
-        padding: 0 15px 0 15px;
+        padding: 0 15px 15px 15px;
         display: table;
         float: left;
         position: relative;
@@ -147,7 +148,6 @@
         height: 16px;
         float: "left";
       }
-
       .ctaPhone {
         color: #00a5f4;
         font-size: 14px;
@@ -155,10 +155,41 @@
         line-height: 20px;
         padding: 0 16px;
       }
-
       .ctaHolder {
         text-align: center;
         padding-top: 6px;
+      }
+      .singleButtonSpan {
+        color: #00a5f4;
+        font-size: 14px;
+      }
+      .singleButtonContainer {
+        justify-content: center;
+      }
+      .multipleQuickReplies {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "firstButton secondButton"
+          "thirdButton thirdButton";
+      }
+      .firstButton {
+        grid-area: firstButton;
+        grid-column: 1 / 2;
+      }
+      .secondButton {
+        grid-area: secondButton;
+        grid-column: 2 / 3;
+        margin: 10px 0 3px -20px !important;
+      }
+      .thirdButton {
+        grid-area: thirdButton;
+        grid-column: 1 / 3;
+      }
+      .thirdButtonMargin {
+        margin: 0px 0px 0px 25px !important;
       }
 
       @media only screen and (max-width: 450px) {
@@ -183,7 +214,7 @@
         <!-- whatsapp message bubble preview -->
         <div id="whatsappMessageBubble" class="msg" style="display: none">
           <!-- <div id="whatsappMessageBubble" class="msg"> -->
-          <div class="bubble">
+          <div class="bubble" id="contentBubble">
             <div class="txt">
               <!-- <span class="header" id="textHeader"> -->
               <span style="display: none" class="header" id="textHeader">
@@ -225,14 +256,13 @@
               </div>
               <time class="timestamp">12:00</time>
             </div>
-            <div id="quickReplyButtons"></div>
             <div id="callToAction" style="display: none">
               <div id="callToAction">
                 <hr />
                 <div
                   class="ctaHolder"
-                  style="display: none"
                   id="ctaPhoneContainer"
+                  style="display: none"
                 >
                   <span class="ctaPhone">
                     <img
@@ -244,8 +274,8 @@
                 </div>
                 <div
                   class="ctaHolder"
-                  style="display: none"
                   id="ctaLinkContainer"
+                  style="display: none"
                 >
                   <span class="ctaPhone" id="ctaPhoneContent">
                     <img
@@ -256,12 +286,63 @@
                   </span>
                 </div>
               </div>
-              <div class="bubble-arrow"></div>
+            </div>
+            <div class="bubble-arrow"></div>
+          </div>
+        </div>
+        <div class="msg" id="singleButtonMainContainer" style="display: none">
+          <div id="singleQuickReplyButton" class="bubble">
+            <div class="txt" id="singleButtonContainer">
+              <div class="message">
+                <span id="singleButtonText" class="singleButtonSpan">
+                  button text goes here
+                </span>
+              </div>
             </div>
           </div>
-          <div id="cloneContainer"></div>
+        </div>
+        <div
+          id="secondButtonMainContainer"
+          class="msg multipleQuickReplies"
+          style="display: none"
+        >
+          <div id="firstQuickReplyButton" class="firstButton bubble">
+            <div class="txt" id="firstButtonContainer">
+              <div class="message">
+                <span id="firstButtonText" class="singleButtonSpan">
+                  button text goes here
+                </span>
+              </div>
+            </div>
+          </div>
+          <div id="secondQuickReplyButton" class="secondButton bubble">
+            <div class="txt" id="secondButtonContainer">
+              <div class="message">
+                <span id="secondButtonText" class="singleButtonSpan">
+                  button text goes here
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="msg thirdButton"
+            id="thirdButtonMainContainer"
+            style="display: none"
+          >
+            <!-- same as singleQuickReplyButton -->
+            <div id="thirdQuickReplyButton" class="thirdButtonMargin bubble">
+              <div class="txt" id="thirdButtonContainer">
+                <div class="message">
+                  <span id="thirdButtonText" class="singleButtonSpan">
+                    button text goes here
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
       <div class="canoby" id="canoby">
         <!-- the chatbot will get loaded here -->
       </div>
@@ -415,6 +496,35 @@
           $("callToAction").hide();
           $("ctaPhoneContainer").hide();
           $("ctaLinkContainer").hide();
+        },
+        "show-single-button": (buttonText) => {
+          $("#singleButtonContainer").width($("#contentBubble").width());
+          $("singleButtonMainContainer").show();
+          $("#singleButtonText").text(buttonText);
+        },
+        "hide-single-button": () => {
+          $("singleButtonMainContainer").hide();
+        },
+        "show-multiple-buttons": (buttonData) => {
+          $("#secondButtonMainContainer").width($("#contentBubble").width());
+          $("#firstButtonContainer").width($("#contentBubble").width() / 2);
+          $("secondButtonContainer").width($("#contentBubble").width() / 2);
+          $("#firstButtonText").text(buttonData[0]);
+          $("#secondButtonText").text(buttonData[1]);
+          if (buttonData[2]) {
+            $("#thirdQuickReplyButton").width($("#contentBubble").width());
+            $("#thirdButtonMainContainer").text(buttonData[2]);
+            $("#thirdButtonMainContainer").show();
+          }
+          $("#secondButtonMainContainer").show();
+          $("firstButtonContainer").show();
+          $("secondButtonContainer").show();
+        },
+        "hide-multiple-buttons": () => {
+          $("#secondButtonMainContainer").hide();
+          $("firstButtonContainer").hide();
+          $("secondButtonContainer").hide();
+          $("#thirdButtonMainContainer").hide();
         },
       };
       window.addEventListener(
