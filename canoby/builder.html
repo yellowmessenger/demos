@@ -104,6 +104,7 @@
       .msg .bubble .txt .image {
         margin: auto;
         display: table;
+        padding: 5px 10px 5px 5px;
       }
       .msg .bubble .txt .timestamp {
         font-size: 11px;
@@ -395,7 +396,10 @@
       const renderView = (botID) => {
         console.log(`rendering view for ${botID}`);
         let existingBotID = window.currentBotID;
-        if (existingBotID === botID) {
+        if (
+          existingBotID === botID &&
+          !$("#whatsappMessageBubble").is(":visible")
+        ) {
           console.log(`skipped rendering view for ${botID}`);
           return;
         }
@@ -443,7 +447,29 @@
         // clear residue if any
         $("#cloneContainer").empty();
       };
+      const waTHideAll = () => {
+        $("#whatsappMessageBubble").children().hide();
+      };
+      const hideAllQuickReplies = () => {
+        $("#singleButtonMainContainer").hide();
+        $("#secondButtonMainContainer").hide();
+        $("#firstButtonContainer").hide();
+        $("#secondButtonContainer").hide();
+        $("#thirdButtonMainContainer").hide();
+      };
+      const hideCTA = () => {
+        $("#callToAction").hide();
+        $("#ctaPhoneContainer").hide();
+        $("#ctaLinkContainer").hide();
+      };
       const showHideMap = {
+        initialise: () => {
+          waTClearOthers();
+          waTHideAll();
+          // show only what's necessary
+          $("#whatsappMessageBubble").show();
+          $("#contentBubble").show();
+        },
         "show-header": (data) => {
           console.log(data, "Showing header with data");
           waTClearOthers();
@@ -482,48 +508,65 @@
           hideElement(`footerContent`);
         },
         "show-cta": (ctaData) => {
-          $("callToAction").show();
+          hideAllQuickReplies();
+          $("#callToAction").show();
           if (ctaData.link) {
-            $("ctaLinkContainer").show();
-            $("ctaLinkContentHolder").text(ctaData.linkText);
+            $("#ctaLinkContainer").show();
+            $("#ctaLinkContentHolder").text(ctaData.linkText);
+          } else {
+            $("#ctaLinkContainer").hide();
           }
           if (ctaData.phone) {
-            $("ctaPhoneContainer").show();
-            $("ctaPhoneContentHolder").text(ctaData.phoneText);
+            $("#ctaPhoneContainer").show();
+            $("#ctaPhoneContentHolder").text(ctaData.phoneText);
+          } else {
+            $("#ctaPhoneContainer").hide();
           }
         },
         "hide-cta": () => {
-          $("callToAction").hide();
-          $("ctaPhoneContainer").hide();
-          $("ctaLinkContainer").hide();
+          hideCTA();
         },
         "show-single-button": (buttonText) => {
+          hideCTA();
+          // hide the second button container
+          $("#secondButtonMainContainer").hide();
+          $("#firstButtonContainer").hide();
+          $("#secondButtonContainer").hide();
+          $("#thirdButtonMainContainer").hide();
+          // populate the single button container
           $("#singleButtonContainer").width($("#contentBubble").width());
-          $("singleButtonMainContainer").show();
+          $("#singleButtonMainContainer").show();
           $("#singleButtonText").text(buttonText);
         },
         "hide-single-button": () => {
-          $("singleButtonMainContainer").hide();
+          $("#singleButtonMainContainer").hide();
         },
         "show-multiple-buttons": (buttonData) => {
+          // first hide the single button container first
+          // also the cta containers
+          hideCTA();
+          $("#singleButtonMainContainer").hide();
+          // go on to render the multiple button part
           $("#secondButtonMainContainer").width($("#contentBubble").width());
           $("#firstButtonContainer").width($("#contentBubble").width() / 2);
-          $("secondButtonContainer").width($("#contentBubble").width() / 2);
+          $("#secondButtonContainer").width($("#contentBubble").width() / 2);
           $("#firstButtonText").text(buttonData[0]);
           $("#secondButtonText").text(buttonData[1]);
           if (buttonData[2]) {
             $("#thirdQuickReplyButton").width($("#contentBubble").width());
-            $("#thirdButtonMainContainer").text(buttonData[2]);
+            $("#thirdButtonText").text(buttonData[2]);
             $("#thirdButtonMainContainer").show();
+          } else {
+            $("#thirdButtonMainContainer").hide();
           }
           $("#secondButtonMainContainer").show();
-          $("firstButtonContainer").show();
-          $("secondButtonContainer").show();
+          $("#firstButtonContainer").show();
+          $("#secondButtonContainer").show();
         },
         "hide-multiple-buttons": () => {
           $("#secondButtonMainContainer").hide();
-          $("firstButtonContainer").hide();
-          $("secondButtonContainer").hide();
+          $("#firstButtonContainer").hide();
+          $("#secondButtonContainer").hide();
           $("#thirdButtonMainContainer").hide();
         },
       };
