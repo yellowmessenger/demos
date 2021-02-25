@@ -393,6 +393,25 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
+      const hideAllQuickReplies = () => {
+        $("#singleButtonMainContainer").hide();
+        $("#secondButtonMainContainer").hide();
+        $("#firstButtonContainer").hide();
+        $("#secondButtonContainer").hide();
+        $("#thirdButtonMainContainer").hide();
+      };
+      const hideCTA = () => {
+        $("#callToAction").hide();
+        $("#ctaPhoneContainer").hide();
+        $("#ctaLinkContainer").hide();
+      };
+      const waTHideAll = () => {
+        $("#whatsappMessageBubble").children().hide();
+        $("#whatsappMessageBubble").hide();
+        $("#contentBubble").hide();
+        hideCTA();
+        hideAllQuickReplies();
+      };
       const renderView = (botID) => {
         console.log(`rendering view for ${botID}`);
         let existingBotID = window.currentBotID;
@@ -403,6 +422,7 @@
           console.log(`skipped rendering view for ${botID}`);
           return;
         }
+        waTHideAll();
         console.log(`continue rendering view for ${botID}`);
         window.currentBotID = botID;
         // first hide the placeholder
@@ -446,21 +466,6 @@
         $("#placeholder").hide();
         // clear residue if any
         $("#cloneContainer").empty();
-      };
-      const waTHideAll = () => {
-        $("#whatsappMessageBubble").children().hide();
-      };
-      const hideAllQuickReplies = () => {
-        $("#singleButtonMainContainer").hide();
-        $("#secondButtonMainContainer").hide();
-        $("#firstButtonContainer").hide();
-        $("#secondButtonContainer").hide();
-        $("#thirdButtonMainContainer").hide();
-      };
-      const hideCTA = () => {
-        $("#callToAction").hide();
-        $("#ctaPhoneContainer").hide();
-        $("#ctaLinkContainer").hide();
       };
       const showHideMap = {
         initialise: () => {
@@ -609,6 +614,7 @@
                 // showing the loader first and hiding the bot
                 $("#placeholder").show();
                 $("#cloneContainer").empty();
+                waTHideAll();
                 window.botIDAfterDelay = event.data.data;
                 window.currentBotID = "";
                 window.postRender = setTimeout(() => {
