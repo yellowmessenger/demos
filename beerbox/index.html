@@ -94,7 +94,7 @@
                         fbq('track', eventData.data.name, eventData.data.data);
                     } else if(eventData && eventData.type === 'opicle-affle'){
                         console.log(eventData.data, "opafPixel");
-                        document.getElementById("opicleAffle").innerHTML = `<img src="https://cost.affcost.com/pixel?adid=603e034e9c8630742f455fc4&txn_id=${eventData.data.orderId}">
+                        document.getElementById("opicleAffle").innerHTML = `<iframe src="https://opicle360.com/p.ashx?o=1370&e=658&udid=${eventData.data.orderId}&ect=${eventData.data.orderValue}" height="1" width="1" frameborder="0"></iframe>
                         <img src="https://cost.affcost.com/pixel?adid=603e034e9c8630742f455fc4&txn_id=${eventData.data.orderId}&sale_amount=${eventData.data.orderValue}">`
                     }
                 }
