@@ -8,14 +8,14 @@
     <link rel="shortcut icon" type="image/png" href="https://cdn.yellowmessenger.com/bU09WH9QuLn51587042142370.png" />
 
     <!-- Global site tag (gtag.js) - Google Ads: 428136806 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-428136806"></script>
-    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-428136806'); </script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-428136806"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-428136806'); </script> -->
     <!-- DSP PIXEL TAG -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         var dspconfig = { "aid": "6026387ee1814812a729c2fd726c4bce", "trackingPartner": "ipixel", "eventName": "dsp_pixel_pv" };
     </script>
 
-    <script src="https://i.l.inmobicdn.net/helix-cors/custom/js/idspPixel/min.pixel.js"></script>
+    <script src="https://i.l.inmobicdn.net/helix-cors/custom/js/idspPixel/min.pixel.js"></script> -->
 
     <!-- END OF DSP PIXEL TAG -->
 
@@ -23,9 +23,9 @@
 
 
 <body>
-    <div id="opicleAffle">
+    <!-- <div id="opicleAffle">
 
-    </div>
+    </div> -->
     <script type="text/javascript">
         var getParams = function (url) {
             var params = {};
@@ -91,11 +91,13 @@
                         var args = ['track', eventData.data.name, eventData.data.data]
                         console.log("args", args);
                         fbq('track', eventData.data.name, eventData.data.data);
-                    } else if (eventData && eventData.type === 'opicle-affle') {
-                        console.log(eventData.data, "opafPixel");
-                        document.getElementById("opicleAffle").innerHTML = `<iframe src="https://opicle360.com/p.ashx?o=1370&e=658&udid=${eventData.data.orderId}&ect=${eventData.data.orderValue}" height="1" width="1" frameborder="0"></iframe>
-                        <img src="https://cost.affcost.com/pixel?adid=603e034e9c8630742f455fc4&txn_id=${eventData.data.orderId}&sale_amount=${eventData.data.orderValue}">`
-                    } else if (eventData && eventData.type === 'add-to-cart') {
+                    } 
+                    // else if (eventData && eventData.type === 'opicle-affle') {
+                    //     console.log(eventData.data, "opafPixel");
+                    //     document.getElementById("opicleAffle").innerHTML = `<iframe src="https://opicle360.com/p.ashx?o=1370&e=658&udid=${eventData.data.orderId}&ect=${eventData.data.orderValue}" height="1" width="1" frameborder="0"></iframe>
+                    //     <img src="https://cost.affcost.com/pixel?adid=603e034e9c8630742f455fc4&txn_id=${eventData.data.orderId}&sale_amount=${eventData.data.orderValue}">`
+                    // } 
+                    else if (eventData && eventData.type === 'add-to-cart') {
                         console.log("add-to-cart");
                         fbq('track', 'AddToCart');
                     }
@@ -106,10 +108,10 @@
         })();
     </script>
 
-    <noscript>
+    <!-- <noscript>
         <img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=474036263593549&ev=PageView&noscript=1" />
-    </noscript>
+    </noscript> -->
 
 
 </body>
