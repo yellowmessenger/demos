@@ -7,7 +7,31 @@
 
 <body>
 	
-	<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=b35db40a-0206-44ce-8834-0196729e970b"> </script>
+	<script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=b35db40a-0206-44ce-8834-0196729e970b"> 
+	
+	window.addEventListener("message", function (event) {
+
+			var ldata = {}
+			try {
+				event.data = JSON.parse(event.data);
+				ldata = JSON.parse(event.data);
+				ldata = ldata.data
+
+			} catch (e) {
+				//do nothins
+			}
+
+			if (ldata.code === 'pre_transfer_to_agent') {
+	          window.YellowMessengerPlugin.hide();
+				zE('webWidget', 'open');
+
+
+
+	
+	}
+		}, false);
+	
+	</script>
 
 
 	<!-- Start of LiveChat (www.livechatinc.com) code -->
