@@ -19,5 +19,6 @@ window.addEventListener("message", function (event) {
 			if (ldata.code === 'transfer_to_agent') {
  	          window.YellowMessengerPlugin.hide();
 				zE('webWidget', 'open');
+				zE('webWidget', 'chat:send', "I'd like to talk with an agent, please.\nI'd like to talk with an agent, please.\nI'd like to talk with an agent, please.\nI'd like to talk with an agent, please.\nI'd like to talk with an agent, please.\nI'd like to talk with an agent, please.\nI'd like to talk with an agent, please.\nI'd like to talk with an agent, please.\nI'd like to talk with an agent, please.\nI'd like to talk with an agent, please.\n");
 	}
 		}, false);
