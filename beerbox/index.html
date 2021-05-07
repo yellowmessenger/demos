@@ -3378,6 +3378,29 @@
 </head>
 
 <body>
+    <script>
+        let url = window.location.href;
+        let params = url.split("?");
+        var ua = navigator.userAgent || navigator.vendor || window.opera;
+
+        if(navigator.userAgent.includes("Instagram")){
+            if(params.length > 1) {
+                window.location.href = "https://staging.yellowmessenger.com/components/redirect-ext-browser?url=https://yellow.chat/beerbox/&"+params[1];
+                
+            } else {
+                window.location.href = "https://staging.yellowmessenger.com/components/redirect-ext-browser?url=https://yellow.chat/beerbox/";
+            }
+            
+        } else if((ua.indexOf("FBAN") > -1) || (ua.indexOf("FBAV") > -1)) {
+            if(params.length > 1) {
+                window.location.href = "https://staging.yellowmessenger.com/components/redirect-ext-browser?url=https://yellow.chat/beerbox/&"+params[1];
+            } else {
+                window.location.href = "https://staging.yellowmessenger.com/components/redirect-ext-browser?url=https://yellow.chat/beerbox/";
+            }
+            
+        }
+        </script>      
+
     <div id="ymFrameHolder">
         <div id="chatContainer" class="container">
             <div>
