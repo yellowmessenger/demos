@@ -22,7 +22,7 @@ $(function() {
 </head>  
 <body>  
 </br>  
-<div class ="container">  
+<!--div class ="container">  
     <div class ="row">  
        <div class ='col-sm-6'>  
           <div class ="form-group">  
@@ -33,7 +33,11 @@ $(function() {
                 </span>  
              </div>  
           </div>  
-       </div>  
+       </div>
+       <div>
+        <center><button type="button" id="datesubmit"
+                class="btn pmd-ripple-effect btn-primary">Select</button></center>
+    </div>  
        <script type = "text/javascript">  
           $(function () {  
               $('#datetimepicker3').datetimepicker({  
@@ -45,4 +49,59 @@ $(function() {
  </div>  
    
 </body>  
-</html>  
+</html-->  
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class='col-sm-6'>
+                <div class ="form-group">  
+                <div class = 'input-group date' id="datetimepicker3">
+                    <input type = 'text' class="form-control" />  
+                <span class = "input-group-addon">  
+                <span class = "glyphicon glyphicon-time"></span>  
+                </span>
+                </div>
+                <div class="modal-footer">
+                    <center><button type="button" id="datesubmit"
+                            class="btn pmd-ripple-effect btn-primary">Select</button></center>
+                </div>
+                </div>
+            </div>
+            <script type = "text/javascript">  
+                $(function () {  
+                    $('#datetimepicker3').datetimepicker({  
+                        format: 'LT'  
+                    });  
+                });  
+             </script> 
+            <script type="text/javascript">
+            $(function () {
+                $("#datesubmit").on("click", function () {
+                    var selectedtime = $("#datetimepicker3").data().date;
+                    console.log(selectedtime)
+                        window.parent.postMessage(JSON.stringify({
+                            event_code: 'ym-client-event', data: JSON.stringify({
+                                event: {
+                                    code: "Time",
+                                    data: {
+                                        selectedTime: selectedtime
+                                    }
+                                }
+                            })
+                        }), '*');
+                        $('#datesubmit').attr('disabled', 'disabled');
+                        $('#datesubmit').fadeTo("slow", 0.15, function () {
+                            $(this).find(':input').attr('disabled', 'disabled');
+                            $(this).find('label').css('cursor', 'default');
+                            $('#add').append('Submitted');
+                        });
+                    })
+                })
+    </script>
+        </div>
+    </div>
+</body>
+</html>
