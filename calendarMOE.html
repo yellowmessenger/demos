@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Input Date</title>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
+	<style type="text/css">
+		.container {
+			margin-top: 40px;
+		}
+		.btn-primary {
+			width: 100%;
+			background-color : '0C3DC0'
+		}
+		.btn-info {
+			color: #fff;
+			background-color: #0C3DC0;
+			border-color: #0C3DC0;
+		}
+		.btn-info:hover {
+		    color: #fff;
+		    background-color: #0a33a2;
+		    border-color: #0a33a2;
+		}
+		.bootstrap-datetimepicker-widget table td.active, .bootstrap-datetimepicker-widget table td.active:hover {
+			background-color: #0f3dc0;
+			color: #fff;
+			text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+		}
+		.bootstrap-datetimepicker-widget table td.today:before {
+		    content: '';
+		    display: inline-block;
+		    border: solid transparent;
+		    border-width: 0 0 7px 7px;
+		    border-bottom-color: #0f3dc0;
+		    border-top-color: rgba(0,0,0,0.2);
+		    position: absolute;
+		    bottom: 4px;
+		    right: 4px;
+		}
+	</style>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/2.14.1/moment.min.js"></script> 
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#submit").click(function () {
+                //var date = $("#datetimepicker12").data("DateTimePicker").date()
+		//let selectedDate = moment(date,"MM-DD-YYYY");
+		    var date = $("#datetimepicker12").data("DateTimePicker").date().toISOString();
+                console.log(date)
+                    window.parent.postMessage(JSON.stringify({
+                        event_code: 'ym-client-event', data: JSON.stringify({
+                            event: {
+                                code: "Date",
+                                data: {
+                                    selectedDate: date
+                                }
+                            }
+                        })
+                    }), '*');
+                    $('#custom :input').attr('disabled', 'disabled');
+                    $('#custom').fadeTo("slow", 0.15, function () {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor', 'default');
+                        $('#add').append('Submitted');
+                    });
+            
+            })
+        })
+	</script>
+<!-- 	<script type='text/javascript'>
+		$( document ).ready(function() {
+			$('#datetimepicker').datetimepicker({
+				inline: true,
+				sideBySide: true,
+				locale: 'de',
+				format: 'yyyy-mm-ddThh:ii:ssZ'
+			});
+		});
+	</script> -->
+    
+</head>
+<body>
+
+<div style="overflow:hidden;" id="custom">
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="datetimepicker12"></div>
+            </div>
+        </div>
+    </div>
+     <center><input type="submit" class="btn btn-info" value="Submit" id="submit"></center>
+</div>
+
+ <script type="text/javascript">
+        $(function () {
+	var start_date = new Date();
+	var end_date = new Date();
+	start_date.setDate(start_date.getDate()+1);
+	end_date.setDate(end_date.getDate()+30);
+	console.log(end_date)
+	$('#datetimepicker12').datetimepicker({
+		inline: true,
+		format: 'DD.MM.YY',
+		sideBySide: true,
+		minDate :start_date,
+		maxDate : end_date,
+		daysOfWeekDisabled: [0,6]
+	    });
+	});
+    </script>	
+</body>
+</html>
