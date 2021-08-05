@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>RE Demo</title>
+</head>
+
+<body>
+    <div id="test" style="margin: 30px;">
+    </div>
+    <script type="text/javascript">
+        window.ymConfig = {
+            bot: 'x1626377357213',
+            containerId: 'test',
+            host: 'https://app.yellowmessenger.com',
+            view: 'compact'
+        };
+        (function () {
+            var w = window, ic = w.YellowMessenger;
+            if ("function" === typeof ic)
+                ic("reattach_activator"), ic("update", ymConfig);
+            else {
+                var d = document, i = function () { i.c(arguments) };
+                function l() {
+                    var e = d.createElement("script");
+                    e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
+                    var t = d.getElementsByTagName("script")[0];
+                    t.parentNode.insertBefore(e, t)
+                }
+                i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
+            }
+            setTimeout(function () {
+                const ymTitle = document.getElementsByClassName("ym-title");
+                if (ymTitle) {
+                    ymTitle[0].remove();
+                }
+                const ymSubTitle = document.getElementsByClassName("ym-sub-title");
+                if (ymSubTitle) {
+                    ymSubTitle[0].remove();
+                }
+                var t = document.getElementsByClassName("ym-title-parent");
+                var element = document.createElement("img");
+                element.setAttribute("class", "icon1");
+                element.style.maxWidth = "200px";
+                element.style.margin = "-10px 0 0 -25px";
+                element.style.padding = 0;
+                element.setAttribute(
+                    "src",
+                    "https://cdn.yellowmessenger.com/JrLTt9MlqGSU1627640891858.PNG"
+                );
+                if (t) {
+                    t[0].appendChild(element);
+                }
+            }, 1000);
+
+
+
+        })();
+    </script>
+</body>
+
+</html>
