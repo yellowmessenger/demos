@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Range Picker</title>
+
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./moment.min.js"></script>
+    <script type="text/javascript" src="./daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./daterangepicker.min.css" />
+    <style>
+        #ympicker {
+            padding: .375em;
+            border: .0625em solid #ced4da;
+            border-radius: .25em;
+        }
+        .daterangepicker .calendar-table th, .daterangepicker .calendar-table td{
+            border: none;
+            min-width: 0px!important;
+            width: 20px;
+        }
+        .daterangepicker .drp-calendar.left {
+    padding: 0;
+}
+        .daterangepicker .drp-calendar{
+            max-width: 15em;
+        }
+        .daterangepicker {
+            max-width:16em;
+            width: 14.5em;
+        }
+        p {
+            margin: .1em;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            /* margin-top: 40px; */
+            position: fixed !important;
+            top: 2%;
+        }
+        .daterangepicker .drp-selected{
+            display:none;
+        }
+        .daterangepicker .drp-buttons{
+            text-align: left!important;
+        }
+        /* .btn {
+            width: 40%;
+            /* margin-top: -100px; */
+            /* background:#357ebd;
+            color:#fff;
+        } */
+
+        .right {
+            display: none !important;
+        }
+
+        /* .drp-buttons {
+            display: none !important;
+        }     */
+        
+        footer {
+            clear: both;
+            position: relative;
+            height: 50px;
+            margin-top: 350px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container" id="custom">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <div class="input-group">
+                        <p id="pickertitle">Select Date Range</p>
+                        <input type="button" name="dates" id="ympicker" value="Click here   " />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const sendDatePickerData = () => {
+            let params = new URL(document.location).searchParams;
+        let data;
+        data = params.get("data") ? params.get("data") : JSON.stringify({})
+        data = JSON.parse(data);
+
+        // data = {
+        //     title: 'Select a Date Range',
+        //     options: { // Date picker options
+        //         autoApply: true
+        //     },
+        //     updatedTitle: "You have selected <STARTDATE> <ENDDATE>",
+        //     updatedTitleStartDateFormat: 'DD-MM-YYYY',
+        //     updatedTitleEndDateFormat: 'DD-MM-YYYY','
+        //     pageStyles: 'body{display:none;}'
+
+        // }
+        if (data.title != undefined) {
+            $('#pickertitle').text(data.title)
+        }
+        if(data.pageStyles != undefined){
+            $('style').html(`${$('style').html() + data.pageStyles}`)
+        }
+        if (data.options != undefined && data.options.ranges != undefined) {
+            // to allow isoformats for Date Ranges if any
+            for (let [key, value] of Object.entries(data.ranges)) {
+                for (let indx = 0; indx <= value.length; indx++) {
+                    data.ranges[key][i] = moment(value[i])
+                }
+            }
+        }
+        $('#ympicker').daterangepicker({ ...data.options }, function (start, end, label) {
+            let clientData = {}
+            if (start) {
+                clientData.start = start.toISOString();
+            }
+            if (end) {
+                clientData.end = end.toISOString();
+            }
+            if (label) {
+                clientData.label = label
+            }
+            let updatedTitleStartDateFormat = "MM-DD-YYYY", updatedTitleEndDateFormat = "MM-DD-YYYY"
+            if (data.updatedTitleEndDateFormat) {
+                updateTitleEndDateFormat = data.updateTitleEndDateFormat;
+            }
+            if (data.updatedTitleStartDateFormat) {
+                updateTitleStartDateFormat = data.updateTitleStartDateFormat;
+            }
+            if (data.updatedTitle) {
+                $('#pickertitle').text(data.updatedTitle
+                    .replace(/\<STARTDATE\>/g, start.format(updatedTitleStartDateFormat))
+                    .replace(/\<ENDDATE\>/g, end.format(updatedTitleEndDateFormat))
+                );
+            }
+            $('body').fadeTo('slow', 0.15)
+            $('#ympicker').attr('disabled', 'disabled');
+
+            window.parent.postMessage(
+                JSON.stringify({
+                    event_code: 'ym-client-event',
+                    data: JSON.stringify({
+                        data: clientData
+                    }),
+                }),
+                '*',
+            );
+        });
+        $('#ympicker').focus().click();
+
+        }
+        $(document).ready(function () {
+            $('.drp-calendar.right').hide();
+            $('.drp-calendar.left').addClass('single');
+            sendDatePickerData();
+        });
+        
+
+    </script>
+
+
+</body>
+
+</html>
