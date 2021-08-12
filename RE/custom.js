@@ -23,7 +23,7 @@
                 element.style.padding = 0;
                 element.setAttribute(
                   "src",
-                  "https://cdn.yellowmessenger.com/JrLTt9MlqGSU1627640891858.PNG"
+                  "https://cdn.yellowmessenger.com/nqpngvPBB6qG1628763442725.png"
                 );
                 if (t) {
                   t[0].appendChild(element);
@@ -55,7 +55,7 @@
                     element.style.padding = 0;
                     element.setAttribute(
                       "src",
-                      "https://cdn.yellowmessenger.com/JrLTt9MlqGSU1627640891858.PNG"
+                      "https://cdn.yellowmessenger.com/nqpngvPBB6qG1628763442725.png"
                     );
                     if (x) {
                       x[0].appendChild(element);
