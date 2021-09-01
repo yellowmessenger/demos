@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    ​
+  </head>
+
+  <body>
+    <center>
+      <h1>Thank you!</h1>
+    </center>
+    <script>
+      var myHeaders = new Headers();
+      myHeaders.append("Content-Type", "application/json");
+      myHeaders.append(
+        "Cookie",
+        "__cfduid=d2a7454f6dfb24a5754f025737613dd9c1611311191"
+      );
+
+      let custid = new URLSearchParams(window.location.search).get("CustId");
+      let refno = new URLSearchParams(window.location.search).get(
+        "PaymentRefNo"
+      );
+      let status = new URLSearchParams(window.location.search).get(
+        "PaymentStatus"
+      );
+      let msg = new URLSearchParams(window.location.search).get("PaymentMsg");
+
+      let data = {
+        customerId: custid,
+        referenceNo: refno,
+        paymentStatus: status,
+        paymentMsg: msg,
+      };
+
+      var raw = JSON.stringify({
+        authToken: "a9c98744df9abaa4b6ae9681d57f",
+        from: "wealth",
+        params: data,
+      });
+
+      var requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow",
+      };
+
+      fetch(
+        "https://app.yellowmessenger.com/integrations/sendevent/tatacapital/x1627624404295",
+        requestOptions
+      )
+        .then((response) => response.text())
+        .then((result) => console.log(result))
+        .catch((error) => console.log("error", error));
+    </script>
+    ​
+  </body>
+</html>
