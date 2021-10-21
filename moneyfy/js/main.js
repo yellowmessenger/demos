@@ -1,4 +1,4 @@
-const url = 'https://moneyfyu.tatacapital.com/CVL/Files/TAT196079/TAT196079.pdf';
+const url = 'https://cdn.yellowmessenger.com/GD7uQqGoFEZ51634807972867.pdf';
 
 let pdfDoc = null,
   pageNum = 1,
