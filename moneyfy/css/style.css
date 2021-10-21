@@ -10,7 +10,7 @@
 }
 
 .btn {
-  background: coral;
+  background: #005899;
   color: #fff;
   border: none;
   outline: none;
@@ -27,7 +27,7 @@
 }
 
 .error {
-  background: orangered;
+  background: #005899;
   color: #fff;
   padding: 1rem;
 }
