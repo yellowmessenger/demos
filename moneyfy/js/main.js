@@ -1,8 +1,8 @@
 // const url = 'https://cdn.yellowmessenger.com/GD7uQqGoFEZ51634807972867.pdf';
 
-let param = new URLSearchParams(window.location.search).get('app');
+// let param = new URLSearchParams(window.location.search).get('app');
 
-let url = decodeURIComponent(param);
+const url = 'https://cdn.yellowmessenger.com/GD7uQqGoFEZ51634807972867.pdf'
 
 let pdfDoc = null,
   pageNum = 1,
