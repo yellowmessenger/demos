@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+   $('#iframe').attr('src', 'https://www.qries.com');
+
+   $('#iframe').on('load', function() {
+    console.log('frame has (re)loaded');
+    window.parent.postMessage(
+                    JSON.stringify({
+                        event_code: "ym-client-event",
+                        data: JSON.stringify({
+                            event: {
+                                code: "kyc-done",
+                                data: {
+                                    status: "pass"
+                                }
+                            }
+                        })
+                    }),
+                    "*"
+                );
+});
+});
+</script>
+</head>
+<body>
+
+<iframe id="iframe" name="myIframe" frameborder="5" width="500" height="300"></iframe>
+
+
+</body>
+</html>
