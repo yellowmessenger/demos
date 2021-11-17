@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+    console.log('redirect has loaded');
+    window.parent.postMessage(
+                    JSON.stringify({
+                        event_code: "ym-client-event",
+                        data: JSON.stringify({
+                            event: {
+                                code: "kyc-done",
+                                data: {
+                                    status: "pass"
+                                }
+                            }
+                        })
+                    }),
+                    "*"
+                );
+</script>
+<body>
+<h1>Redirected Page<h1>
+</body>
+</html>
