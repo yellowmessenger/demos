@@ -1,0 +1,31 @@
+<html>
+<body>
+<button onclick="hide()" >Click</button>
+    <script type="text/javascript">
+        window.ymConfig = {
+            bot: 'x1635234922393',
+            autoOpen: true,
+            payload: {
+                'clientId':"31253",
+                'clientName':"BCG",
+                'username':"Trishant.Verma1@evalueserve.com",
+                'ProjrctName': 'Competitive Intelligence',
+                'email':"Trishant.Verma1@evalueserve.com",
+                'projectId':"3152"
+            }
+        };
+        (function () { var w = window, ic = w.YellowMessenger; if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig); else { var d = document, i = function () { i.c(arguments) }; function l() { var e = d.createElement("script"); e.type = "text/javascript", e.async = !0, e.src = "https://app.yellowmessenger.com/widget/main.js"; var t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t) } i.q = [], i.c = function (e) { i.q.push(e) }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1) } })();
+    
+function hide() {
+        console.log('In FUnction');
+         window.YellowMessengerPlugin.sendEvent(JSON.stringify({
+        event_code: 'ym-client-event', data: "Product Recommendation India"
+        }), '*');
+         var chatBoxMain = document.getElementById("chatBoxMain");
+         chatBoxMain.parentNode.removeChild(chatBoxMain);
+    }
+</script>
+</body>
+</html>
+Collapse
+
