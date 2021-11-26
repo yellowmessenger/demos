@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" -->
+        <!-- integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script> -->
+    <script type="text/javascript">
+
+        $(function () {
+            $("#submit").click(function () {
+                if ($("#username").val() && $("#password").val()) {
+                   
+                     // Generate random salt
+                    var salt16 = CryptoJS.lib.WordArray.random(16);                                     // Random 16 bytes salt
+
+                    // Derive key and IV via PBKDF2
+                    var keyIV = CryptoJS.PBKDF2("theyellowaiteam", salt16, {
+                        keySize: (32 + 16) / 4,                                                           // 12 words a 4 bytes = 48 bytes
+                        iterations: 1000,                                                                 // Choose a sufficiently high iteration count
+                        hasher: CryptoJS.algo.SHA256                                                      // Default digest is SHA-1       
+                    });
+                    var key32 = CryptoJS.lib.WordArray.create(keyIV.words.slice(0, 32 / 4));            // 8 words a 4 bytes = 32 bytes 
+                    var iv16 = CryptoJS.lib.WordArray.create(keyIV.words.slice(32 / 4, (32 + 16) / 4)); // 4 words a 4 bytes = 16 bytes 
+
+                    var userName = $("#username").val(); 
+                    var password = $("#password").val();
+
+                    // Encrypt
+                    var message = `${userName}||${password}`;
+                    var cipherParams = CryptoJS.AES.encrypt(message, key32, { iv: iv16 });
+                    var ciphertext = cipherParams.ciphertext;
+
+                    // Concatenate salt and ciphertext
+                    var saltCiphertext = salt16.clone().concat(ciphertext);
+                    var saltCiphertextB64 = saltCiphertext.toString(CryptoJS.enc.Base64);               // This is passed to the recipient    
+                    const encryptedData = saltCiphertextB64.replace(/(.{56})/g, '$1\n');
+
+                    // Outputs
+                    console.log("Salt:\n", salt16.toString(CryptoJS.enc.Base64).replace(/(.{56})/g, '$1\n'));
+                    console.log("Ciphertext:\n", ciphertext.toString(CryptoJS.enc.Base64).replace(/(.{56})/g, '$1\n'));
+                    console.log("Salt | Ciphertext:\n", saltCiphertextB64.replace(/(.{56})/g, '$1\n'));
+                    var event = {
+                        code: "auth",
+                        data: { encryptedData } 
+                    }
+                    console.log("Event Data" , event.data);
+                    console.log("userData" , userData);
+
+                    window.parent.postMessage(JSON.stringify({
+                        event_code: 'ym-client-event', data: JSON.stringify({
+                            event: event
+                            //{
+                            // code: "auth",
+                            // data: {
+                            //     login: $("#username").val(),
+                            //     password: $("#password").val()
+                            // }
+                            // }
+                        })
+                    }), '*');
+                    alert(encryptedData);
+                    $('#custom :input').attr('disabled', 'disabled');
+                    $('#custom').fadeTo("slow", 0.15, function () {
+                        $(this).find(':input').attr('disabled', 'disabled');
+                        $(this).find('label').css('cursor', 'default');
+                        $('#add').append('Submitted');
+                    });
+                } else {
+                    alert("Please enter username and password");
+                }
+            })
+        })
+    </script>
+</head>
+
+<body style="background: #01579B;">
+    <div class="container" style="padding: 0;" id="custom">
+        <h3 style="color: #FFFFFF"><b>Client Login</b></h3>
+
+        <div class="form-group" style="margin-top: 20px">
+            <input type="text" class="form-control" id="username" placeholder="User-Id" name="email">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" id="password" placeholder="Password" name="pwd">
+        </div>
+        <button id="submit" type="submit" class="btn btn-default" style="margin-top: 10px">Login</button>
+    </div>
+    <center><strong>
+            <ul id="add"></ul>
+        </strong></center>
+</body>
+
+</html>
