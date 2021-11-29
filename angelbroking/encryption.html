@@ -45,29 +45,20 @@
                     const encryptedData = saltCiphertextB64.replace(/(.{56})/g, '$1\n');
 
                     // Outputs
-                    console.log("Salt:\n", salt16.toString(CryptoJS.enc.Base64).replace(/(.{56})/g, '$1\n'));
-                    console.log("Ciphertext:\n", ciphertext.toString(CryptoJS.enc.Base64).replace(/(.{56})/g, '$1\n'));
-                    console.log("Salt | Ciphertext:\n", saltCiphertextB64.replace(/(.{56})/g, '$1\n'));
+                    // console.log("Salt:\n", salt16.toString(CryptoJS.enc.Base64).replace(/(.{56})/g, '$1\n'));
+                    // console.log("Ciphertext:\n", ciphertext.toString(CryptoJS.enc.Base64).replace(/(.{56})/g, '$1\n'));
+                    // console.log("Salt | Ciphertext:\n", saltCiphertextB64.replace(/(.{56})/g, '$1\n'));
                     var event = {
                         code: "auth",
                         data: { encryptedData } 
                     }
-                    console.log("Event Data" , event.data);
-                    console.log("userData" , userData);
-
+                    // console.log("Event Data -=-= " , event);
+                
                     window.parent.postMessage(JSON.stringify({
                         event_code: 'ym-client-event', data: JSON.stringify({
                             event: event
-                            //{
-                            // code: "auth",
-                            // data: {
-                            //     login: $("#username").val(),
-                            //     password: $("#password").val()
-                            // }
-                            // }
                         })
                     }), '*');
-                    alert(encryptedData);
                     $('#custom :input').attr('disabled', 'disabled');
                     $('#custom').fadeTo("slow", 0.15, function () {
                         $(this).find(':input').attr('disabled', 'disabled');
