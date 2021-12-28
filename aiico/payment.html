@@ -1,0 +1,48 @@
+<html>
+<form>
+  <script src="https://checkout.flutterwave.com/v3.js"></script>
+  <button type="button" onClick="makePayment()">Pay Now</button>
+</form>
+
+<script>
+  function makePayment() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const name = urlParams.get('name');
+    const phone = urlParams.get('phone');
+    const email = urlParams.get('email');
+    const amount = urlParams.get('amount');
+    const company = "AIICO Insurance";
+    FlutterwaveCheckout({
+      public_key: "FLWPUBK_TEST-SANDBOXDEMOKEY-X",
+      tx_ref: "RX1",
+      amount: 10,
+      currency: "N",
+      country: "NG",
+      payment_options: " ",
+      redirect_url: // specified redirect URL
+        "https://callbacks.piedpiper.com/flutterwave.aspx?ismobile=34",
+      meta: {
+        consumer_id: 23,
+        consumer_mac: "92a3-912ba-1192a",
+      },
+      customer: {
+        email: email,
+        phone_number: phone,
+        name: name,
+      },
+      callback: function (data) {
+        console.log(data);
+      },
+      onclose: function() {
+        // close modal
+      },
+      customizations: {
+        title: company,
+        description: "Payment",
+        logo: "https://www.aiicoplc.com/images/logo.png",
+      },
+    });
+  }
+</script>
+
+</html>
