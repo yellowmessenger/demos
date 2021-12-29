@@ -11,19 +11,20 @@
     const phone = urlParams.get('phone');
     const email = urlParams.get('email');
     const amount = urlParams.get('amount');
+    const ref = urlParams.get('ref');
     const company = "AIICO Insurance";
     FlutterwaveCheckout({
       public_key: "FLWPUBK_TEST-SANDBOXDEMOKEY-X",
-      tx_ref: "RX1",
-      amount: 10,
+      tx_ref: ref,
+      amount: amount,
       currency: "N",
       country: "NG",
       payment_options: " ",
       redirect_url: // specified redirect URL
         "https://callbacks.piedpiper.com/flutterwave.aspx?ismobile=34",
       meta: {
-        consumer_id: 23,
-        consumer_mac: "92a3-912ba-1192a",
+        consumer_id: "",
+        consumer_mac: "",
       },
       customer: {
         email: email,
