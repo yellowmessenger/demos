@@ -15,9 +15,11 @@
     const sender = urlParams.get('sender');
     const bot = urlParams.get('botid');
     const token = urlParams.get('token');
+    const key = urlParams.get('key');
+    const value = key == "FlutterWavePubKeyLifeTest"?"FLWPUBK_TEST-16a2c3fe1e8a662604b2da455282002c-X":"FLWPUBK_TEST-f3baefc96eca4151eb435576c6e9bfd5-X";
     const company = "AIICO Insurance";
     FlutterwaveCheckout({
-      public_key: "FLWPUBK_TEST-SANDBOXDEMOKEY-X",
+      key: value,
       tx_ref: ref,
       amount: amount,
       currency: "NGN",
@@ -38,6 +40,7 @@
         console.log('callback ===>',data);
         var myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
+        myHeaders.append("authorization","a9c98440da91bdaeb0a7928bdc71");
         var raw = JSON.stringify({ "authorization": "a9c98440da91bdaeb0a7928bdc71", "from": sender, "params": data });
 
         var requestOptions = {
@@ -46,12 +49,14 @@
             body: raw,
             redirect: 'follow'
         };
-
         fetch("https://app.yellowmessenger.com/integrations/sendevent/altitude/x1637222315296", requestOptions)
             .then(response => response.text())
-            .then(result => console.log(result))
+            .then(result =>{
+              setTimeout(()=>{
+            window.close();
+          },4000)
+            })
             .catch(error => console.log('error', error));
-          // window.close();
           },
       onclose: function() {
         
