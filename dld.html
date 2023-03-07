@@ -107,7 +107,7 @@
             let params = new URLSearchParams(window.location.search)
             // console.log(params.get('language'))
             language_ = params.get('language')
-
+            // language_ = "ar"
             if (language_ == 'ar') {
                 document.getElementById('firstname').placeholder = 'الاسم الاول';
                 document.getElementById('lastname').placeholder = 'الكنية';
@@ -116,11 +116,23 @@
                 document.getElementById('submit').value = 'إرسال';
                 document.getElementById('reset').value = 'إعادة تعيين';
 
+                document.getElementById('phone').style.textAlign = "right"
+                document.getElementById('firstname').style.textAlign = "right"
+                document.getElementById('email').style.textAlign = "right"
+                document.getElementById('lastname').style.textAlign = "right"
+
                 document.getElementById('head').innerHTML = 'جميع الحقول التي تحمل علامة * إلزامية';
                 document.getElementById('firstname_head').innerHTML = 'الاسم الاول *';
                 document.getElementById('lastname_head').innerHTML = 'الكنية *';
                 document.getElementById('email_head').innerHTML = 'عنوان البريد الالكترونى *';
                 document.getElementById('mobile_head').innerHTML = 'رقم الهاتف المحمول *';
+
+                document.getElementById('head').style.marginLeft = "38px"
+                document.getElementById('firstname_head').style.marginLeft = "135px"
+                document.getElementById('lastname_head').style.marginLeft = "160px"
+                document.getElementById('email_head').style.marginLeft = "85px"
+                document.getElementById('mobile_head').style.marginLeft = "100px"
+
             }
             else {
                 document.getElementById('firstname').placeholder = "First Name";
@@ -133,6 +145,12 @@
                 document.getElementById('lastname_head').innerHTML = 'Last Name *';
                 document.getElementById('email_head').innerHTML = 'Email Address *';
                 document.getElementById('mobile_head').innerHTML = 'Mobile Number *';
+
+                document.getElementById('head').style.marginLeft = "10px"
+                document.getElementById('firstname_head').style.marginLeft = "10px"
+                document.getElementById('lastname_head').style.marginLeft = "10px"
+                document.getElementById('email_head').style.marginLeft = "10px"
+                document.getElementById('mobile_head').style.marginLeft = "10px"
             }
 
         })
@@ -235,12 +253,12 @@
                                         } else {
                                             //
                                             // var re = /^(?:050|051|052|055|056|054|058)\d{7}$/;
-                                            var re =/(\+\d{1,3}\s?)?((\(\d{3}\)\s?)|(\d{3})(\s|-?))(\d{3}(\s|-?))(\d{4})(\s?(([E|e]xt[:|.|]?)|x|X)(\s?\d+))?/g
+                                            var re = /(\+\d{1,3}\s?)?((\(\d{3}\)\s?)|(\d{3})(\s|-?))(\d{3}(\s|-?))(\d{4})(\s?(([E|e]xt[:|.|]?)|x|X)(\s?\d+))?/g
                                             var check = re.test(mobile);
                                             c = 'ok'
                                             document.getElementById('email_error').innerHTML = "";
                                             var mobile = $("#phone").val()
-                                            if (mobile !="" &&  ! check ) {
+                                            if (mobile != "" && !check) {
                                                 document.getElementById('phone_error').style.display = 'inline';
                                                 if (language_ == 'ar') {
                                                     document.getElementById('phone_error').innerHTML = "الرجاء إدخال رقم جوال صحيح";
@@ -258,6 +276,7 @@
                                                     console.log('Email -', $("#email").val())
                                                     console.log('Phone -', $("#phone").val())
                                                     let queryback = new URLSearchParams(window.location.search).get('query')
+                                                    console.log("windowww",window)
                                                     window.parent.postMessage(JSON.stringify({
                                                         event_code: 'ym-client-event',
                                                         data: JSON.stringify({
@@ -303,7 +322,7 @@
         <div class="container" style="padding: 0;" id="custom">
             <label id="head"></label>
             <br><br>
-            <form class="main" style="width: 200px">
+            <form class="main" style="width: 200px;">
                 <label id="firstname_head"></label>
                 <input type="text" id="firstname" placeholder="" required name="firstname" size="23">
                 <br><label id='firstname_error'></label>
@@ -319,8 +338,8 @@
                 <br>
                 <label id="mobile_head"></label>
                 <input type="tel" id="phone" list="programId" placeholder="" required name="phone" size="23">
-                <datalist id="programId">
-                </datalist>
+                <!-- <datalist id="programId">
+                </datalist> -->
                 <br><label id='phone_error'></label>
                 <br><br>
                 <input type="submit" value="Submit" id="submit"> &nbsp;&nbsp;&nbsp;
@@ -330,7 +349,8 @@
             </form>
         </div>
     </div>
-    <script>
+    <!-- below script is commented for 00048344 and 00048526 CR -->
+    <!-- <script>
         let country = {
             "countries": [
                 {
@@ -1318,7 +1338,7 @@
             })
 
         } 
-    </script>
+    </script> -->
 </body>
 
 </html>
