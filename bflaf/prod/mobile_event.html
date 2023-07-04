@@ -86,7 +86,7 @@
                 };
                 function l() {
                     var e = d.createElement("script");
-                    e.type = "text/javascript", e.async = !0, e.src = "https://botplatform.io/components/securedwidget/mobile.js";
+                    e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/mobile.min.js";
                     var t = d.getElementsByTagName("script")[0];
                     t.parentNode.insertBefore(e, t)
                 }
@@ -97,7 +97,7 @@
             if ('serviceWorker' in window.navigator) {
                 window.navigator.serviceWorker.register('https://app.yellowmessenger.com/pwa/service-worker',
                     {
-                        'scope': '/pwa/mobile/'+botId
+                        'scope': '/pwa/v2/mobile/'+botId
                     })
                     .then(function (reg) {
                         console.log("Service worker registered.", reg);
