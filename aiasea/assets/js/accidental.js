@@ -110,6 +110,16 @@ function validateNotNumber(evt) {
     return;
 }
 
+const postForm = (body) => {
+  return fetch('http://localhost:3000/claim', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body
+  });
+};
+
 function handleForm(event) {
     event.preventDefault();
     var field_firstName = $("#field_firstName").val();
@@ -278,15 +288,19 @@ function handleForm(event) {
             $('#requirements')[0].scrollIntoView(true);
 
             console.log('Data -> ', data)
-            window.parent.postMessage(JSON.stringify({
-                        event_code: 'ym-client-event', data: JSON.stringify({
-                            event: {
-                                code: "personalinfo",
-                                data: data
-                            }
-                        })
-                    }), '*');
-        }
+            localCall(data)
+            postForm(data)
+            .then(res => res.json())
+            .then(callData => console.log(callData.json));
+//             window.parent.postMessage(JSON.stringify({
+//                         event_code: 'ym-client-event', data: JSON.stringify({
+//                             event: {
+//                                 code: "personalinfo",
+//                                 data: data
+//                             }
+//                         })
+//                     }), '*');
+//         }
     }
 }
 
